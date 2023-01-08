@@ -1,0 +1,72 @@
+backend:
+  name: github
+  branch: master # Branch to update (optional; defaults to master)
+  repo: contentedweb/contentedweb.com
+media_folder: "src/assets/images" # Media files will be stored in the repo under src/assets/images
+public_folder: "/assets/images" # The src attribute for uploaded media will begin with /assets/images
+
+collections:
+  - name: posts2022 # Used in routes, e.g., /admin/collections/blog
+    label: 2022 Posts # Used in the UI  
+    folder: src/posts/2022 # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    fields: # The fields for each document, usually in front matter
+      - {label: "Layout", name: "layout", widget: "hidden", default: "blog"}
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Publish Date", name: "date", widget: "datetime"}
+      - {label: "Body", name: "body", widget: "markdown"}
+      - widget: "list"
+        label: "Tags"
+        name: "tags"
+        default: []
+      - widget: "select"
+        label: "Theme"
+        name: "theme"
+        options: ["olden", "sky", "site", "rip"]
+        default: ["site"]
+  - name: posts2021
+    label: 2021 posts
+    folder: src/posts/2021
+    create: true # Allow users to create new documents in this collection
+    #nested:
+    #  depth: 2 # max depth to show in the collection tree
+    #  summary: '{{title}}' # optional summary for a tree node, defaults to the inferred title field
+    fields: # The fields for each document, usually in front matter
+      - {label: "Layout", name: "layout", widget: "hidden", default: "blog"}
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Publish Date", name: "date", widget: "datetime"}
+      - {label: "Body", name: "body", widget: "markdown"}
+      - widget: "list"
+        label: "Tags"
+        name: "tags"
+        default: []
+      - widget: "select"
+        label: "Theme"
+        name: "theme"
+        options: ["olden", "sky", "site", "rip"]
+        default: ["site"]
+    #view_filters:
+    #  - label: 'Posts published in 2022'
+    #    field: date
+    #    pattern: '2022'  
+    #view_groups:
+    #  - label: Year
+    #    field: date
+    #    # groups items based on the value matched by the pattern
+    #    pattern: \d{4}
+  - name: pages
+    label: Pages
+    folder: src/pages
+    create: true # Allow users to create new documents in this collection
+    fields: # The fields for each document, usually in front matter
+      - {label: "Layout", name: "layout", widget: "hidden", default: "blog"}
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Publish Date", name: "date", widget: "datetime"}
+      - {label: "Body", name: "body", widget: "markdown"}
+      - widget: "select"
+        label: "Menu location"
+        name: "menuLocation"
+        description: 'If this page should be listed in a menu choose which one. Select "none"
+          if it should not be in a menu. '
+        options: ["none", "top", "bottom"]
+        default: []

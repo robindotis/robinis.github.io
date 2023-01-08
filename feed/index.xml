@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet href="/feed/pretty-feed-v3.xsl" type="text/xsl"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+	<title>robin.is</title>
+	<subtitle>writing, travelling, seeing, coding and walking the 🐕‍🦺</subtitle>
+	
+	<link href="https://www.robin.is/feed/index.xml" rel="self"/>
+	<link href="https://www.robin.is/" rel="alternate" type="text/html"/>
+	<updated>2023-01-08T07:30:00Z</updated>
+	<id>https://www.robin.is/</id>
+	<author>
+		<name>robindotis</name>
+		<email>admin@robin.is</email>
+	</author>
+	
+	
+	<entry>
+		<title>Ski pistes in climate change</title>
+		<link href="https://www.robin.is/posts/2023/ski-pistes/"/>
+		<updated>2023-01-08T07:30:00Z</updated>
+		<id>https://www.robin.is/posts/2023/ski-pistes/</id>
+		<content type="html">&lt;p&gt;We were up in Pamporovo recently, staying at the lovely &lt;a href=&quot;https://malina-pamporovo.com/en/&quot;&gt;Villa Malina&lt;/a&gt;. I don&#39;t ski, so I&#39;ve never really seen ski pistes in the winter. There was no snow at all in the surrounding mountains. Yet a piste was there, created with artificial snow and being used by a lot of skiers. I know know how they market these things.&lt;/p&gt;
+&lt;h2&gt;The marketing blurb&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&quot;https://www.robin.is/assets/images/2023/ski-piste-1.webp&quot; alt=&quot;White ski piste cutting through the forest in the hills&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://www.robin.is/assets/images/2023/ski-piste-2.webp&quot; alt=&quot;Looking on to the back of Skiers just before they go over the edge of the ski slope&quot; /&gt;&lt;/p&gt;
+&lt;h2&gt;The reality&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&quot;https://www.robin.is/assets/images/2023/ski-piste-3.webp&quot; alt=&quot;View over the mountains with no snow except for the white ski pistes&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://www.robin.is/assets/images/2023/ski-piste-4.webp&quot; alt=&quot;View of the radio tower at Snejanka, with blue sky background and brown fields in the foreground, except for the ski piste&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://www.robin.is/assets/images/2023/ski-piste-5.webp&quot; alt=&quot;View over the snowless mountains from the top of the tower. In the far distance there are snow topped mountains&quot; /&gt;&lt;/p&gt;
+&lt;h2&gt;Villa Malina&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&quot;https://www.robin.is/assets/images/2023/ski-piste-6.webp&quot; alt=&quot;The moutain chalets at night lit up by lights on their terrace&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://www.robin.is/assets/images/2023/ski-piste-7.webp&quot; alt=&quot;A set of mountain chalets overlooked by tall pine trees behind them and dry grass in the foreground&quot; /&gt;&lt;/p&gt;
+</content>
+	</entry>
+	
+	<entry>
+		<title>Clacks Overhead</title>
+		<link href="https://www.robin.is/posts/2022/clacks-overhead/"/>
+		<updated>2022-12-31T12:59:59Z</updated>
+		<id>https://www.robin.is/posts/2022/clacks-overhead/</id>
+		<content type="html">&lt;p&gt;Discworld author Terry Pratchett died in 2015. His books were hugely popular, making him one of the most successfull authors of all time. To remember him, a &lt;a href=&quot;https://www.reddit.com/r/discworld/comments/2yt9j6/gnu_terry_pratchett/&quot;&gt;group of redditers&lt;/a&gt; came up with the idea of implementing the clacks  system from the book Going Postal in today&#39;s internet. This can done by adding the following bit of code to the &lt;code&gt;head&lt;/code&gt; tag in any HTML file:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&amp;lt;meta http-equiv=&amp;quot;X-Clacks-Overhead&amp;quot; content=&amp;quot;GNU Terry Pratchett&amp;quot; /&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;It can also be implemented by configuring web servers to send an appropriate page header. In fact this is the better option, but I am not able to configure the web server, as I am using GitHub Pages to host the site.&lt;/p&gt;
+&lt;p&gt;I had implemented this years ago, whilst I still had my site running on Wordpress. After moving to a static site, I had forgotten about this and not added the clacks meta tag. Well, now it&#39;s back - just in time for the new year!&lt;/p&gt;
+&lt;p&gt;More information on the clacks headers is available here:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.gnuterrypratchett.com/&quot;&gt;http://www.gnuterrypratchett.com/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The site also lists a number of plugins which can notify you if you are visiting a site which has implemented the clacks header.&lt;/p&gt;
+</content>
+	</entry>
+	
+	<entry>
+		<title>Look to Windward</title>
+		<link href="https://www.robin.is/posts/2022/look-to-windward/"/>
+		<updated>2022-12-30T22:11:11Z</updated>
+		<id>https://www.robin.is/posts/2022/look-to-windward/</id>
+		<content type="html">&lt;h2&gt;by Iain M Banks&lt;/h2&gt;
+&lt;p&gt;One of the easier to read culture novels. Told in an intersting way and without a predictable outcome whilst reading it, nor a clear answer to who did (or didn&#39;t) do it. What continues to impress is the way Iain M Banks is able to really drill home timeless infinity that defines our galaxy and the universe beyond it.&lt;/p&gt;
+&lt;p&gt;The culture, whilst one of the more advanced and expansive civilisations in the galaxy, are portrayed as really just in their mid-20s. Very clever and important, but really not quite able to compete with those even more advanced.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://www.robin.is/assets/images/windward.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+</content>
+	</entry>
+	
+	<entry>
+		<title>Keywords meta tag</title>
+		<link href="https://www.robin.is/posts/2022/keywords/"/>
+		<updated>2022-12-27T08:58:47Z</updated>
+		<id>https://www.robin.is/posts/2022/keywords/</id>
+		<content type="html">&lt;p&gt;I just realised that on my posts I am not putting the tags in the &amp;quot;keywords&amp;quot; meta tag.  It&#39;s clear to me that search engines no longer use the keywords meta tag for indexing. Nevertheless, it feels like the right thing to do to me. I am not interested in search engine optimisation, at all. I would however like my site to be an example of good web practice.&lt;/p&gt;
+&lt;p&gt;So whilst populating the keywords meta tag is probably a waste of time in most cases, who knows, maybe in the future some crawler or indexer will use it for something. Or some researcher might find them usefull for cross checking against the content. And in any case, it&#39;s one line of code in &lt;a href=&quot;https://www.11ty.dev/&quot;&gt;eleventy&lt;/a&gt;:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&amp;lt;meta name=&amp;quot;keywords&amp;quot; content=&amp;quot;posts,general,keywords,code,tags,information science,web&amp;quot; /&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Maybe I am old school, but I don&#39;t think we should be avoiding useful meta tags just because Google is not interested in them. In fact Google should maybe start paying attention to them, and rate sites down who&#39;s meta tag keywords don&#39;t match its own algorithm&#39;s keywords for the page.&lt;/p&gt;
+</content>
+	</entry>
+	
+	<entry>
+		<title>Fixing blinds</title>
+		<link href="https://www.robin.is/posts/2022/fixing-blinds/"/>
+		<updated>2022-12-26T18:45:11Z</updated>
+		<id>https://www.robin.is/posts/2022/fixing-blinds/</id>
+		<content type="html">&lt;p&gt;So today I fixed the third set of blinds in the top floor rooms since moving in five years ago. One room to go and then we should be good for a couple of decades!&lt;/p&gt;
+&lt;p&gt;However, each time I fix them, I seem to take longer and longer to get the logic right so that the blinds are up when the strap is down and rolled around the spring at the bottom. So here are the steps I did this time, for my own future reference&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Thread the strap through the little roller thingy as well as the slit on the right hand side.&lt;/li&gt;
+&lt;li&gt;Manually roll the blinds so they are all the way up. This is quite tough when they are fully down as you have to lift the weight of the entire blinds.&lt;/li&gt;
+&lt;li&gt;Get a little helper to hold the blinds in place, whilst you thread the strap through the wheel on the right hand side and fix it in place by tying a knot at the end.&lt;/li&gt;
+&lt;li&gt;Let the blinds down, the strap should wind itself around the wheel.&lt;/li&gt;
+&lt;li&gt;Tug on the strap to make sure the blinds go up as you pull the strap down.&lt;/li&gt;
+&lt;li&gt;Undo the box with the spring at the bottom and wind it up so the spring is tight.&lt;/li&gt;
+&lt;li&gt;Hold everything roughly at the height where the box is attached to the wall.&lt;/li&gt;
+&lt;li&gt;Making sure the strap isn&#39;t twisted anywhere along its length, attach the strap on the little knob (cut a slit in the strap for this).&lt;/li&gt;
+&lt;li&gt;Put the spring mechanism back in the box and screw the box to the wall.&lt;/li&gt;
+&lt;li&gt;Job done, have a beer! 🍺&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;And here&#39;s a picture of the blinds half up, to prove that they now work.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://www.robin.is/assets/images/blinds.jpg&quot; alt=&quot;Blinds half way down the window at night, with reflections of the room in the window&quot; /&gt;&lt;/p&gt;
+</content>
+	</entry>
+	
+	<entry>
+		<title>Walferdange Circular Walk</title>
+		<link href="https://www.robin.is/posts/2022/walferdange-circular-walk/"/>
+		<updated>2022-12-26T14:00:00Z</updated>
+		<id>https://www.robin.is/posts/2022/walferdange-circular-walk/</id>
+		<content type="html">&lt;p&gt;An interesting 10km walk which starts off walking along a roman well system bringing water to the old roman villa below, who&#39;s remains you see after about 2km. This first part of the walk is flat and then it&#39;s downhill. Which means that the following two to three kilometres are uphill, and quite steep at times!&lt;/p&gt;
+&lt;p&gt;It&#39;s a good boxing day activity to walk off the turkey and trimmings from the day before! And the dog enjoyed it. Even she was tired by the end.&lt;/p&gt;
+&lt;p&gt;Angie, all eager at the start.&lt;br /&gt;
+&lt;img src=&quot;https://www.robin.is/assets/images/circular-walfer-angie.jpg&quot; alt=&quot;White golden retriever waiting on an winter path&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;Trees near the start of the walk.&lt;br /&gt;
+&lt;img src=&quot;https://www.robin.is/assets/images/circular-walfer-trees.jpg&quot; alt=&quot;Trees in the background, with moss covering the ground in the middle of the photo&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;Roman well system, following the underground stream that brough water to the roman villa at the bottom.&lt;br /&gt;
+&lt;img src=&quot;https://www.robin.is/assets/images/circular-walfer-wells.jpg&quot; alt=&quot;Round green metal structures covering an old well system allong path&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;The ruins of the roman villa.&lt;br /&gt;
+&lt;img src=&quot;https://www.robin.is/assets/images/circular-walfer-villa.jpg&quot; alt=&quot;Looking over the outline of a Roman villa clearly showing the layout of the rooms and paths.&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;Looking down on the Alzette valley.&lt;br /&gt;
+&lt;img src=&quot;https://www.robin.is/assets/images/circular-walfer-bench.jpg&quot; alt=&quot;Looking out over the back of a bench, through some trees to the valley beyond&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;The route.&lt;br /&gt;
+&lt;img src=&quot;https://www.robin.is/assets/images/circular-walfer-map.jpg&quot; alt=&quot;Map of the route&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;This photo, from 26th November 1910 seems to be a trail that you can follow, which forms a part of the circular walk. I don&#39;t know the reason or the history behind the girls. Are they sisters? It reminded me of the two girls in &lt;a href=&quot;https://www.imdb.com/title/tt0081505/&quot;&gt;The Shining&lt;/a&gt;, so I am glad it was still light when I did the walk!&lt;br /&gt;
+&lt;img src=&quot;https://www.robin.is/assets/images/circular-walfer-girls.jpg&quot; alt=&quot;Black and white photo of six girls dressed in white dresses, in descending order of height from left to right&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;After doing some further research these are in fact &lt;a href=&quot;https://www.steinsel.lu/sports-loisirs/sentiers-de-randonnees/circuit-historique-du-grunewald/&quot;&gt;six princesses (in french)&lt;/a&gt; and if you follow the route you can learn all about them... That&#39;s for another time.&lt;/p&gt;
+</content>
+	</entry>
+	
+	<entry>
+		<title>Chance</title>
+		<link href="https://www.robin.is/posts/2022/chance/"/>
+		<updated>2022-12-24T16:11:11Z</updated>
+		<id>https://www.robin.is/posts/2022/chance/</id>
+		<content type="html">&lt;p&gt;I was going through &lt;a href=&quot;https://www.theguardian.com/lifeandstyle/2022/dec/24/can-you-outwit-margaret-atwood-the-bumper-books-quiz-of-2022&quot;&gt;a quiz&lt;/a&gt; today in which I realised, after 3 of 50 questions, I had no idea about any of the answers. I thought I&#39;d keep going, on average I should get between 12 and 13 correct. As I was going through it, I thought I got almost all of them wrong. Turns out that &amp;quot;almost&amp;quot; was about one in four.  I got exactly the amount correct that a monkey would.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://www.robin.is/assets/images/chance.jpg&quot; alt=&quot;12 out of 50 result in Guardian quiz&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;Glad to see that the laws of averages are still alive and kicking in 2022.&lt;/p&gt;
+&lt;p&gt;Merry Christmas!&lt;/p&gt;
+</content>
+	</entry>
+	
+	<entry>
+		<title>Stylesheet Switching Part 3</title>
+		<link href="https://www.robin.is/posts/2022/stylesheet-switching-3/"/>
+		<updated>2022-12-22T17:00:11Z</updated>
+		<id>https://www.robin.is/posts/2022/stylesheet-switching-3/</id>
+		<content type="html">&lt;p&gt;As noted in my &lt;a href=&quot;https://www.robin.is/posts/2022/stylesheet-switching-2/&quot;&gt;previous post&lt;/a&gt;, I finished my stylesheet switcher and &lt;a href=&quot;https://gist.github.com/robindotis/d1b33ab257e5e6970765b8b865e94bf5&quot;&gt;created gist&lt;/a&gt; to allow others to easily copy and implement it. Then I decided to re-implement this using object oriented code, rather than procedural code.&lt;/p&gt;
+&lt;p&gt;Well that job is now done and running live on this site. I even added a new style, Miami, to the site to see how easily new styles can be implemented. It&#39;s literally one line of code:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;themeSwitch.addTheme(new theme(&amp;quot;Miami&amp;quot;,&amp;quot;miami.css&amp;quot;));
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Plus of course all the CSS to actualy created the styling!&lt;/p&gt;
+&lt;p&gt;Of course, the code is also available in a gist for my &lt;a href=&quot;https://gist.github.com/robindotis/54786199b5d86f5085e5c55337d6e0d0&quot;&gt;object oriented theme picker&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Enjoy. 😎&lt;/p&gt;
+</content>
+	</entry>
+	
+	<entry>
+		<title>Stylesheet Switching Part 2</title>
+		<link href="https://www.robin.is/posts/2022/stylesheet-switching-2/"/>
+		<updated>2022-12-19T22:07:04Z</updated>
+		<id>https://www.robin.is/posts/2022/stylesheet-switching-2/</id>
+		<content type="html">&lt;p&gt;Having got my &lt;a href=&quot;https://www.robin.is/posts/2022/stylesheet-switching/&quot;&gt;stylesheet switcher working&lt;/a&gt;, I decided to improve the script a little and try to make it easier to implement. The script now not only adds in the required buttons to switch the stylesheet, but also adds the actual stylesheet links into the header, except for the default style. This is defined as the first style in array of stylesheets that is used to setup the buttons. By ensuring the default style has to be added manually, I ensure that the site will be styled even if javascript does not work.&lt;/p&gt;
+&lt;p&gt;The script was also imrpoved so that the button for the selected stylesheet was disabled, so it couldn&#39;t be clicked again.&lt;/p&gt;
+&lt;p&gt;I then moved all the scripts into a single javascript file. Now the whole thing is very easy to initialise. You simply need to defined three variables: themeCss (an array of css files representing the themes), themeName (an array of names belong to themes), themeId (the id of the element within which the buttons should be created). For example:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;var themeCss = [&#39;default.css&#39;,&#39;high.css&#39;,&#39;plain.css&#39;,&#39;olden.css&#39;];
+var themeName = [&#39;Default&#39;,&#39;High Contrast&#39;,&#39;Plain&#39;,&#39;Olden&#39;];
+var themeId = &amp;quot;themeSwitch&amp;quot;;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;The &lt;a href=&quot;https://gist.github.com/robindotis/d1b33ab257e5e6970765b8b865e94bf5&quot;&gt;gist I wrote about the switcher on GitHub&lt;/a&gt;, has been update to include these latest changes. Probably it can be simplified and generalised even further.&lt;/p&gt;
+</content>
+	</entry>
+	
+	<entry>
+		<title>Stylesheet Switching</title>
+		<link href="https://www.robin.is/posts/2022/stylesheet-switching/"/>
+		<updated>2022-12-18T11:07:04Z</updated>
+		<id>https://www.robin.is/posts/2022/stylesheet-switching/</id>
+		<content type="html">&lt;p&gt;I spent the last couple of days playing around with stylesheet switching (theming) and also implementing &lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-color-scheme&quot;&gt;prefers-color-scheme&lt;/a&gt; on the default theme in order to a dark mode.&lt;/p&gt;
+&lt;p&gt;I also added in a couple of fonts recently released by GitHub: &lt;a href=&quot;https://github.com/mona-sans&quot;&gt;Mona Sans and Hubo Sans&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;So far I have managed to have no JavaScript on this site. Unfortunately implementing theming on a static site is simply not possible without JavaScript. My aim therefore was to keep JavaScript to a minimum. I managed it with about 10 lines of code, including using local storage to remember the user&#39;s prefered theme.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;    function swapStyleSheet(sheet){
+        var styles = document.querySelectorAll(&#39;link[rel~=&amp;quot;stylesheet&amp;quot;]&#39;);
+        var i;
+        for (i = 0; i &amp;lt; styles.length; ++i) {
+            if( !styles[i].href.endsWith(&amp;quot;structure.css&amp;quot;) &amp;amp;&amp;amp; 
+                !styles[i].href.endsWith(&amp;quot;style.css&amp;quot;) &amp;amp;&amp;amp; 
+                !styles[i].href.endsWith(&amp;quot;fonts.css&amp;quot;)) {
+                if(styles[i].href.endsWith(sheet)) {
+                    styles[i].rel = &amp;quot;stylesheet&amp;quot;;
+                }
+                else {
+                    styles[i].rel = &amp;quot;alternate stylesheet&amp;quot;;
+                }
+            }
+        }
+        localStorage.setItem(&amp;quot;sheet&amp;quot;,sheet);
+    }
+    if(localStorage.getItem(&#39;sheet&#39;)) {
+        swapStyleSheet(localStorage.getItem(&#39;sheet&#39;));
+    }
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;With thanks to info I found on these links:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Web/-CSS/Attribute_selectors&quot;&gt;Attribute Selectors on MDN&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelectorAll&quot;&gt;QuerySelectorAll on MDN&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://stackoverflow.com/questions/2694640/find-an-element-in-dom-based-on-an-attribute-value&quot;&gt;Element in DOM on stackoverflow&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Currenty themes are switched using the buttons under the header, as you can see above. I need to style them a bit better, but the basic button code is:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&amp;lt;button type=&amp;quot;button&amp;quot; onClick=&amp;quot;swapStyleSheet(&#39;/assets/css/default.css&#39;)&amp;quot;&amp;gt;Default&amp;lt;/button&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;I also &lt;a href=&quot;https://gist.github.com/robindotis/d1b33ab257e5e6970765b8b865e94bf5&quot;&gt;wrote a gist about the switcher on GitHub&lt;/a&gt;, in case others find this useful. Probably it can be simplified and generalised further.&lt;/p&gt;
+</content>
+	</entry>
+</feed>

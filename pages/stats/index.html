@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+  <head>
+    <meta charset="UTF-8">
+    <!-- See: https://www.w3schools.com/css/css_rwd_viewport.asp-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-Clacks-Overhead" content="GNU Terry Pratchett">
+    <title>robin.is... My Stats</title>
+    <meta name="description" content="writing, travelling, seeing, coding and walking the 🐕‍🦺">
+    
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+    <meta property="og:locale" content="en_GB">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="robin.is... My Stats">
+    <meta property="og:description" content="writing, travelling, seeing, coding and walking the 🐕‍🦺">
+    <meta property="og:url" content="https://www.robin.is/pages/stats/">
+    <meta property="og:site_name" content="robin.is">
+    <meta property="og:image" content="">
+    <link rel="canonical" href="https://www.robin.is/pages/stats/">
+    <link rel="me" href="https://github.com/robindotis/">
+    <link rel="icon" href="/assets/images/cw.jpg" type="image/jpeg" sizes="50x50">
+    <link rel="preload" href="/assets/fonts/Mona-Sans.woff2" as="font" type="font/woff2" crossorigin>
+    
+    <link rel="stylesheet" href="/assets/css/fonts.css" media="all">
+    <link rel="stylesheet" href="/assets/css/structure.css" media="all">
+    <link rel="stylesheet" href="/assets/css/style.css" media="all">
+    <link rel="stylesheet" href="/assets/css/default.css" media="all">
+    <link rel="alternate" type="application/rss+xml" title="robin.is RSS" href="/feed/">
+    <link rel="alternate" href="/feed/index.xml" type="application/atom+xml" title="robin.is">
+    <link rel="alternate" href="." type="application/json" title="robin.is">
+    <script src="/assets/js/theme.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#site-content">Skip to the content</a>
+    <header class="masthead">
+        <div class="header-area">
+            <div id="themeSwitch">                
+            </div>
+            <div class="header-title">
+            <span class="sitetitle">
+                <img class="logo" src="/assets/images/cw.jpg" alt="">
+                <a href="/" class="u-url">robin.is</a>
+            </span>
+            <nav class="subtitle" aria-label="Main">
+                <a href="/writing/" >writing</a>, 
+                <a href="/travelling/" >travelling</a>, 
+                <a href="/seeing/" >seeing</a>, 
+                <a href="/coding/" >coding</a>, 
+                <a href="/reading/" >reading</a> and 
+                <a href="/walking/" >walking</a> the 
+                <a href="/archive/tagged/angie/"  >dog</a>🐕‍🦺. Read 
+                    his 374 <a href="/archiving/" >posts</a> and find out more
+                <a href="/about/" >about</a> him.
+
+            </nav>
+            </div>
+        </div>
+    </header>
+    <main id="site-content"  class="tmpl-page">
+        <div class="main-content">
+            
+<article>
+  <header>
+    <h1>My Stats</h1> 
+  </header>
+  <ul>
+<li><a href="#weight">Weight</a></li>
+<li><a href="#sugarTest">Blood sugar, test</a></li>
+<li><a href="#sugarSelf">Blood sugar, self</a></li>
+<li><a href="#chol">Cholestorol</a></li>
+</ul>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/d3"></script>
+<script src="https://cdn.jsdelivr.net/npm/luxon@^2"></script>
+<script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-luxon@^1"></script>
+<h2><a id="weight">Weight</a></h2>
+<p><canvas id="weightChart" width="400" height="400"></canvas></p>
+<h2><a id="sugarTest">Blood sugar, test</a></h2>
+<p><canvas id="sugarChartTest" width="400" height="200"></canvas></p>
+<h2><a id="sugarSelf">Blood sugar, self</a></h2>
+<p><canvas id="sugarChartSelf" width="400" height="200"></canvas></p>
+<h2><a id="chol">Cholestorol</a></h2>
+<p><canvas id="cholChart" width="400" height="200"></canvas></p>
+<script>
+Promise.all([
+d3.csv('/assets/csv/stats-weight.csv'),
+d3.csv('/assets/csv/stats-sugar.csv'),
+d3.csv('/assets/csv/stats-sugar-self.csv'),
+d3.csv('/assets/csv/stats-chol.csv')
+]).then(function([weight,sugarT,sugarS,chol]){
+makeChartW(weight);
+makeChartST(sugarT);
+makeChartSS(sugarS);
+makeChartC(chol);
+});
+
+/*=====*/
+/*START WEIGHT*/
+/*=====*/
+function makeChartW(wt) {
+var ctxW = document.getElementById('weightChart');
+var labels = wt.map(function(d) {return d.date});
+var kg = wt.map(function(d) {return d.weight});
+
+    var chartW = new Chart(ctxW, {
+        type: 'line',
+        data: {
+            labels: labels,
+            datasets: [{
+                label: 'Weight (kg)',
+                data: kg,
+                backgroundColor: '#ff0000',
+                borderColor: '#ff0000',
+            }]
+        },
+         options: {
+            maintainAspectRatio: false,
+            scales: {
+                x: {
+                    type: 'time'
+                },
+                y: {
+                    min: 75,
+                    max: 90
+                }
+            }
+        }
+
+});
+};
+/*=====*/
+/*END WEIGHT*/
+/*=====*/
+
+/*=====*/
+/*START SUGAR TEST*/
+/*=====*/
+function makeChartST(bs) {
+var ctxST = document.getElementById('sugarChartTest');
+var labels = bs.map(function(d) {return d.date});
+var hb = bs.map(function(d) {return d.hb});
+var gl = bs.map(function(d) {return d.gl});
+var covid = bs.map(function(d) {return d.covid});
+
+    var chartS = new Chart(ctxST, {
+        type: 'line',
+        data: {
+            labels: labels,
+            datasets: [{
+                label: 'Three month Hb glyc. (%)',
+                data: hb,
+                backgroundColor: '#0000ff',
+                borderColor: '#0000ff',
+                yAxisID: 'y',
+            },
+            {
+                label: 'Morning blood sugar (mg/dL)',
+                data: gl,
+                backgroundColor: '#00ff00',
+                borderColor: '#00ff00',
+                yAxisID: 'y1',
+            },
+            {
+                label: 'Covid line',
+                data: covid,
+                backgroundColor: '#ff0000',
+                borderColor: '#ff0000',
+                yAxisID: 'y',
+            }],
+        },
+        options: {
+            scales: {
+                x: {
+                    type: 'time',
+                    min: '2011-11-01',
+                },
+                y: {
+                    min: 0,
+                    max: 10,
+                    position: 'left',
+                },
+                y1: {
+                    min: 50,
+                    max: 200,
+                    position: 'right',
+                    grid: {
+                        drawOnChartArea: false, // only want the grid lines for one axis to show up
+                    },            
+                }
+            }
+        }
+    });
+};
+/*=====*/
+/*END SUGAR TEST*/
+/*=====*/
+
+/*=====*/
+/*START SUGAR SELF*/
+/*=====*/
+function makeChartSS(bss) {
+var ctxSS = document.getElementById('sugarChartSelf');
+var labels = bss.map(function(d) {return d.date});
+var gl = bss.map(function(d) {return d.gl});
+var notes = bss.map(function(d) {return d.notes});
+
+    var chartS = new Chart(ctxSS, {
+        type: 'line',
+        data: {
+            labels: labels,
+            datasets: [{
+                label: 'Morning blood sugar - self (mg/dL)',
+                data: gl,
+                backgroundColor: '#00ff00',
+                borderColor: '#00ff00',
+                yAxisID: 'y',
+            }],
+        },
+        options: {
+            scales: {
+                x: {
+                    type: 'time',
+                    min: '2022-09-27',
+                },
+                y: {
+                    min: 80,
+                    max: 200,
+                }
+            }
+        }
+    });
+};
+/*=====*/
+/*END SUGAR SELF*/
+/*=====*/
+
+/*=====*/
+/*START CHOLESTOROL*/
+/*=====*/
+function makeChartC(ch) {
+var ctxC = document.getElementById('cholChart');
+var dates = ch.map(function(d) {return d.date});
+var tot = ch.map(function(d) {return d.tot});
+var ldl = ch.map(function(d) {return d.ldl});
+var hdl = ch.map(function(d) {return d.hdl});
+
+    var chartC = new Chart(ctxC, {
+        type: 'line',
+        data: {
+            labels: dates,
+            datasets: [{
+                label: 'Total',
+                data: tot,
+                backgroundColor: '#0000ff',
+                borderColor: '#0000ff',
+                yAxisID: 'y',
+            },
+            {
+                label: 'LDL (bad)',
+                data: ldl,
+                backgroundColor: '#ff0000',
+                borderColor: '#ff0000',
+                yAxisID: 'y',
+            },        
+            {
+                label: 'HDL (good)',
+                data: hdl,
+                backgroundColor: '#00ff00',
+                borderColor: '#00ff00',
+                yAxisID: 'y',
+            }],
+        },
+        options: {
+            scales: {
+                x: {
+                    type: 'time',
+                    min: '2011-11-01',
+                },
+                y: {
+                    min: 0,
+                    max: 250,
+                },
+            }
+        }
+    });
+
+};
+/*=====*/
+/*END CHOLESTOROL*/
+/*=====*/
+</script>
+ 
+</article>
+
+        </div> 
+    </main>
+    <footer>
+        <div class="footer-area">
+            <div class="copy">
+                <a href="https://www.robin.is/">https://www.robin.is/</a> &copy; 1998 - 2023
+                <br>
+                <span class="emojis">👍</span>  
+            </div> 
+            <div class="power">
+                <div class="footer-nav">
+                    <nav aria-label="Footer">
+                        <img src="/assets/images/rss-logo.png" alt="">&nbsp;<a class="a11y-statement" href="/feed/">RSS</a>
+                        
+                                | <a href="/pages/accessibility/">Accessibility</a>
+                    </nav>
+                </div>
+                <br>
+                Powered with HTML, CSS and <a href="https://www.a11yproject.com/">a11y</a>.
+            </div>
+        </div>
+    </footer>
+    <!-- Current page: /pages/stats/ -->
+  </body>
+</html>

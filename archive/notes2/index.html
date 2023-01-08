@@ -1,0 +1,205 @@
+<h1>TO DO List</h1>
+<ol>
+<li>Sort out static files of old sites now that moved to netlify (<a href="http://old.contentedweb.com">old.contentedweb.com</a> / <a href="http://robinmassart.com">robinmassart.com</a>, eg sokoban page referenced in recent post)</li>
+<li>Remove all content from nearlyfreespeech and delete site =&gt; only used now as domain registrar</li>
+<li>How to handle h2 tags in post list (same level as post title)
+<ol>
+<li>If want to fix, in excerpt h2 has to be made h3. Else leave. Adactio also has this problem. The heading levels are OK on the actual post page</li>
+</ol>
+</li>
+<li>Archive by year</li>
+</ol>
+<h1>DONE list</h1>
+<ol>
+<li>WONT DO - now using forestry and Netlify to manage this workflow. Run publishing scripts on NFS, so I can write content on github and publish it to my site using the NFS interface (ie form wnywhere)
+<ol>
+<li>Place all eleventy files on NFS (maybe in protected or private as per the topics below)</li>
+<li>Run &quot;eleventy --serve&quot;</li>
+<li>Then run publish.ps1 equivalent script in bash</li>
+<li><a href="https://members.nearlyfreespeech.net/forums/viewtopic.php?t=10695&amp;highlight=bin">https://members.nearlyfreespeech.net/forums/viewtopic.php?t=10695&amp;highlight=bin</a></li>
+<li><a href="https://members.nearlyfreespeech.net/forums/viewtopic.php?t=7793&amp;highlight=run+shell+command">https://members.nearlyfreespeech.net/forums/viewtopic.php?t=7793&amp;highlight=run+shell+command</a></li>
+</ol>
+</li>
+<li>WONT DO - no longer needed, stats are on netlify, at a price. Exlcude awstats pages from awstats stats</li>
+<li>Fix image floats and paragraph &quot;clear all&quot;??</li>
+<li>Bridgy - simply click on the services you want linked, added:
+<ol>
+<li>Twitter</li>
+<li>Flickr</li>
+<li>Github</li>
+<li>It posts to <a href="http://webmention.io">webmention.io</a> automatically</li>
+</ol>
+</li>
+<li>Manage log roatation - DONE monthly</li>
+<li>Make title not H1. H1 should be the title of the page, not the website.</li>
+<li>Add git commands into publish script with command line message entry</li>
+<li>Run awstats on publishing (add command into publishing script)</li>
+<li>Turn on stats on NFS
+<ol>
+<li><a href="https://members.nearlyfreespeech.net/wiki/HowTo/AWstats">https://members.nearlyfreespeech.net/wiki/HowTo/AWstats</a></li>
+<li>Followed steps on that wiki page.</li>
+<li>Used command<br>
+/usr/local/www/awstats/tools/awstats_buildstaticpages.pl -config=nfsn -update -dir=/home/public/awstats.contentedweb.com<br>
+To run awstats</li>
+<li>Create URL <a href="http://awstats.contentedweb.com">awstats.contentedweb.com</a> and move awstats output there (and adapt htaccess file)</li>
+<li>For yearly / monthly historical data run the with -month and -year parameters and update folder path in -dir option<br>
+/usr/local/www/awstats/tools/awstats_buildstaticpages.pl -config=nfsn -update  -month=01 -year=2021 -dir='/home/public/awstats.contentedweb.com/202101'</li>
+</ol>
+</li>
+<li>Webmentions</li>
+<li>Template for archive section. Helpful links on template chaining.
+<ol>
+<li><a href="https://mozilla.github.io/nunjucks/templating.html">https://mozilla.github.io/nunjucks/templating.html</a></li>
+<li><a href="https://github.com/11ty/eleventy/issues/853">https://github.com/11ty/eleventy/issues/853</a></li>
+<li><a href="https://www.11ty.dev/docs/layout-chaining/#addendum-about-existing-templating-features">https://www.11ty.dev/docs/layout-chaining/#addendum-about-existing-templating-features</a></li>
+<li><a href="https://github.com/11ty/eleventy/issues/834#issuecomment-569474008">https://github.com/11ty/eleventy/issues/834#issuecomment-569474008</a></li>
+</ol>
+</li>
+<li>Archive by Tags</li>
+<li>Pagination.</li>
+<li>Contrast check on circled numbers</li>
+<li>Better colour for subtitle</li>
+<li>Fix headings. Site title = h1, page title = h2, content starts at h3 (in md files)</li>
+<li>Move heading tag outisde of masthead tag (see <a href="https://webaim.org/techniques/semanticstructure/">https://webaim.org/techniques/semanticstructure/</a>)</li>
+<li>Fix subtitle (see zeldman and flex boxes if needed)</li>
+<li>Move top nav menu slightly higher</li>
+</ol>
+<h1>commands</h1>
+<p>Folder location path<br>
+cd &quot;C:\Users\atana\OneDrive\Documents (rmassart)\Work\Websites\eleventy\<a href="http://contentedweb.com">contentedweb.com</a>&quot;</p>
+<p>start server<br>
+npx @11ty/eleventy --serve</p>
+<h1>Publishing and SSL</h1>
+<p><strong>DONE</strong><br>
+Get SSL cert from there: <a href="https://letsencrypt.org/">https://letsencrypt.org/</a><br>
+See this for help: <a href="https://members.nearlyfreespeech.net/forums/viewtopic.php?t=10521&amp;highlight=tls">https://members.nearlyfreespeech.net/forums/viewtopic.php?t=10521&amp;highlight=tls</a><br>
+Simply connected to NFS using SSH and then ran <a href="http://tls-setup.sh">tls-setup.sh</a> from public folder (eg <a href="https://members.nearlyfreespeech.net/forums/viewtopic.php?t=10769&amp;highlight=tls">https://members.nearlyfreespeech.net/forums/viewtopic.php?t=10769&amp;highlight=tls</a>)</p>
+<h1>SSH setup</h1>
+<p><strong>DONE</strong><br>
+SSH keys are here: C:\Users\atana.ssh<br>
+To convert public key to OpenSSH format for NFS use PuTTy<br>
+Then configure profile on NFS website</p>
+<h1>Publishing Process (see publish.ps1):</h1>
+<p><strong>DONE</strong></p>
+<ol>
+<li>Locally zip <em>contents</em> of _site folder (&quot;zip _site site.zip&quot;)</li>
+<li>Delete remote folder (ssh <a href="mailto:rmassart_staticrobinmassart@ssh.phx.nearlyfreespeech.net">rmassart_staticrobinmassart@ssh.phx.nearlyfreespeech.net</a> rm -rf <a href="http://www.contentedweb.com/*">www.contentedweb.com/*</a>) . See here: <a href="https://www.siteground.com/tutorials/ssh/deleting/">https://www.siteground.com/tutorials/ssh/deleting/</a></li>
+<li>Copy to remote server using scp (scp -ra /path/to/local/storage user@remote.host:/path/to/copy/  =&gt; scp -ra ./site.zip user@remote.host:/contentedweb.com/site.zip). See here: <a href="https://stackoverflow.com/questions/17828236/how-to-copy-a-directory-from-local-machine-to-remote-machine">https://stackoverflow.com/questions/17828236/how-to-copy-a-directory-from-local-machine-to-remote-machine</a></li>
+<li>Unzip site.zip (ssh <a href="mailto:rmassart_staticrobinmassart@ssh.phx.nearlyfreespeech.net">rmassart_staticrobinmassart@ssh.phx.nearlyfreespeech.net</a> unzip <a href="http://www.contentedweb.com/site.zip">www.contentedweb.com/site.zip</a> ) see here: <a href="https://www.siteground.com/tutorials/ssh/archives/">https://www.siteground.com/tutorials/ssh/archives/</a></li>
+<li>Remove zip file</li>
+</ol>
+<p><strong>To do</strong></p>
+<ol>
+<li>Maybe. Probably not worht it. Add git integration to <strong>optionally</strong> add, commit and push, before publishing</li>
+<li>Set folder permissions, if needed one day for security</li>
+</ol>
+<p>Command line execution: <strong>powershell.exe -ExecutionPolicy Bypass -File publish.ps1</strong></p>
+<p>[Not so good: And see this blog post: <a href="https://kevingimbel.de/blog/2017/01/deploy-a-static-site-with-git/">https://kevingimbel.de/blog/2017/01/deploy-a-static-site-with-git/</a>]</p>
+<h1>ContentedWeb (CW) vs <a href="http://robinmassart.com">robinmassart.com</a> (RM)</h1>
+<ul>
+<li>Ditch CW???? <strong>NO</strong></li>
+<li>CW for my general blog about everything, including learning web accessibility, travel, photos, etc.</li>
+<li>RM as a holding page, linking to CW. Maybe also for <strong>private</strong> posts.</li>
+</ul>
+<h2>Decision</h2>
+<p>Blog pulically under <a href="http://contentedweb.com">contentedweb.com</a> (everything, including non web stuff)<br>
+Create a basic cover page site on <a href="http://robinmassart.com">robinmassart.com</a>, linking to <a href="http://contentedweb.com">contentedweb.com</a>.<br>
+Could put private blog posts on <a href="http://robinmassart.com">robinmassart.com</a> if I wanted.</p>
+<h1>webmentions</h1>
+<p><a href="https://mxb.dev/blog/using-webmentions-on-static-sites/">https://mxb.dev/blog/using-webmentions-on-static-sites/</a><br>
+Use this site for example code<br>
+<a href="https://github.com/maxboeck/eleventy-webmentions/tree/master/_data">https://github.com/maxboeck/eleventy-webmentions/tree/master/_data</a></p>
+<p><a href="https://amberwilson.co.uk/blog/grow-the-indieweb-with-webmentions/">https://amberwilson.co.uk/blog/grow-the-indieweb-with-webmentions/</a><br>
+<a href="https://indieweb.org/Micropub">https://indieweb.org/Micropub</a></p>
+<h2>To Do</h2>
+<ol>
+<li>webmention.app to create mentions between RM and CW. Maybe webmention.app is not sending the correct info <a href="http://webmention.io">webmention.io</a>
+<ol>
+<li>Fix problem with entry.content not existing. See error when running 11ty.</li>
+<li><strong>But</strong> need a mention with some content.
+<ol>
+<li>Still not fixed. Removed code from .eleventy.js for now. Probably more to do with how I added the webmention using webmention.app</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+<h2>Done so far</h2>
+<ol>
+<li>Added rel=me link to my flickr account on <a href="http://robinmassart.com">robinmassart.com</a></li>
+<li>Added rel=me link to my github account on <a href="http://contenedweb.com">contenedweb.com</a></li>
+<li>Added <a href="http://robinmassart.com">robinmassart.com</a> as homepage on public gitbuh profile (<a href="mailto:rmassart@yahoo.com">rmassart@yahoo.com</a>)</li>
+<li>Added <a href="http://contentedweb.com">contentedweb.com</a> as homepage on public github profile (<a href="mailto:robinmassart@outlook.com">robinmassart@outlook.com</a>)</li>
+<li><a href="http://Indieauth.com">Indieauth.com</a> working for <a href="http://contentedweb.com">contentedweb.com</a></li>
+<li><a href="http://Indieauth.com">Indieauth.com</a> working for <a href="http://robinmassart.com">robinmassart.com</a></li>
+<li>Registered <a href="http://robinmassart.com">robinmassart.com</a> on <a href="http://webmention.io">webmention.io</a> (which <a href="http://indielogin.com">indielogin.com</a>)</li>
+<li>Registered <a href="http://contentedweb.com">contentedweb.com</a> on <a href="http://webmention.io">webmention.io</a> (which <a href="http://indielogin.com">indielogin.com</a>)</li>
+<li>Both indieauth and indielogin  now have read access to the relevant public profiles on github.</li>
+<li><strong>Webmentions work</strong> for <strong>ContentedWeb</strong> Posted from robinmassart.wordpress.</li>
+<li>Style webmention output on the statis sites</li>
+<li><strong>OK now</strong> webmention.app to create mentions between RM and CW. Maybe webmention.app is not sending the correct info <a href="http://webmention.io">webmention.io</a>
+<ol>
+<li>Need to add h-card to site to populate author properly n webmention. See adactio. =&gt; seems to depend on how the mention is sent to <a href="http://webmention.io">webmention.io</a></li>
+<li>Need to ensure published date is set properly in webmention =&gt; used wm-received when no published.</li>
+</ol>
+</li>
+<li>webmention links can be found here: <a href="https://webmention.io/settings">https://webmention.io/settings</a></li>
+<li>installed the following packages with &quot;npm i..... --save-dev&quot; in order to webmentions working in eleventy *from here <a href="https://github.com/maxboeck/eleventy-webmentions/tree/master/_data">https://github.com/maxboeck/eleventy-webmentions/tree/master/_data</a>)
+<ol>
+<li>lodash</li>
+<li>node-fetch</li>
+<li>dot-env</li>
+<li>sanitize-html</li>
+<li>luxon</li>
+<li>@11ty/eleventy-plugin-rss</li>
+</ol>
+</li>
+</ol>
+<h1>eleventy</h1>
+<p>For menu info<br>
+<a href="https://www.sitepoint.com/getting-started-with-eleventy/">https://www.sitepoint.com/getting-started-with-eleventy/</a><br>
+requires nunjucks: <a href="https://www.11ty.dev/docs/languages/nunjucks/">https://www.11ty.dev/docs/languages/nunjucks/</a></p>
+<p>Navigation plugin:<br>
+npm install @11ty/eleventy-navigation --save-dev</p>
+<p>moment plugin:<br>
+npm i -D moment-timezone</p>
+<p>Good intro:<br>
+<a href="https://github.com/jeromecoupe/iad_eleventy_introduction/blob/master/eleventy_introduction_en.md">https://github.com/jeromecoupe/iad_eleventy_introduction/blob/master/eleventy_introduction_en.md</a></p>
+<p>Pagination:<br>
+<a href="https://github.com/11ty/eleventy/issues/345">https://github.com/11ty/eleventy/issues/345</a><br>
+<a href="https://www.11ty.dev/docs/pagination/nav/">https://www.11ty.dev/docs/pagination/nav/</a></p>
+<p>Other useful links:<br>
+<a href="https://paulrobertlloyd.com/2018/12/turn_jekyll_up_to_eleventy/">https://paulrobertlloyd.com/2018/12/turn_jekyll_up_to_eleventy/</a></p>
+<p>Including env variables<br>
+<a href="https://dev.to/stowball/creating-a-production-ready-eleventy-project-with-webpack-babel-and-sass-35ep">https://dev.to/stowball/creating-a-production-ready-eleventy-project-with-webpack-babel-and-sass-35ep</a></p>
+<p>Env vairables, including Public/Private concept<br>
+<a href="https://css-tricks.com/give-your-eleventy-site-superpowers-with-environment-variables/">https://css-tricks.com/give-your-eleventy-site-superpowers-with-environment-variables/</a></p>
+<h1>markdown</h1>
+<p>Don't indent HTML in markdown, because it will be escaped, see here:<br>
+Comments here: <a href="https://stackoverflow.com/questions/64083311/how-to-prevent-eleventy-nunjucks-from-escaping-content-inside-a-for-loop">https://stackoverflow.com/questions/64083311/how-to-prevent-eleventy-nunjucks-from-escaping-content-inside-a-for-loop</a><br>
+And here: <a href="https://stackoverflow.com/questions/39220389/embed-indented-html-in-markdown-with-pandoc">https://stackoverflow.com/questions/39220389/embed-indented-html-in-markdown-with-pandoc</a></p>
+<h1>Git</h1>
+<h2>Install:</h2>
+<p><a href="https://www.digitalocean.com/community/tutorials/how-to-use-git-integration-in-visual-studio-code">https://www.digitalocean.com/community/tutorials/how-to-use-git-integration-in-visual-studio-code</a></p>
+<h2>Config:</h2>
+<p><a href="https://www.digitalocean.com/community/tutorials/how-to-contribute-to-open-source-getting-started-with-git">https://www.digitalocean.com/community/tutorials/how-to-contribute-to-open-source-getting-started-with-git</a><br>
+user: contentedweb<br>
+email: <a href="mailto:robinmassart@outlook.com">robinmassart@outlook.com</a></p>
+<p>Credential helper: <a href="https://docs.github.com/en/free-pro-team@latest/github/using-git/caching-your-github-credentials-in-git">https://docs.github.com/en/free-pro-team@latest/github/using-git/caching-your-github-credentials-in-git</a></p>
+<p>gitignore <a href="https://www.atlassian.com/git/tutorials/saving-changes/gitignore">https://www.atlassian.com/git/tutorials/saving-changes/gitignore</a></p>
+<p>VS Code show .git: <a href="https://medium.com/pareture/show-git-and-other-default-hidden-folders-and-files-in-vs-code-57df151588ea">https://medium.com/pareture/show-git-and-other-default-hidden-folders-and-files-in-vs-code-57df151588ea</a></p>
+<p>Something like this clone my empty repository:</p>
+<ol>
+<li>Cloned site using &quot;$ git clone <a href="mailto:git@github.com">git@github.com</a>:<your github account>/contentedweb.com&quot;</li>
+<li>Added files using &quot;git add .&quot;  For qdding deletions &quot;git add -A .&quot;</li>
+<li>Committed changes using &quot;git commit -m &quot;First commit of files&quot;&quot;</li>
+<li>Simple git push to push changes to git, no branch as working out of the master</li>
+</ol>
+<p>Works, asked me to sign in the browser to authorise wincred (see .gitconfig) to access my repository.<br>
+Also git is integrated into VSCode with colour coding and everything. :-)</p>
+<h2>Proxy info</h2>
+<p>git config --global http.proxy <a href="http://proxyUsername:proxyPassword@proxy.server.com">http://proxyUsername:proxyPassword@proxy.server.com</a>:port<br>
+pslux-vip-acc-user.snmc.cec.eu.int<br>
+8012</p>
+<h2>NFS</h2>
+<p>Manual copy using FileZilla for now</p>

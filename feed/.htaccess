@@ -1,0 +1,3 @@
+
+# For Apache, to show `index.xml` when browsing to directory /feed/ (hide the file!)
+DirectoryIndex index.xml

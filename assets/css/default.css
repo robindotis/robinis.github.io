@@ -1,0 +1,51 @@
+/*=========
+  DARK MODE
+  =========*/
+@media (prefers-color-scheme: dark) {
+    :root {
+        --body-bg-color: #333;
+        --header-bg-color: #264d73;
+        --header-title-color: #ddd;
+        --header-title-focus-color: #B85F01;
+        --header-subtitle-color: #fff;
+        --header-navtext-color: #ffffff;
+        --main-highlight-color: #009cd7;
+        --main-bg-color: #333;
+        --main-text-color: var(--header-title-color);
+        --main-font-family: "'Lucia Grande', Verdana, Helvetica, Arial, sans-serif, serif";
+        --postlist-navtext-color: #000000;
+        --footer-bg-color: #aaa;
+        --footer-text-color: #000;
+        --footer-navtext-color: #000;
+        --link-color: var(--header-title-color);
+        --link-focus-color: #000;
+        --link-focus-bg-color: #ffff00;
+        --date-bg-color: var(--header-bg-color);
+        --date-text-color: var(--header-title-color);        
+    }
+}
+
+/*==========
+  LIGHT MODE
+  ==========*/
+  @media (prefers-color-scheme: light) {
+    :root {
+        --header-bg-color: #007FAD;
+        --header-title-color: #fff;
+        --header-title-focus-color: #B85F01;
+        --header-subtitle-color: #fff;
+        --header-navtext-color: #ffffff;
+        --main-highlight-color: #009cd7;
+        --main-bg-color: #ffffff;
+        --main-font-family: "'Lucia Grande', Verdana, Helvetica, Arial, sans-serif, serif";
+        --postlist-navtext-color: #000000;
+        --footer-bg-color: #eeeeee;
+        --footer-text-color: #005c5c;
+        --footer-navtext-color: #005c5c;
+        --link-color: #000000;
+        --link-focus-color: var(--link-color);
+        --link-focus-bg-color: #ffff00;
+        --date-bg-color: var(--header-bg-color);
+        --date-text-color: var(--header-title-color);        
+    }
+}

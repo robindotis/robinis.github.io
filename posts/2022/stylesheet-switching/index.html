@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+  <head>
+    <meta charset="UTF-8">
+    <!-- See: https://www.w3schools.com/css/css_rwd_viewport.asp-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-Clacks-Overhead" content="GNU Terry Pratchett">
+    <title>robin.is... Stylesheet Switching</title>
+    <meta name="description" content="writing, travelling, seeing, coding and walking the 🐕‍🦺">
+    <meta name="keywords" content="posts,general,web,css" />
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+    <meta property="og:locale" content="en_GB">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="robin.is... Stylesheet Switching">
+    <meta property="og:description" content="writing, travelling, seeing, coding and walking the 🐕‍🦺">
+    <meta property="og:url" content="https://www.robin.is/posts/2022/stylesheet-switching/">
+    <meta property="og:site_name" content="robin.is">
+    <meta property="og:image" content="">
+    <link rel="canonical" href="https://www.robin.is/posts/2022/stylesheet-switching/">
+    <link rel="me" href="https://github.com/robindotis/">
+    <link rel="icon" href="/assets/images/cw.jpg" type="image/jpeg" sizes="50x50">
+    <link rel="preload" href="/assets/fonts/Mona-Sans.woff2" as="font" type="font/woff2" crossorigin>
+    
+    <link rel="stylesheet" href="/assets/css/fonts.css" media="all">
+    <link rel="stylesheet" href="/assets/css/structure.css" media="all">
+    <link rel="stylesheet" href="/assets/css/style.css" media="all">
+    <link rel="stylesheet" href="/assets/css/default.css" media="all">
+    <link rel="alternate" type="application/rss+xml" title="robin.is RSS" href="/feed/">
+    <link rel="alternate" href="/feed/index.xml" type="application/atom+xml" title="robin.is">
+    <link rel="alternate" href="." type="application/json" title="robin.is">
+    <script src="/assets/js/theme.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#site-content">Skip to the content</a>
+    <header class="masthead">
+        <div class="header-area">
+            <div id="themeSwitch">                
+            </div>
+            <div class="header-title">
+            <span class="sitetitle">
+                <img class="logo" src="/assets/images/cw.jpg" alt="">
+                <a href="/" class="u-url">robin.is</a>
+            </span>
+            <nav class="subtitle" aria-label="Main">
+                <a href="/writing/" >writing</a>, 
+                <a href="/travelling/" >travelling</a>, 
+                <a href="/seeing/" >seeing</a>, 
+                <a href="/coding/" >coding</a>, 
+                <a href="/reading/" >reading</a> and 
+                <a href="/walking/" >walking</a> the 
+                <a href="/archive/tagged/angie/"  >dog</a>🐕‍🦺. Read 
+                    his 374 <a href="/archiving/" >posts</a> and find out more
+                <a href="/about/" >about</a> him.
+
+            </nav>
+            </div>
+        </div>
+    </header>
+    <main id="site-content"  class="tmpl-post">
+        <div class="main-content">
+            
+<article>
+  <nav aria-label="Paging">
+      <div class="prev-next">
+        <strong>« Newer:</strong><a class="next" rel="next" href="/posts/2022/stylesheet-switching-2/">Stylesheet Switching Part 2</a>
+
+        <br>
+        <strong>» Older:</strong><a class="prev" rel="prev" href="/posts/2022/rhythm-of-the-dance/">Rhythm of the Dance</a>
+      </div>
+      <hr>
+  </nav>
+  <header>
+      <h1>Stylesheet Switching</h1> 
+      <h2 class="published">
+          <time class="dt-published" datetime="Invalid DateTime">
+              <span class="date-day">18</span> 
+              <span class="date-month">December</span>, 
+              <span class="date-year">2022</span>
+          </time>
+      </h2>
+  </header>
+  <p>I spent the last couple of days playing around with stylesheet switching (theming) and also implementing <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-color-scheme">prefers-color-scheme</a> on the default theme in order to a dark mode.</p>
+<p>I also added in a couple of fonts recently released by GitHub: <a href="https://github.com/mona-sans">Mona Sans and Hubo Sans</a></p>
+<p>So far I have managed to have no JavaScript on this site. Unfortunately implementing theming on a static site is simply not possible without JavaScript. My aim therefore was to keep JavaScript to a minimum. I managed it with about 10 lines of code, including using local storage to remember the user's prefered theme.</p>
+<pre><code>    function swapStyleSheet(sheet){
+        var styles = document.querySelectorAll('link[rel~=&quot;stylesheet&quot;]');
+        var i;
+        for (i = 0; i &lt; styles.length; ++i) {
+            if( !styles[i].href.endsWith(&quot;structure.css&quot;) &amp;&amp; 
+                !styles[i].href.endsWith(&quot;style.css&quot;) &amp;&amp; 
+                !styles[i].href.endsWith(&quot;fonts.css&quot;)) {
+                if(styles[i].href.endsWith(sheet)) {
+                    styles[i].rel = &quot;stylesheet&quot;;
+                }
+                else {
+                    styles[i].rel = &quot;alternate stylesheet&quot;;
+                }
+            }
+        }
+        localStorage.setItem(&quot;sheet&quot;,sheet);
+    }
+    if(localStorage.getItem('sheet')) {
+        swapStyleSheet(localStorage.getItem('sheet'));
+    }
+</code></pre>
+<p>With thanks to info I found on these links:</p>
+<ul>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/-CSS/Attribute_selectors">Attribute Selectors on MDN</a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelectorAll">QuerySelectorAll on MDN</a></li>
+<li><a href="https://stackoverflow.com/questions/2694640/find-an-element-in-dom-based-on-an-attribute-value">Element in DOM on stackoverflow</a></li>
+</ul>
+<p>Currenty themes are switched using the buttons under the header, as you can see above. I need to style them a bit better, but the basic button code is:</p>
+<pre><code>&lt;button type=&quot;button&quot; onClick=&quot;swapStyleSheet('/assets/css/default.css')&quot;&gt;Default&lt;/button&gt;
+</code></pre>
+<p>I also <a href="https://gist.github.com/robindotis/d1b33ab257e5e6970765b8b865e94bf5">wrote a gist about the switcher on GitHub</a>, in case others find this useful. Probably it can be simplified and generalised further.</p>
+ 
+  <hr aria-hidden="true">
+  <div class="tagged"><strong>Tagged:</strong><a href="/archive/tagged/general/" class="post-tag">general</a> &nbsp;<a href="/archive/tagged/web/" class="post-tag">web</a> &nbsp;<a href="/archive/tagged/css/" class="post-tag">css</a> &nbsp;
+  </div>
+  <hr aria-hidden="true">
+  <nav aria-label="Paging">
+      <div class="prev-next">
+        <strong>« Newer:</strong><a class="next" rel="next" href="/posts/2022/stylesheet-switching-2/">Stylesheet Switching Part 2</a>
+
+        <br>
+        <strong>» Older:</strong><a class="prev" rel="prev" href="/posts/2022/rhythm-of-the-dance/">Rhythm of the Dance</a>
+      </div>
+      <hr>
+  </nav>
+</article>
+
+
+        </div> 
+    </main>
+    <footer>
+        <div class="footer-area">
+            <div class="copy">
+                <a href="https://www.robin.is/">https://www.robin.is/</a> &copy; 1998 - 2023
+                <br>
+                <span class="emojis">👍</span>  
+            </div> 
+            <div class="power">
+                <div class="footer-nav">
+                    <nav aria-label="Footer">
+                        <img src="/assets/images/rss-logo.png" alt="">&nbsp;<a class="a11y-statement" href="/feed/">RSS</a>
+                        
+                                | <a href="/pages/accessibility/">Accessibility</a>
+                    </nav>
+                </div>
+                <br>
+                Powered with HTML, CSS and <a href="https://www.a11yproject.com/">a11y</a>.
+            </div>
+        </div>
+    </footer>
+    <!-- Current page: /posts/2022/stylesheet-switching/ -->
+  </body>
+</html>

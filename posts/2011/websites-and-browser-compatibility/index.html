@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+  <head>
+    <meta charset="UTF-8">
+    <!-- See: https://www.w3schools.com/css/css_rwd_viewport.asp-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-Clacks-Overhead" content="GNU Terry Pratchett">
+    <title>robin.is... Websites and browser compatibility</title>
+    <meta name="description" content="writing, travelling, seeing, coding and walking the 🐕‍🦺">
+    <meta name="keywords" content="posts,web,standards,browsers" />
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+    <meta property="og:locale" content="en_GB">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="robin.is... Websites and browser compatibility">
+    <meta property="og:description" content="writing, travelling, seeing, coding and walking the 🐕‍🦺">
+    <meta property="og:url" content="https://www.robin.is/posts/2011/websites-and-browser-compatibility/">
+    <meta property="og:site_name" content="robin.is">
+    <meta property="og:image" content="">
+    <link rel="canonical" href="https://www.robin.is/posts/2011/websites-and-browser-compatibility/">
+    <link rel="me" href="https://github.com/robindotis/">
+    <link rel="icon" href="/assets/images/cw.jpg" type="image/jpeg" sizes="50x50">
+    <link rel="preload" href="/assets/fonts/Mona-Sans.woff2" as="font" type="font/woff2" crossorigin>
+    
+    <link rel="stylesheet" href="/assets/css/fonts.css" media="all">
+    <link rel="stylesheet" href="/assets/css/structure.css" media="all">
+    <link rel="stylesheet" href="/assets/css/style.css" media="all">
+    <link rel="stylesheet" href="/assets/css/default.css" media="all">
+    <link rel="alternate" type="application/rss+xml" title="robin.is RSS" href="/feed/">
+    <link rel="alternate" href="/feed/index.xml" type="application/atom+xml" title="robin.is">
+    <link rel="alternate" href="." type="application/json" title="robin.is">
+    <script src="/assets/js/theme.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#site-content">Skip to the content</a>
+    <header class="masthead">
+        <div class="header-area">
+            <div id="themeSwitch">                
+            </div>
+            <div class="header-title">
+            <span class="sitetitle">
+                <img class="logo" src="/assets/images/cw.jpg" alt="">
+                <a href="/" class="u-url">robin.is</a>
+            </span>
+            <nav class="subtitle" aria-label="Main">
+                <a href="/writing/" >writing</a>, 
+                <a href="/travelling/" >travelling</a>, 
+                <a href="/seeing/" >seeing</a>, 
+                <a href="/coding/" >coding</a>, 
+                <a href="/reading/" >reading</a> and 
+                <a href="/walking/" >walking</a> the 
+                <a href="/archive/tagged/angie/"  >dog</a>🐕‍🦺. Read 
+                    his 374 <a href="/archiving/" >posts</a> and find out more
+                <a href="/about/" >about</a> him.
+
+            </nav>
+            </div>
+        </div>
+    </header>
+    <main id="site-content"  class="tmpl-post">
+        <div class="main-content">
+            
+<article>
+  <nav aria-label="Paging">
+      <div class="prev-next">
+        <strong>« Newer:</strong><a class="next" rel="next" href="/posts/2011/completed-couch-to-5k/">Completed Couch To 5K</a>
+
+        <br>
+        <strong>» Older:</strong><a class="prev" rel="prev" href="/posts/2011/the-national-elf-service/">The National Elf Service</a>
+      </div>
+      <hr>
+  </nav>
+  <header>
+      <h1>Websites and browser compatibility</h1> 
+      <h2 class="published">
+          <time class="dt-published" datetime="Invalid DateTime">
+              <span class="date-day">16</span> 
+              <span class="date-month">October</span>, 
+              <span class="date-year">2011</span>
+          </time>
+      </h2>
+  </header>
+  <p>About six months ago Mozilla altered it's Firefox release schedule to aim for one release every other month or so. So whilst the time span from Firefox 3 to Firefox 4 was around three years, that from version 4 to 7 was just six months.  With version 10 scheduled for early 2012. This seems to be a direct response to Google's Chrome upping its major version every few weeks. It is now on version 16. Obviously bigger is better - Mozilla are perhaps afraid that users will perceive their progress as slow with respect to others. On the other and that has never bothered Microsoft which took a decade to move from IE6 to IE9.</p>
+---
+<p>The point of this article though is to think investigate what this means for web development. Clients used to have requirements that included a browser compatibility list such as:</p>
+<ul>
+<li>IE 6, IE 7</li>
+<li>Firefox 3</li>
+<li>Opera 9</li>
+<li>Safari 4</li>
+</ul>
+<p>Obviously with version numbers changing every few weeks, this is no longer meaningful. Nowadays clients are more likely to say "Must work in all current browsers" and then, in the web version of small print, add: "<span class="smallprint">and IE6</span>". Argghhh...</p>
+<p>Of course nowadays, with the mobile browser landscape even more chaotic than the desktop one ever was, targetting anything but recommended web standards and best practices would seem pointless. After all, why target the iPhone's Safari browser? You might as well write a native iPhone app - it will be more usable and easier to code. Likewise with other smartphones. That is not to that you <em>should</em> write native apps, just that you may as well do so if you are anyway targetting a specific device.</p>
+<p>So perhaps clients need to have a new compatibility list, which is not about browsers, but standards and especially best practices. Much like there is a <a href="http://agilemanifesto.org/">manifesto for agile software development</a>, we need something similar for web development. The compatibility list might then include items such as:</p>
+<ul>
+<li>HTML 5 compatible</li>
+<li>Responsive design</li>
+<li>User centered design</li>
+<li>Mobile first</li>
+<li>Progressive enhancement</li>
+<li>Graceful degradation</li>
+</ul>
+<p>I see that a had full of prominent web developers have recently started something similar with the <a href="http://futurefriend.ly/">Future Friendly</a> website. It would be great if they could capture their thoughts on that website in one paragraph a little like the agile manifesto did. Something that you can point your client to or fit on a small flyer to give them to take home.</p> 
+  <hr aria-hidden="true">
+  <div class="tagged"><strong>Tagged:</strong><a href="/archive/tagged/web/" class="post-tag">web</a> &nbsp;<a href="/archive/tagged/standards/" class="post-tag">standards</a> &nbsp;<a href="/archive/tagged/browsers/" class="post-tag">browsers</a> &nbsp;
+  </div>
+  <hr aria-hidden="true">
+  <nav aria-label="Paging">
+      <div class="prev-next">
+        <strong>« Newer:</strong><a class="next" rel="next" href="/posts/2011/completed-couch-to-5k/">Completed Couch To 5K</a>
+
+        <br>
+        <strong>» Older:</strong><a class="prev" rel="prev" href="/posts/2011/the-national-elf-service/">The National Elf Service</a>
+      </div>
+      <hr>
+  </nav>
+</article>
+
+
+        </div> 
+    </main>
+    <footer>
+        <div class="footer-area">
+            <div class="copy">
+                <a href="https://www.robin.is/">https://www.robin.is/</a> &copy; 1998 - 2023
+                <br>
+                <span class="emojis">👍</span>  
+            </div> 
+            <div class="power">
+                <div class="footer-nav">
+                    <nav aria-label="Footer">
+                        <img src="/assets/images/rss-logo.png" alt="">&nbsp;<a class="a11y-statement" href="/feed/">RSS</a>
+                        
+                                | <a href="/pages/accessibility/">Accessibility</a>
+                    </nav>
+                </div>
+                <br>
+                Powered with HTML, CSS and <a href="https://www.a11yproject.com/">a11y</a>.
+            </div>
+        </div>
+    </footer>
+    <!-- Current page: /posts/2011/websites-and-browser-compatibility/ -->
+  </body>
+</html>

@@ -1,0 +1,173 @@
+/*
+ * OORSSS: Object oriented really simple stylesheet switcher
+ *
+ * This script will generate buttons to switch stylesheets.
+ * It will use localstorage to store the users choice between sessions.
+ *
+ * STEP 1
+ * ======
+ * To get started you need to create a new themePicker, providing:
+ *      - the id of the element within which the picker will be created [Required]
+ *      - provide the path to the stylesheets [optional]
+ * 
+ * eg
+ *      let themeSwitch = new themePicker("themeSwitch","/assets/css/");
+ *
+ * STEP 2
+ * ======
+ * Add the themes you wish to make available to the theme picker, providing:
+ *      - the theme name (will be stored in localstorage) [Required]
+ *      - the theme's css file [Required]
+ *      - whether this is the site's default theme [optional, default false]
+ * 
+ * eg
+ *      themeSwitch.addTheme(new theme("Default","default.css",true));
+ * 
+ * STEP 3
+ * ======
+ * Instantiate the picker:
+ *      themeSwitch.createPicker();
+ * 
+ * This will create:
+ *      - the HTML buttons within the defined HTML element
+ *      - the non default stylesheet links with rel "alternate stylesheet"
+ * 
+ * Note:  The system assumes the default stylesheet already exists.
+ *        This ensures the site will render in the default styles
+ *        without JavaScript.
+ *
+*/
+
+
+
+class theme {
+    constructor(name, css, dflt = false) {
+        this.name = name;
+        this.css = css;
+        this.dflt = dflt;
+    }
+    createButton(){
+        /*Create the button element*/
+        const btn = document.createElement("button");
+        btn.setAttribute('type','button');
+        btn.setAttribute('onclick',"themeSwitch.setTheme('" + this.name + "')");
+        btn.appendChild(document.createTextNode(this.name));
+        return btn;
+    }
+    createCssLink(){
+        /*Create the link element*/
+        const lnk = document.createElement("link");
+        lnk.setAttribute('rel','alternate stylesheet');
+        lnk.setAttribute('href',this.css);
+        lnk.setAttribute('media','all');
+        return lnk;
+    }
+}
+
+class themePicker {
+    #themes = [];
+    #cssFiles = [];
+    defaultTheme;
+    currentTheme;
+    constructor(id, path, text = "" ){
+        this.id = id;
+        this.path = path;
+        this.text = text;
+    }
+
+    addTheme(theme) {
+        this.#cssFiles.push(theme.css);
+        theme.css = this.path + theme.css;
+        if(theme.dflt){
+            /* Default theme is also current theme unless set later */
+            this.defaultTheme = this.currentTheme = theme;
+        }
+
+        if(theme.name == localStorage.getItem('theme')) {
+            this.currentTheme = theme;
+        }
+        this.#themes.push(theme);
+    }
+
+    setTheme(themeName){
+        const styles = document.querySelectorAll('link[rel~="stylesheet"]');
+    
+        /* set current theme */
+        for(let i=0; i<this.#themes.length; i++){
+            if(this.#themes[i].name == themeName) {
+                this.currentTheme = this.#themes[i];
+                break;
+            }
+        }
+
+        /* insert correct rel attribute (alternate for inactive styles)  */
+        for (let i = 0; i < styles.length; ++i) {   
+            /* returns true if the href contains any of the strings in the themes array */
+            /* this if statement ensures we only alter stylesheets used by the themes*/
+            if(this.#cssFiles.some(v => styles[i].href.includes(v))) {
+                if(styles[i].href.endsWith(this.currentTheme.css)) {
+                    styles[i].rel = "stylesheet";
+                }
+                else {
+                    styles[i].rel = "alternate stylesheet";
+                }
+            }
+        }
+    
+        /* Disable the button for the currently selected style */
+        const btns = document.getElementById(this.id).querySelectorAll('button');
+        for (let i = 0; i < btns.length; ++i) {
+            if(btns[i].onclick.toString().includes(this.currentTheme.name)) {
+                btns[i].setAttribute("disabled","");
+            }
+            else {
+                btns[i].removeAttribute("disabled");
+            }
+        }
+        localStorage.setItem("theme",this.currentTheme.name);
+    }    
+
+    toogleButtonState(btnName, disabled = false) {
+        const btn = document.querySelector('button[onclick*="' + btnName + '"]');
+        btn.setAttribute("disabled","");
+    }
+
+    createPicker(){
+        const dfltLink = document.querySelector('link[href*="' + this.defaultTheme.css + '"]');
+
+        if(this.text.length > 0) {
+            const spn = document.createElement("span");
+            spn.appendChild(document.createTextNode(this.text));
+            document.getElementById(this.id).appendChild(spn);
+        }
+
+        for(let i=0; i<this.#themes.length; i++){
+            /* Add all buttons into the HTML element with the theme id */
+            document.getElementById(this.id).appendChild(this.#themes[i].createButton());
+
+            /* Create all the HTML links, except for the default one */
+            if(this.defaultTheme.css != this.#themes[i].css) {
+                const lnk = document.createElement("link");
+                lnk.setAttribute('rel','alternate stylesheet');
+                lnk.setAttribute('href',this.#themes[i].css);
+                lnk.setAttribute('media','all');
+                dfltLink.after(lnk);
+            }
+        }
+        if(localStorage.getItem('theme') === null) {
+            this.toogleButtonState(this.defaultTheme.name, true);
+        }
+        else {
+            this.setTheme(localStorage.getItem('theme'));
+        }
+    }
+}
+
+let themeSwitch = new themePicker("themeSwitch","/assets/css/","Choose a style:");
+themeSwitch.addTheme(new theme("Default","default.css",true));
+themeSwitch.addTheme(new theme("High Contrast","high.css"));
+themeSwitch.addTheme(new theme("Miami","miami.css"));
+themeSwitch.addTheme(new theme("Grey","olden.css"));
+themeSwitch.addTheme(new theme("Plain","plain.css"));
+
+themeSwitch.createPicker();
