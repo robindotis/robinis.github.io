@@ -6,13 +6,27 @@
 	
 	<link href="https://www.robin.is/feed/index.xml" rel="self"/>
 	<link href="https://www.robin.is/" rel="alternate" type="text/html"/>
-	<updated>2023-01-08T07:30:00Z</updated>
+	<updated>2023-01-09T08:00:33Z</updated>
 	<id>https://www.robin.is/</id>
 	<author>
 		<name>robindotis</name>
 		<email>admin@robin.is</email>
 	</author>
 	
+	
+	<entry>
+		<title>Parable of the Talents</title>
+		<link href="https://www.robin.is/posts/2023/parable-of-the-talents/"/>
+		<updated>2023-01-09T08:00:33Z</updated>
+		<id>https://www.robin.is/posts/2023/parable-of-the-talents/</id>
+		<content type="html">&lt;h2&gt;by Octavia E. Butler&lt;/h2&gt;
+&lt;p&gt;The follow up book to &lt;a href=&quot;https://www.robin.is/posts/2022/parable-of-the-sower/&quot;&gt;Parable of the Sower&lt;/a&gt;. This is a fantastic read, possibly better still than preceding novel.&lt;/p&gt;
+&lt;p&gt;The story continues with the heroine trying to setup her Earthseed religion, but ending up enslaved, having her baby daughter taken from her before finally succeeding and her daughter finding her many years later. It might seem like a happy ending, but it is not so simple with internal family and religious feuds.&lt;/p&gt;
+&lt;p&gt;Given the name of the book, it is interesting to discuss which of the main characters is representing which of the servants in the biblical story of the same name as told in &lt;a href=&quot;https://en.wikipedia.org/wiki/Parable_of_the_talents_or_minas#Parable_of_the_Talents&quot;&gt;Mathew 25:14-30&lt;/a&gt;. Or maybe such a link is not intended by the author.&lt;/p&gt;
+&lt;p&gt;The book is also remarkably prescient of today&#39;s world, climate change, the religious right and especially of the years with Trump as president. Whilst we have avoided the apocalypse so far, the problems have not disappeared.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://www.robin.is/assets/images/2023/talents.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+</content>
+	</entry>
 	
 	<entry>
 		<title>Ski pistes in climate change</title>
@@ -165,48 +179,6 @@ var themeName = [&#39;Default&#39;,&#39;High Contrast&#39;,&#39;Plain&#39;,&#39;
 var themeId = &amp;quot;themeSwitch&amp;quot;;
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;The &lt;a href=&quot;https://gist.github.com/robindotis/d1b33ab257e5e6970765b8b865e94bf5&quot;&gt;gist I wrote about the switcher on GitHub&lt;/a&gt;, has been update to include these latest changes. Probably it can be simplified and generalised even further.&lt;/p&gt;
-</content>
-	</entry>
-	
-	<entry>
-		<title>Stylesheet Switching</title>
-		<link href="https://www.robin.is/posts/2022/stylesheet-switching/"/>
-		<updated>2022-12-18T11:07:04Z</updated>
-		<id>https://www.robin.is/posts/2022/stylesheet-switching/</id>
-		<content type="html">&lt;p&gt;I spent the last couple of days playing around with stylesheet switching (theming) and also implementing &lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-color-scheme&quot;&gt;prefers-color-scheme&lt;/a&gt; on the default theme in order to a dark mode.&lt;/p&gt;
-&lt;p&gt;I also added in a couple of fonts recently released by GitHub: &lt;a href=&quot;https://github.com/mona-sans&quot;&gt;Mona Sans and Hubo Sans&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;So far I have managed to have no JavaScript on this site. Unfortunately implementing theming on a static site is simply not possible without JavaScript. My aim therefore was to keep JavaScript to a minimum. I managed it with about 10 lines of code, including using local storage to remember the user&#39;s prefered theme.&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;    function swapStyleSheet(sheet){
-        var styles = document.querySelectorAll(&#39;link[rel~=&amp;quot;stylesheet&amp;quot;]&#39;);
-        var i;
-        for (i = 0; i &amp;lt; styles.length; ++i) {
-            if( !styles[i].href.endsWith(&amp;quot;structure.css&amp;quot;) &amp;amp;&amp;amp; 
-                !styles[i].href.endsWith(&amp;quot;style.css&amp;quot;) &amp;amp;&amp;amp; 
-                !styles[i].href.endsWith(&amp;quot;fonts.css&amp;quot;)) {
-                if(styles[i].href.endsWith(sheet)) {
-                    styles[i].rel = &amp;quot;stylesheet&amp;quot;;
-                }
-                else {
-                    styles[i].rel = &amp;quot;alternate stylesheet&amp;quot;;
-                }
-            }
-        }
-        localStorage.setItem(&amp;quot;sheet&amp;quot;,sheet);
-    }
-    if(localStorage.getItem(&#39;sheet&#39;)) {
-        swapStyleSheet(localStorage.getItem(&#39;sheet&#39;));
-    }
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;With thanks to info I found on these links:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Web/-CSS/Attribute_selectors&quot;&gt;Attribute Selectors on MDN&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelectorAll&quot;&gt;QuerySelectorAll on MDN&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://stackoverflow.com/questions/2694640/find-an-element-in-dom-based-on-an-attribute-value&quot;&gt;Element in DOM on stackoverflow&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Currenty themes are switched using the buttons under the header, as you can see above. I need to style them a bit better, but the basic button code is:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;&amp;lt;button type=&amp;quot;button&amp;quot; onClick=&amp;quot;swapStyleSheet(&#39;/assets/css/default.css&#39;)&amp;quot;&amp;gt;Default&amp;lt;/button&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;I also &lt;a href=&quot;https://gist.github.com/robindotis/d1b33ab257e5e6970765b8b865e94bf5&quot;&gt;wrote a gist about the switcher on GitHub&lt;/a&gt;, in case others find this useful. Probably it can be simplified and generalised further.&lt;/p&gt;
 </content>
 	</entry>
 </feed>
