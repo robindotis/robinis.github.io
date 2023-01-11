@@ -112,6 +112,6 @@ footer {
   }
 }
 
-img.u-photo {
+.sitetitle img {
   content: url("/assets/images/miami.jpg");
 }

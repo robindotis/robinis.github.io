@@ -17,3 +17,8 @@
     --date-bg-color: var(--header-bg-color);
     --date-text-color: var(--header-title-color);        
 }
+
+.sitetitle img {
+    filter: grayscale(65%);
+}
+  
