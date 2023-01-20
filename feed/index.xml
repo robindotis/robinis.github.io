@@ -6,13 +6,28 @@
 	
 	<link href="https://www.robin.is/feed/index.xml" rel="self"/>
 	<link href="https://www.robin.is/" rel="alternate" type="text/html"/>
-	<updated>2023-01-09T08:00:33Z</updated>
+	<updated>2023-01-19T13:18:27Z</updated>
 	<id>https://www.robin.is/</id>
 	<author>
 		<name>robindotis</name>
 		<email>admin@robin.is</email>
 	</author>
 	
+	
+	<entry>
+		<title>Dog on a log - in winter</title>
+		<link href="https://www.robin.is/posts/2023/dog-on-a-log-yet-again/"/>
+		<updated>2023-01-19T13:18:27Z</updated>
+		<id>https://www.robin.is/posts/2023/dog-on-a-log-yet-again/</id>
+		<content type="html">&lt;p&gt;This time I had to put her on the log, because after jumping up she kept on sliding off and eventually couldn&#39;t be bothered to jummp back on again!&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://www.robin.is/assets/images/2023/dog-log-winter.webp&quot; alt=&quot;Dog sitting on a frosted log in winter forest&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;See also:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.robin.is/posts/2021/dog-log/&quot;&gt;Dog on a log in Autumn&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.robin.is/posts/2022/dog-on-a-log-again/&quot;&gt;Dog on a log in Summer&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+	</entry>
 	
 	<entry>
 		<title>Parable of the Talents</title>
@@ -163,22 +178,6 @@
 &lt;p&gt;Plus of course all the CSS to actualy created the styling!&lt;/p&gt;
 &lt;p&gt;Of course, the code is also available in a gist for my &lt;a href=&quot;https://gist.github.com/robindotis/54786199b5d86f5085e5c55337d6e0d0&quot;&gt;object oriented theme picker&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;Enjoy. 😎&lt;/p&gt;
-</content>
-	</entry>
-	
-	<entry>
-		<title>Stylesheet Switching Part 2</title>
-		<link href="https://www.robin.is/posts/2022/stylesheet-switching-2/"/>
-		<updated>2022-12-19T22:07:04Z</updated>
-		<id>https://www.robin.is/posts/2022/stylesheet-switching-2/</id>
-		<content type="html">&lt;p&gt;Having got my &lt;a href=&quot;https://www.robin.is/posts/2022/stylesheet-switching/&quot;&gt;stylesheet switcher working&lt;/a&gt;, I decided to improve the script a little and try to make it easier to implement. The script now not only adds in the required buttons to switch the stylesheet, but also adds the actual stylesheet links into the header, except for the default style. This is defined as the first style in array of stylesheets that is used to setup the buttons. By ensuring the default style has to be added manually, I ensure that the site will be styled even if javascript does not work.&lt;/p&gt;
-&lt;p&gt;The script was also imrpoved so that the button for the selected stylesheet was disabled, so it couldn&#39;t be clicked again.&lt;/p&gt;
-&lt;p&gt;I then moved all the scripts into a single javascript file. Now the whole thing is very easy to initialise. You simply need to defined three variables: themeCss (an array of css files representing the themes), themeName (an array of names belong to themes), themeId (the id of the element within which the buttons should be created). For example:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;var themeCss = [&#39;default.css&#39;,&#39;high.css&#39;,&#39;plain.css&#39;,&#39;olden.css&#39;];
-var themeName = [&#39;Default&#39;,&#39;High Contrast&#39;,&#39;Plain&#39;,&#39;Olden&#39;];
-var themeId = &amp;quot;themeSwitch&amp;quot;;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;The &lt;a href=&quot;https://gist.github.com/robindotis/d1b33ab257e5e6970765b8b865e94bf5&quot;&gt;gist I wrote about the switcher on GitHub&lt;/a&gt;, has been update to include these latest changes. Probably it can be simplified and generalised even further.&lt;/p&gt;
 </content>
 	</entry>
 </feed>
