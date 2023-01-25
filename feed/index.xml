@@ -6,13 +6,23 @@
 	
 	<link href="https://www.robin.is/feed/index.xml" rel="self"/>
 	<link href="https://www.robin.is/" rel="alternate" type="text/html"/>
-	<updated>2023-01-19T13:18:27Z</updated>
+	<updated>2023-01-25T17:18:27Z</updated>
 	<id>https://www.robin.is/</id>
 	<author>
 		<name>robindotis</name>
 		<email>admin@robin.is</email>
 	</author>
 	
+	
+	<entry>
+		<title>Inable</title>
+		<link href="https://www.robin.is/posts/2023/inable/"/>
+		<updated>2023-01-25T17:18:27Z</updated>
+		<id>https://www.robin.is/posts/2023/inable/</id>
+		<content type="html">&lt;h2&gt;Training kids in assistive technology&lt;/h2&gt;
+&lt;p&gt;At a webinar organised by ARSO, &lt;a href=&quot;https://www.arso-oran.org/&quot;&gt;the African Organisation for Standardisation&lt;/a&gt;, there was a speaker from &lt;a href=&quot;https://inable.org/&quot;&gt;Inable&lt;/a&gt;. This is a charity setup to train children with disabilities to use assistive technology and to provide them necessary digital skills to live an independent life in the modern world. They have a very nice &lt;a href=&quot;https://inable.org/about-us/our-story/&quot;&gt;video on the use of assistive technology&lt;/a&gt; in every day life.&lt;/p&gt;
+</content>
+	</entry>
 	
 	<entry>
 		<title>Dog on a log - in winter</title>
@@ -163,21 +173,6 @@
 &lt;p&gt;&lt;img src=&quot;https://www.robin.is/assets/images/chance.jpg&quot; alt=&quot;12 out of 50 result in Guardian quiz&quot; /&gt;&lt;/p&gt;
 &lt;p&gt;Glad to see that the laws of averages are still alive and kicking in 2022.&lt;/p&gt;
 &lt;p&gt;Merry Christmas!&lt;/p&gt;
-</content>
-	</entry>
-	
-	<entry>
-		<title>Stylesheet Switching Part 3</title>
-		<link href="https://www.robin.is/posts/2022/stylesheet-switching-3/"/>
-		<updated>2022-12-22T17:00:11Z</updated>
-		<id>https://www.robin.is/posts/2022/stylesheet-switching-3/</id>
-		<content type="html">&lt;p&gt;As noted in my &lt;a href=&quot;https://www.robin.is/posts/2022/stylesheet-switching-2/&quot;&gt;previous post&lt;/a&gt;, I finished my stylesheet switcher and &lt;a href=&quot;https://gist.github.com/robindotis/d1b33ab257e5e6970765b8b865e94bf5&quot;&gt;created gist&lt;/a&gt; to allow others to easily copy and implement it. Then I decided to re-implement this using object oriented code, rather than procedural code.&lt;/p&gt;
-&lt;p&gt;Well that job is now done and running live on this site. I even added a new style, Miami, to the site to see how easily new styles can be implemented. It&#39;s literally one line of code:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;themeSwitch.addTheme(new theme(&amp;quot;Miami&amp;quot;,&amp;quot;miami.css&amp;quot;));
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Plus of course all the CSS to actualy created the styling!&lt;/p&gt;
-&lt;p&gt;Of course, the code is also available in a gist for my &lt;a href=&quot;https://gist.github.com/robindotis/54786199b5d86f5085e5c55337d6e0d0&quot;&gt;object oriented theme picker&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;Enjoy. 😎&lt;/p&gt;
 </content>
 	</entry>
 </feed>
