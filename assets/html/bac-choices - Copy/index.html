@@ -303,83 +303,6 @@
                     +document.getElementById("COMPULSORY_X").value +
                     +document.getElementById("OPTIONAL_X").value +
                     +document.getElementById("COMPLEMENTARY_X").value;
-            
-                //set exams
-                if (document.getElementById("MAT5").checked){
-                    document.getElementById("MAT_W").innerText = "Maths 5"
-                }
-                else {
-                    document.getElementById("MAT_W").innerText = "Maths 3"
-                }
-                
-                //4 periods
-                var subjects = "From: ";
-                if(document.getElementById("HIS4").checked) {
-                    subjects += "History 4, "
-                }
-                if(document.getElementById("GEO4").checked) {
-                    subjects += "Geography 4, "
-                }
-                if(document.getElementById("PHI4").checked) {
-                    subjects += "Philosophy 4, "
-                }
-                if(document.getElementById("BIO4").checked) {
-                    subjects += "Biology 4, "
-                }
-                if(document.getElementById("CHE").checked) {
-                    subjects += "Chemisty, "
-                }
-                if(document.getElementById("PHY").checked) {
-                    subjects += "Physics, "
-                }
-                if(document.getElementById("MUS").checked) {
-                    subjects += "Music, "
-                }
-                if(document.getElementById("ART").checked) {
-                    subjects += "Art, "
-                }
-                if(document.getElementById("L3").checked) {
-                    subjects += "Language 3, "
-                }
-                if(document.getElementById("L4").checked) {
-                    subjects += "Language 4, "
-                }
-                if(document.getElementById("ECO").checked) {
-                    subjects += "Economics, "
-                }
-                if(document.getElementById("LAT").checked) {
-                    subjects += "Latin, "
-                }
-                document.getElementById("O1_W").innerText = subjects;
-                document.getElementById("O2_W").innerText = subjects;
-
-                subjects = "From: Language 2, ";
-                if(document.getElementById("HIS4").checked) {
-                    subjects += "History 4, "
-                }
-                else {
-                    subjects += "History 2, "
-                }
-                if(document.getElementById("GEO4").checked) {
-                    subjects += "Geography 4, "
-                }
-                else {
-                    subjects += "Geography 2, "
-                }
-                document.getElementById("L2_O").innerText = subjects;
-
-
-
-                if(document.getElementById("AL1").checked) {
-                    document.getElementById("L1_W").innerText = "Advanced L1"
-                    document.getElementById("L1_O").innerText = "Advanced L1"
-                }
-                if(document.getElementById("AL2").checked) {
-                    document.getElementById("L2_O").innerText = "Advanced L2"
-                }
-                if(document.getElementById("AMA").checked) {
-                    document.getElementById("O2_O").innerText = "Advanced Maths"
-                }
             }
         
         </script>
@@ -414,21 +337,20 @@
                 font-size: 1.1em;
             }
 
-            form, div.exams {
-                display:flex;
-                flex-flow: row wrap;
+            form {
+/*                display:flex;
+                flex-flow: row wrap;*/
             } 
             
-            form > div, div.exams > div {
-                max-width: 25em;
-                border: 1px solid #000;
-                padding: 0 1em;
-                margin: 0.5em 0.5em 0 0;
-                line-height: 1.5em;
-                position: relative;
+            form > fieldset {
+                min-width: 25%;
             }
 
             fieldset {
+                line-height: 1.5em;
+            }
+
+            fieldset fieldset {
                 border: 0;
                 padding: 0;
                 margin: 0.5em 0 0.5em 0;
@@ -436,21 +358,16 @@
 
             input[type=text] {
                 border:0;
-                width: 1.3em;
+                width: 1em;
                 float:right;
-                text-align: right;
             }
-/*
+
             input[type=radio] {
                 background-color: #0f0;
             }
-*/
-            label.total {
-                text-align: justify;
-            }
 
-            label.total input{
-                float: none;
+            label.total {
+                float: right;
             }
 
             input {
@@ -461,38 +378,8 @@
             label {
                 margin: 0 0.8em 0 0.2em;
             }
-
-            div#totals {
-                position: absolute;
-                bottom: 0;
-                background-color: #eee;
-                width: 90%;
-                margin-bottom: 1em;
-                text-align: justify;
-            }
-
-            div#label {
-                text-align: left;
-            }
-
-            div#totals input {
-                position: absolute;
-                right: 5px;
-                float: none;
-                text-align: right;
-            }
             
-            div#totals div {
-                width: 95%;
-                font-weight: 800;
-                border-bottom: 1px solid #000;
-            }
-
-            div#totals div input  {
-                font-weight: 800;
-            }
-
-</style>
+        </style>
     </head>
     <body>
         <header>
@@ -540,8 +427,8 @@
 -->
         <h2>Subject Grid</h2>
         <form id="choices" >
-            <div>
-                <h3>Compulsory subjects</h3>
+            <fieldset class="col1">
+                <legend>Compulsory subjects</legend>
                 <input type="checkbox" checked disabled id="L1" value="4"><label for="L1">Language 1</label><input type="text" value="4" readonly disabled size="1" id="L1_X"><br>
                 <input type="checkbox" checked disabled id="L2" value="3"><label for="L2">Language 2</label><input type="text" value="3" readonly disabled size="1" id="L2_X"><br>
                 <input type="radio" checked id="MAT3" value="3" name="MAT"><label for="MAT3">Maths 3</label>
@@ -552,19 +439,10 @@
                 <input type="checkbox" checked disabled id="PHI2" value="2"><label for="PHI2">Philosophy 2</label><input type="text" value="2" readonly disabled size="1" id="PHI2_X"><br>
                 <input type="checkbox" checked disabled id="PE" value="2"><label for="PE">Physical Education</label><input type="text" value="2" readonly disabled size="1" id="PE_X"><br>
                 <input type="checkbox" checked disabled id="ETH" value="1"><label for="ETH">Ethics/Religion</label><input type="text" value="1" readonly disabled size="1" id="ETH_X"><br>
-                <div id="totals">
-                    <h3>Totals</h3>
-                    <label class="total" for="COMPULSORY_X">Compulsory: </label><input type="text" readonly disabled value="21" id="COMPULSORY_X"><br>
-                    <label class="total" for="OPTIONAL_X">Optional: </label><input type="text" readonly disabled value="0" id="OPTIONAL_X"><br>
-                    <label class="total" for="COMPLEMENTARY_X">Complementary: </label><input type="text" readonly disabled value="0" id="COMPLEMENTARY_X"><br>
-                    <div>
-                        <label class="total" for="TOTAL_X">Overall: </label>
-                        <input type="text" readonly disabled value="21" id="TOTAL_X">
-                    </div>
-                </div>
-        </div>
-            <div>
-                <h3>Optional subjects</h3>
+                <label class="total">Total Compulsory: <input type="text" readonly disabled value="21" id="COMPULSORY_X"></label>
+            </fieldset>
+            <fieldset class="col2">
+                <legend>Optional subjects</legend>
                 <input type="checkbox" id="HIS4" value="4"><label for="HIS4">History 4</label>
                 <input type="text" value="0" readonly disabled size="1" id="HIS4_X" aria-hidden="true"><br>
                 <input type="checkbox" id="GEO4" value="4"><label for="GEO4">Geography 4</label>
@@ -592,7 +470,7 @@
                 <input type="radio" id="LAT" name="ECL" value="4"><label for="LAT">Latin</label>
                 <input type="radio" id="NEL" name="ECL" value="0" checked><label for="NEL">Neither</label>
                 <input type="text" value="0" readonly disabled size="1" id="ECL_X">        
-            
+
                 <fieldset>
                     <legend>Advanced subjects</legend>
                         <input type="radio" checked  id="NAD" name="ADV" value="0"><label for="NAD">None</label>
@@ -601,9 +479,10 @@
                         <input type="radio" id="AMA" name="ADV" disabled value="3"><label for="AMA">Maths</label>
                         <input type="text" value="0" readonly disabled size="1" id="ADV_X">
                 </fieldset>
-            </div>
-            <div>
-                <h3>Complementary subjects</h3>
+                <label class="total">Total Optional: <input type="text" readonly disabled id="OPTIONAL_X"></label>
+            </fieldset>
+            <fieldset class="col3">
+                <legend>Complementary subjects</legend>
                     <input type="checkbox" id="ARC" value="2"><label for="ARC">Art</label>
                     <input type="text" value="0" readonly disabled size="1" id="ARC_X"><br>                    
                     <input type="checkbox" id="CLS" value="2"><label for="CLS">Classical Studies</label>
@@ -644,31 +523,11 @@
                         <input type="radio" id="L5G" name="L5" value="2"><label for="L5G">Modern Greek</label>
                         <input type="text" value="0" readonly disabled size="1"  id="L5_X">
                     </fieldset>
-                </div>
-            </form>
-
-            <h2>Example Final Bac Exams</h2>
-            <div class="exams">
-                <div>
-                    <h3>Written</h3>
-                    <p>
-                        <span id="L1_W">Language 1</span><br>
-                        <span id="L2_W">Language 2</span><br>
-                        <span id="MAT_W">Maths 3</span><br>
-                        <span id="O1_W">Option 1</span><br>
-                        <span id="O2_W">Option 2</span><br>
-                    </p>
-                </div>
-                <div>
-                    <h3>Oral</h3>
-                    <p>
-                        <span id="L1_O">Language 1</span><br>
-                        <span id="L2_O">Subject in language 2</span><br>
-                        <span id="O2_O">Maths 3</span><br>
-                    </p>
-                </div>
-            </div>
-        </main>
+                    <label class="total">Total Complementary: <input type="text" readonly disabled id="COMPLEMENTARY_X"></label>
+            </fieldset>
+            <label class="total">Total periods: <input type="text" readonly disabled id="TOTAL_X"></label>
+        </form>
+    </main>
     <footer>
         <p>
             Offered without any warranty or guarantee about the accuracy. If in doubt, keep calm and carry on!
