@@ -222,17 +222,8 @@
                     toggleFields(aOptional,true,true);
                     toggleFields(aAdvanced,true,true);
                     toggleFields(aComplementary,true,true);
-
-                    //make totals area red
-                    if(total > 35) {
-                        document.getElementById("totals").classList.add("exceeded");
-                    }
-                    else {
-                        document.getElementById("totals").classList.remove("exceeded");
-                    }
                 }
                 else {
-                    document.getElementById("totals").classList.remove("exceeded");
                     if(totalOptional >= 16) {
                         toggleFields(aOptional,true,true);
                         setAdvRadioDependencies(false);
@@ -386,37 +377,16 @@
                     document.getElementById("O2_O").innerText = "Advanced Maths"
                 }
             }
-
-            function saveData(){
+        
+            saveData(){
                 const form = document.getElementById('choices');
-                localStorage.clear();
                 for (const element of form.elements) {
                     if(element.type == "radio" || element.type == "checkbox") {
-                        //alert(localStorage.getItem(element.id));
                         localStorage.setItem(element.id, element.checked);
                     }
-                    else {
-                        localStorage.setItem(element.id, element.value);
-                    }
                 }
-                alert("Form saved successfully.");
             }
-
-            function retrieveData(){
-                const form = document.getElementById('choices');
-                for (const element of form.elements) {
-                    if(element.type == "radio" || element.type == "checkbox") {
-                        //alert(localStorage.getItem(element.id));
-                        element.checked = eval(localStorage.getItem(element.id));
-                    }
-                    else {
-                        element.value = localStorage.getItem(element.id);
-                    }
-                }
-                updateTotals();
-                //alert("Form retrieved successfully.");
-            }
-
+            
         </script>
         <style>
             body {
@@ -530,10 +500,6 @@
 
             div#totals div input  {
                 font-weight: 800;
-            }
-
-            div#totals.exceeded {
-                background-color: red;
             }
 
             form p {
