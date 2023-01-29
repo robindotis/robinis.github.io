@@ -8,33 +8,39 @@
         <title>European Baccalaureate Subject Choices</title>
     
         <script>
+            const aCompulsory = ["L1","L2","BIO2","HIS2","GEO2","PHI2","ETH","PE","MAT3","MAT5"];
+            const aCompulsoryX = aCompulsory.slice(0,aCompulsory.length-2).concat(["MAT"]);
+            const aOptional = ["BIO4","HIS4","GEO4","PHI4","CHE","PHY","ART","MUS","L3","L4","ECO","LAT"];
+            const aOptionalX = aOptional.slice(0,aOptional.length-2).concat(["ECL","ADV"]);
+            const aAdvanced = ["AL1","AL2","AMA"];
+            const aComplementary = ["ARC","CLS","MSC","DRA","SUS","ICT","ECI","PSC","SOC","SPO","TDR","L5C","L5D","L5G","L5S","L5L","NOL5","LABBIO4","LABCHE","LABPHY","NOLAB"];
+            const aComplementaryX = aComplementary.slice(0,aComplementary.length-10).concat(["L5","LAB"]);
+
             function updateValue(e) {
+                const elId = e.target.id;
+                var elName = e.target.id;
                 if(e.target.type == "radio") {
                     // add _X to end of name to get field for lesson count
-                    const id = e.target.name + "_X";
-                    const field = document.getElementById(id);
+                    elName = e.target.name;
+                }                    
+                var elNameX = elName + "_X";
+                const field = document.getElementById(elNameX);
+                if(e.target.checked) {
                     field.value = e.target.value;
                 }
-                else if (e.target.type == "checkbox") {
-                    const id = e.target.id + "_X";
-                    const field = document.getElementById(id);
-                    if(e.target.checked) {
-                        field.value = e.target.value;
-                    }
-                    else {
-                        field.value = 0;
-                    }
+                else {
+                    field.value = 0;
                 }
 
                 //Uncheck GEO2, HIS2 and PHI2 if 4 period is chosen
-                if(e.target.id == "HIS4" || e.target.id == "GEO4" || e.target.id == "PHI4") {
-                    const subj2 = e.target.id.replace("4","2");
+                if(elId == "HIS4" || elId == "GEO4" || elId == "PHI4") {
+                    const subj2 = elId.replace("4","2");
                     document.getElementById(subj2).checked = !e.target.checked;
                     document.getElementById(subj2 + "_X").value = Number(document.getElementById(subj2).checked) * Number(document.getElementById(subj2).value);
                 }
                 
                 //Enable Advanced Maths only if MAT5 chosen
-                if(e.target.name == "MAT") {
+                if(elName == "MAT") {
                     const field = document.getElementById("AMA");
                     if(e.target.value == 5) {
                         field.disabled = false;
@@ -49,8 +55,8 @@
                 }
 
                 //Enable LABs depending on the 4P science chosen
-                if(e.target.id == "BIO4" || e.target.id == "CHE" || e.target.id == "PHY") {
-                    const field = document.getElementById("LAB" + e.target.id);
+                if(elId == "BIO4" || elId == "CHE" || elId == "PHY") {
+                    const field = document.getElementById("LAB" + elId);
                     if(e.target.checked) {
                         field.disabled = false;
                     }
@@ -83,9 +89,9 @@
                 }
 
                 //Disable Intro to Eco if Economics p4 chosen
-                if(e.target.name == "ECL") {
+                if(elName == "ECL") {
                     const field = document.getElementById("ECI");
-                    if(e.target.id == "ECO") {
+                    if(elId == "ECO") {
                         field.disabled = true;
                         if(field.checked){
                             document.getElementById("ECI_X").value = 0;
@@ -98,7 +104,7 @@
                 }
 
                 //Disable Art p2 if taken as p4
-                if(e.target.id == "ART") {
+                if(elId == "ART") {
                     const field = document.getElementById("ARC");
                     if(e.target.checked) {
                         field.disabled = true;
@@ -113,7 +119,7 @@
                 }
 
                 //Disable Music p2 if taken as p4
-                if(e.target.id == "MUS") {
+                if(elId == "MUS") {
                     const field = document.getElementById("MSC");
                     if(e.target.checked) {
                         field.disabled = true;
@@ -127,25 +133,6 @@
                     }
                 }
 
-                updateTotals();
-            }
-
-            function setMaths(p){
-                const field  = document.getElementById("MAT" + p);
-                field.checked = true;
-                document.getElementById("MAT_X").value = field.value;
-                //disable advance maths if MAT3
-                const ama = document.getElementById("AMA");
-                if(p == 5){
-                    ama.disabled = false;
-                }
-                else {
-                    ama.disabled = true;
-                    if(ama.checked) {
-                        document.getElementById("ADV_X").value = 0;
-                        ama.checked = false;
-                    }
-                }
                 updateTotals();
             }
 
@@ -163,30 +150,11 @@
                 document.getElementById("BIO2_X").value = 0;
                 document.getElementById("MAT5").checked = true;
                 document.getElementById("MAT_X").value = document.getElementById("MAT5").value;
+/*
                 document.getElementById("AMA").checked = true;
                 document.getElementById("AMA").disabled = false;
                 document.getElementById("ADV_X").value = document.getElementById("AMA").value;
-
-                updateTotals();
-            }
-
-            function setMaxMathsSciences(){
-                document.getElementById("choices").reset();
-                setAllSciences();
-                setAdvanced("AMA")
-                updateTotals();
-            }
-
-            function setAdvanced(subj){
-                if(subj == "AMA") {
-                    const mat5  = document.getElementById("MAT5");
-                    mat5.checked = true;
-                    document.getElementById("MAT_X").value = mat5.value;     
-                }
-                const field  = document.getElementById(subj);
-                field.checked = true;
-                field.disabled = false;
-                document.getElementById("ADV_X").value = field.value;
+*/
                 updateTotals();
             }
 
@@ -215,95 +183,78 @@
                 updateTotals();
             }
 
-            function setOptions(subj){
-                if(subj == "BIO2") {
-                    //remove Chemistry 4p
-                    const che  = document.getElementById("CHE");
-                    che.checked = false;
-                    document.getElementById("CHE_X").value = 0;
-                    
-                    //remove Physics 4p
-                    const phy  = document.getElementById("PHY");
-                    phy.checked = false;
-                    document.getElementById("PHY_X").value = 0;
-
-                    //Set BIO 2p
-                    const bio = document.getElementById(subj);
-                    bio.checked = true;
-                    document.getElementById("BIO2_X").value = bio.value;
-
-                    //disable Labs
-                    const labBio  = document.getElementById("LABBIO");
-                    labBio.checked = false;
-                    labBio.disabled = true;
-                    const labChe  = document.getElementById("LABCHE");
-                    labChe.checked = false;
-                    labChe.disabled = true;
-                    const labPhy  = document.getElementById("LABPHY");
-                    labPhy.checked = false;
-                    labPhy.disabled = true;
-                    const noLab  = document.getElementById("NOLAB");
-                    noLab.checked = true;
-                    document.getElementById("LAB_X").value = noLab.value;
+            function updateSubTotals(aFields,target){
+                //calculate new totals
+                var total = 0;
+                for (i in aFields) {
+                    total += +document.getElementById(aFields[i]+"_X").value;
                 }
-                else {
-                    const field  = document.getElementById(subj);
-                    field.checked = true;
-                    document.getElementById(subj + "_X").value = field.value;
-                    const subj2 = subj.replace("4","2");
-                    document.getElementById(subj2).checked = false;
-                    document.getElementById(subj2 + "_X").value = 0;
+                document.getElementById(target).value = total;
+                return total;
+            }
+
+            function toggleFields(aFields,state){
+                for (i in aFields) {
+                    const field = document.getElementById(aFields[i]);
+                    field.disabled = false;
+                    if(field.checked == false) {
+                        field.disabled = state;
+                    }
                 }
-                updateTotals();
             }
 
             function updateTotals(){
-                //calculate new totals
-                document.getElementById("COMPULSORY_X").value = 
-                    +document.getElementById("L1_X").value + 
-                    +document.getElementById("L2_X").value + 
-                    +document.getElementById("ETH_X").value + 
-                    +document.getElementById("PE_X").value +
-                    +document.getElementById("MAT_X").value +
-                    +document.getElementById("BIO2_X").value +
-                    +document.getElementById("HIS2_X").value +
-                    +document.getElementById("GEO2_X").value +
-                    +document.getElementById("PHI2_X").value;
+                var totalCompulsory = updateSubTotals(aCompulsoryX,"COMPULSORY_X");
+                var totalOptional = updateSubTotals(aOptionalX,"OPTIONAL_X");
+                var totalComplementary = updateSubTotals(aComplementaryX,"COMPLEMENTARY_X");
+                var total = totalCompulsory + totalOptional + totalComplementary;
+                document.getElementById("TOTAL_X").value = total; 
 
-                document.getElementById("OPTIONAL_X").value = 
-                    +document.getElementById("CHE_X").value + 
-                    +document.getElementById("PHY_X").value + 
-                    +document.getElementById("BIO4_X").value + 
-                    +document.getElementById("HIS4_X").value + 
-                    +document.getElementById("GEO4_X").value + 
-                    +document.getElementById("PHI4_X").value + 
-                    +document.getElementById("ADV_X").value +
-                    +document.getElementById("ART_X").value +
-                    +document.getElementById("MUS_X").value +
-                    +document.getElementById("L3_X").value +
-                    +document.getElementById("L4_X").value +
-                    +document.getElementById("ECL_X").value;
+                //disable unchecked optional subjects once 4 have been chosen#
+                if(total >= 35) {
+                    //toggleFields(aCompulsory,true);
+                    toggleFields(aOptional,true);
+                    toggleFields(aAdvanced,true);
+                    toggleFields(aComplementary,true);
+                }
+                else {
+                    if(totalOptional >= 16) {
+                        toggleFields(aOptional,true);
+                    }
+                    else {
+                        toggleFields(aOptional,false);
+                    }
+                    //alert(totalComplementary);
+                    if(totalComplementary >= 6) {
+                        toggleFields(aComplementary,true);
+                    }
+                    else {
+                        toggleFields(aComplementary,false);
+                    }
+                    toggleFields(aAdvanced,false);
+                    if(document.getElementById("BIO4").checked) {
+                        document.getElementById("LABBIO4").disabled = false;
+                    }
+                    else {
+                        document.getElementById("LABBIO4").disabled = true;
+                    }
+                    if(document.getElementById("CHE").checked) {
+                        document.getElementById("LABCHE").disabled = false;
+                    }
+                    else {
+                        document.getElementById("LABCHE").disabled = true;
+                    }
+                    if(document.getElementById("PHY").checked) {
+                        document.getElementById("LABPHY").disabled = false;
+                    }
+                    else {
+                        document.getElementById("LABPHY").disabled = true;
+                    }
+                }
+                document.getElementById("NOLAB").disabled = false;
+                document.getElementById("NOL5").disabled = false;
 
-                document.getElementById("COMPLEMENTARY_X").value = 
-                    +document.getElementById("ARC_X").value + 
-                    +document.getElementById("CLS_X").value + 
-                    +document.getElementById("DRA_X").value + 
-                    +document.getElementById("SUS_X").value +
-                    +document.getElementById("ICT_X").value +
-                    +document.getElementById("ECI_X").value +
-                    +document.getElementById("MSC_X").value +
-                    +document.getElementById("PSC_X").value +
-                    +document.getElementById("SOC_X").value +
-                    +document.getElementById("SPO_X").value +
-                    +document.getElementById("TDR_X").value +
-                    +document.getElementById("L5_X").value +
-                    +document.getElementById("LAB_X").value;
 
-                document.getElementById("TOTAL_X").value = 
-                    +document.getElementById("COMPULSORY_X").value +
-                    +document.getElementById("OPTIONAL_X").value +
-                    +document.getElementById("COMPLEMENTARY_X").value;
-            
                 //set exams
                 if (document.getElementById("MAT5").checked){
                     document.getElementById("MAT_W").innerText = "Maths 5"
@@ -313,7 +264,7 @@
                 }
                 
                 //4 periods
-                var subjects = "From: ";
+                var subjects = "Two from: ";
                 if(document.getElementById("HIS4").checked) {
                     subjects += "History 4, "
                 }
@@ -351,9 +302,9 @@
                     subjects += "Latin, "
                 }
                 document.getElementById("O1_W").innerText = subjects;
-                document.getElementById("O2_W").innerText = subjects;
+                document.getElementById("O2_W").innerText = "";
 
-                subjects = "From: Language 2, ";
+                subjects = "One from    : Language 2, ";
                 if(document.getElementById("HIS4").checked) {
                     subjects += "History 4, "
                 }
@@ -368,6 +319,27 @@
                 }
                 document.getElementById("L2_O").innerText = subjects;
 
+                //4 periods
+                var subjects = "One from: ";
+                if(document.getElementById("PHI4").checked) {
+                    subjects += "Philosophy 4, "
+                }
+                if(document.getElementById("BIO4").checked) {
+                    subjects += "Biology 4, "
+                }
+                if(document.getElementById("CHE").checked) {
+                    subjects += "Chemisty, "
+                }
+                if(document.getElementById("PHY").checked) {
+                    subjects += "Physics, "
+                }
+                if(document.getElementById("L3").checked) {
+                    subjects += "Language 3, "
+                }
+                if(document.getElementById("L4").checked) {
+                    subjects += "Language 4 / ONL "
+                }
+                document.getElementById("O2_O").innerText = subjects;
 
 
                 if(document.getElementById("AL1").checked) {
@@ -375,6 +347,7 @@
                     document.getElementById("L1_O").innerText = "Advanced L1"
                 }
                 if(document.getElementById("AL2").checked) {
+                    document.getElementById("L2_W").innerText = "Advanced L2"
                     document.getElementById("L2_O").innerText = "Advanced L2"
                 }
                 if(document.getElementById("AMA").checked) {
@@ -463,10 +436,10 @@
             }
 
             div#totals {
-                position: absolute;
-                bottom: 0;
+/*                position: absolute;
+                bottom: 0;*/
                 background-color: #eee;
-                width: 90%;
+                width: 100%;
                 margin-bottom: 1em;
                 text-align: justify;
             }
@@ -476,20 +449,40 @@
             }
 
             div#totals input {
-                position: absolute;
-                right: 5px;
-                float: none;
+/*                position: absolute;
+                right: 5px;*/
+                float: right;
                 text-align: right;
             }
             
             div#totals div {
-                width: 95%;
+/*                width: 95%;*/
                 font-weight: 800;
                 border-bottom: 1px solid #000;
             }
 
             div#totals div input  {
                 font-weight: 800;
+            }
+
+            form p {
+                margin: 0;
+            }
+
+            p:has(input:checked),
+            input[type=radio]:checked+label {
+                background-color: #99edc3;
+            }
+
+            p:has(input[type=checkbox]:disabled),
+            input[type=radio]:disabled+label {
+                text-decoration: line-through;
+            }
+            p:has(input[type=checkbox]:disabled:checked){
+                text-decoration: none;
+            }
+            p:has(input[type=checkbox]:disabled){
+                background-color:#fff;
             }
 
 </style>
@@ -510,48 +503,47 @@
             <button onclick="setMaxSciences();">Maximise Sciences</button> 
             <button onclick="setMinSubjects();">Minimise Subjects</button>
         </p>
-            <!--
-            <div>
-                <h3>Compulsory Maths</h3>
-                <p>
-                    <button onclick="setMaxMathsSciences();">Sciences and advanced Maths</button> or<br>
-                    <button onclick="setMaths(3);">3 period maths</button> or<br>
-                    <button onclick="setMaths(5);">5 period maths</button> or<br>
-                    <button onclick="setAdvanced('AMA');">Advanced Maths</button>
-                </p>
-            </div>
-            <div>
-                <h3>Compulsory 2 or 4 period subjects</h3>
-                <p>
-                    <button onclick="setOptions('HIS4');">History 4 periods</button>
-                    <button onclick="setOptions('GEO4');">Georgraphy 4 periods</button><br>
-                    <button onclick="setOptions('PHI4');">Philosophy 4 periods</button>
-                    <button onclick="setOptions('BIO2');">No science (Biology 2 periods)</button>
-                </p>
-            </div>
-            <div>
-                <h3>Advanced subjects</h3>
-                <p>
-                    <button onclick="setAdvanced('AMA');">Advanced Maths</button> or<br>
-                    <button  onclick="setAdvanced('AL1');">Advanced L1</button> or<br>
-                    <button onclick="setAdvanced('AL2');">Advanced L2</button>
-                </p>
-            </div>
--->
         <h2>Subject Grid</h2>
         <form id="choices" >
             <div>
                 <h3>Compulsory subjects</h3>
-                <input type="checkbox" checked disabled id="L1" value="4"><label for="L1">Language 1</label><input type="text" value="4" readonly disabled size="1" id="L1_X"><br>
-                <input type="checkbox" checked disabled id="L2" value="3"><label for="L2">Language 2</label><input type="text" value="3" readonly disabled size="1" id="L2_X"><br>
-                <input type="radio" checked id="MAT3" value="3" name="MAT"><label for="MAT3">Maths 3</label>
-                <input type="radio" id="MAT5" value="5" name="MAT"><label for="MAT5">Maths 5</label><input type="text" value="3" readonly disabled size="1" id="MAT_X"><br>
-                <input type="checkbox" checked disabled id="BIO2" value="2"><label for="BIO2">Biology 2</label><input type="text" value="2" readonly disabled size="1" id="BIO2_X"><br>
-                <input type="checkbox" checked disabled id="HIS2" value="2"><label for="HIS2">History 2</label><input type="text" value="2" readonly disabled size="1" id="HIS2_X"><br>
-                <input type="checkbox" checked disabled id="GEO2" value="2"><label for="GEO2">Geography 2</label><input type="text" value="2" readonly disabled size="1" id="GEO2_X"><br>
-                <input type="checkbox" checked disabled id="PHI2" value="2"><label for="PHI2">Philosophy 2</label><input type="text" value="2" readonly disabled size="1" id="PHI2_X"><br>
-                <input type="checkbox" checked disabled id="PE" value="2"><label for="PE">Physical Education</label><input type="text" value="2" readonly disabled size="1" id="PE_X"><br>
-                <input type="checkbox" checked disabled id="ETH" value="1"><label for="ETH">Ethics/Religion</label><input type="text" value="1" readonly disabled size="1" id="ETH_X"><br>
+                <p>
+                    <input type="checkbox" checked disabled id="L1" value="4"><label for="L1">Language 1</label>
+                    <input type="text" value="4" readonly disabled size="1" id="L1_X">
+                </p>
+                <p>
+                    <input type="checkbox" checked disabled id="L2" value="3"><label for="L2">Language 2</label>
+                    <input type="text" value="3" readonly disabled size="1" id="L2_X">
+                </p>
+                <p>
+                    <input type="radio" checked id="MAT3" value="3" name="MAT"><label for="MAT3">Maths 3</label>
+                    <input type="radio" id="MAT5" value="5" name="MAT"><label for="MAT5">Maths 5</label>
+                    <input type="text" value="3" readonly disabled size="1" id="MAT_X">                        
+                </p>
+                <p>
+                    <input type="checkbox" checked disabled id="BIO2" value="2"><label for="BIO2">Biology 2</label>
+                    <input type="text" value="2" readonly disabled size="1" id="BIO2_X">
+                </p>
+                <p>
+                    <input type="checkbox" checked disabled id="HIS2" value="2"><label for="HIS2">History 2</label>
+                    <input type="text" value="2" readonly disabled size="1" id="HIS2_X">
+                </p>
+                <p>
+                    <input type="checkbox" checked disabled id="GEO2" value="2"><label for="GEO2">Geography 2</label>
+                    <input type="text" value="2" readonly disabled size="1" id="GEO2_X">
+                </p>
+                <p>
+                    <input type="checkbox" checked disabled id="PHI2" value="2"><label for="PHI2">Philosophy 2</label>
+                    <input type="text" value="2" readonly disabled size="1" id="PHI2_X">
+                </p>
+                <p>
+                    <input type="checkbox" checked disabled id="PE" value="2"><label for="PE">Physical Education</label>
+                    <input type="text" value="2" readonly disabled size="1" id="PE_X">
+                </p>
+                <p>
+                    <input type="checkbox" checked disabled id="ETH" value="1"><label for="ETH">Ethics/Religion</label>
+                    <input type="text" value="1" readonly disabled size="1" id="ETH_X">                    
+                </p>
                 <div id="totals">
                     <h3>Totals</h3>
                     <label class="total" for="COMPULSORY_X">Compulsory: </label><input type="text" readonly disabled value="21" id="COMPULSORY_X"><br>
@@ -565,28 +557,47 @@
         </div>
             <div>
                 <h3>Optional subjects</h3>
-                <input type="checkbox" id="HIS4" value="4"><label for="HIS4">History 4</label>
-                <input type="text" value="0" readonly disabled size="1" id="HIS4_X" aria-hidden="true"><br>
-                <input type="checkbox" id="GEO4" value="4"><label for="GEO4">Geography 4</label>
-                <input type="text" value="0" readonly disabled size="1" id="GEO4_X" aria-hidden="true"><br>
-                <input type="checkbox" id="PHI4" value="4"><label for="PHI4">Philosophy 4</label>
-                <input type="text" value="0" readonly disabled size="1" id="PHI4_X" aria-hidden="true"><br>
-
-                <input type="checkbox" id="BIO4" value="4"><label for="BIO4">Biology 4</label>
-                <input type="text" value="0" readonly disabled size="1" id="BIO4_X" aria-hidden="true"><br>
-                <input type="checkbox" id="CHE" value="4"><label for="CHE">Chemistry 4</label>
-                <input type="text" value="0" readonly disabled size="1" id="CHE_X" aria-hidden="true"><br>
-                <input type="checkbox" id="PHY" value="4"><label for="PHY">Physics 4</label>
-                <input type="text" value="0" readonly disabled size="1" id="PHY_X" aria-hidden="true"><br>                            
+                <p>
+                    <input type="checkbox" id="HIS4" value="4"><label for="HIS4">History 4</label>
+                    <input type="text" value="0" readonly disabled size="1" id="HIS4_X" aria-hidden="true">
+                </p>
+                <p>
+                    <input type="checkbox" id="GEO4" value="4"><label for="GEO4">Geography 4</label>
+                    <input type="text" value="0" readonly disabled size="1" id="GEO4_X" aria-hidden="true">
+                </p>
+                <p>
+                    <input type="checkbox" id="PHI4" value="4"><label for="PHI4">Philosophy 4</label>
+                    <input type="text" value="0" readonly disabled size="1" id="PHI4_X" aria-hidden="true">
+                </p>
+                <p>
+                    <input type="checkbox" id="BIO4" value="4"><label for="BIO4">Biology 4</label>
+                    <input type="text" value="0" readonly disabled size="1" id="BIO4_X" aria-hidden="true">
+                </p>
+                <p>
+                    <input type="checkbox" id="CHE" value="4"><label for="CHE">Chemistry 4</label>
+                    <input type="text" value="0" readonly disabled size="1" id="CHE_X" aria-hidden="true">                        
+                </p>
+                <p>
+                    <input type="checkbox" id="PHY" value="4"><label for="PHY">Physics 4</label>
+                    <input type="text" value="0" readonly disabled size="1" id="PHY_X" aria-hidden="true">                        
+                </p>
                 <br>
-                <input type="checkbox" id="ART" value="4"><label for="ART">Art</label>
-                <input type="text" value="0" readonly disabled size="1" id="ART_X"><br>
-                <input type="checkbox" id="MUS" value="4"><label for="MUS">Music</label>
-                <input type="text" value="0" readonly disabled size="1" id="MUS_X"><br>
-                <input type="checkbox" id="L3" value="4"><label for="L3">Language 3</label>
-                <input type="text" value="0" readonly disabled size="1" id="L3_X"><br>
-                <input type="checkbox" id="L4" value="4"><label for="L4">Language 4 or ONL</label>
-                <input type="text" value="0" readonly disabled size="1" id="L4_X">
+                <p>
+                    <input type="checkbox" id="ART" value="4"><label for="ART">Art</label>
+                    <input type="text" value="0" readonly disabled size="1" id="ART_X">
+                </p>
+                <p>
+                    <input type="checkbox" id="MUS" value="4"><label for="MUS">Music</label>
+                    <input type="text" value="0" readonly disabled size="1" id="MUS_X">
+                </p>
+                <p>                    
+                    <input type="checkbox" id="L3" value="4"><label for="L3">Language 3</label>
+                    <input type="text" value="0" readonly disabled size="1" id="L3_X">
+                </p>
+                <p>
+                    <input type="checkbox" id="L4" value="4"><label for="L4">Language 4 or ONL</label>
+                    <input type="text" value="0" readonly disabled size="1" id="L4_X">
+                </p>
                 <hr>
                 <input type="radio" id="ECO" name="ECL" value="4"><label for="ECO">Economics</label>
                 <input type="radio" id="LAT" name="ECL" value="4"><label for="LAT">Latin</label>
@@ -604,50 +615,72 @@
             </div>
             <div>
                 <h3>Complementary subjects</h3>
+                <p>
                     <input type="checkbox" id="ARC" value="2"><label for="ARC">Art</label>
-                    <input type="text" value="0" readonly disabled size="1" id="ARC_X"><br>                    
+                    <input type="text" value="0" readonly disabled size="1" id="ARC_X">
+                </p>
+                <p>
                     <input type="checkbox" id="CLS" value="2"><label for="CLS">Classical Studies</label>
-                    <input type="text" value="0" readonly disabled size="1" id="CLS_X"><br>
+                    <input type="text" value="0" readonly disabled size="1" id="CLS_X">
+                </p>
+                <p>
                     <input type="checkbox" id="DRA" value="2"><label for="DRA">Drama</label>
-                    <input type="text" value="0" readonly disabled size="1" id="DRA_X"><br>
+                    <input type="text" value="0" readonly disabled size="1" id="DRA_X">                    
+                </p>
+                <p>
                     <input type="checkbox" id="SUS" value="2"><label for="SUS">Education for Sustainable Development</label>
-                    <input type="text" value="0" readonly disabled size="1" id="SUS_X"><br>
+                    <input type="text" value="0" readonly disabled size="1" id="SUS_X">                    
+                </p>
+                <p>
                     <input type="checkbox" id="ICT" value="2"><label for="ICT">ICT</label>
-                    <input type="text" value="0" readonly disabled size="1" id="ICT_X"><br>
+                    <input type="text" value="0" readonly disabled size="1" id="ICT_X">                    
+                </p>
+                <p>
                     <input type="checkbox" id="ECI" value="2"><label for="ECI">Introduction to Economics</label> 
-                    <input type="text" value="0" readonly disabled size="1" id="ECI_X"><br>
+                    <input type="text" value="0" readonly disabled size="1" id="ECI_X">                    
+                </p>
+                <p>
                     <input type="checkbox" id="MSC" value="2"><label for="MSC">Music</label>
-                    <input type="text" value="0" readonly disabled size="1" id="MSC_X"><br>
+                    <input type="text" value="0" readonly disabled size="1" id="MSC_X">                    
+                </p>
+                <p>
                     <input type="checkbox" id="PSC" value="2"><label for="PSC">Political Science</label>
-                    <input type="text" value="0" readonly disabled size="1" id="PSC_X"><br>
+                    <input type="text" value="0" readonly disabled size="1" id="PSC_X">                    
+                </p>
+                <p>
                     <input type="checkbox" id="SOC" value="2"><label for="SOC">Sociology</label>
-                    <input type="text" value="0" readonly disabled size="1" id="SOC_X"><br>
+                    <input type="text" value="0" readonly disabled size="1" id="SOC_X">                    
+                </p>
+                <p>
                     <input type="checkbox" id="SPO" value="2"><label for="SPO">Sport</label>
-                    <input type="text" value="0" readonly disabled size="1" id="SPO_X"><br>                 
+                    <input type="text" value="0" readonly disabled size="1" id="SPO_X">                    
+                </p>
+                <p>
                     <input type="checkbox" id="TDR" value="2"><label for="TDR">Technical Drawing</label>
-                    <input type="text" value="0" readonly disabled size="1" id="TDR_X"><br>
-                    <fieldset>
-                        <legend>Laboratories</legend>
-                        <input type="radio" id="NOLAB" name="LAB" value="0" checked><label for="NOLAB">None</label>
-                        <input type="radio" id="LABBIO4" name="LAB" value="2" disabled><label for="LABBIO4">Biology</label>
-                        <input type="radio" id="LABCHE" name="LAB" value="2" disabled><label for="LABCHE">Chemistry</label> 
-                        <input type="radio" id="LABPHY" name="LAB" value="2" disabled><label for="LABPHY">Physics</label>
-                        <input type="text" value="0" readonly disabled size="1"  id="LAB_X">
-                    </fieldset>
-                    <fieldset>
-                        <legend>Language 5</legend>
-                        <input type="radio" id="NOL5" name="L5" value="0" checked><label for="NOL5">None</label>
-                        <input type="radio" id="L5C" name="L5" value="2"><label for="L5C">Chinese</label>
-                        <input type="radio" id="L5D" name="L5" value="2"><label for="L5D">Dutch</label>
-                        <input type="radio" id="L5S" name="L5" value="2"><label for="L5S">Spanish</label><br>
-                        <input type="radio" id="L5L" name="L5" value="2"><label for="L5L">Luxembourgish</label>
-                        <input type="radio" id="L5G" name="L5" value="2"><label for="L5G">Modern Greek</label>
-                        <input type="text" value="0" readonly disabled size="1"  id="L5_X">
-                    </fieldset>
+                    <input type="text" value="0" readonly disabled size="1" id="TDR_X">                    
+                </p>
+                <fieldset>
+                    <legend>Laboratories</legend>
+                    <input type="radio" id="NOLAB" name="LAB" value="0" checked><label for="NOLAB">None</label>
+                    <input type="radio" id="LABBIO4" name="LAB" value="2" disabled><label for="LABBIO4">Biology</label>
+                    <input type="radio" id="LABCHE" name="LAB" value="2" disabled><label for="LABCHE">Chemistry</label> 
+                    <input type="radio" id="LABPHY" name="LAB" value="2" disabled><label for="LABPHY">Physics</label>
+                    <input type="text" value="0" readonly disabled size="1"  id="LAB_X">
+                </fieldset>
+                <fieldset>
+                    <legend>Language 5</legend>
+                    <input type="radio" id="NOL5" name="L5" value="0" checked><label for="NOL5">None</label>
+                    <input type="radio" id="L5C" name="L5" value="2"><label for="L5C">Chinese</label>
+                    <input type="radio" id="L5D" name="L5" value="2"><label for="L5D">Dutch</label>
+                    <input type="radio" id="L5S" name="L5" value="2"><label for="L5S">Spanish</label><br>
+                    <input type="radio" id="L5L" name="L5" value="2"><label for="L5L">Luxembourgish</label>
+                    <input type="radio" id="L5G" name="L5" value="2"><label for="L5G">Modern Greek</label>
+                    <input type="text" value="0" readonly disabled size="1"  id="L5_X">
+                </fieldset>
                 </div>
             </form>
 
-            <h2>Example Final Bac Exams</h2>
+            <h2>Final Bac Exams Choices</h2>
             <div class="exams">
                 <div>
                     <h3>Written</h3>
@@ -677,6 +710,119 @@
     <script>
             const form = document.getElementById('choices');
             form.addEventListener('change', updateValue);
-        </script>
-    </body>
+
+/*
+            function setMaxMathsSciences(){
+                document.getElementById("choices").reset();
+                setAllSciences();
+                setAdvanced("AMA")
+                updateTotals();
+            }
+
+            function setAdvanced(subj){
+                if(subj == "AMA") {
+                    const mat5  = document.getElementById("MAT5");
+                    mat5.checked = true;
+                    document.getElementById("MAT_X").value = mat5.value;     
+                }
+                const field  = document.getElementById(subj);
+                field.checked = true;
+                field.disabled = false;
+                document.getElementById("ADV_X").value = field.value;
+                updateTotals();
+            }
+
+            function setMaths(p){
+                const field  = document.getElementById("MAT" + p);
+                field.checked = true;
+                document.getElementById("MAT_X").value = field.value;
+                //disable advance maths if MAT3
+                const ama = document.getElementById("AMA");
+                if(p == 5){
+                    ama.disabled = false;
+                }
+                else {
+                    ama.disabled = true;
+                    if(ama.checked) {
+                        document.getElementById("ADV_X").value = 0;
+                        ama.checked = false;
+                    }
+                }
+                updateTotals();
+            }
+
+            function setOptions(subj){
+                if(subj == "BIO2") {
+                    //remove Chemistry 4p
+                    const che  = document.getElementById("CHE");
+                    che.checked = false;
+                    document.getElementById("CHE_X").value = 0;
+                    
+                    //remove Physics 4p
+                    const phy  = document.getElementById("PHY");
+                    phy.checked = false;
+                    document.getElementById("PHY_X").value = 0;
+
+                    //Set BIO 2p
+                    const bio = document.getElementById(subj);
+                    bio.checked = true;
+                    document.getElementById("BIO2_X").value = bio.value;
+
+                    //disable Labs
+                    const labBio  = document.getElementById("LABBIO");
+                    labBio.checked = false;
+                    labBio.disabled = true;
+                    const labChe  = document.getElementById("LABCHE");
+                    labChe.checked = false;
+                    labChe.disabled = true;
+                    const labPhy  = document.getElementById("LABPHY");
+                    labPhy.checked = false;
+                    labPhy.disabled = true;
+                    const noLab  = document.getElementById("NOLAB");
+                    noLab.checked = true;
+                    document.getElementById("LAB_X").value = noLab.value;
+                }
+                else {
+                    const field  = document.getElementById(subj);
+                    field.checked = true;
+                    document.getElementById(subj + "_X").value = field.value;
+                    const subj2 = subj.replace("4","2");
+                    document.getElementById(subj2).checked = false;
+                    document.getElementById(subj2 + "_X").value = 0;
+                }
+                updateTotals();
+            }
+
+
+*/
+</script>
+            <!--
+            <div>
+                <h3>Compulsory Maths</h3>
+                <p>
+                    <button onclick="setMaxMathsSciences();">Sciences and advanced Maths</button> or<br>
+                    <button onclick="setMaths(3);">3 period maths</button> or<br>
+                    <button onclick="setMaths(5);">5 period maths</button> or<br>
+                    <button onclick="setAdvanced('AMA');">Advanced Maths</button>
+                </p>
+            </div>
+            <div>
+                <h3>Compulsory 2 or 4 period subjects</h3>
+                <p>
+                    <button onclick="setOptions('HIS4');">History 4 periods</button>
+                    <button onclick="setOptions('GEO4');">Georgraphy 4 periods</button><br>
+                    <button onclick="setOptions('PHI4');">Philosophy 4 periods</button>
+                    <button onclick="setOptions('BIO2');">No science (Biology 2 periods)</button>
+                </p>
+            </div>
+            <div>
+                <h3>Advanced subjects</h3>
+                <p>
+                    <button onclick="setAdvanced('AMA');">Advanced Maths</button> or<br>
+                    <button  onclick="setAdvanced('AL1');">Advanced L1</button> or<br>
+                    <button onclick="setAdvanced('AL2');">Advanced L2</button>
+                </p>
+            </div>
+-->
+</body>
 </html>
