@@ -217,6 +217,10 @@
                 document.getElementById("TOTAL_X").value = total; 
 
                 //disable unchecked optional subjects once 4 have been chosen#
+                document.getElementById("totals").classList.remove("high");
+                document.getElementById("totals").classList.remove("good");
+                document.getElementById("totals").classList.remove("low");
+                document.getElementById("status").innerText = "";
                 if(total >= 35) {
                     //toggleFields(aCompulsory,true);
                     toggleFields(aOptional,true,true);
@@ -225,14 +229,23 @@
 
                     //make totals area red
                     if(total > 35) {
-                        document.getElementById("totals").classList.add("exceeded");
+                        document.getElementById("totals").classList.add("high");
+                        document.getElementById("status").innerText = "(too high)";
                     }
                     else {
-                        document.getElementById("totals").classList.remove("exceeded");
+                        document.getElementById("totals").classList.add("good");
+                        document.getElementById("status").innerText = "(ok)";
                     }
                 }
                 else {
-                    document.getElementById("totals").classList.remove("exceeded");
+                    if(total < 31) {
+                        document.getElementById("totals").classList.add("low");
+                        document.getElementById("status").innerText = "(too low)";
+                    }
+                    else {
+                        document.getElementById("totals").classList.add("good");
+                        document.getElementById("status").innerText = "(ok)";
+                    }
                     if(totalOptional >= 16) {
                         toggleFields(aOptional,true,true);
                         setAdvRadioDependencies(false);
@@ -287,6 +300,12 @@
             }
 
             function setExams() {
+                //initialise languages
+                document.getElementById("L1_W").innerText = "Language 1"
+                document.getElementById("L1_O").innerText = "Language 1"
+                document.getElementById("L2_W").innerText = "Language 2"
+                document.getElementById("L2_O").innerText = "Language 2"
+
                 //Maths
                 if (document.getElementById("MAT5").checked){
                     document.getElementById("MAT_W").innerText = "Maths 5"
@@ -430,24 +449,52 @@
             h1, footer p {
                 display: block;
                 width:100%;
-                padding:0.5em;
+                padding:0.3rem 0.7rem;
                 margin: 0;
-                font-size: 2em;
+                font-size: 2rem;
             }
+            header {
+                position: sticky;
+                padding: 0.6rem 0 0.5rem 0;
+                top:0;
+                z-index: 1;
+            }
+            footer {
+                position: fixed;
+                bottom:0;
+                width: 100%;
+            }
+
+            h2#grid, h2#exams {
+                scroll-margin: 5rem;
+            }
+
+            h2#intro {
+                scroll-margin: 6.5rem;
+            }
+
+            nav {
+                padding: 0.3rem 0.7rem 0;
+            }
+
+            nav a, nav a:visited {
+                color: #fff;
+            }
+
             main {
-                padding:1em;
+                padding:1rem 1rem 100rem 1rem;
             }
             main h2 {
                 margin:0;
-                padding-top: 0.7em;
+                padding-top: 0.7rem;
             }
             main button {
-                padding:0.3em;
-                margin:0 0.8em 0 0;
+                padding:0.3rem;
+                margin:0 0.8rem 0 0;
             }
 
             footer p {
-                font-size: 1.1em;
+                font-size: 1.1rem;
             }
 
             .columns {
@@ -456,27 +503,27 @@
             } 
             
             .columns > div {
-                max-width: 30em;
+                max-width: 30rem;
                 border: 1px solid #000;
-                padding: 0 1em;
-                margin: 0.5em 0.5em 0 0;
-                line-height: 1.5em;
+                padding: 0 1rem;
+                margin: 0.5rem 0.5rem 0 0;
+                line-height: 1.5rem;
                 position: relative;
             }
 
             form > div {
-                max-width: 25em;
+                max-width: 25rem;
             }
 
             fieldset {
                 border: 0;
                 padding: 0;
-                margin: 0.5em 0 0.5em 0;
+                margin: 0.5rem 0 0.5rem 0;
             }
 
             input[type=text] {
                 border:0;
-                width: 1.3em;
+                width: 1.3rem;
                 float:right;
                 text-align: right;
             }
@@ -499,15 +546,15 @@
             }
 
             label {
-                margin: 0 0.8em 0 0.2em;
+                margin: 0 0.8rem 0 0.2rem;
             }
 
             div#totals {
 /*                position: absolute;
                 bottom: 0;*/
-                background-color: #eee;
+                background-color: #FFEB9C;
                 width: 100%;
-                margin-bottom: 1em;
+                margin-bottom: 1rem;
                 text-align: justify;
             }
 
@@ -532,28 +579,45 @@
                 font-weight: 800;
             }
 
-            div#totals.exceeded {
-                background-color: red;
+            div#totals.high {
+                background-color: #FFC7CE ;
+            }
+
+            div#totals.good {
+                background-color: #C6EFCE ;
+            }
+
+            div#totals.low {
+                background-color: #FFEB9C ;
             }
 
             form p {
                 margin: 0;
             }
 
+            p:has(input[type=checkbox]:disabled){
+                background-color:#fff;
+            }
+
             p:has(input:checked),
+            p:has(input[type=checkbox]:checked),
             input[type=radio]:checked+label {
-                background-color: #99edc3;
+                background-color: #C6EFCE;
+                /* #FFEB9C */
             }
 
             p:has(input[type=checkbox]:disabled),
             input[type=radio]:disabled+label {
-                text-decoration: line-through;
+                /*text-decoration: line-through;*/
+                color:#888;
             }
             p:has(input[type=checkbox]:disabled:checked){
                 text-decoration: none;
+                color:#000;
             }
-            p:has(input[type=checkbox]:disabled){
-                background-color:#fff;
+
+            p#maths {
+                background-color: #fff;
             }
 
 </style>
@@ -561,11 +625,16 @@
     <body>
         <header>
             <h1>Subject selector for European Baccalaureate</h1>
+            <nav>
+                <a href="#intro">Introduction</a>&nbsp;
+                <a href="#grid">Subject grid</a>&nbsp;
+                <a href="#exams">Bac exam options</a>
+            </nav>
         </header>
         <main>
             <div class="columns">
                 <div>
-                    <h2>Introduction</h2>
+                    <h2 id="intro">Introduction</h2>
                     <p>
                         This page will help you make <a href="http://www.euroschool.lu/site/secondary-s6-s7-subject-choice-booklet/">your subject choices</a> for the European Baccalaureate. For the complete rules, see that page.
                     </p>
@@ -586,7 +655,7 @@
                     </p>
                 </div>
             </div>
-        <h2>Subject Grid</h2>
+        <h2 id="grid">Subject Grid</h2>
         <form id="choices" class="columns">
             <div>
                 <h3>Compulsory subjects</h3>
@@ -598,7 +667,7 @@
                     <input type="checkbox" checked disabled id="L2" value="3"><label for="L2">Language 2</label>
                     <input type="text" value="3" readonly disabled size="1" id="L2_X">
                 </p>
-                <p>
+                <p id="maths">
                     <input type="radio" checked id="MAT3" value="3" name="MAT"><label for="MAT3">Maths 3</label>
                     <input type="radio" id="MAT5" value="5" name="MAT"><label for="MAT5">Maths 5</label>
                     <input type="text" value="3" readonly disabled size="1" id="MAT_X">                        
@@ -628,7 +697,7 @@
                     <input type="text" value="1" readonly disabled size="1" id="ETH_X">                    
                 </p>
                 <div id="totals">
-                    <h3>Totals</h3>
+                    <h3>Totals <span id="status">(too low)</span></h3>
                     <label class="total" for="COMPULSORY_X">Compulsory: </label><input type="text" readonly disabled value="21" id="COMPULSORY_X"><br>
                     <label class="total" for="OPTIONAL_X">Optional: </label><input type="text" readonly disabled value="0" id="OPTIONAL_X"><br>
                     <label class="total" for="COMPLEMENTARY_X">Complementary: </label><input type="text" readonly disabled value="0" id="COMPLEMENTARY_X"><br>
@@ -763,7 +832,7 @@
                 </div>
             </form>
 
-            <h2>Final Bac Exams Choices</h2>
+            <h2 id="exams">Final Bac Exams Choices</h2>
             <div class="columns">
                 <div>
                     <h3>Written</h3>

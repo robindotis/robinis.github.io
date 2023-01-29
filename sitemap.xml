@@ -1918,12 +1918,12 @@
   </url>
   
   <url>
-    <loc>https://www.robin.is/archive/tagged/reading/</loc>
+    <loc>https://www.robin.is/archive/tagged/photos/</loc>
     <lastmod>2023-01-29</lastmod>
   </url>
   
   <url>
-    <loc>https://www.robin.is/archive/tagged/photos/</loc>
+    <loc>https://www.robin.is/archive/tagged/reading/</loc>
     <lastmod>2023-01-29</lastmod>
   </url>
   
@@ -2023,11 +2023,6 @@
   </url>
   
   <url>
-    <loc>https://www.robin.is/archive/tagged/diary/</loc>
-    <lastmod>2023-01-29</lastmod>
-  </url>
-  
-  <url>
     <loc>https://www.robin.is/archive/tagged/sumatra/</loc>
     <lastmod>2023-01-29</lastmod>
   </url>
@@ -2088,6 +2083,11 @@
   </url>
   
   <url>
+    <loc>https://www.robin.is/archive/tagged/diary/</loc>
+    <lastmod>2023-01-29</lastmod>
+  </url>
+  
+  <url>
     <loc>https://www.robin.is/archive/tagged/standards/</loc>
     <lastmod>2023-01-29</lastmod>
   </url>
@@ -2113,12 +2113,12 @@
   </url>
   
   <url>
-    <loc>https://www.robin.is/archive/tagged/privacy/</loc>
+    <loc>https://www.robin.is/archive/tagged/conspiracy/</loc>
     <lastmod>2023-01-29</lastmod>
   </url>
   
   <url>
-    <loc>https://www.robin.is/archive/tagged/conspiracy/</loc>
+    <loc>https://www.robin.is/archive/tagged/privacy/</loc>
     <lastmod>2023-01-29</lastmod>
   </url>
   
@@ -2563,22 +2563,17 @@
   </url>
   
   <url>
+    <loc>https://www.robin.is/archive/tagged/barcelona/</loc>
+    <lastmod>2023-01-29</lastmod>
+  </url>
+  
+  <url>
     <loc>https://www.robin.is/archive/tagged/bristol/</loc>
     <lastmod>2023-01-29</lastmod>
   </url>
   
   <url>
     <loc>https://www.robin.is/archive/tagged/cesky-krumlov/</loc>
-    <lastmod>2023-01-29</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.robin.is/archive/tagged/pratchett/</loc>
-    <lastmod>2023-01-29</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.robin.is/archive/tagged/code/</loc>
     <lastmod>2023-01-29</lastmod>
   </url>
   
@@ -2593,12 +2588,12 @@
   </url>
   
   <url>
-    <loc>https://www.robin.is/archive/tagged/queen/</loc>
+    <loc>https://www.robin.is/archive/tagged/pratchett/</loc>
     <lastmod>2023-01-29</lastmod>
   </url>
   
   <url>
-    <loc>https://www.robin.is/archive/tagged/photo/</loc>
+    <loc>https://www.robin.is/archive/tagged/code/</loc>
     <lastmod>2023-01-29</lastmod>
   </url>
   
@@ -2619,6 +2614,16 @@
   
   <url>
     <loc>https://www.robin.is/archive/tagged/inclusion/</loc>
+    <lastmod>2023-01-29</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.robin.is/archive/tagged/queen/</loc>
+    <lastmod>2023-01-29</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.robin.is/archive/tagged/photo/</loc>
     <lastmod>2023-01-29</lastmod>
   </url>
   
@@ -2994,11 +2999,6 @@
   
   <url>
     <loc>https://www.robin.is/archive/tagged/snow/</loc>
-    <lastmod>2023-01-29</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.robin.is/archive/tagged/barcelona/</loc>
     <lastmod>2023-01-29</lastmod>
   </url>
   
