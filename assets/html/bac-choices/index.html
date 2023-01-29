@@ -193,11 +193,17 @@
                 return total;
             }
 
-            function toggleFields(aFields,state){
+            function toggleFields(aFields,state,maxed){
                 for (i in aFields) {
                     const field = document.getElementById(aFields[i]);
                     field.disabled = false;
-                    if(field.checked == false) {
+  
+                    if(maxed && field.type == "radio"){
+                        if (document.querySelector("input[name=" + field.name + "]:checked").value == "0") {
+                            field.disabled = state;
+                        }
+                    }
+                    else if(field.checked == false) {
                         field.disabled = state;
                     }
                 }
@@ -213,25 +219,37 @@
                 //disable unchecked optional subjects once 4 have been chosen#
                 if(total >= 35) {
                     //toggleFields(aCompulsory,true);
-                    toggleFields(aOptional,true);
-                    toggleFields(aAdvanced,true);
-                    toggleFields(aComplementary,true);
+                    toggleFields(aOptional,true,true);
+                    toggleFields(aAdvanced,true,true);
+                    toggleFields(aComplementary,true,true);
                 }
                 else {
                     if(totalOptional >= 16) {
-                        toggleFields(aOptional,true);
+                        toggleFields(aOptional,true,true);
+                        setAdvRadioDependencies(false);
                     }
                     else {
-                        toggleFields(aOptional,false);
+                        toggleFields(aOptional,false,false);
                     }
-                    //alert(totalComplementary);
                     if(totalComplementary >= 6) {
-                        toggleFields(aComplementary,true);
+                        toggleFields(aComplementary,true,true);
                     }
                     else {
-                        toggleFields(aComplementary,false);
+                        toggleFields(aComplementary,false,false);
                     }
-                    toggleFields(aAdvanced,false);
+                    toggleFields(aAdvanced,false,false);                    
+                }
+                setAdvRadioDependencies(false);
+                setLabRadioDependencies((total >= 35));
+                document.getElementById("NOLAB").disabled = false;
+                document.getElementById("NOL5").disabled = false;
+                document.getElementById("NAD").disabled = false;
+
+                setExams();
+            }
+
+            function setLabRadioDependencies(maxed){
+                if(!maxed || (maxed && !document.getElementById("NOLAB").checked)){
                     if(document.getElementById("BIO4").checked) {
                         document.getElementById("LABBIO4").disabled = false;
                     }
@@ -251,11 +269,16 @@
                         document.getElementById("LABPHY").disabled = true;
                     }
                 }
-                document.getElementById("NOLAB").disabled = false;
-                document.getElementById("NOL5").disabled = false;
+            }
 
+            function setAdvRadioDependencies(maxed){
+                if(document.getElementById("MAT3").checked) {
+                    document.getElementById("AMA").disabled = true;
+                }
+            }
 
-                //set exams
+            function setExams() {
+                //Maths
                 if (document.getElementById("MAT5").checked){
                     document.getElementById("MAT_W").innerText = "Maths 5"
                 }
@@ -377,6 +400,7 @@
             }
             main h2 {
                 margin:0;
+                padding-top: 0.7em;
             }
             main button {
                 padding:0.3em;
@@ -387,18 +411,22 @@
                 font-size: 1.1em;
             }
 
-            form, div.exams {
+            .columns {
                 display:flex;
                 flex-flow: row wrap;
             } 
             
-            form > div, div.exams > div {
-                max-width: 25em;
+            .columns > div {
+                max-width: 30em;
                 border: 1px solid #000;
                 padding: 0 1em;
                 margin: 0.5em 0.5em 0 0;
                 line-height: 1.5em;
                 position: relative;
+            }
+
+            form > div {
+                max-width: 25em;
             }
 
             fieldset {
@@ -492,19 +520,27 @@
             <h1>Subject selector for European Baccalaureate</h1>
         </header>
         <main>
-            <h2>Introduction</h2>
-            <p>
-                This page will help you make <a href="http://www.euroschool.lu/site/secondary-s6-s7-subject-choice-booklet/">your subject choices</a> for the European Baccalaureate.For the complete rules, see that page.
-            </p>
-        
-        <h2>Quick picks</h2>
-        <p>These buttons help you pre-configure the subject grid</p>
-        <p>
-            <button onclick="setMaxSciences();">Maximise Sciences</button> 
-            <button onclick="setMinSubjects();">Minimise Subjects</button>
-        </p>
+            <div class="columns">
+                <div>
+                    <h2>Introduction</h2>
+                    <p>
+                        This page will help you make <a href="http://www.euroschool.lu/site/secondary-s6-s7-subject-choice-booklet/">your subject choices</a> for the European Baccalaureate. For the complete rules, see that page.
+                    </p>
+                    <p>
+                        Note: The page will generally enforce the rules, nevertheless it is possible choose more than 35 periods.
+                    </p>
+                </div>
+                <div>
+                    <h2>Quick picks</h2>
+                    <p>These buttons help you pre-configure the subject grid</p>
+                    <p>
+                        <button onclick="setMaxSciences();">Maximise Sciences</button> 
+                        <button onclick="setMinSubjects();">Minimise Subjects</button>
+                    </p>
+                </div>
+            </div>
         <h2>Subject Grid</h2>
-        <form id="choices" >
+        <form id="choices" class="columns">
             <div>
                 <h3>Compulsory subjects</h3>
                 <p>
@@ -681,7 +717,7 @@
             </form>
 
             <h2>Final Bac Exams Choices</h2>
-            <div class="exams">
+            <div class="columns">
                 <div>
                     <h3>Written</h3>
                     <p>
