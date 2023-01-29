@@ -15,6 +15,9 @@
             const aAdvanced = ["AL1","AL2","AMA"];
             const aComplementary = ["ARC","CLS","MSC","DRA","SUS","ICT","ECI","PSC","SOC","SPO","TDR","L5C","L5D","L5G","L5S","L5L","NOL5","LABBIO4","LABCHE","LABPHY","NOLAB"];
             const aComplementaryX = aComplementary.slice(0,aComplementary.length-10).concat(["L5","LAB"]);
+            const aOralCheckboxes = ["optionW1","optionW2","optionW3","optionW4"];
+            const aOralRadios = ["optionL21","optionL22","optionL23","optionO31","optionO32","optionO33","optionO34","optionO35","optionO36"];
+            const aOralLetters = ["A","B","C","D","E","F"];
 
             function updateValue(e) {
                 const elId = e.target.id;
@@ -150,11 +153,7 @@
                 document.getElementById("BIO2_X").value = 0;
                 document.getElementById("MAT5").checked = true;
                 document.getElementById("MAT_X").value = document.getElementById("MAT5").value;
-/*
-                document.getElementById("AMA").checked = true;
-                document.getElementById("AMA").disabled = false;
-                document.getElementById("ADV_X").value = document.getElementById("AMA").value;
-*/
+
                 updateTotals();
             }
 
@@ -300,13 +299,25 @@
             }
 
             function setExams() {
-                //initialise languages
+                //initialise form
                 document.getElementById("L1_W").innerText = "Language 1"
                 document.getElementById("L1_O").innerText = "Language 1"
                 document.getElementById("L2_W").innerText = "Language 2"
-                document.getElementById("L2_O").innerText = "Language 2"
-
+                for (i in aOralCheckboxes) {
+                    document.getElementById(aOralCheckboxes[i]+"Label").innerText = "Option " + aOralLetters[i];
+                    document.getElementById(aOralCheckboxes[i]).disabled = false;
+                    document.getElementById(aOralCheckboxes[i]).checked = false;
+                    document.getElementById(aOralCheckboxes[i]).classList.remove("blocked");
+                }
+                for (i in aOralRadios) {
+                    document.getElementById(aOralRadios[i]+"Label").innerText = "Option " + aOralLetters[+aOralRadios[i].slice(-1)];
+                    document.getElementById(aOralRadios[i]).disabled = false;
+                    document.getElementById(aOralRadios[i]).checked = false;
+                }
+                
+                //============================
                 //Maths
+                //============================
                 if (document.getElementById("MAT5").checked){
                     document.getElementById("MAT_W").innerText = "Maths 5"
                 }
@@ -314,95 +325,219 @@
                     document.getElementById("MAT_W").innerText = "Maths 3"
                 }
                 
-                //4 periods
-                var subjects = "Two from: ";
+                //============================
+                //Written 4 periods
+                //============================
+                var countWritten = 0;
                 if(document.getElementById("HIS4").checked) {
-                    subjects += "History 4, "
+                    countWritten++;
+                    document.getElementById("optionW"+countWritten+"Label").innerText = "History 4";
                 }
                 if(document.getElementById("GEO4").checked) {
-                    subjects += "Geography 4, "
+                    countWritten++;
+                    document.getElementById("optionW"+countWritten+"Label").innerText = "Geography 4";
                 }
                 if(document.getElementById("PHI4").checked) {
-                    subjects += "Philosophy 4, "
+                    countWritten++;
+                    document.getElementById("optionW"+countWritten+"Label").innerText = "Philosophy 4";
                 }
                 if(document.getElementById("BIO4").checked) {
-                    subjects += "Biology 4, "
+                    countWritten++;
+                    document.getElementById("optionW"+countWritten+"Label").innerText = "Biology 4";
                 }
                 if(document.getElementById("CHE").checked) {
-                    subjects += "Chemisty, "
+                    countWritten++;
+                    document.getElementById("optionW"+countWritten+"Label").innerText = "Chemistry";
                 }
                 if(document.getElementById("PHY").checked) {
-                    subjects += "Physics, "
+                    countWritten++;
+                    document.getElementById("optionW"+countWritten+"Label").innerText = "Physics";
                 }
                 if(document.getElementById("MUS").checked) {
-                    subjects += "Music, "
+                    countWritten++;
+                    document.getElementById("optionW"+countWritten+"Label").innerText = "Music";
                 }
                 if(document.getElementById("ART").checked) {
-                    subjects += "Art, "
+                    countWritten++;
+                    document.getElementById("optionW"+countWritten+"Label").innerText = "Art";
                 }
                 if(document.getElementById("L3").checked) {
-                    subjects += "Language 3, "
+                    countWritten++;
+                    document.getElementById("optionW"+countWritten+"Label").innerText = "Language 3";
                 }
                 if(document.getElementById("L4").checked) {
-                    subjects += "Language 4, "
+                    countWritten++;
+                    document.getElementById("optionW"+countWritten+"Label").innerText = "Language 4 / ONL";
                 }
                 if(document.getElementById("ECO").checked) {
-                    subjects += "Economics, "
+                    countWritten++;
+                    document.getElementById("optionW"+countWritten+"Label").innerText = "Economics";
                 }
                 if(document.getElementById("LAT").checked) {
-                    subjects += "Latin, "
+                    countWritten++;
+                    document.getElementById("optionW"+countWritten+"Label").innerText = "Latin";
                 }
-                document.getElementById("O1_W").innerText = subjects;
-                document.getElementById("O2_W").innerText = "";
+                
+                if (countWritten == 2){
+                    document.getElementById("optionW1").checked = true;
+                    document.getElementById("optionW2").checked = true;
+                    document.getElementById("optionW3").classList.add("blocked");
+                    document.getElementById("optionW4").classList.add("blocked");
+                }
+                if (countWritten == 3){
+                    document.getElementById("optionW4").classList.add("blocked");
+                }
 
-                subjects = "One from    : Language 2, ";
-                if(document.getElementById("HIS4").checked) {
-                    subjects += "History 4, "
-                }
-                else {
-                    subjects += "History 2, "
-                }
-                if(document.getElementById("GEO4").checked) {
-                    subjects += "Geography 4, "
-                }
-                else {
-                    subjects += "Geography 2, "
-                }
-                document.getElementById("L2_O").innerText = subjects;
-
-                //4 periods
-                var subjects = "One from: ";
-                if(document.getElementById("PHI4").checked) {
-                    subjects += "Philosophy 4, "
-                }
-                if(document.getElementById("BIO4").checked) {
-                    subjects += "Biology 4, "
-                }
-                if(document.getElementById("CHE").checked) {
-                    subjects += "Chemisty, "
-                }
-                if(document.getElementById("PHY").checked) {
-                    subjects += "Physics, "
-                }
-                if(document.getElementById("L3").checked) {
-                    subjects += "Language 3, "
-                }
-                if(document.getElementById("L4").checked) {
-                    subjects += "Language 4 / ONL "
-                }
-                document.getElementById("O2_O").innerText = subjects;
-
-
-                if(document.getElementById("AL1").checked) {
-                    document.getElementById("L1_W").innerText = "Advanced L1"
-                    document.getElementById("L1_O").innerText = "Advanced L1"
-                }
+                //============================
+                //Oral Language 2
+                //============================
                 if(document.getElementById("AL2").checked) {
-                    document.getElementById("L2_W").innerText = "Advanced L2"
-                    document.getElementById("L2_O").innerText = "Advanced L2"
+                    document.getElementById("optionL21Label").innerText = "Advanced L2";
+                    document.getElementById("optionL21").disabled = false;
+                    document.getElementById("optionL21").checked = true;
+                    document.getElementById("optionL22").disabled = true;
+                    document.getElementById("optionL23").disabled = true; 
                 }
+                else {
+                    document.getElementById("optionL21Label").innerText = "Language 2";
+                    var textL2 = "History 2";
+                    var p4Checked = false;                    
+                    if(document.getElementById("HIS4").checked) {
+                        textL2 = "History 4";
+                        p4Checked = true;
+                    }
+                    //if only two "4 period" options and one of them is History, 
+                    //can't pick history for Oral
+                    if(countWritten < 3 && !p4Checked) {
+                        document.getElementById("optionL22Label").innerText = textL2;
+                    }
+                    else if (countWritten > 2 && p4Checked){
+                        document.getElementById("optionL22Label").innerText = textL2;
+                    }
+                    else {
+                        document.getElementById("optionL22").disabled = true; 
+                    }
+
+                    textL2 = "Geography 2";
+                    p4Checked = false;
+                    if(document.getElementById("GEO4").checked) {
+                        textL2 = "Geography 4"
+                        p4Checked = true;
+                    }
+                    if(countWritten < 3 && !p4Checked) {
+                        document.getElementById("optionL23Label").innerText = textL2;
+                    }
+                    else if (countWritten > 2 && p4Checked){
+                        document.getElementById("optionL23Label").innerText = textL2;
+                    }
+                    else {
+                        document.getElementById("optionL23").disabled = true; 
+                    }
+
+                    //if only one radio left, set it to checked
+                    if(document.getElementById("optionL22").disabled && document.getElementById("optionL23").disabled){
+                        document.getElementById("optionL21").checked = true;
+                    }
+                }
+
+                //============================
+                //Oral Options
+                //============================
+                var countOral = 0;
                 if(document.getElementById("AMA").checked) {
-                    document.getElementById("O2_O").innerText = "Advanced Maths"
+                    document.getElementById("optionO31Label").innerText = "Advanced Maths";
+                    document.getElementById("optionO31").disabled = false;
+                    document.getElementById("optionO31").checked = true;
+                    document.getElementById("optionO32").disabled = true;
+                    document.getElementById("optionO33").disabled = true; 
+                    document.getElementById("optionO34").disabled = true;
+                    document.getElementById("optionO35").disabled = true; 
+                    document.getElementById("optionO36").disabled = true;
+                }
+                else {
+                    var textO3 = "Philosophy 2";                    
+                    if(document.getElementById("PHI4").checked) {
+                        textO3 = "Philosophy 4";
+                    }
+                    countOral++;
+                    document.getElementById("optionO3"+countOral+"Label").innerText = textO3;
+
+                    textO3 = "Biology 2";                    
+                    if(document.getElementById("BIO4").checked) {
+                        textO3 = "Biology 4";
+                    }
+                    countOral++;
+                    document.getElementById("optionO3"+countOral+"Label").innerText = textO3;
+
+                    if(document.getElementById("CHE").checked) {
+                        countOral++;
+                        document.getElementById("optionO3"+countOral+"Label").innerText = "Chemistry";
+                    }
+
+                    if(document.getElementById("PHY").checked) {
+                        countOral++;
+                        document.getElementById("optionO3"+countOral+"Label").innerText = "Physics";
+                    }
+
+                    if(document.getElementById("L3").checked) {
+                        countOral++;
+                        document.getElementById("optionO3"+countOral+"Label").innerText = "Language 3";
+                    }
+                    
+                    if(document.getElementById("L4").checked) {
+                        countOral++;
+                        document.getElementById("optionO3"+countOral+"Label").innerText = "Language 4 / ONL";
+                    }
+
+                    for (var i=countOral+1; i<7;i++){
+                        document.getElementById("optionO3"+i).disabled = true;
+                    }
+                }
+            }
+
+            function checkOrals(el){
+                const subject = document.getElementById(el.id + "Label").innerText;
+
+                //disable unchecked checkboxes if 2 are already checked
+                if(el.checked){
+                    //count checked boxes
+                    var count = 0;
+                    for (i in aOralCheckboxes) {
+                        document.getElementById(aOralCheckboxes[i]).disabled = false;
+                        if(document.getElementById(aOralCheckboxes[i]).checked){
+                            count++;
+                        }
+                    }
+                    if (count >= 2) {
+                        for (i in aOralCheckboxes) {
+                            document.getElementById(aOralCheckboxes[i]).disabled = 
+                                !document.getElementById(aOralCheckboxes[i]).checked;
+                        }
+                    }
+                }
+                else {
+                    for (i in aOralCheckboxes) {
+                        document.getElementById(aOralCheckboxes[i]).disabled = false;
+                    }
+                }
+
+                for (i in aOralRadios) {
+                    //disable and uncheck radio if label equals a checked checkbox label
+                    //else if checkbox is not checked enable and uncheck the radio.
+                    if(subject == document.getElementById(aOralRadios[i]+"Label").innerText){
+                        if(el.checked){
+                            document.getElementById(aOralRadios[i]).disabled = true;
+                            document.getElementById(aOralRadios[i]).checked = true;
+                        }
+                        else {
+                            document.getElementById(aOralRadios[i]).disabled = false;
+                            document.getElementById(aOralRadios[i]).checked = false;
+                        }
+                    }
+                }
+                //if only one L2 radio left, set it to checked
+                if(document.getElementById("optionL22").disabled && document.getElementById("optionL23").disabled){
+                    document.getElementById("optionL21").checked = true;
                 }
             }
 
@@ -525,7 +660,7 @@
                 margin: 0.5rem 0 0.5rem 0;
             }
 
-            input[type=text] {
+            #choices input[type=text] {
                 border:0;
                 width: 1.3rem;
                 float:right;
@@ -536,20 +671,20 @@
                 background-color: #0f0;
             }
 */
-            label.total {
+            #choices label.total {
                 text-align: justify;
             }
 
-            label.total input{
+            #choices label.total input{
                 float: none;
             }
 
-            input {
+            #choices input {
                 margin: 0;
                 vertical-align:baseline;
             }
 
-            label {
+            #choices label {
                 margin: 0 0.8rem 0 0.2rem;
             }
 
@@ -599,29 +734,43 @@
                 margin: 0;
             }
 
-            p:has(input[type=checkbox]:disabled){
+            #choices p:has(input[type=checkbox]:disabled){
                 background-color:#fff;
             }
 
-            p:has(input:checked),
-            p:has(input[type=checkbox]:checked),
-            input[type=radio]:checked+label {
+            #choices p:has(input:checked),
+            #choices p:has(input[type=checkbox]:checked),
+            #choices input[type=radio]:checked+label {
                 background-color: #C6EFCE;
                 /* #FFEB9C */
             }
 
-            p:has(input[type=checkbox]:disabled),
-            input[type=radio]:disabled+label {
+            #choices p:has(input[type=checkbox]:disabled),
+            #choices input[type=radio]:disabled+label {
                 /*text-decoration: line-through;*/
                 color:#888;
             }
-            p:has(input[type=checkbox]:disabled:checked){
+            #choices p:has(input[type=checkbox]:disabled:checked){
                 text-decoration: none;
                 color:#000;
             }
 
             p#maths {
                 background-color: #fff;
+            }
+
+            #examchoices p:has(input[type=radio]:disabled),
+            #examchoices p:has(input[type=checkbox].blocked) {
+                display:none;
+            }
+
+            #examchoices p:has(input:checked),
+            #examchoices p.fixed {
+                background-color: #C6EFCE ;
+            }
+
+            #examchoices fieldset p {
+                padding-left: 0.6rem;
             }
 
 </style>
@@ -643,7 +792,7 @@
                         This page will help you make <a href="http://www.euroschool.lu/site/secondary-s6-s7-subject-choice-booklet/">your subject choices</a> for the European Baccalaureate. For the complete rules, see that page.
                     </p>
                     <p>
-                        Note: The page will generally enforce the rules, nevertheless it is possible choose more than 35 periods.
+                        Note: The page will generally enforce the rules, nevertheless it is possible to choose more than 35 periods.
                     </p>
                 </div>
                 <div>
@@ -730,11 +879,11 @@
                     <input type="text" value="0" readonly disabled size="1" id="BIO4_X" aria-hidden="true">
                 </p>
                 <p>
-                    <input type="checkbox" id="CHE" value="4"><label for="CHE">Chemistry 4</label>
+                    <input type="checkbox" id="CHE" value="4"><label for="CHE">Chemistry</label>
                     <input type="text" value="0" readonly disabled size="1" id="CHE_X" aria-hidden="true">                        
                 </p>
                 <p>
-                    <input type="checkbox" id="PHY" value="4"><label for="PHY">Physics 4</label>
+                    <input type="checkbox" id="PHY" value="4"><label for="PHY">Physics</label>
                     <input type="text" value="0" readonly disabled size="1" id="PHY_X" aria-hidden="true">                        
                 </p>
                 <br>
@@ -831,32 +980,91 @@
                     <input type="radio" id="L5S" name="L5" value="2"><label for="L5S">Spanish</label><br>
                     <input type="radio" id="L5L" name="L5" value="2"><label for="L5L">Luxembourgish</label>
                     <input type="radio" id="L5G" name="L5" value="2"><label for="L5G">Modern Greek</label>
-                    <input type="text" value="0" readonly disabled size="1"  id="L5_X">
+                    <input type="text" value="0" readonly disabled size="1" id="L5_X">
                 </fieldset>
                 </div>
             </form>
 
             <h2 id="exams">Final Bac Exams Choices</h2>
+            <form id="examchoices">
             <div class="columns">
                 <div>
                     <h3>Written</h3>
-                    <p>
-                        <span id="L1_W">Language 1</span><br>
-                        <span id="L2_W">Language 2</span><br>
-                        <span id="MAT_W">Maths 3</span><br>
-                        <span id="O1_W">Option 1</span><br>
-                        <span id="O2_W">Option 2</span><br>
+                    <p class="fixed">
+                        <span id="L1_W">Language 1</span>
                     </p>
+                    <p class="fixed">
+                        <span id="L2_W">Language 2</span>
+                    </p>
+                    <p class="fixed">
+                        <span id="MAT_W">Maths 3</span>
+                    </p>
+                    <fieldset>
+                        <legend>Options, 2 from:</legend>
+                        <p>
+                            <input type="checkbox" id="optionW1" value="WA" onclick="checkOrals(this)"><label for="optionW1" id="optionW1Label">Option A</label>
+                        </p>
+                        <p>
+                            <input type="checkbox" id="optionW2" value="WB" onclick="checkOrals(this)"><label for="optionW2" id="optionW2Label">Option B</label>
+                        </p>
+                        <p>
+                            <input type="checkbox" id="optionW3" value="WC" onclick="checkOrals(this)"><label for="optionW3" id="optionW3Label">Option C</label>
+                        </p>
+                        <p>
+                            <input type="checkbox" id="optionW4" value="WD" onclick="checkOrals(this)"><label for="optionW4" id="optionW4Label">Option D</label>
+                        </p>
+                    </fieldset>
                 </div>
                 <div>
                     <h3>Oral</h3>
-                    <p>
-                        <span id="L1_O">Language 1</span><br>
-                        <span id="L2_O">Subject in language 2</span><br>
-                        <span id="O2_O">Maths 3</span><br>
+                    <p class="fixed">
+                        <span id="L1_O">Language 1</span>
                     </p>
+                    <fieldset>
+                        <legend>Subject in L2:</legend>
+                        <p>
+                            <input type="radio" id="optionL21" value="OL2A" name="SUB_L2">
+                            <label for="optionL21" id="optionL21Label">Option A</label>
+                        </p>
+                        <p>
+                            <input type="radio" id="optionL22" value="OL2B" name="SUB_L2">
+                            <label for="optionL22" id="optionL22Label">Option B</label>
+                        </p>
+                        <p>
+                            <input type="radio" id="optionL23" value="OL2C" name="SUB_L2">
+                            <label for="optionL23" id="optionL23Label">Option C</label>
+                        </p>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Options:</legend>
+                        <p>
+                            <input type="radio" id="optionO31" value="O3A" name="OR_3">
+                            <label for="optionO31" id="optionO31Label">Option A</label>
+                        </p>
+                        <p>
+                            <input type="radio" id="optionO32" value="O3B" name="OR_3">
+                            <label for="optionO32" id="optionO32Label">Option B</label>
+                        </p>
+                        <p>
+                            <input type="radio" id="optionO33" value="O3C" name="OR_3">
+                            <label for="optionO33" id="optionO33Label">Option C</label>
+                        </p>
+                        <p>
+                            <input type="radio" id="optionO34" value="O3D" name="OR_3">
+                            <label for="optionO34" id="optionO34Label">Option D</label>
+                        </p>
+                        <p>
+                            <input type="radio" id="optionO35" value="O3E" name="OR_3">
+                            <label for="optionO35" id="optionO35Label">Option E</label>
+                        </p>
+                        <p>
+                            <input type="radio" id="optionO36" value="O3F" name="OR_3">
+                            <label for="optionO36" id="optionO36Label">Option F</label>
+                        </p>
+                    </fieldset>
                 </div>
             </div>
+            </form>
         </main>
     <footer>
         <p>
@@ -864,121 +1072,8 @@
         </p>
     </footer>
     <script>
-            const form = document.getElementById('choices');
-            form.addEventListener('change', updateValue);
-
-/*
-            function setMaxMathsSciences(){
-                document.getElementById("choices").reset();
-                setAllSciences();
-                setAdvanced("AMA")
-                updateTotals();
-            }
-
-            function setAdvanced(subj){
-                if(subj == "AMA") {
-                    const mat5  = document.getElementById("MAT5");
-                    mat5.checked = true;
-                    document.getElementById("MAT_X").value = mat5.value;     
-                }
-                const field  = document.getElementById(subj);
-                field.checked = true;
-                field.disabled = false;
-                document.getElementById("ADV_X").value = field.value;
-                updateTotals();
-            }
-
-            function setMaths(p){
-                const field  = document.getElementById("MAT" + p);
-                field.checked = true;
-                document.getElementById("MAT_X").value = field.value;
-                //disable advance maths if MAT3
-                const ama = document.getElementById("AMA");
-                if(p == 5){
-                    ama.disabled = false;
-                }
-                else {
-                    ama.disabled = true;
-                    if(ama.checked) {
-                        document.getElementById("ADV_X").value = 0;
-                        ama.checked = false;
-                    }
-                }
-                updateTotals();
-            }
-
-            function setOptions(subj){
-                if(subj == "BIO2") {
-                    //remove Chemistry 4p
-                    const che  = document.getElementById("CHE");
-                    che.checked = false;
-                    document.getElementById("CHE_X").value = 0;
-                    
-                    //remove Physics 4p
-                    const phy  = document.getElementById("PHY");
-                    phy.checked = false;
-                    document.getElementById("PHY_X").value = 0;
-
-                    //Set BIO 2p
-                    const bio = document.getElementById(subj);
-                    bio.checked = true;
-                    document.getElementById("BIO2_X").value = bio.value;
-
-                    //disable Labs
-                    const labBio  = document.getElementById("LABBIO");
-                    labBio.checked = false;
-                    labBio.disabled = true;
-                    const labChe  = document.getElementById("LABCHE");
-                    labChe.checked = false;
-                    labChe.disabled = true;
-                    const labPhy  = document.getElementById("LABPHY");
-                    labPhy.checked = false;
-                    labPhy.disabled = true;
-                    const noLab  = document.getElementById("NOLAB");
-                    noLab.checked = true;
-                    document.getElementById("LAB_X").value = noLab.value;
-                }
-                else {
-                    const field  = document.getElementById(subj);
-                    field.checked = true;
-                    document.getElementById(subj + "_X").value = field.value;
-                    const subj2 = subj.replace("4","2");
-                    document.getElementById(subj2).checked = false;
-                    document.getElementById(subj2 + "_X").value = 0;
-                }
-                updateTotals();
-            }
-
-
-*/
-</script>
-            <!--
-            <div>
-                <h3>Compulsory Maths</h3>
-                <p>
-                    <button onclick="setMaxMathsSciences();">Sciences and advanced Maths</button> or<br>
-                    <button onclick="setMaths(3);">3 period maths</button> or<br>
-                    <button onclick="setMaths(5);">5 period maths</button> or<br>
-                    <button onclick="setAdvanced('AMA');">Advanced Maths</button>
-                </p>
-            </div>
-            <div>
-                <h3>Compulsory 2 or 4 period subjects</h3>
-                <p>
-                    <button onclick="setOptions('HIS4');">History 4 periods</button>
-                    <button onclick="setOptions('GEO4');">Georgraphy 4 periods</button><br>
-                    <button onclick="setOptions('PHI4');">Philosophy 4 periods</button>
-                    <button onclick="setOptions('BIO2');">No science (Biology 2 periods)</button>
-                </p>
-            </div>
-            <div>
-                <h3>Advanced subjects</h3>
-                <p>
-                    <button onclick="setAdvanced('AMA');">Advanced Maths</button> or<br>
-                    <button  onclick="setAdvanced('AL1');">Advanced L1</button> or<br>
-                    <button onclick="setAdvanced('AL2');">Advanced L2</button>
-                </p>
-            </div>
--->
+        const form = document.getElementById('choices');
+        form.addEventListener('change', updateValue);
+    </script>
 </body>
 </html>
