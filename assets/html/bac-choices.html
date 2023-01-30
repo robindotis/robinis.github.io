@@ -2,6 +2,15 @@
 <!DOCTYPE html>
 <html lang="en-GB">
     <head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YQMBDPECZ5"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YQMBDPECZ5');
+</script>
         <meta charset="UTF-8">
         <!-- See: https://www.w3schools.com/css/css_rwd_viewport.asp-->
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -271,31 +280,33 @@
 
             function setLabRadioDependencies(maxed){
                 if(!maxed || (maxed && !document.getElementById("NOLAB").checked)){
-                    if(document.getElementById("BIO4").checked) {
-                        document.getElementById("LABBIO4").disabled = false;
-                    }
-                    else {
-                        document.getElementById("LABBIO4").disabled = true;
-                    }
-                    if(document.getElementById("CHE").checked) {
-                        document.getElementById("LABCHE").disabled = false;
-                    }
-                    else {
-                        document.getElementById("LABCHE").disabled = true;
-                    }
-                    if(document.getElementById("PHY").checked) {
-                        document.getElementById("LABPHY").disabled = false;
-                    }
-                    else {
-                        document.getElementById("LABPHY").disabled = true;
-                    }
+                    toggleLabRadio("BIO4");
+                    toggleLabRadio("CHE");
+                    toggleLabRadio("PHY");
                 }
+            }
+
+            function toggleLabRadio(sub){
+                var checked = true;
+                if(document.getElementById(sub).checked) {
+                    checked = false;
+                }
+                document.getElementById("LAB" + sub).disabled = checked;
             }
 
             function setAdvRadioDependencies(maxed){
                 if(document.getElementById("MAT3").checked) {
                     document.getElementById("AMA").disabled = true;
                 }
+            }
+
+            function examsSetP4(sub, counter) {
+                if(document.getElementById(sub).checked) {
+                    counter++;
+                    document.getElementById("optionW"+counter+"Label").innerText = 
+                        document.getElementById(sub + "Label").innerText;
+                }
+                return counter;
             }
 
             function setExams() {
@@ -314,7 +325,18 @@
                     document.getElementById(aOralRadios[i]).disabled = false;
                     document.getElementById(aOralRadios[i]).checked = false;
                 }
-                
+
+                //============================
+                //Languages
+                //============================
+                if (document.getElementById("AL1").checked){
+                    document.getElementById("L1_W").innerText = "Advanced L1"
+                    document.getElementById("L1_O").innerText = "Advanced L1"
+                }
+                else if (document.getElementById("AL2").checked){
+                    document.getElementById("L2_W").innerText = "Advanced L2"
+                }
+
                 //============================
                 //Maths
                 //============================
@@ -329,53 +351,8 @@
                 //Written 4 periods
                 //============================
                 var countWritten = 0;
-                if(document.getElementById("HIS4").checked) {
-                    countWritten++;
-                    document.getElementById("optionW"+countWritten+"Label").innerText = "History 4";
-                }
-                if(document.getElementById("GEO4").checked) {
-                    countWritten++;
-                    document.getElementById("optionW"+countWritten+"Label").innerText = "Geography 4";
-                }
-                if(document.getElementById("PHI4").checked) {
-                    countWritten++;
-                    document.getElementById("optionW"+countWritten+"Label").innerText = "Philosophy 4";
-                }
-                if(document.getElementById("BIO4").checked) {
-                    countWritten++;
-                    document.getElementById("optionW"+countWritten+"Label").innerText = "Biology 4";
-                }
-                if(document.getElementById("CHE").checked) {
-                    countWritten++;
-                    document.getElementById("optionW"+countWritten+"Label").innerText = "Chemistry";
-                }
-                if(document.getElementById("PHY").checked) {
-                    countWritten++;
-                    document.getElementById("optionW"+countWritten+"Label").innerText = "Physics";
-                }
-                if(document.getElementById("MUS").checked) {
-                    countWritten++;
-                    document.getElementById("optionW"+countWritten+"Label").innerText = "Music";
-                }
-                if(document.getElementById("ART").checked) {
-                    countWritten++;
-                    document.getElementById("optionW"+countWritten+"Label").innerText = "Art";
-                }
-                if(document.getElementById("L3").checked) {
-                    countWritten++;
-                    document.getElementById("optionW"+countWritten+"Label").innerText = "Language 3";
-                }
-                if(document.getElementById("L4").checked) {
-                    countWritten++;
-                    document.getElementById("optionW"+countWritten+"Label").innerText = "Language 4 / ONL";
-                }
-                if(document.getElementById("ECO").checked) {
-                    countWritten++;
-                    document.getElementById("optionW"+countWritten+"Label").innerText = "Economics";
-                }
-                if(document.getElementById("LAT").checked) {
-                    countWritten++;
-                    document.getElementById("optionW"+countWritten+"Label").innerText = "Latin";
+                for (i in aOptional) {
+                    countWritten = examsSetP4(aOptional[i], countWritten);
                 }
                 
                 if (countWritten == 2){
@@ -446,13 +423,11 @@
                 var countOral = 0;
                 if(document.getElementById("AMA").checked) {
                     document.getElementById("optionO31Label").innerText = "Advanced Maths";
-                    document.getElementById("optionO31").disabled = false;
                     document.getElementById("optionO31").checked = true;
-                    document.getElementById("optionO32").disabled = true;
-                    document.getElementById("optionO33").disabled = true; 
-                    document.getElementById("optionO34").disabled = true;
-                    document.getElementById("optionO35").disabled = true; 
-                    document.getElementById("optionO36").disabled = true;
+                    document.getElementById("optionO31").disabled = false;
+                    for(var i=2;i<7;i++) {
+                        document.getElementById("optionO3" + i).disabled = true;
+                    }
                 }
                 else {
                     var textO3 = "Philosophy 2";                    
@@ -525,14 +500,8 @@
                     //disable and uncheck radio if label equals a checked checkbox label
                     //else if checkbox is not checked enable and uncheck the radio.
                     if(subject == document.getElementById(aOralRadios[i]+"Label").innerText){
-                        if(el.checked){
-                            document.getElementById(aOralRadios[i]).disabled = true;
-                            document.getElementById(aOralRadios[i]).checked = true;
-                        }
-                        else {
-                            document.getElementById(aOralRadios[i]).disabled = false;
-                            document.getElementById(aOralRadios[i]).checked = false;
-                        }
+                        const elRadio = document.getElementById(aOralRadios[i]); 
+                        elRadio.checked = elRadio.disabled = el.checked;
                     }
                 }
                 //if only one L2 radio left, set it to checked
@@ -559,12 +528,15 @@
             function retrieveData(){
                 const form = document.getElementById('choices');
                 for (const element of form.elements) {
-                    if(element.type == "radio" || element.type == "checkbox") {
-                        //alert(localStorage.getItem(element.id));
-                        element.checked = eval(localStorage.getItem(element.id));
-                    }
-                    else {
-                        element.value = localStorage.getItem(element.id);
+                    //check item exists in localstorage before setting
+                    if(!(localStorage.getItem(element.id) === null)){
+                        if(element.type == "radio" || element.type == "checkbox") {
+                            //alert(localStorage.getItem(element.id));
+                            element.checked = eval(localStorage.getItem(element.id));
+                        }
+                        else {
+                            element.value = localStorage.getItem(element.id);
+                        }
                     }
                 }
                 updateTotals();
@@ -738,7 +710,7 @@
                 background-color:#fff;
             }
 
-            #choices p:has(input:checked),
+            /*#choices p:has(input:checked),*/
             #choices p:has(input[type=checkbox]:checked),
             #choices input[type=radio]:checked+label {
                 background-color: #C6EFCE;
@@ -817,43 +789,55 @@
                     <input type="text" value="4" readonly disabled size="1" id="L1_X">
                 </p>
                 <p>
-                    <input type="checkbox" checked disabled id="L2" value="3"><label for="L2">Language 2</label>
+                    <input type="checkbox" checked disabled id="L2" value="3">
+                    <label for="L2" id="L2Label">Language 2</label>
                     <input type="text" value="3" readonly disabled size="1" id="L2_X">
                 </p>
                 <p id="maths">
-                    <input type="radio" checked id="MAT3" value="3" name="MAT"><label for="MAT3">Maths 3</label>
-                    <input type="radio" id="MAT5" value="5" name="MAT"><label for="MAT5">Maths 5</label>
+                    <input type="radio" checked id="MAT3" value="3" name="MAT">
+                    <label for="MAT3" id="MAT3Label">Maths 3</label>
+                    <input type="radio" id="MAT5" value="5" name="MAT">
+                    <label for="MAT5" id="MAT5Label">Maths 5</label>
                     <input type="text" value="3" readonly disabled size="1" id="MAT_X">                        
                 </p>
                 <p>
-                    <input type="checkbox" checked disabled id="BIO2" value="2"><label for="BIO2">Biology 2</label>
+                    <input type="checkbox" checked disabled id="BIO2" value="2">
+                    <label for="BIO2" id="BIO2Label">Biology 2</label>
                     <input type="text" value="2" readonly disabled size="1" id="BIO2_X">
                 </p>
                 <p>
-                    <input type="checkbox" checked disabled id="HIS2" value="2"><label for="HIS2">History 2</label>
+                    <input type="checkbox" checked disabled id="HIS2" value="2">
+                    <label for="HIS2" id="HIS2Label">History 2</label>
                     <input type="text" value="2" readonly disabled size="1" id="HIS2_X">
                 </p>
                 <p>
-                    <input type="checkbox" checked disabled id="GEO2" value="2"><label for="GEO2">Geography 2</label>
+                    <input type="checkbox" checked disabled id="GEO2" value="2">
+                    <label for="GEO2" id="GEO2Label">Geography 2</label>
                     <input type="text" value="2" readonly disabled size="1" id="GEO2_X">
                 </p>
                 <p>
-                    <input type="checkbox" checked disabled id="PHI2" value="2"><label for="PHI2">Philosophy 2</label>
+                    <input type="checkbox" checked disabled id="PHI2" value="2">
+                    <label for="PHI2" id="PHI2Label">Philosophy 2</label>
                     <input type="text" value="2" readonly disabled size="1" id="PHI2_X">
                 </p>
                 <p>
-                    <input type="checkbox" checked disabled id="PE" value="2"><label for="PE">Physical Education</label>
+                    <input type="checkbox" checked disabled id="PE" value="2">
+                    <label for="PE" id="PELabel">Physical Education</label>
                     <input type="text" value="2" readonly disabled size="1" id="PE_X">
                 </p>
                 <p>
-                    <input type="checkbox" checked disabled id="ETH" value="1"><label for="ETH">Ethics/Religion</label>
+                    <input type="checkbox" checked disabled id="ETH" value="1">
+                    <label for="ETH" id="ETHLabel">Ethics/Religion</label>
                     <input type="text" value="1" readonly disabled size="1" id="ETH_X">                    
                 </p>
                 <div id="totals">
                     <h3>Totals <span id="status">(too low)</span></h3>
-                    <label class="total" for="COMPULSORY_X">Compulsory: </label><input type="text" readonly disabled value="21" id="COMPULSORY_X"><br>
-                    <label class="total" for="OPTIONAL_X">Optional: </label><input type="text" readonly disabled value="0" id="OPTIONAL_X"><br>
-                    <label class="total" for="COMPLEMENTARY_X">Complementary: </label><input type="text" readonly disabled value="0" id="COMPLEMENTARY_X"><br>
+                    <label class="total" for="COMPULSORY_X">Compulsory: </label>
+                    <input type="text" readonly disabled value="21" id="COMPULSORY_X"><br>
+                    <label class="total" for="OPTIONAL_X">Optional: </label>
+                    <input type="text" readonly disabled value="0" id="OPTIONAL_X"><br>
+                    <label class="total" for="COMPLEMENTARY_X">Complementary: </label>
+                    <input type="text" readonly disabled value="0" id="COMPLEMENTARY_X"><br>
                     <div>
                         <label class="total" for="TOTAL_X">Overall: </label>
                         <input type="text" readonly disabled value="21" id="TOTAL_X">
@@ -863,123 +847,161 @@
             <div>
                 <h3>Optional subjects</h3>
                 <p>
-                    <input type="checkbox" id="HIS4" value="4"><label for="HIS4">History 4</label>
+                    <input type="checkbox" id="HIS4" value="4">
+                    <label for="HIS4" id="HIS4Label">History 4</label>
                     <input type="text" value="0" readonly disabled size="1" id="HIS4_X" aria-hidden="true">
                 </p>
                 <p>
-                    <input type="checkbox" id="GEO4" value="4"><label for="GEO4">Geography 4</label>
+                    <input type="checkbox" id="GEO4" value="4">
+                    <label for="GEO4" id="GEO4Label">Geography 4</label>
                     <input type="text" value="0" readonly disabled size="1" id="GEO4_X" aria-hidden="true">
                 </p>
                 <p>
-                    <input type="checkbox" id="PHI4" value="4"><label for="PHI4">Philosophy 4</label>
+                    <input type="checkbox" id="PHI4" value="4">
+                    <label for="PHI4" id="PHI4Label">Philosophy 4</label>
                     <input type="text" value="0" readonly disabled size="1" id="PHI4_X" aria-hidden="true">
                 </p>
                 <p>
-                    <input type="checkbox" id="BIO4" value="4"><label for="BIO4">Biology 4</label>
+                    <input type="checkbox" id="BIO4" value="4">
+                    <label for="BIO4" id="BIO4Label">Biology 4</label>
                     <input type="text" value="0" readonly disabled size="1" id="BIO4_X" aria-hidden="true">
                 </p>
                 <p>
-                    <input type="checkbox" id="CHE" value="4"><label for="CHE">Chemistry</label>
+                    <input type="checkbox" id="CHE" value="4">
+                    <label for="CHE" id="CHELabel">Chemistry</label>
                     <input type="text" value="0" readonly disabled size="1" id="CHE_X" aria-hidden="true">                        
                 </p>
                 <p>
-                    <input type="checkbox" id="PHY" value="4"><label for="PHY">Physics</label>
+                    <input type="checkbox" id="PHY" value="4">
+                    <label for="PHY" id="PHYLabel">Physics</label>
                     <input type="text" value="0" readonly disabled size="1" id="PHY_X" aria-hidden="true">                        
                 </p>
                 <br>
                 <p>
-                    <input type="checkbox" id="ART" value="4"><label for="ART">Art</label>
+                    <input type="checkbox" id="ART" value="4">
+                    <label for="ART" id="ARTLabel">Art</label>
                     <input type="text" value="0" readonly disabled size="1" id="ART_X">
                 </p>
                 <p>
-                    <input type="checkbox" id="MUS" value="4"><label for="MUS">Music</label>
+                    <input type="checkbox" id="MUS" value="4">
+                    <label for="MUS" id="MUSLabel">Music</label>
                     <input type="text" value="0" readonly disabled size="1" id="MUS_X">
                 </p>
                 <p>                    
-                    <input type="checkbox" id="L3" value="4"><label for="L3">Language 3</label>
+                    <input type="checkbox" id="L3" value="4">
+                    <label for="L3" id="L3Label">Language 3</label>
                     <input type="text" value="0" readonly disabled size="1" id="L3_X">
                 </p>
                 <p>
-                    <input type="checkbox" id="L4" value="4"><label for="L4">Language 4 or ONL</label>
+                    <input type="checkbox" id="L4" value="4">
+                    <label for="L4" id="L4Label">Language 4 or ONL</label>
                     <input type="text" value="0" readonly disabled size="1" id="L4_X">
                 </p>
                 <hr>
-                <input type="radio" id="ECO" name="ECL" value="4"><label for="ECO">Economics</label>
-                <input type="radio" id="LAT" name="ECL" value="4"><label for="LAT">Latin</label>
-                <input type="radio" id="NEL" name="ECL" value="0" checked><label for="NEL">Neither</label>
+                <input type="radio" id="ECO" name="ECL" value="4">
+                <label for="ECO" id="ECOLabel">Economics</label>
+                <input type="radio" id="LAT" name="ECL" value="4">
+                <label for="LAT" id="LATLabel">Latin</label>
+                <input type="radio" id="NEL" name="ECL" value="0" checked>
+                <label for="NEL" id="NELLabel">Neither</label>
                 <input type="text" value="0" readonly disabled size="1" id="ECL_X">        
             
                 <fieldset>
                     <legend>Advanced subjects</legend>
-                        <input type="radio" checked  id="NAD" name="ADV" value="0"><label for="NAD">None</label>
-                        <input type="radio" id="AL1" name="ADV" value="3"><label for="AL1">L1</label>
-                        <input type="radio" id="AL2" name="ADV" value="3"><label for="AL2">L2</label>
-                        <input type="radio" id="AMA" name="ADV" disabled value="3"><label for="AMA">Maths</label>
+                        <input type="radio" checked  id="NAD" name="ADV" value="0">
+                        <label for="NAD" id="NADLabel">None</label>
+                        <input type="radio" id="AL1" name="ADV" value="3">
+                        <label for="AL1" id="AL1Label">L1</label>
+                        <input type="radio" id="AL2" name="ADV" value="3">
+                        <label for="AL2" id="AL2Label">L2</label>
+                        <input type="radio" id="AMA" name="ADV" disabled value="3">
+                        <label for="AMA" id="AMALabel">Maths</label>
                         <input type="text" value="0" readonly disabled size="1" id="ADV_X">
                 </fieldset>
             </div>
             <div>
                 <h3>Complementary subjects</h3>
                 <p>
-                    <input type="checkbox" id="ARC" value="2"><label for="ARC">Art</label>
+                    <input type="checkbox" id="ARC" value="2">
+                    <label for="ARC" id="ARCLabel">Art</label>
                     <input type="text" value="0" readonly disabled size="1" id="ARC_X">
                 </p>
                 <p>
-                    <input type="checkbox" id="CLS" value="2"><label for="CLS">Classical Studies</label>
+                    <input type="checkbox" id="CLS" value="2">
+                    <label for="CLS" id="CLSLabel">Classical Studies</label>
                     <input type="text" value="0" readonly disabled size="1" id="CLS_X">
                 </p>
                 <p>
-                    <input type="checkbox" id="DRA" value="2"><label for="DRA">Drama</label>
+                    <input type="checkbox" id="DRA" value="2">
+                    <label for="DRA" id="DRALabel">Drama</label>
                     <input type="text" value="0" readonly disabled size="1" id="DRA_X">                    
                 </p>
                 <p>
-                    <input type="checkbox" id="SUS" value="2"><label for="SUS">Education for Sustainable Development</label>
+                    <input type="checkbox" id="SUS" value="2">
+                    <label for="SUS" id="SUSLabel">Education for Sustainable Development</label>
                     <input type="text" value="0" readonly disabled size="1" id="SUS_X">                    
                 </p>
                 <p>
-                    <input type="checkbox" id="ICT" value="2"><label for="ICT">ICT</label>
+                    <input type="checkbox" id="ICT" value="2">
+                    <label for="ICT" id="ICTLabel">ICT</label>
                     <input type="text" value="0" readonly disabled size="1" id="ICT_X">                    
                 </p>
                 <p>
-                    <input type="checkbox" id="ECI" value="2"><label for="ECI">Introduction to Economics</label> 
+                    <input type="checkbox" id="ECI" value="2">
+                    <label for="ECI" id="ECILabel">Introduction to Economics</label> 
                     <input type="text" value="0" readonly disabled size="1" id="ECI_X">                    
                 </p>
                 <p>
-                    <input type="checkbox" id="MSC" value="2"><label for="MSC">Music</label>
+                    <input type="checkbox" id="MSC" value="2">
+                    <label for="MSC" id="MSCLabel">Music</label>
                     <input type="text" value="0" readonly disabled size="1" id="MSC_X">                    
                 </p>
                 <p>
-                    <input type="checkbox" id="PSC" value="2"><label for="PSC">Political Science</label>
+                    <input type="checkbox" id="PSC" value="2">
+                    <label for="PSC" id="PSCLabel">Political Science</label>
                     <input type="text" value="0" readonly disabled size="1" id="PSC_X">                    
                 </p>
                 <p>
-                    <input type="checkbox" id="SOC" value="2"><label for="SOC">Sociology</label>
+                    <input type="checkbox" id="SOC" value="2">
+                    <label for="SOC" id="SOCLabel">Sociology</label>
                     <input type="text" value="0" readonly disabled size="1" id="SOC_X">                    
                 </p>
                 <p>
-                    <input type="checkbox" id="SPO" value="2"><label for="SPO">Sport</label>
+                    <input type="checkbox" id="SPO" value="2">
+                    <label for="SPO" id="SPOLabel">Sport</label>
                     <input type="text" value="0" readonly disabled size="1" id="SPO_X">                    
                 </p>
                 <p>
-                    <input type="checkbox" id="TDR" value="2"><label for="TDR">Technical Drawing</label>
+                    <input type="checkbox" id="TDR" value="2">
+                    <label for="TDR" id="TDRLabel">Technical Drawing</label>
                     <input type="text" value="0" readonly disabled size="1" id="TDR_X">                    
                 </p>
                 <fieldset>
                     <legend>Laboratories</legend>
-                    <input type="radio" id="NOLAB" name="LAB" value="0" checked><label for="NOLAB">None</label>
-                    <input type="radio" id="LABBIO4" name="LAB" value="2" disabled><label for="LABBIO4">Biology</label>
-                    <input type="radio" id="LABCHE" name="LAB" value="2" disabled><label for="LABCHE">Chemistry</label> 
-                    <input type="radio" id="LABPHY" name="LAB" value="2" disabled><label for="LABPHY">Physics</label>
+                    <input type="radio" id="NOLAB" name="LAB" value="0" checked>
+                    <label for="NOLAB" id="NOLABLabel">None</label>
+                    <input type="radio" id="LABBIO4" name="LAB" value="2" disabled>
+                    <label for="LABBIO4" id="LABBIO4Label">Biology</label>
+                    <input type="radio" id="LABCHE" name="LAB" value="2" disabled>
+                    <label for="LABCHE" id="LABCHELabel">Chemistry</label> 
+                    <input type="radio" id="LABPHY" name="LAB" value="2" disabled>
+                    <label for="LABPHY" id="LABPHYLabel">Physics</label>
                     <input type="text" value="0" readonly disabled size="1"  id="LAB_X">
                 </fieldset>
                 <fieldset>
                     <legend>Language 5</legend>
-                    <input type="radio" id="NOL5" name="L5" value="0" checked><label for="NOL5">None</label>
-                    <input type="radio" id="L5C" name="L5" value="2"><label for="L5C">Chinese</label>
-                    <input type="radio" id="L5D" name="L5" value="2"><label for="L5D">Dutch</label>
-                    <input type="radio" id="L5S" name="L5" value="2"><label for="L5S">Spanish</label><br>
-                    <input type="radio" id="L5L" name="L5" value="2"><label for="L5L">Luxembourgish</label>
-                    <input type="radio" id="L5G" name="L5" value="2"><label for="L5G">Modern Greek</label>
+                    <input type="radio" id="NOL5" name="L5" value="0" checked>
+                    <label for="NOL5" id="NOL5Label">None</label>
+                    <input type="radio" id="L5C" name="L5" value="2">
+                    <label for="L5C" id="L5CLabel">Chinese</label>
+                    <input type="radio" id="L5D" name="L5" value="2">
+                    <label for="L5D" id="L5DLabel">Dutch</label>
+                    <input type="radio" id="L5S" name="L5" value="2">
+                    <label for="L5S" id="L5SLabel">Spanish</label><br>
+                    <input type="radio" id="L5L" name="L5" value="2">
+                    <label for="L5L" id="L5LLabel">Luxembourgish</label>
+                    <input type="radio" id="L5G" name="L5" value="2">
+                    <label for="L5G" id="L5GLabel">Modern Greek</label>
                     <input type="text" value="0" readonly disabled size="1" id="L5_X">
                 </fieldset>
                 </div>
