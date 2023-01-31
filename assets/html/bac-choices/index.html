@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en-GB">
     <head>
@@ -24,7 +23,7 @@
             const aAdvanced = ["AL1","AL2","AMA"];
             const aComplementary = ["ARC","CLS","MSC","DRA","SUS","ICT","ECI","PSC","SOC","SPO","TDR","L5C","L5D","L5G","L5S","L5L","NOL5","LABBIO4","LABCHE","LABPHY","NOLAB"];
             const aComplementaryX = aComplementary.slice(0,aComplementary.length-10).concat(["L5","LAB"]);
-            const aOralCheckboxes = ["optionW1","optionW2","optionW3","optionW4"];
+            const aWrittenCheckboxes = ["optionW1","optionW2","optionW3","optionW4"];
             const aOralRadios = ["optionL21","optionL22","optionL23","optionO31","optionO32","optionO33","optionO34","optionO35","optionO36"];
             const aOralLetters = ["A","B","C","D","E","F"];
 
@@ -314,11 +313,11 @@
                 document.getElementById("L1_W").innerText = "Language 1"
                 document.getElementById("L1_O").innerText = "Language 1"
                 document.getElementById("L2_W").innerText = "Language 2"
-                for (i in aOralCheckboxes) {
-                    document.getElementById(aOralCheckboxes[i]+"Label").innerText = "Option " + aOralLetters[i];
-                    document.getElementById(aOralCheckboxes[i]).disabled = false;
-                    document.getElementById(aOralCheckboxes[i]).checked = false;
-                    document.getElementById(aOralCheckboxes[i]).classList.remove("blocked");
+                for (i in aWrittenCheckboxes) {
+                    document.getElementById(aWrittenCheckboxes[i]+"Label").innerText = "Option " + aOralLetters[i];
+                    document.getElementById(aWrittenCheckboxes[i]).disabled = false;
+                    document.getElementById(aWrittenCheckboxes[i]).checked = false;
+                    document.getElementById(aWrittenCheckboxes[i]).classList.remove("blocked");
                 }
                 for (i in aOralRadios) {
                     document.getElementById(aOralRadios[i]+"Label").innerText = "Option " + aOralLetters[+aOralRadios[i].slice(-1)];
@@ -358,6 +357,8 @@
                 if (countWritten == 2){
                     document.getElementById("optionW1").checked = true;
                     document.getElementById("optionW2").checked = true;
+                    document.getElementById("optionW1").disabled = true;
+                    document.getElementById("optionW2").disabled = true;
                     document.getElementById("optionW3").classList.add("blocked");
                     document.getElementById("optionW4").classList.add("blocked");
                 }
@@ -377,38 +378,27 @@
                 }
                 else {
                     document.getElementById("optionL21Label").innerText = "Language 2";
-                    var textL2 = "History 2";
-                    var p4Checked = false;                    
+
+                    document.getElementById("optionL22").disabled = false; 
                     if(document.getElementById("HIS4").checked) {
-                        textL2 = "History 4";
-                        p4Checked = true;
-                    }
-                    //if only two "4 period" options and one of them is History, 
-                    //can't pick history for Oral
-                    if(countWritten < 3 && !p4Checked) {
-                        document.getElementById("optionL22Label").innerText = textL2;
-                    }
-                    else if (countWritten > 2 && p4Checked){
-                        document.getElementById("optionL22Label").innerText = textL2;
+                        document.getElementById("optionL22Label").innerText = "History 4"
+                        if(countWritten < 3) {
+                            document.getElementById("optionL22").disabled = true; 
+                        }
                     }
                     else {
-                        document.getElementById("optionL22").disabled = true; 
+                        document.getElementById("optionL22Label").innerText = "History 2"
                     }
 
-                    textL2 = "Geography 2";
-                    p4Checked = false;
+                    document.getElementById("optionL23").disabled = false; 
                     if(document.getElementById("GEO4").checked) {
-                        textL2 = "Geography 4"
-                        p4Checked = true;
-                    }
-                    if(countWritten < 3 && !p4Checked) {
-                        document.getElementById("optionL23Label").innerText = textL2;
-                    }
-                    else if (countWritten > 2 && p4Checked){
-                        document.getElementById("optionL23Label").innerText = textL2;
+                        document.getElementById("optionL23Label").innerText = "Geography 4"
+                        if(countWritten < 3) {
+                            document.getElementById("optionL23").disabled = true; 
+                        }
                     }
                     else {
-                        document.getElementById("optionL23").disabled = true; 
+                        document.getElementById("optionL23Label").innerText = "Geography 2"
                     }
 
                     //if only one radio left, set it to checked
@@ -444,12 +434,15 @@
                     countOral++;
                     document.getElementById("optionO3"+countOral+"Label").innerText = textO3;
 
-                    if(document.getElementById("CHE").checked) {
+                    //if chemistry chosen as subject and only two subjects available as written exams
+                    //one of them must be chemistry, so can't choose as oral
+                    if(document.getElementById("CHE").checked && countWritten > 2) {
                         countOral++;
                         document.getElementById("optionO3"+countOral+"Label").innerText = "Chemistry";
                     }
 
-                    if(document.getElementById("PHY").checked) {
+                    //as for chemistry
+                    if(document.getElementById("PHY").checked && countWritten > 2) {
                         countOral++;
                         document.getElementById("optionO3"+countOral+"Label").innerText = "Physics";
                     }
@@ -475,24 +468,24 @@
 
                 //disable unchecked checkboxes if 2 are already checked
                 if(el.checked){
-                    //count checked boxes
                     var count = 0;
-                    for (i in aOralCheckboxes) {
-                        document.getElementById(aOralCheckboxes[i]).disabled = false;
-                        if(document.getElementById(aOralCheckboxes[i]).checked){
+                    //count checked boxes
+                    for (i in aWrittenCheckboxes) {
+                        document.getElementById(aWrittenCheckboxes[i]).disabled = false;
+                        if(document.getElementById(aWrittenCheckboxes[i]).checked){
                             count++;
                         }
                     }
                     if (count >= 2) {
-                        for (i in aOralCheckboxes) {
-                            document.getElementById(aOralCheckboxes[i]).disabled = 
-                                !document.getElementById(aOralCheckboxes[i]).checked;
+                        for (i in aWrittenCheckboxes) {
+                            document.getElementById(aWrittenCheckboxes[i]).disabled = 
+                                !document.getElementById(aWrittenCheckboxes[i]).checked;
                         }
                     }
                 }
                 else {
-                    for (i in aOralCheckboxes) {
-                        document.getElementById(aOralCheckboxes[i]).disabled = false;
+                    for (i in aWrittenCheckboxes) {
+                        document.getElementById(aWrittenCheckboxes[i]).disabled = false;
                     }
                 }
 
@@ -1090,7 +1083,7 @@
         </main>
     <footer>
         <p>
-            Offered without any warranty or guarantee about the accuracy. If in doubt, keep calm and carry on!
+            Offered without any warranty or guarantee about the accuracy. Good luck!
         </p>
     </footer>
     <script>
