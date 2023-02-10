@@ -6,13 +6,30 @@
 	
 	<link href="https://www.robin.is/feed/index.xml" rel="self"/>
 	<link href="https://www.robin.is/" rel="alternate" type="text/html"/>
-	<updated>2023-01-31T13:18:27Z</updated>
+	<updated>2023-02-10T13:18:27Z</updated>
 	<id>https://www.robin.is/</id>
 	<author>
 		<name>robindotis</name>
 		<email>admin@robin.is</email>
 	</author>
 	
+	
+	<entry>
+		<title>Safer Internet Day - 2023</title>
+		<link href="https://www.robin.is/posts/2023/safer-internet-day-2023/"/>
+		<updated>2023-02-10T13:18:27Z</updated>
+		<id>https://www.robin.is/posts/2023/safer-internet-day-2023/</id>
+		<content type="html">&lt;p&gt;Tuesday 7th February was &lt;a href=&quot;https://www.saferinternetday.org/&quot;&gt;Safer Internet Day&lt;/a&gt; in 2023. It also marks the 20th year of the initiative, which is supported by the European Commission through the &lt;a href=&quot;https://digital-strategy.ec.europa.eu/en/policies/safer-internet-day&quot;&gt;Safer Internet team of DG CONNECT&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;As part of that day, we arranged a morning in the &lt;a href=&quot;https://www.lmrl.lu/&quot;&gt;Lycee Michel-Rodange&lt;/a&gt; in Luxembourg City, to let a class of the school try out the latest VR headsets from Meta. The kids, all around 15 years of age, got to try out five different VR worlds as they circulated around different stands in a class room. After that they had a brief discussion, giving their thoughts on VR in their futures.&lt;/p&gt;
+&lt;p&gt;It&#39;s been a long time since I was in a class room full of 15 year olds and it was incredibly energising. They were all well behaved, whilst having their fun with the headsets. Maybe that is the Luxembourg effect!&lt;/p&gt;
+&lt;p&gt;Best of all, in my opinion, was the lack of enthusiasm for this technology with these kids. Our polling showed they did not believe this technology would become an alternate world for them in the future. Whilst they saw the use of it in certain educational situations, few would be interested VR being their main medium of education. Despite growing up with always connected smartphones, they still apparently wanted face to face contact with their friends. They certainly didn&#39;t want to live in the VR world.&lt;/p&gt;
+&lt;p&gt;My own take on this, having tried out the headsets, is that they are simply not ready for the mainstream. The technology is too fiddly and, despite being relatively easy to use, is too cumbersome to do what appear to be basic things. I certainly can&#39;t see the advantage over a physical meeting with colleagues, or even a video-conference. There&#39;s still a long way to go before this tech can become mainstream. Maybe it never will, at least not in this form. And certainly not for entertainment or socialising purposes.&lt;/p&gt;
+&lt;p&gt;The calm before the storm:&lt;br /&gt;
+&lt;img src=&quot;https://www.robin.is/assets/images/2023/PXL_20230210_074201645.webp&quot; alt=&quot;Empty class room ready to receive kids to try out headsets&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;Let the VR begin:&lt;br /&gt;
+&lt;img src=&quot;https://www.robin.is/assets/images/2023/PXL_20230210_074201645.webp&quot; alt=&quot;Class room full of teenagers trying out the VR headsets&quot; /&gt;&lt;/p&gt;
+</content>
+	</entry>
 	
 	<entry>
 		<title>European Bac choices toolkkit</title>
@@ -199,8 +216,7 @@
 		<updated>2022-12-31T12:59:59Z</updated>
 		<id>https://www.robin.is/posts/2022/clacks-overhead/</id>
 		<content type="html">&lt;p&gt;Discworld author Terry Pratchett died in 2015. His books were hugely popular, making him one of the most successfull authors of all time. To remember him, a &lt;a href=&quot;https://www.reddit.com/r/discworld/comments/2yt9j6/gnu_terry_pratchett/&quot;&gt;group of redditers&lt;/a&gt; came up with the idea of implementing the clacks  system from the book Going Postal in today&#39;s internet. This can done by adding the following bit of code to the &lt;code&gt;head&lt;/code&gt; tag in any HTML file:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;&amp;lt;meta http-equiv=&amp;quot;X-Clacks-Overhead&amp;quot; content=&amp;quot;GNU Terry Pratchett&amp;quot; /&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;meta http-equiv=&quot;X-Clacks-Overhead&quot; content=&quot;GNU Terry Pratchett&quot; /&gt;&lt;/p&gt;
 &lt;p&gt;It can also be implemented by configuring web servers to send an appropriate page header. In fact this is the better option, but I am not able to configure the web server, as I am using GitHub Pages to host the site.&lt;/p&gt;
 &lt;p&gt;I had implemented this years ago, whilst I still had my site running on Wordpress. After moving to a static site, I had forgotten about this and not added the clacks meta tag. Well, now it&#39;s back - just in time for the new year!&lt;/p&gt;
 &lt;p&gt;More information on the clacks headers is available here:&lt;/p&gt;
@@ -257,31 +273,6 @@
 &lt;/ol&gt;
 &lt;p&gt;And here&#39;s a picture of the blinds half up, to prove that they now work.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;https://www.robin.is/assets/images/blinds.jpg&quot; alt=&quot;Blinds half way down the window at night, with reflections of the room in the window&quot; /&gt;&lt;/p&gt;
-</content>
-	</entry>
-	
-	<entry>
-		<title>Walferdange Circular Walk</title>
-		<link href="https://www.robin.is/posts/2022/walferdange-circular-walk/"/>
-		<updated>2022-12-26T14:00:00Z</updated>
-		<id>https://www.robin.is/posts/2022/walferdange-circular-walk/</id>
-		<content type="html">&lt;p&gt;An interesting 10km walk which starts off walking along a roman well system bringing water to the old roman villa below, who&#39;s remains you see after about 2km. This first part of the walk is flat and then it&#39;s downhill. Which means that the following two to three kilometres are uphill, and quite steep at times!&lt;/p&gt;
-&lt;p&gt;It&#39;s a good boxing day activity to walk off the turkey and trimmings from the day before! And the dog enjoyed it. Even she was tired by the end.&lt;/p&gt;
-&lt;p&gt;Angie, all eager at the start.&lt;br /&gt;
-&lt;img src=&quot;https://www.robin.is/assets/images/circular-walfer-angie.jpg&quot; alt=&quot;White golden retriever waiting on an winter path&quot; /&gt;&lt;/p&gt;
-&lt;p&gt;Trees near the start of the walk.&lt;br /&gt;
-&lt;img src=&quot;https://www.robin.is/assets/images/circular-walfer-trees.jpg&quot; alt=&quot;Trees in the background, with moss covering the ground in the middle of the photo&quot; /&gt;&lt;/p&gt;
-&lt;p&gt;Roman well system, following the underground stream that brough water to the roman villa at the bottom.&lt;br /&gt;
-&lt;img src=&quot;https://www.robin.is/assets/images/circular-walfer-wells.jpg&quot; alt=&quot;Round green metal structures covering an old well system allong path&quot; /&gt;&lt;/p&gt;
-&lt;p&gt;The ruins of the roman villa.&lt;br /&gt;
-&lt;img src=&quot;https://www.robin.is/assets/images/circular-walfer-villa.jpg&quot; alt=&quot;Looking over the outline of a Roman villa clearly showing the layout of the rooms and paths.&quot; /&gt;&lt;/p&gt;
-&lt;p&gt;Looking down on the Alzette valley.&lt;br /&gt;
-&lt;img src=&quot;https://www.robin.is/assets/images/circular-walfer-bench.jpg&quot; alt=&quot;Looking out over the back of a bench, through some trees to the valley beyond&quot; /&gt;&lt;/p&gt;
-&lt;p&gt;The route.&lt;br /&gt;
-&lt;img src=&quot;https://www.robin.is/assets/images/circular-walfer-map.jpg&quot; alt=&quot;Map of the route&quot; /&gt;&lt;/p&gt;
-&lt;p&gt;This photo, from 26th November 1910 seems to be a trail that you can follow, which forms a part of the circular walk. I don&#39;t know the reason or the history behind the girls. Are they sisters? It reminded me of the two girls in &lt;a href=&quot;https://www.imdb.com/title/tt0081505/&quot;&gt;The Shining&lt;/a&gt;, so I am glad it was still light when I did the walk!&lt;br /&gt;
-&lt;img src=&quot;https://www.robin.is/assets/images/circular-walfer-girls.jpg&quot; alt=&quot;Black and white photo of six girls dressed in white dresses, in descending order of height from left to right&quot; /&gt;&lt;/p&gt;
-&lt;p&gt;After doing some further research these are in fact &lt;a href=&quot;https://www.steinsel.lu/sports-loisirs/sentiers-de-randonnees/circuit-historique-du-grunewald/&quot;&gt;six princesses (in french)&lt;/a&gt; and if you follow the route you can learn all about them... That&#39;s for another time.&lt;/p&gt;
 </content>
 	</entry>
 </feed>

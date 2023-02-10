@@ -49,7 +49,7 @@
                 <a href="/reading/" >reading</a> and 
                 <a href="/walking/" >walking</a> the 
                 <a href="/archive/tagged/angie/"  >dog</a>🐕‍🦺. Read 
-                    his 378 <a href="/archiving/" >posts</a> and find out more
+                    his 379 <a href="/archiving/" >posts</a> and find out more
                 <a href="/about/" >about</a> him.
 
             </nav>
@@ -82,10 +82,9 @@
   <p>Having got my <a href="/posts/2022/stylesheet-switching/">stylesheet switcher working</a>, I decided to improve the script a little and try to make it easier to implement. The script now not only adds in the required buttons to switch the stylesheet, but also adds the actual stylesheet links into the header, except for the default style. This is defined as the first style in array of stylesheets that is used to setup the buttons. By ensuring the default style has to be added manually, I ensure that the site will be styled even if javascript does not work.</p>
 <p>The script was also imrpoved so that the button for the selected stylesheet was disabled, so it couldn't be clicked again.</p>
 <p>I then moved all the scripts into a single javascript file. Now the whole thing is very easy to initialise. You simply need to defined three variables: themeCss (an array of css files representing the themes), themeName (an array of names belong to themes), themeId (the id of the element within which the buttons should be created). For example:</p>
-<pre><code>var themeCss = ['default.css','high.css','plain.css','olden.css'];
-var themeName = ['Default','High Contrast','Plain','Olden'];
-var themeId = &quot;themeSwitch&quot;;
-</code></pre>
+<p>var themeCss = ['default.css','high.css','plain.css','olden.css'];<br>
+var themeName = ['Default','High Contrast','Plain','Olden'];<br>
+var themeId = &quot;themeSwitch&quot;;</p>
 <p>The <a href="https://gist.github.com/robindotis/d1b33ab257e5e6970765b8b865e94bf5">gist I wrote about the switcher on GitHub</a>, has been update to include these latest changes. Probably it can be simplified and generalised even further.</p>
  
   <hr aria-hidden="true">

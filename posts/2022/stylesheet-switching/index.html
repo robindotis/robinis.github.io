@@ -49,7 +49,7 @@
                 <a href="/reading/" >reading</a> and 
                 <a href="/walking/" >walking</a> the 
                 <a href="/archive/tagged/angie/"  >dog</a>🐕‍🦺. Read 
-                    his 378 <a href="/archiving/" >posts</a> and find out more
+                    his 379 <a href="/archiving/" >posts</a> and find out more
                 <a href="/about/" >about</a> him.
 
             </nav>
@@ -82,27 +82,26 @@
   <p>I spent the last couple of days playing around with stylesheet switching (theming) and also implementing <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-color-scheme">prefers-color-scheme</a> on the default theme in order to a dark mode.</p>
 <p>I also added in a couple of fonts recently released by GitHub: <a href="https://github.com/mona-sans">Mona Sans and Hubo Sans</a></p>
 <p>So far I have managed to have no JavaScript on this site. Unfortunately implementing theming on a static site is simply not possible without JavaScript. My aim therefore was to keep JavaScript to a minimum. I managed it with about 10 lines of code, including using local storage to remember the user's prefered theme.</p>
-<pre><code>    function swapStyleSheet(sheet){
-        var styles = document.querySelectorAll('link[rel~=&quot;stylesheet&quot;]');
-        var i;
-        for (i = 0; i &lt; styles.length; ++i) {
-            if( !styles[i].href.endsWith(&quot;structure.css&quot;) &amp;&amp; 
-                !styles[i].href.endsWith(&quot;style.css&quot;) &amp;&amp; 
-                !styles[i].href.endsWith(&quot;fonts.css&quot;)) {
-                if(styles[i].href.endsWith(sheet)) {
-                    styles[i].rel = &quot;stylesheet&quot;;
-                }
-                else {
-                    styles[i].rel = &quot;alternate stylesheet&quot;;
-                }
-            }
-        }
-        localStorage.setItem(&quot;sheet&quot;,sheet);
-    }
-    if(localStorage.getItem('sheet')) {
-        swapStyleSheet(localStorage.getItem('sheet'));
-    }
-</code></pre>
+<p>function swapStyleSheet(sheet){<br>
+var styles = document.querySelectorAll('link[rel~=&quot;stylesheet&quot;]');<br>
+var i;<br>
+for (i = 0; i &lt; styles.length; ++i) {<br>
+if( !styles[i].href.endsWith(&quot;structure.css&quot;) &amp;&amp;<br>
+!styles[i].href.endsWith(&quot;style.css&quot;) &amp;&amp;<br>
+!styles[i].href.endsWith(&quot;fonts.css&quot;)) {<br>
+if(styles[i].href.endsWith(sheet)) {<br>
+styles[i].rel = &quot;stylesheet&quot;;<br>
+}<br>
+else {<br>
+styles[i].rel = &quot;alternate stylesheet&quot;;<br>
+}<br>
+}<br>
+}<br>
+localStorage.setItem(&quot;sheet&quot;,sheet);<br>
+}<br>
+if(localStorage.getItem('sheet')) {<br>
+swapStyleSheet(localStorage.getItem('sheet'));<br>
+}</p>
 <p>With thanks to info I found on these links:</p>
 <ul>
 <li><a href="https://developer.mozilla.org/en-US/docs/Web/-CSS/Attribute_selectors">Attribute Selectors on MDN</a></li>
@@ -110,8 +109,7 @@
 <li><a href="https://stackoverflow.com/questions/2694640/find-an-element-in-dom-based-on-an-attribute-value">Element in DOM on stackoverflow</a></li>
 </ul>
 <p>Currenty themes are switched using the buttons under the header, as you can see above. I need to style them a bit better, but the basic button code is:</p>
-<pre><code>&lt;button type=&quot;button&quot; onClick=&quot;swapStyleSheet('/assets/css/default.css')&quot;&gt;Default&lt;/button&gt;
-</code></pre>
+<p><button type="button" onClick="swapStyleSheet('/assets/css/default.css')">Default</button></p>
 <p>I also <a href="https://gist.github.com/robindotis/d1b33ab257e5e6970765b8b865e94bf5">wrote a gist about the switcher on GitHub</a>, in case others find this useful. Probably it can be simplified and generalised further.</p>
  
   <hr aria-hidden="true">
