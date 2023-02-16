@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+    <head>
+        <meta charset="UTF-8">
+        <!-- See: https://www.w3schools.com/css/css_rwd_viewport.asp-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Task planner</title>
+
+        <style>
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>Translation planner</h1>
+        </header>
+        <main>
+            <h2></h2>
+            <div id="temp">
+
+            </div>
+            <table>
+                <thead>
+                    <th>Day</th>
+                    <th>Task</th>
+                    <th>Hours</th>
+                    <th>Total Hours</th>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+            <template id="month">
+                <h2></h2>
+                <table>
+                    <thead>
+                        <th>Day</th>
+                        <th>Task</th>
+                        <th>Task Hours</th>
+                        <th>Total Hours</th>
+                    </thead>
+                </table>
+            </template>
+            <template id="day">
+                <tr>
+                    <td>
+                    </td>
+                    <td>
+                    </td>
+                    <td>
+                    </td>
+                    <td>
+                    </td>
+                </tr>
+            </template>
+        </main>
+        <footer>
+            <p>
+                Offered without any warranty or guarantee about the accuracy. Good luck!
+            </p>
+        </footer>
+
+        <script>
+            function FormatDate(oDay) {
+                return oDay.getFullYear() + "-" + 
+                            oDay.getMonth().toString().padStart(2,0) + "-" + 
+                            oDay.getDate().toString().padStart(2,0);
+            }
+
+            function appendTaskRow(sDay, sTask, sTaskHours, sTotalHours, sClass) {
+                const tbody = document.querySelector("tbody");
+                const template = document.querySelector('#day');
+                const clone = template.content.cloneNode(true);
+                let td = clone.querySelectorAll("td");
+                td[0].textContent = sDay;
+                td[1].textContent = sTask;
+                td[2].textContent = sTaskHours;
+                td[3].textContent = sTotalHours;
+
+                if(sClass.length > 0) {
+                    let tr = clone.querySelectorAll("tr");
+                    tr[0].classList.toggle(sClass)
+                }
+                
+                tbody.appendChild(clone);
+            }
+
+            const pagesPerHour = 1;
+            const hoursPerDay = 8;
+            const pagesPerDay = pagesPerHour * hoursPerDay;
+
+            var tasks = [
+                {
+                    "id": "10001",
+                    "name": "Translation 1",
+                    "pages": "10",
+                    "startDate": "2023-02-14",
+                    "endDate": "2023-02-16"
+                },
+                {
+                    "id": "10002",
+                    "name": "Translation 2",
+                    "pages": "26",
+                    "startDate": "2023-2-15",
+                    "endDate": "2023-02-17"
+                },
+                {
+                    "id": "10003",
+                    "name": "Translation 3",
+                    "pages": "5",
+                    "startDate": "2023-02-16",
+                    "endDate": "2023-02-19"
+                },
+                {
+                    "id": "10004",
+                    "name": "Translation 4",
+                    "pages": "1",
+                    "startDate": "2023-02-15",
+                    "endDate": "2023-03-18"
+                }
+            ];
+/*
+            // sort in ascending order so can use array.pop()??
+            tasks.sort((a, b) => {
+                return new Date(b.endDate) - new Date(a.endDate); // ascending
+            });
+*/
+
+            tasks.sort((a, b) => {
+                return new Date(a.endDate) - new Date(b.endDate); // descending
+            })
+
+            let totalHours = [];
+            let i = 0;
+            for (let k = 0; k < tasks.length; k++) {
+                for (let j = 0; j < tasks[k].pages; j++) {
+                    totalHours[i] = tasks[k].id;
+                    i++;
+                }
+            }
+            totalHours.reverse();
+
+            var theDay = new Date();
+            var dayCount = 0;
+            var hourCount = 0;
+            var previousDay = "";
+            var previousTaskId = ""
+            var currentTaskHours = 0;
+            var counter = 0;
+
+            while (totalHours.length > 0) {
+                var cellDate = "";
+                var cellTaskId = "";
+                var cellTaskHours = "";
+
+                var currentDay = FormatDate(theDay);
+                var currentTaskId = totalHours.pop();
+
+                cellDate = currentDay;
+                //Only blank date if this is not the very first row (counter > 1)
+                if (currentDay == previousDay && counter > 1) {
+                    cellDate = "";
+                }
+                cellTaskId = currentTaskId;
+                cellTaskHours = currentTaskHours + 1;
+
+                if(currentTaskId == previousTaskId) {
+                    currentTaskHours++;
+                }
+                else {
+                    // new task: set row with previous task
+                    //cellDate = currentDay;
+                    cellTaskId = previousTaskId;
+                    cellTaskHours = currentTaskHours + 1;
+
+                    currentTaskHours = 0;
+                }
+
+                hourCount++;
+                if((hourCount == hoursPerDay && dayCount > 0) || (hourCount == hoursPerDay + 1 && dayCount == 0)) {
+                    //go to next day
+                    dayCount++;
+                    theDay = new Date(Date.now() + (3600 * 1000 * 24) * dayCount);
+                    hourCount = 0;
+                    
+                    // set date to previous day
+                    cellDate = ""; //previousDay;
+                }
+
+                if (previousTaskId != "") {
+                    //
+                    var deadline = new Date(tasks.find(task => task.id == cellTaskId).endDate);
+                    var taskCompleteDate = new Date(cellDate);
+                    var statusClass = "";
+
+                    if(deadline < taskCompleteDate) {
+                        statusClass = "late";
+                    }
+                    else {
+                        statusClass = "ok";
+                    }
+
+                    appendTaskRow(cellDate, cellTaskId, cellTaskHours, counter, statusClass)
+                }
+
+                previousDay = currentDay;
+                previousTaskId = currentTaskId;
+
+                if (totalHours.length == 0) {
+                    //hourCount++;
+                    if(hourCount == hoursPerDay) {
+                        //go to next day
+                        dayCount++;
+                        theDay = new Date(Date.now() + (3600 * 1000 * 24)*dayCount);
+                        hourCount = 0;
+                        currentDay = FormatDate(theDay);
+                    }
+                    else {
+                        currentDay = "";
+                    }
+                    //append last item 
+                    appendTaskRow(currentDay, currentTaskId, currentTaskHours + 1, counter + 1, "");
+                }
+                counter ++;
+            }
+        </script>
+    </body>
+</html>

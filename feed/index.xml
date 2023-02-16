@@ -6,13 +6,32 @@
 	
 	<link href="https://www.robin.is/feed/index.xml" rel="self"/>
 	<link href="https://www.robin.is/" rel="alternate" type="text/html"/>
-	<updated>2023-02-10T13:18:27Z</updated>
+	<updated>2023-02-15T08:18:27Z</updated>
 	<id>https://www.robin.is/</id>
 	<author>
 		<name>robindotis</name>
 		<email>admin@robin.is</email>
 	</author>
 	
+	
+	<entry>
+		<title>Frameworks</title>
+		<link href="https://www.robin.is/posts/2023/frameworks/"/>
+		<updated>2023-02-15T08:18:27Z</updated>
+		<id>https://www.robin.is/posts/2023/frameworks/</id>
+		<content type="html">&lt;p&gt;Recently, I came across a couple of posts about the usefullness of JavaScript frameworks, such as &lt;a href=&quot;https://reactjs.org/&quot;&gt;React&lt;/a&gt; and &lt;a href=&quot;https://vuejs.org/&quot;&gt;Vue&lt;/a&gt;. Their promise is to simplify the creation of modern web applications. These discussions seem to kick off every now and then in the same way that 20 years ago people debated Java vs .Net and 40 years ago it was probably C vs Perl. The current debate is often centered around the speed of the pages using frameworks, which are bulkier and slower than native rendering.&lt;/p&gt;
+&lt;p&gt;In &lt;a href=&quot;https://infrequently.org/2023/02/the-market-for-lemons/&quot;&gt;the market for lemons&lt;/a&gt;, Alex wrote a very good description of how these frameworks are knowingly over selling their benefits (faster development, easier to maintain, better support, access to a arger developer pool). A key takeaway for me was that these frameworks do give significant benefits to large teams able to invest and maintain in them. Smaller teams however, tend to get bogged down in their complexity the moment you go beyond the defaults. It&#39;s a bit like the &amp;quot;blog in five minutes&amp;quot; use cases that popped up all over the place when &lt;a href=&quot;https://rubyonrails.org/&quot;&gt;Ruby On Rails&lt;/a&gt; turned up 20 years ago. Of course RoR was truly revolutionary at the time and incredibly powerful, but the same was not true for other frameworks of the time.&lt;/p&gt;
+&lt;p&gt;In response, Laurie posted &lt;a href=&quot;https://seldo.com/posts/the_case_for_frameworks&quot;&gt;the case for frameworks&lt;/a&gt; in support of React and JavaScript frameworks. His main argument, whilst acknowlegding certain failings of frameworks, is that you&#39;re OK because everyone is doing it. This is the 2020s reload of the &amp;quot;no one ever got fired for picking IBM&amp;quot; thinking in the 80s.&lt;/p&gt;
+&lt;p&gt;But are these frameworks as popular as they seem. Andy takes a look his post &lt;a href=&quot;https://andy-bell.co.uk/the-extremely-loud-minority/&quot;&gt;the (extremely) loud minority&lt;/a&gt; and concludes &amp;quot;not really&amp;quot;. Obviously there are thousands of sites using React, but only 3.3% of the top 10 million websites actually use it. The percentage of all websites is probably much smaller. In comparison, Wordpress is used by 43.1% of the top 10 million websites. The reason these frameworks seem more popular than they actually is explained in &lt;a href=&quot;https://adactio.com/journal/15011&quot;&gt;dev perception&lt;/a&gt; by Jeremy.&lt;/p&gt;
+&lt;p&gt;It is interesting to note that &lt;a href=&quot;https://jquery.com/&quot;&gt;jQuery&lt;/a&gt; is still used on over 77% of the top 10 million websites. 16 years after it&#39;s first release. It&#39;s popularity is only now starting to dip. There are many reasons for it&#39;s popularity.&lt;/p&gt;
+&lt;p&gt;One reason is that jQuery was released at a time when web standards were poorly supported by browsers. This meant developers had to write code for each of the common browsers at the time. jQuery provided a standardising layer, which enabled your code to work well in all browsers.&lt;/p&gt;
+&lt;p&gt;A second is that it was not released by a big tech company. jQuery was created by one guy, John Resig. Since there was no big company owning jQuery, other companies didn&#39;t feel the need to compete and release their own framework. There was no competition and it quickly became the defacto framework used by anyone programming front-end JavaScript.&lt;/p&gt;
+&lt;p&gt;A third reason is that jQuery was quite simple to get started with. You could sprinkle it lightly throughout your code, or you could base all your code around it.&lt;/p&gt;
+&lt;p&gt;The reason for it&#39;s recent dip: browsers are finally more or less equal in terms of standars support and the use case for jQuery is waning, especially in new projects.&lt;/p&gt;
+&lt;p&gt;All of this leads me to the actual point I want to make. It&#39;s about the most common framework, used by 100% of all websites. A &lt;a href=&quot;https://en.wikipedia.org/wiki/WorldWideWeb&quot;&gt;work in progress since 1990&lt;/a&gt;. It is of course the browser using standard HTML, CSS and JavaScript. Sure, it doesn&#39;t always have the latest bells and whistles like, instead its future support is unparalled. It will never be obsolete.&lt;/p&gt;
+&lt;p&gt;You can&#39;t go wrong choosing it. In fact you can&#39;t avoid choosing it!&lt;/p&gt;
+</content>
+	</entry>
 	
 	<entry>
 		<title>Safer Internet Day - 2023</title>
@@ -249,30 +268,6 @@
 &lt;pre&gt;&lt;code&gt;&amp;lt;meta name=&amp;quot;keywords&amp;quot; content=&amp;quot;posts,general,keywords,code,tags,information science,web&amp;quot; /&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Maybe I am old school, but I don&#39;t think we should be avoiding useful meta tags just because Google is not interested in them. In fact Google should maybe start paying attention to them, and rate sites down who&#39;s meta tag keywords don&#39;t match its own algorithm&#39;s keywords for the page.&lt;/p&gt;
-</content>
-	</entry>
-	
-	<entry>
-		<title>Fixing blinds</title>
-		<link href="https://www.robin.is/posts/2022/fixing-blinds/"/>
-		<updated>2022-12-26T18:45:11Z</updated>
-		<id>https://www.robin.is/posts/2022/fixing-blinds/</id>
-		<content type="html">&lt;p&gt;So today I fixed the third set of blinds in the top floor rooms since moving in five years ago. One room to go and then we should be good for a couple of decades!&lt;/p&gt;
-&lt;p&gt;However, each time I fix them, I seem to take longer and longer to get the logic right so that the blinds are up when the strap is down and rolled around the spring at the bottom. So here are the steps I did this time, for my own future reference&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;Thread the strap through the little roller thingy as well as the slit on the right hand side.&lt;/li&gt;
-&lt;li&gt;Manually roll the blinds so they are all the way up. This is quite tough when they are fully down as you have to lift the weight of the entire blinds.&lt;/li&gt;
-&lt;li&gt;Get a little helper to hold the blinds in place, whilst you thread the strap through the wheel on the right hand side and fix it in place by tying a knot at the end.&lt;/li&gt;
-&lt;li&gt;Let the blinds down, the strap should wind itself around the wheel.&lt;/li&gt;
-&lt;li&gt;Tug on the strap to make sure the blinds go up as you pull the strap down.&lt;/li&gt;
-&lt;li&gt;Undo the box with the spring at the bottom and wind it up so the spring is tight.&lt;/li&gt;
-&lt;li&gt;Hold everything roughly at the height where the box is attached to the wall.&lt;/li&gt;
-&lt;li&gt;Making sure the strap isn&#39;t twisted anywhere along its length, attach the strap on the little knob (cut a slit in the strap for this).&lt;/li&gt;
-&lt;li&gt;Put the spring mechanism back in the box and screw the box to the wall.&lt;/li&gt;
-&lt;li&gt;Job done, have a beer! 🍺&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;And here&#39;s a picture of the blinds half up, to prove that they now work.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://www.robin.is/assets/images/blinds.jpg&quot; alt=&quot;Blinds half way down the window at night, with reflections of the room in the window&quot; /&gt;&lt;/p&gt;
 </content>
 	</entry>
 </feed>
