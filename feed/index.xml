@@ -6,13 +6,35 @@
 	
 	<link href="https://www.robin.is/feed/index.xml" rel="self"/>
 	<link href="https://www.robin.is/" rel="alternate" type="text/html"/>
-	<updated>2023-02-15T08:18:27Z</updated>
+	<updated>2023-02-19T22:18:27Z</updated>
 	<id>https://www.robin.is/</id>
 	<author>
 		<name>robindotis</name>
 		<email>admin@robin.is</email>
 	</author>
 	
+	
+	<entry>
+		<title>Sveta Petka</title>
+		<link href="https://www.robin.is/posts/2023/sveta-petka/"/>
+		<updated>2023-02-19T22:18:27Z</updated>
+		<id>https://www.robin.is/posts/2023/sveta-petka/</id>
+		<content type="html">&lt;p&gt;Twenty years after my last walk to Sveta Petka monastery in the hills above Asenovgrad, I did the same again. This is a religious day specific to the monastery and it started appropriately by saving the life of a dog. This poor chap:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://www.robin.is/assets/images/2023/sveta-petka-dog.webp&quot; alt=&quot;Dog resting in dried grass in front of a monastery&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;had fallen into a reservoir and couldn&#39;t climb out of the water due to the steep smooth concrete banks. So the tallest guy in our group, held by two others, climbed over the barrier and pulled the dog out of the water. We gave the dog some bread and went on our way up the steep hill to the monastery. At the top we saw the dog resting in front of the official ceremony of the monastery. Holy dog indeed!&lt;/p&gt;
+&lt;p&gt;Sveta Petka monastery is known for being a hiding place for Bulgarian revolutionary, Vasil Levski. I saw his hiding place 20 years ago, so didn&#39;t queue this timee to see it, but the monastery itself is reasonably well maintained, with on-going construction works and well worth a visit.&lt;/p&gt;
+&lt;p&gt;We carried on past the monastery, through masses of people and found a spot about about a few hundred metres further along. Actually, we didn&#39;t find it, it&#39;s where the group always has their picnic on this hike.&lt;/p&gt;
+&lt;p&gt;By the time I got there the others had already started the fire!&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://www.robin.is/assets/images/2023/sveta-petka-fire.webp&quot; alt=&quot;Log fire for BBQ&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;The wine and rakia started flowing and soon those more musical than me started dancing the &amp;quot;Horo&amp;quot;.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://www.robin.is/assets/images/2023/sveta-petka-horo.webp&quot; alt=&quot;People line dancing the Horo&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;After having relaxed in that spot for several hours, we continued on to catch the last of the sunset and then headed down the steep and rocky path with our head torches. After a quick stop at a rock called &amp;quot;Anathem&amp;quot;, we continued on to the little &amp;quot;Sveta Petka&amp;quot; church with this lovely view of the town half way down the hill.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://www.robin.is/assets/images/2023/sveta-petka-cross.webp&quot; alt=&quot;Cross lit up at night with Asenovgrad glowing in the background&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;This was a great day out. The last time I had done this hike was in snow with sub zero temperatures 20 years ago. This time it was 20°C. I guess this is climate change.&lt;/p&gt;
+&lt;p&gt;This is what it look like 20 years ago.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://www.robin.is/assets/images/2023/sveta-petka-2003.webp&quot; alt=&quot;Me sitting on a rock in the snow&quot; /&gt;&lt;/p&gt;
+</content>
+	</entry>
 	
 	<entry>
 		<title>Frameworks</title>
@@ -255,19 +277,6 @@
 &lt;p&gt;One of the easier to read culture novels. Told in an intersting way and without a predictable outcome whilst reading it, nor a clear answer to who did (or didn&#39;t) do it. What continues to impress is the way Iain M Banks is able to really drill home timeless infinity that defines our galaxy and the universe beyond it.&lt;/p&gt;
 &lt;p&gt;The culture, whilst one of the more advanced and expansive civilisations in the galaxy, are portrayed as really just in their mid-20s. Very clever and important, but really not quite able to compete with those even more advanced.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;https://www.robin.is/assets/images/windward.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-</content>
-	</entry>
-	
-	<entry>
-		<title>Keywords meta tag</title>
-		<link href="https://www.robin.is/posts/2022/keywords/"/>
-		<updated>2022-12-27T08:58:47Z</updated>
-		<id>https://www.robin.is/posts/2022/keywords/</id>
-		<content type="html">&lt;p&gt;I just realised that on my posts I am not putting the tags in the &amp;quot;keywords&amp;quot; meta tag.  It&#39;s clear to me that search engines no longer use the keywords meta tag for indexing. Nevertheless, it feels like the right thing to do to me. I am not interested in search engine optimisation, at all. I would however like my site to be an example of good web practice.&lt;/p&gt;
-&lt;p&gt;So whilst populating the keywords meta tag is probably a waste of time in most cases, who knows, maybe in the future some crawler or indexer will use it for something. Or some researcher might find them usefull for cross checking against the content. And in any case, it&#39;s one line of code in &lt;a href=&quot;https://www.11ty.dev/&quot;&gt;eleventy&lt;/a&gt;:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;&amp;lt;meta name=&amp;quot;keywords&amp;quot; content=&amp;quot;posts,general,keywords,code,tags,information science,web&amp;quot; /&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Maybe I am old school, but I don&#39;t think we should be avoiding useful meta tags just because Google is not interested in them. In fact Google should maybe start paying attention to them, and rate sites down who&#39;s meta tag keywords don&#39;t match its own algorithm&#39;s keywords for the page.&lt;/p&gt;
 </content>
 	</entry>
 </feed>
