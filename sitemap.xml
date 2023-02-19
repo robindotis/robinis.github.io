@@ -1903,6 +1903,11 @@
   </url>
   
   <url>
+    <loc>https://www.robin.is/posts/2023/sveta-petka/</loc>
+    <lastmod>2023-02-19</lastmod>
+  </url>
+  
+  <url>
     <loc>https://www.robin.is/admin/</loc>
     <lastmod>2023-02-19</lastmod>
   </url>
@@ -2148,22 +2153,17 @@
   </url>
   
   <url>
-    <loc>https://www.robin.is/archive/tagged/privacy/</loc>
-    <lastmod>2023-02-19</lastmod>
-  </url>
-  
-  <url>
     <loc>https://www.robin.is/archive/tagged/ux/</loc>
     <lastmod>2023-02-19</lastmod>
   </url>
   
   <url>
-    <loc>https://www.robin.is/archive/tagged/speech-recognition/</loc>
+    <loc>https://www.robin.is/archive/tagged/windows/</loc>
     <lastmod>2023-02-19</lastmod>
   </url>
   
   <url>
-    <loc>https://www.robin.is/archive/tagged/windows/</loc>
+    <loc>https://www.robin.is/archive/tagged/speech-recognition/</loc>
     <lastmod>2023-02-19</lastmod>
   </url>
   
@@ -2553,6 +2553,11 @@
   </url>
   
   <url>
+    <loc>https://www.robin.is/archive/tagged/versailles/</loc>
+    <lastmod>2023-02-19</lastmod>
+  </url>
+  
+  <url>
     <loc>https://www.robin.is/archive/tagged/barcelona/</loc>
     <lastmod>2023-02-19</lastmod>
   </url>
@@ -2793,12 +2798,12 @@
   </url>
   
   <url>
-    <loc>https://www.robin.is/archive/tagged/github/</loc>
+    <loc>https://www.robin.is/archive/tagged/regensburg/</loc>
     <lastmod>2023-02-19</lastmod>
   </url>
   
   <url>
-    <loc>https://www.robin.is/archive/tagged/regensburg/</loc>
+    <loc>https://www.robin.is/archive/tagged/github/</loc>
     <lastmod>2023-02-19</lastmod>
   </url>
   
@@ -3033,6 +3038,11 @@
   </url>
   
   <url>
+    <loc>https://www.robin.is/archive/tagged/privacy/</loc>
+    <lastmod>2023-02-19</lastmod>
+  </url>
+  
+  <url>
     <loc>https://www.robin.is/archive/tagged/html/</loc>
     <lastmod>2023-02-19</lastmod>
   </url>
@@ -3049,11 +3059,6 @@
   
   <url>
     <loc>https://www.robin.is/archive/tagged/shkorpilovtsi/</loc>
-    <lastmod>2023-02-19</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.robin.is/archive/tagged/versailles/</loc>
     <lastmod>2023-02-19</lastmod>
   </url>
   
@@ -3974,11 +3979,6 @@
   
   <url>
     <loc>https://www.robin.is/writing/</loc>
-    <lastmod>2023-02-19</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.robin.is/posts/2023/sveta-petka/</loc>
     <lastmod>2023-02-19</lastmod>
   </url>
 </urlset>
