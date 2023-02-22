@@ -6,13 +6,26 @@
 	
 	<link href="https://www.robin.is/feed/index.xml" rel="self"/>
 	<link href="https://www.robin.is/" rel="alternate" type="text/html"/>
-	<updated>2023-02-19T22:18:27Z</updated>
+	<updated>2023-02-22T20:58:27Z</updated>
 	<id>https://www.robin.is/</id>
 	<author>
 		<name>robindotis</name>
 		<email>admin@robin.is</email>
 	</author>
 	
+	
+	<entry>
+		<title>The hundredth idiot</title>
+		<link href="https://www.robin.is/posts/2023/hundredth-idiot/"/>
+		<updated>2023-02-22T20:58:27Z</updated>
+		<id>https://www.robin.is/posts/2023/hundredth-idiot/</id>
+		<content type="html">&lt;p&gt;The hundredth idiot is a Nariscene proverb described in the Culture series book Matter by Iain M. Banks.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;One hundred idiots make idiotic plans and carry them out. All but one fail. The hundredth idiot, whose plan succeeded through pure luck, is immediately convinced he&#39;s a genius.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;As told by the Nariscene space vessel &amp;quot;&lt;em&gt;The hundredth idiot&lt;/em&gt;&amp;quot;.&lt;/p&gt;
+</content>
+	</entry>
 	
 	<entry>
 		<title>Sveta Petka</title>
@@ -28,7 +41,7 @@
 &lt;p&gt;&lt;img src=&quot;https://www.robin.is/assets/images/2023/sveta-petka-fire.webp&quot; alt=&quot;Log fire for BBQ&quot; /&gt;&lt;/p&gt;
 &lt;p&gt;The wine and rakia started flowing and soon those more musical than me started dancing the &amp;quot;Horo&amp;quot;.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;https://www.robin.is/assets/images/2023/sveta-petka-horo.webp&quot; alt=&quot;People line dancing the Horo&quot; /&gt;&lt;/p&gt;
-&lt;p&gt;After having relaxed in that spot for several hours, we continued on to catch the last of the sunset and then headed down the steep and rocky path with our head torches. After a quick stop at a rock called &amp;quot;Anathem&amp;quot;, we continued on to the little &amp;quot;Sveta Petka&amp;quot; church with this lovely view of the town half way down the hill.&lt;/p&gt;
+&lt;p&gt;After having relaxed in that spot for several hours, we continued on to catch the last of the sunset and then headed down the steep and rocky path with our head torches in the dark. After a quick stop at a rock called &amp;quot;Anathema&amp;quot;, we continued on to the little &amp;quot;Sveta Petka&amp;quot; church with this lovely view of the town beyond.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;https://www.robin.is/assets/images/2023/sveta-petka-cross.webp&quot; alt=&quot;Cross lit up at night with Asenovgrad glowing in the background&quot; /&gt;&lt;/p&gt;
 &lt;p&gt;This was a great day out. The last time I had done this hike was in snow with sub zero temperatures 20 years ago. This time it was 20°C. I guess this is climate change.&lt;/p&gt;
 &lt;p&gt;This is what it looked like 20 years ago.&lt;/p&gt;
@@ -265,18 +278,6 @@
 &lt;li&gt;&lt;a href=&quot;http://www.gnuterrypratchett.com/&quot;&gt;http://www.gnuterrypratchett.com/&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;The site also lists a number of plugins which can notify you if you are visiting a site which has implemented the clacks header.&lt;/p&gt;
-</content>
-	</entry>
-	
-	<entry>
-		<title>Look to Windward</title>
-		<link href="https://www.robin.is/posts/2022/look-to-windward/"/>
-		<updated>2022-12-30T22:11:11Z</updated>
-		<id>https://www.robin.is/posts/2022/look-to-windward/</id>
-		<content type="html">&lt;h2&gt;by Iain M Banks&lt;/h2&gt;
-&lt;p&gt;One of the easier to read culture novels. Told in an intersting way and without a predictable outcome whilst reading it, nor a clear answer to who did (or didn&#39;t) do it. What continues to impress is the way Iain M Banks is able to really drill home timeless infinity that defines our galaxy and the universe beyond it.&lt;/p&gt;
-&lt;p&gt;The culture, whilst one of the more advanced and expansive civilisations in the galaxy, are portrayed as really just in their mid-20s. Very clever and important, but really not quite able to compete with those even more advanced.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://www.robin.is/assets/images/windward.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 </content>
 	</entry>
 </feed>
