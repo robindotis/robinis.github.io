@@ -6,13 +6,24 @@
 	
 	<link href="https://www.robin.is/feed/index.xml" rel="self"/>
 	<link href="https://www.robin.is/" rel="alternate" type="text/html"/>
-	<updated>2023-02-22T20:58:27Z</updated>
+	<updated>2023-02-24T21:18:27Z</updated>
 	<id>https://www.robin.is/</id>
 	<author>
 		<name>robindotis</name>
 		<email>admin@robin.is</email>
 	</author>
 	
+	
+	<entry>
+		<title>Cat by log fire</title>
+		<link href="https://www.robin.is/posts/2023/cat-by-fire/"/>
+		<updated>2023-02-24T21:18:27Z</updated>
+		<id>https://www.robin.is/posts/2023/cat-by-fire/</id>
+		<content type="html">&lt;p&gt;This is the neighbour&#39;s cat sitting by the log fire!&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://www.robin.is/assets/images/2023/cat-by-log-fire.webp&quot; alt=&quot;Cat sitting on a router in front of a TV displaying a log fire on the screen&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;The eagle eyed will notice she is actually keeping warm on the router!&lt;/p&gt;
+</content>
+	</entry>
 	
 	<entry>
 		<title>The hundredth idiot</title>
@@ -261,23 +272,6 @@
 &lt;h2&gt;Villa Malina&lt;/h2&gt;
 &lt;p&gt;&lt;img src=&quot;https://www.robin.is/assets/images/2023/ski-piste-6.webp&quot; alt=&quot;The moutain chalets at night lit up by lights on their terrace&quot; /&gt;&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;https://www.robin.is/assets/images/2023/ski-piste-7.webp&quot; alt=&quot;A set of mountain chalets overlooked by tall pine trees behind them and dry grass in the foreground&quot; /&gt;&lt;/p&gt;
-</content>
-	</entry>
-	
-	<entry>
-		<title>Clacks Overhead</title>
-		<link href="https://www.robin.is/posts/2022/clacks-overhead/"/>
-		<updated>2022-12-31T12:59:59Z</updated>
-		<id>https://www.robin.is/posts/2022/clacks-overhead/</id>
-		<content type="html">&lt;p&gt;Discworld author Terry Pratchett died in 2015. His books were hugely popular, making him one of the most successfull authors of all time. To remember him, a &lt;a href=&quot;https://www.reddit.com/r/discworld/comments/2yt9j6/gnu_terry_pratchett/&quot;&gt;group of redditers&lt;/a&gt; came up with the idea of implementing the clacks  system from the book Going Postal in today&#39;s internet. This can done by adding the following bit of code to the &lt;code&gt;head&lt;/code&gt; tag in any HTML file:&lt;/p&gt;
-&lt;p&gt;&lt;meta http-equiv=&quot;X-Clacks-Overhead&quot; content=&quot;GNU Terry Pratchett&quot; /&gt;&lt;/p&gt;
-&lt;p&gt;It can also be implemented by configuring web servers to send an appropriate page header. In fact this is the better option, but I am not able to configure the web server, as I am using GitHub Pages to host the site.&lt;/p&gt;
-&lt;p&gt;I had implemented this years ago, whilst I still had my site running on Wordpress. After moving to a static site, I had forgotten about this and not added the clacks meta tag. Well, now it&#39;s back - just in time for the new year!&lt;/p&gt;
-&lt;p&gt;More information on the clacks headers is available here:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;http://www.gnuterrypratchett.com/&quot;&gt;http://www.gnuterrypratchett.com/&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;The site also lists a number of plugins which can notify you if you are visiting a site which has implemented the clacks header.&lt;/p&gt;
 </content>
 	</entry>
 </feed>
