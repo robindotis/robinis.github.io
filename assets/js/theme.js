@@ -112,6 +112,19 @@ class themePicker {
                     styles[i].rel = "alternate stylesheet";
                 }
             }
+
+            //if naked style, remove all fixed stylesheets by setting them to alternate
+            //otherwise, make sure they added by removing the alternate setting
+            if(styles[i].href.endsWith("fonts.css") ||
+                styles[i].href.endsWith("structure.css") ||
+                styles[i].href.endsWith("style.css")) {
+                if(themeName == "Naked") {
+                    styles[i].rel = "alternate stylesheet";
+                }
+                else {
+                    styles[i].rel = "stylesheet";
+                }                    
+            }
         }
     
         /* Disable the button for the currently selected style */
@@ -169,5 +182,6 @@ themeSwitch.addTheme(new theme("High Contrast","high.css"));
 themeSwitch.addTheme(new theme("Miami","miami.css"));
 themeSwitch.addTheme(new theme("Grey","olden.css"));
 themeSwitch.addTheme(new theme("Plain","plain.css"));
+themeSwitch.addTheme(new theme("Naked","naked.css"));
 
 themeSwitch.createPicker();

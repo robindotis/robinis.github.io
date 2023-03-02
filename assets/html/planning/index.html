@@ -79,7 +79,19 @@
                 border: 1px solid #000;
                 vertical-align: top;
             }
-        </style>
+
+            .nowork td {
+                background-color: #ccc;
+            }
+
+            .ok td {
+                background-color: #C6EFCE;
+            }
+
+            .nok td {
+                background-color: #FFC7CE;
+            }
+</style>
 
         <script src="planning.js" defer></script>
     </head>
@@ -158,6 +170,7 @@
                     </td>
                     <td>
                         <input form="form" name="task-submit" type="submit" value="Update task">
+                        <input form="form" name="task-delete" type="button" onclick="deleteTask(this);" value="Delete task">
                     </td>
                 </tr>
             </template>
@@ -221,18 +234,15 @@
             <table>
                 <thead>
                     <th>Day</th>
-                    <th>Task Id</th>
-                    <th>Task Name</th>
+                    <th>Task Name (Id)</th>
                     <th>Hours</th>
-                    <th>Total Hours</th>
+                    <th>Counter</th>
                 </thead>
                 <tbody id="planner">
                 </tbody>
             </table>
             <template id="day">
                 <tr>
-                    <td>
-                    </td>
                     <td>
                     </td>
                     <td>

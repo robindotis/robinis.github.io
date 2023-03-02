@@ -3,6 +3,9 @@ const HOLIDAY_UPDATED = "Holiday updated";
 const HOLIDAY_NOT_ADDED_1 = "Holiday not added because 'Start date', 'End date' or both are not set.";
 const HOLIDAY_NOT_ADDED_2 = "Holiday not added, because 'End date' before 'Start date'";
 
+const OK_DUE_DATE = "ok";
+const NOT_OK_DUE_DATE = "nok";
+
 function deleteHoliday(btn) {
     var localid = "";
     var formName = btn.getAttribute("form");
@@ -24,6 +27,33 @@ function deleteHoliday(btn) {
 
         localStorage.setItem("holidays",JSON.stringify(holidays));
         localStorage.setItem("msg","Holiday deleted");
+        window.location.reload();
+
+    }
+
+}
+
+function deleteTask(btn) {
+    var localid = "";
+    var formName = btn.getAttribute("form");
+    var allInputs = document.querySelectorAll("input[hidden]");             
+    allInputs.forEach((el) => {
+        if(el.getAttribute("form") == formName) {
+            localid = el.value;
+        }
+    })
+
+    var objs = []
+    //remove localid from array of objects
+    if((localid != "") && !(localStorage.getItem("tasks") === null)){
+        objs = JSON.parse(localStorage.getItem("tasks"));
+    
+        objs = objs.filter(function(item) {
+            return item.localid != localid;
+        });
+
+        localStorage.setItem("tasks",JSON.stringify(objs));
+        localStorage.setItem("msg","Task deleted");
         window.location.reload();
 
     }
@@ -186,8 +216,7 @@ function appendTaskRow(sDay, sTask, sTaskHours, sTotalHours, sClass) {
     td[0].textContent = sDay;
     td[1].setHTML(sTask);
     td[2].setHTML(sTaskHours);
-    td[3].setHTML(sTaskHours);
-    td[4].textContent = sTotalHours;
+    td[3].textContent = sTotalHours;
 
     if(sClass.length > 0) {
         let tr = clone.querySelectorAll("tr");
@@ -351,6 +380,7 @@ function processTasks(){
             var currentDay = FormatDate(theDay);
             var cellDate = currentDay;
             cellTaskId = "";
+            cellClass = "";
 
             //check if saturday (6) or sunday (0)
             if (theDay.getDay() == 0 || 
@@ -378,9 +408,17 @@ function processTasks(){
                 var newFirstTaskOfDayId = "";
                 var firstTaskOfDayId = "";
                 var currentTaskHours = 0;
+                cellClass = OK_DUE_DATE;
 
                 for (var h = 0; h < hoursPerDay; h++) {
                     var currentTaskId = totalHours.pop();
+
+                    //determine if current date is after task due date
+                    const currentTaskEndDate = tasks.find(item => item.localid === currentTaskId);
+                    if(new Date(currentTaskEndDate.endDate) < theDay) {
+                        cellClass = NOT_OK_DUE_DATE;
+                    }
+
                     firstTaskOfDayId = currentTaskId;
                     currentTaskHours++;
                     if (h == 0) {
@@ -391,8 +429,16 @@ function processTasks(){
                         }
                     }
                     else if (currentTaskId != previousTaskId) {
-                        //new task
-                        
+                        //determine if current date is after task due date
+                        const currentTaskEndDate = tasks.find(item => item.localid === currentTaskId);
+                        //alert(new Date(currentTaskEndDate.endDate));
+                        if(new Date(currentTaskEndDate.endDate) < theDay) {
+                            cellClass = NOT_OK_DUE_DATE;
+                        }
+                        else {
+                            cellClass = OK_DUE_DATE;
+                        }
+
                         //append taskId to cell
                         cellTaskId = cellTaskId + "<br>" + getUserTaskId(currentTaskId);
                         
