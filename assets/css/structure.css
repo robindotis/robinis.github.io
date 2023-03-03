@@ -49,6 +49,10 @@ body {
     width: auto;
 }
 
+.nodisplay {
+    display: none;
+}
+
 p {
     margin-bottom: 0;
 }
@@ -60,7 +64,7 @@ header.masthead {
     /*margin-bottom: 10px;*/
 }
 
-header div#themeSwitch {
+header p#themeSwitch {
     width:100%;
     text-align: right;
     /*padding-bottom: 10px*/;

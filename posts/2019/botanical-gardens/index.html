@@ -31,11 +31,12 @@
     <script src="/assets/js/theme.js" defer></script>
   </head>
   <body>
-    <p class="skip-link"><a href="#site-content">Skip to the content</a></p>
+    <p class="skip-link"><a href="#skip-content-target">Skip to the content</a></p>
     <header class="masthead">
         <div class="header-area">
-            <div id="themeSwitch">                
-            </div>
+            <p id="themeSwitch">                
+            </p>
+            <hr class="nodisplay" aria-hidden="true">
             <div class="header-title">
             <span class="sitetitle">
                 <img class="logo" src="/assets/images/cw.jpg" alt="">
@@ -57,6 +58,7 @@
         </div>
     </header>
     <main id="site-content"  class="tmpl-post">
+        <hr class="nodisplay" aria-hidden="true">
         <div class="main-content">
             
 <article>
@@ -69,7 +71,7 @@
       </div>
       <hr>
   </nav>
-  <header>
+  <header id="skip-content-target">
       <h1>Botanical Gardens</h1> 
       <h2 class="published">
           <time class="dt-published" datetime="Invalid DateTime">
