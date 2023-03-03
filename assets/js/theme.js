@@ -65,14 +65,26 @@ class theme {
 }
 
 class themePicker {
+    #CSS_NAKED_THEME = "Naked"; //Also used for css file, lowercase. eg "Naked" => naked.css
+    #CSS_NAKED_DAY_OF_MONTH = 9;
+    #CSS_NAKED_MONTH = 3; //3 = April
+
     #themes = [];
     #cssFiles = [];
     defaultTheme;
     currentTheme;
-    constructor(id, path, text = "" ){
+    constructor(id, path, text = "", forceNakedDay = false){
         this.id = id;
         this.path = path;
         this.text = text;
+        const today = new Date();
+        if (forceNakedDay && (today.getMonth() == this.#CSS_NAKED_MONTH && today.getDate() == this.#CSS_NAKED_DAY_OF_MONTH)) { 
+            this.forceNakedDay = forceNakedDay;
+        }
+    }
+
+    addNakedTheme() {
+        themeSwitch.addTheme(new theme(this.#CSS_NAKED_THEME, this.#CSS_NAKED_THEME.toLocaleLowerCase() + ".css"));
     }
 
     addTheme(theme) {
@@ -118,7 +130,7 @@ class themePicker {
             if(styles[i].href.endsWith("fonts.css") ||
                 styles[i].href.endsWith("structure.css") ||
                 styles[i].href.endsWith("style.css")) {
-                if(themeName == "Naked") {
+                if(themeName == this.#CSS_NAKED_THEME || this.forceNakedDay) {
                     styles[i].rel = "alternate stylesheet";
                 }
                 else {
@@ -137,7 +149,10 @@ class themePicker {
                 btns[i].removeAttribute("disabled");
             }
         }
-        localStorage.setItem("theme",this.currentTheme.name);
+
+        if (!this.forceNakedDay) { //don't store theme if forced
+            localStorage.setItem("theme",this.currentTheme.name);
+        }
     }    
 
     toogleButtonState(btnName, disabled = false) {
@@ -148,40 +163,44 @@ class themePicker {
     createPicker(){
         const dfltLink = document.querySelector('link[href*="' + this.defaultTheme.css + '"]');
 
-        if(this.text.length > 0) {
-            const spn = document.createElement("span");
-            spn.appendChild(document.createTextNode(this.text));
-            document.getElementById(this.id).appendChild(spn);
-        }
-
-        for(let i=0; i<this.#themes.length; i++){
-            /* Add all buttons into the HTML element with the theme id */
-            document.getElementById(this.id).appendChild(this.#themes[i].createButton());
-
-            /* Create all the HTML links, except for the default one */
-            if(this.defaultTheme.css != this.#themes[i].css) {
-                const lnk = document.createElement("link");
-                lnk.setAttribute('rel','alternate stylesheet');
-                lnk.setAttribute('href',this.#themes[i].css);
-                lnk.setAttribute('media','all');
-                dfltLink.after(lnk);
-            }
-        }
-        if(localStorage.getItem('theme') === null) {
-            this.toogleButtonState(this.defaultTheme.name, true);
+        if (this.forceNakedDay) {
+            this.setTheme(this.#CSS_NAKED_THEME);
         }
         else {
-            this.setTheme(localStorage.getItem('theme'));
+            if(this.text.length > 0) {
+                const spn = document.createElement("span");
+                spn.appendChild(document.createTextNode(this.text));
+                document.getElementById(this.id).appendChild(spn);
+            }
+    
+            for(let i=0; i<this.#themes.length; i++){
+                /* Add all buttons into the HTML element with the theme id */
+                document.getElementById(this.id).appendChild(this.#themes[i].createButton());
+    
+                /* Create all the HTML links, except for the default one */
+                if(this.defaultTheme.css != this.#themes[i].css) {
+                    const lnk = document.createElement("link");
+                    lnk.setAttribute('rel','alternate stylesheet');
+                    lnk.setAttribute('href',this.#themes[i].css);
+                    lnk.setAttribute('media','all');
+                    dfltLink.after(lnk);
+                }
+            }
+            if(localStorage.getItem('theme') === null) {
+                this.toogleButtonState(this.defaultTheme.name, true);
+            }
+            else {
+                this.setTheme(localStorage.getItem('theme'));
+            }    
         }
     }
 }
-
-let themeSwitch = new themePicker("themeSwitch","/assets/css/","Choose a style:");
+let themeSwitch = new themePicker("themeSwitch","/assets/css/","Choose a style:", true, true);
 themeSwitch.addTheme(new theme("Default","default.css",true));
 themeSwitch.addTheme(new theme("High Contrast","high.css"));
 themeSwitch.addTheme(new theme("Miami","miami.css"));
 themeSwitch.addTheme(new theme("Grey","olden.css"));
 themeSwitch.addTheme(new theme("Plain","plain.css"));
-themeSwitch.addTheme(new theme("Naked","naked.css"));
+themeSwitch.addNakedTheme();
 
 themeSwitch.createPicker();

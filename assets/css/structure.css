@@ -25,7 +25,7 @@ body {
     font-size: x-large;
 }
 
-.skip-link:focus {
+.skip-link:focus-within {
     display: block;
     left: 6px;
     top: 7px;
