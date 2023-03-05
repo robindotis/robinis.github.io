@@ -66,20 +66,29 @@ class theme {
 
 class themePicker {
     #CSS_NAKED_THEME = "Naked"; //Also used for css file, lowercase. eg "Naked" => naked.css
-    #CSS_NAKED_DAY_OF_MONTH = 9;
-    #CSS_NAKED_MONTH = 3; //3 = April
+    #CSS_NAKED_DAY_OF_MONTH = 5;
+    #CSS_NAKED_MONTH = 2; //3 = April
 
     #themes = [];
     #cssFiles = [];
     defaultTheme;
     currentTheme;
-    constructor(id, path, text = "", forceNakedDay = false){
+    constructor(id, path, text = "", forceNakedDay = false, msgNakedDay){
         this.id = id;
         this.path = path;
         this.text = text;
         const today = new Date();
         if (forceNakedDay && (today.getMonth() == this.#CSS_NAKED_MONTH && today.getDate() == this.#CSS_NAKED_DAY_OF_MONTH)) { 
             this.forceNakedDay = forceNakedDay;
+        }
+        if (msgNakedDay === "") {
+            // use default message
+            this.msg = "Today is April 9th, CSS Naked Day. On this day many web developers turn of the styling on their sites to raise awareness for standards based web development. Without web standards the web would not be what it is today."
+
+        }
+        else if (msgNakedDay != null) {
+            // Use specified message
+            this.msg = msgNakedDay;
         }
     }
 
@@ -165,7 +174,15 @@ class themePicker {
 
         if (this.forceNakedDay) {
             this.setTheme(this.#CSS_NAKED_THEME);
-        }
+            
+            const h1 = document.createElement("h1");
+            h1.appendChild(document.createTextNode("CSS Naked Day"));
+            const spn = document.createElement("span");
+            spn.appendChild(document.createTextNode(this.msg));
+
+            document.getElementById(this.id).appendChild(h1);
+            document.getElementById(this.id).appendChild(spn);
+    }
         else {
             if(this.text.length > 0) {
                 const spn = document.createElement("span");
@@ -195,7 +212,7 @@ class themePicker {
         }
     }
 }
-let themeSwitch = new themePicker("themeSwitch","/assets/css/","Choose a style:", true, true);
+let themeSwitch = new themePicker("themeSwitch","/assets/css/","Choose a style:", true, "");
 themeSwitch.addTheme(new theme("Default","default.css",true));
 themeSwitch.addTheme(new theme("High Contrast","high.css"));
 themeSwitch.addTheme(new theme("Miami","miami.css"));
