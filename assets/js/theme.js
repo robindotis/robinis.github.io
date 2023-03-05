@@ -66,8 +66,8 @@ class theme {
 
 class themePicker {
     #CSS_NAKED_THEME = "Naked"; //Also used for css file, lowercase. eg "Naked" => naked.css
-    #CSS_NAKED_DAY_OF_MONTH = 5;
-    #CSS_NAKED_MONTH = 2; //3 = April
+    #CSS_NAKED_DAY_OF_MONTH = 9;
+    #CSS_NAKED_MONTH = 3; //3 = April
 
     #themes = [];
     #cssFiles = [];
