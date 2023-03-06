@@ -74,6 +74,7 @@ class themePicker {
     #CSS_NAKED_DAY_OF_MONTH = 9;
     #CSS_NAKED_MONTH = 3; //3 = April
 
+    #DROPDOWN_THEME_MIN = 4;
     #themes = [];
     #cssFiles = [];
     defaultTheme;
@@ -152,15 +153,30 @@ class themePicker {
             }
         }
     
-        /* Disable the button for the currently selected style */
-        const btns = document.getElementById(this.id).querySelectorAll('button');
-        for (let i = 0; i < btns.length; ++i) {
-            if(btns[i].onclick.toString().includes(this.currentTheme.name)) {
-                btns[i].setAttribute("disabled","");
+        if(this.#themes.length < this.#DROPDOWN_THEME_MIN) {
+            /* Disable the button for the currently selected style */
+            const btns = document.getElementById(this.id).querySelectorAll('button');
+            for (let i = 0; i < btns.length; ++i) {
+                if(btns[i].onclick.toString().includes(this.currentTheme.name)) {
+                    btns[i].setAttribute("disabled","");
+                }
+                else {
+                    btns[i].removeAttribute("disabled");
+                }
             }
-            else {
-                btns[i].removeAttribute("disabled");
+        }
+        else {
+            /* Select the option for there current theme */
+            const btns = document.getElementById(this.id).querySelectorAll('option');
+            for (let i = 0; i < btns.length; ++i) {
+                if(btns[i].value.toString().includes(this.currentTheme.name)) {
+                    btns[i].setAttribute("selected","");
+                }
+                else {
+                    btns[i].removeAttribute("selected");
+                }
             }
+
         }
 
         if (!this.forceNakedDay) { //don't store theme if forced
@@ -197,7 +213,7 @@ class themePicker {
     
             
             var choices = document.getElementById(this.id);
-            if(this.#themes.length > 3) {
+            if(this.#themes.length >= this.#DROPDOWN_THEME_MIN) {
                 choices = document.createElement("select");
                 choices.setAttribute("name","chosen_style");
                 choices.setAttribute("aria-labelledBy","styleLabel");
@@ -211,7 +227,7 @@ class themePicker {
 
             for(let i=0; i<this.#themes.length; i++){
                 /* Add all buttons into the HTML element with the theme id */
-                if(this.#themes.length < 4) {
+                if(this.#themes.length < this.#DROPDOWN_THEME_MIN) {
                     //create buttons
                     choices.appendChild(this.#themes[i].createButton());
                 }
