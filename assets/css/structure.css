@@ -70,6 +70,11 @@ header p#themeSwitch {
     /*padding-bottom: 10px*/;
 }
 
+header p#themeSwitch form {
+    display: inline;
+    /*padding-bottom: 10px*/;
+}
+
 header div.header-area {
     display: flex;
     align-items: center;

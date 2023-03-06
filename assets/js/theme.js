@@ -38,8 +38,6 @@
  *
 */
 
-
-
 class theme {
     constructor(name, css, dflt = false) {
         this.name = name;
@@ -53,6 +51,13 @@ class theme {
         btn.setAttribute('onclick',"themeSwitch.setTheme('" + this.name + "')");
         btn.appendChild(document.createTextNode(this.name));
         return btn;
+    }
+    createOption(){
+        /*Create the button element*/
+        const opt = document.createElement("option");
+        opt.setAttribute('value',this.name);
+        opt.appendChild(document.createTextNode(this.name));
+        return opt;
     }
     createCssLink(){
         /*Create the link element*/
@@ -112,7 +117,6 @@ class themePicker {
 
     setTheme(themeName){
         const styles = document.querySelectorAll('link[rel~="stylesheet"]');
-    
         /* set current theme */
         for(let i=0; i<this.#themes.length; i++){
             if(this.#themes[i].name == themeName) {
@@ -178,6 +182,7 @@ class themePicker {
             const h1 = document.createElement("h1");
             h1.appendChild(document.createTextNode("CSS Naked Day"));
             const spn = document.createElement("span");
+            spn.setAttribute("id","styleLabel")
             spn.appendChild(document.createTextNode(this.msg));
 
             document.getElementById(this.id).appendChild(h1);
@@ -190,9 +195,30 @@ class themePicker {
                 document.getElementById(this.id).appendChild(spn);
             }
     
+            
+            var choices = document.getElementById(this.id);
+            if(this.#themes.length > 3) {
+                choices = document.createElement("select");
+                choices.setAttribute("name","chosen_style");
+                choices.setAttribute("aria-labelledBy","styleLabel");
+                choices.setAttribute("onchange","themeSwitch.setTheme(this.value);");
+
+                const frm = document.createElement("form");
+                frm.setAttribute("name","styler");
+                frm.appendChild(choices);
+                document.getElementById(this.id).appendChild(frm);
+            }
+
             for(let i=0; i<this.#themes.length; i++){
                 /* Add all buttons into the HTML element with the theme id */
-                document.getElementById(this.id).appendChild(this.#themes[i].createButton());
+                if(this.#themes.length < 4) {
+                    //create buttons
+                    choices.appendChild(this.#themes[i].createButton());
+                }
+                else {
+                    //create dropdown
+                    choices.appendChild(this.#themes[i].createOption());
+                }
     
                 /* Create all the HTML links, except for the default one */
                 if(this.defaultTheme.css != this.#themes[i].css) {
@@ -214,9 +240,9 @@ class themePicker {
 }
 let themeSwitch = new themePicker("themeSwitch","/assets/css/","Choose a style:", true, "");
 themeSwitch.addTheme(new theme("Default","default.css",true));
+themeSwitch.addTheme(new theme("Grey","olden.css"));
 themeSwitch.addTheme(new theme("High Contrast","high.css"));
 themeSwitch.addTheme(new theme("Miami","miami.css"));
-themeSwitch.addTheme(new theme("Grey","olden.css"));
 themeSwitch.addTheme(new theme("Plain","plain.css"));
 themeSwitch.addNakedTheme();
 
