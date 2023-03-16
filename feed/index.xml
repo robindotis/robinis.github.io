@@ -6,7 +6,7 @@
 	
 	<link href="https://www.robin.is/feed/index.xml" rel="self"/>
 	<link href="https://www.robin.is/" rel="alternate" type="text/html"/>
-	<updated>2023-03-03T09:18:27Z</updated>
+	<updated>2023-03-14T19:18:27Z</updated>
 	<id>https://www.robin.is/</id>
 	<author>
 		<name>robindotis</name>
@@ -15,22 +15,22 @@
 	
 	
 	<entry>
+		<title>Website carbon calculator</title>
+		<link href="https://www.robin.is/posts/2023/carbon-calculator/"/>
+		<updated>2023-03-14T19:18:27Z</updated>
+		<id>https://www.robin.is/posts/2023/carbon-calculator/</id>
+		<content type="html">&lt;p&gt;According to the &lt;a href=&quot;https://www.websitecarbon.com/&quot;&gt;Website Carbon Calculator&lt;/a&gt; each view of this site&#39;s &lt;a href=&quot;https://www.websitecarbon.com/website/robin-is/&quot;&gt;homepage produces 0.07g of CO2&lt;/a&gt;. It is therefore cleaner than 94% of web pages tested. Hurray!&lt;/p&gt;
+&lt;p&gt;Comparing with other sites, it seems like the main component of this calculation is filesize. The homepage is about 300kB, depending on how many images happen to be on it. The biggest permanent component is the font file, which is 134kB and therefore contributes over a third of the CO2 prodcued by this homepage without actually contributing much to the function and usability of the site. Is the font file necessary? Perhaps I should switch back to using Arial? It&#39;s interesting how seemingly innocent design choices can have such an impact on the environment. For now it will stay as pretty much no one looks at this site.&lt;/p&gt;
+</content>
+	</entry>
+	
+	<entry>
 		<title>CSS Naked Day</title>
 		<link href="https://www.robin.is/posts/2023/css-naked-day/"/>
 		<updated>2023-03-03T09:18:27Z</updated>
 		<id>https://www.robin.is/posts/2023/css-naked-day/</id>
 		<content type="html">&lt;p&gt;The 9th April is &lt;a href=&quot;https://css-naked-day.github.io/&quot;&gt;CSS Naked Day&lt;/a&gt;. On this day many bloggers remove all styling from their blog. The idea is to promote awarenes of web standards. A well designed site, following web standards, will work well without any styling. A follow-on aim is to raise awareness of accessibility, since the plain, unstyled website will feel more how someone with a screen reader and other assistive technology will experience the site.&lt;/p&gt;
 &lt;p&gt;In preparation for this, have updated my &lt;a href=&quot;https://gist.github.com/robindotis/54786199b5d86f5085e5c55337d6e0d0&quot;&gt;theme picker&lt;/a&gt; to incldue a hard coded &amp;quot;Naked&amp;quot; CSS theme. If desired, this theme will be forced on CSS Naked Day, with no alternative for the end user.&lt;/p&gt;
-</content>
-	</entry>
-	
-	<entry>
-		<title>Website carbon calculator</title>
-		<link href="https://www.robin.is/posts/2023/carbon-calculator/"/>
-		<updated>2023-03-03T09:18:27Z</updated>
-		<id>https://www.robin.is/posts/2023/carbon-calculator/</id>
-		<content type="html">&lt;p&gt;According to the &lt;a href=&quot;https://www.websitecarbon.com/&quot;&gt;Website Carbon Calculator&lt;/a&gt; each view of this site&#39;s &lt;a href=&quot;https://www.websitecarbon.com/website/robin-is/&quot;&gt;homepage produces 0.07g of CO2&lt;/a&gt;. It is therefore cleaner than 94% of web pages tested. Hurray!&lt;/p&gt;
-&lt;p&gt;Comparing with other sites, it seems like the main component of this calculation is filesize. The homepage is about 300kB, depending on how many images happen to be on it. The biggest permanent component is the font file, which is 134kB and therefore contributes over a third of the CO2 prodcued by this homepage without actually contributing much to the function and usability of the site. Is the font file necessary? Perhaps I should switch back to using Arial? It&#39;s interesting how seemingly innocent design choices can have such an impact on the environment. For now it will stay as pretty much no one looks at this site.&lt;/p&gt;
 </content>
 	</entry>
 	
