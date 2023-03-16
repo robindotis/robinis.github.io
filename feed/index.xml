@@ -25,6 +25,16 @@
 	</entry>
 	
 	<entry>
+		<title>Website carbon calculator</title>
+		<link href="https://www.robin.is/posts/2023/carbon-calculator/"/>
+		<updated>2023-03-03T09:18:27Z</updated>
+		<id>https://www.robin.is/posts/2023/carbon-calculator/</id>
+		<content type="html">&lt;p&gt;According to the &lt;a href=&quot;https://www.websitecarbon.com/&quot;&gt;Website Carbon Calculator&lt;/a&gt; each view of this site&#39;s &lt;a href=&quot;https://www.websitecarbon.com/website/robin-is/&quot;&gt;homepage produces 0.07g of CO2&lt;/a&gt;. It is therefore cleaner than 94% of web pages tested. Hurray!&lt;/p&gt;
+&lt;p&gt;Comparing with other sites, it seems like the main component of this calculation is filesize. The homepage is about 300kB, depending on how many images happen to be on it. The biggest permanent component is the font file, which is 134kB and therefore contributes over a third of the CO2 prodcued by this homepage without actually contributing much to the function and usability of the site. Is the font file necessary? Perhaps I should switch back to using Arial? It&#39;s interesting how seemingly innocent design choices can have such an impact on the environment. For now it will stay as pretty much no one looks at this site.&lt;/p&gt;
+</content>
+	</entry>
+	
+	<entry>
 		<title>Cat by log fire</title>
 		<link href="https://www.robin.is/posts/2023/cat-by-fire/"/>
 		<updated>2023-02-24T21:18:27Z</updated>
@@ -249,20 +259,6 @@
 &lt;li&gt;&lt;a href=&quot;https://www.robin.is/posts/2021/dog-log/&quot;&gt;Dog on a log in Autumn&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;https://www.robin.is/posts/2022/dog-on-a-log-again/&quot;&gt;Dog on a log in Summer&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-</content>
-	</entry>
-	
-	<entry>
-		<title>Parable of the Talents</title>
-		<link href="https://www.robin.is/posts/2023/parable-of-the-talents/"/>
-		<updated>2023-01-09T08:00:33Z</updated>
-		<id>https://www.robin.is/posts/2023/parable-of-the-talents/</id>
-		<content type="html">&lt;h2&gt;by Octavia E. Butler&lt;/h2&gt;
-&lt;p&gt;The follow up book to &lt;a href=&quot;https://www.robin.is/posts/2022/parable-of-the-sower/&quot;&gt;Parable of the Sower&lt;/a&gt;. This is a fantastic read, possibly better still than the preceding novel.&lt;/p&gt;
-&lt;p&gt;The story continues with the heroine trying to setup her Earthseed religion, but ending up enslaved, having her baby daughter taken from her before finally succeeding and her daughter finding her many years later. It might seem like a happy ending, but it is not so simple with internal family and religious feuds.&lt;/p&gt;
-&lt;p&gt;Given the name of the book, it is interesting to discuss which of the main characters is representing which of the servants in the biblical story of the same name as told in &lt;a href=&quot;https://en.wikipedia.org/wiki/Parable_of_the_talents_or_minas#Parable_of_the_Talents&quot;&gt;Mathew 25:14-30&lt;/a&gt;. Or maybe such a link is not intended by the author.&lt;/p&gt;
-&lt;p&gt;The book is also remarkably prescient of today&#39;s world, climate change, the religious right and especially of the years with Trump as president. Whilst we have avoided the apocalypse so far, the problems have not disappeared.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://www.robin.is/assets/images/2023/talents.webp&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 </content>
 	</entry>
 </feed>
