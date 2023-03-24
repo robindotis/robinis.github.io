@@ -181,6 +181,19 @@ main article h3 {
     font-size: 1.2em;
 }
 
+div.see-all-posts {
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+div.see-all-posts::before {
+    content: "👉";
+}
+
+div.see-all-posts::after {
+    content: "👈";
+}
+
 footer {
     border-top: var(--header-bg-color) solid 10px;
     background-color: var(--footer-bg-color);
