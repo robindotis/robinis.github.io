@@ -184,6 +184,7 @@ main article h3 {
 div.see-all-posts {
     font-weight: bold;
     font-size: 1.5em;
+    text-align: center;
 }
 
 div.see-all-posts::before {
