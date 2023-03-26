@@ -79,10 +79,11 @@ class themePicker {
     #cssFiles = [];
     defaultTheme;
     currentTheme;
-    constructor(id, path, text = "", forceNakedDay = false, msgNakedDay){
+    constructor(id, path, text = "", forceNakedDay = false, msgNakedDay, enableRandom){
         this.id = id;
         this.path = path;
         this.text = text;
+        this.enableRandom = enableRandom;
         const today = new Date();
         if (forceNakedDay && (today.getMonth() == this.#CSS_NAKED_MONTH && today.getDate() == this.#CSS_NAKED_DAY_OF_MONTH)) { 
             this.forceNakedDay = forceNakedDay;
@@ -126,12 +127,22 @@ class themePicker {
             }
         }
 
+        // if current theme is random.css 
+        // override current CSS with a randomly chosen CSS file 
+        let currentCss = this.currentTheme.css;
+        if(currentCss.endsWith("random.css")) {
+            //determine random css file
+            let rndId = Math.floor(Math.random() * this.#themes.length);
+            //alert(rndId);
+            currentCss = this.#themes[rndId].css;
+        }
+        
         /* insert correct rel attribute (alternate for inactive styles)  */
         for (let i = 0; i < styles.length; ++i) {   
             /* returns true if the href contains any of the strings in the themes array */
             /* this if statement ensures we only alter stylesheets used by the themes*/
             if(this.#cssFiles.some(v => styles[i].href.includes(v))) {
-                if(styles[i].href.endsWith(this.currentTheme.css)) {
+                if(styles[i].href.endsWith(currentCss)) {
                     styles[i].rel = "stylesheet";
                 }
                 else {
@@ -203,8 +214,13 @@ class themePicker {
 
             document.getElementById(this.id).appendChild(h1);
             document.getElementById(this.id).appendChild(spn);
-    }
+        }
         else {
+            //add the random option to the drop down with any one of the available css files.
+            if(this.enableRandom) {
+                this.addTheme(new theme("Random","random.css"));
+            }
+
             if(this.text.length > 0) {
                 const spn = document.createElement("span");
                 spn.appendChild(document.createTextNode(this.text));
@@ -254,7 +270,7 @@ class themePicker {
         }
     }
 }
-let themeSwitch = new themePicker("themeSwitch","/assets/css/","Choose a style:", true, "");
+let themeSwitch = new themePicker("themeSwitch","/assets/css/","Choose a style:", true, "", true);
 themeSwitch.addTheme(new theme("Default","default.css",true));
 themeSwitch.addTheme(new theme("Grey","olden.css"));
 themeSwitch.addTheme(new theme("High Contrast","high.css"));
