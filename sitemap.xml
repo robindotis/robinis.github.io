@@ -1928,11 +1928,6 @@
   </url>
   
   <url>
-    <loc>https://www.robin.is/posts/2023/follow-the-money/</loc>
-    <lastmod>2023-03-19</lastmod>
-  </url>
-  
-  <url>
     <loc>https://www.robin.is/posts/2023/matter/</loc>
     <lastmod>2023-03-19</lastmod>
   </url>
@@ -2073,6 +2068,11 @@
   </url>
   
   <url>
+    <loc>https://www.robin.is/archive/tagged/diary/</loc>
+    <lastmod>2023-03-28</lastmod>
+  </url>
+  
+  <url>
     <loc>https://www.robin.is/archive/tagged/sumatra/</loc>
     <lastmod>2023-03-28</lastmod>
   </url>
@@ -2133,11 +2133,6 @@
   </url>
   
   <url>
-    <loc>https://www.robin.is/archive/tagged/diary/</loc>
-    <lastmod>2023-03-28</lastmod>
-  </url>
-  
-  <url>
     <loc>https://www.robin.is/archive/tagged/standards/</loc>
     <lastmod>2023-03-28</lastmod>
   </url>
@@ -2148,12 +2143,12 @@
   </url>
   
   <url>
-    <loc>https://www.robin.is/archive/tagged/conspiracy/</loc>
+    <loc>https://www.robin.is/archive/tagged/privacy/</loc>
     <lastmod>2023-03-28</lastmod>
   </url>
   
   <url>
-    <loc>https://www.robin.is/archive/tagged/privacy/</loc>
+    <loc>https://www.robin.is/archive/tagged/conspiracy/</loc>
     <lastmod>2023-03-28</lastmod>
   </url>
   
@@ -2228,12 +2223,12 @@
   </url>
   
   <url>
-    <loc>https://www.robin.is/archive/tagged/computers/</loc>
+    <loc>https://www.robin.is/archive/tagged/flickr/</loc>
     <lastmod>2023-03-28</lastmod>
   </url>
   
   <url>
-    <loc>https://www.robin.is/archive/tagged/flickr/</loc>
+    <loc>https://www.robin.is/archive/tagged/computers/</loc>
     <lastmod>2023-03-28</lastmod>
   </url>
   
@@ -2428,6 +2423,21 @@
   </url>
   
   <url>
+    <loc>https://www.robin.is/archive/tagged/html/</loc>
+    <lastmod>2023-03-28</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.robin.is/archive/tagged/review/</loc>
+    <lastmod>2023-03-28</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.robin.is/archive/tagged/book/</loc>
+    <lastmod>2023-03-28</lastmod>
+  </url>
+  
+  <url>
     <loc>https://www.robin.is/archive/tagged/wcag/</loc>
     <lastmod>2023-03-28</lastmod>
   </url>
@@ -2528,17 +2538,17 @@
   </url>
   
   <url>
+    <loc>https://www.robin.is/archive/tagged/lands-end/</loc>
+    <lastmod>2023-03-28</lastmod>
+  </url>
+  
+  <url>
     <loc>https://www.robin.is/archive/tagged/facebook/</loc>
     <lastmod>2023-03-28</lastmod>
   </url>
   
   <url>
     <loc>https://www.robin.is/archive/tagged/social-media/</loc>
-    <lastmod>2023-03-28</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.robin.is/archive/tagged/lands-end/</loc>
     <lastmod>2023-03-28</lastmod>
   </url>
   
@@ -3124,21 +3134,6 @@
   
   <url>
     <loc>https://www.robin.is/archive/tagged/hike/</loc>
-    <lastmod>2023-03-28</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.robin.is/archive/tagged/html/</loc>
-    <lastmod>2023-03-28</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.robin.is/archive/tagged/review/</loc>
-    <lastmod>2023-03-28</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.robin.is/archive/tagged/book/</loc>
     <lastmod>2023-03-28</lastmod>
   </url>
   
@@ -4069,6 +4064,11 @@
   
   <url>
     <loc>https://www.robin.is/writing/</loc>
+    <lastmod>2023-03-28</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.robin.is/posts/2023/follow-the-money/</loc>
     <lastmod>2023-03-28</lastmod>
   </url>
 </urlset>
