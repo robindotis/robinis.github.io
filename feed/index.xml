@@ -28,6 +28,18 @@
 	</entry>
 	
 	<entry>
+		<title>Follow the Money</title>
+		<link href="https://www.robin.is/posts/2023/follow-the-money/"/>
+		<updated>2023-03-19T08:00:33Z</updated>
+		<id>https://www.robin.is/posts/2023/follow-the-money/</id>
+		<content type="html">&lt;h2&gt;by Paul Johnson&lt;/h2&gt;
+&lt;p&gt;This is an easy to follow whirlwind tour of where the UK government gets its money from and how it spends it. Full of facts and figures as well as some insightful commentary and significant critiscism of past taxation decisions across all parties. The biggest one being the lack of consistency, closely followed by lack of foresight and unwillngness to challenge current vested interests to improve the future of the country overall. Note that the latter is less about big business and lobbying and more about not wanting to upset the electorate.&lt;/p&gt;
+&lt;p&gt;Definitely worth a read as it won&#39;t take you long. It took me a week. But what is missing is any real solution to these problems. Politicians have to win elections every few years so taking decisions which make some people poorer in the short term, but others better off in the long term is hard if you want to be re-elected. This conunmdrum is not solved by the book, which finishes with lots of good tips none of which will necessarily lead to an election victory in the current political climate. It finishes with the simple comment &amp;quot;must do better if we are to cope with the next crisis&amp;quot;. (Which, according to the book is going to be the climate crisis hitting at the same time as a really ageing population comes along.)&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://www.robin.is/assets/images/2023/follow-the-money.webp&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+</content>
+	</entry>
+	
+	<entry>
 		<title>Website carbon calculator</title>
 		<link href="https://www.robin.is/posts/2023/carbon-calculator/"/>
 		<updated>2023-03-14T19:18:27Z</updated>
@@ -247,16 +259,6 @@
 &lt;p&gt;So I coded up a &lt;a href=&quot;https://www.robin.is/assets/html/bac-choices.html&quot;&gt;european bac subject toolkit&lt;/a&gt; to help my daughter visualise the consequences of her subject choices on the final bac exams she will have to take.&lt;/p&gt;
 &lt;h2&gt;The Code&lt;/h2&gt;
 &lt;p&gt;I coded the entire toolkit without resorting to any frameworks or external scripts. These would have taken me much longer to learn than simply using vanilla JavaScript. What is good to see is how far in built browser support for lots of JavaScript functionality has come.  For this little toolkit using any kind of framework would have been complete overkill.&lt;/p&gt;
-</content>
-	</entry>
-	
-	<entry>
-		<title>inABLE</title>
-		<link href="https://www.robin.is/posts/2023/inable/"/>
-		<updated>2023-01-25T17:18:27Z</updated>
-		<id>https://www.robin.is/posts/2023/inable/</id>
-		<content type="html">&lt;h2&gt;Training kids in assistive technology&lt;/h2&gt;
-&lt;p&gt;At a webinar organised by ARSO, &lt;a href=&quot;https://www.arso-oran.org/&quot;&gt;the African Organisation for Standardisation&lt;/a&gt;, there was a speaker from &lt;a href=&quot;https://inable.org/&quot;&gt;Inable&lt;/a&gt;. This is a charity setup to train children with disabilities to use assistive technology and to provide them necessary digital skills to live an independent life in the modern world. They have a very nice &lt;a href=&quot;https://inable.org/about-us/our-story/&quot;&gt;video on the use of assistive technology&lt;/a&gt; in every day life.&lt;/p&gt;
 </content>
 	</entry>
 </feed>
