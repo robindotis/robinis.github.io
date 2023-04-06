@@ -6,13 +6,24 @@
 	
 	<link href="https://www.robin.is/feed/index.xml" rel="self"/>
 	<link href="https://www.robin.is/" rel="alternate" type="text/html"/>
-	<updated>2023-03-30T09:12:00Z</updated>
+	<updated>2023-04-06T23:32:05Z</updated>
 	<id>https://www.robin.is/</id>
 	<author>
 		<name>robindotis</name>
 		<email>admin@robin.is</email>
 	</author>
 	
+	
+	<entry>
+		<title>Beebop Plovdiv</title>
+		<link href="https://www.robin.is/posts/2023/beebop-plovdiv/"/>
+		<updated>2023-04-06T23:32:05Z</updated>
+		<id>https://www.robin.is/posts/2023/beebop-plovdiv/</id>
+		<content type="html">&lt;p&gt;A lovely evening watching &lt;a href=&quot;https://www.facebook.com/hotclubdeplovdiv/&quot;&gt;Hot Club de Plovdiv&lt;/a&gt; at the &lt;a href=&quot;https://beebopcafe.tv/&quot;&gt;Beebop Cafe in Plovdiv&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://www.robin.is/assets/images/2023/beebop-1.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://www.robin.is/assets/images/2023/beebop-1.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+</content>
+	</entry>
 	
 	<entry>
 		<title>Upgrading to Eleventy 2</title>
@@ -134,23 +145,6 @@
 &lt;p&gt;The reason for it&#39;s recent dip: browsers are finally more or less equal in terms of standars support and the use case for jQuery is waning, especially in new projects.&lt;/p&gt;
 &lt;p&gt;All of this leads me to the actual point I want to make. It&#39;s about the most common framework, used by 100% of all websites. A &lt;a href=&quot;https://en.wikipedia.org/wiki/WorldWideWeb&quot;&gt;work in progress since 1990&lt;/a&gt;. It is of course the browser using standard HTML, CSS and JavaScript. Sure, it doesn&#39;t always have the latest bells and whistles like, instead its future support is unparalled. It will never be obsolete.&lt;/p&gt;
 &lt;p&gt;You can&#39;t go wrong choosing it. In fact you can&#39;t avoid choosing it!&lt;/p&gt;
-</content>
-	</entry>
-	
-	<entry>
-		<title>Safer Internet Day - 2023</title>
-		<link href="https://www.robin.is/posts/2023/safer-internet-day-2023/"/>
-		<updated>2023-02-10T13:18:27Z</updated>
-		<id>https://www.robin.is/posts/2023/safer-internet-day-2023/</id>
-		<content type="html">&lt;p&gt;Tuesday 7th February was &lt;a href=&quot;https://www.saferinternetday.org/&quot;&gt;Safer Internet Day&lt;/a&gt; in 2023. It also marks the 20th year of the initiative, which is supported by the European Commission through the &lt;a href=&quot;https://digital-strategy.ec.europa.eu/en/policies/safer-internet-day&quot;&gt;Safer Internet team of DG CONNECT&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;As part of that day, we arranged a morning in the &lt;a href=&quot;https://www.lmrl.lu/&quot;&gt;Lycee Michel-Rodange&lt;/a&gt; in Luxembourg City, to let a class of the school try out the latest VR headsets from Meta. The kids, all around 15 years of age, got to try out five different VR worlds as they circulated around different stands in a class room. After that they had a brief discussion, giving their thoughts on VR in their futures.&lt;/p&gt;
-&lt;p&gt;It&#39;s been a long time since I was in a class room full of 15 year olds and it was incredibly energising. They were all well behaved, whilst having their fun with the headsets. Maybe that is the Luxembourg effect!&lt;/p&gt;
-&lt;p&gt;Best of all, in my opinion, was the lack of enthusiasm for this technology with these kids. Our polling showed they did not believe this technology would become an alternate world for them in the future. Whilst they saw the use of it in certain educational situations, few would be interested VR being their main medium of education. Despite growing up with always connected smartphones, they still apparently wanted face to face contact with their friends. They certainly didn&#39;t want to live in the VR world.&lt;/p&gt;
-&lt;p&gt;My own take on this, having tried out the headsets, is that they are simply not ready for the mainstream. The technology is too fiddly and, despite being relatively easy to use, is too cumbersome to do what appear to be basic things. I certainly can&#39;t see the advantage over a physical meeting with colleagues, or even a video-conference. There&#39;s still a long way to go before this tech can become mainstream. Maybe it never will, at least not in this form. And certainly not for entertainment or socialising purposes.&lt;/p&gt;
-&lt;p&gt;The calm before the storm:&lt;br /&gt;
-&lt;img src=&quot;https://www.robin.is/assets/images/2023/PXL_20230210_074201645.webp&quot; alt=&quot;Empty class room ready to receive kids to try out headsets&quot; /&gt;&lt;/p&gt;
-&lt;p&gt;Let the VR begin:&lt;br /&gt;
-&lt;img src=&quot;https://www.robin.is/assets/images/2023/PXL_20230210_093540947.webp&quot; alt=&quot;Class room full of teenagers trying out the VR headsets&quot; /&gt;&lt;/p&gt;
 </content>
 	</entry>
 </feed>
