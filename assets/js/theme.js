@@ -90,7 +90,7 @@ class themePicker {
         }
         if (msgNakedDay === "") {
             // use default message
-            this.msg = "Today is April 9th, CSS Naked Day. On this day many web developers turn of the styling on their sites to raise awareness for standards based web development. Without web standards the web would not be what it is today."
+            this.msg = "Today is April 9th, CSS Naked Day. On this day many web developers turn off the styling on their sites to raise awareness for standards based web development. Without web standards the web would not be what it is today."
 
         }
         else if (msgNakedDay != null) {
