@@ -6,13 +6,24 @@
 	
 	<link href="https://www.robin.is/feed/index.xml" rel="self"/>
 	<link href="https://www.robin.is/" rel="alternate" type="text/html"/>
-	<updated>2023-04-06T23:32:05Z</updated>
+	<updated>2023-05-06T23:32:05Z</updated>
 	<id>https://www.robin.is/</id>
 	<author>
 		<name>robindotis</name>
 		<email>admin@robin.is</email>
 	</author>
 	
+	
+	<entry>
+		<title>Folkdance Ensemble Trakia</title>
+		<link href="https://www.robin.is/posts/2023/folkdance-trakia/"/>
+		<updated>2023-05-06T23:32:05Z</updated>
+		<id>https://www.robin.is/posts/2023/folkdance-trakia/</id>
+		<content type="html">&lt;p&gt;Another lovely evening, this time watching the &lt;a href=&quot;https://trakia-ensemble.org/en/&quot;&gt;folkdance ensemble Trakia&lt;/a&gt; perform at the &lt;a href=&quot;https://domborishristov.com/&quot;&gt;House of culture in Plovdiv&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://www.robin.is/assets/images/2023/fa-trakia-1.webp&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://www.robin.is/assets/images/2023/fa-trakia-2.webp&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+</content>
+	</entry>
 	
 	<entry>
 		<title>Beebop Plovdiv</title>
@@ -126,25 +137,6 @@
 &lt;p&gt;This was a great day out. The last time I had done this hike was in snow with sub zero temperatures 20 years ago. This time it was 20°C. I guess this is climate change.&lt;/p&gt;
 &lt;p&gt;This is what it looked like 20 years ago.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;https://www.robin.is/assets/images/2023/sveta-petka-2003.webp&quot; alt=&quot;Me sitting on a rock in the snow&quot; /&gt;&lt;/p&gt;
-</content>
-	</entry>
-	
-	<entry>
-		<title>Frameworks</title>
-		<link href="https://www.robin.is/posts/2023/frameworks/"/>
-		<updated>2023-02-15T08:18:27Z</updated>
-		<id>https://www.robin.is/posts/2023/frameworks/</id>
-		<content type="html">&lt;p&gt;Recently, I came across a couple of posts about the usefullness of JavaScript frameworks, such as &lt;a href=&quot;https://reactjs.org/&quot;&gt;React&lt;/a&gt; and &lt;a href=&quot;https://vuejs.org/&quot;&gt;Vue&lt;/a&gt;. Their promise is to simplify the creation of modern web applications. These discussions seem to kick off every now and then in the same way that 20 years ago people debated Java vs .Net and 40 years ago it was probably C vs Perl. The current debate is often centered around the speed of the pages using frameworks, which are bulkier and slower than native rendering.&lt;/p&gt;
-&lt;p&gt;In &lt;a href=&quot;https://infrequently.org/2023/02/the-market-for-lemons/&quot;&gt;the market for lemons&lt;/a&gt;, Alex wrote a very good description of how these frameworks are knowingly over selling their benefits (faster development, easier to maintain, better support, access to a arger developer pool). A key takeaway for me was that these frameworks do give significant benefits to large teams able to invest and maintain in them. Smaller teams however, tend to get bogged down in their complexity the moment you go beyond the defaults. It&#39;s a bit like the &amp;quot;blog in five minutes&amp;quot; use cases that popped up all over the place when &lt;a href=&quot;https://rubyonrails.org/&quot;&gt;Ruby On Rails&lt;/a&gt; turned up 20 years ago. Of course RoR was truly revolutionary at the time and incredibly powerful, but the same was not true for other frameworks of the time.&lt;/p&gt;
-&lt;p&gt;In response, Laurie posted &lt;a href=&quot;https://seldo.com/posts/the_case_for_frameworks&quot;&gt;the case for frameworks&lt;/a&gt; in support of React and JavaScript frameworks. His main argument, whilst acknowlegding certain failings of frameworks, is that you&#39;re OK because everyone is doing it. This is the 2020s reload of the &amp;quot;no one ever got fired for picking IBM&amp;quot; thinking in the 80s.&lt;/p&gt;
-&lt;p&gt;But are these frameworks as popular as they seem. Andy takes a look his post &lt;a href=&quot;https://andy-bell.co.uk/the-extremely-loud-minority/&quot;&gt;the (extremely) loud minority&lt;/a&gt; and concludes &amp;quot;not really&amp;quot;. Obviously there are thousands of sites using React, but only 3.3% of the top 10 million websites actually use it. The percentage of all websites is probably much smaller. In comparison, Wordpress is used by 43.1% of the top 10 million websites. The reason these frameworks seem more popular than they actually is explained in &lt;a href=&quot;https://adactio.com/journal/15011&quot;&gt;dev perception&lt;/a&gt; by Jeremy.&lt;/p&gt;
-&lt;p&gt;It is interesting to note that &lt;a href=&quot;https://jquery.com/&quot;&gt;jQuery&lt;/a&gt; is still used on over 77% of the top 10 million websites. 16 years after it&#39;s first release. It&#39;s popularity is only now starting to dip. There are many reasons for it&#39;s popularity.&lt;/p&gt;
-&lt;p&gt;One reason is that jQuery was released at a time when web standards were poorly supported by browsers. This meant developers had to write code for each of the common browsers at the time. jQuery provided a standardising layer, which enabled your code to work well in all browsers.&lt;/p&gt;
-&lt;p&gt;A second is that it was not released by a big tech company. jQuery was created by one guy, John Resig. Since there was no big company owning jQuery, other companies didn&#39;t feel the need to compete and release their own framework. There was no competition and it quickly became the defacto framework used by anyone programming front-end JavaScript.&lt;/p&gt;
-&lt;p&gt;A third reason is that jQuery was quite simple to get started with. You could sprinkle it lightly throughout your code, or you could base all your code around it.&lt;/p&gt;
-&lt;p&gt;The reason for it&#39;s recent dip: browsers are finally more or less equal in terms of standars support and the use case for jQuery is waning, especially in new projects.&lt;/p&gt;
-&lt;p&gt;All of this leads me to the actual point I want to make. It&#39;s about the most common framework, used by 100% of all websites. A &lt;a href=&quot;https://en.wikipedia.org/wiki/WorldWideWeb&quot;&gt;work in progress since 1990&lt;/a&gt;. It is of course the browser using standard HTML, CSS and JavaScript. Sure, it doesn&#39;t always have the latest bells and whistles like, instead its future support is unparalled. It will never be obsolete.&lt;/p&gt;
-&lt;p&gt;You can&#39;t go wrong choosing it. In fact you can&#39;t avoid choosing it!&lt;/p&gt;
 </content>
 	</entry>
 </feed>
