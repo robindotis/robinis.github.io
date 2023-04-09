@@ -6,24 +6,13 @@
 	
 	<link href="https://www.robin.is/feed/index.xml" rel="self"/>
 	<link href="https://www.robin.is/" rel="alternate" type="text/html"/>
-	<updated>2023-05-06T23:32:05Z</updated>
+	<updated>2023-04-06T23:32:05Z</updated>
 	<id>https://www.robin.is/</id>
 	<author>
 		<name>robindotis</name>
 		<email>admin@robin.is</email>
 	</author>
 	
-	
-	<entry>
-		<title>Folkdance Ensemble Trakia</title>
-		<link href="https://www.robin.is/posts/2023/folkdance-trakia/"/>
-		<updated>2023-05-06T23:32:05Z</updated>
-		<id>https://www.robin.is/posts/2023/folkdance-trakia/</id>
-		<content type="html">&lt;p&gt;Another lovely evening, this time watching the &lt;a href=&quot;https://trakia-ensemble.org/en/&quot;&gt;folkdance ensemble Trakia&lt;/a&gt; perform at the &lt;a href=&quot;https://domborishristov.com/&quot;&gt;House of culture in Plovdiv&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://www.robin.is/assets/images/2023/fa-trakia-1.webp&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://www.robin.is/assets/images/2023/fa-trakia-2.webp&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-</content>
-	</entry>
 	
 	<entry>
 		<title>Beebop Plovdiv</title>
@@ -33,6 +22,17 @@
 		<content type="html">&lt;p&gt;A lovely evening watching &lt;a href=&quot;https://www.facebook.com/hotclubdeplovdiv/&quot;&gt;Hot Club de Plovdiv&lt;/a&gt; at the &lt;a href=&quot;https://beebopcafe.tv/&quot;&gt;Beebop Cafe in Plovdiv&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;https://www.robin.is/assets/images/2023/beebop-1.webp&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;https://www.robin.is/assets/images/2023/beebop-2.webp&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+</content>
+	</entry>
+	
+	<entry>
+		<title>Folkdance Ensemble Trakia</title>
+		<link href="https://www.robin.is/posts/2023/folkdance-trakia/"/>
+		<updated>2023-04-05T23:32:05Z</updated>
+		<id>https://www.robin.is/posts/2023/folkdance-trakia/</id>
+		<content type="html">&lt;p&gt;Another lovely evening, this time watching the &lt;a href=&quot;https://trakia-ensemble.org/en/&quot;&gt;folkdance ensemble Trakia&lt;/a&gt; perform at the &lt;a href=&quot;https://domborishristov.com/&quot;&gt;House of culture in Plovdiv&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://www.robin.is/assets/images/2023/fa-trakia-1.webp&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://www.robin.is/assets/images/2023/fa-trakia-2.webp&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 </content>
 	</entry>
 	
@@ -85,6 +85,16 @@
 	</entry>
 	
 	<entry>
+		<title>Happy CSS Naked Day</title>
+		<link href="https://www.robin.is/posts/happy-naked-day/"/>
+		<updated>2023-03-09T08:18:27Z</updated>
+		<id>https://www.robin.is/posts/happy-naked-day/</id>
+		<content type="html">&lt;p&gt;Todyay, 9th April, is &lt;a href=&quot;https://css-naked-day.github.io/&quot;&gt;CSS Naked Day&lt;/a&gt;. On this day many bloggers remove all styling from their blog. The idea is to promote awarenes of web standards. A well designed site, following web standards, will work well without any styling. A follow-on aim is to raise awareness of accessibility, since the plain, unstyled website will feel more how someone with a screen reader and other assistive technology will experience the site.&lt;/p&gt;
+&lt;p&gt;Today my site is naked.&lt;/p&gt;
+</content>
+	</entry>
+	
+	<entry>
 		<title>CSS Naked Day</title>
 		<link href="https://www.robin.is/posts/2023/css-naked-day/"/>
 		<updated>2023-03-03T09:18:27Z</updated>
@@ -115,28 +125,6 @@
 &lt;p&gt;One hundred idiots make idiotic plans and carry them out. All but one fail. The hundredth idiot, whose plan succeeded through pure luck, is immediately convinced he&#39;s a genius.&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;As told by the Nariscene space vessel &amp;quot;&lt;em&gt;The hundredth idiot&lt;/em&gt;&amp;quot;.&lt;/p&gt;
-</content>
-	</entry>
-	
-	<entry>
-		<title>Sveta Petka</title>
-		<link href="https://www.robin.is/posts/2023/sveta-petka/"/>
-		<updated>2023-02-19T22:18:27Z</updated>
-		<id>https://www.robin.is/posts/2023/sveta-petka/</id>
-		<content type="html">&lt;p&gt;Twenty years after my last walk to Sveta Petka monastery in the hills above Asenovgrad, I did the same again. This is a religious day specific to the monastery and it started appropriately by saving the life of a dog. This poor chap:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://www.robin.is/assets/images/2023/sveta-petka-dog.webp&quot; alt=&quot;Dog resting in dried grass in front of a monastery&quot; /&gt;&lt;/p&gt;
-&lt;p&gt;had fallen into a reservoir and couldn&#39;t climb out of the water due to the steep smooth concrete banks. So the tallest guy in our group, held by two others, climbed over the barrier and pulled the dog out of the water. We gave the dog some bread and went on our way up the steep hill to the monastery. At the top we saw the dog resting in front of the official ceremony of the monastery. Holy dog indeed!&lt;/p&gt;
-&lt;p&gt;Sveta Petka monastery is known for being a hiding place for Bulgarian revolutionary, Vasil Levski. I saw his hiding place 20 years ago, so didn&#39;t queue this timee to see it, but the monastery itself is reasonably well maintained, with on-going construction works and well worth a visit.&lt;/p&gt;
-&lt;p&gt;We carried on past the monastery, through masses of people and found a spot about about a few hundred metres further along. Actually, we didn&#39;t find it, it&#39;s where the group always has their picnic on this hike.&lt;/p&gt;
-&lt;p&gt;By the time I got there the others had already started the fire!&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://www.robin.is/assets/images/2023/sveta-petka-fire.webp&quot; alt=&quot;Log fire for BBQ&quot; /&gt;&lt;/p&gt;
-&lt;p&gt;The wine and rakia started flowing and soon those more musical than me started dancing the &amp;quot;Horo&amp;quot;.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://www.robin.is/assets/images/2023/sveta-petka-horo.webp&quot; alt=&quot;People line dancing the Horo&quot; /&gt;&lt;/p&gt;
-&lt;p&gt;After having relaxed in that spot for several hours, we continued on to catch the last of the sunset and then headed down the steep and rocky path with our head torches in the dark. After a quick stop at a rock called &amp;quot;Anathema&amp;quot;, we continued on to the little &amp;quot;Sveta Petka&amp;quot; church with this lovely view of the town beyond.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://www.robin.is/assets/images/2023/sveta-petka-cross.webp&quot; alt=&quot;Cross lit up at night with Asenovgrad glowing in the background&quot; /&gt;&lt;/p&gt;
-&lt;p&gt;This was a great day out. The last time I had done this hike was in snow with sub zero temperatures 20 years ago. This time it was 20°C. I guess this is climate change.&lt;/p&gt;
-&lt;p&gt;This is what it looked like 20 years ago.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://www.robin.is/assets/images/2023/sveta-petka-2003.webp&quot; alt=&quot;Me sitting on a rock in the snow&quot; /&gt;&lt;/p&gt;
 </content>
 	</entry>
 </feed>
