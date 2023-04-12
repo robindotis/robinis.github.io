@@ -6,13 +6,47 @@
 	
 	<link href="https://www.robin.is/feed/index.xml" rel="self"/>
 	<link href="https://www.robin.is/" rel="alternate" type="text/html"/>
-	<updated>2023-04-11T23:32:05Z</updated>
+	<updated>2023-04-13T03:32:05Z</updated>
 	<id>https://www.robin.is/</id>
 	<author>
 		<name>robindotis</name>
 		<email>admin@robin.is</email>
 	</author>
 	
+	
+	<entry>
+		<title>Creative Eye</title>
+		<link href="https://www.robin.is/posts/2023/creative-eye/"/>
+		<updated>2023-04-13T03:32:05Z</updated>
+		<id>https://www.robin.is/posts/2023/creative-eye/</id>
+		<content type="html">&lt;h2&gt;Introduction&lt;/h2&gt;
+&lt;p&gt;These are 12 images copied from an old and now defunct websites of mine: &lt;a href=&quot;https://cr8iveye.wordpress.com/&quot;&gt;Cr8ive Eye&lt;/a&gt;. Of course that link now no longer works.&lt;/p&gt;
+&lt;h2&gt;Coloured Lines&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&quot;https://www.robin.is/assets/images/2023/coloured-lines.webp&quot; alt=&quot;Coloured Lines&quot; /&gt;&lt;/p&gt;
+&lt;h2&gt;Coloured Dots&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&quot;https://www.robin.is/assets/images/2023/coloured-dots.webp&quot; alt=&quot;Coloured Dots&quot; /&gt;&lt;/p&gt;
+&lt;h2&gt;Crosses and Squiggles&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&quot;https://www.robin.is/assets/images/2023/squiggles.webp&quot; alt=&quot;Crosses and Squiggles&quot; /&gt;&lt;/p&gt;
+&lt;h2&gt;Shinkansen&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&quot;https://www.robin.is/assets/images/2023/shinkansen.webp&quot; alt=&quot;Shinkansen&quot; /&gt;&lt;/p&gt;
+&lt;h2&gt;Rural Road&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&quot;https://www.robin.is/assets/images/2023/rural-road.webp&quot; alt=&quot;Rural Road&quot; /&gt;&lt;/p&gt;
+&lt;h2&gt;Sunset&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&quot;https://www.robin.is/assets/images/2023/sunset.webp&quot; alt=&quot;Sunset&quot; /&gt;&lt;/p&gt;
+&lt;h2&gt;Creative Eye&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&quot;https://www.robin.is/assets/images/2023/creative-eye.webp&quot; alt=&quot;Creative Eye&quot; /&gt;&lt;/p&gt;
+&lt;h2&gt;Blue Vase&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&quot;https://www.robin.is/assets/images/2023/blue-vase.webp&quot; alt=&quot;Blue Vase&quot; /&gt;&lt;/p&gt;
+&lt;h2&gt;Snake&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&quot;https://www.robin.is/assets/images/2023/snake.webp&quot; alt=&quot;Snake&quot; /&gt;&lt;/p&gt;
+&lt;h2&gt;Three Seasons&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&quot;https://www.robin.is/assets/images/2023/three-seasons.webp&quot; alt=&quot;Three Seasons&quot; /&gt;&lt;/p&gt;
+&lt;h2&gt;Angry Birds&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&quot;https://www.robin.is/assets/images/2023/angry-birds.webp&quot; alt=&quot;Angry Birds&quot; /&gt;&lt;/p&gt;
+&lt;h2&gt;Jungle Picture&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&quot;https://www.robin.is/assets/images/2023/jungle-picture.webp&quot; alt=&quot;Jungle Picture&quot; /&gt;&lt;/p&gt;
+</content>
+	</entry>
 	
 	<entry>
 		<title>Easter Weekend in Istanbul</title>
@@ -156,17 +190,6 @@
 		<id>https://www.robin.is/posts/2023/css-naked-day/</id>
 		<content type="html">&lt;p&gt;The 9th April is &lt;a href=&quot;https://css-naked-day.github.io/&quot;&gt;CSS Naked Day&lt;/a&gt;. On this day many bloggers remove all styling from their blog. The idea is to promote awarenes of web standards. A well designed site, following web standards, will work well without any styling. A follow-on aim is to raise awareness of accessibility, since the plain, unstyled website will feel more how someone with a screen reader and other assistive technology will experience the site.&lt;/p&gt;
 &lt;p&gt;In preparation for this, have updated my &lt;a href=&quot;https://gist.github.com/robindotis/54786199b5d86f5085e5c55337d6e0d0&quot;&gt;theme picker&lt;/a&gt; to incldue a hard coded &amp;quot;Naked&amp;quot; CSS theme. If desired, this theme will be forced on CSS Naked Day, with no alternative for the end user.&lt;/p&gt;
-</content>
-	</entry>
-	
-	<entry>
-		<title>Cat by log fire</title>
-		<link href="https://www.robin.is/posts/2023/cat-by-fire/"/>
-		<updated>2023-02-24T21:18:27Z</updated>
-		<id>https://www.robin.is/posts/2023/cat-by-fire/</id>
-		<content type="html">&lt;p&gt;This is the neighbour&#39;s cat sitting by the log fire!&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://www.robin.is/assets/images/2023/cat-by-log-fire.webp&quot; alt=&quot;Cat sitting on a router in front of a TV displaying a log fire on the screen&quot; /&gt;&lt;/p&gt;
-&lt;p&gt;The eagle eyed will notice she is actually keeping warm on the router!&lt;/p&gt;
 </content>
 	</entry>
 </feed>
