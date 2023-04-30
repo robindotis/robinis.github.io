@@ -2108,6 +2108,11 @@
   </url>
   
   <url>
+    <loc>https://www.robin.is/archive/tagged/diary/</loc>
+    <lastmod>2023-04-30</lastmod>
+  </url>
+  
+  <url>
     <loc>https://www.robin.is/archive/tagged/sumatra/</loc>
     <lastmod>2023-04-30</lastmod>
   </url>
@@ -2168,11 +2173,6 @@
   </url>
   
   <url>
-    <loc>https://www.robin.is/archive/tagged/diary/</loc>
-    <lastmod>2023-04-30</lastmod>
-  </url>
-  
-  <url>
     <loc>https://www.robin.is/archive/tagged/standards/</loc>
     <lastmod>2023-04-30</lastmod>
   </url>
@@ -2208,21 +2208,6 @@
   </url>
   
   <url>
-    <loc>https://www.robin.is/archive/tagged/html/</loc>
-    <lastmod>2023-04-30</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.robin.is/archive/tagged/review/</loc>
-    <lastmod>2023-04-30</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.robin.is/archive/tagged/book/</loc>
-    <lastmod>2023-04-30</lastmod>
-  </url>
-  
-  <url>
     <loc>https://www.robin.is/archive/tagged/a11y/</loc>
     <lastmod>2023-04-30</lastmod>
   </url>
@@ -2238,12 +2223,12 @@
   </url>
   
   <url>
-    <loc>https://www.robin.is/archive/tagged/speech-recognition/</loc>
+    <loc>https://www.robin.is/archive/tagged/windows/</loc>
     <lastmod>2023-04-30</lastmod>
   </url>
   
   <url>
-    <loc>https://www.robin.is/archive/tagged/windows/</loc>
+    <loc>https://www.robin.is/archive/tagged/speech-recognition/</loc>
     <lastmod>2023-04-30</lastmod>
   </url>
   
@@ -2254,11 +2239,6 @@
   
   <url>
     <loc>https://www.robin.is/archive/tagged/gold/</loc>
-    <lastmod>2023-04-30</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.robin.is/archive/tagged/privacy/</loc>
     <lastmod>2023-04-30</lastmod>
   </url>
   
@@ -2278,12 +2258,12 @@
   </url>
   
   <url>
-    <loc>https://www.robin.is/archive/tagged/flickr/</loc>
+    <loc>https://www.robin.is/archive/tagged/computers/</loc>
     <lastmod>2023-04-30</lastmod>
   </url>
   
   <url>
-    <loc>https://www.robin.is/archive/tagged/computers/</loc>
+    <loc>https://www.robin.is/archive/tagged/flickr/</loc>
     <lastmod>2023-04-30</lastmod>
   </url>
   
@@ -2593,12 +2573,17 @@
   </url>
   
   <url>
-    <loc>https://www.robin.is/archive/tagged/eden-project/</loc>
+    <loc>https://www.robin.is/archive/tagged/cornwall/</loc>
     <lastmod>2023-04-30</lastmod>
   </url>
   
   <url>
-    <loc>https://www.robin.is/archive/tagged/cornwall/</loc>
+    <loc>https://www.robin.is/archive/tagged/polzeath/</loc>
+    <lastmod>2023-04-30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.robin.is/archive/tagged/eden-project/</loc>
     <lastmod>2023-04-30</lastmod>
   </url>
   
@@ -2614,11 +2599,6 @@
   
   <url>
     <loc>https://www.robin.is/archive/tagged/trevose/</loc>
-    <lastmod>2023-04-30</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.robin.is/archive/tagged/polzeath/</loc>
     <lastmod>2023-04-30</lastmod>
   </url>
   
@@ -2648,11 +2628,6 @@
   </url>
   
   <url>
-    <loc>https://www.robin.is/archive/tagged/barcelona/</loc>
-    <lastmod>2023-04-30</lastmod>
-  </url>
-  
-  <url>
     <loc>https://www.robin.is/archive/tagged/bristol/</loc>
     <lastmod>2023-04-30</lastmod>
   </url>
@@ -2663,22 +2638,22 @@
   </url>
   
   <url>
-    <loc>https://www.robin.is/archive/tagged/pratchett/</loc>
-    <lastmod>2023-04-30</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.robin.is/archive/tagged/code/</loc>
-    <lastmod>2023-04-30</lastmod>
-  </url>
-  
-  <url>
     <loc>https://www.robin.is/archive/tagged/chance/</loc>
     <lastmod>2023-04-30</lastmod>
   </url>
   
   <url>
     <loc>https://www.robin.is/archive/tagged/quiz/</loc>
+    <lastmod>2023-04-30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.robin.is/archive/tagged/pratchett/</loc>
+    <lastmod>2023-04-30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.robin.is/archive/tagged/code/</loc>
     <lastmod>2023-04-30</lastmod>
   </url>
   
@@ -2703,17 +2678,17 @@
   </url>
   
   <url>
-    <loc>https://www.robin.is/archive/tagged/fun/</loc>
-    <lastmod>2023-04-30</lastmod>
-  </url>
-  
-  <url>
     <loc>https://www.robin.is/archive/tagged/queen/</loc>
     <lastmod>2023-04-30</lastmod>
   </url>
   
   <url>
     <loc>https://www.robin.is/archive/tagged/photo/</loc>
+    <lastmod>2023-04-30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.robin.is/archive/tagged/fun/</loc>
     <lastmod>2023-04-30</lastmod>
   </url>
   
@@ -2918,12 +2893,12 @@
   </url>
   
   <url>
-    <loc>https://www.robin.is/archive/tagged/gene/</loc>
+    <loc>https://www.robin.is/archive/tagged/colmar-berg/</loc>
     <lastmod>2023-04-30</lastmod>
   </url>
   
   <url>
-    <loc>https://www.robin.is/archive/tagged/colmar-berg/</loc>
+    <loc>https://www.robin.is/archive/tagged/gene/</loc>
     <lastmod>2023-04-30</lastmod>
   </url>
   
@@ -3088,16 +3063,6 @@
   </url>
   
   <url>
-    <loc>https://www.robin.is/archive/tagged/cat/</loc>
-    <lastmod>2023-04-30</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.robin.is/archive/tagged/fire/</loc>
-    <lastmod>2023-04-30</lastmod>
-  </url>
-  
-  <url>
     <loc>https://www.robin.is/archive/tagged/environment/</loc>
     <lastmod>2023-04-30</lastmod>
   </url>
@@ -3114,6 +3079,16 @@
   
   <url>
     <loc>https://www.robin.is/archive/tagged/green/</loc>
+    <lastmod>2023-04-30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.robin.is/archive/tagged/cat/</loc>
+    <lastmod>2023-04-30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.robin.is/archive/tagged/fire/</loc>
     <lastmod>2023-04-30</lastmod>
   </url>
   
@@ -3259,6 +3234,31 @@
   
   <url>
     <loc>https://www.robin.is/archive/tagged/sailing/</loc>
+    <lastmod>2023-04-30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.robin.is/archive/tagged/privacy/</loc>
+    <lastmod>2023-04-30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.robin.is/archive/tagged/html/</loc>
+    <lastmod>2023-04-30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.robin.is/archive/tagged/review/</loc>
+    <lastmod>2023-04-30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.robin.is/archive/tagged/book/</loc>
+    <lastmod>2023-04-30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.robin.is/archive/tagged/barcelona/</loc>
     <lastmod>2023-04-30</lastmod>
   </url>
   
