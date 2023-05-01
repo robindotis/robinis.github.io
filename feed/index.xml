@@ -6,13 +6,24 @@
 	
 	<link href="https://www.robin.is/feed/index.xml" rel="self"/>
 	<link href="https://www.robin.is/" rel="alternate" type="text/html"/>
-	<updated>2023-04-30T08:00:33Z</updated>
+	<updated>2023-05-01T20:23:28Z</updated>
 	<id>https://www.robin.is/</id>
 	<author>
 		<name>robindotis</name>
 		<email>admin@robin.is</email>
 	</author>
 	
+	
+	<entry>
+		<title>Grünewald Circular Walk</title>
+		<link href="https://www.robin.is/posts/2023/grunewald-circular-walk/"/>
+		<updated>2023-05-01T20:23:28Z</updated>
+		<id>https://www.robin.is/posts/2023/grunewald-circular-walk/</id>
+		<content type="html">&lt;p&gt;This was a simple 4.5km &lt;a href=&quot;https://www.visitluxembourg.com/tour/circular-walk-grengewald&quot;&gt;circular walk around the Grünewald woods above Walferdange&lt;/a&gt;. It was a reasonably warm Labour day for a slow stroll around the local woods. It took about an hour and a quarter with grand parents and Angie. Very simple with one slightly steep short uphill part which was a challenge for the older folk.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://www.robin.is/assets/images/2023/grunewald-1.webp&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://www.robin.is/assets/images/2023/grunewald-2.webp&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+</content>
+	</entry>
 	
 	<entry>
 		<title>Wavewalker</title>
@@ -188,17 +199,6 @@
 		<content type="html">&lt;p&gt;A lovely evening watching &lt;a href=&quot;https://www.facebook.com/hotclubdeplovdiv/&quot;&gt;Hot Club de Plovdiv&lt;/a&gt; at the &lt;a href=&quot;https://beebopcafe.tv/&quot;&gt;Beebop Cafe in Plovdiv&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;https://www.robin.is/assets/images/2023/beebop-1.webp&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;https://www.robin.is/assets/images/2023/beebop-2.webp&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-</content>
-	</entry>
-	
-	<entry>
-		<title>Upgrading to Eleventy 2</title>
-		<link href="https://www.robin.is/posts/2023/eleventy-2-upgrade/"/>
-		<updated>2023-03-30T09:12:00Z</updated>
-		<id>https://www.robin.is/posts/2023/eleventy-2-upgrade/</id>
-		<content type="html">&lt;p&gt;This morning I upgraded this site to be generated using &lt;a href=&quot;https://www.11ty.dev/blog/eleventy-v2/&quot;&gt;Eleventy 2.0.1&lt;/a&gt;. The process was dead simple thanks to this great &lt;a href=&quot;https://danabyerly.com/notes/upgrading-to-eleventy-2-0-0/&quot;&gt;post by Dana Byerly about the upgrade process&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;I did however encounter one strange problem with &lt;a href=&quot;https://lodash.com/&quot;&gt;lodash&lt;/a&gt;. After following the first three steps and then running the build command I received errors from npm about the missing &amp;quot;lodash&amp;quot; module. So I looked in my local node_modules and the only relevant folder there was &amp;quot;lodash.deburr&amp;quot;. I am not sure why, or even what the difference is between the two. Possibly this was something which worked in eleventy 1.0 but no longer in eleventy 2.0, no idea. So I ran &lt;code&gt;npm install lodash&lt;/code&gt; and then continued with step 4 and everything was fine.&lt;/p&gt;
-&lt;p&gt;Now I need to see how to take advantage of the &lt;a href=&quot;https://11ty.rocks/posts/new-features-upgrade-considerations-eleventy-version-2/&quot;&gt;new features in Eleventy 2.0&lt;/a&gt;, starting with &lt;a href=&quot;https://www.11ty.dev/docs/usage/incremental/&quot;&gt;incremental builds&lt;/a&gt; during development.&lt;/p&gt;
 </content>
 	</entry>
 </feed>
