@@ -2018,6 +2018,11 @@
   </url>
   
   <url>
+    <loc>https://www.robin.is/archive/tagged/reading/</loc>
+    <lastmod>2023-05-03</lastmod>
+  </url>
+  
+  <url>
     <loc>https://www.robin.is/archive/tagged/photos/</loc>
     <lastmod>2023-05-03</lastmod>
   </url>
@@ -2039,11 +2044,6 @@
   
   <url>
     <loc>https://www.robin.is/archive/tagged/general/</loc>
-    <lastmod>2023-05-03</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.robin.is/archive/tagged/reading/</loc>
     <lastmod>2023-05-03</lastmod>
   </url>
   
@@ -2123,6 +2123,11 @@
   </url>
   
   <url>
+    <loc>https://www.robin.is/archive/tagged/diary/</loc>
+    <lastmod>2023-05-03</lastmod>
+  </url>
+  
+  <url>
     <loc>https://www.robin.is/archive/tagged/sumatra/</loc>
     <lastmod>2023-05-03</lastmod>
   </url>
@@ -2183,32 +2188,12 @@
   </url>
   
   <url>
-    <loc>https://www.robin.is/archive/tagged/diary/</loc>
-    <lastmod>2023-05-03</lastmod>
-  </url>
-  
-  <url>
     <loc>https://www.robin.is/archive/tagged/standards/</loc>
     <lastmod>2023-05-03</lastmod>
   </url>
   
   <url>
     <loc>https://www.robin.is/archive/tagged/xml/</loc>
-    <lastmod>2023-05-03</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.robin.is/archive/tagged/html/</loc>
-    <lastmod>2023-05-03</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.robin.is/archive/tagged/review/</loc>
-    <lastmod>2023-05-03</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.robin.is/archive/tagged/book/</loc>
     <lastmod>2023-05-03</lastmod>
   </url>
   
@@ -2403,12 +2388,12 @@
   </url>
   
   <url>
-    <loc>https://www.robin.is/archive/tagged/alicante/</loc>
+    <loc>https://www.robin.is/archive/tagged/smugmug/</loc>
     <lastmod>2023-05-03</lastmod>
   </url>
   
   <url>
-    <loc>https://www.robin.is/archive/tagged/smugmug/</loc>
+    <loc>https://www.robin.is/archive/tagged/alicante/</loc>
     <lastmod>2023-05-03</lastmod>
   </url>
   
@@ -2484,11 +2469,6 @@
   
   <url>
     <loc>https://www.robin.is/archive/tagged/manchester/</loc>
-    <lastmod>2023-05-03</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.robin.is/archive/tagged/privacy/</loc>
     <lastmod>2023-05-03</lastmod>
   </url>
   
@@ -2668,7 +2648,7 @@
   </url>
   
   <url>
-    <loc>https://www.robin.is/archive/tagged/barcelona/</loc>
+    <loc>https://www.robin.is/archive/tagged/shkorpilovtsi/</loc>
     <lastmod>2023-05-03</lastmod>
   </url>
   
@@ -2873,11 +2853,6 @@
   </url>
   
   <url>
-    <loc>https://www.robin.is/archive/tagged/apocalyptic/</loc>
-    <lastmod>2023-05-03</lastmod>
-  </url>
-  
-  <url>
     <loc>https://www.robin.is/archive/tagged/zoo/</loc>
     <lastmod>2023-05-03</lastmod>
   </url>
@@ -2889,6 +2864,11 @@
   
   <url>
     <loc>https://www.robin.is/archive/tagged/pairi-daiza/</loc>
+    <lastmod>2023-05-03</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.robin.is/archive/tagged/apocalyptic/</loc>
     <lastmod>2023-05-03</lastmod>
   </url>
   
@@ -3083,17 +3063,17 @@
   </url>
   
   <url>
-    <loc>https://www.robin.is/archive/tagged/beebop/</loc>
-    <lastmod>2023-05-03</lastmod>
-  </url>
-  
-  <url>
     <loc>https://www.robin.is/archive/tagged/school/</loc>
     <lastmod>2023-05-03</lastmod>
   </url>
   
   <url>
     <loc>https://www.robin.is/archive/tagged/european-bac/</loc>
+    <lastmod>2023-05-03</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.robin.is/archive/tagged/beebop/</loc>
     <lastmod>2023-05-03</lastmod>
   </url>
   
@@ -3293,7 +3273,27 @@
   </url>
   
   <url>
-    <loc>https://www.robin.is/archive/tagged/shkorpilovtsi/</loc>
+    <loc>https://www.robin.is/archive/tagged/privacy/</loc>
+    <lastmod>2023-05-03</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.robin.is/archive/tagged/html/</loc>
+    <lastmod>2023-05-03</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.robin.is/archive/tagged/review/</loc>
+    <lastmod>2023-05-03</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.robin.is/archive/tagged/book/</loc>
+    <lastmod>2023-05-03</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.robin.is/archive/tagged/barcelona/</loc>
     <lastmod>2023-05-03</lastmod>
   </url>
   
