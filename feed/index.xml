@@ -6,13 +6,46 @@
 	
 	<link href="https://www.robin.is/feed/index.xml" rel="self"/>
 	<link href="https://www.robin.is/" rel="alternate" type="text/html"/>
-	<updated>2023-05-02T07:23:28Z</updated>
+	<updated>2023-05-05T09:30:27Z</updated>
 	<id>https://www.robin.is/</id>
 	<author>
 		<name>robindotis</name>
 		<email>admin@robin.is</email>
 	</author>
 	
+	
+	<entry>
+		<title>Dog on a log - four seasons</title>
+		<link href="https://www.robin.is/posts/2023/dog-on-a-log-four-seasons/"/>
+		<updated>2023-05-05T09:30:27Z</updated>
+		<id>https://www.robin.is/posts/2023/dog-on-a-log-four-seasons/</id>
+		<content type="html">&lt;p&gt;Angie on a log across the four seasons.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://www.robin.is/assets/images/2023/angie-four-seaons.webp&quot; alt=&quot;Dog sitting on a log in Spring, Summer, Autumn and Winter&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;See also:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.robin.is/posts/2023/dog-on-a-log-spring/&quot;&gt;Dog on a log in Spring&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.robin.is/posts/2022/dog-on-a-log-again/&quot;&gt;Dog on a log in Summer&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.robin.is/posts/2021/dog-log/&quot;&gt;Dog on a log in Autumn&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.robin.is/posts/2023/dog-on-a-log-yet-again/&quot;&gt;Dog on a log in Winter&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+	</entry>
+	
+	<entry>
+		<title>Dog on a log - in spring</title>
+		<link href="https://www.robin.is/posts/2023/dog-on-a-log-spring/"/>
+		<updated>2023-05-04T20:18:27Z</updated>
+		<id>https://www.robin.is/posts/2023/dog-on-a-log-spring/</id>
+		<content type="html">&lt;p&gt;The final photo in the four seasons series of Angie sitting on a log.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://www.robin.is/assets/images/2023/dog-on-a-log-spring.webp&quot; alt=&quot;Dog sitting on a log in the spring forst&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;See also:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.robin.is/posts/2023/dog-on-a-log-yet-again/&quot;&gt;Dog on a log in Winter&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.robin.is/posts/2021/dog-log/&quot;&gt;Dog on a log in Autumn&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.robin.is/posts/2022/dog-on-a-log-again/&quot;&gt;Dog on a log in Summer&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+	</entry>
 	
 	<entry>
 		<title>John Greenwood</title>
@@ -193,27 +226,6 @@
 &lt;p&gt;&lt;img src=&quot;https://www.robin.is/assets/images/2023/tomb.webp&quot; alt=&quot;Tomb&quot; /&gt;&lt;/p&gt;
 &lt;p&gt;Then we headed back to the hotel, grabbed our bags and got in the pre-booked taxi back to the airport. This time it was a normal drive along the motorway. No thrills, no danger, no scares.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;https://www.robin.is/assets/images/2023/bridge-taxi.webp&quot; alt=&quot;Bridge from Taxi&quot; /&gt;&lt;/p&gt;
-</content>
-	</entry>
-	
-	<entry>
-		<title>CSS Naked Day</title>
-		<link href="https://www.robin.is/posts/2023/happy-css-naked-day/"/>
-		<updated>2023-04-09T09:18:27Z</updated>
-		<id>https://www.robin.is/posts/2023/happy-css-naked-day/</id>
-		<content type="html">&lt;p&gt;The 9th April is &lt;a href=&quot;https://css-naked-day.github.io/&quot;&gt;CSS Naked Day&lt;/a&gt;. On this day many bloggers remove all styling from their blog. The idea is to promote awarenes of web standards. A well designed site, following web standards, will work well without any styling. A follow-on aim is to raise awareness of accessibility, since the plain, unstyled website will feel more how someone with a screen reader and other assistive technology will experience the site.&lt;/p&gt;
-&lt;p&gt;Today my site is naked.&lt;/p&gt;
-</content>
-	</entry>
-	
-	<entry>
-		<title>Folkdance Ensemble Trakia</title>
-		<link href="https://www.robin.is/posts/2023/folkdance-trakia/"/>
-		<updated>2023-04-07T23:32:05Z</updated>
-		<id>https://www.robin.is/posts/2023/folkdance-trakia/</id>
-		<content type="html">&lt;p&gt;Another lovely evening, this time watching the &lt;a href=&quot;https://trakia-ensemble.org/en/&quot;&gt;folkdance ensemble Trakia&lt;/a&gt; perform at the &lt;a href=&quot;https://domborishristov.com/&quot;&gt;House of culture in Plovdiv&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://www.robin.is/assets/images/2023/fa-trakia-1.webp&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://www.robin.is/assets/images/2023/fa-trakia-2.webp&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 </content>
 	</entry>
 </feed>
