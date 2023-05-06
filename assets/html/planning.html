@@ -91,6 +91,37 @@
             .nok td {
                 background-color: #FFC7CE;
             }
+
+            header, footer {
+                color:#fff;
+                background-color: #004494;
+                padding: 1rem;
+            }
+            header h1, footer p {
+                margin: 0;
+            }
+            main {
+                display: flex;
+            }
+            #config {
+                /*float:right;
+                width: auto;*/
+                flex: 1;
+                order:2;
+                border: 1px solid #000;
+                padding: 1rem;
+            }
+            #plan {
+                /*float:left;
+                width:*/
+                flex:0 0 auto;
+                order:1;
+                border: 1px solid #000;
+                padding: 1rem 4rem 1rem 1rem;
+            }
+            footer {
+                clear:both;
+            }
 </style>
 
         <script src="planning.js" defer></script>
@@ -100,42 +131,95 @@
             <h1>Translation planner</h1>
         </header>
         <main>
-            <h2>Messages</h2>
-            <span id="message">Planning loaded</span>
-            <h2>Tasks</h2>
-            <div id="tasks">
-                <div id="forms">
-                    <form id="form0" onsubmit="return processForm(event)"></form>
+            <div id="config">
+                <h2>Configuration</h2>
+                <h3>Messages</h3>
+                <span id="message">Planning loaded</span>
+                <h3>Tasks</h3>
+                <div id="tasks">
+                    <div id="forms">
+                        <form id="form0" onsubmit="return processForm(event)"></form>
+                    </div>
+                    <table>
+                        <thead>
+                            <th><label id="task-id">Your Id</label></th>
+                            <th><label id="task-name">Name</label></th>
+                            <th><label id="task-pages">Pages</label></th>
+                            <th><label id="task-date">Due date</label></th>
+                            <th><label id="task-submit">Submit</label></th>
+                        </thead>
+                        <tbody id="taskstable">
+                            <tr>
+                                <td>
+                                    <input form="form0" aria-labelledby="task-id" name="task-id" type="text" required size="2">
+                                </td>
+                                <td>
+                                    <input form="form0" aria-labelledby="task-name" name="task-name" type="text" required size="10">
+                                </td>
+                                <td>
+                                    <input form="form0" aria-labelledby="task-pages" name="task-pages" type="number"  step="1" required>
+                                </td>
+                                <td>
+                                    <input form="form0" aria-labelledby="task-date" name="task-date" type="date" required>
+                                </td>
+                                <td>
+                                    <input form="form0" name="task-submit" type="submit" value="Add task">
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <template id="taskForm">
+                    <form id="form" onsubmit="return processForm(event);"></form>
+                </template>
+                <template id="taskInputs">
+                    <tr>
+                        <td>
+                            <input form="form" name="task-localid" type="text" required readonly hidden>
+                            <input form="form" aria-labelledby="task-id" name="task-id" type="text" required size="2">
+                        </td>
+                        <td>
+                            <input form="form" aria-labelledby="task-name" name="task-name" type="text" required size="10">
+                        </td>
+                        <td>
+                            <input form="form" aria-labelledby="task-pages" name="task-pages" type="number" step="1" required>
+                        </td>
+                        <td>
+                            <input form="form" aria-labelledby="task-date" name="task-date" type="date" required>
+                        </td>
+                        <td>
+                            <input form="form" name="task-submit" type="submit" value="Update task">
+                            <input form="form" name="task-delete" type="button" onclick="deleteTask(this);" value="Delete task">
+                        </td>
+                    </tr>
+                </template>
+                <h3>Holidays</h3>
+                <div id="holidayForms">
+                    <form id="holidayForm0" onsubmit="return processHolidayForm(event)"></form>
                 </div>
                 <table>
                     <thead>
-                        <th><label id="task-id">Your Id</label></th>
-                        <th><label id="task-name">Name</label></th>
-                        <th><label id="task-pages">Pages</label></th>
-                        <th><label id="task-date">Due date</label></th>
-                        <th><label id="task-submit">Submit</label></th>
+                        <th><label id="holiday-start">Start date</label></th>
+                        <th><label id="holiday-end">End date</label></th>
+                        <th><label id="holiday-action">Action</label></th>
                     </thead>
-                    <tbody id="taskstable">
+                    <tbody id="holidaystable">
                         <tr>
                             <td>
-                                <input form="form0" aria-labelledby="task-id" name="task-id" type="text" required size="2">
+                                <input form="holidayForm0" aria-labelledby="holiday-start" name="holiday-start" type="date" required>
                             </td>
                             <td>
-                                <input form="form0" aria-labelledby="task-name" name="task-name" type="text" required size="10">
+                                <input form="holidayForm0" aria-labelledby="holiday-end" name="holiday-end" type="date" required>
                             </td>
                             <td>
-                                <input form="form0" aria-labelledby="task-pages" name="task-pages" type="number"  step="1" required>
-                            </td>
-                            <td>
-                                <input form="form0" aria-labelledby="task-date" name="task-date" type="date" required>
-                            </td>
-                            <td>
-                                <input form="form0" name="task-submit" type="submit" value="Add task">
+                                <input form="holidayForm0" name="holiday-submit" type="submit" value="Add holiday">
                             </td>
                         </tr>
                     </tbody>
                 </table>
                 <h3>JSON</h3>
+
+                <h4>Tasks</h4>
                 <p>
                     Copy and store in case loose browser localstorage
                 </p>
@@ -149,110 +233,66 @@
                     <br/>
                     <input type="submit" value="Save JSON tasks" />                    
                 </form>
-            </div>
-            <template id="taskForm">
-                <form id="form" onsubmit="return processForm(event);"></form>
-            </template>
-            <template id="taskInputs">
-                <tr>
-                    <td>
-                        <input form="form" name="task-localid" type="text" required readonly hidden>
-                        <input form="form" aria-labelledby="task-id" name="task-id" type="text" required size="2">
-                    </td>
-                    <td>
-                        <input form="form" aria-labelledby="task-name" name="task-name" type="text" required size="10">
-                    </td>
-                    <td>
-                        <input form="form" aria-labelledby="task-pages" name="task-pages" type="number" step="1" required>
-                    </td>
-                    <td>
-                        <input form="form" aria-labelledby="task-date" name="task-date" type="date" required>
-                    </td>
-                    <td>
-                        <input form="form" name="task-submit" type="submit" value="Update task">
-                        <input form="form" name="task-delete" type="button" onclick="deleteTask(this);" value="Delete task">
-                    </td>
-                </tr>
-            </template>
-            <h2>Holidays</h2>
-            <div id="holidayForms">
-                <form id="holidayForm0" onsubmit="return processHolidayForm(event)"></form>
-            </div>
-            <table>
-                <thead>
-                    <th><label id="holiday-start">Start date</label></th>
-                    <th><label id="holiday-end">End date</label></th>
-                    <th><label id="holiday-action">Action</label></th>
-                </thead>
-                <tbody id="holidaystable">
+
+
+                <h4>Holidays</h4>
+                <p>
+                    Copy and store in case loose browser localstorage
+                </p>
+                <code id="jsonHolidays">
+    
+                </code>
+                <form id="jsonHolidayForm" onsubmit="processHolidayJSON(event);">
+                    <label for="json-holidays">Paste saved JSON</label>
+                    <br/>
+                    <textarea name="json-holidays" id="json-holidays" cols="100" rows="5"></textarea>
+                    <br/>
+                    <input type="submit" value="Save JSON holidays" />                    
+                </form>
+                <template id="holidayForm">
+                    <form id="holidayForm" onsubmit="return processHolidayForm(event);"></form>
+                </template>
+                <template id="holidayInputs">
                     <tr>
                         <td>
-                            <input form="holidayForm0" aria-labelledby="holiday-start" name="holiday-start" type="date" required>
+                            <input form="holidayForm" name="holiday-localid" type="text" hidden required readonly>
+                            <input form="holidayForm" aria-labelledby="holiday-start" name="holiday-start" type="date" required>
                         </td>
                         <td>
-                            <input form="holidayForm0" aria-labelledby="holiday-end" name="holiday-end" type="date" required>
+                            <input form="holidayForm" aria-labelledby="holiday-end" name="holiday-end" type="date" required>
                         </td>
                         <td>
-                            <input form="holidayForm0" name="holiday-submit" type="submit" value="Add holiday">
+                            <input form="holidayForm" name="holiday-submit" type="submit" value="Update holiday">
+                            <input form="holidayForm" name="holiday-delete" type="button" onclick="deleteHoliday(this);" value="Delete holiday">
                         </td>
                     </tr>
-                </tbody>
-            </table>
-            <h3>JSON</h3>
-            <p>
-                Copy and store in case loose browser localstorage
-            </p>
-            <code id="jsonHolidays">
-
-            </code>
-            <form id="jsonHolidayForm" onsubmit="processHolidayJSON(event);">
-                <label for="json-holidays">Paste saved JSON</label>
-                <br/>
-                <textarea name="json-holidays" id="json-holidays" cols="100" rows="5"></textarea>
-                <br/>
-                <input type="submit" value="Save JSON holidays" />                    
-            </form>
-            <template id="holidayForm">
-                <form id="holidayForm" onsubmit="return processHolidayForm(event);"></form>
-            </template>
-            <template id="holidayInputs">
-                <tr>
-                    <td>
-                        <input form="holidayForm" name="holiday-localid" type="text" hidden required readonly>
-                        <input form="holidayForm" aria-labelledby="holiday-start" name="holiday-start" type="date" required>
-                    </td>
-                    <td>
-                        <input form="holidayForm" aria-labelledby="holiday-end" name="holiday-end" type="date" required>
-                    </td>
-                    <td>
-                        <input form="holidayForm" name="holiday-submit" type="submit" value="Update holiday">
-                        <input form="holidayForm" name="holiday-delete" type="button" onclick="deleteHoliday(this);" value="Delete holiday">
-                    </td>
-                </tr>
-            </template>
-            <h2>Planning</h2>
-            <table>
-                <thead>
-                    <th>Day</th>
-                    <th>Task Name (Id)</th>
-                    <th>Hours</th>
-                    <th>Counter</th>
-                </thead>
-                <tbody id="planner">
-                </tbody>
-            </table>
-            <template id="day">
-                <tr>
-                    <td>
-                    </td>
-                    <td>
-                    </td>
-                    <td>
-                    </td>
-                    <td>
-                    </td>
-                </tr>
-            </template>
+                </template>    
+            </div>
+            <div id="plan">
+                <h2>Planning</h2>
+                <table>
+                    <thead>
+                        <th>Day</th>
+                        <th>Task Name (Id)</th>
+                        <th>Hours</th>
+                        <th>Counter</th>
+                    </thead>
+                    <tbody id="planner">
+                    </tbody>
+                </table>
+                <template id="day">
+                    <tr>
+                        <td>
+                        </td>
+                        <td>
+                        </td>
+                        <td>
+                        </td>
+                        <td>
+                        </td>
+                    </tr>
+                </template>    
+            </div>
         </main>
         <footer>
             <p>
