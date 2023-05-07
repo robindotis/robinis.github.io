@@ -2208,27 +2208,32 @@
   </url>
   
   <url>
+    <loc>https://www.robin.is/archive/tagged/privacy/</loc>
+    <lastmod>2023-05-07</lastmod>
+  </url>
+  
+  <url>
     <loc>https://www.robin.is/archive/tagged/conspiracy/</loc>
     <lastmod>2023-05-07</lastmod>
   </url>
   
   <url>
-    <loc>https://www.robin.is/archive/tagged/plovdiv/</loc>
+    <loc>https://www.robin.is/archive/tagged/health/</loc>
     <lastmod>2023-05-07</lastmod>
   </url>
   
   <url>
-    <loc>https://www.robin.is/archive/tagged/html/</loc>
+    <loc>https://www.robin.is/archive/tagged/programming/</loc>
     <lastmod>2023-05-07</lastmod>
   </url>
   
   <url>
-    <loc>https://www.robin.is/archive/tagged/review/</loc>
+    <loc>https://www.robin.is/archive/tagged/discworld/</loc>
     <lastmod>2023-05-07</lastmod>
   </url>
   
   <url>
-    <loc>https://www.robin.is/archive/tagged/book/</loc>
+    <loc>https://www.robin.is/archive/tagged/quotes/</loc>
     <lastmod>2023-05-07</lastmod>
   </url>
   
@@ -2243,27 +2248,27 @@
   </url>
   
   <url>
-    <loc>https://www.robin.is/archive/tagged/quotes/</loc>
+    <loc>https://www.robin.is/archive/tagged/ux/</loc>
+    <lastmod>2023-05-07</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.robin.is/archive/tagged/speech-recognition/</loc>
+    <lastmod>2023-05-07</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.robin.is/archive/tagged/windows/</loc>
+    <lastmod>2023-05-07</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.robin.is/archive/tagged/plovdiv/</loc>
     <lastmod>2023-05-07</lastmod>
   </url>
   
   <url>
     <loc>https://www.robin.is/archive/tagged/gold/</loc>
-    <lastmod>2023-05-07</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.robin.is/archive/tagged/discworld/</loc>
-    <lastmod>2023-05-07</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.robin.is/archive/tagged/programming/</loc>
-    <lastmod>2023-05-07</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.robin.is/archive/tagged/ux/</loc>
     <lastmod>2023-05-07</lastmod>
   </url>
   
@@ -2278,32 +2283,17 @@
   </url>
   
   <url>
-    <loc>https://www.robin.is/archive/tagged/windows/</loc>
-    <lastmod>2023-05-07</lastmod>
-  </url>
-  
-  <url>
     <loc>https://www.robin.is/archive/tagged/ubuntu/</loc>
     <lastmod>2023-05-07</lastmod>
   </url>
   
   <url>
-    <loc>https://www.robin.is/archive/tagged/health/</loc>
-    <lastmod>2023-05-07</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.robin.is/archive/tagged/speech-recognition/</loc>
+    <loc>https://www.robin.is/archive/tagged/flickr/</loc>
     <lastmod>2023-05-07</lastmod>
   </url>
   
   <url>
     <loc>https://www.robin.is/archive/tagged/computers/</loc>
-    <lastmod>2023-05-07</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.robin.is/archive/tagged/flickr/</loc>
     <lastmod>2023-05-07</lastmod>
   </url>
   
@@ -2498,6 +2488,21 @@
   </url>
   
   <url>
+    <loc>https://www.robin.is/archive/tagged/html/</loc>
+    <lastmod>2023-05-07</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.robin.is/archive/tagged/review/</loc>
+    <lastmod>2023-05-07</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.robin.is/archive/tagged/book/</loc>
+    <lastmod>2023-05-07</lastmod>
+  </url>
+  
+  <url>
     <loc>https://www.robin.is/archive/tagged/wcag/</loc>
     <lastmod>2023-05-07</lastmod>
   </url>
@@ -2668,12 +2673,12 @@
   </url>
   
   <url>
-    <loc>https://www.robin.is/archive/tagged/versailles/</loc>
+    <loc>https://www.robin.is/archive/tagged/shkorpilovtsi/</loc>
     <lastmod>2023-05-07</lastmod>
   </url>
   
   <url>
-    <loc>https://www.robin.is/archive/tagged/shkorpilovtsi/</loc>
+    <loc>https://www.robin.is/archive/tagged/barcelona/</loc>
     <lastmod>2023-05-07</lastmod>
   </url>
   
@@ -3178,17 +3183,17 @@
   </url>
   
   <url>
-    <loc>https://www.robin.is/archive/tagged/folkdance/</loc>
-    <lastmod>2023-05-07</lastmod>
-  </url>
-  
-  <url>
     <loc>https://www.robin.is/archive/tagged/economics/</loc>
     <lastmod>2023-05-07</lastmod>
   </url>
   
   <url>
     <loc>https://www.robin.is/archive/tagged/politics/</loc>
+    <lastmod>2023-05-07</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.robin.is/archive/tagged/folkdance/</loc>
     <lastmod>2023-05-07</lastmod>
   </url>
   
@@ -3298,12 +3303,7 @@
   </url>
   
   <url>
-    <loc>https://www.robin.is/archive/tagged/privacy/</loc>
-    <lastmod>2023-05-07</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.robin.is/archive/tagged/barcelona/</loc>
+    <loc>https://www.robin.is/archive/tagged/versailles/</loc>
     <lastmod>2023-05-07</lastmod>
   </url>
   

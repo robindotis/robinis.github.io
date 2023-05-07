@@ -112,8 +112,13 @@ function processHolidayForm(e) {
 }
 
 function processJSON(e) {
-    localStorage.setItem("tasks",document.getElementById("jsonCurrent").value);
+    localStorage.setItem("tasks",document.getElementById("json-tasks").value);
     localStorage.setItem("msg","Tasks uploaded successfully");
+}
+
+function processHolidaysJSON(e) {
+    localStorage.setItem("holidays",document.getElementById("json-holidays").value);
+    localStorage.setItem("msg","Holidays uploaded successfully");
 }
 
 function displaySystemMessage(){
