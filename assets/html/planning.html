@@ -119,10 +119,37 @@
                 border: 1px solid #000;
                 padding: 1rem 4rem 1rem 1rem;
             }
+            #setup {
+                /*float:left;
+                width:*/
+                flex:1;
+                order:3;
+                border: 1px solid #000;
+                padding: 1rem;
+            }
             footer {
                 clear:both;
             }
-</style>
+
+            input[type='number']{
+               width: 5ch;
+            }
+
+            textarea {
+                width: 60ch;
+            }
+
+            h2 { 
+                width: 100%;
+                background-color: #ddd;
+                padding: 0.5rem 0 0.5rem 0.5rem;
+            }
+
+            h3 { 
+                width: 100%;
+                border-bottom: 1px solid #000;
+            }
+</style> 
 
         <script src="planning.js" defer></script>
     </head>
@@ -132,9 +159,7 @@
         </header>
         <main>
             <div id="config">
-                <h2>Configuration</h2>
-                <h3>Messages</h3>
-                <span id="message">Planning loaded</span>
+                <h2>Manage</h2>
                 <h3>Tasks</h3>
                 <div id="tasks">
                     <div id="forms">
@@ -157,13 +182,13 @@
                                     <input form="form0" aria-labelledby="task-name" name="task-name" type="text" required size="10">
                                 </td>
                                 <td>
-                                    <input form="form0" aria-labelledby="task-pages" name="task-pages" type="number"  step="1" required>
+                                    <input form="form0" aria-labelledby="task-pages" name="task-pages" type="number" step="1" required size="2">
                                 </td>
                                 <td>
                                     <input form="form0" aria-labelledby="task-date" name="task-date" type="date" required>
                                 </td>
                                 <td>
-                                    <input form="form0" name="task-submit" type="submit" value="Add task">
+                                    <input form="form0" name="task-submit" type="submit" value="Add">
                                 </td>
                             </tr>
                         </tbody>
@@ -182,14 +207,14 @@
                             <input form="form" aria-labelledby="task-name" name="task-name" type="text" required size="10">
                         </td>
                         <td>
-                            <input form="form" aria-labelledby="task-pages" name="task-pages" type="number" step="1" required>
+                            <input form="form" aria-labelledby="task-pages" name="task-pages" type="number" step="1" required size="2">
                         </td>
                         <td>
                             <input form="form" aria-labelledby="task-date" name="task-date" type="date" required>
                         </td>
                         <td>
-                            <input form="form" name="task-submit" type="submit" value="Update task">
-                            <input form="form" name="task-delete" type="button" onclick="deleteTask(this);" value="Delete task">
+                            <input form="form" name="task-submit" type="submit" value="Update">
+                            <input form="form" name="task-delete" type="button" onclick="deleteTask(this);" value="Delete">
                         </td>
                     </tr>
                 </template>
@@ -212,40 +237,48 @@
                                 <input form="holidayForm0" aria-labelledby="holiday-end" name="holiday-end" type="date" required>
                             </td>
                             <td>
-                                <input form="holidayForm0" name="holiday-submit" type="submit" value="Add holiday">
+                                <input form="holidayForm0" name="holiday-submit" type="submit" value="Add">
                             </td>
                         </tr>
                     </tbody>
                 </table>
-                <h3>JSON</h3>
+            </div>
+            <div id="setup">
+                <h2>Setup</h2>
+                <h3>Messages</h3>
+                <span id="message">Planning loaded</span>
 
-                <h4>Tasks</h4>
+                <h3>Tasks - JSON</h3>
                 <p>
                     Copy and store in case loose browser localstorage
                 </p>
-                <code id="json">
-
-                </code>
+                <form id="jsonCurrentForm">
+                    <label for="jsonCurrent">Current JSON</label>
+                    <br/>
+                    <textarea name="json" id="jsonCurrent" rows="5" readonly></textarea>
+                </form>
                 <form id="jsonForm" onsubmit="processJSON(event);">
                     <label for="json-tasks">Paste saved JSON</label>
                     <br/>
-                    <textarea name="json-tasks" id="json-tasks" cols="100" rows="5"></textarea>
+                    <textarea name="json-tasks" id="json-tasks" rows="5"></textarea>
                     <br/>
                     <input type="submit" value="Save JSON tasks" />                    
                 </form>
 
 
-                <h4>Holidays</h4>
+                <h3>Holidays - JSON</h3>
                 <p>
                     Copy and store in case loose browser localstorage
                 </p>
-                <code id="jsonHolidays">
-    
-                </code>
+                <form id="jsonHolidaysCurrentForm">
+                    <label for="jsonHolidaysCurrent">Current JSON</label>
+                    <br/>
+                    <textarea name="json-holidays" id="jsonHolidaysCurrent" rows="5" readonly></textarea>
+                </form>
                 <form id="jsonHolidayForm" onsubmit="processHolidayJSON(event);">
                     <label for="json-holidays">Paste saved JSON</label>
                     <br/>
-                    <textarea name="json-holidays" id="json-holidays" cols="100" rows="5"></textarea>
+                    <textarea name="json-holidays" id="json-holidays" rows="5"></textarea>
                     <br/>
                     <input type="submit" value="Save JSON holidays" />                    
                 </form>
@@ -262,8 +295,8 @@
                             <input form="holidayForm" aria-labelledby="holiday-end" name="holiday-end" type="date" required>
                         </td>
                         <td>
-                            <input form="holidayForm" name="holiday-submit" type="submit" value="Update holiday">
-                            <input form="holidayForm" name="holiday-delete" type="button" onclick="deleteHoliday(this);" value="Delete holiday">
+                            <input form="holidayForm" name="holiday-submit" type="submit" value="Update">
+                            <input form="holidayForm" name="holiday-delete" type="button" onclick="deleteHoliday(this);" value="Delete">
                         </td>
                     </tr>
                 </template>    

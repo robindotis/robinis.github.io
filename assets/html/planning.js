@@ -112,7 +112,7 @@ function processHolidayForm(e) {
 }
 
 function processJSON(e) {
-    localStorage.setItem("tasks",document.getElementById("json-tasks").value);
+    localStorage.setItem("tasks",document.getElementById("jsonCurrent").value);
     localStorage.setItem("msg","Tasks uploaded successfully");
 }
 
@@ -271,7 +271,7 @@ function displayHolidayFields() {
         var jsonHolidays = localStorage.getItem("holidays");
 
         holidays = JSON.parse(jsonHolidays);
-        document.getElementById("json").innerText = jsonHolidays;
+        document.getElementById("jsonHolidaysCurrent").value = jsonHolidays;
 
         holidays.sort((a, b) => {
             return new Date(a.startDate) - new Date(b.startDate); // descending
@@ -311,10 +311,10 @@ function getUserTaskId(timestamp){
 
 function processHolidays(){
     if(!(localStorage.getItem("holidays") === null)){
-        var jsonTasks = localStorage.getItem("holidays");
+        var jsonHolidays = localStorage.getItem("holidays");
         holidayDays = [];
-        holidays = JSON.parse(jsonTasks);
-        document.getElementById("jsonHolidays").innerText = jsonTasks;
+        holidays = JSON.parse(jsonHolidays);
+        document.getElementById("jsonHolidaysCurrent").value = jsonHolidays;
 
         holidays.sort((a, b) => {
             return new Date(a.startDate) - new Date(b.startDate); // ascending
@@ -341,7 +341,7 @@ function processTasks(){
         var jsonTasks = localStorage.getItem("tasks");
         //alert(jsonTasks);
         tasks = JSON.parse(jsonTasks);
-        document.getElementById("json").innerText = jsonTasks;
+        document.getElementById("jsonCurrent").value = jsonTasks;
 
         tasks.sort((a, b) => {
             return new Date(a.endDate) - new Date(b.endDate); // descending
