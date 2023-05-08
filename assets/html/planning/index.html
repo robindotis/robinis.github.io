@@ -149,6 +149,14 @@
                 width: 100%;
                 border-bottom: 1px solid #000;
             }
+
+            table th {
+                text-align: left;
+            }
+            table td {
+                border:0;
+                padding: 0.1rem 0.4rem 0.1rem 0;
+            }
 </style> 
 
         <script src="planning.js" defer></script>
@@ -256,7 +264,11 @@
                     <label for="jsonCurrent">Current JSON</label>
                     <br/>
                     <textarea name="json" id="jsonCurrent" rows="5" readonly></textarea>
+                    <br/>
+                    <button type="button" onclick="CopyJson('jsonCurrent')">Copy to clipboard</button>
+                    [Paste it somewhere safe with "Ctrl+V"]
                 </form>
+                <br/>
                 <form id="jsonForm" onsubmit="processJSON(event);">
                     <label for="json-tasks">Paste saved JSON</label>
                     <br/>
@@ -274,7 +286,11 @@
                     <label for="jsonHolidaysCurrent">Current JSON</label>
                     <br/>
                     <textarea name="json-holidays" id="jsonHolidaysCurrent" rows="5" readonly></textarea>
+                    <br/>
+                    <button type="button" onclick="CopyJson('jsonCurrent')">Copy to clipboard</button>
+                    [Paste it somewhere safe with "Ctrl+V"]
                 </form>
+                <br/>
                 <form id="jsonHolidayForm" onsubmit="processHolidaysJSON(event);">
                     <label for="json-holidays">Paste saved JSON</label>
                     <br/>
@@ -306,7 +322,7 @@
                 <table>
                     <thead>
                         <th>Day</th>
-                        <th>Task Name (Id)</th>
+                        <th>Task (Id)</th>
                         <th>Hours</th>
                         <th>Counter</th>
                     </thead>

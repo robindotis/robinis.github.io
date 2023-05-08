@@ -6,6 +6,18 @@ const HOLIDAY_NOT_ADDED_2 = "Holiday not added, because 'End date' before 'Start
 const OK_DUE_DATE = "ok";
 const NOT_OK_DUE_DATE = "nok";
 
+function CopyJson(id) {
+    var jsonToCopy = document.getElementById(id).value;
+    navigator.clipboard.writeText(jsonToCopy).then(
+        () => {
+            document.getElementById("message").innerHTML = "Copied successfully";
+        },
+        () => {
+            document.getElementById("message").innerHTML = "Failed to copy, please try again";
+        }
+      );
+}
+
 function deleteHoliday(btn) {
     var localid = "";
     var formName = btn.getAttribute("form");
@@ -311,7 +323,7 @@ function displayHolidayFields() {
 
 function getUserTaskId(timestamp){
     var theTask = tasks.find(item => item.localid === timestamp);
-    return theTask.name + "(" + theTask.id + ")";
+    return theTask.name + " (" + theTask.id + ")";
 }
 
 function processHolidays(){
