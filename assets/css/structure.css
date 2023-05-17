@@ -155,7 +155,7 @@ main {
     /*margin-bottom: 30px;*/
 }
 
-ul.postlist {
+article ul, ul.postlist {
     list-style-type:none;
     padding-left: 0;
 }
@@ -164,7 +164,7 @@ ul.postlist {
     padding-bottom: 0.2em;    
 }
 
-ul.postlist li:before {
+article ul li::before, ul.postlist li:before {
     content: '👉';
     font-size: 0.9em;
     vertical-align: top;
