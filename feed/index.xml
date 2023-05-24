@@ -6,13 +6,26 @@
 	
 	<link href="https://www.robin.is/feed/index.xml" rel="self"/>
 	<link href="https://www.robin.is/" rel="alternate" type="text/html"/>
-	<updated>2023-05-18T19:18:27Z</updated>
+	<updated>2023-05-24T07:12:00Z</updated>
 	<id>https://www.robin.is/</id>
 	<author>
 		<name>robindotis</name>
 		<email>admin@robin.is</email>
 	</author>
 	
+	
+	<entry>
+		<title>Improving the pipeline</title>
+		<link href="https://www.robin.is/posts/2023/publication-pipeline/"/>
+		<updated>2023-05-24T07:12:00Z</updated>
+		<id>https://www.robin.is/posts/2023/publication-pipeline/</id>
+		<content type="html">&lt;p&gt;Since moving this site to &lt;a href=&quot;https://www.11ty.dev/&quot;&gt;Eleventy&lt;/a&gt; back in &lt;a href=&quot;https://www.robin.is/posts/2021/welcome-back/&quot;&gt;December 2020&lt;/a&gt; I&#39;ve been continually improving my publication pipeline. It started out being a manual process running bits of hacked together code on my laptop before switching to my online tool of the day for pushing the changes to the hosted site.&lt;/p&gt;
+&lt;p&gt;For a long time I was using &lt;a href=&quot;https://tina.io/forestry/&quot;&gt;Forestry.io&lt;/a&gt; which is now discontinued and I never really took to it&#39;s replacement. So I settled on simply using Github for everything. This means the source for code is pushed from my laptop to  Github, the published site is on Github Pages and the processing for creating the site from the source is managed through Github Actions. Initiallly triggering these three parts were things I did manually and separately.&lt;/p&gt;
+&lt;p&gt;Then I started scripting these actions in Powershell. The first script simply pushed the changes to github. I then modified this to include a pull from github before the push, to ensure there were no conflicts when pushing. I would then manually switch to GitHub to run the workkflow in GitHub Actions that actually updated the site with the changes.&lt;/p&gt;
+&lt;p&gt;Well, yesterday I finally added that task to the script as well. Using the GitHub Rest API is straighforward and creating the correct curl command was relatively easy. But I don&#39;t know much about curl and in any case the script is a powershell script. Some Googling (mainly using Bing 🙂) got me most of the way there, by using the &lt;code&gt;Invoke-RestMethod&lt;/code&gt;. But I wasn&#39;t sure how to add one property to the command. Thankfully I found [a code snippet on Stackoverflow] which gave me what I needed. It had no explanations or comments, it was just posted as an answer to a question as is. Nevertheless it solved my problem.&lt;/p&gt;
+&lt;p&gt;And so this post becomes the first one pushed to GitHub and published on GitHub Pages using one integrated script. 👏&lt;/p&gt;
+</content>
+	</entry>
 	
 	<entry>
 		<title>Restaurant Computer Systems</title>
@@ -152,41 +165,6 @@
 &lt;p&gt;I always liked &lt;a href=&quot;https://wordpress.com/&quot;&gt;Wordpress&lt;/a&gt;, the internet&#39;s most successful CMS platform. It&#39;s open source nature and the philosophy of it&#39;s creator certainly appealed to me. It was easy to install when self-hosting and easy to use whether self-hosted or on &lt;a href=&quot;http://wordpress.com/&quot;&gt;Wordpress.com&lt;/a&gt;. And the price point was perfect: $0. Something I blogged about a while back when &lt;a href=&quot;https://www.robin.is/posts/2021/netlify-wordpress/&quot;&gt;comparing it to JAMStack sites&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;However, in recent years I did find the act of writing a post got more complex than it needed to be. The Guttenberg editor was surely a reason for this. I never quite got the hang of it, even if I could understand the idea behind it. On top of this, the sheer number of options meant it was sometimes hard to find where to do what if you didn&#39;t use the tool regularly.&lt;/p&gt;
 &lt;p&gt;So, I say goodbye to Wordpress not because it is a bad choice of CMS, but because I found a setup more &lt;a href=&quot;https://www.robin.is/posts/2022/replacing-forestry/&quot;&gt;suitable for my needs&lt;/a&gt;.&lt;/p&gt;
-</content>
-	</entry>
-	
-	<entry>
-		<title>Creative Eye</title>
-		<link href="https://www.robin.is/posts/2023/creative-eye/"/>
-		<updated>2023-04-12T19:32:05Z</updated>
-		<id>https://www.robin.is/posts/2023/creative-eye/</id>
-		<content type="html">&lt;h2&gt;Introduction&lt;/h2&gt;
-&lt;p&gt;These are 12 images copied from an old and now defunct websites of mine: &lt;a href=&quot;https://cr8iveye.wordpress.com/&quot;&gt;Cr8ive Eye&lt;/a&gt;. Of course that link now no longer works.&lt;/p&gt;
-&lt;p&gt;The subtitle of the site: The creative failures of an artistic illeterate! [sic]&lt;/p&gt;
-&lt;h2&gt;Coloured Lines&lt;/h2&gt;
-&lt;p&gt;&lt;img src=&quot;https://www.robin.is/assets/images/2023/coloured-lines.webp&quot; alt=&quot;Coloured Lines&quot; /&gt;&lt;/p&gt;
-&lt;h2&gt;Coloured Dots&lt;/h2&gt;
-&lt;p&gt;&lt;img src=&quot;https://www.robin.is/assets/images/2023/coloured-dots.webp&quot; alt=&quot;Coloured Dots&quot; /&gt;&lt;/p&gt;
-&lt;h2&gt;Crosses and Squiggles&lt;/h2&gt;
-&lt;p&gt;&lt;img src=&quot;https://www.robin.is/assets/images/2023/squiggles.webp&quot; alt=&quot;Crosses and Squiggles&quot; /&gt;&lt;/p&gt;
-&lt;h2&gt;Shinkansen&lt;/h2&gt;
-&lt;p&gt;&lt;img src=&quot;https://www.robin.is/assets/images/2023/shinkansen.webp&quot; alt=&quot;Shinkansen&quot; /&gt;&lt;/p&gt;
-&lt;h2&gt;Rural Road&lt;/h2&gt;
-&lt;p&gt;&lt;img src=&quot;https://www.robin.is/assets/images/2023/rural-road.webp&quot; alt=&quot;Rural Road&quot; /&gt;&lt;/p&gt;
-&lt;h2&gt;Sunset&lt;/h2&gt;
-&lt;p&gt;&lt;img src=&quot;https://www.robin.is/assets/images/2023/sunset.webp&quot; alt=&quot;Sunset&quot; /&gt;&lt;/p&gt;
-&lt;h2&gt;Creative Eye&lt;/h2&gt;
-&lt;p&gt;&lt;img src=&quot;https://www.robin.is/assets/images/2023/creative-eye.webp&quot; alt=&quot;Creative Eye&quot; /&gt;&lt;/p&gt;
-&lt;h2&gt;Blue Vase&lt;/h2&gt;
-&lt;p&gt;&lt;img src=&quot;https://www.robin.is/assets/images/2023/blue-vase.webp&quot; alt=&quot;Blue Vase&quot; /&gt;&lt;/p&gt;
-&lt;h2&gt;Snake&lt;/h2&gt;
-&lt;p&gt;&lt;img src=&quot;https://www.robin.is/assets/images/2023/snake.webp&quot; alt=&quot;Snake&quot; /&gt;&lt;/p&gt;
-&lt;h2&gt;Three Seasons&lt;/h2&gt;
-&lt;p&gt;&lt;img src=&quot;https://www.robin.is/assets/images/2023/three-seasons.webp&quot; alt=&quot;Three Seasons&quot; /&gt;&lt;/p&gt;
-&lt;h2&gt;Angry Birds&lt;/h2&gt;
-&lt;p&gt;&lt;img src=&quot;https://www.robin.is/assets/images/2023/angry-birds.webp&quot; alt=&quot;Angry Birds&quot; /&gt;&lt;/p&gt;
-&lt;h2&gt;Jungle Picture&lt;/h2&gt;
-&lt;p&gt;&lt;img src=&quot;https://www.robin.is/assets/images/2023/jungle-picture.webp&quot; alt=&quot;Jungle Picture&quot; /&gt;&lt;/p&gt;
 </content>
 	</entry>
 </feed>
