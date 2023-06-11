@@ -6,13 +6,26 @@
 	
 	<link href="https://www.robin.is/feed/index.xml" rel="self"/>
 	<link href="https://www.robin.is/" rel="alternate" type="text/html"/>
-	<updated>2023-05-28T11:43:28Z</updated>
+	<updated>2023-06-09T19:18:27Z</updated>
 	<id>https://www.robin.is/</id>
 	<author>
 		<name>robindotis</name>
 		<email>admin@robin.is</email>
 	</author>
 	
+	
+	<entry>
+		<title>Public luxury and private sufficiency</title>
+		<link href="https://www.robin.is/posts/2023/public-private/"/>
+		<updated>2023-06-09T19:18:27Z</updated>
+		<id>https://www.robin.is/posts/2023/public-private/</id>
+		<content type="html">&lt;p&gt;An interesting &lt;a href=&quot;https://www.theguardian.com/environment/2023/jun/08/the-planets-economist-has-kate-raworth-found-a-model-for-sustainable-living&quot;&gt;artile on Kate Raworth and Doughnut Economics book&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;I particularly liked this quote:&lt;/p&gt;
+&lt;p&gt;public luxury and private sufficiency&lt;/p&gt;
+&lt;p&gt;The idea being that shared public life and infrastructure should be rich and luxurious, where in private we should all be sufficient, consuming as little as possible.&lt;/p&gt;
+&lt;p&gt;One example is building large cycle lanes and good public transports at the expense of the private car.&lt;/p&gt;
+</content>
+	</entry>
 	
 	<entry>
 		<title>Bridel Circular Walk</title>
@@ -161,16 +174,6 @@ The ground water comes into the daylight in the Mamer valley&lt;/p&gt;
 &lt;p&gt;A &lt;a href=&quot;https://inhope.org/EN/articles/inhope-spring-2023-hotline-training-meeting-recap&quot;&gt;recap of the event&lt;/a&gt; is published on the INHOPE website.&lt;/p&gt;
 &lt;p&gt;The conference was insightful and my presentation a success. So overall a good two days away and on the flight back I got a nice view of the alps.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;https://www.robin.is/assets/images/2023/malta-alps.webp&quot; alt=&quot;View of the snow capped Alps through the airplane window&quot; /&gt;&lt;/p&gt;
-</content>
-	</entry>
-	
-	<entry>
-		<title>Stroll in the Steinsel woods</title>
-		<link href="https://www.robin.is/posts/2023/roman-steinsel/"/>
-		<updated>2023-04-23T19:47:29Z</updated>
-		<id>https://www.robin.is/posts/2023/roman-steinsel/</id>
-		<content type="html">&lt;p&gt;A nice little walk in the woods above Steinsel with Angie. I came across &amp;quot;Yet Another Roman Ruin&amp;quot;. Discovered in 1957 apparently. Not sure the columns are actually real. Good for effect though.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://www.robin.is/assets/images/2023/roman-steinsel.webp&quot; alt=&quot;Ruins of a Roman site in a wooded area&quot; /&gt;&lt;/p&gt;
 </content>
 	</entry>
 </feed>
