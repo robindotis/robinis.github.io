@@ -8,6 +8,31 @@ body {
 }
 
 .skip-link {
+    position: absolute;
+    left: 3px;
+    top: 7px;
+    border: 0;
+    font-size: x-large;
+    font-weight: 600;
+    line-height: normal;
+    padding: 2px;
+    background-color: yellow;
+    color: #000000;
+    margin: 0;
+    transform: translateX(-200%);
+    transition: transform 0.3s;
+}
+
+.skip-link a {
+    text-decoration: none;
+    padding:2px;
+}
+.skip-link:focus-within {
+    transform: translateX(0%);
+    transition: transform 0.3s;
+}
+/*
+.skip-link {
     left: -9999rem;
     top: 2.5rem;
     z-index: 999999999;
@@ -29,7 +54,6 @@ body {
     display: block;
     left: 6px;
     top: 7px;
-    /*font-size: 14px;*/
     font-weight: 600;
     text-decoration: none;
     line-height: normal;
@@ -37,10 +61,6 @@ body {
     z-index: 100000;
     right: auto;
     background-color: yellow;
-    /*
-    border-radius: 3px;
-    box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
-    */
     clip: auto !important;
     -webkit-clip-path: none;
     clip-path: none;
@@ -48,6 +68,7 @@ body {
     height: auto;
     width: auto;
 }
+*/
 
 .nodisplay {
     display: none;
@@ -209,9 +230,8 @@ code {
 }
 
 main > div.main-content, div.footer-area, header.masthead div.header-area {
-    max-width: 75rem;
-    /*width: calc(100% - 6rem);*/
-    margin: 0 auto; 
+    max-inline-size: 75rem;
+    margin-inline: auto; 
 }
 
 main > article {
