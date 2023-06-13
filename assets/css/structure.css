@@ -192,6 +192,10 @@ article ul li::before, ul.postlist li:before {
     padding-right: 0.5em;    
 }
 
+article ul.taglist li::before {
+    content: none;
+}
+
 ul.taglist {
     list-style-type: none;
 }
@@ -243,6 +247,15 @@ main article h1 {
     font-size: 1.5em;
     text-align: center;
     margin:auto;
+}
+
+details summary {
+    text-decoration: underline;
+    inline-size: max-content;
+}
+
+details summary:hover {
+    cursor: pointer;
 }
 
 table {
