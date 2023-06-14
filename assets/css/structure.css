@@ -1,3 +1,13 @@
+/*
+I have four style sheets for the site
+1. fonts.css        - loads the font face
+2. structure.css    - defining the layout and structure of the site
+3. style.css        - defining the design of the site, such as colours, fonts and so on
+                    - overridden by the theme as needed
+4. default.css      - the default theme css. Replaced by other theme css files using the theme picker
+                    - default theme only contains the dark / light mode settings
+*/
+
 html {
     /*See: https://www.sitepoint.com/understanding-and-using-rem-units-in-css/*/
     font-size: 62.5%;
@@ -81,19 +91,15 @@ p {
 header.masthead {
     margin:0;
     padding:0;
-    /*width:100%;*/
-    /*margin-bottom: 10px;*/
 }
 
 header p#themeSwitch {
     width:100%;
     text-align: right;
-    /*padding-bottom: 10px*/;
 }
 
 header p#themeSwitch form {
     display: inline;
-    /*padding-bottom: 10px*/;
 }
 
 header div.header-area {
@@ -173,7 +179,6 @@ main {
     clear: both;
     line-height: 1.6;
     font-size: 1.8em;
-    /*margin-bottom: 30px;*/
 }
 
 article ul, ul.postlist {
@@ -247,15 +252,6 @@ main article h1 {
     font-size: 1.5em;
     text-align: center;
     margin:auto;
-}
-
-details summary {
-    text-decoration: underline;
-    inline-size: max-content;
-}
-
-details summary:hover {
-    cursor: pointer;
 }
 
 table {

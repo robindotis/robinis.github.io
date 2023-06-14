@@ -1,3 +1,13 @@
+/*
+I have four style sheets for the site
+1. fonts.css        - loads the font face
+2. structure.css    - defining the layout and structure of the site
+3. style.css        - defining the design of the site, such as colours, fonts and so on
+                    - overridden by the theme as needed
+4. default.css      - the default theme css. Replaced by other theme css files using the theme picker
+                    - default theme only contains the dark / light mode settings
+*/
+
 body {
     font-family: 'Mona Sans', sans-serif, serif;
     background-color: var(--body-bg-color);
@@ -100,6 +110,15 @@ article nav a, article nav a:visited {
     font-weight: normal;
     /*padding:0 2px;*/
 }   
+
+details summary {
+    text-decoration: underline;
+    inline-size: max-content;
+}
+
+details summary:hover {
+    cursor: pointer;
+}
 
 div.posts-list nav a {
     color: var(--postlist-navtext-color);
