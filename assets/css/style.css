@@ -42,7 +42,7 @@ header.masthead {
     background-color: var(--header-bg-color);
 }
 
-header.masthead p#themeSwitch select {
+header.masthead p#themeSwitch select:focus {
   background-color: var(--link-focus-bg-color)!important;
 }
 
