@@ -42,6 +42,10 @@ header.masthead {
     background-color: var(--header-bg-color);
 }
 
+header.masthead p#themeSwitch select {
+  background-color: var(--link-focus-bg-color)!important;
+}
+
 header #themeSwitch span {
     color: var(--header-title-color);
     font-size: 1.2rem;
