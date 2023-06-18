@@ -415,12 +415,17 @@
                     countOral++;
                     document.getElementById("optionO3"+countOral+"Label").innerText = textO3;
 
-                    textO3 = "Biology 2";                    
+                    textO3 = "";                    
                     if(document.getElementById("BIO4").checked) {
                         textO3 = "Biology 4";
                     }
-                    countOral++;
-                    document.getElementById("optionO3"+countOral+"Label").innerText = textO3;
+                    else if (document.getElementById("BIO4").checked) {
+                        textO3 = "Biology 2";                    
+                    }
+                    if(textO3.length > 0) {
+                        countOral++;
+                        document.getElementById("optionO3"+countOral+"Label").innerText = textO3;
+                    }
 
                     //if chemistry chosen as subject and only two subjects available as written exams
                     //one of them must be chemistry, so can't choose as oral
@@ -492,14 +497,279 @@
             }
 
             function processGradeGrid(){
-                //Language 1 is fixed, unless advanced
-                if(document.querySelector("input[type='radio'][name=rate]:checked").id == "AL1") {
-
+                
+                //Initialise
+                document.getElementById("SubAdv").firstElementChild.innerText = "Advanced";
+                document.getElementById("SubAdv").style.display = "";
+                for(let element of document.getElementById("gradegrid").elements){
+                    if(element.id.toString().slice(-2) == "Wr" || element.id.toString().slice(-2) == "Or" ) {
+                        element.disabled = true;
+                    }
+                }
+                for(i = 1;i<6;i++){
+                    document.getElementById("SubOT" + i).style.display = "";
                 }
 
-                //Language 2 remove oral if not chosen
+                //Language 1
+                // - is fixed, unless advanced
+                document.getElementById("L1Wr").disabled = false;
+                document.getElementById("L1Or").disabled = false;
+                if(document.querySelector("input[type='radio'][name='ADV']:checked").id == "AL1") {
+                    document.getElementById("L1Wr").disabled = true;
+                    document.getElementById("L1Or").disabled = true;
 
+                    document.getElementById("SubAdv").firstElementChild.innerText = "Advanced L1";
+                    document.getElementById("AVWr").disabled = false;
+                    document.getElementById("AVOr").disabled = false;
+                }
 
+                //Language 2
+                const L2OralId = document.querySelector("input[type='radio'][name='SUB_L2']:checked").id;
+                const L2OralLabel = document.querySelector("label[for='" + L2OralId + "']").innerText;
+                document.getElementById("L2Wr").disabled = false;
+                document.getElementById("L2Or").disabled = true;
+                if(document.querySelector("input[type='radio'][name='ADV']:checked").id == "AL2") {
+                    document.getElementById("L2Wr").disabled = true;
+
+                    document.getElementById("SubAdv").firstElementChild.innerText = "Advanced L2";
+                    document.getElementById("AVWr").disabled = true;
+                }
+                if(L2OralLabel.startsWith("Advanced")){
+                        document.getElementById("L2Or").disabled = true;
+                        document.getElementById("AVOr").disabled = false;
+                }
+                else if(L2OralLabel.startsWith("Language")){
+                        document.getElementById("L2Or").disabled = false;
+                        document.getElementById("AVOr").disabled = true;
+                }
+
+                //Must do maths written
+                document.getElementById("MAWr").disabled = false;
+                if(document.querySelector("input[type='radio'][name='MAT']:checked").value == "5"){
+                    document.getElementById("SubMa").firstElementChild.innerText = "Maths 5";
+                }
+
+                //Advanced Maths chosen - must do as Oral
+                if(document.querySelector("input[type='radio'][name='ADV']:checked").id == "AMA") {
+                    document.getElementById("SubAdv").firstElementChild.innerText = "Advanced Maths";
+                    //force Advanced maths oral
+                    document.getElementById("AVWr").disabled = true;
+                    document.getElementById("AVOr").disabled = false;
+                }
+
+                //if no advanced subject, hide that row
+                if(document.getElementById("SubAdv").firstElementChild.innerText == "Advanced") {
+                    document.getElementById("SubAdv").style.display = "none";
+                }
+
+                //Create array of remaining 2 written exams
+                const WrittenChoices = document.querySelectorAll("input[type='checkbox'][id^='optionW']:checked");
+                const aWrittenSubjects = [];
+                for(const checkbox of WrittenChoices){
+                    aWrittenSubjects.push(document.querySelector("label[for='" + checkbox.id + "']").innerText)
+                   }
+                //alert(aChoiceLabels.length);
+
+                //Biology
+                if(document.getElementById("BIO4").checked) {
+                    document.getElementById("SubBio").firstElementChild.innerText = "Biology 4";
+                }
+                else {
+                    document.getElementById("SubBio").firstElementChild.innerText = "Biology 2";
+                }
+                if(!(document.getElementById("BIO4").checked || document.getElementById("BIO2").checked)) {
+                    document.getElementById("SubBio").style.display = "none";
+                }
+                else {
+                    document.getElementById("SubBio").style.display = "";
+                }
+
+                if (aWrittenSubjects.filter(s => s.includes("Biology")).length > 0){
+                    //Bio chosen as written
+                    document.getElementById("BIWr").disabled = false;
+                }
+                else {
+                    document.getElementById("BIWr").disabled = true;
+                }
+
+                const Sub3OralId = document.querySelector("input[type='radio'][name='OR_3']:checked").id;
+                const Sub3OralLabel = document.querySelector("label[for='" + Sub3OralId + "']").innerText;
+                if (Sub3OralLabel.startsWith("Biology")){
+                    //Bio chosen as Oral
+                    document.getElementById("BIOr").disabled = false;
+                }
+                else {
+                    document.getElementById("BIOr").disabled = true;
+                }
+
+                //History
+                if(document.getElementById("HIS4").checked) {
+                    document.getElementById("SubHis").firstElementChild.innerText = "History 4";
+                }
+                else {
+                    document.getElementById("SubHis").firstElementChild.innerText = "History 2";
+                }
+                if(L2OralLabel.startsWith("History")) {
+                    document.getElementById("HIOr").disabled = false;
+                }
+                if (aWrittenSubjects.filter(s => s.includes("History")).length > 0){
+                    document.getElementById("HIWr").disabled = false;
+                }
+
+                //Geography
+                if(document.getElementById("GEO4").checked) {
+                    document.getElementById("SubGeo").firstElementChild.innerText = "Geography 4";
+                }
+                else {
+                    document.getElementById("SubGeo").firstElementChild.innerText = "Geography 2";
+                }
+                if(L2OralLabel.startsWith("Geography")) {
+                    document.getElementById("GEOr").disabled = false;
+                }
+                if (aWrittenSubjects.filter(s => s.includes("Geography")).length > 0){
+                    document.getElementById("GEWr").disabled = false;
+                }
+                
+                //Philosophy
+                if(document.getElementById("PHI4").checked) {
+                    document.getElementById("SubPhi").firstElementChild.innerText = "Philosophy 4";
+                }
+                else {
+                    document.getElementById("SubPhi").firstElementChild.innerText = "Philosophy 2";
+                }
+                if(Sub3OralLabel.startsWith("Philosophy")) {
+                    document.getElementById("PHOr").disabled = false;
+                }
+                if (aWrittenSubjects.filter(s => s.includes("Philosophy")).length > 0){
+                    document.getElementById("PHWr").disabled = false;
+                }
+
+                //Process remaining optional subjects
+                //Create array of optional subjects
+                const aRemainingOptional = ["CHE","PHY","ART","MUS","L3","L4","ECO","LAT"];
+                const aRemainingComplementary = ["ARC","CLS","MSC","DRA","SUS","ICT","ECI","PSC","SOC","SPO","TDR","L5C","L5D","L5G","L5S","L5L","LABBIO4","LABCHE","LABPHY"];
+
+                const OptionalSubjects = document.querySelectorAll("div[id='optional'] input:checked");
+                const aRemOptSubjs = [];
+                for(const subj of OptionalSubjects){
+                    if(aRemainingOptional.includes(subj.id)){
+                        aRemOptSubjs.push(document.querySelector("label[for='" + subj.id + "']").innerText);
+                    }
+                }
+
+                var OptCount = 0;
+                for(const s of aRemOptSubjs){
+                    OptCount++;
+                    document.getElementById("SubOT" + OptCount).firstElementChild.innerText = s;
+                    if (aWrittenSubjects.includes(s)){
+                        document.getElementById("OT" + OptCount + "Wr").disabled = false;
+                    }
+                    else {
+                        document.getElementById("OT" + OptCount + "Wr").disabled = true;
+                    }
+
+                    if (Sub3OralLabel == s){
+                        document.getElementById("OT" + OptCount + "Or").disabled = false;
+                    }
+                    else {
+                        document.getElementById("OT" + OptCount + "Or").disabled = true;
+                    }
+
+                }
+                
+                //Process complementary subjects
+                const ComplementarySubjects = document.querySelectorAll("div[id='complementary'] input:checked");
+                const aRemComplSubjs = [];
+                for(const subj of ComplementarySubjects){
+                    if(aRemainingComplementary.includes(subj.id)){
+                        aRemComplSubjs.push(document.querySelector("label[for='" + subj.id + "']").innerText);
+                    }
+                }
+
+                for(var s of aRemComplSubjs){
+                    OptCount++;
+                    if(s == "Biology" || s == "Chemistry" || s == "Physics") {
+                        s = "Lab " + s;
+                    }
+                    document.getElementById("SubOT" + OptCount).firstElementChild.innerText = s;
+                    if (Sub3OralLabel == s){
+                        document.getElementById("OT" + OptCount + "Wr").disabled = false;
+                    }
+                    else {
+                        document.getElementById("OT" + OptCount + "Wr").disabled = true;
+                    }
+                }
+
+                //remove remaining other rows
+                for(i = OptCount+1;i<6;i++){
+                    document.getElementById("SubOT" + i).style.display = "none";
+                }
+            }
+
+            function calculateGrades() {
+                //Have to do the calculations
+                const subjs = document.querySelectorAll("#gradegrid tbody tr");
+                let OverallPrelim = 0;
+                let OverallWritten = 0;
+                let OverallOral = 0;
+                let OverallFinal = 0;
+                let count = 0;
+                for(const subj of subjs) {
+                    if(subj.style.display == ""){
+                        count++;
+                        //work out A mark
+                        const inputs = subj.querySelectorAll("input");
+                        inputs[2].value = (Number(inputs[0].value) + Number(inputs[1].value))/2;    
+
+                        //work out B mark average
+                        var B2 = Number(inputs[4].value);
+                        if(B2 == 0) {
+                            B2 = Number(inputs[3].value);
+                        }
+                        inputs[5].value = (Number(inputs[3].value) + B2)/2;    
+
+                        //work out Prelim score
+                        inputs[6].value = ((0.4*Number(inputs[2].value) + 0.6*Number(inputs[5].value))).toFixed(2); 
+                        
+                        //work out subject scores
+                        let SubPrelim = Number(inputs[6].value)
+                        let SubWritten = Number(inputs[7].value);
+                        let SubOral = Number(inputs[8].value);
+                        let SubFinal = 0;
+                        OverallPrelim = OverallPrelim + SubPrelim;
+                        if(!(inputs[7].disabled) && !(inputs[8].disabled)) {
+                            //Written and Oral
+                            OverallWritten = OverallWritten + SubWritten;
+                            OverallOral = OverallOral + SubOral;
+                            SubFinal = (0.5*SubPrelim + 0.35*SubWritten + 0.15*SubOral);
+                        }
+                        else if (!inputs[7].disabled) {
+                            //Written only
+                            OverallWritten = OverallWritten + SubWritten;
+                            SubFinal = (0.5*SubPrelim + 0.35*SubWritten)/0.85;
+                        }
+                        else if (!inputs[8].disabled) {
+                            //Oral onlyu
+                            OverallOral = OverallOral + SubOral;
+                            SubFinal = (0.5*SubPrelim + 0.65*SubOral)/0.65;
+                        }
+                        else {
+                            SubFinal = SubPrelim;
+                        }
+                        inputs[9].value = SubFinal.toFixed(2);                        
+                    }
+                }
+                //work out overall scores
+                OverallPrelim = (OverallPrelim / count).toFixed(2);
+                OverallWritten = (OverallWritten / 5).toFixed(2);
+                OverallOral = (OverallOral / 5).toFixed(2);
+                OverallFinal = (0.5*OverallPrelim + 0.35*OverallWritten + 0.15*OverallOral).toFixed(2);
+
+                document.getElementById("OverallPre").value = OverallPrelim;
+                document.getElementById("OverallWr").value = OverallWritten;
+                document.getElementById("OverallOr").value = OverallOral;
+                document.getElementById("OverallFin").value = OverallFinal;
+                
             }
 
 
@@ -526,6 +796,14 @@
                         localStorage.setItem(element.id, element.value);
                     }
                 }
+                const formGrid = document.getElementById('gradegrid');
+                for (const element of formGrid.elements) {
+                    if(element.type == "number") {
+                        //alert(element.id);
+                        //alert(localStorage.getItem(element.id));
+                        localStorage.setItem(element.id, element.value);
+                    }
+                }
                 alert("Form saved successfully.");
             }
 
@@ -543,7 +821,7 @@
                         }
                     }
                 }
-                updateTotals();
+                updateTotals(); 
                 const formExam = document.getElementById('examchoices');
                 for (const element of formExam.elements) {
                     //check item exists in localstorage before setting
@@ -557,6 +835,18 @@
                         }
                     }
                 }
+
+                processGradeGrid();
+                const formGrid = document.getElementById('gradegrid');
+                for (const element of formGrid.elements) {
+                    //check item exists in localstorage before setting
+                    if(!(localStorage.getItem(element.id) === null)){
+                        if(element.type == "number") {
+                            element.value = localStorage.getItem(element.id);
+                        }
+                    }
+                }
+                calculateGrades();
                 //alert("Form retrieved successfully.");
             }
 
@@ -762,6 +1052,10 @@
                 padding-left: 0.6rem;
             }
 
+            #gradegrid input:read-only {
+                background-color: #ccc;
+            }
+
 </style>
     </head>
     <body>
@@ -800,7 +1094,7 @@
             </div>
         <h2 id="grid">Subject Grid</h2>
         <form id="choices" class="columns">
-            <div>
+            <div id="compulsory">
                 <h3>Compulsory subjects</h3>
                 <p>
                     <input type="checkbox" checked disabled id="L1" value="4"><label for="L1">Language 1</label>
@@ -862,7 +1156,7 @@
                     </div>
                 </div>
         </div>
-            <div>
+            <div id="optional">
                 <h3>Optional subjects</h3>
                 <p>
                     <input type="checkbox" id="HIS4" value="4">
@@ -937,7 +1231,7 @@
                         <input type="text" value="0" readonly disabled size="1" id="ADV_X">
                 </fieldset>
             </div>
-            <div>
+            <div id="complementary">
                 <h3>Complementary subjects</h3>
                 <p>
                     <input type="checkbox" id="ARC" value="2">
@@ -1108,7 +1402,7 @@
             <h2 id="calc">Bac Mark Calculator</h2>
             <!-- https://adrianroselli.com/2019/05/uniquely-labeling-fields-in-a-table.html -->
             <p>Note: Ethics/Religion does not count towards the Bac score, so is not listed here.</p>
-            <button onClick="processGradeGrid()">Update grid</button>
+            <button onClick="processGradeGrid();">Update grid</button>
             <form id="gradegrid">
                 <table>
                     <thead>
@@ -1127,464 +1421,532 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <tr>
-                            <th scope="row" id="Sub01">
+                        <tr id="SubL1">
+                            <th scope="row" id="LabSubL1">
                                 Language 1
                             </th>
                             <td>
-                                <input type="number" min="0" max="10" id="L1A1" aria-labelledby="Sub01 ColA1">
+                                <input type="number" min="0" max="10" id="L1A1" aria-labelledby="LabSubL1 ColA1">
                             </td>
                             <td>
-                                <input type="number" min="0" max="10" id="L1A2" aria-labelledby="Sub01 ColA2">
+                                <input type="number" min="0" max="10" id="L1A2" aria-labelledby="LabSubL1 ColA2">
                             </td>
                             <td>
-                                <input type="number" min="0" max="10" id="L1A" readonly aria-labelledby="Sub01 ColA">
+                                <input type="number" min="0" max="10" id="L1A" readonly aria-labelledby="LabSubL1 ColA">
                             </td>
                             <td>
-                                <input type="number" min="0" max="10" id="L1B1" aria-labelledby="Sub01 ColB1">
+                                <input type="number" min="0" max="10" id="L1B1" aria-labelledby="LabSubL1 ColB1">
                             </td>
                             <td>
-                                <input type="number" min="0" max="10" id="L1B2" aria-labelledby="Sub01 ColB2">
+                                <input type="number" min="0" max="10" id="L1B2" aria-labelledby="LabSubL1 ColB2">
                             </td>
                             <td>
-                                <input type="number" min="0" max="10" id="L1B" readonly aria-labelledby="Sub01 ColB">
+                                <input type="number" min="0" max="10" id="L1B" readonly aria-labelledby="LabSubL1 ColB">
                             </td>
                             <td>
-                                <input type="number" min="0" max="10" id="L1Pre" readonly aria-labelledby="Sub01 ColPre">
+                                <input type="number" min="0" max="10" id="L1Pre" readonly aria-labelledby="LabSubL1 ColPre">
                             </td>
                             <td>
-                                <input type="number" min="0" max="10" id="L1Wr" aria-labelledby="Sub01 ColWr">
+                                <input type="number" min="0" max="10" id="L1Wr" aria-labelledby="LabSubL1 ColWr">
                             </td>
                             <td>
-                                <input type="number" min="0" max="10" id="L1Or" aria-labelledby="Sub01 ColOr">
+                                <input type="number" min="0" max="10" id="L1Or" aria-labelledby="LabSubL1 ColOr">
                             </td>
                             <td>
-                                <input type="number" min="0" max="10" id="L1Fin" readonly aria-labelledby="Sub01 ColFinal">
+                                <input type="number" min="0" max="10" id="L1Fin" readonly aria-labelledby="LabSubL1 ColFinal">
                             </td>
                         </tr>
-                        <tr>
-                            <th scope="row" id="Sub01">
+                        <tr id="SubL2">
+                            <th scope="row" id="LabSubL2">
                                 Language 2
                             </th>
                             <td>
-                                <input type="number" min="0" max="10" id="L2A1" aria-labelledby="Sub01 ColA1">
+                                <input type="number" min="0" max="10" id="L2A1" aria-labelledby="LabSubL2 ColA1">
                             </td>
                             <td>
-                                <input type="number" min="0" max="10" id="L2A2" aria-labelledby="Sub01 ColA2">
+                                <input type="number" min="0" max="10" id="L2A2" aria-labelledby="LabSubL2 ColA2">
                             </td>
                             <td>
-                                <input type="number" min="0" max="10" id="L2A" readonly aria-labelledby="Sub01 ColA">
+                                <input type="number" min="0" max="10" id="L2A" readonly aria-labelledby="LabSubL2 ColA">
                             </td>
                             <td>
-                                <input type="number" min="0" max="10" id="L2B1" aria-labelledby="Sub01 ColB1">
+                                <input type="number" min="0" max="10" id="L2B1" aria-labelledby="LabSubL2 ColB1">
                             </td>
                             <td>
-                                <input type="number" min="0" max="10" id="L2B2" aria-labelledby="Sub01 ColB2">
+                                <input type="number" min="0" max="10" id="L2B2" aria-labelledby="LabSubL2 ColB2">
                             </td>
                             <td>
-                                <input type="number" min="0" max="10" id="L2B" readonly aria-labelledby="Sub01 ColB">
+                                <input type="number" min="0" max="10" id="L2B" readonly aria-labelledby="LabSubL2 ColB">
                             </td>
                             <td>
-                                <input type="number" min="0" max="10" id="L2Pre" readonly aria-labelledby="Sub01 ColPre">
+                                <input type="number" min="0" max="10" id="L2Pre" readonly aria-labelledby="LabSubL2 ColPre">
                             </td>
                             <td>
-                                <input type="number" min="0" max="10" id="L2Wr" aria-labelledby="Sub01 ColWr">
+                                <input type="number" min="0" max="10" id="L2Wr" aria-labelledby="LabSubL2 ColWr">
                             </td>
                             <td>
-                                <input type="number" min="0" max="10" id="L2Or" aria-labelledby="Sub01 ColOr">
+                                <input type="number" min="0" max="10" id="L2Or" aria-labelledby="LabSubL2 ColOr">
                             </td>
                             <td>
-                                <input type="number" min="0" max="10" id="L2Fin" readonly aria-labelledby="Sub01 ColFinal">
+                                <input type="number" min="0" max="10" id="L2Fin" readonly aria-labelledby="LabSubL2 ColFinal">
                             </td>
                         </tr>
-                        <tr>
-                            <th scope="row" id="Sub01">
+                        <tr id="SubMa">
+                            <th scope="row" id="LabSubMA">
                                 Maths 3
                             </th>
                             <td>
-                                <input type="number" min="0" max="10" id="MAA1" aria-labelledby="Sub01 ColA1">
+                                <input type="number" min="0" max="10" id="MAA1" aria-labelledby="LabSubMA ColA1">
                             </td>
                             <td>
-                                <input type="number" min="0" max="10" id="MAA2" aria-labelledby="Sub01 ColA2">
+                                <input type="number" min="0" max="10" id="MAA2" aria-labelledby="LabSubMA ColA2">
                             </td>
                             <td>
-                                <input type="number" min="0" max="10" id="MAA" readonly aria-labelledby="Sub01 ColA">
+                                <input type="number" min="0" max="10" id="MAA" readonly aria-labelledby="LabSubMA ColA">
                             </td>
                             <td>
-                                <input type="number" min="0" max="10" id="MAB1" aria-labelledby="Sub01 ColB1">
+                                <input type="number" min="0" max="10" id="MAB1" aria-labelledby="LabSubMA ColB1">
                             </td>
                             <td>
-                                <input type="number" min="0" max="10" id="MAB2" aria-labelledby="Sub01 ColB2">
+                                <input type="number" min="0" max="10" id="MAB2" aria-labelledby="LabSubMA ColB2">
                             </td>
                             <td>
-                                <input type="number" min="0" max="10" id="MAB" readonly aria-labelledby="Sub01 ColB">
+                                <input type="number" min="0" max="10" id="MAB" readonly aria-labelledby="LabSubMA ColB">
                             </td>
                             <td>
-                                <input type="number" min="0" max="10" id="MAPre" readonly aria-labelledby="Sub01 ColPre">
+                                <input type="number" min="0" max="10" id="MAPre" readonly aria-labelledby="LabSubMA ColPre">
                             </td>
                             <td>
-                                <input type="number" min="0" max="10" id="MAWr" aria-labelledby="Sub01 ColWr">
+                                <input type="number" min="0" max="10" id="MAWr" aria-labelledby="LabSubMA ColWr">
                             </td>
                             <td>
-                                <input type="number" min="0" max="10" id="MAOr" aria-labelledby="Sub01 ColOr">
+                                <input type="number" min="0" max="10" id="MAOr" aria-labelledby="LabSubMA ColOr">
                             </td>
                             <td>
-                                <input type="number" min="0" max="10" id="MAFin" readonly aria-labelledby="Sub01 ColFinal">
+                                <input type="number" min="0" max="10" id="MAFin" readonly aria-labelledby="LabSubMA ColFinal">
                             </td>
                         </tr>
-                        <tr>
-                            <th scope="row" id="Sub01">
+                        <tr id="SubBio">
+                            <th scope="row" id="LabSubBio">
                                 Biology 2
                             </th>
                             <td>
-                                <input type="number" min="0" max="10" id="BIA1" aria-labelledby="Sub01 ColA1">
+                                <input type="number" min="0" max="10" id="BIA1" aria-labelledby="LabSubBio ColA1">
                             </td>
                             <td>
-                                <input type="number" min="0" max="10" id="BIA2" aria-labelledby="Sub01 ColA2">
+                                <input type="number" min="0" max="10" id="BIA2" aria-labelledby="LabSubBio ColA2">
                             </td>
                             <td>
-                                <input type="number" min="0" max="10" id="BIA" readonly aria-labelledby="Sub01 ColA">
+                                <input type="number" min="0" max="10" id="BIA" readonly aria-labelledby="LabSubBio ColA">
                             </td>
                             <td>
-                                <input type="number" min="0" max="10" id="BIB1" aria-labelledby="Sub01 ColB1">
+                                <input type="number" min="0" max="10" id="BIB1" aria-labelledby="LabSubBio ColB1">
                             </td>
                             <td>
-                                <input type="number" min="0" max="10" id="BIB2" aria-labelledby="Sub01 ColB2">
+                                <input type="number" min="0" max="10" id="BIB2" aria-labelledby="LabSubBio ColB2">
                             </td>
                             <td>
-                                <input type="number" min="0" max="10" id="BIB" readonly aria-labelledby="Sub01 ColB">
+                                <input type="number" min="0" max="10" id="BIB" readonly aria-labelledby="LabSubBio ColB">
                             </td>
                             <td>
-                                <input type="number" min="0" max="10" id="BIPre" readonly aria-labelledby="Sub01 ColPre">
+                                <input type="number" min="0" max="10" id="BIPre" readonly aria-labelledby="LabSubBio ColPre">
                             </td>
                             <td>
-                                <input type="number" min="0" max="10" id="BIWr" aria-labelledby="Sub01 ColWr">
+                                <input type="number" min="0" max="10" id="BIWr" aria-labelledby="LabSubBio ColWr">
                             </td>
                             <td>
-                                <input type="number" min="0" max="10" id="BIOr" aria-labelledby="Sub01 ColOr">
+                                <input type="number" min="0" max="10" id="BIOr" aria-labelledby="LabSubBio ColOr">
                             </td>
                             <td>
-                                <input type="number" min="0" max="10" id="BIFin" readonly aria-labelledby="Sub01 ColFinal">
+                                <input type="number" min="0" max="10" id="BIFin" readonly aria-labelledby="LabSubBio ColFinal">
                             </td>
                         </tr>
-                        <tr>
-                            <th scope="row" id="Sub01">
+                        <tr id="SubHis">
+                            <th scope="row" id="LabSubHis">
                                 History 2
                             </th>
                             <td>
-                                <input type="number" min="0" max="10" id="HIA1" aria-labelledby="Sub01 ColA1">
+                                <input type="number" min="0" max="10" id="HIA1" aria-labelledby="LabSubHis ColA1">
                             </td>
                             <td>
-                                <input type="number" min="0" max="10" id="HIA2" aria-labelledby="Sub01 ColA2">
+                                <input type="number" min="0" max="10" id="HIA2" aria-labelledby="LabSubHis ColA2">
                             </td>
                             <td>
-                                <input type="number" min="0" max="10" id="HIA" readonly aria-labelledby="Sub01 ColA">
+                                <input type="number" min="0" max="10" id="HIA" readonly aria-labelledby="LabSubHis ColA">
                             </td>
                             <td>
-                                <input type="number" min="0" max="10" id="HIB1" aria-labelledby="Sub01 ColB1">
+                                <input type="number" min="0" max="10" id="HIB1" aria-labelledby="LabSubHis ColB1">
                             </td>
                             <td>
-                                <input type="number" min="0" max="10" id="HIB2" aria-labelledby="Sub01 ColB2">
+                                <input type="number" min="0" max="10" id="HIB2" aria-labelledby="LabSubHis ColB2">
                             </td>
                             <td>
-                                <input type="number" min="0" max="10" id="HIB" readonly aria-labelledby="Sub01 ColB">
+                                <input type="number" min="0" max="10" id="HIB" readonly aria-labelledby="LabSubHis ColB">
                             </td>
                             <td>
-                                <input type="number" min="0" max="10" id="HIPre" readonly aria-labelledby="Sub01 ColPre">
+                                <input type="number" min="0" max="10" id="HIPre" readonly aria-labelledby="LabSubHis ColPre">
                             </td>
                             <td>
-                                <input type="number" min="0" max="10" id="HIWr" aria-labelledby="Sub01 ColWr">
+                                <input type="number" min="0" max="10" id="HIWr" aria-labelledby="LabSubHis ColWr">
                             </td>
                             <td>
-                                <input type="number" min="0" max="10" id="HIOr" aria-labelledby="Sub01 ColOr">
+                                <input type="number" min="0" max="10" id="HIOr" aria-labelledby="LabSubHis ColOr">
                             </td>
                             <td>
-                                <input type="number" min="0" max="10" id="HIFin" readonly aria-labelledby="Sub01 ColFinal">
+                                <input type="number" min="0" max="10" id="HIFin" readonly aria-labelledby="LabSubHis ColFinal">
                             </td>
                         </tr>
-                        <tr>
-                            <th scope="row" id="Sub01">
+                        <tr id="SubGeo">
+                            <th scope="row" id="LabSubGeo">
                                 Geography 2
                             </th>
                             <td>
-                                <input type="number" min="0" max="10" id="GEA1" aria-labelledby="Sub01 ColA1">
+                                <input type="number" min="0" max="10" id="GEA1" aria-labelledby="LabSubGeo ColA1">
                             </td>
                             <td>
-                                <input type="number" min="0" max="10" id="GEA2" aria-labelledby="Sub01 ColA2">
+                                <input type="number" min="0" max="10" id="GEA2" aria-labelledby="LabSubGeo ColA2">
                             </td>
                             <td>
-                                <input type="number" min="0" max="10" id="GEA" readonly aria-labelledby="Sub01 ColA">
+                                <input type="number" min="0" max="10" id="GEA" readonly aria-labelledby="LabSubGeo ColA">
                             </td>
                             <td>
-                                <input type="number" min="0" max="10" id="GEB1" aria-labelledby="Sub01 ColB1">
+                                <input type="number" min="0" max="10" id="GEB1" aria-labelledby="LabSubGeo ColB1">
                             </td>
                             <td>
-                                <input type="number" min="0" max="10" id="GEB2" aria-labelledby="Sub01 ColB2">
+                                <input type="number" min="0" max="10" id="GEB2" aria-labelledby="LabSubGeo ColB2">
                             </td>
                             <td>
-                                <input type="number" min="0" max="10" id="GEB" readonly aria-labelledby="Sub01 ColB">
+                                <input type="number" min="0" max="10" id="GEB" readonly aria-labelledby="LabSubGeo ColB">
                             </td>
                             <td>
-                                <input type="number" min="0" max="10" id="GEPre" readonly aria-labelledby="Sub01 ColPre">
+                                <input type="number" min="0" max="10" id="GEPre" readonly aria-labelledby="LabSubGeo ColPre">
                             </td>
                             <td>
-                                <input type="number" min="0" max="10" id="GEWr" aria-labelledby="Sub01 ColWr">
+                                <input type="number" min="0" max="10" id="GEWr" aria-labelledby="LabSubGeo ColWr">
                             </td>
                             <td>
-                                <input type="number" min="0" max="10" id="GEOr" aria-labelledby="Sub01 ColOr">
+                                <input type="number" min="0" max="10" id="GEOr" aria-labelledby="LabSubGeo ColOr">
                             </td>
                             <td>
-                                <input type="number" min="0" max="10" id="GEFin" readonly aria-labelledby="Sub01 ColFinal">
+                                <input type="number" min="0" max="10" id="GEFin" readonly aria-labelledby="LabSubGeo ColFinal">
                             </td>
                         </tr>
-                        <tr>
-                            <th scope="row" id="Sub01">
+                        <tr id="SubPhi">
+                            <th scope="row" id="LabSubPhi">
                                 Philosophy 2
                             </th>
                             <td>
-                                <input type="number" min="0" max="10" id="PHA1" aria-labelledby="Sub01 ColA1">
+                                <input type="number" min="0" max="10" id="PHA1" aria-labelledby="LabSubPhi ColA1">
                             </td>
                             <td>
-                                <input type="number" min="0" max="10" id="PHA2" aria-labelledby="Sub01 ColA2">
+                                <input type="number" min="0" max="10" id="PHA2" aria-labelledby="LabSubPhi ColA2">
                             </td>
                             <td>
-                                <input type="number" min="0" max="10" id="PHA" readonly aria-labelledby="Sub01 ColA">
+                                <input type="number" min="0" max="10" id="PHA" readonly aria-labelledby="LabSubPhi ColA">
                             </td>
                             <td>
-                                <input type="number" min="0" max="10" id="PHB1" aria-labelledby="Sub01 ColB1">
+                                <input type="number" min="0" max="10" id="PHB1" aria-labelledby="LabSubPhi ColB1">
                             </td>
                             <td>
-                                <input type="number" min="0" max="10" id="PHB2" aria-labelledby="Sub01 ColB2">
+                                <input type="number" min="0" max="10" id="PHB2" aria-labelledby="LabSubPhi ColB2">
                             </td>
                             <td>
-                                <input type="number" min="0" max="10" id="PHB" readonly aria-labelledby="Sub01 ColB">
+                                <input type="number" min="0" max="10" id="PHB" readonly aria-labelledby="LabSubPhi ColB">
                             </td>
                             <td>
-                                <input type="number" min="0" max="10" id="PHPre" readonly aria-labelledby="Sub01 ColPre">
+                                <input type="number" min="0" max="10" id="PHPre" readonly aria-labelledby="LabSubPhi ColPre">
                             </td>
                             <td>
-                                <input type="number" min="0" max="10" id="PHWr" aria-labelledby="Sub01 ColWr">
+                                <input type="number" min="0" max="10" id="PHWr" aria-labelledby="LabSubPhi ColWr">
                             </td>
                             <td>
-                                <input type="number" min="0" max="10" id="PHOr" aria-labelledby="Sub01 ColOr">
+                                <input type="number" min="0" max="10" id="PHOr" aria-labelledby="LabSubPhi ColOr">
                             </td>
                             <td>
-                                <input type="number" min="0" max="10" id="PHFin" readonly aria-labelledby="Sub01 ColFinal">
+                                <input type="number" min="0" max="10" id="PHFin" readonly aria-labelledby="LabSubPhi ColFinal">
                             </td>
                         </tr>
-                        <tr>
-                            <th scope="row" id="Sub01">
+                        <tr id="SubPE">
+                            <th scope="row" id="LabSubPE">
                                 Physical Education
                             </th>
                             <td>
-                                <input type="number" min="0" max="10" id="PEA1" aria-labelledby="Sub01 ColA1">
+                                <input type="number" min="0" max="10" id="PEA1" aria-labelledby="LabSubPE ColA1">
                             </td>
                             <td>
-                                <input type="number" min="0" max="10" id="PEA2" aria-labelledby="Sub01 ColA2">
+                                <input type="number" min="0" max="10" id="PEA2" aria-labelledby="LabSubPE ColA2">
                             </td>
                             <td>
-                                <input type="number" min="0" max="10" id="PEA" readonly aria-labelledby="Sub01 ColA">
+                                <input type="number" min="0" max="10" id="PEA" readonly aria-labelledby="LabSubPE ColA">
                             </td>
                             <td>
-                                <input type="number" min="0" max="10" id="PEB1" aria-labelledby="Sub01 ColB1">
+                                <input type="number" min="0" max="10" id="PEB1" aria-labelledby="LabSubPE ColB1">
                             </td>
                             <td>
-                                <input type="number" min="0" max="10" id="PEB2" aria-labelledby="Sub01 ColB2">
+                                <input type="number" min="0" max="10" id="PEB2" aria-labelledby="LabSubPE ColB2">
                             </td>
                             <td>
-                                <input type="number" min="0" max="10" id="PEB" readonly aria-labelledby="Sub01 ColB">
+                                <input type="number" min="0" max="10" id="PEB" readonly aria-labelledby="LabSubPE ColB">
                             </td>
                             <td>
-                                <input type="number" min="0" max="10" id="PEPre" readonly aria-labelledby="Sub01 ColPre">
+                                <input type="number" min="0" max="10" id="PEPre" readonly aria-labelledby="LabSubPE ColPre">
                             </td>
                             <td>
-                                <input type="number" min="0" max="10" id="PEWr" disabled aria-labelledby="Sub01 ColWr">
+                                <input type="number" min="0" max="10" id="PEWr" disabled aria-labelledby="LabSubPE ColWr">
                             </td>
                             <td>
-                                <input type="number" min="0" max="10" id="PEOr" disabled aria-labelledby="Sub01 ColOr">
+                                <input type="number" min="0" max="10" id="PEOr" disabled aria-labelledby="LabSubPE ColOr">
                             </td>
                             <td>
-                                <input type="number" min="0" max="10" id="PEFin" readonly aria-labelledby="Sub01 ColFinal">
+                                <input type="number" min="0" max="10" id="PEFin" readonly aria-labelledby="LabSubPE ColFinal">
                             </td>
                         </tr>
-                        <tr>
-                            <th scope="row" id="Sub01">
-                                Advanced
-                            </th>
+                        <tr id="SubAdv">
+                            <th scope="row" id="LabSubAdv">Advanced</th>
                             <td>
-                                <input type="number" min="0" max="10" id="AVA1" aria-labelledby="Sub01 ColA1">
+                                <input type="number" min="0" max="10" id="AVA1" aria-labelledby="LabSubAdv ColA1">
                             </td>
                             <td>
-                                <input type="number" min="0" max="10" id="AVA2" aria-labelledby="Sub01 ColA2">
+                                <input type="number" min="0" max="10" id="AVA2" aria-labelledby="LabSubAdv ColA2">
                             </td>
                             <td>
-                                <input type="number" min="0" max="10" id="AVA" readonly aria-labelledby="Sub01 ColA">
+                                <input type="number" min="0" max="10" id="AVA" readonly aria-labelledby="LabSubAdv ColA">
                             </td>
                             <td>
-                                <input type="number" min="0" max="10" id="AVB1" aria-labelledby="Sub01 ColB1">
+                                <input type="number" min="0" max="10" id="AVB1" aria-labelledby="LabSubAdv ColB1">
                             </td>
                             <td>
-                                <input type="number" min="0" max="10" id="AVB2" aria-labelledby="Sub01 ColB2">
+                                <input type="number" min="0" max="10" id="AVB2" aria-labelledby="LabSubAdv ColB2">
                             </td>
                             <td>
-                                <input type="number" min="0" max="10" id="AVB" readonly aria-labelledby="Sub01 ColB">
+                                <input type="number" min="0" max="10" id="AVB" readonly aria-labelledby="LabSubAdv ColB">
                             </td>
                             <td>
-                                <input type="number" min="0" max="10" id="AVPre" readonly aria-labelledby="Sub01 ColPre">
+                                <input type="number" min="0" max="10" id="AVPre" readonly aria-labelledby="LabSubAdv ColPre">
                             </td>
                             <td>
-                                <input type="number" min="0" max="10" id="AVWr" aria-labelledby="Sub01 ColWr">
+                                <input type="number" min="0" max="10" id="AVWr" aria-labelledby="LabSubAdv ColWr">
                             </td>
                             <td>
-                                <input type="number" min="0" max="10" id="AVOr" aria-labelledby="Sub01 ColOr">
+                                <input type="number" min="0" max="10" id="AVOr" aria-labelledby="LabSubAdv ColOr">
                             </td>
                             <td>
-                                <input type="number" min="0" max="10" id="AVFin" readonly aria-labelledby="Sub01 ColFinal">
+                                <input type="number" min="0" max="10" id="AVFin" readonly aria-labelledby="LabSubAdv ColFinal">
                             </td>
                         </tr>
-                        <tr>
-                            <th scope="row" id="Sub01">
+                        <tr id="SubOT1">
+                            <th scope="row" id="LabSubOT1">
                                 Other 1
                             </th>
                             <td>
-                                <input type="number" min="0" max="10" id="OT1A1" aria-labelledby="Sub01 ColA1">
+                                <input type="number" min="0" max="10" id="OT1A1" aria-labelledby="LabSubOT1 ColA1">
                             </td>
                             <td>
-                                <input type="number" min="0" max="10" id="OT1A2" aria-labelledby="Sub01 ColA2">
+                                <input type="number" min="0" max="10" id="OT1A2" aria-labelledby="LabSubOT1 ColA2">
                             </td>
                             <td>
-                                <input type="number" min="0" max="10" id="OT1A" readonly aria-labelledby="Sub01 ColA">
+                                <input type="number" min="0" max="10" id="OT1A" readonly aria-labelledby="LabSubOT1 ColA">
                             </td>
                             <td>
-                                <input type="number" min="0" max="10" id="OT1B1" aria-labelledby="Sub01 ColB1">
+                                <input type="number" min="0" max="10" id="OT1B1" aria-labelledby="LabSubOT1 ColB1">
                             </td>
                             <td>
-                                <input type="number" min="0" max="10" id="OT1B2" aria-labelledby="Sub01 ColB2">
+                                <input type="number" min="0" max="10" id="OT1B2" aria-labelledby="LabSubOT1 ColB2">
                             </td>
                             <td>
-                                <input type="number" min="0" max="10" id="OT1B" readonly aria-labelledby="Sub01 ColB">
+                                <input type="number" min="0" max="10" id="OT1B" readonly aria-labelledby="LabSubOT1 ColB">
                             </td>
                             <td>
-                                <input type="number" min="0" max="10" id="OT1Pre" readonly aria-labelledby="Sub01 ColPre">
+                                <input type="number" min="0" max="10" id="OT1Pre" readonly aria-labelledby="LabSubOT1 ColPre">
                             </td>
                             <td>
-                                <input type="number" min="0" max="10" id="OT1Wr" aria-labelledby="Sub01 ColWr">
+                                <input type="number" min="0" max="10" id="OT1Wr" aria-labelledby="LabSubOT1 ColWr">
                             </td>
                             <td>
-                                <input type="number" min="0" max="10" id="OT1Or" aria-labelledby="Sub01 ColOr">
+                                <input type="number" min="0" max="10" id="OT1Or" aria-labelledby="LabSubOT1 ColOr">
                             </td>
                             <td>
-                                <input type="number" min="0" max="10" id="OT1Fin" readonly aria-labelledby="Sub01 ColFinal">
+                                <input type="number" min="0" max="10" id="OT1Fin" readonly aria-labelledby="LabSubOT1 ColFinal">
                             </td>
                         </tr>
-                        <tr>
-                            <th scope="row" id="Sub01">
+                        <tr id="SubOT2">
+                            <th scope="row" id="LabSubOT2">
                                 Other 2
                             </th>
                             <td>
-                                <input type="number" min="0" max="10" id="OT2A1" aria-labelledby="Sub01 ColA1">
+                                <input type="number" min="0" max="10" id="OT2A1" aria-labelledby="LabSubOT2 ColA1">
                             </td>
                             <td>
-                                <input type="number" min="0" max="10" id="OT2A2" aria-labelledby="Sub01 ColA2">
+                                <input type="number" min="0" max="10" id="OT2A2" aria-labelledby="LabSubOT2 ColA2">
                             </td>
                             <td>
-                                <input type="number" min="0" max="10" id="OT2A" readonly aria-labelledby="Sub01 ColA">
+                                <input type="number" min="0" max="10" id="OT2A" readonly aria-labelledby="LabSubOT2 ColA">
                             </td>
                             <td>
-                                <input type="number" min="0" max="10" id="OT2B1" aria-labelledby="Sub01 ColB1">
+                                <input type="number" min="0" max="10" id="OT2B1" aria-labelledby="LabSubOT2 ColB1">
                             </td>
                             <td>
-                                <input type="number" min="0" max="10" id="OT2B2" aria-labelledby="Sub01 ColB2">
+                                <input type="number" min="0" max="10" id="OT2B2" aria-labelledby="LabSubOT2 ColB2">
                             </td>
                             <td>
-                                <input type="number" min="0" max="10" id="OT2B" readonly aria-labelledby="Sub01 ColB">
+                                <input type="number" min="0" max="10" id="OT2B" readonly aria-labelledby="LabSubOT2 ColB">
                             </td>
                             <td>
-                                <input type="number" min="0" max="10" id="OT2Pre" readonly aria-labelledby="Sub01 ColPre">
+                                <input type="number" min="0" max="10" id="OT2Pre" readonly aria-labelledby="LabSubOT2 ColPre">
                             </td>
                             <td>
-                                <input type="number" min="0" max="10" id="OT2Wr" aria-labelledby="Sub01 ColWr">
+                                <input type="number" min="0" max="10" id="OT2Wr" aria-labelledby="LabSubOT2 ColWr">
                             </td>
                             <td>
-                                <input type="number" min="0" max="10" id="OT2Or" aria-labelledby="Sub01 ColOr">
+                                <input type="number" min="0" max="10" id="OT2Or" aria-labelledby="LabSubOT2 ColOr">
                             </td>
                             <td>
-                                <input type="number" min="0" max="10" id="OT2Fin" readonly aria-labelledby="Sub01 ColFinal">
+                                <input type="number" min="0" max="10" id="OT2Fin" readonly aria-labelledby="LabSubOT2 ColFinal">
                             </td>
                         </tr>
-                        <tr>
-                            <th scope="row" id="Sub01">
+                        <tr id="SubOT3">
+                            <th scope="row" id="LabSubOT3">
                                 Other 3
                             </th>
                             <td>
-                                <input type="number" min="0" max="10" id="OT3A1" aria-labelledby="Sub01 ColA1">
+                                <input type="number" min="0" max="10" id="OT3A1" aria-labelledby="LabSubOT3 ColA1">
                             </td>
                             <td>
-                                <input type="number" min="0" max="10" id="OT3A2" aria-labelledby="Sub01 ColA2">
+                                <input type="number" min="0" max="10" id="OT3A2" aria-labelledby="LabSubOT3 ColA2">
                             </td>
                             <td>
-                                <input type="number" min="0" max="10" id="OT3A" readonly aria-labelledby="Sub01 ColA">
+                                <input type="number" min="0" max="10" id="OT3A" readonly aria-labelledby="LabSubOT3 ColA">
                             </td>
                             <td>
-                                <input type="number" min="0" max="10" id="OT3B1" aria-labelledby="Sub01 ColB1">
+                                <input type="number" min="0" max="10" id="OT3B1" aria-labelledby="LabSubOT3 ColB1">
                             </td>
                             <td>
-                                <input type="number" min="0" max="10" id="OT3B2" aria-labelledby="Sub01 ColB2">
+                                <input type="number" min="0" max="10" id="OT3B2" aria-labelledby="LabSubOT3 ColB2">
                             </td>
                             <td>
-                                <input type="number" min="0" max="10" id="OT3B" readonly aria-labelledby="Sub01 ColB">
+                                <input type="number" min="0" max="10" id="OT3B" readonly aria-labelledby="LabSubOT3 ColB">
                             </td>
                             <td>
-                                <input type="number" min="0" max="10" id="OT3Pre" readonly aria-labelledby="Sub01 ColPre">
+                                <input type="number" min="0" max="10" id="OT3Pre" readonly aria-labelledby="LabSubOT3 ColPre">
                             </td>
                             <td>
-                                <input type="number" min="0" max="10" id="OT3Wr" aria-labelledby="Sub01 ColWr">
+                                <input type="number" min="0" max="10" id="OT3Wr" aria-labelledby="LabSubOT3 ColWr">
                             </td>
                             <td>
-                                <input type="number" min="0" max="10" id="OT3Or" aria-labelledby="Sub01 ColOr">
+                                <input type="number" min="0" max="10" id="OT3Or" aria-labelledby="LabSubOT3 ColOr">
                             </td>
                             <td>
-                                <input type="number" min="0" max="10" id="OT3Fin" readonly aria-labelledby="Sub01 ColFinal">
+                                <input type="number" min="0" max="10" id="OT3Fin" readonly aria-labelledby="LabSubOT3 ColFinal">
                             </td>
                         </tr>
-                        <tr>
-                            <th scope="row" id="Sub01">
+                        <tr id="SubOT4">
+                            <th scope="row" id="LabSubOT4">
                                 Other 4
                             </th>
                             <td>
-                                <input type="number" min="0" max="10" id="OT4A1" aria-labelledby="Sub01 ColA1">
+                                <input type="number" min="0" max="10" id="OT4A1" aria-labelledby="LabSubOT4 ColA1">
                             </td>
                             <td>
-                                <input type="number" min="0" max="10" id="OT4A2" aria-labelledby="Sub01 ColA2">
+                                <input type="number" min="0" max="10" id="OT4A2" aria-labelledby="LabSubOT4 ColA2">
                             </td>
                             <td>
-                                <input type="number" min="0" max="10" id="OT4A" readonly aria-labelledby="Sub01 ColA">
+                                <input type="number" min="0" max="10" id="OT4A" readonly aria-labelledby="LabSubOT4 ColA">
                             </td>
                             <td>
-                                <input type="number" min="0" max="10" id="OT4B1" aria-labelledby="Sub01 ColB1">
+                                <input type="number" min="0" max="10" id="OT4B1" aria-labelledby="LabSubOT4 ColB1">
                             </td>
                             <td>
-                                <input type="number" min="0" max="10" id="OT4B2" aria-labelledby="Sub01 ColB2">
+                                <input type="number" min="0" max="10" id="OT4B2" aria-labelledby="LabSubOT4 ColB2">
                             </td>
                             <td>
-                                <input type="number" min="0" max="10" id="OT4B" readonly aria-labelledby="Sub01 ColB">
+                                <input type="number" min="0" max="10" id="OT4B" readonly aria-labelledby="LabSubOT4 ColB">
                             </td>
                             <td>
-                                <input type="number" min="0" max="10" id="OTPre" readonly aria-labelledby="Sub01 ColPre">
+                                <input type="number" min="0" max="10" id="OT4Pre" readonly aria-labelledby="LabSubOT4 ColPre">
                             </td>
                             <td>
-                                <input type="number" min="0" max="10" id="OT4Wr" aria-labelledby="Sub01 ColWr">
+                                <input type="number" min="0" max="10" id="OT4Wr" aria-labelledby="LabSubOT4 ColWr">
                             </td>
                             <td>
-                                <input type="number" min="0" max="10" id="OT4Or" aria-labelledby="Sub01 ColOr">
+                                <input type="number" min="0" max="10" id="OT4Or" aria-labelledby="LabSubOT4 ColOr">
                             </td>
                             <td>
-                                <input type="number" min="0" max="10" id="OT4Fin" readonly aria-labelledby="Sub01 ColFinal">
+                                <input type="number" min="0" max="10" id="OT4Fin" readonly aria-labelledby="LabSubOT4 ColFinal">
+                            </td>
+                        </tr>
+                        <tr id="SubOT5">
+                            <th scope="row" id="LabSubOT5">
+                                Other 5
+                            </th>
+                            <td>
+                                <input type="number" min="0" max="10" id="OT5A1" aria-labelledby="LabSubOT5 ColA1">
+                            </td>
+                            <td>
+                                <input type="number" min="0" max="10" id="OT5A2" aria-labelledby="LabSubOT5 ColA2">
+                            </td>
+                            <td>
+                                <input type="number" min="0" max="10" id="OT5A" readonly aria-labelledby="LabSubOT5 ColA">
+                            </td>
+                            <td>
+                                <input type="number" min="0" max="10" id="OT5B1" aria-labelledby="LabSubOT5 ColB1">
+                            </td>
+                            <td>
+                                <input type="number" min="0" max="10" id="OT5B2" aria-labelledby="LabSubOT5 ColB2">
+                            </td>
+                            <td>
+                                <input type="number" min="0" max="10" id="OT5B" readonly aria-labelledby="LabSubOT5 ColB">
+                            </td>
+                            <td>
+                                <input type="number" min="0" max="10" id="OT5Pre" readonly aria-labelledby="LabSubOT5 ColPre">
+                            </td>
+                            <td>
+                                <input type="number" min="0" max="10" id="OT5Wr" aria-labelledby="LabSubOT5 ColWr">
+                            </td>
+                            <td>
+                                <input type="number" min="0" max="10" id="OT5Or" aria-labelledby="LabSubOT5 ColOr">
+                            </td>
+                            <td>
+                                <input type="number" min="0" max="10" id="OT5Fin" readonly aria-labelledby="LabSubOT5 ColFinal">
                             </td>
                         </tr>
                     </tbody>
+                    <tfoot>
+                        <tr id="overallmarks">
+                            <th scope="row" id="LabSubOverall">
+                                Overall
+                            </th>
+                            <td>
+                            </td>
+                            <td>
+                            </td>
+                            <td>
+                            </td>
+                            <td>
+                            </td>
+                            <td>
+                            </td>
+                            <td>
+                            </td>
+                            <td>
+                                <input type="number" min="0" max="10" id="OverallPre" readonly aria-labelledby="LabSubOverall ColPre">
+                            </td>
+                            <td>
+                                <input type="number" min="0" max="10" id="OverallWr" readonly aria-labelledby="LabSubOverall ColWr">
+                            </td>
+                            <td>
+                                <input type="number" min="0" max="10" id="OverallOr" readonly aria-labelledby="LabSubOverall ColOr">
+                            </td>
+                            <td>
+                                <input type="number" min="0" max="10" id="OverallFin" readonly aria-labelledby="LabSubOverall ColFinal">
+                            </td>
+                        </tr>
+                    </tfoot>
                 </table>                
             </form>
+            <p>
+                Populate the grid with your prelim scores and then: 
+                <button onClick="calculateGrades();">calculate the grades</button>
+            </p>
         </main>
     <footer>
         <p>
