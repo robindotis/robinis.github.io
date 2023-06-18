@@ -2158,11 +2158,6 @@
   </url>
   
   <url>
-    <loc>https://www.robin.is/archive/tagged/diary/</loc>
-    <lastmod>2023-06-18</lastmod>
-  </url>
-  
-  <url>
     <loc>https://www.robin.is/archive/tagged/sumatra/</loc>
     <lastmod>2023-06-18</lastmod>
   </url>
@@ -2223,6 +2218,11 @@
   </url>
   
   <url>
+    <loc>https://www.robin.is/archive/tagged/diary/</loc>
+    <lastmod>2023-06-18</lastmod>
+  </url>
+  
+  <url>
     <loc>https://www.robin.is/archive/tagged/standards/</loc>
     <lastmod>2023-06-18</lastmod>
   </url>
@@ -2243,12 +2243,12 @@
   </url>
   
   <url>
-    <loc>https://www.robin.is/archive/tagged/conspiracy/</loc>
+    <loc>https://www.robin.is/archive/tagged/privacy/</loc>
     <lastmod>2023-06-18</lastmod>
   </url>
   
   <url>
-    <loc>https://www.robin.is/archive/tagged/privacy/</loc>
+    <loc>https://www.robin.is/archive/tagged/conspiracy/</loc>
     <lastmod>2023-06-18</lastmod>
   </url>
   
@@ -2693,17 +2693,17 @@
   </url>
   
   <url>
+    <loc>https://www.robin.is/archive/tagged/cesky-krumlov/</loc>
+    <lastmod>2023-06-18</lastmod>
+  </url>
+  
+  <url>
     <loc>https://www.robin.is/archive/tagged/chance/</loc>
     <lastmod>2023-06-18</lastmod>
   </url>
   
   <url>
     <loc>https://www.robin.is/archive/tagged/quiz/</loc>
-    <lastmod>2023-06-18</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.robin.is/archive/tagged/cesky-krumlov/</loc>
     <lastmod>2023-06-18</lastmod>
   </url>
   
@@ -3193,17 +3193,17 @@
   </url>
   
   <url>
-    <loc>https://www.robin.is/archive/tagged/folkdance/</loc>
-    <lastmod>2023-06-18</lastmod>
-  </url>
-  
-  <url>
     <loc>https://www.robin.is/archive/tagged/economics/</loc>
     <lastmod>2023-06-18</lastmod>
   </url>
   
   <url>
     <loc>https://www.robin.is/archive/tagged/politics/</loc>
+    <lastmod>2023-06-18</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.robin.is/archive/tagged/folkdance/</loc>
     <lastmod>2023-06-18</lastmod>
   </url>
   
@@ -3293,17 +3293,17 @@
   </url>
   
   <url>
+    <loc>https://www.robin.is/archive/tagged/steinsel/</loc>
+    <lastmod>2023-06-18</lastmod>
+  </url>
+  
+  <url>
     <loc>https://www.robin.is/archive/tagged/tech/</loc>
     <lastmod>2023-06-18</lastmod>
   </url>
   
   <url>
     <loc>https://www.robin.is/archive/tagged/ui/</loc>
-    <lastmod>2023-06-18</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.robin.is/archive/tagged/steinsel/</loc>
     <lastmod>2023-06-18</lastmod>
   </url>
   
