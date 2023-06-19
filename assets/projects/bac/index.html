@@ -706,7 +706,7 @@
                 }
             }
 
-            function calculateGrades() {
+            function calculateGrades() {                
                 //Have to do the calculations
                 const subjs = document.querySelectorAll("#gradegrid tbody tr");
                 let OverallPrelim = 0;
@@ -730,7 +730,8 @@
 
                         //work out Prelim score
                         inputs[6].value = ((0.4*Number(inputs[2].value) + 0.6*Number(inputs[5].value))).toFixed(2); 
-                        
+                        checkPassGrade(inputs[6], 6);
+
                         //work out subject scores
                         let SubPrelim = Number(inputs[6].value)
                         let SubWritten = Number(inputs[7].value);
@@ -757,6 +758,7 @@
                             SubFinal = SubPrelim;
                         }
                         inputs[9].value = SubFinal.toFixed(2);                        
+                        checkPassGrade(inputs[9], 6);
                     }
                 }
                 //work out overall scores
@@ -769,9 +771,21 @@
                 document.getElementById("OverallWr").value = OverallWritten;
                 document.getElementById("OverallOr").value = OverallOral;
                 document.getElementById("OverallFin").value = OverallFinal;
+
+                checkPassGrade(document.getElementById("OverallPre"), 60);
+                checkPassGrade(document.getElementById("OverallFin"), 60);
                 
             }
 
+            function checkPassGrade(el, passmark){
+                if(Number(el.value) >= passmark) {
+                    el.classList.add("abovepass");
+                }
+                else {
+                    el.classList.add("belowpass");
+                }
+                //alert(el.class);
+            }   
 
 
             function saveData(){
@@ -1056,6 +1070,16 @@
                 background-color: #ccc;
             }
 
+            #gradegrid input.abovepass {
+                background-color: palegreen;
+            }
+            #gradegrid input.belowpass {    
+                background-color: palevioletred;
+            }
+
+            #overallmarks   {
+                outline: 3px solid #000;
+            }
 </style>
     </head>
     <body>
@@ -1403,7 +1427,7 @@
             <!-- https://adrianroselli.com/2019/05/uniquely-labeling-fields-in-a-table.html -->
             <p>Note: Ethics/Religion does not count towards the Bac score, so is not listed here.</p>
             <button onClick="processGradeGrid();">Update grid</button>
-            <form id="gradegrid">
+            <form id="gradegrid" onsubmit="calculateGrades(); return false;">
                 <table>
                     <thead>
                         <tr>
@@ -1426,19 +1450,19 @@
                                 Language 1
                             </th>
                             <td>
-                                <input type="number" min="0" max="10" id="L1A1" aria-labelledby="LabSubL1 ColA1">
+                                <input type="number" min="0" max="10" step="0.1" id="L1A1" aria-labelledby="LabSubL1 ColA1">
                             </td>
                             <td>
-                                <input type="number" min="0" max="10" id="L1A2" aria-labelledby="LabSubL1 ColA2">
+                                <input type="number" min="0" max="10" step="0.1" id="L1A2" aria-labelledby="LabSubL1 ColA2">
                             </td>
                             <td>
                                 <input type="number" min="0" max="10" id="L1A" readonly aria-labelledby="LabSubL1 ColA">
                             </td>
                             <td>
-                                <input type="number" min="0" max="10" id="L1B1" aria-labelledby="LabSubL1 ColB1">
+                                <input type="number" min="0" max="10" step="0.1" id="L1B1" aria-labelledby="LabSubL1 ColB1">
                             </td>
                             <td>
-                                <input type="number" min="0" max="10" id="L1B2" aria-labelledby="LabSubL1 ColB2">
+                                <input type="number" min="0" max="10" step="0.1" id="L1B2" aria-labelledby="LabSubL1 ColB2">
                             </td>
                             <td>
                                 <input type="number" min="0" max="10" id="L1B" readonly aria-labelledby="LabSubL1 ColB">
@@ -1447,10 +1471,10 @@
                                 <input type="number" min="0" max="10" id="L1Pre" readonly aria-labelledby="LabSubL1 ColPre">
                             </td>
                             <td>
-                                <input type="number" min="0" max="10" id="L1Wr" aria-labelledby="LabSubL1 ColWr">
+                                <input type="number" min="0" max="10" step="0.1" id="L1Wr" aria-labelledby="LabSubL1 ColWr">
                             </td>
                             <td>
-                                <input type="number" min="0" max="10" id="L1Or" aria-labelledby="LabSubL1 ColOr">
+                                <input type="number" min="0" max="10" step="0.1" id="L1Or" aria-labelledby="LabSubL1 ColOr">
                             </td>
                             <td>
                                 <input type="number" min="0" max="10" id="L1Fin" readonly aria-labelledby="LabSubL1 ColFinal">
@@ -1461,19 +1485,19 @@
                                 Language 2
                             </th>
                             <td>
-                                <input type="number" min="0" max="10" id="L2A1" aria-labelledby="LabSubL2 ColA1">
+                                <input type="number" min="0" max="10" step="0.1" id="L2A1" aria-labelledby="LabSubL2 ColA1">
                             </td>
                             <td>
-                                <input type="number" min="0" max="10" id="L2A2" aria-labelledby="LabSubL2 ColA2">
+                                <input type="number" min="0" max="10" step="0.1" id="L2A2" aria-labelledby="LabSubL2 ColA2">
                             </td>
                             <td>
                                 <input type="number" min="0" max="10" id="L2A" readonly aria-labelledby="LabSubL2 ColA">
                             </td>
                             <td>
-                                <input type="number" min="0" max="10" id="L2B1" aria-labelledby="LabSubL2 ColB1">
+                                <input type="number" min="0" max="10" step="0.1" id="L2B1" aria-labelledby="LabSubL2 ColB1">
                             </td>
                             <td>
-                                <input type="number" min="0" max="10" id="L2B2" aria-labelledby="LabSubL2 ColB2">
+                                <input type="number" min="0" max="10" step="0.1" id="L2B2" aria-labelledby="LabSubL2 ColB2">
                             </td>
                             <td>
                                 <input type="number" min="0" max="10" id="L2B" readonly aria-labelledby="LabSubL2 ColB">
@@ -1482,10 +1506,10 @@
                                 <input type="number" min="0" max="10" id="L2Pre" readonly aria-labelledby="LabSubL2 ColPre">
                             </td>
                             <td>
-                                <input type="number" min="0" max="10" id="L2Wr" aria-labelledby="LabSubL2 ColWr">
+                                <input type="number" min="0" max="10" step="0.1" id="L2Wr" aria-labelledby="LabSubL2 ColWr">
                             </td>
                             <td>
-                                <input type="number" min="0" max="10" id="L2Or" aria-labelledby="LabSubL2 ColOr">
+                                <input type="number" min="0" max="10" step="0.1" id="L2Or" aria-labelledby="LabSubL2 ColOr">
                             </td>
                             <td>
                                 <input type="number" min="0" max="10" id="L2Fin" readonly aria-labelledby="LabSubL2 ColFinal">
@@ -1496,19 +1520,19 @@
                                 Maths 3
                             </th>
                             <td>
-                                <input type="number" min="0" max="10" id="MAA1" aria-labelledby="LabSubMA ColA1">
+                                <input type="number" min="0" max="10" step="0.1" id="MAA1" aria-labelledby="LabSubMA ColA1">
                             </td>
                             <td>
-                                <input type="number" min="0" max="10" id="MAA2" aria-labelledby="LabSubMA ColA2">
+                                <input type="number" min="0" max="10" step="0.1" id="MAA2" aria-labelledby="LabSubMA ColA2">
                             </td>
                             <td>
                                 <input type="number" min="0" max="10" id="MAA" readonly aria-labelledby="LabSubMA ColA">
                             </td>
                             <td>
-                                <input type="number" min="0" max="10" id="MAB1" aria-labelledby="LabSubMA ColB1">
+                                <input type="number" min="0" max="10" step="0.1" id="MAB1" aria-labelledby="LabSubMA ColB1">
                             </td>
                             <td>
-                                <input type="number" min="0" max="10" id="MAB2" aria-labelledby="LabSubMA ColB2">
+                                <input type="number" min="0" max="10" step="0.1" id="MAB2" aria-labelledby="LabSubMA ColB2">
                             </td>
                             <td>
                                 <input type="number" min="0" max="10" id="MAB" readonly aria-labelledby="LabSubMA ColB">
@@ -1517,10 +1541,10 @@
                                 <input type="number" min="0" max="10" id="MAPre" readonly aria-labelledby="LabSubMA ColPre">
                             </td>
                             <td>
-                                <input type="number" min="0" max="10" id="MAWr" aria-labelledby="LabSubMA ColWr">
+                                <input type="number" min="0" max="10" step="0.1" id="MAWr" aria-labelledby="LabSubMA ColWr">
                             </td>
                             <td>
-                                <input type="number" min="0" max="10" id="MAOr" aria-labelledby="LabSubMA ColOr">
+                                <input type="number" min="0" max="10" step="0.1" id="MAOr" aria-labelledby="LabSubMA ColOr">
                             </td>
                             <td>
                                 <input type="number" min="0" max="10" id="MAFin" readonly aria-labelledby="LabSubMA ColFinal">
@@ -1531,19 +1555,19 @@
                                 Biology 2
                             </th>
                             <td>
-                                <input type="number" min="0" max="10" id="BIA1" aria-labelledby="LabSubBio ColA1">
+                                <input type="number" min="0" max="10" step="0.1" id="BIA1" aria-labelledby="LabSubBio ColA1">
                             </td>
                             <td>
-                                <input type="number" min="0" max="10" id="BIA2" aria-labelledby="LabSubBio ColA2">
+                                <input type="number" min="0" max="10" step="0.1" id="BIA2" aria-labelledby="LabSubBio ColA2">
                             </td>
                             <td>
                                 <input type="number" min="0" max="10" id="BIA" readonly aria-labelledby="LabSubBio ColA">
                             </td>
                             <td>
-                                <input type="number" min="0" max="10" id="BIB1" aria-labelledby="LabSubBio ColB1">
+                                <input type="number" min="0" max="10" step="0.1" id="BIB1" aria-labelledby="LabSubBio ColB1">
                             </td>
                             <td>
-                                <input type="number" min="0" max="10" id="BIB2" aria-labelledby="LabSubBio ColB2">
+                                <input type="number" min="0" max="10" step="0.1" id="BIB2" aria-labelledby="LabSubBio ColB2">
                             </td>
                             <td>
                                 <input type="number" min="0" max="10" id="BIB" readonly aria-labelledby="LabSubBio ColB">
@@ -1552,10 +1576,10 @@
                                 <input type="number" min="0" max="10" id="BIPre" readonly aria-labelledby="LabSubBio ColPre">
                             </td>
                             <td>
-                                <input type="number" min="0" max="10" id="BIWr" aria-labelledby="LabSubBio ColWr">
+                                <input type="number" min="0" max="10" step="0.1" id="BIWr" aria-labelledby="LabSubBio ColWr">
                             </td>
                             <td>
-                                <input type="number" min="0" max="10" id="BIOr" aria-labelledby="LabSubBio ColOr">
+                                <input type="number" min="0" max="10" step="0.1" id="BIOr" aria-labelledby="LabSubBio ColOr">
                             </td>
                             <td>
                                 <input type="number" min="0" max="10" id="BIFin" readonly aria-labelledby="LabSubBio ColFinal">
@@ -1566,19 +1590,19 @@
                                 History 2
                             </th>
                             <td>
-                                <input type="number" min="0" max="10" id="HIA1" aria-labelledby="LabSubHis ColA1">
+                                <input type="number" min="0" max="10" step="0.1" id="HIA1" aria-labelledby="LabSubHis ColA1">
                             </td>
                             <td>
-                                <input type="number" min="0" max="10" id="HIA2" aria-labelledby="LabSubHis ColA2">
+                                <input type="number" min="0" max="10" step="0.1" id="HIA2" aria-labelledby="LabSubHis ColA2">
                             </td>
                             <td>
                                 <input type="number" min="0" max="10" id="HIA" readonly aria-labelledby="LabSubHis ColA">
                             </td>
                             <td>
-                                <input type="number" min="0" max="10" id="HIB1" aria-labelledby="LabSubHis ColB1">
+                                <input type="number" min="0" max="10" step="0.1" id="HIB1" aria-labelledby="LabSubHis ColB1">
                             </td>
                             <td>
-                                <input type="number" min="0" max="10" id="HIB2" aria-labelledby="LabSubHis ColB2">
+                                <input type="number" min="0" max="10" step="0.1" id="HIB2" aria-labelledby="LabSubHis ColB2">
                             </td>
                             <td>
                                 <input type="number" min="0" max="10" id="HIB" readonly aria-labelledby="LabSubHis ColB">
@@ -1587,10 +1611,10 @@
                                 <input type="number" min="0" max="10" id="HIPre" readonly aria-labelledby="LabSubHis ColPre">
                             </td>
                             <td>
-                                <input type="number" min="0" max="10" id="HIWr" aria-labelledby="LabSubHis ColWr">
+                                <input type="number" min="0" max="10" step="0.1" id="HIWr" aria-labelledby="LabSubHis ColWr">
                             </td>
                             <td>
-                                <input type="number" min="0" max="10" id="HIOr" aria-labelledby="LabSubHis ColOr">
+                                <input type="number" min="0" max="10" step="0.1" id="HIOr" aria-labelledby="LabSubHis ColOr">
                             </td>
                             <td>
                                 <input type="number" min="0" max="10" id="HIFin" readonly aria-labelledby="LabSubHis ColFinal">
@@ -1601,19 +1625,19 @@
                                 Geography 2
                             </th>
                             <td>
-                                <input type="number" min="0" max="10" id="GEA1" aria-labelledby="LabSubGeo ColA1">
+                                <input type="number" min="0" max="10" step="0.1" id="GEA1" aria-labelledby="LabSubGeo ColA1">
                             </td>
                             <td>
-                                <input type="number" min="0" max="10" id="GEA2" aria-labelledby="LabSubGeo ColA2">
+                                <input type="number" min="0" max="10" step="0.1" id="GEA2" aria-labelledby="LabSubGeo ColA2">
                             </td>
                             <td>
                                 <input type="number" min="0" max="10" id="GEA" readonly aria-labelledby="LabSubGeo ColA">
                             </td>
                             <td>
-                                <input type="number" min="0" max="10" id="GEB1" aria-labelledby="LabSubGeo ColB1">
+                                <input type="number" min="0" max="10" step="0.1" id="GEB1" aria-labelledby="LabSubGeo ColB1">
                             </td>
                             <td>
-                                <input type="number" min="0" max="10" id="GEB2" aria-labelledby="LabSubGeo ColB2">
+                                <input type="number" min="0" max="10" step="0.1" id="GEB2" aria-labelledby="LabSubGeo ColB2">
                             </td>
                             <td>
                                 <input type="number" min="0" max="10" id="GEB" readonly aria-labelledby="LabSubGeo ColB">
@@ -1622,10 +1646,10 @@
                                 <input type="number" min="0" max="10" id="GEPre" readonly aria-labelledby="LabSubGeo ColPre">
                             </td>
                             <td>
-                                <input type="number" min="0" max="10" id="GEWr" aria-labelledby="LabSubGeo ColWr">
+                                <input type="number" min="0" max="10" step="0.1" id="GEWr" aria-labelledby="LabSubGeo ColWr">
                             </td>
                             <td>
-                                <input type="number" min="0" max="10" id="GEOr" aria-labelledby="LabSubGeo ColOr">
+                                <input type="number" min="0" max="10" step="0.1" id="GEOr" aria-labelledby="LabSubGeo ColOr">
                             </td>
                             <td>
                                 <input type="number" min="0" max="10" id="GEFin" readonly aria-labelledby="LabSubGeo ColFinal">
@@ -1636,19 +1660,19 @@
                                 Philosophy 2
                             </th>
                             <td>
-                                <input type="number" min="0" max="10" id="PHA1" aria-labelledby="LabSubPhi ColA1">
+                                <input type="number" min="0" max="10" step="0.1" id="PHA1" aria-labelledby="LabSubPhi ColA1">
                             </td>
                             <td>
-                                <input type="number" min="0" max="10" id="PHA2" aria-labelledby="LabSubPhi ColA2">
+                                <input type="number" min="0" max="10" step="0.1" id="PHA2" aria-labelledby="LabSubPhi ColA2">
                             </td>
                             <td>
                                 <input type="number" min="0" max="10" id="PHA" readonly aria-labelledby="LabSubPhi ColA">
                             </td>
                             <td>
-                                <input type="number" min="0" max="10" id="PHB1" aria-labelledby="LabSubPhi ColB1">
+                                <input type="number" min="0" max="10" step="0.1" id="PHB1" aria-labelledby="LabSubPhi ColB1">
                             </td>
                             <td>
-                                <input type="number" min="0" max="10" id="PHB2" aria-labelledby="LabSubPhi ColB2">
+                                <input type="number" min="0" max="10" step="0.1" id="PHB2" aria-labelledby="LabSubPhi ColB2">
                             </td>
                             <td>
                                 <input type="number" min="0" max="10" id="PHB" readonly aria-labelledby="LabSubPhi ColB">
@@ -1657,10 +1681,10 @@
                                 <input type="number" min="0" max="10" id="PHPre" readonly aria-labelledby="LabSubPhi ColPre">
                             </td>
                             <td>
-                                <input type="number" min="0" max="10" id="PHWr" aria-labelledby="LabSubPhi ColWr">
+                                <input type="number" min="0" max="10" step="0.1" id="PHWr" aria-labelledby="LabSubPhi ColWr">
                             </td>
                             <td>
-                                <input type="number" min="0" max="10" id="PHOr" aria-labelledby="LabSubPhi ColOr">
+                                <input type="number" min="0" max="10" step="0.1" id="PHOr" aria-labelledby="LabSubPhi ColOr">
                             </td>
                             <td>
                                 <input type="number" min="0" max="10" id="PHFin" readonly aria-labelledby="LabSubPhi ColFinal">
@@ -1671,19 +1695,19 @@
                                 Physical Education
                             </th>
                             <td>
-                                <input type="number" min="0" max="10" id="PEA1" aria-labelledby="LabSubPE ColA1">
+                                <input type="number" min="0" max="10" step="0.1" id="PEA1" aria-labelledby="LabSubPE ColA1">
                             </td>
                             <td>
-                                <input type="number" min="0" max="10" id="PEA2" aria-labelledby="LabSubPE ColA2">
+                                <input type="number" min="0" max="10" step="0.1" id="PEA2" aria-labelledby="LabSubPE ColA2">
                             </td>
                             <td>
                                 <input type="number" min="0" max="10" id="PEA" readonly aria-labelledby="LabSubPE ColA">
                             </td>
                             <td>
-                                <input type="number" min="0" max="10" id="PEB1" aria-labelledby="LabSubPE ColB1">
+                                <input type="number" min="0" max="10" step="0.1" id="PEB1" aria-labelledby="LabSubPE ColB1">
                             </td>
                             <td>
-                                <input type="number" min="0" max="10" id="PEB2" aria-labelledby="LabSubPE ColB2">
+                                <input type="number" min="0" max="10" step="0.1" id="PEB2" aria-labelledby="LabSubPE ColB2">
                             </td>
                             <td>
                                 <input type="number" min="0" max="10" id="PEB" readonly aria-labelledby="LabSubPE ColB">
@@ -1692,10 +1716,10 @@
                                 <input type="number" min="0" max="10" id="PEPre" readonly aria-labelledby="LabSubPE ColPre">
                             </td>
                             <td>
-                                <input type="number" min="0" max="10" id="PEWr" disabled aria-labelledby="LabSubPE ColWr">
+                                <input type="number" min="0" max="10" step="0.1" id="PEWr" disabled aria-labelledby="LabSubPE ColWr">
                             </td>
                             <td>
-                                <input type="number" min="0" max="10" id="PEOr" disabled aria-labelledby="LabSubPE ColOr">
+                                <input type="number" min="0" max="10" step="0.1" id="PEOr" disabled aria-labelledby="LabSubPE ColOr">
                             </td>
                             <td>
                                 <input type="number" min="0" max="10" id="PEFin" readonly aria-labelledby="LabSubPE ColFinal">
@@ -1704,19 +1728,19 @@
                         <tr id="SubAdv">
                             <th scope="row" id="LabSubAdv">Advanced</th>
                             <td>
-                                <input type="number" min="0" max="10" id="AVA1" aria-labelledby="LabSubAdv ColA1">
+                                <input type="number" min="0" max="10" step="0.1" id="AVA1" aria-labelledby="LabSubAdv ColA1">
                             </td>
                             <td>
-                                <input type="number" min="0" max="10" id="AVA2" aria-labelledby="LabSubAdv ColA2">
+                                <input type="number" min="0" max="10" step="0.1" id="AVA2" aria-labelledby="LabSubAdv ColA2">
                             </td>
                             <td>
                                 <input type="number" min="0" max="10" id="AVA" readonly aria-labelledby="LabSubAdv ColA">
                             </td>
                             <td>
-                                <input type="number" min="0" max="10" id="AVB1" aria-labelledby="LabSubAdv ColB1">
+                                <input type="number" min="0" max="10" step="0.1" id="AVB1" aria-labelledby="LabSubAdv ColB1">
                             </td>
                             <td>
-                                <input type="number" min="0" max="10" id="AVB2" aria-labelledby="LabSubAdv ColB2">
+                                <input type="number" min="0" max="10" step="0.1" id="AVB2" aria-labelledby="LabSubAdv ColB2">
                             </td>
                             <td>
                                 <input type="number" min="0" max="10" id="AVB" readonly aria-labelledby="LabSubAdv ColB">
@@ -1725,10 +1749,10 @@
                                 <input type="number" min="0" max="10" id="AVPre" readonly aria-labelledby="LabSubAdv ColPre">
                             </td>
                             <td>
-                                <input type="number" min="0" max="10" id="AVWr" aria-labelledby="LabSubAdv ColWr">
+                                <input type="number" min="0" max="10" step="0.1" id="AVWr" aria-labelledby="LabSubAdv ColWr">
                             </td>
                             <td>
-                                <input type="number" min="0" max="10" id="AVOr" aria-labelledby="LabSubAdv ColOr">
+                                <input type="number" min="0" max="10" step="0.1" id="AVOr" aria-labelledby="LabSubAdv ColOr">
                             </td>
                             <td>
                                 <input type="number" min="0" max="10" id="AVFin" readonly aria-labelledby="LabSubAdv ColFinal">
@@ -1739,19 +1763,19 @@
                                 Other 1
                             </th>
                             <td>
-                                <input type="number" min="0" max="10" id="OT1A1" aria-labelledby="LabSubOT1 ColA1">
+                                <input type="number" min="0" max="10" step="0.1" id="OT1A1" aria-labelledby="LabSubOT1 ColA1">
                             </td>
                             <td>
-                                <input type="number" min="0" max="10" id="OT1A2" aria-labelledby="LabSubOT1 ColA2">
+                                <input type="number" min="0" max="10" step="0.1" id="OT1A2" aria-labelledby="LabSubOT1 ColA2">
                             </td>
                             <td>
                                 <input type="number" min="0" max="10" id="OT1A" readonly aria-labelledby="LabSubOT1 ColA">
                             </td>
                             <td>
-                                <input type="number" min="0" max="10" id="OT1B1" aria-labelledby="LabSubOT1 ColB1">
+                                <input type="number" min="0" max="10" step="0.1" id="OT1B1" aria-labelledby="LabSubOT1 ColB1">
                             </td>
                             <td>
-                                <input type="number" min="0" max="10" id="OT1B2" aria-labelledby="LabSubOT1 ColB2">
+                                <input type="number" min="0" max="10" step="0.1" id="OT1B2" aria-labelledby="LabSubOT1 ColB2">
                             </td>
                             <td>
                                 <input type="number" min="0" max="10" id="OT1B" readonly aria-labelledby="LabSubOT1 ColB">
@@ -1760,10 +1784,10 @@
                                 <input type="number" min="0" max="10" id="OT1Pre" readonly aria-labelledby="LabSubOT1 ColPre">
                             </td>
                             <td>
-                                <input type="number" min="0" max="10" id="OT1Wr" aria-labelledby="LabSubOT1 ColWr">
+                                <input type="number" min="0" max="10" step="0.1" id="OT1Wr" aria-labelledby="LabSubOT1 ColWr">
                             </td>
                             <td>
-                                <input type="number" min="0" max="10" id="OT1Or" aria-labelledby="LabSubOT1 ColOr">
+                                <input type="number" min="0" max="10" step="0.1" id="OT1Or" aria-labelledby="LabSubOT1 ColOr">
                             </td>
                             <td>
                                 <input type="number" min="0" max="10" id="OT1Fin" readonly aria-labelledby="LabSubOT1 ColFinal">
@@ -1774,19 +1798,19 @@
                                 Other 2
                             </th>
                             <td>
-                                <input type="number" min="0" max="10" id="OT2A1" aria-labelledby="LabSubOT2 ColA1">
+                                <input type="number" min="0" max="10" step="0.1" id="OT2A1" aria-labelledby="LabSubOT2 ColA1">
                             </td>
                             <td>
-                                <input type="number" min="0" max="10" id="OT2A2" aria-labelledby="LabSubOT2 ColA2">
+                                <input type="number" min="0" max="10" step="0.1" id="OT2A2" aria-labelledby="LabSubOT2 ColA2">
                             </td>
                             <td>
                                 <input type="number" min="0" max="10" id="OT2A" readonly aria-labelledby="LabSubOT2 ColA">
                             </td>
                             <td>
-                                <input type="number" min="0" max="10" id="OT2B1" aria-labelledby="LabSubOT2 ColB1">
+                                <input type="number" min="0" max="10" step="0.1" id="OT2B1" aria-labelledby="LabSubOT2 ColB1">
                             </td>
                             <td>
-                                <input type="number" min="0" max="10" id="OT2B2" aria-labelledby="LabSubOT2 ColB2">
+                                <input type="number" min="0" max="10" step="0.1" id="OT2B2" aria-labelledby="LabSubOT2 ColB2">
                             </td>
                             <td>
                                 <input type="number" min="0" max="10" id="OT2B" readonly aria-labelledby="LabSubOT2 ColB">
@@ -1795,10 +1819,10 @@
                                 <input type="number" min="0" max="10" id="OT2Pre" readonly aria-labelledby="LabSubOT2 ColPre">
                             </td>
                             <td>
-                                <input type="number" min="0" max="10" id="OT2Wr" aria-labelledby="LabSubOT2 ColWr">
+                                <input type="number" min="0" max="10" step="0.1" id="OT2Wr" aria-labelledby="LabSubOT2 ColWr">
                             </td>
                             <td>
-                                <input type="number" min="0" max="10" id="OT2Or" aria-labelledby="LabSubOT2 ColOr">
+                                <input type="number" min="0" max="10" step="0.1" id="OT2Or" aria-labelledby="LabSubOT2 ColOr">
                             </td>
                             <td>
                                 <input type="number" min="0" max="10" id="OT2Fin" readonly aria-labelledby="LabSubOT2 ColFinal">
@@ -1809,19 +1833,19 @@
                                 Other 3
                             </th>
                             <td>
-                                <input type="number" min="0" max="10" id="OT3A1" aria-labelledby="LabSubOT3 ColA1">
+                                <input type="number" min="0" max="10" step="0.1" id="OT3A1" aria-labelledby="LabSubOT3 ColA1">
                             </td>
                             <td>
-                                <input type="number" min="0" max="10" id="OT3A2" aria-labelledby="LabSubOT3 ColA2">
+                                <input type="number" min="0" max="10" step="0.1" id="OT3A2" aria-labelledby="LabSubOT3 ColA2">
                             </td>
                             <td>
                                 <input type="number" min="0" max="10" id="OT3A" readonly aria-labelledby="LabSubOT3 ColA">
                             </td>
                             <td>
-                                <input type="number" min="0" max="10" id="OT3B1" aria-labelledby="LabSubOT3 ColB1">
+                                <input type="number" min="0" max="10" step="0.1" id="OT3B1" aria-labelledby="LabSubOT3 ColB1">
                             </td>
                             <td>
-                                <input type="number" min="0" max="10" id="OT3B2" aria-labelledby="LabSubOT3 ColB2">
+                                <input type="number" min="0" max="10" step="0.1" id="OT3B2" aria-labelledby="LabSubOT3 ColB2">
                             </td>
                             <td>
                                 <input type="number" min="0" max="10" id="OT3B" readonly aria-labelledby="LabSubOT3 ColB">
@@ -1830,10 +1854,10 @@
                                 <input type="number" min="0" max="10" id="OT3Pre" readonly aria-labelledby="LabSubOT3 ColPre">
                             </td>
                             <td>
-                                <input type="number" min="0" max="10" id="OT3Wr" aria-labelledby="LabSubOT3 ColWr">
+                                <input type="number" min="0" max="10" step="0.1" id="OT3Wr" aria-labelledby="LabSubOT3 ColWr">
                             </td>
                             <td>
-                                <input type="number" min="0" max="10" id="OT3Or" aria-labelledby="LabSubOT3 ColOr">
+                                <input type="number" min="0" max="10" step="0.1" id="OT3Or" aria-labelledby="LabSubOT3 ColOr">
                             </td>
                             <td>
                                 <input type="number" min="0" max="10" id="OT3Fin" readonly aria-labelledby="LabSubOT3 ColFinal">
@@ -1844,19 +1868,19 @@
                                 Other 4
                             </th>
                             <td>
-                                <input type="number" min="0" max="10" id="OT4A1" aria-labelledby="LabSubOT4 ColA1">
+                                <input type="number" min="0" max="10" step="0.1" id="OT4A1" aria-labelledby="LabSubOT4 ColA1">
                             </td>
                             <td>
-                                <input type="number" min="0" max="10" id="OT4A2" aria-labelledby="LabSubOT4 ColA2">
+                                <input type="number" min="0" max="10" step="0.1" id="OT4A2" aria-labelledby="LabSubOT4 ColA2">
                             </td>
                             <td>
                                 <input type="number" min="0" max="10" id="OT4A" readonly aria-labelledby="LabSubOT4 ColA">
                             </td>
                             <td>
-                                <input type="number" min="0" max="10" id="OT4B1" aria-labelledby="LabSubOT4 ColB1">
+                                <input type="number" min="0" max="10" step="0.1" id="OT4B1" aria-labelledby="LabSubOT4 ColB1">
                             </td>
                             <td>
-                                <input type="number" min="0" max="10" id="OT4B2" aria-labelledby="LabSubOT4 ColB2">
+                                <input type="number" min="0" max="10" step="0.1" id="OT4B2" aria-labelledby="LabSubOT4 ColB2">
                             </td>
                             <td>
                                 <input type="number" min="0" max="10" id="OT4B" readonly aria-labelledby="LabSubOT4 ColB">
@@ -1865,10 +1889,10 @@
                                 <input type="number" min="0" max="10" id="OT4Pre" readonly aria-labelledby="LabSubOT4 ColPre">
                             </td>
                             <td>
-                                <input type="number" min="0" max="10" id="OT4Wr" aria-labelledby="LabSubOT4 ColWr">
+                                <input type="number" min="0" max="10" step="0.1" id="OT4Wr" aria-labelledby="LabSubOT4 ColWr">
                             </td>
                             <td>
-                                <input type="number" min="0" max="10" id="OT4Or" aria-labelledby="LabSubOT4 ColOr">
+                                <input type="number" min="0" max="10" step="0.1" id="OT4Or" aria-labelledby="LabSubOT4 ColOr">
                             </td>
                             <td>
                                 <input type="number" min="0" max="10" id="OT4Fin" readonly aria-labelledby="LabSubOT4 ColFinal">
@@ -1879,19 +1903,19 @@
                                 Other 5
                             </th>
                             <td>
-                                <input type="number" min="0" max="10" id="OT5A1" aria-labelledby="LabSubOT5 ColA1">
+                                <input type="number" min="0" max="10" step="0.1" id="OT5A1" aria-labelledby="LabSubOT5 ColA1">
                             </td>
                             <td>
-                                <input type="number" min="0" max="10" id="OT5A2" aria-labelledby="LabSubOT5 ColA2">
+                                <input type="number" min="0" max="10" step="0.1" id="OT5A2" aria-labelledby="LabSubOT5 ColA2">
                             </td>
                             <td>
                                 <input type="number" min="0" max="10" id="OT5A" readonly aria-labelledby="LabSubOT5 ColA">
                             </td>
                             <td>
-                                <input type="number" min="0" max="10" id="OT5B1" aria-labelledby="LabSubOT5 ColB1">
+                                <input type="number" min="0" max="10" step="0.1" id="OT5B1" aria-labelledby="LabSubOT5 ColB1">
                             </td>
                             <td>
-                                <input type="number" min="0" max="10" id="OT5B2" aria-labelledby="LabSubOT5 ColB2">
+                                <input type="number" min="0" max="10" step="0.1" id="OT5B2" aria-labelledby="LabSubOT5 ColB2">
                             </td>
                             <td>
                                 <input type="number" min="0" max="10" id="OT5B" readonly aria-labelledby="LabSubOT5 ColB">
@@ -1900,10 +1924,10 @@
                                 <input type="number" min="0" max="10" id="OT5Pre" readonly aria-labelledby="LabSubOT5 ColPre">
                             </td>
                             <td>
-                                <input type="number" min="0" max="10" id="OT5Wr" aria-labelledby="LabSubOT5 ColWr">
+                                <input type="number" min="0" max="10" step="0.1" id="OT5Wr" aria-labelledby="LabSubOT5 ColWr">
                             </td>
                             <td>
-                                <input type="number" min="0" max="10" id="OT5Or" aria-labelledby="LabSubOT5 ColOr">
+                                <input type="number" min="0" max="10" step="0.1" id="OT5Or" aria-labelledby="LabSubOT5 ColOr">
                             </td>
                             <td>
                                 <input type="number" min="0" max="10" id="OT5Fin" readonly aria-labelledby="LabSubOT5 ColFinal">
@@ -1942,12 +1966,12 @@
                         </tr>
                     </tfoot>
                 </table>                
+                <p>
+                    Populate the grid with your subjetc scores and then: 
+                    <button>calculate the grades</button>
+                </p>
             </form>
-            <p>
-                Populate the grid with your prelim scores and then: 
-                <button onClick="calculateGrades();">calculate the grades</button>
-            </p>
-        </main>
+    </main>
     <footer>
         <p>
             Offered without any warranty or guarantee about the accuracy. Good luck!
