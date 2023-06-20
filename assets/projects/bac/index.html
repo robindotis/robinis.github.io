@@ -768,8 +768,8 @@
                 OverallFinal = (0.5*OverallPrelim + 0.35*OverallWritten + 0.15*OverallOral).toFixed(2);
 
                 document.getElementById("OverallPre").value = OverallPrelim;
-                document.getElementById("OverallWr").value = OverallWritten;
-                document.getElementById("OverallOr").value = OverallOral;
+                //document.getElementById("OverallWr").value = OverallWritten;
+                //document.getElementById("OverallOr").value = OverallOral;
                 document.getElementById("OverallFin").value = OverallFinal;
 
                 checkPassGrade(document.getElementById("OverallPre"), 60);
@@ -780,9 +780,11 @@
             function checkPassGrade(el, passmark){
                 if(Number(el.value) >= passmark) {
                     el.classList.add("abovepass");
+                    el.classList.remove("belowpass");
                 }
                 else {
                     el.classList.add("belowpass");
+                    el.classList.remove("abovepass");
                 }
                 //alert(el.class);
             }   
@@ -1066,6 +1068,49 @@
                 padding-left: 0.6rem;
             }
 
+            #gradegrid table {
+                border-collapse: collapse;
+                table-layout:auto;
+                width:100%;
+            }
+
+            #gradegrid th {
+                border: 1px solid #000;
+                background-color: #eee;
+                padding: 5px;
+                white-space: nowrap;
+            }
+
+            #gradegrid tbody th {
+                text-align: left;
+            }
+
+            #gradegrid td {
+                border: 1px solid #000;
+                padding: 0;
+                text-align: center;
+            }
+
+            #gradegrid td:has(input:read-only) {
+                background-color: #ccc;
+            }
+
+            #gradegrid td:has(input.abovepass) {
+                background-color: palegreen;
+            }
+
+            #gradegrid td:has(input.belowpass) {
+                background-color: palevioletred;
+            }
+
+            #gradegrid input {
+                margin: 0;
+                border: 0;
+                padding: 2;
+                width: 90%;
+                height: 99%;
+            }
+
             #gradegrid input:read-only {
                 background-color: #ccc;
             }
@@ -1077,8 +1122,20 @@
                 background-color: palevioletred;
             }
 
+            #gradegrid input {
+                text-align: center;
+            }
+
             #overallmarks   {
                 outline: 3px solid #000;
+                line-height: 2em;
+                font-weight: 800;
+                font-size: larger;
+            }
+
+            #overallmarks input {
+                font-size: larger;
+                font-weight: 800;
             }
 </style>
     </head>
@@ -1426,7 +1483,9 @@
             <h2 id="calc">Bac Mark Calculator</h2>
             <!-- https://adrianroselli.com/2019/05/uniquely-labeling-fields-in-a-table.html -->
             <p>Note: Ethics/Religion does not count towards the Bac score, so is not listed here.</p>
-            <button onClick="processGradeGrid();">Update grid</button>
+            <p>
+                Once you have chosen your exam subjects: <button onClick="processGradeGrid();">update the grade grid</button>
+            </p>
             <form id="gradegrid" onsubmit="calculateGrades(); return false;">
                 <table>
                     <thead>
@@ -1955,10 +2014,10 @@
                                 <input type="number" min="0" max="10" id="OverallPre" readonly aria-labelledby="LabSubOverall ColPre">
                             </td>
                             <td>
-                                <input type="number" min="0" max="10" id="OverallWr" readonly aria-labelledby="LabSubOverall ColWr">
+                                <!-- <input type="number" min="0" max="10" id="OverallWr" readonly aria-labelledby="LabSubOverall ColWr"> -->
                             </td>
                             <td>
-                                <input type="number" min="0" max="10" id="OverallOr" readonly aria-labelledby="LabSubOverall ColOr">
+                                <!-- <input type="number" min="0" max="10" id="OverallOr" readonly aria-labelledby="LabSubOverall ColOr"> -->
                             </td>
                             <td>
                                 <input type="number" min="0" max="10" id="OverallFin" readonly aria-labelledby="LabSubOverall ColFinal">
@@ -1966,10 +2025,12 @@
                         </tr>
                     </tfoot>
                 </table>                
-                <p>
+                <!--
+                    <p>
                     Populate the grid with your subjetc scores and then: 
                     <button>calculate the grades</button>
-                </p>
+                    </p>
+                -->
             </form>
     </main>
     <footer>
@@ -1978,8 +2039,10 @@
         </p>
     </footer>
     <script>
-        const form = document.getElementById('choices');
+        let form = document.getElementById('choices');
         form.addEventListener('change', updateValue);
+        form = document.getElementById('gradegrid');
+        form.addEventListener('change', calculateGrades);
     </script>
 </body>
 </html>
