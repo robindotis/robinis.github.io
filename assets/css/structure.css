@@ -374,6 +374,12 @@ footer div.copy {
     vertical-align: top;
 }
 
+footer div.lastrun {
+    font-size: 0.4rem;
+    width: 100%;
+    text-align: center;
+}
+
 footer div.footer-area {
     display: block;
 }
