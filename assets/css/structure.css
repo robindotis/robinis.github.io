@@ -380,6 +380,11 @@ footer div.lastrun {
     text-align: center;
 }
 
+footer div.lastrun a {
+    font-weight: normal;
+    text-decoration-thickness: 1px;
+}
+
 footer div.footer-area {
     display: block;
 }

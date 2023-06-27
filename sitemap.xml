@@ -2218,6 +2218,11 @@
   </url>
   
   <url>
+    <loc>https://www.robin.is/archive/tagged/diary/</loc>
+    <lastmod>2023-06-27</lastmod>
+  </url>
+  
+  <url>
     <loc>https://www.robin.is/archive/tagged/standards/</loc>
     <lastmod>2023-06-27</lastmod>
   </url>
@@ -2238,7 +2243,7 @@
   </url>
   
   <url>
-    <loc>https://www.robin.is/archive/tagged/diary/</loc>
+    <loc>https://www.robin.is/archive/tagged/xml/</loc>
     <lastmod>2023-06-27</lastmod>
   </url>
   
@@ -2658,12 +2663,17 @@
   </url>
   
   <url>
-    <loc>https://www.robin.is/archive/tagged/blois/</loc>
+    <loc>https://www.robin.is/archive/tagged/eden-project/</loc>
     <lastmod>2023-06-27</lastmod>
   </url>
   
   <url>
-    <loc>https://www.robin.is/archive/tagged/orleans/</loc>
+    <loc>https://www.robin.is/archive/tagged/tintagel/</loc>
+    <lastmod>2023-06-27</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.robin.is/archive/tagged/castle/</loc>
     <lastmod>2023-06-27</lastmod>
   </url>
   
@@ -2733,17 +2743,17 @@
   </url>
   
   <url>
-    <loc>https://www.robin.is/archive/tagged/fun/</loc>
-    <lastmod>2023-06-27</lastmod>
-  </url>
-  
-  <url>
     <loc>https://www.robin.is/archive/tagged/queen/</loc>
     <lastmod>2023-06-27</lastmod>
   </url>
   
   <url>
     <loc>https://www.robin.is/archive/tagged/photo/</loc>
+    <lastmod>2023-06-27</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.robin.is/archive/tagged/fun/</loc>
     <lastmod>2023-06-27</lastmod>
   </url>
   
@@ -3043,6 +3053,11 @@
   </url>
   
   <url>
+    <loc>https://www.robin.is/archive/tagged/wolf-alice/</loc>
+    <lastmod>2023-06-27</lastmod>
+  </url>
+  
+  <url>
     <loc>https://www.robin.is/archive/tagged/run/</loc>
     <lastmod>2023-06-27</lastmod>
   </url>
@@ -3054,11 +3069,6 @@
   
   <url>
     <loc>https://www.robin.is/archive/tagged/walferdange/</loc>
-    <lastmod>2023-06-27</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.robin.is/archive/tagged/wolf-alice/</loc>
     <lastmod>2023-06-27</lastmod>
   </url>
   
@@ -3184,6 +3194,11 @@
   
   <url>
     <loc>https://www.robin.is/archive/tagged/upgrade/</loc>
+    <lastmod>2023-06-27</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.robin.is/archive/tagged/blois/</loc>
     <lastmod>2023-06-27</lastmod>
   </url>
   
@@ -3348,17 +3363,7 @@
   </url>
   
   <url>
-    <loc>https://www.robin.is/archive/tagged/xml/</loc>
-    <lastmod>2023-06-27</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.robin.is/archive/tagged/tintagel/</loc>
-    <lastmod>2023-06-27</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.robin.is/archive/tagged/castle/</loc>
+    <loc>https://www.robin.is/archive/tagged/orleans/</loc>
     <lastmod>2023-06-27</lastmod>
   </url>
   
@@ -3369,11 +3374,6 @@
   
   <url>
     <loc>https://www.robin.is/archive/tagged/port-isaac/</loc>
-    <lastmod>2023-06-27</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.robin.is/archive/tagged/eden-project/</loc>
     <lastmod>2023-06-27</lastmod>
   </url>
   
