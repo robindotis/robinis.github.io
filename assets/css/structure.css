@@ -375,9 +375,18 @@ footer div.copy {
 }
 
 footer div.lastrun {
-    font-size: 0.4em;
+    font-size: 0.8em;
     width: 100%;
     text-align: center;
+}
+
+footer div.lastrun span#reverse {
+    display: inline-block;
+    -moz-transform: scale(-1, 1);
+    -webkit-transform: scale(-1, 1);
+    -o-transform: scale(-1, 1);
+    -ms-transform: scale(-1, 1);
+    transform: scale(-1,1);
 }
 
 footer div.lastrun a {
