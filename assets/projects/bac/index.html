@@ -866,6 +866,28 @@
                 //alert("Form retrieved successfully.");
             }
 
+            function copyData(){
+                const theData = JSON.stringify(localStorage);
+                navigator.clipboard.writeText(theData).then(
+                    () => {
+                        document.getElementById("message").innerHTML = "Copied successfully";
+                    },
+                    () => {
+                        document.getElementById("message").innerHTML = "Failed to copy, please try again";
+                    }
+                );
+            }
+
+            function importData(){
+                //alert(JSON.stringify(localStorage));
+                const theData = JSON.parse(document.getElementById("theData").value);
+                for (var key in theData){
+                    var value = theData[key];
+                    localStorage.setItem(key,value);
+                }
+                //alert(JSON.stringify(localStorage));
+                retrieveData();
+            }
         </script>
         <style>
             body {
@@ -943,6 +965,16 @@
                 margin: 0.5rem 0.5rem 0 0;
                 line-height: 1.5rem;
                 position: relative;
+            }
+
+            #dataimport button {
+                display: inline;
+                vertical-align:top ;
+            }
+
+            #dataimport textarea {
+                width:60%;
+                height: 4em;
             }
 
             form > div {
@@ -1160,16 +1192,28 @@
                         Note: The page will generally enforce the rules, nevertheless it is possible to choose more than 35 periods.
                     </p>
                 </div>
+                <div id="yourchoices">
+                    <h2>Save and retrieve choices</h2>
+                    <p>
+                        <button onclick="saveData();">Save to browser</button>
+                        <button onclick="retrieveData();">Retrieve from browser</button>
+                        <button onclick="copyData();">Copy to clipboard</button>
+                    </p>
+                    <form id="dataimport">
+                        <p>
+                            <label>To import, paste your copied choices here, then click import.
+                                <textarea id="theData"></textarea>
+                            </label>
+                            <button type="button" onclick="importData();">Import</button>
+                        </p>
+                    </form>
+                </div>
                 <div>
                     <h2>Quick picks</h2>
-                    <p>These buttons help you pre-configure the subject grid</p>
+                    <p>These buttons help you pre-configure <br>the subject grid</p>
                     <p>
-                        <button onclick="setMaxSciences();">Maximise Sciences</button> 
+                        <button onclick="setMaxSciences();">Maximise Sciences</button>
                         <button onclick="setMinSubjects();">Minimise Subjects</button>
-                    </p>
-                    <p>
-                        <button onclick="saveData();">Save in browser</button> 
-                        <button onclick="retrieveData();">Retrieve from browser</button>
                     </p>
                 </div>
             </div>
