@@ -730,7 +730,7 @@
 
                         //work out Prelim score
                         inputs[6].value = ((0.4*Number(inputs[2].value) + 0.6*Number(inputs[5].value))).toFixed(2); 
-                        checkPassGrade(inputs[6], 6);
+                        checkPassGrade(inputs[6], 6, false);
 
                         //work out subject scores
                         let SubPrelim = Number(inputs[6].value)
@@ -758,7 +758,7 @@
                             SubFinal = SubPrelim;
                         }
                         inputs[9].value = SubFinal.toFixed(2);                        
-                        checkPassGrade(inputs[9], 6);
+                        checkPassGrade(inputs[9], 6, true);
                     }
                 }
                 //work out overall scores
@@ -772,19 +772,23 @@
                 //document.getElementById("OverallOr").value = OverallOral;
                 document.getElementById("OverallFin").value = OverallFinal;
 
-                checkPassGrade(document.getElementById("OverallPre"), 60);
-                checkPassGrade(document.getElementById("OverallFin"), 60);
+                checkPassGrade(document.getElementById("OverallPre"), 60, false);
+                checkPassGrade(document.getElementById("OverallFin"), 60, true);
                 
             }
 
-            function checkPassGrade(el, passmark){
+            function checkPassGrade(el, passmark, final){
+                var append = "";
+                if(!final){
+                    append = "Prelim";
+                }
                 if(Number(el.value) >= passmark) {
-                    el.classList.add("abovepass");
-                    el.classList.remove("belowpass");
+                    el.classList.add("abovepass" + append);
+                    el.classList.remove("belowpass" + append);
                 }
                 else {
-                    el.classList.add("belowpass");
-                    el.classList.remove("abovepass");
+                    el.classList.add("belowpass" + append);
+                    el.classList.remove("abovepass" + append);
                 }
                 //alert(el.class);
             }   
@@ -1131,7 +1135,11 @@
                 background-color: palegreen;
             }
 
-            #gradegrid td:has(input.belowpass) {
+            #gradegrid td:has(input.abovepassPrelim) {
+                background-color: orange;
+            }
+
+            #gradegrid td:has(input.belowpass), #gradegrid td:has(input.belowpassPrelim) {
                 background-color: palevioletred;
             }
 
@@ -1150,7 +1158,11 @@
             #gradegrid input.abovepass {
                 background-color: palegreen;
             }
-            #gradegrid input.belowpass {    
+            #gradegrid input.abovepassPrelim {
+                background-color: orange;
+            }
+
+            #gradegrid input.belowpass, #gradegrid input.belowpassPrelim {    
                 background-color: palevioletred;
             }
 

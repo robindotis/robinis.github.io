@@ -2068,12 +2068,12 @@
   </url>
   
   <url>
-    <loc>https://www.robin.is/archive/tagged/photos/</loc>
+    <loc>https://www.robin.is/archive/tagged/reading/</loc>
     <lastmod>2023-07-06</lastmod>
   </url>
   
   <url>
-    <loc>https://www.robin.is/archive/tagged/reading/</loc>
+    <loc>https://www.robin.is/archive/tagged/photos/</loc>
     <lastmod>2023-07-06</lastmod>
   </url>
   
@@ -2103,17 +2103,17 @@
   </url>
   
   <url>
+    <loc>https://www.robin.is/archive/tagged/uluru/</loc>
+    <lastmod>2023-07-06</lastmod>
+  </url>
+  
+  <url>
     <loc>https://www.robin.is/archive/tagged/indonesia/</loc>
     <lastmod>2023-07-06</lastmod>
   </url>
   
   <url>
     <loc>https://www.robin.is/archive/tagged/bali/</loc>
-    <lastmod>2023-07-06</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.robin.is/archive/tagged/uluru/</loc>
     <lastmod>2023-07-06</lastmod>
   </url>
   
@@ -2129,6 +2129,11 @@
   
   <url>
     <loc>https://www.robin.is/archive/tagged/fiji/</loc>
+    <lastmod>2023-07-06</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.robin.is/archive/tagged/hawaii/</loc>
     <lastmod>2023-07-06</lastmod>
   </url>
   
@@ -2164,11 +2169,6 @@
   
   <url>
     <loc>https://www.robin.is/archive/tagged/reasons/</loc>
-    <lastmod>2023-07-06</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.robin.is/archive/tagged/hawaii/</loc>
     <lastmod>2023-07-06</lastmod>
   </url>
   
@@ -2233,6 +2233,11 @@
   </url>
   
   <url>
+    <loc>https://www.robin.is/archive/tagged/diary/</loc>
+    <lastmod>2023-07-06</lastmod>
+  </url>
+  
+  <url>
     <loc>https://www.robin.is/archive/tagged/standards/</loc>
     <lastmod>2023-07-06</lastmod>
   </url>
@@ -2279,11 +2284,6 @@
   
   <url>
     <loc>https://www.robin.is/archive/tagged/quotes/</loc>
-    <lastmod>2023-07-06</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.robin.is/archive/tagged/diary/</loc>
     <lastmod>2023-07-06</lastmod>
   </url>
   
@@ -2373,17 +2373,17 @@
   </url>
   
   <url>
-    <loc>https://www.robin.is/archive/tagged/smolyan/</loc>
-    <lastmod>2023-07-06</lastmod>
-  </url>
-  
-  <url>
     <loc>https://www.robin.is/archive/tagged/france/</loc>
     <lastmod>2023-07-06</lastmod>
   </url>
   
   <url>
     <loc>https://www.robin.is/archive/tagged/paris/</loc>
+    <lastmod>2023-07-06</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.robin.is/archive/tagged/smolyan/</loc>
     <lastmod>2023-07-06</lastmod>
   </url>
   
@@ -3103,22 +3103,22 @@
   </url>
   
   <url>
-    <loc>https://www.robin.is/archive/tagged/esch/</loc>
-    <lastmod>2023-07-06</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.robin.is/archive/tagged/belval/</loc>
-    <lastmod>2023-07-06</lastmod>
-  </url>
-  
-  <url>
     <loc>https://www.robin.is/archive/tagged/wuppertal/</loc>
     <lastmod>2023-07-06</lastmod>
   </url>
   
   <url>
     <loc>https://www.robin.is/archive/tagged/transport/</loc>
+    <lastmod>2023-07-06</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.robin.is/archive/tagged/esch/</loc>
+    <lastmod>2023-07-06</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.robin.is/archive/tagged/belval/</loc>
     <lastmod>2023-07-06</lastmod>
   </url>
   
@@ -3313,6 +3313,21 @@
   </url>
   
   <url>
+    <loc>https://www.robin.is/archive/tagged/publication/</loc>
+    <lastmod>2023-07-06</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.robin.is/archive/tagged/actions/</loc>
+    <lastmod>2023-07-06</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.robin.is/archive/tagged/workflows/</loc>
+    <lastmod>2023-07-06</lastmod>
+  </url>
+  
+  <url>
     <loc>https://www.robin.is/archive/tagged/tech/</loc>
     <lastmod>2023-07-06</lastmod>
   </url>
@@ -3399,21 +3414,6 @@
   
   <url>
     <loc>https://www.robin.is/archive/tagged/xml/</loc>
-    <lastmod>2023-07-06</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.robin.is/archive/tagged/publication/</loc>
-    <lastmod>2023-07-06</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.robin.is/archive/tagged/actions/</loc>
-    <lastmod>2023-07-06</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.robin.is/archive/tagged/workflows/</loc>
     <lastmod>2023-07-06</lastmod>
   </url>
   
