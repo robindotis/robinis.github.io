@@ -46,6 +46,10 @@ header.masthead p#themeSwitch select:focus {
   background-color: var(--link-focus-bg-color)!important;
 }
 
+header.masthead p#themeSwitch select:focus option {
+    background-color: #fff !important;
+  }
+  
 header #themeSwitch span {
     color: var(--header-title-color);
     font-size: 1.2rem;
