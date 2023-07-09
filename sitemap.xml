@@ -2048,6 +2048,11 @@
   </url>
   
   <url>
+    <loc>https://www.robin.is/posts/2023/freakonomics/</loc>
+    <lastmod>2023-07-09</lastmod>
+  </url>
+  
+  <url>
     <loc>https://www.robin.is/archive/all-posts/</loc>
     <lastmod>2023-07-09</lastmod>
   </url>
@@ -2253,12 +2258,12 @@
   </url>
   
   <url>
-    <loc>https://www.robin.is/archive/tagged/diary/</loc>
+    <loc>https://www.robin.is/archive/tagged/privacy/</loc>
     <lastmod>2023-07-09</lastmod>
   </url>
   
   <url>
-    <loc>https://www.robin.is/archive/tagged/privacy/</loc>
+    <loc>https://www.robin.is/archive/tagged/diary/</loc>
     <lastmod>2023-07-09</lastmod>
   </url>
   
@@ -2299,6 +2304,11 @@
   
   <url>
     <loc>https://www.robin.is/archive/tagged/ux/</loc>
+    <lastmod>2023-07-09</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.robin.is/archive/tagged/xml/</loc>
     <lastmod>2023-07-09</lastmod>
   </url>
   
@@ -2598,12 +2608,12 @@
   </url>
   
   <url>
-    <loc>https://www.robin.is/archive/tagged/education/</loc>
+    <loc>https://www.robin.is/archive/tagged/jamstack/</loc>
     <lastmod>2023-07-09</lastmod>
   </url>
   
   <url>
-    <loc>https://www.robin.is/archive/tagged/jamstack/</loc>
+    <loc>https://www.robin.is/archive/tagged/education/</loc>
     <lastmod>2023-07-09</lastmod>
   </url>
   
@@ -3243,12 +3253,12 @@
   </url>
   
   <url>
-    <loc>https://www.robin.is/archive/tagged/human-behaviour/</loc>
+    <loc>https://www.robin.is/archive/tagged/grunewald/</loc>
     <lastmod>2023-07-09</lastmod>
   </url>
   
   <url>
-    <loc>https://www.robin.is/archive/tagged/grunewald/</loc>
+    <loc>https://www.robin.is/archive/tagged/human-behaviour/</loc>
     <lastmod>2023-07-09</lastmod>
   </url>
   
@@ -3333,11 +3343,6 @@
   </url>
   
   <url>
-    <loc>https://www.robin.is/archive/tagged/steinsel/</loc>
-    <lastmod>2023-07-09</lastmod>
-  </url>
-  
-  <url>
     <loc>https://www.robin.is/archive/tagged/red-hot-chili-peppers/</loc>
     <lastmod>2023-07-09</lastmod>
   </url>
@@ -3363,6 +3368,11 @@
   </url>
   
   <url>
+    <loc>https://www.robin.is/archive/tagged/steinsel/</loc>
+    <lastmod>2023-07-09</lastmod>
+  </url>
+  
+  <url>
     <loc>https://www.robin.is/archive/tagged/vr/</loc>
     <lastmod>2023-07-09</lastmod>
   </url>
@@ -3378,16 +3388,6 @@
   </url>
   
   <url>
-    <loc>https://www.robin.is/archive/tagged/sveta-petka/</loc>
-    <lastmod>2023-07-09</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.robin.is/archive/tagged/hike/</loc>
-    <lastmod>2023-07-09</lastmod>
-  </url>
-  
-  <url>
     <loc>https://www.robin.is/archive/tagged/ski/</loc>
     <lastmod>2023-07-09</lastmod>
   </url>
@@ -3398,17 +3398,22 @@
   </url>
   
   <url>
+    <loc>https://www.robin.is/archive/tagged/sveta-petka/</loc>
+    <lastmod>2023-07-09</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.robin.is/archive/tagged/hike/</loc>
+    <lastmod>2023-07-09</lastmod>
+  </url>
+  
+  <url>
     <loc>https://www.robin.is/archive/tagged/bio/</loc>
     <lastmod>2023-07-09</lastmod>
   </url>
   
   <url>
     <loc>https://www.robin.is/archive/tagged/sailing/</loc>
-    <lastmod>2023-07-09</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.robin.is/archive/tagged/xml/</loc>
     <lastmod>2023-07-09</lastmod>
   </url>
   
@@ -4384,11 +4389,6 @@
   
   <url>
     <loc>https://www.robin.is/writing/</loc>
-    <lastmod>2023-07-09</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.robin.is/posts/2023/freakonomics/</loc>
     <lastmod>2023-07-09</lastmod>
   </url>
 </urlset>
