@@ -2238,11 +2238,6 @@
   </url>
   
   <url>
-    <loc>https://www.robin.is/archive/tagged/diary/</loc>
-    <lastmod>2023-07-15</lastmod>
-  </url>
-  
-  <url>
     <loc>https://www.robin.is/archive/tagged/standards/</loc>
     <lastmod>2023-07-15</lastmod>
   </url>
@@ -2259,6 +2254,11 @@
   
   <url>
     <loc>https://www.robin.is/archive/tagged/book/</loc>
+    <lastmod>2023-07-15</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.robin.is/archive/tagged/diary/</loc>
     <lastmod>2023-07-15</lastmod>
   </url>
   
@@ -2318,17 +2318,17 @@
   </url>
   
   <url>
+    <loc>https://www.robin.is/archive/tagged/xml/</loc>
+    <lastmod>2023-07-15</lastmod>
+  </url>
+  
+  <url>
     <loc>https://www.robin.is/archive/tagged/plovdiv/</loc>
     <lastmod>2023-07-15</lastmod>
   </url>
   
   <url>
     <loc>https://www.robin.is/archive/tagged/gold/</loc>
-    <lastmod>2023-07-15</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.robin.is/archive/tagged/xml/</loc>
     <lastmod>2023-07-15</lastmod>
   </url>
   
@@ -2608,12 +2608,12 @@
   </url>
   
   <url>
-    <loc>https://www.robin.is/archive/tagged/education/</loc>
+    <loc>https://www.robin.is/archive/tagged/jamstack/</loc>
     <lastmod>2023-07-15</lastmod>
   </url>
   
   <url>
-    <loc>https://www.robin.is/archive/tagged/jamstack/</loc>
+    <loc>https://www.robin.is/archive/tagged/education/</loc>
     <lastmod>2023-07-15</lastmod>
   </url>
   
@@ -2933,17 +2933,17 @@
   </url>
   
   <url>
+    <loc>https://www.robin.is/archive/tagged/regensburg/</loc>
+    <lastmod>2023-07-15</lastmod>
+  </url>
+  
+  <url>
     <loc>https://www.robin.is/archive/tagged/death/</loc>
     <lastmod>2023-07-15</lastmod>
   </url>
   
   <url>
     <loc>https://www.robin.is/archive/tagged/github/</loc>
-    <lastmod>2023-07-15</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.robin.is/archive/tagged/regensburg/</loc>
     <lastmod>2023-07-15</lastmod>
   </url>
   
@@ -3073,11 +3073,6 @@
   </url>
   
   <url>
-    <loc>https://www.robin.is/archive/tagged/wolf-alice/</loc>
-    <lastmod>2023-07-15</lastmod>
-  </url>
-  
-  <url>
     <loc>https://www.robin.is/archive/tagged/run/</loc>
     <lastmod>2023-07-15</lastmod>
   </url>
@@ -3089,6 +3084,11 @@
   
   <url>
     <loc>https://www.robin.is/archive/tagged/walferdange/</loc>
+    <lastmod>2023-07-15</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.robin.is/archive/tagged/wolf-alice/</loc>
     <lastmod>2023-07-15</lastmod>
   </url>
   
@@ -3223,12 +3223,12 @@
   </url>
   
   <url>
-    <loc>https://www.robin.is/archive/tagged/folkdance/</loc>
+    <loc>https://www.robin.is/archive/tagged/upgrade/</loc>
     <lastmod>2023-07-15</lastmod>
   </url>
   
   <url>
-    <loc>https://www.robin.is/archive/tagged/upgrade/</loc>
+    <loc>https://www.robin.is/archive/tagged/folkdance/</loc>
     <lastmod>2023-07-15</lastmod>
   </url>
   
@@ -3263,17 +3263,17 @@
   </url>
   
   <url>
+    <loc>https://www.robin.is/archive/tagged/assistive/</loc>
+    <lastmod>2023-07-15</lastmod>
+  </url>
+  
+  <url>
     <loc>https://www.robin.is/archive/tagged/culture/</loc>
     <lastmod>2023-07-15</lastmod>
   </url>
   
   <url>
     <loc>https://www.robin.is/archive/tagged/matter/</loc>
-    <lastmod>2023-07-15</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.robin.is/archive/tagged/assistive/</loc>
     <lastmod>2023-07-15</lastmod>
   </url>
   
@@ -3308,6 +3308,16 @@
   </url>
   
   <url>
+    <loc>https://www.robin.is/archive/tagged/thoughts/</loc>
+    <lastmod>2023-07-15</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.robin.is/archive/tagged/books/</loc>
+    <lastmod>2023-07-15</lastmod>
+  </url>
+  
+  <url>
     <loc>https://www.robin.is/archive/tagged/publication/</loc>
     <lastmod>2023-07-15</lastmod>
   </url>
@@ -3319,16 +3329,6 @@
   
   <url>
     <loc>https://www.robin.is/archive/tagged/workflows/</loc>
-    <lastmod>2023-07-15</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.robin.is/archive/tagged/thoughts/</loc>
-    <lastmod>2023-07-15</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.robin.is/archive/tagged/books/</loc>
     <lastmod>2023-07-15</lastmod>
   </url>
   
@@ -3373,6 +3373,11 @@
   </url>
   
   <url>
+    <loc>https://www.robin.is/archive/tagged/psychology/</loc>
+    <lastmod>2023-07-15</lastmod>
+  </url>
+  
+  <url>
     <loc>https://www.robin.is/archive/tagged/vr/</loc>
     <lastmod>2023-07-15</lastmod>
   </url>
@@ -3383,7 +3388,12 @@
   </url>
   
   <url>
-    <loc>https://www.robin.is/archive/tagged/psychology/</loc>
+    <loc>https://www.robin.is/archive/tagged/sveta-petka/</loc>
+    <lastmod>2023-07-15</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.robin.is/archive/tagged/hike/</loc>
     <lastmod>2023-07-15</lastmod>
   </url>
   
@@ -3404,16 +3414,6 @@
   
   <url>
     <loc>https://www.robin.is/archive/tagged/sailing/</loc>
-    <lastmod>2023-07-15</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.robin.is/archive/tagged/sveta-petka/</loc>
-    <lastmod>2023-07-15</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.robin.is/archive/tagged/hike/</loc>
     <lastmod>2023-07-15</lastmod>
   </url>
   
