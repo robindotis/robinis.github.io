@@ -6,13 +6,25 @@
 	
 	<link href="https://www.robin.is/feed/index.xml" rel="self"/>
 	<link href="https://www.robin.is/" rel="alternate" type="text/html"/>
-	<updated>2023-07-09T09:00:33Z</updated>
+	<updated>2023-07-16T23:32:05Z</updated>
 	<id>https://www.robin.is/</id>
 	<author>
 		<name>robindotis</name>
 		<email>admin@robin.is</email>
 	</author>
 	
+	
+	<entry>
+		<title>Oft Robin</title>
+		<link href="https://www.robin.is/posts/2023/oft-robin/"/>
+		<updated>2023-07-16T23:32:05Z</updated>
+		<id>https://www.robin.is/posts/2023/oft-robin/</id>
+		<content type="html">&lt;p&gt;Another lovely evening &lt;a href=&quot;https://www.robin.is/posts/2023/oft-robin/&quot;&gt;watching jazz again&lt;/a&gt;, this time listening to &lt;a href=&quot;https://viktorbenev.com/oft-robin.html&quot;&gt;Oft Robin&lt;/a&gt; in &amp;quot;Room 1&amp;quot; of the &lt;a href=&quot;https://bnr.bg/plovdiv/&quot;&gt;Radio Plovdiv&lt;/a&gt; building.&lt;/p&gt;
+&lt;p&gt;There were 18 people watching, possibly we were the only ones not included in &amp;quot;Family and Friends&amp;quot; 🙂. The group is great so it&#39;s surprising there weren&#39;t more people in the audience.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://www.robin.is/assets/images/2023/oft-robin-1.webp&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://www.robin.is/assets/images/2023/oft-robin-2.webp&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+</content>
+	</entry>
 	
 	<entry>
 		<title>Freakonomics</title>
@@ -162,23 +174,6 @@ The ground water comes into the daylight in the Mamer valley&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;https://www.robin.is/assets/images/2023/rcs-86-amiga.webp&quot; alt=&quot;Amiga computer from 1986&quot; /&gt;&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;https://www.robin.is/assets/images/2023/rcs-86-kaypro.webp&quot; alt=&quot;Kaypro computer from 1986&quot; /&gt;&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;https://www.robin.is/assets/images/2023/rcs-03-23.webp&quot; alt=&quot;Touchscreen computer from 2003 next to a tablet from 2023&quot; /&gt;&lt;/p&gt;
-</content>
-	</entry>
-	
-	<entry>
-		<title>Dog on a log - four seasons</title>
-		<link href="https://www.robin.is/posts/2023/dog-on-a-log-four-seasons/"/>
-		<updated>2023-05-05T09:30:27Z</updated>
-		<id>https://www.robin.is/posts/2023/dog-on-a-log-four-seasons/</id>
-		<content type="html">&lt;p&gt;Angie on a log across the four seasons.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://www.robin.is/assets/images/2023/angie-four-seaons.webp&quot; alt=&quot;Dog sitting on a log in Spring, Summer, Autumn and Winter&quot; /&gt;&lt;/p&gt;
-&lt;p&gt;See also:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;https://www.robin.is/posts/2023/dog-on-a-log-spring/&quot;&gt;Dog on a log in Spring&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://www.robin.is/posts/2022/dog-on-a-log-again/&quot;&gt;Dog on a log in Summer&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://www.robin.is/posts/2021/dog-log/&quot;&gt;Dog on a log in Autumn&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://www.robin.is/posts/2023/dog-on-a-log-yet-again/&quot;&gt;Dog on a log in Winter&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
 </content>
 	</entry>
 </feed>
