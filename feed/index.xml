@@ -6,13 +6,27 @@
 	
 	<link href="https://www.robin.is/feed/index.xml" rel="self"/>
 	<link href="https://www.robin.is/" rel="alternate" type="text/html"/>
-	<updated>2023-07-16T23:32:05Z</updated>
+	<updated>2023-07-23T17:47:29Z</updated>
 	<id>https://www.robin.is/</id>
 	<author>
 		<name>robindotis</name>
 		<email>admin@robin.is</email>
 	</author>
 	
+	
+	<entry>
+		<title>Kapana</title>
+		<link href="https://www.robin.is/posts/2023/kapana/"/>
+		<updated>2023-07-23T17:47:29Z</updated>
+		<id>https://www.robin.is/posts/2023/kapana/</id>
+		<content type="html">&lt;p&gt;&lt;a href=&quot;https://visitkapana.bg/en/about-the-district/&quot;&gt;Kapana&lt;/a&gt; (Капана), Bulgarian for trap, is an area of central Plovdiv with small streets.  Traditional where handicrafts people setup their workshops, it was then a bit of an artists area. For as long as I have known Plovdiv (around 20 years) it was always a bit of a rundown and underused area, from a tourist perspective. It has been completely redone in the last couple of years and turned into a great street cafe area. It&#39;s especially busy in the evenings and judging by the languages I heard, popular with the tourists. Well worth a visit.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://www.robin.is/assets/images/2023/kapana-1.webp&quot; alt=&quot;Kapana in the late evening&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://www.robin.is/assets/images/2023/kapana-2.webp&quot; alt=&quot;Kapana in the late evening&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;We had a great vegan meal in a small cafe called &lt;a href=&quot;https://www.veggic.bg/&quot;&gt;VEGGIC&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://www.robin.is/assets/images/2023/kapana-3.webp&quot; alt=&quot;VEGGIC restaurant serving great vegan food&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;Of course all progress has its downsides. This sort of gentrification also means the people who used to run art ateliers and crafts workshops here can no longer afford to do so. Thankfully though there are, in my opinion, still enough areas of central Plovdiv that need restoring that those traders will find somewhere nearby to set up shop. I hope.&lt;/p&gt;
+</content>
+	</entry>
 	
 	<entry>
 		<title>Oft Robin</title>
@@ -160,20 +174,6 @@ The ground water comes into the daylight in the Mamer valley&lt;/p&gt;
 &lt;p&gt;I soon started scripting these actions in Powershell. The first script simply pushed the changes to github. I modified this to include a pull from github before the push, to ensure there were no conflicts when pushing. After running the script, I would manually switch to GitHub to run the workkflow in GitHub Actions that actually updated the site with the changes.&lt;/p&gt;
 &lt;p&gt;Well, yesterday I finally added that task to the script as well. Using the GitHub Rest API is straighforward and creating the correct curl command was relatively easy. But I don&#39;t know much about curl and in any case the script is a powershell script. Some Googling (mainly using Bing 🙂) got me most of the way there, by using the &lt;code&gt;Invoke-RestMethod&lt;/code&gt;. But I wasn&#39;t sure how to add one property to the command. Thankfully I found &lt;a href=&quot;https://stackoverflow.com/a/73773558/131948&quot;&gt;a code snippet on Stackoverflow&lt;/a&gt; which gave me what I needed. It had no explanations or comments, it was just posted as an answer to a question as is. Nevertheless it solved my problem.&lt;/p&gt;
 &lt;p&gt;And so this post becomes the first one pushed to GitHub and published on GitHub Pages using one integrated script. 👏&lt;/p&gt;
-</content>
-	</entry>
-	
-	<entry>
-		<title>Restaurant Computer Systems</title>
-		<link href="https://www.robin.is/posts/2023/rcs/"/>
-		<updated>2023-05-18T19:18:27Z</updated>
-		<id>https://www.robin.is/posts/2023/rcs/</id>
-		<content type="html">&lt;p&gt;I spotted this display of Luxembourg&#39;s Restaurant Computer Systems.&lt;/p&gt;
-&lt;p&gt;Starting in 1982 and 1984 with a Commodore computer, moving to an Amiga and Kaypro in 1986, then to a touchscreen in 2003 and finally a tablet in 2023. Which one do you think is most usable? Personally I would go for the 2003 touchscreen, but I can understand the convenience of a tablet which the staff can carry around. But is that really an improvement on a pen and paper? 🤔&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://www.robin.is/assets/images/2023/rcs-84-commodore.webp&quot; alt=&quot;Commodore computer from 1984&quot; /&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://www.robin.is/assets/images/2023/rcs-86-amiga.webp&quot; alt=&quot;Amiga computer from 1986&quot; /&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://www.robin.is/assets/images/2023/rcs-86-kaypro.webp&quot; alt=&quot;Kaypro computer from 1986&quot; /&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://www.robin.is/assets/images/2023/rcs-03-23.webp&quot; alt=&quot;Touchscreen computer from 2003 next to a tablet from 2023&quot; /&gt;&lt;/p&gt;
 </content>
 	</entry>
 </feed>
