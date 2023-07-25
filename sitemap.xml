@@ -2128,22 +2128,22 @@
   </url>
   
   <url>
-    <loc>https://www.robin.is/archive/tagged/usa/</loc>
-    <lastmod>2023-07-25</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.robin.is/archive/tagged/california/</loc>
-    <lastmod>2023-07-25</lastmod>
-  </url>
-  
-  <url>
     <loc>https://www.robin.is/archive/tagged/indonesia/</loc>
     <lastmod>2023-07-25</lastmod>
   </url>
   
   <url>
     <loc>https://www.robin.is/archive/tagged/bali/</loc>
+    <lastmod>2023-07-25</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.robin.is/archive/tagged/usa/</loc>
+    <lastmod>2023-07-25</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.robin.is/archive/tagged/california/</loc>
     <lastmod>2023-07-25</lastmod>
   </url>
   
@@ -2288,11 +2288,6 @@
   </url>
   
   <url>
-    <loc>https://www.robin.is/archive/tagged/xml/</loc>
-    <lastmod>2023-07-25</lastmod>
-  </url>
-  
-  <url>
     <loc>https://www.robin.is/archive/tagged/health/</loc>
     <lastmod>2023-07-25</lastmod>
   </url>
@@ -2338,6 +2333,11 @@
   </url>
   
   <url>
+    <loc>https://www.robin.is/archive/tagged/xml/</loc>
+    <lastmod>2023-07-25</lastmod>
+  </url>
+  
+  <url>
     <loc>https://www.robin.is/archive/tagged/plovdiv/</loc>
     <lastmod>2023-07-25</lastmod>
   </url>
@@ -2373,17 +2373,17 @@
   </url>
   
   <url>
+    <loc>https://www.robin.is/archive/tagged/italy/</loc>
+    <lastmod>2023-07-25</lastmod>
+  </url>
+  
+  <url>
     <loc>https://www.robin.is/archive/tagged/patents/</loc>
     <lastmod>2023-07-25</lastmod>
   </url>
   
   <url>
     <loc>https://www.robin.is/archive/tagged/software/</loc>
-    <lastmod>2023-07-25</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.robin.is/archive/tagged/italy/</loc>
     <lastmod>2023-07-25</lastmod>
   </url>
   
@@ -2398,17 +2398,17 @@
   </url>
   
   <url>
+    <loc>https://www.robin.is/archive/tagged/smolyan/</loc>
+    <lastmod>2023-07-25</lastmod>
+  </url>
+  
+  <url>
     <loc>https://www.robin.is/archive/tagged/france/</loc>
     <lastmod>2023-07-25</lastmod>
   </url>
   
   <url>
     <loc>https://www.robin.is/archive/tagged/paris/</loc>
-    <lastmod>2023-07-25</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.robin.is/archive/tagged/smolyan/</loc>
     <lastmod>2023-07-25</lastmod>
   </url>
   
@@ -2518,17 +2518,17 @@
   </url>
   
   <url>
+    <loc>https://www.robin.is/archive/tagged/tenerife/</loc>
+    <lastmod>2023-07-25</lastmod>
+  </url>
+  
+  <url>
     <loc>https://www.robin.is/archive/tagged/lisbon/</loc>
     <lastmod>2023-07-25</lastmod>
   </url>
   
   <url>
     <loc>https://www.robin.is/archive/tagged/portugal/</loc>
-    <lastmod>2023-07-25</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.robin.is/archive/tagged/tenerife/</loc>
     <lastmod>2023-07-25</lastmod>
   </url>
   
@@ -2698,6 +2698,11 @@
   </url>
   
   <url>
+    <loc>https://www.robin.is/archive/tagged/eden-project/</loc>
+    <lastmod>2023-07-25</lastmod>
+  </url>
+  
+  <url>
     <loc>https://www.robin.is/archive/tagged/tintagel/</loc>
     <lastmod>2023-07-25</lastmod>
   </url>
@@ -2708,17 +2713,12 @@
   </url>
   
   <url>
-    <loc>https://www.robin.is/archive/tagged/eden-project/</loc>
+    <loc>https://www.robin.is/archive/tagged/shkorpilovtsi/</loc>
     <lastmod>2023-07-25</lastmod>
   </url>
   
   <url>
     <loc>https://www.robin.is/archive/tagged/versailles/</loc>
-    <lastmod>2023-07-25</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.robin.is/archive/tagged/shkorpilovtsi/</loc>
     <lastmod>2023-07-25</lastmod>
   </url>
   
@@ -2898,6 +2898,11 @@
   </url>
   
   <url>
+    <loc>https://www.robin.is/archive/tagged/mersch/</loc>
+    <lastmod>2023-07-25</lastmod>
+  </url>
+  
+  <url>
     <loc>https://www.robin.is/archive/tagged/netlifx/</loc>
     <lastmod>2023-07-25</lastmod>
   </url>
@@ -2909,11 +2914,6 @@
   
   <url>
     <loc>https://www.robin.is/archive/tagged/manifest/</loc>
-    <lastmod>2023-07-25</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.robin.is/archive/tagged/mersch/</loc>
     <lastmod>2023-07-25</lastmod>
   </url>
   
@@ -2943,12 +2943,12 @@
   </url>
   
   <url>
-    <loc>https://www.robin.is/archive/tagged/death/</loc>
+    <loc>https://www.robin.is/archive/tagged/apocalyptic/</loc>
     <lastmod>2023-07-25</lastmod>
   </url>
   
   <url>
-    <loc>https://www.robin.is/archive/tagged/apocalyptic/</loc>
+    <loc>https://www.robin.is/archive/tagged/death/</loc>
     <lastmod>2023-07-25</lastmod>
   </url>
   
