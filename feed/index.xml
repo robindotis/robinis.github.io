@@ -6,13 +6,29 @@
 	
 	<link href="https://www.robin.is/feed/index.xml" rel="self"/>
 	<link href="https://www.robin.is/" rel="alternate" type="text/html"/>
-	<updated>2023-07-27T20:00:33Z</updated>
+	<updated>2023-08-16T12:18:27Z</updated>
 	<id>https://www.robin.is/</id>
 	<author>
 		<name>robindotis</name>
 		<email>admin@robin.is</email>
 	</author>
 	
+	
+	<entry>
+		<title>Inaccessible Code</title>
+		<link href="https://www.robin.is/posts/2023/inaccessible-code/"/>
+		<updated>2023-08-16T12:18:27Z</updated>
+		<id>https://www.robin.is/posts/2023/inaccessible-code/</id>
+		<content type="html">&lt;p&gt;I like this summary from Eric of the &lt;a href=&quot;https://ericwbailey.website/published/the-five-types-of-people-who-produce-inaccessible-code/&quot;&gt;types of people who create inaccessible code&lt;/a&gt;:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;People who create inaccessible code, but do not realize they are doing so.&lt;/li&gt;
+&lt;li&gt;People who create inaccessible code and realize they are doing so, but do not know how to fix it.&lt;/li&gt;
+&lt;li&gt;People who create inaccessible code, and do not care about fixing it.&lt;/li&gt;
+&lt;li&gt;People who create inaccessible code that they think is accessible.&lt;/li&gt;
+&lt;li&gt;People who create inaccessible code that our industry thinks is accessible, but experientially is not.&lt;/li&gt;
+&lt;/ol&gt;
+</content>
+	</entry>
 	
 	<entry>
 		<title>Surface Detail</title>
@@ -152,19 +168,5 @@
 &lt;/blockquote&gt;
 &lt;p&gt;&lt;img src=&quot;https://www.robin.is/assets/images/2023/school-of-life.webp&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 </content>
-	</entry>
-	
-	<entry>
-		<title>Manifest - again</title>
-		<link href="https://www.robin.is/posts/2023/manifest-again/"/>
-		<updated>2023-06-11T22:00:33Z</updated>
-		<id>https://www.robin.is/posts/2023/manifest-again/</id>
-		<content type="html">&lt;p&gt;I started watching a Netflix series called &lt;a href=&quot;https://www.imdb.com/title/tt8421350/&quot;&gt;Manifest&lt;/a&gt; back in Summer last year. Today I completed watching it after they released the final 10 episodes a few days ago.&lt;/p&gt;
-&lt;p&gt;As I mentioned in my &lt;a href=&quot;https://www.robin.is/posts/2022/manifest/&quot;&gt;previous post on the series&lt;/a&gt;, the series got a bit repetitive with the heroes following calling after calling without any real or obvious development towards an end. Nevertheless I wanted to see the conclusion of this story.&lt;/p&gt;
-&lt;details&gt;
-    &lt;summary&gt;Spoiler Alert!&lt;/summary&gt;
-&lt;p&gt;Well, given the tendency for happy endings in Hollywood this one was not hard to guess in advance. The plane returns back where it came from and lands as it should have done in 2013. Whilst the passengers on the plane still know what has happened, those greeting them do not. Which leads to an interesting final few minutes as the individual story lines are wrapped up with what the passengers learned along the way.&lt;/p&gt;
-&lt;p&gt;Of course, nowadays no series ends without a chance for a spin off. Those passengers who could not redeem themselves in the five and half years during which they were gone have disappeared from the plane. The series ends with the same FBI agent who was the lead in investigating the dissapearance of the plane, now turning up to investigate the dissapearance of the 11 missing passengers.&lt;/p&gt;
-&lt;/details&gt;</content>
 	</entry>
 </feed>
