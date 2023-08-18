@@ -6,13 +6,26 @@
 	
 	<link href="https://www.robin.is/feed/index.xml" rel="self"/>
 	<link href="https://www.robin.is/" rel="alternate" type="text/html"/>
-	<updated>2023-08-16T12:18:27Z</updated>
+	<updated>2023-08-16T19:12:00Z</updated>
 	<id>https://www.robin.is/</id>
 	<author>
 		<name>robindotis</name>
 		<email>admin@robin.is</email>
 	</author>
 	
+	
+	<entry>
+		<title>The work archives</title>
+		<link href="https://www.robin.is/posts/2023/work-archives/"/>
+		<updated>2023-08-16T19:12:00Z</updated>
+		<id>https://www.robin.is/posts/2023/work-archives/</id>
+		<content type="html">&lt;p&gt;Today I did some physical archiving, as opposed to the &lt;a href=&quot;https://www.robin.is/archiving/&quot;&gt;virtual archiving&lt;/a&gt; I do here.&lt;/p&gt;
+&lt;p&gt;Colleagues of mine had spent the last few weeks disappearing into our archives, to clear them out ahead of our move to a new building.&lt;/p&gt;
+&lt;p&gt;Well it turns out most of them can be binned, so I spent Wednesday afternoon helping them finish off the process of sorting them into paper for recycling, CDs, plastic for the main rubbish and piles and piles of folders presumably for shipping into the past for reuse in a time when they were useful. All our archives have now been digital for years.&lt;/p&gt;
+&lt;p&gt;So it was really a case of chucking stuff out rather than archiving, but it felt good and I felt productive once I saw the boxes we filled! 😀&lt;/p&gt;
+&lt;p&gt;It was also interesting to see colleagues&#39; names on the project folders from 15 years ago. I now feel slightly less frustrated when I have to ask them for the third time how to do things. I&#39;ve only been in the unit 4 years!&lt;/p&gt;
+</content>
+	</entry>
 	
 	<entry>
 		<title>Inaccessible Code</title>
@@ -147,26 +160,6 @@
 &lt;p&gt;&lt;img src=&quot;https://www.robin.is/assets/images/2023/rhcp-4.webp&quot; alt=&quot;Two girls on the shoulders of their friends in front of the main stage watching Red Hot Chili Peppers.&quot; /&gt;&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;https://www.robin.is/assets/images/2023/rhcp-5.webp&quot; alt=&quot;The final song of the Red Hot Chili Peppers at Rock Werchter 2023.&quot; /&gt;&lt;/p&gt;
 &lt;p&gt;Good Night Rock Werchter, again!&lt;/p&gt;
-</content>
-	</entry>
-	
-	<entry>
-		<title>The School Of Life</title>
-		<link href="https://www.robin.is/posts/2023/school-of-life/"/>
-		<updated>2023-06-27T07:00:33Z</updated>
-		<id>https://www.robin.is/posts/2023/school-of-life/</id>
-		<content type="html">&lt;h2&gt;by Alain de Botton&lt;/h2&gt;
-&lt;p&gt;An interesting read about how basic human psychology affects the daily life of all of us in much the same way. We shouldn&#39;t take the actions of others personally. Rather, we should think of them as reaction to the inner problems of others. Probably we should have pity on them.&lt;/p&gt;
-&lt;p&gt;Likewise all our freakish, perverted and non-sensical thoughts are actually perfectly normal. Everyone has similar thoughts going through their heads more or less all the same time. It&#39;s not just us. Our worries and anxietes? It&#39;s not just us, it&#39;s everyone.&lt;/p&gt;
-&lt;p&gt;This sentence from the end of the book is a good summary:&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;We are all, where it counts, steering almost blind&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;Or as I like to think of it:&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Almost everyone, almost of the time, is just winging it&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;&lt;img src=&quot;https://www.robin.is/assets/images/2023/school-of-life.webp&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 </content>
 	</entry>
 </feed>
