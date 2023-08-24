@@ -223,6 +223,7 @@ class themePicker {
 
             if(this.text.length > 0) {
                 const spn = document.createElement("span");
+                spn.setAttribute("id","styleLabel")
                 spn.appendChild(document.createTextNode(this.text));
                 document.getElementById(this.id).appendChild(spn);
             }
