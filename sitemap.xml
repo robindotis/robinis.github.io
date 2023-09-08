@@ -2233,11 +2233,6 @@
   </url>
   
   <url>
-    <loc>https://www.robin.is/archive/tagged/diary/</loc>
-    <lastmod>2023-09-08</lastmod>
-  </url>
-  
-  <url>
     <loc>https://www.robin.is/archive/tagged/sumatra/</loc>
     <lastmod>2023-09-08</lastmod>
   </url>
@@ -2298,7 +2293,7 @@
   </url>
   
   <url>
-    <loc>https://www.robin.is/archive/tagged/standards/</loc>
+    <loc>https://www.robin.is/archive/tagged/xml/</loc>
     <lastmod>2023-09-08</lastmod>
   </url>
   
@@ -2314,6 +2309,11 @@
   
   <url>
     <loc>https://www.robin.is/archive/tagged/book/</loc>
+    <lastmod>2023-09-08</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.robin.is/archive/tagged/diary/</loc>
     <lastmod>2023-09-08</lastmod>
   </url>
   
@@ -2358,7 +2358,7 @@
   </url>
   
   <url>
-    <loc>https://www.robin.is/archive/tagged/ux/</loc>
+    <loc>https://www.robin.is/archive/tagged/standards/</loc>
     <lastmod>2023-09-08</lastmod>
   </url>
   
@@ -2379,6 +2379,11 @@
   
   <url>
     <loc>https://www.robin.is/archive/tagged/gold/</loc>
+    <lastmod>2023-09-08</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.robin.is/archive/tagged/ux/</loc>
     <lastmod>2023-09-08</lastmod>
   </url>
   
@@ -2948,17 +2953,17 @@
   </url>
   
   <url>
-    <loc>https://www.robin.is/archive/tagged/mersch/</loc>
-    <lastmod>2023-09-08</lastmod>
-  </url>
-  
-  <url>
     <loc>https://www.robin.is/archive/tagged/hackathon/</loc>
     <lastmod>2023-09-08</lastmod>
   </url>
   
   <url>
     <loc>https://www.robin.is/archive/tagged/meta/</loc>
+    <lastmod>2023-09-08</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.robin.is/archive/tagged/mersch/</loc>
     <lastmod>2023-09-08</lastmod>
   </url>
   
@@ -3528,7 +3533,7 @@
   </url>
   
   <url>
-    <loc>https://www.robin.is/archive/tagged/xml/</loc>
+    <loc>https://www.robin.is/archive/tagged/blois/</loc>
     <lastmod>2023-09-08</lastmod>
   </url>
   
@@ -3539,11 +3544,6 @@
   
   <url>
     <loc>https://www.robin.is/archive/tagged/port-isaac/</loc>
-    <lastmod>2023-09-08</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.robin.is/archive/tagged/blois/</loc>
     <lastmod>2023-09-08</lastmod>
   </url>
   
@@ -4454,6 +4454,11 @@
   
   <url>
     <loc>https://www.robin.is/</loc>
+    <lastmod>2023-09-08</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.robin.is/pages/me-on-the-web/</loc>
     <lastmod>2023-09-08</lastmod>
   </url>
   
