@@ -6,13 +6,24 @@
 	
 	<link href="https://www.robin.is/feed/index.xml" rel="self"/>
 	<link href="https://www.robin.is/" rel="alternate" type="text/html"/>
-	<updated>2023-09-02T17:20:30Z</updated>
+	<updated>2023-09-15T20:23:28Z</updated>
 	<id>https://www.robin.is/</id>
 	<author>
 		<name>robindotis</name>
 		<email>admin@robin.is</email>
 	</author>
 	
+	
+	<entry>
+		<title>Mud Bath</title>
+		<link href="https://www.robin.is/posts/2023/mud-bath/"/>
+		<updated>2023-09-15T20:23:28Z</updated>
+		<id>https://www.robin.is/posts/2023/mud-bath/</id>
+		<content type="html">&lt;h2&gt;Keeping clean&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&quot;https://www.robin.is/assets/images/2023/mud-bath-1.webp&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://www.robin.is/assets/images/2023/mud-bath-2.webp&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+</content>
+	</entry>
 	
 	<entry>
 		<title>Madeira for a week</title>
@@ -265,20 +276,6 @@
 		<id>https://www.robin.is/posts/2023/byala-cherkva/</id>
 		<content type="html">&lt;p&gt;We spent an hour hiking around the &lt;a href=&quot;https://goo.gl/maps/3Dz1p9kAH55Z9jAr9&quot;&gt;Byala Cherkva&lt;/a&gt; area inn order to escape the 39°C heat in Plovdiv. It&#39;s not really a starting point for any trails, so we just set off down the road and turned round 45 minutes later. It was a nice walk, still hot despite being half way up the Rodopi mountains.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;https://www.robin.is/assets/images/2023/byala-cherkva-1.webp&quot; alt=&quot;Brown butterfly with orange trim containing black dots nestling on a yellow flower with the green foliage blurred in the background&quot; /&gt;&lt;/p&gt;
-</content>
-	</entry>
-	
-	<entry>
-		<title>Kapana</title>
-		<link href="https://www.robin.is/posts/2023/kapana/"/>
-		<updated>2023-07-23T17:47:29Z</updated>
-		<id>https://www.robin.is/posts/2023/kapana/</id>
-		<content type="html">&lt;p&gt;&lt;a href=&quot;https://visitkapana.bg/en/about-the-district/&quot;&gt;Kapana&lt;/a&gt; (Капана), Bulgarian for trap, is an area of central Plovdiv with small streets.  Traditional where handicrafts people setup their workshops, it was then a bit of an artists area. For as long as I have known Plovdiv (around 20 years) it was always a bit of a rundown and underused area, from a tourist perspective. It has been completely redone in the last couple of years and turned into a great street cafe area. It&#39;s especially busy in the evenings and judging by the languages I heard, popular with the tourists. Well worth a visit.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://www.robin.is/assets/images/2023/kapana-1.webp&quot; alt=&quot;Kapana in the late evening&quot; /&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://www.robin.is/assets/images/2023/kapana-2.webp&quot; alt=&quot;Kapana in the late evening&quot; /&gt;&lt;/p&gt;
-&lt;p&gt;We had a great vegan meal in a small cafe called &lt;a href=&quot;https://www.veggic.bg/&quot;&gt;VEGGIC&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://www.robin.is/assets/images/2023/kapana-3.webp&quot; alt=&quot;VEGGIC restaurant serving great vegan food&quot; /&gt;&lt;/p&gt;
-&lt;p&gt;Of course all progress has its downsides. This sort of gentrification also means the people who used to run art ateliers and crafts workshops here can no longer afford to do so. Thankfully though there are, in my opinion, still enough areas of central Plovdiv that need restoring that those traders will find somewhere nearby to set up shop. I hope.&lt;/p&gt;
 </content>
 	</entry>
 </feed>
