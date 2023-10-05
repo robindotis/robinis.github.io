@@ -195,9 +195,11 @@ class themePicker {
         }
     }    
 
-    toogleButtonState(btnName, disabled = false) {
+    toggleButtonState(btnName, disabled = false) {
         const btn = document.querySelector('button[onclick*="' + btnName + '"]');
-        btn.setAttribute("disabled","");
+        if(btn) {
+            btn.setAttribute("disabled","");
+        }
     }
 
     createPicker(){
@@ -263,7 +265,7 @@ class themePicker {
                 }
             }
             if(localStorage.getItem('theme') === null) {
-                this.toogleButtonState(this.defaultTheme.name, true);
+                this.toggleButtonState(this.defaultTheme.name, true);
             }
             else {
                 this.setTheme(localStorage.getItem('theme'));
