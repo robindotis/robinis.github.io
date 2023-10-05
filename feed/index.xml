@@ -6,13 +6,23 @@
 	
 	<link href="https://www.robin.is/feed/index.xml" rel="self"/>
 	<link href="https://www.robin.is/" rel="alternate" type="text/html"/>
-	<updated>2023-10-05T17:43:28Z</updated>
+	<updated>2023-10-06T09:12:00Z</updated>
 	<id>https://www.robin.is/</id>
 	<author>
 		<name>robindotis</name>
 		<email>admin@robin.is</email>
 	</author>
 	
+	
+	<entry>
+		<title>Sign Language Evolution</title>
+		<link href="https://www.robin.is/posts/2023/sign-language-evolution/"/>
+		<updated>2023-10-06T09:12:00Z</updated>
+		<id>https://www.robin.is/posts/2023/sign-language-evolution/</id>
+		<content type="html">&lt;p&gt;An interesting image showing how sign languages around the world are connected.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://www.robin.is/assets/images/2023/sign-language-evolution.webp&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+</content>
+	</entry>
 	
 	<entry>
 		<title>Fischbach Circular Walk 1</title>
@@ -264,24 +274,6 @@
 		<content type="html">&lt;h2&gt;by Iain M Banks&lt;/h2&gt;
 &lt;p&gt;I got through this book in 10 days whilst on holiday. Reading it over such a short time frame helped me to keep the storyline fresh in mind. Maybe because of this, I feel it is certainly one of the better Culture series books. Somewhat unusually it ties up all the loose ends and leaves nothing unexplained. Maybe because by now readers are aware of the all encompassing power of the Culture civilisation and the trickery this enables them engage in. And yet it is not necessarily the most powerful civilisation.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;https://www.robin.is/assets/images/2023/surface-detail.webp&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-</content>
-	</entry>
-	
-	<entry>
-		<title>Fotinovo</title>
-		<link href="https://www.robin.is/posts/2023/fotinovo/"/>
-		<updated>2023-07-25T21:30:00Z</updated>
-		<id>https://www.robin.is/posts/2023/fotinovo/</id>
-		<content type="html">&lt;p&gt;After our &lt;a href=&quot;https://www.robin.is/posts/2023/byala-cherkva/&quot;&gt;short hike yesterday&lt;/a&gt;, we decided to follow the &lt;a href=&quot;https://hikes-and-walks.com/hike/bulgaria/fotinski-waterfalls&quot;&gt;Waterfall trail in Fotinovo&lt;/a&gt;, about 100 minutes drive from Plovdiv.&lt;/p&gt;
-&lt;p&gt;This is a 6km hike to the waterfalls and back, as well as a steep descent to actually see the waterfalls. Most of the info I could find about the trail indicated this was an easy hike. The descent to the waterfalls and subsequent climb back up are anything but. It didn&#39;t help that we did the hike on the hottest day of the year so far. It was 33°C in Fotinovo and 40°C in Plovdiv.&lt;/p&gt;
-&lt;p&gt;The waterfalls were interesting and worth the effort, but not exceptionally so. Maybe they are more imposing in the spring.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://www.robin.is/assets/images/2023/fotinovo-1.webp&quot; alt=&quot;The waterfalls seen from the bottom&quot; /&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://www.robin.is/assets/images/2023/fotinovo-2.webp&quot; alt=&quot;The bridge at the bottom to get to the waterfalls&quot; /&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://www.robin.is/assets/images/2023/fotinovo-3.webp&quot; alt=&quot;Another view of the waterfalls from the bottom&quot; /&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://www.robin.is/assets/images/2023/fotinovo-4.webp&quot; alt=&quot;The river flowing into the waterfalls, which the trail follows to get to the falls&quot; /&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://www.robin.is/assets/images/2023/fotinovo-5.webp&quot; alt=&quot;The edge of the village where the trail starts&quot; /&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://www.robin.is/assets/images/2023/fotinovo-6.webp&quot; alt=&quot;A workshop where we got some directions at the start of the trail&quot; /&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://www.robin.is/assets/images/2023/fotinovo-7.webp&quot; alt=&quot;The trail leading past some meadows towards the waterfalls&quot; /&gt;&lt;/p&gt;
 </content>
 	</entry>
 </feed>
