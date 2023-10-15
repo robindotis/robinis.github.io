@@ -380,6 +380,11 @@ footer div.lastrun {
     text-align: center;
 }
 
+footer div.webring {
+    font-size: 1em;
+    padding-bottom: 5px;
+}
+
 footer div.lastrun span#reverse {
     display: inline-block;
     -moz-transform: scale(-1, 1);

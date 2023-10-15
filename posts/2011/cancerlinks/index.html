@@ -18,6 +18,10 @@
     <link rel="alternate" href="." type="application/json" title="Robin . is">
     <link rel="icon" href="/assets/images/cw.jpg" type="image/jpeg" sizes="50x50">
 
+    <link rel="webmention" href="https://webmention.io/www.robin.is/webmention" />
+    <link rel="authorization_endpoint" href="https://indieauth.com/auth">
+    <link rel="token_endpoint" href="https://tokens.indieauth.com/token">    
+
     <meta property="a11y:statement" content="/pages/accessibility/">
     <meta property="a11y:feedback" content="/pages/accessibility/#feedback">
     <meta property="a11y:complaints" content="/pages/accessibility/#complaints">
@@ -30,6 +34,9 @@
     <meta property="og:site_name" content="Robin . is">
     <meta property="og:image" content="">
 
+    <meta name="DC.title" content="robin.is">
+    <meta name="DC.creator " content="Robin Massart">
+
     <link rel="preload" href="/assets/fonts/Mona-Sans.woff2" as="font" type="font/woff2" crossorigin>
     
 
@@ -38,13 +45,6 @@
     <link rel="stylesheet" href="/assets/css/style.css" media="all">
     <link rel="stylesheet" href="/assets/css/default.css" media="all">
 
-    <link rel="webmention" href="https://webmention.io/www.robin.is/webmention" />
-    <link rel="authorization_endpoint" href="https://indieauth.com/auth">
-    <link rel="token_endpoint" href="https://tokens.indieauth.com/token">
-
-    <meta name="DC.title" content="robin.is">
-    <meta name="DC.creator " content="Robin Massart">
-    
     <script src="/assets/js/theme.js" defer></script>
   </head>
   <body>
@@ -143,7 +143,12 @@
                 <br>
                 Powered with HTML, CSS and <a href="https://www.a11yproject.com/">a11y</a>.
             </div>
-            <div class="lastrun">Hand crafted using <a href="https://www.11ty.dev/">eleventy</a>. Built on the 15/10/2023 at 07:52:28 in the flashiest of flashes⚡</div>
+            <div class="lastrun webring">
+                <a href="https://xn--sr8hvo.ws/previous">←</a>
+                An <a href="https://xn--sr8hvo.ws">IndieWeb Webring</a> 🕸💍
+                <a href="https://xn--sr8hvo.ws/next">→</a>
+            </div>
+            <div class="lastrun">Hand crafted using <a href="https://www.11ty.dev/">eleventy</a>. Built on the 15/10/2023 at 08:02:51 in the flashiest of flashes⚡</div>
         </div>
     </footer>
     <!-- Current page: /posts/2011/cancerlinks/ -->
