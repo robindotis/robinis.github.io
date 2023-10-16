@@ -6,13 +6,27 @@
 	
 	<link href="https://www.robin.is/feed/index.xml" rel="self"/>
 	<link href="https://www.robin.is/" rel="alternate" type="text/html"/>
-	<updated>2023-10-06T09:12:00Z</updated>
+	<updated>2023-10-15T19:33:27Z</updated>
 	<id>https://www.robin.is/</id>
 	<author>
 		<name>robindotis</name>
 		<email>admin@robin.is</email>
 	</author>
 	
+	
+	<entry>
+		<title>IndieWeb</title>
+		<link href="https://www.robin.is/posts/2023/indieweb/"/>
+		<updated>2023-10-15T19:33:27Z</updated>
+		<id>https://www.robin.is/posts/2023/indieweb/</id>
+		<content type="html">&lt;p&gt;Today I implemented some indiweb stuff:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Indiewebring&lt;/li&gt;
+&lt;li&gt;hcard (peeking at &lt;a href=&quot;https://jasm1nii.xyz/&quot;&gt;https://jasm1nii.xyz/&lt;/a&gt; and &lt;a href=&quot;https://vanderven.se/martijn/&quot;&gt;https://vanderven.se/martijn/&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;webmentions (again)&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+	</entry>
 	
 	<entry>
 		<title>Sign Language Evolution</title>
@@ -263,17 +277,6 @@
 &lt;li&gt;People who create inaccessible code that they think is accessible.&lt;/li&gt;
 &lt;li&gt;People who create inaccessible code that our industry thinks is accessible, but experientially is not.&lt;/li&gt;
 &lt;/ol&gt;
-</content>
-	</entry>
-	
-	<entry>
-		<title>Surface Detail</title>
-		<link href="https://www.robin.is/posts/2023/surface-detail/"/>
-		<updated>2023-07-27T20:00:33Z</updated>
-		<id>https://www.robin.is/posts/2023/surface-detail/</id>
-		<content type="html">&lt;h2&gt;by Iain M Banks&lt;/h2&gt;
-&lt;p&gt;I got through this book in 10 days whilst on holiday. Reading it over such a short time frame helped me to keep the storyline fresh in mind. Maybe because of this, I feel it is certainly one of the better Culture series books. Somewhat unusually it ties up all the loose ends and leaves nothing unexplained. Maybe because by now readers are aware of the all encompassing power of the Culture civilisation and the trickery this enables them engage in. And yet it is not necessarily the most powerful civilisation.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://www.robin.is/assets/images/2023/surface-detail.webp&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 </content>
 	</entry>
 </feed>
