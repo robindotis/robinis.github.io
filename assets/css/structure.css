@@ -239,7 +239,7 @@ code {
 }
 
 main > div.main-content, div.footer-area, header.masthead div.header-area {
-    max-inline-size: 75rem;
+    max-inline-size: 65rem;
     margin-inline: auto; 
 }
 
