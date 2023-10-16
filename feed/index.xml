@@ -6,7 +6,7 @@
 	
 	<link href="https://www.robin.is/feed/index.xml" rel="self"/>
 	<link href="https://www.robin.is/" rel="alternate" type="text/html"/>
-	<updated>2023-10-15T19:33:27Z</updated>
+	<updated>2023-10-16T09:33:27Z</updated>
 	<id>https://www.robin.is/</id>
 	<author>
 		<name>robindotis</name>
@@ -17,14 +17,14 @@
 	<entry>
 		<title>IndieWeb</title>
 		<link href="https://www.robin.is/posts/2023/indieweb/"/>
-		<updated>2023-10-15T19:33:27Z</updated>
+		<updated>2023-10-16T09:33:27Z</updated>
 		<id>https://www.robin.is/posts/2023/indieweb/</id>
-		<content type="html">&lt;p&gt;Today I implemented some indiweb stuff:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Indiewebring&lt;/li&gt;
-&lt;li&gt;hcard (peeking at &lt;a href=&quot;https://jasm1nii.xyz/&quot;&gt;https://jasm1nii.xyz/&lt;/a&gt; and &lt;a href=&quot;https://vanderven.se/martijn/&quot;&gt;https://vanderven.se/martijn/&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;webmentions (again)&lt;/li&gt;
-&lt;/ul&gt;
+		<content type="html">&lt;p&gt;Today I implemented some of the &lt;a href=&quot;https://indieweb.org/&quot;&gt;IndieWeb&lt;/a&gt; &lt;a href=&quot;https://indieweb.org/&quot;&gt;building blocks&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;First I added &lt;a href=&quot;https://indieweb.org/IndieAuth&quot;&gt;IndieAuth&lt;/a&gt; with GitHub account, testing it against the &lt;a href=&quot;https://indielogin.com/api&quot;&gt;IndieLogin&lt;/a&gt; service.&lt;/p&gt;
+&lt;p&gt;Next I added the required meta tags for &lt;a href=&quot;https://indieweb.org/Webmention&quot;&gt;webmentions&lt;/a&gt; using the &lt;a href=&quot;https://webmention.io/&quot;&gt;webmention.io&lt;/a&gt; service to receive webmentions and pingbacks. Not that anyone is ever reading my blog or that I process the mentions... Still the site is setup for this.&lt;/p&gt;
+&lt;p&gt;Then I added a &lt;a href=&quot;https://indieweb.org/microformats&quot;&gt;microformat&lt;/a&gt; &lt;a href=&quot;https://indieweb.org/h-card&quot;&gt;h-card&lt;/a&gt; to my homepage in order to have business card like functionality on the web.&lt;/p&gt;
+&lt;p&gt;Finally, to wrap it all up, I added myself to the &lt;a href=&quot;https://indieweb.org/indiewebring&quot;&gt;IndieWebRing&lt;/a&gt;, taking the lead from &lt;a href=&quot;https://jasm1nii.xyz/&quot;&gt;jasmine&lt;/a&gt; and &lt;a href=&quot;https://vanderven.se/martijn/&quot;&gt;Martin van der van&lt;/a&gt; on how to setup my h-card.&lt;/p&gt;
+&lt;p&gt;Having got started with microformats for the h-card, I went and added the required properties for &lt;a href=&quot;http://microformats.org/wiki/h-entry#Core_Properties&quot;&gt;h-entry&lt;/a&gt; as well.&lt;/p&gt;
 </content>
 	</entry>
 	

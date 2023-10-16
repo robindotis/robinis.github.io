@@ -79,7 +79,7 @@
         <hr class="nodisplay" aria-hidden="true">
         <div class="main-content">
             
-<article>
+<article class="h-entry">
   <nav aria-label="Paging">
       <div class="prev-next">
         <strong>« Newer:</strong><a class="next" rel="next" href="/posts/2022/stylesheet-switching-2/">Stylesheet Switching Part 2</a>
@@ -90,7 +90,7 @@
       <hr>
   </nav>
   <header id="skip-content-target">
-      <h1>Stylesheet Switching</h1> 
+      <h1 class="p-name">Stylesheet Switching</h1> 
       <h2 class="published">
           <time class="dt-published" datetime="Invalid DateTime">
               <span class="date-day">18</span> 
@@ -99,7 +99,8 @@
           </time>
       </h2>
   </header>
-  <p>I spent the last couple of days playing around with stylesheet switching (theming) and also implementing <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-color-scheme">prefers-color-scheme</a> on the default theme in order to a dark mode.</p>
+  <div class="e-content">    
+    <p>I spent the last couple of days playing around with stylesheet switching (theming) and also implementing <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-color-scheme">prefers-color-scheme</a> on the default theme in order to a dark mode.</p>
 <p>I also added in a couple of fonts recently released by GitHub: <a href="https://github.com/mona-sans">Mona Sans and Hubo Sans</a></p>
 <p>So far I have managed to have no JavaScript on this site. Unfortunately implementing theming on a static site is simply not possible without JavaScript. My aim therefore was to keep JavaScript to a minimum. I managed it with about 10 lines of code, including using local storage to remember the user's prefered theme.</p>
 <p>function swapStyleSheet(sheet){<br>
@@ -132,8 +133,9 @@ swapStyleSheet(localStorage.getItem('sheet'));<br>
 <p><button type="button" onClick="swapStyleSheet('/assets/css/default.css')">Default</button></p>
 <p>I also <a href="https://gist.github.com/robindotis/d1b33ab257e5e6970765b8b865e94bf5">wrote a gist about the switcher on GitHub</a>, in case others find this useful. Probably it can be simplified and generalised further.</p>
  
+  </div>
   <hr aria-hidden="true">
-  <div class="tagged"><strong>Tagged:</strong><a href="/archive/tagged/general/" class="post-tag">general</a> &nbsp;<a href="/archive/tagged/web/" class="post-tag">web</a> &nbsp;<a href="/archive/tagged/css/" class="post-tag">css</a> &nbsp;
+  <div class="tagged"><strong>Tagged:</strong><a href="/archive/tagged/general/" class="post-tag" rel="tag">general</a> &nbsp;<a href="/archive/tagged/web/" class="post-tag" rel="tag">web</a> &nbsp;<a href="/archive/tagged/css/" class="post-tag" rel="tag">css</a> &nbsp;
   </div>
   <hr aria-hidden="true">
   <nav aria-label="Paging">
@@ -173,7 +175,7 @@ swapStyleSheet(localStorage.getItem('sheet'));<br>
                 An <a href="https://xn--sr8hvo.ws">IndieWeb Webring</a> 🕸💍
                 <a href="https://xn--sr8hvo.ws/next">→</a>
             </div>
-            <div class="lastrun">Hand crafted using <a href="https://www.11ty.dev/">eleventy</a>. Built on the 16/10/2023 at 04:39:06 in the flashiest of flashes⚡</div>
+            <div class="lastrun">Hand crafted using <a href="https://www.11ty.dev/">eleventy</a>. Built on the 16/10/2023 at 05:42:38 in the flashiest of flashes⚡</div>
         </div>
     </footer>
     <!-- Current page: /posts/2022/stylesheet-switching/ -->

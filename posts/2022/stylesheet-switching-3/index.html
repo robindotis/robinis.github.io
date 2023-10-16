@@ -79,7 +79,7 @@
         <hr class="nodisplay" aria-hidden="true">
         <div class="main-content">
             
-<article>
+<article class="h-entry">
   <nav aria-label="Paging">
       <div class="prev-next">
         <strong>« Newer:</strong><a class="next" rel="next" href="/posts/2022/chance/">Chance</a>
@@ -90,7 +90,7 @@
       <hr>
   </nav>
   <header id="skip-content-target">
-      <h1>Stylesheet Switching Part 3</h1> 
+      <h1 class="p-name">Stylesheet Switching Part 3</h1> 
       <h2 class="published">
           <time class="dt-published" datetime="Invalid DateTime">
               <span class="date-day">22</span> 
@@ -99,7 +99,8 @@
           </time>
       </h2>
   </header>
-  <p>As noted in my <a href="/posts/2022/stylesheet-switching-2/">previous post</a>, I finished my stylesheet switcher and <a href="https://gist.github.com/robindotis/d1b33ab257e5e6970765b8b865e94bf5">created gist</a> to allow others to easily copy and implement it. Then I decided to re-implement this using object oriented code, rather than procedural code.</p>
+  <div class="e-content">    
+    <p>As noted in my <a href="/posts/2022/stylesheet-switching-2/">previous post</a>, I finished my stylesheet switcher and <a href="https://gist.github.com/robindotis/d1b33ab257e5e6970765b8b865e94bf5">created gist</a> to allow others to easily copy and implement it. Then I decided to re-implement this using object oriented code, rather than procedural code.</p>
 <p>Well that job is now done and running live on this site. I even added a new style, Miami, to the site to see how easily new styles can be implemented. It's literally one line of code:</p>
 <pre><code>themeSwitch.addTheme(new theme(&quot;Miami&quot;,&quot;miami.css&quot;));
 </code></pre>
@@ -107,8 +108,9 @@
 <p>Of course, the code is also available in a gist for my <a href="https://gist.github.com/robindotis/54786199b5d86f5085e5c55337d6e0d0">object oriented theme picker</a>.</p>
 <p>Enjoy. 😎</p>
  
+  </div>
   <hr aria-hidden="true">
-  <div class="tagged"><strong>Tagged:</strong><a href="/archive/tagged/general/" class="post-tag">general</a> &nbsp;<a href="/archive/tagged/web/" class="post-tag">web</a> &nbsp;<a href="/archive/tagged/css/" class="post-tag">css</a> &nbsp;<a href="/archive/tagged/javascript/" class="post-tag">javascript</a> &nbsp;
+  <div class="tagged"><strong>Tagged:</strong><a href="/archive/tagged/general/" class="post-tag" rel="tag">general</a> &nbsp;<a href="/archive/tagged/web/" class="post-tag" rel="tag">web</a> &nbsp;<a href="/archive/tagged/css/" class="post-tag" rel="tag">css</a> &nbsp;<a href="/archive/tagged/javascript/" class="post-tag" rel="tag">javascript</a> &nbsp;
   </div>
   <hr aria-hidden="true">
   <nav aria-label="Paging">
@@ -148,7 +150,7 @@
                 An <a href="https://xn--sr8hvo.ws">IndieWeb Webring</a> 🕸💍
                 <a href="https://xn--sr8hvo.ws/next">→</a>
             </div>
-            <div class="lastrun">Hand crafted using <a href="https://www.11ty.dev/">eleventy</a>. Built on the 16/10/2023 at 04:39:06 in the flashiest of flashes⚡</div>
+            <div class="lastrun">Hand crafted using <a href="https://www.11ty.dev/">eleventy</a>. Built on the 16/10/2023 at 05:42:38 in the flashiest of flashes⚡</div>
         </div>
     </footer>
     <!-- Current page: /posts/2022/stylesheet-switching-3/ -->

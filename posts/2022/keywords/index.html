@@ -79,7 +79,7 @@
         <hr class="nodisplay" aria-hidden="true">
         <div class="main-content">
             
-<article>
+<article class="h-entry">
   <nav aria-label="Paging">
       <div class="prev-next">
         <strong>« Newer:</strong><a class="next" rel="next" href="/posts/2022/look-to-windward/">Look to Windward</a>
@@ -90,7 +90,7 @@
       <hr>
   </nav>
   <header id="skip-content-target">
-      <h1>Keywords meta tag</h1> 
+      <h1 class="p-name">Keywords meta tag</h1> 
       <h2 class="published">
           <time class="dt-published" datetime="Invalid DateTime">
               <span class="date-day">27</span> 
@@ -99,14 +99,16 @@
           </time>
       </h2>
   </header>
-  <p>I just realised that on my posts I am not putting the tags in the &quot;keywords&quot; meta tag.  It's clear to me that search engines no longer use the keywords meta tag for indexing. Nevertheless, it feels like the right thing to do to me. I am not interested in search engine optimisation, at all. I would however like my site to be an example of good web practice.</p>
+  <div class="e-content">    
+    <p>I just realised that on my posts I am not putting the tags in the &quot;keywords&quot; meta tag.  It's clear to me that search engines no longer use the keywords meta tag for indexing. Nevertheless, it feels like the right thing to do to me. I am not interested in search engine optimisation, at all. I would however like my site to be an example of good web practice.</p>
 <p>So whilst populating the keywords meta tag is probably a waste of time in most cases, who knows, maybe in the future some crawler or indexer will use it for something. Or some researcher might find them usefull for cross checking against the content. And in any case, it's one line of code in <a href="https://www.11ty.dev">eleventy</a>:</p>
 <pre><code>&lt;meta name=&quot;keywords&quot; content=&quot;posts,general,keywords,code,tags,information science,web&quot; /&gt;
 </code></pre>
 <p>Maybe I am old school, but I don't think we should be avoiding useful meta tags just because Google is not interested in them. In fact Google should maybe start paying attention to them, and rate sites down who's meta tag keywords don't match its own algorithm's keywords for the page.</p>
  
+  </div>
   <hr aria-hidden="true">
-  <div class="tagged"><strong>Tagged:</strong><a href="/archive/tagged/general/" class="post-tag">general</a> &nbsp;<a href="/archive/tagged/keywords/" class="post-tag">keywords</a> &nbsp;<a href="/archive/tagged/code/" class="post-tag">code</a> &nbsp;<a href="/archive/tagged/tags/" class="post-tag">tags</a> &nbsp;<a href="/archive/tagged/information-science/" class="post-tag">information science</a> &nbsp;<a href="/archive/tagged/web/" class="post-tag">web</a> &nbsp;
+  <div class="tagged"><strong>Tagged:</strong><a href="/archive/tagged/general/" class="post-tag" rel="tag">general</a> &nbsp;<a href="/archive/tagged/keywords/" class="post-tag" rel="tag">keywords</a> &nbsp;<a href="/archive/tagged/code/" class="post-tag" rel="tag">code</a> &nbsp;<a href="/archive/tagged/tags/" class="post-tag" rel="tag">tags</a> &nbsp;<a href="/archive/tagged/information-science/" class="post-tag" rel="tag">information science</a> &nbsp;<a href="/archive/tagged/web/" class="post-tag" rel="tag">web</a> &nbsp;
   </div>
   <hr aria-hidden="true">
   <nav aria-label="Paging">
@@ -146,7 +148,7 @@
                 An <a href="https://xn--sr8hvo.ws">IndieWeb Webring</a> 🕸💍
                 <a href="https://xn--sr8hvo.ws/next">→</a>
             </div>
-            <div class="lastrun">Hand crafted using <a href="https://www.11ty.dev/">eleventy</a>. Built on the 16/10/2023 at 04:39:06 in the flashiest of flashes⚡</div>
+            <div class="lastrun">Hand crafted using <a href="https://www.11ty.dev/">eleventy</a>. Built on the 16/10/2023 at 05:42:38 in the flashiest of flashes⚡</div>
         </div>
     </footer>
     <!-- Current page: /posts/2022/keywords/ -->

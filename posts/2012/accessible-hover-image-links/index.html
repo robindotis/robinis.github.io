@@ -79,7 +79,7 @@
         <hr class="nodisplay" aria-hidden="true">
         <div class="main-content">
             
-<article>
+<article class="h-entry">
   <nav aria-label="Paging">
       <div class="prev-next">
         <strong>« Newer:</strong><a class="next" rel="next" href="/posts/2012/the-end-of-web-design/">The end of web design?</a>
@@ -90,7 +90,7 @@
       <hr>
   </nav>
   <header id="skip-content-target">
-      <h1>Accessible hover image links</h1> 
+      <h1 class="p-name">Accessible hover image links</h1> 
       <h2 class="published">
           <time class="dt-published" datetime="Invalid DateTime">
               <span class="date-day">25</span> 
@@ -99,7 +99,8 @@
           </time>
       </h2>
   </header>
-  <p>Hover images, that is images that change when the pointer moves over them, have always been an integral part of web development. They alert the user to the fact that the image is "active". Usually this indicates it can be clicked.</p>
+  <div class="e-content">    
+    <p>Hover images, that is images that change when the pointer moves over them, have always been an integral part of web development. They alert the user to the fact that the image is "active". Usually this indicates it can be clicked.</p>
 <p>Implementing a hover image is relatively straightforward. But doing so in an accessible manner which does not require the use of Javascript is more tricky. Here's a technique I've recently used, which I like for it's relative simplicity as well as being mostly accessible.</p>
 <p>HTML:</p>
 <pre>&lt;a class="facebook" href="http://facebook.com/" title="Facebook"&gt;
@@ -123,8 +124,9 @@ border: 1px solid #000;<br>
 </ul>
 <p>Simple, but effective.</p>
  
+  </div>
   <hr aria-hidden="true">
-  <div class="tagged"><strong>Tagged:</strong><a href="/archive/tagged/web/" class="post-tag">web</a> &nbsp;<a href="/archive/tagged/a11y/" class="post-tag">a11y</a> &nbsp;<a href="/archive/tagged/development/" class="post-tag">development</a> &nbsp;
+  <div class="tagged"><strong>Tagged:</strong><a href="/archive/tagged/web/" class="post-tag" rel="tag">web</a> &nbsp;<a href="/archive/tagged/a11y/" class="post-tag" rel="tag">a11y</a> &nbsp;<a href="/archive/tagged/development/" class="post-tag" rel="tag">development</a> &nbsp;
   </div>
   <hr aria-hidden="true">
   <nav aria-label="Paging">
@@ -164,7 +166,7 @@ border: 1px solid #000;<br>
                 An <a href="https://xn--sr8hvo.ws">IndieWeb Webring</a> 🕸💍
                 <a href="https://xn--sr8hvo.ws/next">→</a>
             </div>
-            <div class="lastrun">Hand crafted using <a href="https://www.11ty.dev/">eleventy</a>. Built on the 16/10/2023 at 04:39:06 in the flashiest of flashes⚡</div>
+            <div class="lastrun">Hand crafted using <a href="https://www.11ty.dev/">eleventy</a>. Built on the 16/10/2023 at 05:42:38 in the flashiest of flashes⚡</div>
         </div>
     </footer>
     <!-- Current page: /posts/2012/accessible-hover-image-links/ -->

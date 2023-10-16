@@ -79,7 +79,7 @@
         <hr class="nodisplay" aria-hidden="true">
         <div class="main-content">
             
-<article>
+<article class="h-entry">
   <nav aria-label="Paging">
       <div class="prev-next">
         <strong>« Newer:</strong><a class="next" rel="next" href="/posts/2021/thoughts-on-tooling-for-static-sites/">Thoughts on tooling for static sites</a>
@@ -90,7 +90,7 @@
       <hr>
   </nav>
   <header id="skip-content-target">
-      <h1>Improving the publishing workflow</h1> 
+      <h1 class="p-name">Improving the publishing workflow</h1> 
       <h2 class="published">
           <time class="dt-published" datetime="Invalid DateTime">
               <span class="date-day">27</span> 
@@ -99,14 +99,16 @@
           </time>
       </h2>
   </header>
-  <p>In my previous posts I mentioned how I tried out Netlify CMS, but then chose not to go down that route. So I kept looking for other options. My aim being to do as much as possible in one place, whilst avoiding as little lock-in as possible.</p>
+  <div class="e-content">    
+    <p>In my previous posts I mentioned how I tried out Netlify CMS, but then chose not to go down that route. So I kept looking for other options. My aim being to do as much as possible in one place, whilst avoiding as little lock-in as possible.</p>
 <p>I discovered <a href="https://cloudcannon.com/">cloudcannon</a> and checked out how I can make use of that. In the end it wasn't for me, but it had one feature which prompted a rethink. It has output syncing, which copies your static files to another &quot;Live&quot; repository if you want. I tried this out and it worked great. Pointing Netlify to this live repository significantly reduced the Netlify build times. Since I am on the Netlify free plan with limited build minutes, this seemed like a good idea.</p>
 <p>But how to build my static files without cloudcannon or getting Netlify to do so. Well <a href="https://github.com/features/actions">GitHub has actions</a> and there is <a href="https://github.com/features/actions">an action created by another user to build eleventy sites</a>.  So I got that working.</p>
 <p>Then I remembered that GitHub also has &quot;Pages&quot; for hosting static websites. So I thought if I am already building my static files to &quot;Live&quot; repo on GitHub, why not use <a href="https://pages.github.com/">GitHub Pages</a> to host them. Setting that up was quite straightforward without using a custom domain. So now I have my pages hosted on GitHub pages and edited through <a href="https://forestry.io/">forestry</a>.</p>
 <p>The final thing to do is to update the DNS settings so that I can use my own domain name.  Once I have done this, I can potentially remove Netlify from my publishing workflow. This is a shame, because I liked their product and service. But if I can manage this through GitHub that would be one less tool I need to interact with.</p>
  
+  </div>
   <hr aria-hidden="true">
-  <div class="tagged"><strong>Tagged:</strong><a href="/archive/tagged/web/" class="post-tag">web</a> &nbsp;<a href="/archive/tagged/jamstack/" class="post-tag">jamstack</a> &nbsp;<a href="/archive/tagged/development/" class="post-tag">development</a> &nbsp;
+  <div class="tagged"><strong>Tagged:</strong><a href="/archive/tagged/web/" class="post-tag" rel="tag">web</a> &nbsp;<a href="/archive/tagged/jamstack/" class="post-tag" rel="tag">jamstack</a> &nbsp;<a href="/archive/tagged/development/" class="post-tag" rel="tag">development</a> &nbsp;
   </div>
   <hr aria-hidden="true">
   <nav aria-label="Paging">
@@ -146,7 +148,7 @@
                 An <a href="https://xn--sr8hvo.ws">IndieWeb Webring</a> 🕸💍
                 <a href="https://xn--sr8hvo.ws/next">→</a>
             </div>
-            <div class="lastrun">Hand crafted using <a href="https://www.11ty.dev/">eleventy</a>. Built on the 16/10/2023 at 04:39:06 in the flashiest of flashes⚡</div>
+            <div class="lastrun">Hand crafted using <a href="https://www.11ty.dev/">eleventy</a>. Built on the 16/10/2023 at 05:42:38 in the flashiest of flashes⚡</div>
         </div>
     </footer>
     <!-- Current page: /posts/2021/improving-the-publishing-workflow/ -->

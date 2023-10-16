@@ -79,7 +79,7 @@
         <hr class="nodisplay" aria-hidden="true">
         <div class="main-content">
             
-<article>
+<article class="h-entry">
   <nav aria-label="Paging">
       <div class="prev-next">
         <strong>« Newer:</strong><a class="next" rel="next" href="/posts/2021/natural-commemoration/">Natural commemoration</a>
@@ -90,7 +90,7 @@
       <hr>
   </nav>
   <header id="skip-content-target">
-      <h1>Adding tags to images in Windows 11</h1> 
+      <h1 class="p-name">Adding tags to images in Windows 11</h1> 
       <h2 class="published">
           <time class="dt-published" datetime="Invalid DateTime">
               <span class="date-day">23</span> 
@@ -99,15 +99,17 @@
           </time>
       </h2>
   </header>
-  <p>Sometimes when I am adding tags to images using the properties dialog of Windows explorer I get the following error:</p>
+  <div class="e-content">    
+    <p>Sometimes when I am adding tags to images using the properties dialog of Windows explorer I get the following error:</p>
 <blockquote>
 <p>error 0x88982F52: there is too much metadata...</p>
 </blockquote>
 <p>This is frustrating as it means some of my photos cannot be tagged and I can't find an obvious reason for this. It has been happening across photos taken on different devices for years.</p>
 <p>I came across <a href="https://answers.microsoft.com/en-us/windows/forum/all/windows-10-0x88982f52-there-is-too-much-metadata/9b5ab801-bd14-4e4b-9108-e34cc4e48b83">this discussion on the problem</a>. It turns out the problem is probably related to the size of thumbnail image that is stored in the metadata. The problem can be fixed by opening the image in the photos app, rotating it until it returns to it's original position and then closing the image. Not terribly elegant, but it does work!</p>
  
+  </div>
   <hr aria-hidden="true">
-  <div class="tagged"><strong>Tagged:</strong><a href="/archive/tagged/general/" class="post-tag">general</a> &nbsp;<a href="/archive/tagged/windows/" class="post-tag">windows</a> &nbsp;
+  <div class="tagged"><strong>Tagged:</strong><a href="/archive/tagged/general/" class="post-tag" rel="tag">general</a> &nbsp;<a href="/archive/tagged/windows/" class="post-tag" rel="tag">windows</a> &nbsp;
   </div>
   <hr aria-hidden="true">
   <nav aria-label="Paging">
@@ -147,7 +149,7 @@
                 An <a href="https://xn--sr8hvo.ws">IndieWeb Webring</a> 🕸💍
                 <a href="https://xn--sr8hvo.ws/next">→</a>
             </div>
-            <div class="lastrun">Hand crafted using <a href="https://www.11ty.dev/">eleventy</a>. Built on the 16/10/2023 at 04:39:06 in the flashiest of flashes⚡</div>
+            <div class="lastrun">Hand crafted using <a href="https://www.11ty.dev/">eleventy</a>. Built on the 16/10/2023 at 05:42:38 in the flashiest of flashes⚡</div>
         </div>
     </footer>
     <!-- Current page: /posts/2021/adding-tags-to-images-in-windows-11/ -->

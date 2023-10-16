@@ -79,7 +79,7 @@
         <hr class="nodisplay" aria-hidden="true">
         <div class="main-content">
             
-<article>
+<article class="h-entry">
   <nav aria-label="Paging">
       <div class="prev-next">
         <strong>« Newer:</strong><a class="next" rel="next" href="/posts/2023/beebop-plovdiv/">Beebop Plovdiv</a>
@@ -90,7 +90,7 @@
       <hr>
   </nav>
   <header id="skip-content-target">
-      <h1>Upgrading to Eleventy 2</h1> 
+      <h1 class="p-name">Upgrading to Eleventy 2</h1> 
       <h2 class="published">
           <time class="dt-published" datetime="Invalid DateTime">
               <span class="date-day">30</span> 
@@ -99,12 +99,14 @@
           </time>
       </h2>
   </header>
-  <p>This morning I upgraded this site to be generated using <a href="https://www.11ty.dev/blog/eleventy-v2/">Eleventy 2.0.1</a>. The process was dead simple thanks to this great <a href="https://danabyerly.com/notes/upgrading-to-eleventy-2-0-0/">post by Dana Byerly about the upgrade process</a>.</p>
+  <div class="e-content">    
+    <p>This morning I upgraded this site to be generated using <a href="https://www.11ty.dev/blog/eleventy-v2/">Eleventy 2.0.1</a>. The process was dead simple thanks to this great <a href="https://danabyerly.com/notes/upgrading-to-eleventy-2-0-0/">post by Dana Byerly about the upgrade process</a>.</p>
 <p>I did however encounter one strange problem with <a href="https://lodash.com/">lodash</a>. After following the first three steps and then running the build command I received errors from npm about the missing &quot;lodash&quot; module. So I looked in my local node_modules and the only relevant folder there was &quot;lodash.deburr&quot;. I am not sure why, or even what the difference is between the two. Possibly this was something which worked in eleventy 1.0 but no longer in eleventy 2.0, no idea. So I ran <code>npm install lodash</code> and then continued with step 4 and everything was fine.</p>
 <p>Now I need to see how to take advantage of the <a href="https://11ty.rocks/posts/new-features-upgrade-considerations-eleventy-version-2/">new features in Eleventy 2.0</a>, starting with <a href="https://www.11ty.dev/docs/usage/incremental/">incremental builds</a> during development.</p>
  
+  </div>
   <hr aria-hidden="true">
-  <div class="tagged"><strong>Tagged:</strong><a href="/archive/tagged/web/" class="post-tag">web</a> &nbsp;<a href="/archive/tagged/development/" class="post-tag">development</a> &nbsp;<a href="/archive/tagged/eleventy/" class="post-tag">eleventy</a> &nbsp;<a href="/archive/tagged/upgrade/" class="post-tag">upgrade</a> &nbsp;
+  <div class="tagged"><strong>Tagged:</strong><a href="/archive/tagged/web/" class="post-tag" rel="tag">web</a> &nbsp;<a href="/archive/tagged/development/" class="post-tag" rel="tag">development</a> &nbsp;<a href="/archive/tagged/eleventy/" class="post-tag" rel="tag">eleventy</a> &nbsp;<a href="/archive/tagged/upgrade/" class="post-tag" rel="tag">upgrade</a> &nbsp;
   </div>
   <hr aria-hidden="true">
   <nav aria-label="Paging">
@@ -144,7 +146,7 @@
                 An <a href="https://xn--sr8hvo.ws">IndieWeb Webring</a> 🕸💍
                 <a href="https://xn--sr8hvo.ws/next">→</a>
             </div>
-            <div class="lastrun">Hand crafted using <a href="https://www.11ty.dev/">eleventy</a>. Built on the 16/10/2023 at 04:39:06 in the flashiest of flashes⚡</div>
+            <div class="lastrun">Hand crafted using <a href="https://www.11ty.dev/">eleventy</a>. Built on the 16/10/2023 at 05:42:38 in the flashiest of flashes⚡</div>
         </div>
     </footer>
     <!-- Current page: /posts/2023/eleventy-2-upgrade/ -->

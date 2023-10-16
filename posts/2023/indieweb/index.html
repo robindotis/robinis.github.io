@@ -79,7 +79,7 @@
         <hr class="nodisplay" aria-hidden="true">
         <div class="main-content">
             
-<article>
+<article class="h-entry">
   <nav aria-label="Paging">
       <div class="prev-next">
         <strong>« Newer:</strong> This is the latest post!
@@ -90,24 +90,26 @@
       <hr>
   </nav>
   <header id="skip-content-target">
-      <h1>IndieWeb</h1> 
+      <h1 class="p-name">IndieWeb</h1> 
       <h2 class="published">
           <time class="dt-published" datetime="Invalid DateTime">
-              <span class="date-day">15</span> 
+              <span class="date-day">16</span> 
               <span class="date-month">October</span>, 
               <span class="date-year">2023</span>
           </time>
       </h2>
   </header>
-  <p>Today I implemented some indiweb stuff:</p>
-<ul>
-<li>Indiewebring</li>
-<li>hcard (peeking at <a href="https://jasm1nii.xyz/">https://jasm1nii.xyz/</a> and <a href="https://vanderven.se/martijn/">https://vanderven.se/martijn/</a>)</li>
-<li>webmentions (again)</li>
-</ul>
+  <div class="e-content">    
+    <p>Today I implemented some of the <a href="https://indieweb.org/">IndieWeb</a> <a href="https://indieweb.org/">building blocks</a>.</p>
+<p>First I added <a href="https://indieweb.org/IndieAuth">IndieAuth</a> with GitHub account, testing it against the <a href="https://indielogin.com/api">IndieLogin</a> service.</p>
+<p>Next I added the required meta tags for <a href="https://indieweb.org/Webmention">webmentions</a> using the <a href="https://webmention.io/">webmention.io</a> service to receive webmentions and pingbacks. Not that anyone is ever reading my blog or that I process the mentions... Still the site is setup for this.</p>
+<p>Then I added a <a href="https://indieweb.org/microformats">microformat</a> <a href="https://indieweb.org/h-card">h-card</a> to my homepage in order to have business card like functionality on the web.</p>
+<p>Finally, to wrap it all up, I added myself to the <a href="https://indieweb.org/indiewebring">IndieWebRing</a>, taking the lead from <a href="https://jasm1nii.xyz/">jasmine</a> and <a href="https://vanderven.se/martijn/">Martin van der van</a> on how to setup my h-card.</p>
+<p>Having got started with microformats for the h-card, I went and added the required properties for <a href="http://microformats.org/wiki/h-entry#Core_Properties">h-entry</a> as well.</p>
  
+  </div>
   <hr aria-hidden="true">
-  <div class="tagged"><strong>Tagged:</strong><a href="/archive/tagged/general/" class="post-tag">general</a> &nbsp;<a href="/archive/tagged/web/" class="post-tag">web</a> &nbsp;<a href="/archive/tagged/indieweb/" class="post-tag">indieweb</a> &nbsp;
+  <div class="tagged"><strong>Tagged:</strong><a href="/archive/tagged/general/" class="post-tag" rel="tag">general</a> &nbsp;<a href="/archive/tagged/web/" class="post-tag" rel="tag">web</a> &nbsp;<a href="/archive/tagged/indieweb/" class="post-tag" rel="tag">indieweb</a> &nbsp;
   </div>
   <hr aria-hidden="true">
   <nav aria-label="Paging">
@@ -147,7 +149,7 @@
                 An <a href="https://xn--sr8hvo.ws">IndieWeb Webring</a> 🕸💍
                 <a href="https://xn--sr8hvo.ws/next">→</a>
             </div>
-            <div class="lastrun">Hand crafted using <a href="https://www.11ty.dev/">eleventy</a>. Built on the 16/10/2023 at 04:39:06 in the flashiest of flashes⚡</div>
+            <div class="lastrun">Hand crafted using <a href="https://www.11ty.dev/">eleventy</a>. Built on the 16/10/2023 at 05:42:38 in the flashiest of flashes⚡</div>
         </div>
     </footer>
     <!-- Current page: /posts/2023/indieweb/ -->

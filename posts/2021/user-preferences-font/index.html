@@ -79,7 +79,7 @@
         <hr class="nodisplay" aria-hidden="true">
         <div class="main-content">
             
-<article>
+<article class="h-entry">
   <nav aria-label="Paging">
       <div class="prev-next">
         <strong>« Newer:</strong><a class="next" rel="next" href="/posts/2021/fonts-all-in/">All in on user fonts</a>
@@ -90,7 +90,7 @@
       <hr>
   </nav>
   <header id="skip-content-target">
-      <h1>Respecting the user&#39;s preferred font</h1> 
+      <h1 class="p-name">Respecting the user&#39;s preferred font</h1> 
       <h2 class="published">
           <time class="dt-published" datetime="Invalid DateTime">
               <span class="date-day">10</span> 
@@ -99,7 +99,8 @@
           </time>
       </h2>
   </header>
-  <p>I feel designing and publishing web content should be more about how the user wishes to experience a site and less about how the designer wants to the site to be experience. The web is after all a more fluid medium than traditional print media.</p>
+  <div class="e-content">    
+    <p>I feel designing and publishing web content should be more about how the user wishes to experience a site and less about how the designer wants to the site to be experience. The web is after all a more fluid medium than traditional print media.</p>
 <p>Most websites, certainly those who care about accessibility and usability by now implement font sizes using relative units such as &quot;ems&quot; or percentages. However few respect a user's preferred font. All common browsers on all common platforms let a user define their preferred font. But almost no websites take this into account. And yet it is trivial. Simply use for your site's font:</p>
 <p>body {<br>
 font-family: sans-serif, serif;<br>
@@ -110,8 +111,9 @@ font-family: user-font, 'Lucia Grande', Arial, sans-serif, serif;<br>
 }</p>
 <p>I've now adapted this website to respect this choice for the main text on this site. I've not yet done so for the more specific texts such as header, footer and navigation.  Probably I should.</p>
  
+  </div>
   <hr aria-hidden="true">
-  <div class="tagged"><strong>Tagged:</strong><a href="/archive/tagged/web/" class="post-tag">web</a> &nbsp;<a href="/archive/tagged/a11y/" class="post-tag">a11y</a> &nbsp;<a href="/archive/tagged/ux/" class="post-tag">ux</a> &nbsp;
+  <div class="tagged"><strong>Tagged:</strong><a href="/archive/tagged/web/" class="post-tag" rel="tag">web</a> &nbsp;<a href="/archive/tagged/a11y/" class="post-tag" rel="tag">a11y</a> &nbsp;<a href="/archive/tagged/ux/" class="post-tag" rel="tag">ux</a> &nbsp;
   </div>
   <hr aria-hidden="true">
   <nav aria-label="Paging">
@@ -151,7 +153,7 @@ font-family: user-font, 'Lucia Grande', Arial, sans-serif, serif;<br>
                 An <a href="https://xn--sr8hvo.ws">IndieWeb Webring</a> 🕸💍
                 <a href="https://xn--sr8hvo.ws/next">→</a>
             </div>
-            <div class="lastrun">Hand crafted using <a href="https://www.11ty.dev/">eleventy</a>. Built on the 16/10/2023 at 04:39:06 in the flashiest of flashes⚡</div>
+            <div class="lastrun">Hand crafted using <a href="https://www.11ty.dev/">eleventy</a>. Built on the 16/10/2023 at 05:42:38 in the flashiest of flashes⚡</div>
         </div>
     </footer>
     <!-- Current page: /posts/2021/user-preferences-font/ -->

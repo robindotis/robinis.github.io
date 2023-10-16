@@ -79,7 +79,7 @@
         <hr class="nodisplay" aria-hidden="true">
         <div class="main-content">
             
-<article>
+<article class="h-entry">
   <nav aria-label="Paging">
       <div class="prev-next">
         <strong>« Newer:</strong><a class="next" rel="next" href="/posts/2023/bridel-circular-walk/">Bridel Circular Walk</a>
@@ -90,7 +90,7 @@
       <hr>
   </nav>
   <header id="skip-content-target">
-      <h1>Improving the pipeline</h1> 
+      <h1 class="p-name">Improving the pipeline</h1> 
       <h2 class="published">
           <time class="dt-published" datetime="Invalid DateTime">
               <span class="date-day">24</span> 
@@ -99,14 +99,16 @@
           </time>
       </h2>
   </header>
-  <p>Since moving this site to <a href="https://www.11ty.dev/">Eleventy</a> back in <a href="/posts/2021/welcome-back/">December 2020</a> I've been continually improving my publication pipeline. It started out being a manual process running bits of hacked together code on my laptop before switching to my online tool of the day for pushing the changes to the hosted site.</p>
+  <div class="e-content">    
+    <p>Since moving this site to <a href="https://www.11ty.dev/">Eleventy</a> back in <a href="/posts/2021/welcome-back/">December 2020</a> I've been continually improving my publication pipeline. It started out being a manual process running bits of hacked together code on my laptop before switching to my online tool of the day for pushing the changes to the hosted site.</p>
 <p>For a long time I was using <a href="https://tina.io/forestry/">Forestry.io</a> which is now discontinued and I never really took to it's replacement. So I settled on simply using Github for everything. This means the source for code is pushed from my laptop to  Github, the published site is on Github Pages and the processing for creating the site from the source is managed through Github Actions. Initiallly triggering these three parts were things I did manually and separately.</p>
 <p>I soon started scripting these actions in Powershell. The first script simply pushed the changes to github. I modified this to include a pull from github before the push, to ensure there were no conflicts when pushing. After running the script, I would manually switch to GitHub to run the workkflow in GitHub Actions that actually updated the site with the changes.</p>
 <p>Well, yesterday I finally added that task to the script as well. Using the GitHub Rest API is straighforward and creating the correct curl command was relatively easy. But I don't know much about curl and in any case the script is a powershell script. Some Googling (mainly using Bing 🙂) got me most of the way there, by using the <code>Invoke-RestMethod</code>. But I wasn't sure how to add one property to the command. Thankfully I found <a href="https://stackoverflow.com/a/73773558/131948">a code snippet on Stackoverflow</a> which gave me what I needed. It had no explanations or comments, it was just posted as an answer to a question as is. Nevertheless it solved my problem.</p>
 <p>And so this post becomes the first one pushed to GitHub and published on GitHub Pages using one integrated script. 👏</p>
  
+  </div>
   <hr aria-hidden="true">
-  <div class="tagged"><strong>Tagged:</strong><a href="/archive/tagged/web/" class="post-tag">web</a> &nbsp;<a href="/archive/tagged/development/" class="post-tag">development</a> &nbsp;<a href="/archive/tagged/github/" class="post-tag">github</a> &nbsp;<a href="/archive/tagged/publication/" class="post-tag">publication</a> &nbsp;<a href="/archive/tagged/actions/" class="post-tag">actions</a> &nbsp;<a href="/archive/tagged/workflows/" class="post-tag">workflows</a> &nbsp;
+  <div class="tagged"><strong>Tagged:</strong><a href="/archive/tagged/web/" class="post-tag" rel="tag">web</a> &nbsp;<a href="/archive/tagged/development/" class="post-tag" rel="tag">development</a> &nbsp;<a href="/archive/tagged/github/" class="post-tag" rel="tag">github</a> &nbsp;<a href="/archive/tagged/publication/" class="post-tag" rel="tag">publication</a> &nbsp;<a href="/archive/tagged/actions/" class="post-tag" rel="tag">actions</a> &nbsp;<a href="/archive/tagged/workflows/" class="post-tag" rel="tag">workflows</a> &nbsp;
   </div>
   <hr aria-hidden="true">
   <nav aria-label="Paging">
@@ -146,7 +148,7 @@
                 An <a href="https://xn--sr8hvo.ws">IndieWeb Webring</a> 🕸💍
                 <a href="https://xn--sr8hvo.ws/next">→</a>
             </div>
-            <div class="lastrun">Hand crafted using <a href="https://www.11ty.dev/">eleventy</a>. Built on the 16/10/2023 at 04:39:06 in the flashiest of flashes⚡</div>
+            <div class="lastrun">Hand crafted using <a href="https://www.11ty.dev/">eleventy</a>. Built on the 16/10/2023 at 05:42:38 in the flashiest of flashes⚡</div>
         </div>
     </footer>
     <!-- Current page: /posts/2023/publication-pipeline/ -->
