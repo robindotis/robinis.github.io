@@ -6,7 +6,7 @@
 	
 	<link href="https://www.robin.is/feed/index.xml" rel="self"/>
 	<link href="https://www.robin.is/" rel="alternate" type="text/html"/>
-	<updated>2023-10-16T09:33:27Z</updated>
+	<updated>2023-10-16T00:33:27Z</updated>
 	<id>https://www.robin.is/</id>
 	<author>
 		<name>robindotis</name>
@@ -17,7 +17,7 @@
 	<entry>
 		<title>IndieWeb</title>
 		<link href="https://www.robin.is/posts/2023/indieweb/"/>
-		<updated>2023-10-16T09:33:27Z</updated>
+		<updated>2023-10-16T00:33:27Z</updated>
 		<id>https://www.robin.is/posts/2023/indieweb/</id>
 		<content type="html">&lt;p&gt;Today I implemented some of the &lt;a href=&quot;https://indieweb.org/&quot;&gt;IndieWeb&lt;/a&gt; &lt;a href=&quot;https://indieweb.org/&quot;&gt;building blocks&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;First I added &lt;a href=&quot;https://indieweb.org/IndieAuth&quot;&gt;IndieAuth&lt;/a&gt; with GitHub account, testing it against the &lt;a href=&quot;https://indielogin.com/api&quot;&gt;IndieLogin&lt;/a&gt; service.&lt;/p&gt;
