@@ -6,13 +6,59 @@
 	
 	<link href="https://www.robin.is/feed/index.xml" rel="self"/>
 	<link href="https://www.robin.is/" rel="alternate" type="text/html"/>
-	<updated>2023-10-16T00:33:27Z</updated>
+	<updated>2023-10-23T08:45:33Z</updated>
 	<id>https://www.robin.is/</id>
 	<author>
 		<name>robindotis</name>
 		<email>admin@robin.is</email>
 	</author>
 	
+	
+	<entry>
+		<title>The Techno-Optimist Manifesto</title>
+		<link href="https://www.robin.is/posts/2023/techno-optimist-manifesto/"/>
+		<updated>2023-10-23T08:45:33Z</updated>
+		<id>https://www.robin.is/posts/2023/techno-optimist-manifesto/</id>
+		<content type="html">&lt;h2&gt;by Marc Andreessen&lt;/h2&gt;
+&lt;p&gt;Source: &lt;a href=&quot;https://a16z.com/the-techno-optimist-manifesto/&quot;&gt;The Techno-Optimist Manifesto&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Note: compare to Communist Manifesto.&lt;/p&gt;
+&lt;h2&gt;Lies&lt;/h2&gt;
+&lt;p&gt;This whole intro is a lie. We are not being told any of these things. We are told to be weary of thechnology, to treat it with respect. With great power comes great responsibility.&lt;/p&gt;
+&lt;h2&gt;Truth&lt;/h2&gt;
+&lt;p&gt;Indeed, except I didn&#39;t realise the technology flag had been lowered.&lt;/p&gt;
+&lt;h2&gt;Technology&lt;/h2&gt;
+&lt;p&gt;Hmm...  I agree with a lot of this. But he misses some major points.&lt;/p&gt;
+&lt;p&gt;We have a problem of poverty, so we invent technology to create abundance.&lt;/p&gt;
+&lt;p&gt;Abundance for some, but at the moment this abundance is being wasted by the few rather than put to good use for the many.&lt;/p&gt;
+&lt;p&gt;We believe this is why our descendents will live in the stars.&lt;/p&gt;
+&lt;p&gt;The question is, can we live in the stars before we use up all the resources on the planet. We haven&#39;t yet turned the corner on wasting resources.&lt;/p&gt;
+&lt;h2&gt;Markets&lt;/h2&gt;
+&lt;p&gt;Markets prevent monopolies and cartels.&lt;/p&gt;
+&lt;p&gt;No they dont&#39;t. Plenty of monopolies in the world, also in the free capitalist world.&lt;/p&gt;
+&lt;p&gt;We believe markets are an inherently individualistic way to achieve superior collective outcomes.&lt;/p&gt;
+&lt;p&gt;You can believe that. Some people believe the earth is flat. It doesn&#39;t make it true. Where&#39;s the evidence for such a statement.&lt;/p&gt;
+&lt;p&gt;We believe the ultimate moral defense of markets is that they divert people who otherwise would raise armies and start religions into peacefully productive pursuits.&lt;/p&gt;
+&lt;p&gt;Only if the spoils of the markets are fairly distributed. Not the case at the moment.&lt;/p&gt;
+&lt;p&gt;We believe markets are the way to generate societal wealth for everything else we want to pay for, including basic research, social welfare programs, and national defense.&lt;/p&gt;
+&lt;p&gt;Why would we need social welfare programs if the markets actually worked?&lt;/p&gt;
+&lt;p&gt;Why would we need national defense, if we wereliving in the stars?&lt;/p&gt;
+&lt;p&gt;We believe a Universal Basic Income would turn people into zoo animals to be farmed by the state.&lt;/p&gt;
+&lt;p&gt;This I kind of agree with.&lt;/p&gt;
+&lt;p&gt;Man was not meant to be farmed; man was meant to be useful, to be productive, to be proud.&lt;/p&gt;
+&lt;p&gt;Hmmm, useful to whom? Productive for what? We were not &lt;strong&gt;meant&lt;/strong&gt; to be anything, we simply &lt;strong&gt;are&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;Being proud probably helps though.&lt;/p&gt;
+&lt;p&gt;There are a lot of valid points in this section. But since he is saying markets support the welfare state, then they must be taxed and regulated, otherwise how will this support work. Not quite the free markets he is intending. Or else we understand different things in &amp;quot;free markets&amp;quot;.&lt;/p&gt;
+&lt;h2&gt;The Techno-Capital Machine&lt;/h2&gt;
+&lt;p&gt;Whole section reads like a description of Iain M Banks&#39; &lt;a href=&quot;https://www.robin.is/archive/tagged/iain-banks/&quot;&gt;Culture Series&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Of course that is science fiction and doesn&#39;t have to deal with the limited resources on planet earth. Nevermind the limits of physics and the physiology of our bodies.&lt;/p&gt;
+&lt;p&gt;I can&#39;t help feeling that &amp;quot;accelerationism&amp;quot; as he calls it, doesn&#39;t quite lead to what he thinks. Acceleration tends to stretch things. If you are not careful, the link between those at the front doing the pulling (the few super rich), and those at the back being pulled along (the poor), risks breaking. We could end up living in an &lt;a href=&quot;https://en.wikipedia.org/wiki/Elysium_(film)&quot;&gt;Elysium&lt;/a&gt; style &amp;quot;utopia&amp;quot;.&lt;/p&gt;
+&lt;h2&gt;Intelligence&lt;/h2&gt;
+&lt;p&gt;Intelligence is inate. But being smart needs high quality education. Limiting high quality education to the rich, as is increasingly happening now, means the compound effect of &amp;quot;intelligence * education&amp;quot; is being woefully exploited. Since intelligence is inate, it is equally spread through the population. But when only one segment of the population gets to use that intelligence, you are missing out on an awful lot of intelligence.&lt;/p&gt;
+&lt;p&gt;A lot of this chapter was like &amp;quot;what is this guy on&amp;quot;:&lt;/p&gt;
+&lt;p&gt;as people form symbiotic relationships with machines into new cybernetic systems such as companies and networks;&lt;/p&gt;
+&lt;p&gt;Of course AI can and is beneficial, but only because it is powered by human intelligence.&lt;/p&gt;
+</content>
+	</entry>
 	
 	<entry>
 		<title>IndieWeb</title>
@@ -264,19 +310,6 @@
 &lt;p&gt;The Communists disdain to conceal their views and aims. They openly declare that their ends can be attained only by the forcible overthrow of all existing social conditions. Let the ruling classes tremble at a Communistic revolution. The proletarians have nothing to lose but their chains. They have a world to win.&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;Of course you have to fight for what you believe is right. Forcing others against their will to believe it will never work. There will always be those who don&#39;t believe. Suppressing them doesn&#39;t work for long.&lt;/p&gt;
-</content>
-	</entry>
-	
-	<entry>
-		<title>The work archives</title>
-		<link href="https://www.robin.is/posts/2023/work-archives/"/>
-		<updated>2023-08-16T19:12:00Z</updated>
-		<id>https://www.robin.is/posts/2023/work-archives/</id>
-		<content type="html">&lt;p&gt;Today I did some physical archiving, as opposed to the &lt;a href=&quot;https://www.robin.is/archiving/&quot;&gt;virtual archiving&lt;/a&gt; I do here.&lt;/p&gt;
-&lt;p&gt;Colleagues of mine had spent the last few weeks disappearing into our archives, to clear them out ahead of our move to a new building.&lt;/p&gt;
-&lt;p&gt;Well it turns out most of them can be binned, so I spent Wednesday afternoon helping them finish off the process of sorting them into paper for recycling, CDs, plastic for the main rubbish and piles and piles of folders presumably for shipping into the past for reuse in a time when they were useful. All our archives have now been digital for years.&lt;/p&gt;
-&lt;p&gt;So it was really a case of chucking stuff out rather than archiving, but it felt good and I felt productive once I saw the boxes we filled! 😀&lt;/p&gt;
-&lt;p&gt;It was also interesting to see colleagues&#39; names on the project folders from 15 years ago. I now feel slightly less frustrated when I have to ask them for the third time how to do things. I&#39;ve only been in the unit 4 years!&lt;/p&gt;
 </content>
 	</entry>
 </feed>
