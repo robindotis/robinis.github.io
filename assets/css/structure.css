@@ -403,6 +403,12 @@ footer div.lastrun a {
     text-decoration-thickness: 1px;
 }
 
+footer .badges {
+    display: block;
+    text-align: center;
+    padding-top: 10px;
+}
+
 footer div.footer-area {
     display: block;
 }
