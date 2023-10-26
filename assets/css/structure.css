@@ -289,6 +289,10 @@ p img, figure img {
     clear: both;
 }
 
+.badges p img {
+    display:inline;
+}
+
 main article h1, main article h2, main article h3, main article h4, main figcaption {
     clear: both;
     margin-bottom: 5px;
