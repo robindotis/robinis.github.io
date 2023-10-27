@@ -406,7 +406,12 @@ footer div.lastrun a {
 footer .badges {
     display: block;
     text-align: center;
-    padding-top: 10px;
+    padding-top: 5px;
+}
+
+footer .badges a {
+    display: inline-block;
+    margin: 10px 10px 0 10px;
 }
 
 footer div.footer-area {
