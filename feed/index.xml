@@ -6,13 +6,24 @@
 	
 	<link href="https://www.robin.is/feed/index.xml" rel="self"/>
 	<link href="https://www.robin.is/" rel="alternate" type="text/html"/>
-	<updated>2023-10-23T21:18:27Z</updated>
+	<updated>2023-11-02T18:00:33Z</updated>
 	<id>https://www.robin.is/</id>
 	<author>
 		<name>robindotis</name>
 		<email>admin@robin.is</email>
 	</author>
 	
+	
+	<entry>
+		<title>Do Androids Dream Of Electric Sheep</title>
+		<link href="https://www.robin.is/posts/2023/androids-sheep/"/>
+		<updated>2023-11-02T18:00:33Z</updated>
+		<id>https://www.robin.is/posts/2023/androids-sheep/</id>
+		<content type="html">&lt;h2&gt;by Philip K. Dick&lt;/h2&gt;
+&lt;p&gt;This is the book on which the film Blade Runner is based. I have always struggled to stay awake watching the film, as despite being interesting, it is very slow paced. The book on the other hand I finished in a couple of days. It&#39;s not gripping, but definitely interesting and raising some interesting questions about what is and isn&#39;t real. With the progress of AI in recent years, this is again a very current question. Well worth reading. And maybe I should watch the film again...&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://www.robin.is/assets/images/2023/androids-sheep.webp&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+</content>
+	</entry>
 	
 	<entry>
 		<title>Magic Mushroom</title>
@@ -360,18 +371,6 @@
 &lt;p&gt;&lt;img src=&quot;https://www.robin.is/assets/images/2023/boffer-2.webp&quot; alt=&quot;Green valley with wooded hills in the background&quot; /&gt;&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;https://www.robin.is/assets/images/2023/boffer-3.webp&quot; alt=&quot;Wheat kernel in front of the morning sun&quot; /&gt;&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;https://www.robin.is/assets/images/2023/boffer-4.webp&quot; alt=&quot;Stacks of harvested wheat waiting in the field to be collected in the morning sun&quot; /&gt;&lt;/p&gt;
-</content>
-	</entry>
-	
-	<entry>
-		<title>The Hydrogen Sonata</title>
-		<link href="https://www.robin.is/posts/2023/hyrdogen-sonata/"/>
-		<updated>2023-08-22T18:00:33Z</updated>
-		<id>https://www.robin.is/posts/2023/hyrdogen-sonata/</id>
-		<content type="html">&lt;h2&gt;by Iain M Banks&lt;/h2&gt;
-&lt;p&gt;His final Culture Series novel before his death marks a very fitting end to the series. It covers the notion of Subliming, where by advanced galactic civilisations voluntarily dissapear into the &amp;quot;Ether&amp;quot; as they feel their time in the &amp;quot;Real&amp;quot; is finished. As such it has some qualities of death itself. I don&#39;t think Banks knew he had cancer when writing this book. Judging by the interview in the back of the book he was planning on writing more Culture novels. Sadly that will not happen.&lt;/p&gt;
-&lt;p&gt;One of the questions this book asks is do you tell your good friend and distant relative that the whole basis and meaning of their life was a lie just before they die. You know they have this suspicion, but still they believe they lie. Do you tell them or do you let them go to the other side believing a lie? Perhaps it doesn&#39;t matter even if you tell them. They like the lie too much.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://www.robin.is/assets/images/2023/hydrogen-sonata.webp&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 </content>
 	</entry>
 </feed>
