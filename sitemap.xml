@@ -2323,6 +2323,11 @@
   </url>
   
   <url>
+    <loc>https://www.robin.is/archive/tagged/diary/</loc>
+    <lastmod>2023-11-02</lastmod>
+  </url>
+  
+  <url>
     <loc>https://www.robin.is/archive/tagged/html/</loc>
     <lastmod>2023-11-02</lastmod>
   </url>
@@ -2334,11 +2339,6 @@
   
   <url>
     <loc>https://www.robin.is/archive/tagged/book/</loc>
-    <lastmod>2023-11-02</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.robin.is/archive/tagged/diary/</loc>
     <lastmod>2023-11-02</lastmod>
   </url>
   
@@ -2753,6 +2753,11 @@
   </url>
   
   <url>
+    <loc>https://www.robin.is/archive/tagged/lands-end/</loc>
+    <lastmod>2023-11-02</lastmod>
+  </url>
+  
+  <url>
     <loc>https://www.robin.is/archive/tagged/cornwall/</loc>
     <lastmod>2023-11-02</lastmod>
   </url>
@@ -2764,11 +2769,6 @@
   
   <url>
     <loc>https://www.robin.is/archive/tagged/eden-project/</loc>
-    <lastmod>2023-11-02</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.robin.is/archive/tagged/lands-end/</loc>
     <lastmod>2023-11-02</lastmod>
   </url>
   
@@ -3608,17 +3608,17 @@
   </url>
   
   <url>
-    <loc>https://www.robin.is/archive/tagged/orleans/</loc>
-    <lastmod>2023-11-02</lastmod>
-  </url>
-  
-  <url>
     <loc>https://www.robin.is/archive/tagged/trevose/</loc>
     <lastmod>2023-11-02</lastmod>
   </url>
   
   <url>
     <loc>https://www.robin.is/archive/tagged/port-isaac/</loc>
+    <lastmod>2023-11-02</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.robin.is/archive/tagged/orleans/</loc>
     <lastmod>2023-11-02</lastmod>
   </url>
   
