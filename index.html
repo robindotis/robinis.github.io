@@ -101,8 +101,8 @@
         </header>
         <div class="e-content">
           <h2>Dependencies</h2>
-<p>One of the challenges, at least for me, in modern web development, is keeping track of dependencies. On the one hand they help you avoid reinventing the wheel. On the otherhand they can cause unexpected problems which are sometimes hard to diagnose. So I like to keep them to a minimum, especially when you don't really understand how they do what they do.</p>
-<p>So, I improved my GitHub action that builds my <a href="https://www.11ty.dev/">eleventy</a> based website by removing my dependency on an <a href="https://github.com/TartanLlama/actions-eleventy">action from a GitHub user called TartanLlama</a>. This action used a Docker file to build and generate the actual HTML pages for the website. The action has served me well for the last three years, but I always worried about what would happen if there was a bug and the user stopped maintaining this bit of code. It had stopped working once and it took me a couple of days to realise that I had to update my link to the action to a newer version. I didn't want to end up in <a href="/posts/2022/dependency/">this situation</a>, should the user decide to call it a day.</p>
+<p>One of the challenges, at least for me, in modern web development, is keeping track of dependencies. On the one hand they help you avoid reinventing the wheel. On the otherhand they can cause unexpected problems which are sometimes hard to diagnose. I like to keep them to a minimum, especially when I don't really understand how they do what they do.</p>
+<p>So, I improved my GitHub action that builds my <a href="https://www.11ty.dev/">eleventy</a> based website by removing my dependency on an <a href="https://github.com/TartanLlama/actions-eleventy">action from a GitHub user called TartanLlama</a>. This action used a Docker file to build and generate the actual HTML pages for the website. The action has served me well for the last three years, but I did worry about what would happen if there was a bug and the user stopped maintaining this bit of code. It had stopped working once and it took me a couple of days to realise that I had to update my link to the action to a newer version. I didn't want to end up in <a href="/posts/2022/dependency/">this situation</a>, should the user decide to call it a day.</p>
 <p>So I did some Googling and found <a href="https://www.rockyourcode.com/how-to-deploy-eleventy-to-github-pages-with-github-actions/">this blog post</a> and <a href="https://stackoverflow.com/a/75599084">this answer on Stack Overflow</a>. (<a href="/posts/2023/stackoverflow/">Yes, I know I am trying to avoid Stack Overflow</a>, but Google makes it very hard!). Between the two, I came up with this step in my GitHub action:</p>
 <pre><code>- name: Install dependencies &amp; build
     run: |
@@ -198,7 +198,7 @@
                 An <a href="https://xn--sr8hvo.ws">IndieWeb Webring</a> 🕸💍
                 <a href="https://xn--sr8hvo.ws/next">→</a>
             </div>
-            <div class="lastrun">Hand crafted using <a href="https://www.11ty.dev/">eleventy</a>. Built on the 30/11/2023 at 06:09:26 in the flashiest of flashes⚡</div>
+            <div class="lastrun">Hand crafted using <a href="https://www.11ty.dev/">eleventy</a>. Built on the 30/11/2023 at 06:25:11 in the flashiest of flashes⚡</div>
             <div class="badges">
                 <a href="https://www.anybrowser.org/campaign/"><img src="/assets/images/any-browser-button.png" alt="Viewable With Any Browser" width="80" height="15" /></a>
                 <a href="https://indieweb.org/"><img src="/assets/images/indieweb-button.png" alt="IndieWeb" width="80" height="15" /></a>
