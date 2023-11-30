@@ -68,7 +68,7 @@
                 <a href="/reading/" >reading</a> and 
                 <a href="/walking/" >walking</a> the 
                 <a href="/archive/tagged/angie/"  >dog</a>🐕‍🦺. Read 
-                    his 430 <a href="/archiving/" >posts</a> and find out more
+                    his 431 <a href="/archiving/" >posts</a> and find out more
                 <a href="/about/" >about</a> him.
 
             </nav>
@@ -87,6 +87,35 @@
 </article>
 
 <div class="posts-list">
+  
+    
+      <hr aria-hidden="true">
+      <article class="custom- h-entry">
+        <header>
+          <h2 class="p-name"><a href="/posts/2023/dependencies/" class="u-url">Dependencies</a></h2>
+          <time datetime="2023-11-29 08:18:27" class="dt-published">
+            <span class="date-day">29</span> 
+            <span class="date-month">November</span>, 
+            <span class="date-year">2023</span>
+          </time>
+        </header>
+        <div class="e-content">
+          <h2>Dependencies</h2>
+<p>One of the challenges, at least for me, in modern web development, is keeping track of dependencies. On the one hand they help you avoid reinventing the wheel. On the otherhand they can cause unexpected problems which are sometimes hard to diagnose. So I like to keep them to a minimum, especially when you don't really understand how they do what they do.</p>
+<p>So, I improved my GitHub action that builds my <a href="https://www.11ty.dev/">eleventy</a> based website by removing my dependency on an <a href="https://github.com/TartanLlama/actions-eleventy">action from a GitHub user called TartanLlama</a>. This action used a Docker file to build and generate the actual HTML pages for the website. The action has served me well for the last three years, but I always worried about what would happen if there was a bug and the user stopped maintaining this bit of code. It had stopped working once and it took me a couple of days to realise that I had to update my link to the action to a newer version. I didn't want to end up in <a href="/posts/2022/dependency/">this situation</a>, should the user decide to call it a day.</p>
+<p>So I did some Googling and found <a href="https://www.rockyourcode.com/how-to-deploy-eleventy-to-github-pages-with-github-actions/">this blog post</a> and <a href="https://stackoverflow.com/a/75599084">this answer on Stack Overflow</a>. (<a href="/posts/2023/stackoverflow/">Yes, I know I am trying to avoid Stack Overflow</a>, but Google makes it very hard!). Between the two, I came up with this step in my GitHub action:</p>
+<pre><code>- name: Install dependencies &amp; build
+    run: |
+        npm install --package-lock-only
+        npm ci
+        npm run build  
+</code></pre>
+
+        </div>
+        <div class="tagged">Tagged:<a href="/archive/tagged/general/" class="post-tag" rel="tag">general</a> &nbsp;<a href="/archive/tagged/web/" class="post-tag" rel="tag">web</a> &nbsp;<a href="/archive/tagged/javascript/" class="post-tag" rel="tag">javascript</a> &nbsp;<a href="/archive/tagged/github-pages/" class="post-tag" rel="tag">github pages</a> &nbsp;<a href="/archive/tagged/dependencies/" class="post-tag" rel="tag">dependencies</a> &nbsp;
+        </div>
+      </article>
+    
   
     
       <hr aria-hidden="true">
@@ -137,28 +166,6 @@
         </div>
       </article>
     
-  
-    
-      <hr aria-hidden="true">
-      <article class="custom- h-entry">
-        <header>
-          <h2 class="p-name"><a href="/posts/2023/androids-sheep/" class="u-url">Do Androids Dream Of Electric Sheep</a></h2>
-          <time datetime="2023-11-02 18:00:33" class="dt-published">
-            <span class="date-day">02</span> 
-            <span class="date-month">November</span>, 
-            <span class="date-year">2023</span>
-          </time>
-        </header>
-        <div class="e-content">
-          <h2>by Philip K. Dick</h2>
-<p>This is the book on which the film Blade Runner is based. I have always struggled to stay awake watching the film, as despite being interesting, it is very slow paced. The book on the other hand I finished in a couple of days. It's not gripping, but definitely interesting and raising some interesting questions about what is and isn't real. With the progress of AI in recent years, this is again a very current question. Well worth reading. And maybe I should watch the film again...</p>
-<p><img src="/assets/images/2023/androids-sheep.webp" alt=""></p>
-
-        </div>
-        <div class="tagged">Tagged:<a href="/archive/tagged/general/" class="post-tag" rel="tag">general</a> &nbsp;<a href="/archive/tagged/reading/" class="post-tag" rel="tag">reading</a> &nbsp;<a href="/archive/tagged/scifi/" class="post-tag" rel="tag">scifi</a> &nbsp;
-        </div>
-      </article>
-    
     
 </div> 
 <hr aria-hidden="true">
@@ -191,7 +198,7 @@
                 An <a href="https://xn--sr8hvo.ws">IndieWeb Webring</a> 🕸💍
                 <a href="https://xn--sr8hvo.ws/next">→</a>
             </div>
-            <div class="lastrun">Hand crafted using <a href="https://www.11ty.dev/">eleventy</a>. Built on the 29/11/2023 at 06:25:21 in the flashiest of flashes⚡</div>
+            <div class="lastrun">Hand crafted using <a href="https://www.11ty.dev/">eleventy</a>. Built on the 30/11/2023 at 06:09:26 in the flashiest of flashes⚡</div>
             <div class="badges">
                 <a href="https://www.anybrowser.org/campaign/"><img src="/assets/images/any-browser-button.png" alt="Viewable With Any Browser" width="80" height="15" /></a>
                 <a href="https://indieweb.org/"><img src="/assets/images/indieweb-button.png" alt="IndieWeb" width="80" height="15" /></a>
