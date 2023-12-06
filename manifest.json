@@ -1,0 +1,16 @@
+{
+    "name": "robin.is",
+    "short_name": "HackerWeb",
+    "start_url": "/",
+    "display": "minimal-ui",
+    "background_color": "#ffffff",
+    "theme_color": "#ffffff",
+    "description": "Robin Massart",
+    "icons": [
+      {
+        "src": "/assets/images/cw.jpg",
+        "sizes": "75x75",
+        "type": "image/jpg"
+      }
+    ]
+  }
