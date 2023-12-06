@@ -1,4 +1,3 @@
-//self.addEventListener('fetch', function(event) {});
 //taken from https://adactio.com/serviceworker.js
 
 'use strict';
@@ -31,7 +30,7 @@ function updateStaticCache() {
         ]);
 
     
-        // These items must be cached for the Service Worker to complete installation
+            // These items must be cached for the Service Worker to complete installation
         return staticCache.addAll([
             '/assets/css/fonts.css',
             '/assets/css/structure.css',
