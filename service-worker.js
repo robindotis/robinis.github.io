@@ -31,7 +31,6 @@ function updateStaticCache() {
         ]);
 
     
-        <script src="/assets/js/theme.js" defer></script>
         // These items must be cached for the Service Worker to complete installation
         return staticCache.addAll([
             '/assets/css/fonts.css',
