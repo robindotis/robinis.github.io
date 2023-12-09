@@ -36,7 +36,7 @@ function updateStaticCache() {
             '/assets/css/structure.css',
             '/assets/css/style.css',
             '/assets/css/default.css',
-            '/offline'
+            '/offline/'
         ]);
     });
 }
@@ -178,7 +178,7 @@ addEventListener('fetch', event => {
                     retrieveFromCache
                     .then( responseFromCache => {
                         resolveWithResponse(
-                            responseFromCache || caches.match('/offline')
+                            responseFromCache || caches.match('/offline/')
                         );
                     });
                 });
