@@ -37,6 +37,7 @@ function updateStaticCache() {
             '/assets/css/style.css',
             '/assets/css/default.css',
             '/offline/'
+            '/reading/'
         ]);
     });
 }
