@@ -36,7 +36,7 @@ function updateStaticCache() {
             '/assets/css/structure.css',
             '/assets/css/style.css',
             '/assets/css/default.css',
-            '/offline/'
+            '/offline/',
             '/reading/'
         ]);
     });
