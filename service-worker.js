@@ -1,4 +1,6 @@
-//taken from https://adactio.com/serviceworker.js
+//taken from 
+// - https://adactio.com/serviceworker.js
+// - https://adactio.com/offline
 
 'use strict';
 
