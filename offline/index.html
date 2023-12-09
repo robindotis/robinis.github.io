@@ -76,7 +76,7 @@
             </div>
         </div>
     </header>
-    <main id="site-content"  class="tmpl-page">
+    <main id="site-content" >
         <hr class="nodisplay" aria-hidden="true">
         <div class="main-content">
             
@@ -84,10 +84,50 @@
   <header>
     <h1>Offline</h1> 
   </header>
+  
   <p>Sorry, it looks like there is no network connection right now.</p>
-<p>But you can still read the following posts:</p>
- 
-</article>
+  
+
+  
+<script>
+(async function listPages() {
+    const browsingHistory = [];
+    const parser = new DOMParser();
+    const cache = await caches.open('pages');
+    const keys = await cache.keys();
+    for (const request of keys) {
+        const response = await cache.match(request);
+        const html = await response.text();
+        const dom = parser.parseFromString(html, 'text/html');
+        if (dom.querySelector('.h-entry h1.p-name')) {
+            const data = new Object;
+            data.url = request.url;
+            data.timestamp = new Date(dom.querySelector('.h-entry .dt-published').getAttribute('datetime'));
+            data.published = dom.querySelector('.h-entry .dt-published').innerText;
+            data.title = dom.querySelector('.h-entry .p-name').innerText;
+            data.description = dom.querySelector('meta[name="description"]').getAttribute('content');
+            browsingHistory.push(data);
+        }
+    }
+    if (browsingHistory.length) {
+        browsingHistory.sort( (a,b) => {
+            return b.timestamp - a.timestamp;
+        });
+        let markup = '<p>But you still have something to read:</p>';
+        browsingHistory.forEach( data => {
+            markup += `
+<h2><a href="${ data.url }">${ data.title }</a></h2>
+<p>${ data.description }</p>
+<p class="meta">${ data.published }</p>
+`;
+        });
+        document.getElementById('history').insertAdjacentHTML('beforeend', markup);
+    }
+})();
+</script>
+
+  </article>
+
 
         </div> 
     </main>
@@ -114,7 +154,7 @@
                 An <a href="https://xn--sr8hvo.ws">IndieWeb Webring</a> 🕸💍
                 <a href="https://xn--sr8hvo.ws/next">→</a>
             </div>
-            <div class="lastrun">Hand crafted using <a href="https://www.11ty.dev/">eleventy</a>. Built on the 08/12/2023 at 20:36:50 in the flashiest of flashes⚡</div>
+            <div class="lastrun">Hand crafted using <a href="https://www.11ty.dev/">eleventy</a>. Built on the 09/12/2023 at 06:59:52 in the flashiest of flashes⚡</div>
             <div class="badges">
                 <a href="https://www.anybrowser.org/campaign/"><img src="/assets/images/any-browser-button.png" alt="Viewable With Any Browser" width="80" height="15" /></a>
                 <a href="https://indieweb.org/"><img src="/assets/images/indieweb-button.png" alt="IndieWeb" width="80" height="15" /></a>
