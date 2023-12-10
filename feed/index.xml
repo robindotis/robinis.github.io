@@ -6,13 +6,25 @@
 	
 	<link href="https://www.robin.is/feed/index.xml" rel="self"/>
 	<link href="https://www.robin.is/" rel="alternate" type="text/html"/>
-	<updated>2023-11-29T08:18:27Z</updated>
+	<updated>2023-12-09T08:18:27Z</updated>
 	<id>https://www.robin.is/</id>
 	<author>
 		<name>robindotis</name>
 		<email>admin@robin.is</email>
 	</author>
 	
+	
+	<entry>
+		<title>Progressive Web App</title>
+		<link href="https://www.robin.is/posts/2023/installable/"/>
+		<updated>2023-12-09T08:18:27Z</updated>
+		<id>https://www.robin.is/posts/2023/installable/</id>
+		<content type="html">&lt;p&gt;I decided to make my website installable, so it can be added to a device as an installed application. The way to do this is to add some javascript to the site so that it is a Progressive Web App (PWA).&lt;/p&gt;
+&lt;p&gt;To be a PWA, a website needs only one thing: a &lt;a href=&quot;https://web.dev/learn/pwa/service-workers/&quot;&gt;service worker&lt;/a&gt;. Adding one is fairly straightforward, once you know how. It does require a good understanding of asynchronous JavaScript, something which I struggle with. The alternative is just to copy someone else&#39;s service worker code and adapt if needed. I chose the alternative. 🤷‍♂️&lt;/p&gt;
+&lt;p&gt;So I copied the one from &lt;a href=&quot;https://adactio.com/&quot;&gt;Jeremy Keith&lt;/a&gt;. It took me a while to get it to work, although I am not sure I really changed anything very much. However, debugging PWAs is more complex than plain JavaScript. So most of my efforts were trial and error. And then it worked. Magic! 🧙‍♂️&lt;/p&gt;
+&lt;p&gt;I even managed to get an &lt;a href=&quot;https://www.robin.is/offline/&quot;&gt;offline page&lt;/a&gt; working for the PWA. Again, copied from &lt;a href=&quot;https://adactio.com/offline&quot;&gt;Jeremy&#39;s offline page&lt;/a&gt;. What this page does, thanks to some nifty JavaScript, is check if there is a network connection. If there is it fetches the page from the server. If there isn&#39;t, it tries to fetch the page from the cache. If the page has not been cached, it displays a list of pages that have been cached and are therefore available for offline reading. Fantastic!&lt;/p&gt;
+</content>
+	</entry>
 	
 	<entry>
 		<title>Dependencies</title>
@@ -285,22 +297,6 @@
 		<id>https://www.robin.is/posts/2023/sign-language-evolution/</id>
 		<content type="html">&lt;p&gt;An interesting image showing how sign languages around the world are connected.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;https://www.robin.is/assets/images/2023/sign-language-evolution.webp&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-</content>
-	</entry>
-	
-	<entry>
-		<title>Fischbach Circular Walk 1</title>
-		<link href="https://www.robin.is/posts/2023/fischbach-circular-walk-1/"/>
-		<updated>2023-10-05T17:43:28Z</updated>
-		<id>https://www.robin.is/posts/2023/fischbach-circular-walk-1/</id>
-		<content type="html">&lt;p&gt;This was a simple 8.7km &lt;a href=&quot;https://www.visitluxembourg.com/tour/circular-walk-fischbach-i&quot;&gt;circular walk through the woods around Fischbach&lt;/a&gt;. It was a perfect cool early autumn afternoon for a fast paced walk with Angie. The page said the route takes two hours 30 minutes, but it took me and Angie only one hour and 45 minutes, which is what I would have expected for an 8km walk.&lt;/p&gt;
-&lt;p&gt;The first few hundred meters of the walk were quite steep uphill. After that it was really easy with only slight inclines, almost all of it in the woods. The walk was rather unspectacular, but it did serve as a nice couple of hours in woods.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://www.robin.is/assets/images/2023/fischbach-circular-1.webp&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://www.robin.is/assets/images/2023/fischbach-circular-2.webp&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://www.robin.is/assets/images/2023/fischbach-circular-3.webp&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://www.robin.is/assets/images/2023/fischbach-circular-4.webp&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://www.robin.is/assets/images/2023/fischbach-circular-5.webp&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://www.robin.is/assets/images/2023/fischbach-circular-6.webp&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 </content>
 	</entry>
 </feed>
