@@ -3133,12 +3133,12 @@
   </url>
   
   <url>
-    <loc>https://www.robin.is/tagging/work/</loc>
+    <loc>https://www.robin.is/tagging/general/</loc>
     <lastmod>2023-12-11</lastmod>
   </url>
   
   <url>
-    <loc>https://www.robin.is/tagging/general/</loc>
+    <loc>https://www.robin.is/tagging/work/</loc>
     <lastmod>2023-12-11</lastmod>
   </url>
   
@@ -3393,12 +3393,12 @@
   </url>
   
   <url>
-    <loc>https://www.robin.is/tagging/italy/</loc>
+    <loc>https://www.robin.is/tagging/flickr/</loc>
     <lastmod>2023-12-11</lastmod>
   </url>
   
   <url>
-    <loc>https://www.robin.is/tagging/flickr/</loc>
+    <loc>https://www.robin.is/tagging/italy/</loc>
     <lastmod>2023-12-11</lastmod>
   </url>
   
@@ -3443,12 +3443,12 @@
   </url>
   
   <url>
-    <loc>https://www.robin.is/tagging/varna/</loc>
+    <loc>https://www.robin.is/tagging/luxembourg/</loc>
     <lastmod>2023-12-11</lastmod>
   </url>
   
   <url>
-    <loc>https://www.robin.is/tagging/luxembourg/</loc>
+    <loc>https://www.robin.is/tagging/varna/</loc>
     <lastmod>2023-12-11</lastmod>
   </url>
   
@@ -3538,12 +3538,12 @@
   </url>
   
   <url>
-    <loc>https://www.robin.is/tagging/tenerife/</loc>
+    <loc>https://www.robin.is/tagging/strasbourg/</loc>
     <lastmod>2023-12-11</lastmod>
   </url>
   
   <url>
-    <loc>https://www.robin.is/tagging/strasbourg/</loc>
+    <loc>https://www.robin.is/tagging/tenerife/</loc>
     <lastmod>2023-12-11</lastmod>
   </url>
   
@@ -3703,17 +3703,17 @@
   </url>
   
   <url>
-    <loc>https://www.robin.is/tagging/lands-end/</loc>
-    <lastmod>2023-12-11</lastmod>
-  </url>
-  
-  <url>
     <loc>https://www.robin.is/tagging/facebook/</loc>
     <lastmod>2023-12-11</lastmod>
   </url>
   
   <url>
     <loc>https://www.robin.is/tagging/social-media/</loc>
+    <lastmod>2023-12-11</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.robin.is/tagging/lands-end/</loc>
     <lastmod>2023-12-11</lastmod>
   </url>
   
@@ -3733,12 +3733,22 @@
   </url>
   
   <url>
-    <loc>https://www.robin.is/tagging/orleans/</loc>
+    <loc>https://www.robin.is/tagging/tintagel/</loc>
+    <lastmod>2023-12-11</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.robin.is/tagging/castle/</loc>
     <lastmod>2023-12-11</lastmod>
   </url>
   
   <url>
     <loc>https://www.robin.is/tagging/versailles/</loc>
+    <lastmod>2023-12-11</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.robin.is/tagging/orleans/</loc>
     <lastmod>2023-12-11</lastmod>
   </url>
   
@@ -3988,16 +3998,6 @@
   </url>
   
   <url>
-    <loc>https://www.robin.is/tagging/ride/</loc>
-    <lastmod>2023-12-11</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.robin.is/tagging/colmar-berg/</loc>
-    <lastmod>2023-12-11</lastmod>
-  </url>
-  
-  <url>
     <loc>https://www.robin.is/tagging/concerts/</loc>
     <lastmod>2023-12-11</lastmod>
   </url>
@@ -4009,6 +4009,16 @@
   
   <url>
     <loc>https://www.robin.is/tagging/dance/</loc>
+    <lastmod>2023-12-11</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.robin.is/tagging/ride/</loc>
+    <lastmod>2023-12-11</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.robin.is/tagging/colmar-berg/</loc>
     <lastmod>2023-12-11</lastmod>
   </url>
   
@@ -4113,11 +4123,6 @@
   </url>
   
   <url>
-    <loc>https://www.robin.is/tagging/wolf-alice/</loc>
-    <lastmod>2023-12-11</lastmod>
-  </url>
-  
-  <url>
     <loc>https://www.robin.is/tagging/run/</loc>
     <lastmod>2023-12-11</lastmod>
   </url>
@@ -4133,6 +4138,11 @@
   </url>
   
   <url>
+    <loc>https://www.robin.is/tagging/wolf-alice/</loc>
+    <lastmod>2023-12-11</lastmod>
+  </url>
+  
+  <url>
     <loc>https://www.robin.is/tagging/games/</loc>
     <lastmod>2023-12-11</lastmod>
   </url>
@@ -4143,22 +4153,22 @@
   </url>
   
   <url>
-    <loc>https://www.robin.is/tagging/esch/</loc>
-    <lastmod>2023-12-11</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.robin.is/tagging/belval/</loc>
-    <lastmod>2023-12-11</lastmod>
-  </url>
-  
-  <url>
     <loc>https://www.robin.is/tagging/wuppertal/</loc>
     <lastmod>2023-12-11</lastmod>
   </url>
   
   <url>
     <loc>https://www.robin.is/tagging/transport/</loc>
+    <lastmod>2023-12-11</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.robin.is/tagging/esch/</loc>
+    <lastmod>2023-12-11</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.robin.is/tagging/belval/</loc>
     <lastmod>2023-12-11</lastmod>
   </url>
   
@@ -4188,37 +4198,17 @@
   </url>
   
   <url>
+    <loc>https://www.robin.is/tagging/bridel/</loc>
+    <lastmod>2023-12-11</lastmod>
+  </url>
+  
+  <url>
     <loc>https://www.robin.is/tagging/butterfly/</loc>
     <lastmod>2023-12-11</lastmod>
   </url>
   
   <url>
     <loc>https://www.robin.is/tagging/flower/</loc>
-    <lastmod>2023-12-11</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.robin.is/tagging/bridel/</loc>
-    <lastmod>2023-12-11</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.robin.is/tagging/cat/</loc>
-    <lastmod>2023-12-11</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.robin.is/tagging/fire/</loc>
-    <lastmod>2023-12-11</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.robin.is/tagging/marx/</loc>
-    <lastmod>2023-12-11</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.robin.is/tagging/politics/</loc>
     <lastmod>2023-12-11</lastmod>
   </url>
   
@@ -4239,6 +4229,26 @@
   
   <url>
     <loc>https://www.robin.is/tagging/green/</loc>
+    <lastmod>2023-12-11</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.robin.is/tagging/cat/</loc>
+    <lastmod>2023-12-11</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.robin.is/tagging/fire/</loc>
+    <lastmod>2023-12-11</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.robin.is/tagging/marx/</loc>
+    <lastmod>2023-12-11</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.robin.is/tagging/politics/</loc>
     <lastmod>2023-12-11</lastmod>
   </url>
   
@@ -4313,22 +4323,22 @@
   </url>
   
   <url>
-    <loc>https://www.robin.is/tagging/frameworks/</loc>
-    <lastmod>2023-12-11</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.robin.is/tagging/usability/</loc>
-    <lastmod>2023-12-11</lastmod>
-  </url>
-  
-  <url>
     <loc>https://www.robin.is/tagging/waterfall/</loc>
     <lastmod>2023-12-11</lastmod>
   </url>
   
   <url>
     <loc>https://www.robin.is/tagging/rhodope/</loc>
+    <lastmod>2023-12-11</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.robin.is/tagging/frameworks/</loc>
+    <lastmod>2023-12-11</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.robin.is/tagging/usability/</loc>
     <lastmod>2023-12-11</lastmod>
   </url>
   
@@ -4373,11 +4383,6 @@
   </url>
   
   <url>
-    <loc>https://www.robin.is/tagging/indieweb/</loc>
-    <lastmod>2023-12-11</lastmod>
-  </url>
-  
-  <url>
     <loc>https://www.robin.is/tagging/inhope/</loc>
     <lastmod>2023-12-11</lastmod>
   </url>
@@ -4388,12 +4393,12 @@
   </url>
   
   <url>
-    <loc>https://www.robin.is/tagging/pwa/</loc>
+    <loc>https://www.robin.is/tagging/indieweb/</loc>
     <lastmod>2023-12-11</lastmod>
   </url>
   
   <url>
-    <loc>https://www.robin.is/tagging/kapana/</loc>
+    <loc>https://www.robin.is/tagging/pwa/</loc>
     <lastmod>2023-12-11</lastmod>
   </url>
   
@@ -4409,6 +4414,11 @@
   
   <url>
     <loc>https://www.robin.is/tagging/family/</loc>
+    <lastmod>2023-12-11</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.robin.is/tagging/kapana/</loc>
     <lastmod>2023-12-11</lastmod>
   </url>
   
@@ -4433,12 +4443,12 @@
   </url>
   
   <url>
-    <loc>https://www.robin.is/tagging/oft-robin/</loc>
+    <loc>https://www.robin.is/tagging/neuromancer/</loc>
     <lastmod>2023-12-11</lastmod>
   </url>
   
   <url>
-    <loc>https://www.robin.is/tagging/neuromancer/</loc>
+    <loc>https://www.robin.is/tagging/oft-robin/</loc>
     <lastmod>2023-12-11</lastmod>
   </url>
   
@@ -4584,16 +4594,6 @@
   
   <url>
     <loc>https://www.robin.is/tagging/blois/</loc>
-    <lastmod>2023-12-11</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.robin.is/tagging/tintagel/</loc>
-    <lastmod>2023-12-11</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.robin.is/tagging/castle/</loc>
     <lastmod>2023-12-11</lastmod>
   </url>
   
