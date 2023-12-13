@@ -3743,26 +3743,6 @@
   </url>
   
   <url>
-    <loc>https://www.robin.is/tagging/trevose/</loc>
-    <lastmod>2023-12-13</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.robin.is/tagging/port-isaac/</loc>
-    <lastmod>2023-12-13</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.robin.is/tagging/blois/</loc>
-    <lastmod>2023-12-13</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.robin.is/tagging/orleans/</loc>
-    <lastmod>2023-12-13</lastmod>
-  </url>
-  
-  <url>
     <loc>https://www.robin.is/tagging/versailles/</loc>
     <lastmod>2023-12-13</lastmod>
   </url>
@@ -4598,6 +4578,26 @@
   </url>
   
   <url>
+    <loc>https://www.robin.is/tagging/blois/</loc>
+    <lastmod>2023-12-13</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.robin.is/tagging/trevose/</loc>
+    <lastmod>2023-12-13</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.robin.is/tagging/port-isaac/</loc>
+    <lastmod>2023-12-13</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.robin.is/tagging/orleans/</loc>
+    <lastmod>2023-12-13</lastmod>
+  </url>
+  
+  <url>
     <loc>https://www.robin.is/tagging/postsbyyear/</loc>
     <lastmod>2023-12-13</lastmod>
   </url>
@@ -4609,16 +4609,6 @@
   
   <url>
     <loc>https://www.robin.is/pages/wordle/</loc>
-    <lastmod>2023-12-13</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.robin.is/scratchpad/README/</loc>
-    <lastmod>2023-12-13</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.robin.is/scratchpad/notes/</loc>
     <lastmod>2023-12-13</lastmod>
   </url>
 </urlset>
