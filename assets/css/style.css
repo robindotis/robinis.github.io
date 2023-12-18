@@ -142,6 +142,14 @@ main h1, main h2, main h3 {
     color: var(--main-text-color); 
 }
 
+main article.welcome {
+    text-align: center;
+}
+
+main article.welcome p {
+    margin-bottom: 0;
+}
+
 header time {
     font-size: 0.75em;
 }
@@ -169,8 +177,8 @@ blockquote {
 }
 
 div.posts-list hr {
-    margin-top: 2em;
-    margin-bottom: 3em;
+    margin-top: 1em;
+    margin-bottom: 2em;
     border-top: #dddddd solid 1px;
 }
 
