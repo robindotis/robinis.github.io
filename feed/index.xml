@@ -6,13 +6,27 @@
 	
 	<link href="https://www.robin.is/feed/index.xml" rel="self"/>
 	<link href="https://www.robin.is/" rel="alternate" type="text/html"/>
-	<updated>2023-12-09T08:18:27Z</updated>
+	<updated>2023-12-20T13:18:27Z</updated>
 	<id>https://www.robin.is/</id>
 	<author>
 		<name>robindotis</name>
 		<email>admin@robin.is</email>
 	</author>
 	
+	
+	<entry>
+		<title>Angie&#39;s Christmas Tale</title>
+		<link href="https://www.robin.is/posts/2023/angies-christmas-tale/"/>
+		<updated>2023-12-20T13:18:27Z</updated>
+		<id>https://www.robin.is/posts/2023/angies-christmas-tale/</id>
+		<content type="html">&lt;p&gt;This morning, walking Angie in one of the locations we rarely go to, Angie disappeared. I was walking ahead as usual, she was dilly dallying at the back. When I retraced my steps to go and find her, she was gone. After about half an hour of whistling and shouting I started to get quite worried. I went back to the car to see if she was there, then I called my wife to come back from work to help find her. I also called a nearby neighbour who I know from walking our dogs. She came and helped look with her dog, Tashi. But all to no good. She phoned her bedsitter to check if Angie had returned to our house. No luck.&lt;/p&gt;
+&lt;p&gt;The neighbour went back to the village, and had a look around our house to open the gate so Angie could go in the garden, if she returned. At that time my wife had returned home as well and between them half the village was now looking for Angie.&lt;/p&gt;
+&lt;p&gt;In the meantime I went back to my car and drove down the hill to the houses below where we were walking. This was about 90 minutes after she went missing. Walking around there, a lady came out of one the houses, asking if I was looking for a dog. I said yes, and she mentioned that another lady, a teacher, had found a dog and put her in her van and gone to work at the school. The teacher had given the lady her phone number. So I got in touch with the teacher and started heading to the school she worked at.&lt;/p&gt;
+&lt;p&gt;It turns out the teacher had already posted a message on Facebook and our direct neighbour had already seen it and recognised Angie, had contacted the teacher separately and was heading to the school with my wife. I followed along and we were reunited with Angie about two and half hours after she went missing. They&#39;d even cleaned her! I guess dirty dogs are not allowed in schools.&lt;/p&gt;
+&lt;p&gt;It is very nice to see how quickly things can come together when everyone helps - and how social media can actually be put to good use as well from time to time!&lt;/p&gt;
+&lt;p&gt;And that is my Christmas Tale for 2023. 🎅🎄&lt;/p&gt;
+</content>
+	</entry>
 	
 	<entry>
 		<title>Progressive Web App</title>
@@ -287,16 +301,6 @@
 &lt;p&gt;Riverside were fantastic and put on a great show for the audience. The lead vocalist had a dry sense of humour which added to the atmosphere. No they are not like Dream Theatre, or Anathema. 64 members of the audience were from Luxembourg, the rest from elsewhere.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;https://www.robin.is/assets/images/2023/riverside-2.webp&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;https://www.robin.is/assets/images/2023/riverside-3.webp&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-</content>
-	</entry>
-	
-	<entry>
-		<title>Sign Language Evolution</title>
-		<link href="https://www.robin.is/posts/2023/sign-language-evolution/"/>
-		<updated>2023-10-06T09:12:00Z</updated>
-		<id>https://www.robin.is/posts/2023/sign-language-evolution/</id>
-		<content type="html">&lt;p&gt;An interesting image showing how sign languages around the world are connected.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://www.robin.is/assets/images/2023/sign-language-evolution.webp&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 </content>
 	</entry>
 </feed>
