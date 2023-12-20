@@ -3213,12 +3213,12 @@
   </url>
   
   <url>
-    <loc>https://www.robin.is/tagging/preparation/</loc>
+    <loc>https://www.robin.is/tagging/reasons/</loc>
     <lastmod>2023-12-20</lastmod>
   </url>
   
   <url>
-    <loc>https://www.robin.is/tagging/reasons/</loc>
+    <loc>https://www.robin.is/tagging/preparation/</loc>
     <lastmod>2023-12-20</lastmod>
   </url>
   
@@ -3393,12 +3393,12 @@
   </url>
   
   <url>
-    <loc>https://www.robin.is/tagging/computers/</loc>
+    <loc>https://www.robin.is/tagging/flickr/</loc>
     <lastmod>2023-12-20</lastmod>
   </url>
   
   <url>
-    <loc>https://www.robin.is/tagging/flickr/</loc>
+    <loc>https://www.robin.is/tagging/computers/</loc>
     <lastmod>2023-12-20</lastmod>
   </url>
   
@@ -3738,17 +3738,17 @@
   </url>
   
   <url>
-    <loc>https://www.robin.is/tagging/orleans/</loc>
-    <lastmod>2023-12-20</lastmod>
-  </url>
-  
-  <url>
     <loc>https://www.robin.is/tagging/tintagel/</loc>
     <lastmod>2023-12-20</lastmod>
   </url>
   
   <url>
     <loc>https://www.robin.is/tagging/castle/</loc>
+    <lastmod>2023-12-20</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.robin.is/tagging/blois/</loc>
     <lastmod>2023-12-20</lastmod>
   </url>
   
@@ -3968,11 +3968,6 @@
   </url>
   
   <url>
-    <loc>https://www.robin.is/tagging/apocalyptic/</loc>
-    <lastmod>2023-12-20</lastmod>
-  </url>
-  
-  <url>
     <loc>https://www.robin.is/tagging/zoo/</loc>
     <lastmod>2023-12-20</lastmod>
   </url>
@@ -3988,12 +3983,22 @@
   </url>
   
   <url>
-    <loc>https://www.robin.is/tagging/regensburg/</loc>
+    <loc>https://www.robin.is/tagging/apocalyptic/</loc>
     <lastmod>2023-12-20</lastmod>
   </url>
   
   <url>
     <loc>https://www.robin.is/tagging/death/</loc>
+    <lastmod>2023-12-20</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.robin.is/tagging/regensburg/</loc>
+    <lastmod>2023-12-20</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.robin.is/tagging/github/</loc>
     <lastmod>2023-12-20</lastmod>
   </url>
   
@@ -4009,11 +4014,6 @@
   
   <url>
     <loc>https://www.robin.is/tagging/dance/</loc>
-    <lastmod>2023-12-20</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.robin.is/tagging/github/</loc>
     <lastmod>2023-12-20</lastmod>
   </url>
   
@@ -4293,6 +4293,16 @@
   </url>
   
   <url>
+    <loc>https://www.robin.is/tagging/upgrade/</loc>
+    <lastmod>2023-12-20</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.robin.is/tagging/fishcbach/</loc>
+    <lastmod>2023-12-20</lastmod>
+  </url>
+  
+  <url>
     <loc>https://www.robin.is/tagging/easter/</loc>
     <lastmod>2023-12-20</lastmod>
   </url>
@@ -4308,32 +4318,12 @@
   </url>
   
   <url>
-    <loc>https://www.robin.is/tagging/upgrade/</loc>
-    <lastmod>2023-12-20</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.robin.is/tagging/fishcbach/</loc>
-    <lastmod>2023-12-20</lastmod>
-  </url>
-  
-  <url>
     <loc>https://www.robin.is/tagging/folkdance/</loc>
     <lastmod>2023-12-20</lastmod>
   </url>
   
   <url>
     <loc>https://www.robin.is/tagging/economics/</loc>
-    <lastmod>2023-12-20</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.robin.is/tagging/waterfall/</loc>
-    <lastmod>2023-12-20</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.robin.is/tagging/rhodope/</loc>
     <lastmod>2023-12-20</lastmod>
   </url>
   
@@ -4349,6 +4339,16 @@
   
   <url>
     <loc>https://www.robin.is/tagging/human-behaviour/</loc>
+    <lastmod>2023-12-20</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.robin.is/tagging/waterfall/</loc>
+    <lastmod>2023-12-20</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.robin.is/tagging/rhodope/</loc>
     <lastmod>2023-12-20</lastmod>
   </url>
   
@@ -4448,22 +4448,12 @@
   </url>
   
   <url>
-    <loc>https://www.robin.is/tagging/neuromancer/</loc>
-    <lastmod>2023-12-20</lastmod>
-  </url>
-  
-  <url>
     <loc>https://www.robin.is/tagging/oft-robin/</loc>
     <lastmod>2023-12-20</lastmod>
   </url>
   
   <url>
-    <loc>https://www.robin.is/tagging/thoughts/</loc>
-    <lastmod>2023-12-20</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.robin.is/tagging/books/</loc>
+    <loc>https://www.robin.is/tagging/neuromancer/</loc>
     <lastmod>2023-12-20</lastmod>
   </url>
   
@@ -4479,6 +4469,16 @@
   
   <url>
     <loc>https://www.robin.is/tagging/workflows/</loc>
+    <lastmod>2023-12-20</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.robin.is/tagging/thoughts/</loc>
+    <lastmod>2023-12-20</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.robin.is/tagging/books/</loc>
     <lastmod>2023-12-20</lastmod>
   </url>
   
@@ -4538,12 +4538,12 @@
   </url>
   
   <url>
-    <loc>https://www.robin.is/tagging/psychology/</loc>
+    <loc>https://www.robin.is/tagging/sign-language/</loc>
     <lastmod>2023-12-20</lastmod>
   </url>
   
   <url>
-    <loc>https://www.robin.is/tagging/sign-language/</loc>
+    <loc>https://www.robin.is/tagging/psychology/</loc>
     <lastmod>2023-12-20</lastmod>
   </url>
   
@@ -4598,7 +4598,7 @@
   </url>
   
   <url>
-    <loc>https://www.robin.is/tagging/blois/</loc>
+    <loc>https://www.robin.is/tagging/orleans/</loc>
     <lastmod>2023-12-20</lastmod>
   </url>
   
