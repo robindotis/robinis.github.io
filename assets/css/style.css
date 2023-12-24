@@ -259,6 +259,11 @@ footer span.emojis {
     font-style: normal;
     font-weight: bold;    
 }
+
+footer span.emojis a {
+    text-decoration: none;
+}
+
 /* 
     Custom post styling postlists goes here
     at the end of the file to ensure it overrides the rest
