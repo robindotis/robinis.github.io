@@ -417,6 +417,28 @@ footer .badges a {
 footer div.footer-area {
     display: block;
 }
+
+main .barchart {
+    width: 100%;
+}
+
+main .barchart .line {
+    width: 100%;
+    margin-top: 10px;
+}
+
+main .barchart span {
+    display: inline-block;
+}
+
+main .barchart .legend {
+    border-right: #555555 solid 2px;
+    width: 2.7em;
+}
+main .barchart .bar {
+    background-color: var(--header-bg-color);
+}
+
 /* =========
    MAX WIDTH
    =========  */
