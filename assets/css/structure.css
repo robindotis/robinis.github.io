@@ -428,8 +428,21 @@ main .barchart .line {
     margin-bottom: 0;
 }
 
+main .barchart a {
+    width: 100%;
+    display: inline-block;
+}
+
 main .barchart span {
     display: inline-block;
+}
+
+main .barchart a {
+    text-decoration: none;
+}
+
+main .barchart a:active {
+    text-decoration: none;
 }
 
 main .barchart .legend {
@@ -439,6 +452,14 @@ main .barchart .legend {
 main .barchart .bar {
     width: calc(var(--p) / var(--max) * 60%);
     background-color: var(--header-bg-color);
+}
+
+main .barchart a:hover .bar {
+    background-color: black;
+}
+
+main .main-content h2 a {
+    text-decoration: none;
 }
 
 /* =========
