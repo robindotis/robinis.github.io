@@ -6,13 +6,36 @@
 	
 	<link href="https://www.robin.is/feed/index.xml" rel="self"/>
 	<link href="https://www.robin.is/" rel="alternate" type="text/html"/>
-	<updated>2023-12-23T08:00:33Z</updated>
+	<updated>2023-12-31T23:00:33Z</updated>
 	<id>https://www.robin.is/</id>
 	<author>
 		<name>robindotis</name>
 		<email>admin@robin.is</email>
 	</author>
 	
+	
+	<entry>
+		<title>Can&#39;t we just print more money</title>
+		<link href="https://www.robin.is/posts/2023/cant-we-just-print-more-money/"/>
+		<updated>2023-12-31T23:00:33Z</updated>
+		<id>https://www.robin.is/posts/2023/cant-we-just-print-more-money/</id>
+		<content type="html">&lt;h2&gt;by Rupal Patel and Jack Meaning&lt;/h2&gt;
+&lt;p&gt;A book on introductory economics written by employees of the The Bank of England. Very easy to read and generally easy to follow. Understanding some of the theory without some background knowledge of economics might be difficult though. The book could have paid more attention to explaining some of the terminology and concepts. Still it is a good book to get a better understanding of some of the everyday questions on economics you might have. For example:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;What causes recessions?&lt;/li&gt;
+&lt;li&gt;What is inflation and is it good or bad?&lt;/li&gt;
+&lt;li&gt;What is money?&lt;/li&gt;
+&lt;li&gt;Are banks useful?&lt;/li&gt;
+&lt;li&gt;Should governments be in debt?&lt;/li&gt;
+&lt;li&gt;And the book&#39;s title: Can&#39;t we just print more money?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Some criticism is due because it tends to support the status quo, along the lines of &amp;quot;it is what it is&amp;quot;. It is honest enough to stress that economics is not a real science and very much hit and miss. It also finishes with a &amp;quot;call to arms&amp;quot;, trying to get more people interested in economics in order to shake up the status quo. More discussions on some of the social consequences of the choices available to governments, banks and economists would have been useful.&lt;/p&gt;
+&lt;p&gt;For example, the different types of taxes that can be raised and from whom. Taxing the very rich or companies has very different consequences to taxing the poor. If the aim is to keep money in the system, then there needs to be a way to limit the very rich from taking it out of the system and put it in offshore bank accounts for example.&lt;/p&gt;
+&lt;p&gt;Likewise, the US can run much larger debt ratio than other countries, because of its political and military importance. Similarly, Japan has the highest debt ratio in the world, but this is not a problem because much of it is held by its citizens and generally the world trusts Japan to repay its debt. So again, like taxes, not all debt is equal.&lt;/p&gt;
+&lt;p&gt;The book does hint at these sorts of questions in the conclusion and it is intended as an introduction, not a study. It also mentions that most of the public does not understand the consequences of the economic policies they are voting for. Addressing things like taxation and debt in more detail, but still in plain language, might have been useful in achieving the goals of the book.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://www.robin.is/assets/images/2023/cant-we-just-print-more-money.webp&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+</content>
+	</entry>
 	
 	<entry>
 		<title>Count Zero</title>
@@ -284,20 +307,6 @@
 &lt;p&gt;I don&#39;t think anybody really argues against building a world of ambition, abundance and adventure. The issue is around the ideas that enable us to do this.&lt;/p&gt;
 &lt;h2&gt;Patron Saints of Techno-Optimism&lt;/h2&gt;
 &lt;p&gt;This is a list of like minded persons, about half of whom are dead and one is fictional. They therefore cannot consent to being a patron saint of this manifesto. Just saying...&lt;/p&gt;
-</content>
-	</entry>
-	
-	<entry>
-		<title>IndieWeb</title>
-		<link href="https://www.robin.is/posts/2023/indieweb/"/>
-		<updated>2023-10-16T00:33:27Z</updated>
-		<id>https://www.robin.is/posts/2023/indieweb/</id>
-		<content type="html">&lt;p&gt;Today I implemented some of the &lt;a href=&quot;https://indieweb.org/&quot;&gt;IndieWeb&lt;/a&gt; &lt;a href=&quot;https://indieweb.org/&quot;&gt;building blocks&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;First I added &lt;a href=&quot;https://indieweb.org/IndieAuth&quot;&gt;IndieAuth&lt;/a&gt; with GitHub account, testing it against the &lt;a href=&quot;https://indielogin.com/api&quot;&gt;IndieLogin&lt;/a&gt; service.&lt;/p&gt;
-&lt;p&gt;Next I added the required meta tags for &lt;a href=&quot;https://indieweb.org/Webmention&quot;&gt;webmentions&lt;/a&gt; using the &lt;a href=&quot;https://webmention.io/&quot;&gt;webmention.io&lt;/a&gt; service to receive webmentions and pingbacks. Not that anyone is ever reading my blog or that I process the mentions... Still the site is setup for this.&lt;/p&gt;
-&lt;p&gt;Then I added a &lt;a href=&quot;https://indieweb.org/microformats&quot;&gt;microformat&lt;/a&gt; &lt;a href=&quot;https://indieweb.org/h-card&quot;&gt;h-card&lt;/a&gt; to my homepage in order to have business card like functionality on the web.&lt;/p&gt;
-&lt;p&gt;Finally, to wrap it all up, I added myself to the &lt;a href=&quot;https://indieweb.org/indiewebring&quot;&gt;IndieWebRing&lt;/a&gt;, taking the lead from &lt;a href=&quot;https://jasm1nii.xyz/&quot;&gt;jasmine&lt;/a&gt; and &lt;a href=&quot;https://vanderven.se/martijn/&quot;&gt;Martin van der van&lt;/a&gt; on how to setup my h-card.&lt;/p&gt;
-&lt;p&gt;Having got started with microformats for the h-card, I went and added the required properties for &lt;a href=&quot;http://microformats.org/wiki/h-entry#Core_Properties&quot;&gt;h-entry&lt;/a&gt; as well.&lt;/p&gt;
 </content>
 	</entry>
 </feed>
