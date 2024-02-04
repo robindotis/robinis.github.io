@@ -190,6 +190,7 @@ article header time, h2 time {
 }
 
 main.tmpl-post article header h1,
+main.tmpl-page article header h1,
 main.tmpl-home article header h2 {
     font-size: 2em;
 }
@@ -199,7 +200,7 @@ main.tmpl-home article header time {
 }
 
 main article h2 {
-    font-size: 1.3em;
+    font-size: 1.5em;
 }
 
 h2.all-posts-list {
