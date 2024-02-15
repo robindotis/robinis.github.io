@@ -6,13 +6,46 @@
 	
 	<link href="https://www.robin.is/feed/index.xml" rel="self"/>
 	<link href="https://www.robin.is/" rel="alternate" type="text/html"/>
-	<updated>2024-01-29T19:18:27Z</updated>
+	<updated>2024-02-14T08:18:27Z</updated>
 	<id>https://www.robin.is/</id>
 	<author>
 		<name>robindotis</name>
 		<email>admin@robin.is</email>
 	</author>
 	
+	
+	<entry>
+		<title>Barcelona</title>
+		<link href="https://www.robin.is/posts/2024/barcelona/"/>
+		<updated>2024-02-14T08:18:27Z</updated>
+		<id>https://www.robin.is/posts/2024/barcelona/</id>
+		<content type="html">&lt;p&gt;A relaxing few days in Barcelona.&lt;/p&gt;
+&lt;p&gt;10/02&lt;br /&gt;
+We arrived around 3pm at our appartment. Then walked around town for a few hours, before having dinner&lt;/p&gt;
+&lt;p&gt;11/02&lt;br /&gt;
+A day strolling around town. Visited Joan Miro park, and the circular shopping arena.&lt;/p&gt;
+&lt;p&gt;12/02&lt;br /&gt;
+Visited the hospital at Sant Pau.&lt;br /&gt;
+Piano concert at the Palau of mnusic&lt;/p&gt;
+&lt;p&gt;13/02&lt;br /&gt;
+Went to the funicular for Tibidabo, but it was out of order, so we spent the rest of the day walking arounf the area, having a lovely lunch at la tegliatlle&lt;/p&gt;
+&lt;p&gt;14/02&lt;br /&gt;
+Got high speed train to Madrid&lt;/p&gt;
+</content>
+	</entry>
+	
+	<entry>
+		<title>Mona Lisa Overdrive</title>
+		<link href="https://www.robin.is/posts/2024/mona-lisa-overdrive/"/>
+		<updated>2024-02-13T18:00:33Z</updated>
+		<id>https://www.robin.is/posts/2024/mona-lisa-overdrive/</id>
+		<content type="html">&lt;h2&gt;by William Gibson&lt;/h2&gt;
+&lt;p&gt;To be updated&lt;/p&gt;
+&lt;p&gt;The final part of his trilogy, that starts with &lt;a href=&quot;https://www.robin.is/posts/2023/neuromancer.md&quot;&gt;Neuromancer&lt;/a&gt; and continues with &lt;a href=&quot;https://www.robin.is/posts/2023/count-zero.md&quot;&gt;Count Zero&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Started 07/02/2024. Finished 13/02/2024.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://www.robin.is/assets/images/2023/mona-lisa-overdrive.webp&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+</content>
+	</entry>
 	
 	<entry>
 		<title>Weekend in London</title>
@@ -133,30 +166,6 @@
 &lt;p&gt;Apparently this book is part of a trilogoy. I guess they&#39;ll be my next two reads.&lt;/p&gt;
 &lt;p&gt;Started 03/11/2023. Finished 12/11/2023.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;https://www.robin.is/assets/images/2023/neuromancer.webp&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-</content>
-	</entry>
-	
-	<entry>
-		<title>Stack Overflow</title>
-		<link href="https://www.robin.is/posts/2023/stackoverflow/"/>
-		<updated>2023-11-09T07:00:01Z</updated>
-		<id>https://www.robin.is/posts/2023/stackoverflow/</id>
-		<content type="html">&lt;p&gt;So I deleted all my accounts on stack overlfow and the other stack exchange sites. Why? I hadn&#39;t posted a question on the site in over 10 years as I no longer program very much and I find the answer increasingly less relevant when I am looking for something.&lt;/p&gt;
-&lt;p&gt;I&#39;ve also come to understand  how its kudos system has a lot of negative side effects, turning what should be a friendly Q&amp;amp;A site into an agressively moderated online environment which is especially toxic to newbies who don&#39;t understand the rules. I had noticed myself that answers I gave over a decade ago were constantly re-edited and &amp;quot;improved&amp;quot;. Some questions I asked got completely rewritten or marked as duplicate even though I felt they weren&#39;t. This is the effect of members chasing kudos points in order to stay relevant in site&#39;s user rankings.&lt;/p&gt;
-&lt;p&gt;I have also noticed that all search engines rely heavily, almost exclusively, on Stack Overflow to provide answers to programming questions asked to them. The problem which arises, is that the best answer from 10 years ago may no longer actually be the best answer. This is especially the case in web design where accepted best practice has moved on so much that an answer from 10 years ago is often simply no longer relevant. However, because the answer was edited 2 years ago the search engines still think it is up to date. This leads me to believe that the whole Q&amp;amp;A ecosystem created by Stack Overflow reeks of gaming the system. To the detriment of the user.&lt;/p&gt;
-&lt;p&gt;And I think the founders knew this. They &lt;a href=&quot;https://stackoverflow.blog/2021/06/02/prosus-acquires-stack-overflow/&quot;&gt;sold the site for a cool $1.8 billion&lt;/a&gt; a couple of years ago, back in 2021. I think they realised they&#39;d pushed this as far as they could and in the long term further growth would be difficult. The new owners will for sure make a good profit over the coming years, it is after all &lt;em&gt;&lt;strong&gt;the&lt;/strong&gt;&lt;/em&gt; go to site for programming answers. But I doubt the next 15 years will match the success of the previous 15 years.  I can&#39;t see it maintaining its relevance, especially in this age of AI and tools like Copilot.&lt;/p&gt;
-&lt;p&gt;In any case, I for one, intend to avoid the stack exchange network as much as I can in future.&lt;/p&gt;
-</content>
-	</entry>
-	
-	<entry>
-		<title>Do Androids Dream Of Electric Sheep</title>
-		<link href="https://www.robin.is/posts/2023/androids-sheep/"/>
-		<updated>2023-11-02T18:00:33Z</updated>
-		<id>https://www.robin.is/posts/2023/androids-sheep/</id>
-		<content type="html">&lt;h2&gt;by Philip K. Dick&lt;/h2&gt;
-&lt;p&gt;This is the book on which the film Blade Runner is based. I have always struggled to stay awake watching the film, as despite being interesting, it is very slow paced. The book on the other hand I finished in a couple of days. It&#39;s not gripping, but definitely interesting and raising some interesting questions about what is and isn&#39;t real. With the progress of AI in recent years, this is again a very current question. Well worth reading. And maybe I should watch the film again...&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://www.robin.is/assets/images/2023/androids-sheep.webp&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 </content>
 	</entry>
 </feed>
