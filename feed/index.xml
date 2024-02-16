@@ -6,13 +6,59 @@
 	
 	<link href="https://www.robin.is/feed/index.xml" rel="self"/>
 	<link href="https://www.robin.is/" rel="alternate" type="text/html"/>
-	<updated>2024-02-14T08:18:27Z</updated>
+	<updated>2024-02-19T18:00:33Z</updated>
 	<id>https://www.robin.is/</id>
 	<author>
 		<name>robindotis</name>
 		<email>admin@robin.is</email>
 	</author>
 	
+	
+	<entry>
+		<title>Burning Chrome</title>
+		<link href="https://www.robin.is/posts/2024/burning-chrome/"/>
+		<updated>2024-02-19T18:00:33Z</updated>
+		<id>https://www.robin.is/posts/2024/burning-chrome/</id>
+		<content type="html">&lt;h2&gt;by William Gibson&lt;/h2&gt;
+&lt;p&gt;A collection of short stories by William Gibson. Some based around the Neuromancer world, others unrealted. I found some quite abstract and unclear, making it  hard to understand the story. Others were great.&lt;/p&gt;
+&lt;h3&gt;Johnny Mnemonic&lt;/h3&gt;
+&lt;p&gt;A great read - they made a film of this one, starring Keanu Reeves&lt;/p&gt;
+&lt;h3&gt;The Gernsback Continuum&lt;/h3&gt;
+&lt;p&gt;An odd one. Somewhat tricky to follow.&lt;/p&gt;
+&lt;h3&gt;Fragments of a Hologram rose&lt;/h3&gt;
+&lt;p&gt;A very short story, again rather abstract.&lt;/p&gt;
+&lt;h3&gt;The Belonging Kid&lt;/h3&gt;
+&lt;p&gt;About aliens mingling amongst humans on earth. An interesting read.&lt;/p&gt;
+&lt;h3&gt;Hinterlands&lt;/h3&gt;
+&lt;p&gt;A really interesting story about a sort of tunnel to another galaxy or universe. One of my favourites in this collection.&lt;/p&gt;
+&lt;h3&gt;Red Star, Winter Orbit&lt;/h3&gt;
+&lt;p&gt;...&lt;/p&gt;
+&lt;h3&gt;New Rose Hotel&lt;/h3&gt;
+&lt;p&gt;...&lt;/p&gt;
+&lt;h3&gt;The Winter Market&lt;/h3&gt;
+&lt;h3&gt;Dogfight&lt;/h3&gt;
+&lt;h3&gt;Burning Chrome&lt;/h3&gt;
+&lt;p&gt;Started 13/02/2024. Finished 19/02/2024.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://www.robin.is/assets/images/2024/burning-chrome.webp&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+</content>
+	</entry>
+	
+	<entry>
+		<title>Madrid</title>
+		<link href="https://www.robin.is/posts/2024/madrid/"/>
+		<updated>2024-02-19T08:18:27Z</updated>
+		<id>https://www.robin.is/posts/2024/madrid/</id>
+		<content type="html">&lt;p&gt;A relaxing few days in Barcelona.&lt;/p&gt;
+&lt;p&gt;14/02&lt;br /&gt;
+We arrived at the central station around 15:30 and got to our hotel around 18:00 after catching a local train to the airport terminal 4 and then a local bus for three stops to Barajas where our hotel was, Hotel Clement.&lt;/p&gt;
+&lt;p&gt;15/02&lt;br /&gt;
+TBD&lt;/p&gt;
+&lt;p&gt;16/02&lt;br /&gt;
+TBD&lt;/p&gt;
+&lt;p&gt;17/02&lt;br /&gt;
+Return to Luxembourg.&lt;/p&gt;
+</content>
+	</entry>
 	
 	<entry>
 		<title>Barcelona</title>
@@ -133,39 +179,6 @@ Got high speed train to Madrid&lt;/p&gt;
 &lt;p&gt;To be a PWA, a website needs only one thing: a &lt;a href=&quot;https://web.dev/learn/pwa/service-workers/&quot;&gt;service worker&lt;/a&gt;. Adding one is fairly straightforward, once you know how. It does require a good understanding of asynchronous JavaScript, something which I struggle with. The alternative is just to copy someone else&#39;s service worker code and adapt if needed. I chose the alternative. 🤷‍♂️&lt;/p&gt;
 &lt;p&gt;So I copied the one from &lt;a href=&quot;https://adactio.com/&quot;&gt;Jeremy Keith&lt;/a&gt;. It took me a while to get it to work, although I am not sure I really changed anything very much. However, debugging PWAs is more complex than plain JavaScript. So most of my efforts were trial and error. And then it worked. Magic! 🧙‍♂️&lt;/p&gt;
 &lt;p&gt;I even managed to get an &lt;a href=&quot;https://www.robin.is/offline/&quot;&gt;offline page&lt;/a&gt; working for the PWA. Again, copied from &lt;a href=&quot;https://adactio.com/offline&quot;&gt;Jeremy&#39;s offline page&lt;/a&gt;. What this page does, thanks to some nifty JavaScript, is check if there is a network connection. If there is it fetches the page from the server. If there isn&#39;t, it tries to fetch the page from the cache. If the page has not been cached, it displays a list of pages that have been cached and are therefore available for offline reading. Fantastic!&lt;/p&gt;
-</content>
-	</entry>
-	
-	<entry>
-		<title>Dependencies</title>
-		<link href="https://www.robin.is/posts/2023/dependencies/"/>
-		<updated>2023-11-29T08:18:27Z</updated>
-		<id>https://www.robin.is/posts/2023/dependencies/</id>
-		<content type="html">&lt;h2&gt;Dependencies&lt;/h2&gt;
-&lt;p&gt;One of the challenges, at least for me, in modern web development, is keeping track of dependencies. On the one hand they help you avoid reinventing the wheel. On the otherhand they can cause unexpected problems which are sometimes hard to diagnose. I like to keep them to a minimum, especially when I don&#39;t really understand how they do what they do.&lt;/p&gt;
-&lt;p&gt;So, I improved my GitHub action that builds my &lt;a href=&quot;https://www.11ty.dev/&quot;&gt;eleventy&lt;/a&gt; based website by removing my dependency on an &lt;a href=&quot;https://github.com/TartanLlama/actions-eleventy&quot;&gt;action from a GitHub user called TartanLlama&lt;/a&gt;. This action used a Docker file to build and generate the actual HTML pages for the website. The action has served me well for the last three years, but I did worry about what would happen if there was a bug and the user stopped maintaining this bit of code. It had stopped working once and it took me a couple of days to realise that I had to update my link to the action to a newer version. I didn&#39;t want to end up in &lt;a href=&quot;https://www.robin.is/posts/2022/dependency/&quot;&gt;this situation&lt;/a&gt;, should the user decide to call it a day.&lt;/p&gt;
-&lt;p&gt;So I did some Googling and found &lt;a href=&quot;https://www.rockyourcode.com/how-to-deploy-eleventy-to-github-pages-with-github-actions/&quot;&gt;this blog post&lt;/a&gt; and &lt;a href=&quot;https://stackoverflow.com/a/75599084&quot;&gt;this answer on Stack Overflow&lt;/a&gt;. (&lt;a href=&quot;https://www.robin.is/posts/2023/stackoverflow/&quot;&gt;Yes, I know I am trying to avoid Stack Overflow&lt;/a&gt;, but Google makes it very hard!). Between the two, I came up with this step in my GitHub action:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;- name: Install dependencies &amp;amp; build
-    run: |
-        npm install --package-lock-only
-        npm ci
-        npm run build  
-&lt;/code&gt;&lt;/pre&gt;
-</content>
-	</entry>
-	
-	<entry>
-		<title>Neuromancer</title>
-		<link href="https://www.robin.is/posts/2023/neuromancer/"/>
-		<updated>2023-11-12T18:00:33Z</updated>
-		<id>https://www.robin.is/posts/2023/neuromancer/</id>
-		<content type="html">&lt;h2&gt;by William Gibson&lt;/h2&gt;
-&lt;p&gt;Over the years I&#39;d heard a lot about this book. The author coined the term &amp;quot;cyberspace&amp;quot; and basically invented the cyberpunk genre. Back in the early 80s. So I finally decided I should read it and it made a very suitable follow up to the &lt;a href=&quot;https://www.robin.is/posts/2023/androids-sheep/&quot;&gt;previous book&lt;/a&gt; I read.&lt;/p&gt;
-&lt;p&gt;It&#39;s a fun read. I can see why it is so popular and how it would be a genre defining book. Very timely as well, with the rise of AI over the last year or two. Although that AI is nothing compared to what is described in this story. In fact the book is a suitable reminder that what we consider as AI right now, is nothing of the sort. It&#39;s certainly not intelligent, let alone self-aware.&lt;/p&gt;
-&lt;p&gt;I finished the last quarter of the book in one evening. On putting it down and thinking about it for a while, there were more questions than answers. But the one thought which I couldn&#39;t get out of my mind, is that this was basically a blue print for &lt;a href=&quot;https://www.imdb.com/title/tt0133093/&quot;&gt;The Matrix&lt;/a&gt;. Reading other people&#39;s thoughts on the web, I am clearly not the only one who came to this conclusion.&lt;/p&gt;
-&lt;p&gt;Apparently this book is part of a trilogoy. I guess they&#39;ll be my next two reads.&lt;/p&gt;
-&lt;p&gt;Started 03/11/2023. Finished 12/11/2023.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://www.robin.is/assets/images/2023/neuromancer.webp&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 </content>
 	</entry>
 </feed>
