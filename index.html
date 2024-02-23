@@ -70,7 +70,7 @@
                 <a href="/reading/" >reading</a> and 
                 <a href="/walking/" >walking</a> the 
                 <a href="/tagging/angie/"  >dog</a>🐕‍🦺. Read 
-                    his 441 <a href="/archiving/" >posts</a> and find out more
+                    his 442 <a href="/archiving/" >posts</a> and find out more
                 <a href="/about/" >about</a> him.
 
             </nav>
@@ -87,6 +87,31 @@
 </article>
 
 <div class="posts-list">
+  
+    
+      <hr aria-hidden="true">
+      <article class="custom- h-entry">
+        <header>
+          <h2 class="p-name"><a href="/posts/2024/page-speed/" class="u-url">Progressive Web App</a></h2>
+          <time datetime="2024-02-23 14:18:27" class="dt-published">
+            <span class="date-day">23</span> 
+            <span class="date-month">February</span>, 
+            <span class="date-year">2024</span>
+          </time>
+        </header>
+        <div class="e-content">
+          <p>More for fun than any other reason, I like to keep my site as close to possible to 100 on <a href="https://developer.chrome.com/docs/lighthouse/overview/">Lighthouse</a> and <a href="https://pagespeed.web.dev/">PageSpeed Insights</a>. For most of the metrics I am in the green, at or close to 100%.</p>
+<p>On some pages, normally those with many images, I struggle with &quot;Largest Contentful Paint&quot; (LCP). I am not sure there is much I can do about this as I am dependent on GitHub for how long it takes to load the images. I could try optimising the images further, but they are already resized to 800px and saved in WEBP format. Probably they could be smaller when viewed on mobiles, but I really can't be bothered at the moment with managing different sized versions of the same image. 🤷‍♂️</p>
+<p>However, I then noticed that my site was nearly always failing on &quot;Cumulative Layout Shift&quot; (CLP), including pages without images. This I found strange because <a href="/about/">my site uses next to no JavaScript</a> or other trickery, so why should there be a layout shift on pages which are pure text? It turns out the problem is my use of web fonts. Whilst the browser loads the font file, it displays the page in the system's default font. When it then applies the web font a short time later, this will affect the layout of the text, which then shifts. The <a href="https://simonhearne.com/2021/layout-shifts-webfonts/">solution to this problem</a> is to use <code>font-display: optional</code> instead of <code>font-display: swap</code>. This avoids the font swap if the web fonts are not loaded fast enough. It means on the first view, the user might not view the site in my intended font. But by the second view, the font file will have been cached and the web font will kick in.</p>
+<p>My CLP went from a quarter of a second to a few hundreds of a second. Magic! 🧙‍♂️</p>
+
+        </div>
+        
+          <div class="tagged"><strong>Tagged: </strong><a href="/tagging/general/" class="post-tag" rel="tag">general</a> &nbsp;<a href="/tagging/web/" class="post-tag" rel="tag">web</a> &nbsp;<a href="/tagging/development/" class="post-tag" rel="tag">development</a> &nbsp;<a href="/tagging/google/" class="post-tag" rel="tag">google</a> &nbsp;
+  </div>
+
+      </article>
+    
   
     
       <hr aria-hidden="true">
@@ -176,45 +201,6 @@
 
       </article>
     
-  
-    
-      <hr aria-hidden="true">
-      <article class="custom- h-entry">
-        <header>
-          <h2 class="p-name"><a href="/posts/2024/barcelona/" class="u-url">Barcelona</a></h2>
-          <time datetime="2024-02-14 08:18:27" class="dt-published">
-            <span class="date-day">14</span> 
-            <span class="date-month">February</span>, 
-            <span class="date-year">2024</span>
-          </time>
-        </header>
-        <div class="e-content">
-          <p>Having enjoyed our <a href="/posts/2022/barcelona/">last visit to Barcelona</a> a couple of years ago, we decided to visit again.</p>
-<p>We arrived around 3pm at our appartment, a few  blocks north of the Sagrada Familia near the restored Sant Pau hospital. The appartment was nice, and we even had a view, just, of the Sagrada Familia from our Balcony.</p>
-<p><img src="/assets/images/2024/barcelona-1.webp" alt=""></p>
-<p>Having checked in, we walked around town for a few hours, before having dinner and returning to the appartment. They haven't yet completed the Sagrada Familia, but I like to think they progressed since our last visit, given all the scaffolding around parts of the church.</p>
-<p><img src="/assets/images/2024/barcelona-2.webp" alt=""></p>
-<p>The next day we strolled around town a little more.  We visited the Joan Miro park...</p>
-<p><img src="/assets/images/2024/barcelona-3.webp" alt=""></p>
-<p>...followed by the Barcelona Arena shopping centre which has a viewing platform all the way around its roof. From there we got a good view of the Place d'Espanya and the National Palace on the Montjiuc hill.</p>
-<p><img src="/assets/images/2024/barcelona-4.webp" alt=""></p>
-<p>On the third day we visited the wonderfully restored hospital at Sant Pau, which is now a museum. They don't build hospitals like that anymore!</p>
-<p><img src="/assets/images/2024/barcelona-5.webp" alt=""><br>
-<img src="/assets/images/2024/barcelona-6.webp" alt=""></p>
-<p>We finished the day watching a piano concert by <a href="https://www.khatiabuniatishvili.com/">Khatia Buniatishvili</a> at the <a href="https://www.palaumusica.cat/en/khatia-buniatishvili-piano_1004121">Palau de la Musica</a></p>
-<p><img src="/assets/images/2024/barcelona-7.webp" alt=""></p>
-<p>On our final full day we intended to visit Tibidabo castle, so headed for the funicular. Unforuntately it was out of order, so we spent the rest of the day ambling around the area, having a lovely lunch at <a href="https://www.latagliatella.es/">La Tegliatlla</a> restaurant.  Then we enjoyed some lovely views of the city from Park del Turo del Putxet a bit further along.</p>
-<p><img src="/assets/images/2024/barcelona-8.webp" alt=""><br>
-<img src="/assets/images/2024/barcelona-9.webp" alt=""></p>
-<p>The next day <a href="/posts/2024/madrid/">we were off to Madrid</a> on a high speed train.</p>
-
-        </div>
-        
-          <div class="tagged"><strong>Tagged: </strong><a href="/tagging/general/" class="post-tag" rel="tag">general</a> &nbsp;<a href="/tagging/barcelona/" class="post-tag" rel="tag">barcelona</a> &nbsp;<a href="/tagging/travel/" class="post-tag" rel="tag">travel</a> &nbsp;<a href="/tagging/photos/" class="post-tag" rel="tag">photos</a> &nbsp;
-  </div>
-
-      </article>
-    
     
 </div> 
 <hr aria-hidden="true">
@@ -248,7 +234,7 @@
                 An <a href="https://xn--sr8hvo.ws">IndieWeb Webring</a> 🕸💍
                 <a href="https://xn--sr8hvo.ws/next">→</a>
             </div>
-            <div class="lastrun">Hand crafted using <a href="https://www.11ty.dev/">eleventy</a>. Built on the 23/02/2024 at 13:49:36 in the flashiest of flashes⚡</div>
+            <div class="lastrun">Hand crafted using <a href="https://www.11ty.dev/">eleventy</a>. Built on the 23/02/2024 at 15:58:23 in the flashiest of flashes⚡</div>
             <div class="badges">
                 <a href="https://www.anybrowser.org/campaign/"><img src="/assets/images/any-browser-button.png" alt="Viewable With Any Browser" width="80" height="15" /></a>
                 <a href="https://indieweb.org/"><img src="/assets/images/indieweb-button.png" alt="IndieWeb" width="80" height="15" /></a>
