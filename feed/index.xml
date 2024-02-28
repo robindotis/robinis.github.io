@@ -6,13 +6,27 @@
 	
 	<link href="https://www.robin.is/feed/index.xml" rel="self"/>
 	<link href="https://www.robin.is/" rel="alternate" type="text/html"/>
-	<updated>2024-02-23T14:18:27Z</updated>
+	<updated>2024-02-28T11:18:27Z</updated>
 	<id>https://www.robin.is/</id>
 	<author>
 		<name>robindotis</name>
 		<email>admin@robin.is</email>
 	</author>
 	
+	
+	<entry>
+		<title>Apple and the Digital Markets Act</title>
+		<link href="https://www.robin.is/posts/2024/apple-dma/"/>
+		<updated>2024-02-28T11:18:27Z</updated>
+		<id>https://www.robin.is/posts/2024/apple-dma/</id>
+		<content type="html">&lt;p&gt;On the 6th March those companies that have been designated as &amp;quot;gatekeepers&amp;quot; under the European Commission&#39;s &lt;a href=&quot;https://digital-markets-act.ec.europa.eu/index_en&quot;&gt;Digital Market Act&lt;/a&gt; (DMA), need to finally comply with it.&lt;/p&gt;
+&lt;p&gt;The DMA has two intersting effects for web, both affecting Apple. Firstly, it forces Apple to allow alternate application stores to the one owned by Apple. Secondly, it also forces Apple to allow browser engines other than its own WebKit to be installed on iOS devices. Apple, as any cooperation worth its salt does, has taken these rules and interpreted them in the most mean spirited manner possible beyond simply not implementing the new rules at all.&lt;/p&gt;
+&lt;p&gt;A lot has already noted about Apples implementation of the first effect allowing alternate application stores. This has been largely covered in more business orientated publications due the Core Technology Fee it will charge to all installations not done through Apple&#39;s AppStore.&lt;/p&gt;
+&lt;p&gt;For those of us interested in an open web, one where mobile apps are not needed in order to offer relatively basic functionality, of far more significance is Apple&#39;s approach to the second requirement: allow third party browser engines to run on iOS. Apple&#39;s implementation in dealing with this is to basically break Progressive Web Apps (PWAs) for those who are in the EU. As much as Apple fears alternative application stores, it fears an open web even more. One in which they have no control over which applications can be run on an iOS device and by control I mean profit from.&lt;/p&gt;
+&lt;p&gt;Advocating for an open web, means I have signed this &lt;a href=&quot;https://letter.open-web-advocacy.org/&quot;&gt;open letter to Apple&lt;/a&gt;. I encourage you to do the same. For more information on this issue, read &lt;a href=&quot;https://open-web-advocacy.org/apple-attempts-killing-webapps/&quot;&gt;this article from Open Web Advocacy&lt;/a&gt; as well as &lt;a href=&quot;https://infrequently.org/2024/02/home-screen-advantage/&quot;&gt;this one from Alex Russell&lt;/a&gt;. Note that Alex works for Microsoft, so whilst his points are still valid, they might not be fully impartial.&lt;/p&gt;
+&lt;p&gt;The Commmission&#39;s decision is eagerly awaited in March.&lt;/p&gt;
+</content>
+	</entry>
 	
 	<entry>
 		<title>PageSpeed Insights</title>
@@ -209,18 +223,6 @@
 &lt;p&gt;Likewise, the US can run much larger debt ratio than other countries, because of its political and military importance. Similarly, Japan has the highest debt ratio in the world, but this is not a problem because much of it is held by its citizens and generally the world trusts Japan to repay its debt. So again, like taxes, not all debt is equal.&lt;/p&gt;
 &lt;p&gt;The book does hint at these sorts of questions in the conclusion and it is intended as an introduction, not a study. It also mentions that most of the public does not understand the consequences of the economic policies they are voting for. Addressing things like taxation and debt in more detail, but still in plain language, might have been useful in achieving the goals of the book.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;https://www.robin.is/assets/images/2023/cant-we-just-print-more-money.webp&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-</content>
-	</entry>
-	
-	<entry>
-		<title>Count Zero</title>
-		<link href="https://www.robin.is/posts/2023/count-zero/"/>
-		<updated>2023-12-23T08:00:33Z</updated>
-		<id>https://www.robin.is/posts/2023/count-zero/</id>
-		<content type="html">&lt;h2&gt;by William Gibson&lt;/h2&gt;
-&lt;p&gt;Count Zero is the follow on book to &lt;a href=&quot;https://www.robin.is/posts/2023/neuromancer/&quot;&gt;Neuromancer&lt;/a&gt;, which I read last month. It took me a little longer to finish, so I think I missed some of the detail. It was an interesting read, possibly more so even than Neuromancer, although not as ground breaking. I think I will have to re-read this one in a shorter time frame to make more sense of it.&lt;/p&gt;
-&lt;p&gt;Started 13/11/2023. Finished 22/12/2023.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://www.robin.is/assets/images/2023/count-zero.webp&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 </content>
 	</entry>
 </feed>
