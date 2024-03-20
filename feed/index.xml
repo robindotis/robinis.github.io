@@ -6,13 +6,57 @@
 	
 	<link href="https://www.robin.is/feed/index.xml" rel="self"/>
 	<link href="https://www.robin.is/" rel="alternate" type="text/html"/>
-	<updated>2024-03-17T14:52:47Z</updated>
+	<updated>2024-03-19T18:00:33Z</updated>
 	<id>https://www.robin.is/</id>
 	<author>
 		<name>robindotis</name>
 		<email>admin@robin.is</email>
 	</author>
 	
+	
+	<entry>
+		<title>Shattered Nation</title>
+		<link href="https://www.robin.is/posts/2024/shattered-nation/"/>
+		<updated>2024-03-19T18:00:33Z</updated>
+		<id>https://www.robin.is/posts/2024/shattered-nation/</id>
+		<content type="html">&lt;h2&gt;by Danny Dorling&lt;/h2&gt;
+&lt;p&gt;A very interesting read about the very high inequality of the UK, apparently the highest in Europe except for Bulgaria. It&#39;s quite a depressing read.&lt;/p&gt;
+&lt;p&gt;One caveat: the book does compare the UK badly to the rest of Europe, especially the similarly wealthy western / northern countries. I am not convinced that these countries are doing much better. The author does point this out, but is also clear: in his view, whilst things are bad in other places, in almost none of them are they as bad as the UK. Not even close.&lt;/p&gt;
+&lt;p&gt;The book is centred on the five identified in The Beveridge report (from 1942) which lead to the creation of the NHS:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;want – an adequate income for all&lt;/li&gt;
+&lt;li&gt;disease – access to health care&lt;/li&gt;
+&lt;li&gt;ignorance – a good education&lt;/li&gt;
+&lt;li&gt;squalor – adequate housing&lt;/li&gt;
+&lt;li&gt;idleness – gainful employment&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The UK, having brilliantly managed to almost erradicate these evils by the 1970s, becoming the most equal country in Europe, with the best healthcare and social policies, is now back sliding. Policies since then, from all political parties, have brought the five evils back in a different form. Their modern equivalents are:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;hunger&lt;/li&gt;
+&lt;li&gt;precarity&lt;/li&gt;
+&lt;li&gt;waste&lt;/li&gt;
+&lt;li&gt;exploitation&lt;/li&gt;
+&lt;li&gt;fear&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The book makes some very good points on the ruling classes being completely out of touch with rest of the population and therefore unable to understand the reality of these five modern evils. For example around 80% of economics students are from a privileged background. These are the ones creating policies to alleviate things like hunger. Only veterinary science has a higher percentage.&lt;/p&gt;
+&lt;p&gt;The book contains many obvious observations that are either poorly understood by economists or ignored because it would reduce their own wealth. Such as:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;The price mechanism works quite well for goods such as clothes because there are few monopoly supplies and people become quite expert at buying clothes as they do it often. People rarely become expert at buying a university education or a heart operation.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Another interesting point is made in chapter 5 on waste. More and more people are working in services that are essentially supporting the wealthy to manage and increase their wealth. Outside of remuneration, this sort of work creates no real value to the person doing it. Nor to society as a whole. These people&#39;s significant skills are not put to work on anything truly meaningful, like helping others, creating joy and happines or even simply making things.&lt;/p&gt;
+&lt;p&gt;As the book states:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;By judging a job&#39;s worth only through its financial value we devalue what is truly meaningful and what actually adds to the greater good&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;This is something I have often thought about myself. The financialisation of almost every aspect of public life, means that the decisions on whether to provide tax payer support are made purely on whether it is directly profitable. No thought is given whether it is simply useful in helping people go about their lives in a meaningful way. Where&#39;s the direct profit in saving someone&#39;s life, or cleaning the streets. Where&#39;s the profit in healthy people not needing medications?&lt;/p&gt;
+&lt;p&gt;For once, this is also a book that does not end with a positive call for arms (well, it pushes that to the acknowledgements...). Instead it points to what could happen if something doesn&#39;t change:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;It is even possible that inequalities could fall within the large majority of the population, while rising overall because just a tiny few at the top are allowed to keep taking more.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Started 19/02/2024. Finished 19/03/2024.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://www.robin.is/assets/images/2024/shattered-nation.webp&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+</content>
+	</entry>
 	
 	<entry>
 		<title>Kopstal Circular Walk - Again</title>
@@ -64,43 +108,6 @@
 &lt;p&gt;On some pages, normally those with many images, I struggle with &amp;quot;Largest Contentful Paint&amp;quot; (LCP). I am not sure there is much I can do about this as I am dependent on GitHub for how long it takes to load the images. I could try optimising the images further, but they are already resized to 800px and saved in WEBP format. Probably they could be smaller when viewed on mobiles, but I really can&#39;t be bothered at the moment with managing different sized versions of the same image. 🤷‍♂️&lt;/p&gt;
 &lt;p&gt;However, I then noticed that my site was nearly always failing on &amp;quot;Cumulative Layout Shift&amp;quot; (CLP), including pages without images. This I found strange because &lt;a href=&quot;https://www.robin.is/about/&quot;&gt;my site uses next to no JavaScript&lt;/a&gt; or other trickery, so why should there be a layout shift on pages which are pure text? It turns out the problem is my use of web fonts. Whilst the browser loads the font file, it displays the page in the system&#39;s default font. When it then applies the web font a short time later, this will affect the layout of the text, which then shifts. The &lt;a href=&quot;https://simonhearne.com/2021/layout-shifts-webfonts/&quot;&gt;solution to this problem&lt;/a&gt; is to use &lt;code&gt;font-display: optional&lt;/code&gt; instead of &lt;code&gt;font-display: swap&lt;/code&gt;. This avoids the font swap if the web fonts are not loaded fast enough. It means on the first view, the user might not view the site in my intended font. But by the second view, the font file will have been cached and the web font will kick in.&lt;/p&gt;
 &lt;p&gt;My CLP went from a quarter of a second to a few hundreds of a second. Magic! 🧙‍♂️&lt;/p&gt;
-</content>
-	</entry>
-	
-	<entry>
-		<title>Shattered Nation</title>
-		<link href="https://www.robin.is/posts/2024/shattered-nation/"/>
-		<updated>2024-02-19T18:00:33Z</updated>
-		<id>https://www.robin.is/posts/2024/shattered-nation/</id>
-		<content type="html">&lt;h2&gt;by Danny Dorling&lt;/h2&gt;
-&lt;p&gt;Interesting read about the very inequality of the UK - the highest in Europe except for Bulgaria. Quite depressing.&lt;/p&gt;
-&lt;p&gt;The Beveridge report which lead to the creation of the NHS wanted to get rid of the five evils:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;want – an adequate income for all&lt;/li&gt;
-&lt;li&gt;disease – access to health care&lt;/li&gt;
-&lt;li&gt;ignorance – a good education&lt;/li&gt;
-&lt;li&gt;squalor – adequate housing&lt;/li&gt;
-&lt;li&gt;idleness – gainful employment&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;By the 1970s this had been achieved to quite astonishing degree. Policies since then, from all political parties, have brough them back in a different form:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;hunger&lt;/li&gt;
-&lt;li&gt;precarity&lt;/li&gt;
-&lt;li&gt;waste&lt;/li&gt;
-&lt;li&gt;exploitation&lt;/li&gt;
-&lt;li&gt;fear&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Some very good points made about the ruling classes being completely out of touch with rest of the population. eg something 80% of economics students (the ones creating policies to alleviate things like hunger) are from privileged background. Only veterinary science has a higher percentage.&lt;/p&gt;
-&lt;p&gt;Or this paragraph:&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;The price mechanism works quite well for goods such as clothes because there are few monopoly supplies and people become quite expert at buying clothes as they do it often. People rarely become expert at buying a university education or a heart operation.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;Also interesting point made in chapter 5 on waste about how more and more people are working in services that are essentially supporting the wealthy manage and increase their wealth. Outside of remuneration this sort of work creates no real value to the person doign it, nor to society as a whole. These people&#39;s significant skills are not be put to work on anything truly meaningful, like helping others, creating joy and happines or even simply making things.&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;By judging a jobs worth only through it&#39;s financial value we devalue what is truly meaningful and what actually adds to the greater good&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;Started 19/02/2024&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://www.robin.is/assets/images/2024/shattered-nation.webp&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 </content>
 	</entry>
 	
