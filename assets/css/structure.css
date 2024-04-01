@@ -356,12 +356,13 @@ footer {
 }
 
 footer div {
-    display: inline-block;    
+    display: block;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 
 footer div.power {
-    width:48%;
-    text-align: right;    
+    width:100%;
 }
 footer div.power img {
     vertical-align:text-bottom;
@@ -373,15 +374,12 @@ footer a.a11y-statement {
 }
 
 footer div.copy {
-    width:48%;
-    text-align: left;
-    vertical-align: top;
+    width:100%;
 }
 
 footer div.lastrun {
     font-size: 0.8em;
     width: 100%;
-    text-align: center;
 }
 
 footer div.webring {
@@ -404,14 +402,12 @@ footer div.lastrun a {
 }
 
 footer .badges {
-    display: block;
-    text-align: center;
     padding-top: 5px;
 }
 
 footer .badges a {
     display: inline-block;
-    margin: 10px 10px 0 10px;
+    margin: 10px 20px 0 0;
 }
 
 footer div.footer-area {
