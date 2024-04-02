@@ -111,7 +111,7 @@
 <h2>Privacy</h2>
 <p>This site collects no personal information, has no stats or analytics, stores no cookies and uses almost no JavaScript. Therefore there are no annoying data privacy popups or design gimmicks that get in the way of the content. It's plain text, largely black on white.</p>
 <p>Whilst the site does not use cookies, it uses the &quot;local storage&quot; of the browser to store the theme chosen by the user. But it only does this if the user changes the theme, otherwise no local storage is used. I am not convinced this requires a cookie warning, so I didn't add one!</p>
-<p>Whilst the site will work perfectly without  JavaScript, I had to use JavaScript first to implement <a href="/posts/2022/stylesheet-switching-3/">theming</a>, then to add <a href="/posts/2023/installable/">Progressive Web App (PWA)</a> functionality.</p>
+<p>Whilst the site will work perfectly without JavaScript, I had to use JavaScript first to implement <a href="/posts/2022/stylesheet-switching-3/">theming</a>, then to add <a href="/posts/2023/installable/">Progressive Web App (PWA)</a> functionality. Although I have since removed the PWA functionality as there is not much point in it for a simple blog.</p>
 <h2>Future versions</h2>
 <p>I am writing this in early 2023. Looking back at the timeline it looks like I redevelop my site once a decade. So maybe in 2030 there will be a new version. What I like about the current site is that I am not tied into any specific content management system. All the content of the site is stored in plain text files in an open format, <a href="https://en.wikipedia.org/wiki/Markdown">Markdown</a>.</p>
 <p>I like to think though that the current format will last me a lot longer. The main dependency being Eleventy, but since that's open source, even if they stop developing that, I can still generate my files with it. Or write my own static file generator... don't get me started!</p>
@@ -152,8 +152,8 @@
 
   <hr> 
   Page last modified: 
-  <time class="dt-published" datetime="2024-04-01 10:12:06">
-    <span class="date-day">01</span> 
+  <time class="dt-published" datetime="2024-04-02 08:19:18">
+    <span class="date-day">02</span> 
     <span class="date-month">April</span> 
     <span class="date-year">2024</span>
   </time>
@@ -183,7 +183,7 @@
                 <a href="https://www.w3.org/Style/CSS/current-work"><img src="/assets/images/valid_css3_blue-button.png" alt="Valid CSS3" width="80" height="15" /></a>
             </div>
             <div class="lastrun">
-                Built on the 02/04/2024 at 00:31:11 in the flashiest of flashes⚡. <wbr>
+                Built on the 02/04/2024 at 08:20:38 in the flashiest of flashes⚡. <wbr>
                 <a href="https://xn--sr8hvo.ws/previous">←</a>
                 An <a href="https://xn--sr8hvo.ws">IndieWeb Webring</a> 🕸💍
                 <a href="https://xn--sr8hvo.ws/next">→</a>
@@ -192,20 +192,6 @@
     </footer>
 
     <!-- Current page: /history/ -->
-    <script>
-    <!--
-    // Register our service-worker
-    if (navigator.serviceWorker) {
-        window.addEventListener('load', function() {
-            navigator.serviceWorker.register('/service-worker.js', {
-                scope: '/'
-            });
-            if (navigator.serviceWorker.controller) {
-                navigator.serviceWorker.controller.postMessage({'command': 'trimCaches'});
-            }
-        });
-    }
-    //-->
-    </script>
+
   </body>
 </html>
