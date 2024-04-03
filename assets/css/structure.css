@@ -377,6 +377,10 @@ footer div.copy {
     width:100%;
 }
 
+footer div.copy div {
+    display: inline-block;
+}
+
 footer div.lastrun {
     font-size: 0.8em;
     width: 100%;
