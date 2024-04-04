@@ -409,13 +409,25 @@ footer .badges {
     padding-top: 5px;
 }
 
-footer .badges a {
+footer .badges p a {
     display: inline-block;
     margin: 10px 20px 0 0;
 }
 
 footer div.footer-area {
     display: block;
+}
+
+footer div p,
+footer div p img {
+    border:0;
+    padding: 0;
+    margin: 0;
+    vertical-align: text-top;
+}
+
+footer p img {
+    display: inline;
 }
 
 main .barchart {
