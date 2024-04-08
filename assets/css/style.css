@@ -276,10 +276,11 @@ main div article.custom-rip {
 main div article.custom-rip a {
     text-decoration-color: #000;
 }
-
+/*
 main div article.custom-rip header time span.date-day {
     background-color: #000;
 }
+*/
 main ul.postlist li.custom-rip a {
     text-decoration-color: #000;
 }

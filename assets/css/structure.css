@@ -474,6 +474,10 @@ main .main-content h2 a {
     text-decoration: none;
 }
 
+blockquote footer {
+    all:unset;
+}
+
 /* =========
    MAX WIDTH
    =========  */
