@@ -6,13 +6,23 @@
 	
 	<link href="https://www.robin.is/feed/index.xml" rel="self"/>
 	<link href="https://www.robin.is/" rel="alternate" type="text/html"/>
-	<updated>2024-04-07T22:18:27Z</updated>
+	<updated>2024-04-11T17:47:29Z</updated>
 	<id>https://www.robin.is/</id>
 	<author>
 		<name>robindotis</name>
 		<email>admin@robin.is</email>
 	</author>
 	
+	
+	<entry>
+		<title>Global Age Assurance Summit Manchester</title>
+		<link href="https://www.robin.is/posts/2024/age-assurance-summit-manchester/"/>
+		<updated>2024-04-11T17:47:29Z</updated>
+		<id>https://www.robin.is/posts/2024/age-assurance-summit-manchester/</id>
+		<content type="html">&lt;p&gt;Last week I was in Manchester for three days to give a presentation on the &amp;quot;EU approach to age assurance and age verification&amp;quot;, at the &lt;a href=&quot;https://www.robin.is/posts/2024/age-assurance-summit-manchester/age-assurance-summit-manchester&quot;&gt;Global Age Assurance Summit&lt;/a&gt;. My 15 minute presentation went well and there were plenty of questions afterwards to fill the remaining 10 minutes.&lt;/p&gt;
+&lt;p&gt;The event was interesting, showing the amount of effort that is going into keeping children safe online. This is something that should have been happening 20 years ago.&lt;/p&gt;
+</content>
+	</entry>
 	
 	<entry>
 		<title>Parrain</title>
@@ -212,20 +222,6 @@
 &lt;p&gt;&lt;img src=&quot;https://www.robin.is/assets/images/2024/barcelona-8.webp&quot; alt=&quot;&quot; /&gt;&lt;br /&gt;
 &lt;img src=&quot;https://www.robin.is/assets/images/2024/barcelona-9.webp&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 &lt;p&gt;The next day &lt;a href=&quot;https://www.robin.is/posts/2024/madrid/&quot;&gt;we were off to Madrid&lt;/a&gt; on a high speed train.&lt;/p&gt;
-</content>
-	</entry>
-	
-	<entry>
-		<title>Mona Lisa Overdrive</title>
-		<link href="https://www.robin.is/posts/2024/mona-lisa-overdrive/"/>
-		<updated>2024-02-13T18:00:33Z</updated>
-		<id>https://www.robin.is/posts/2024/mona-lisa-overdrive/</id>
-		<content type="html">&lt;h2&gt;by William Gibson&lt;/h2&gt;
-&lt;p&gt;The final part of his trilogy, that starts with &lt;a href=&quot;https://www.robin.is/posts/2023/neuromancer/&quot;&gt;Neuromancer&lt;/a&gt; and continues with &lt;a href=&quot;https://www.robin.is/posts/2023/count-zero/&quot;&gt;Count Zero&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;Finishing it in under a week made it easier to follow and keep track of what was going on. A very enjoyable read with an interesting ending.&lt;/p&gt;
-&lt;p&gt;I particularly like the way this trilogoy has done quite well at predicting the future. Not in terms of the cyberpunk background, but in the way it has made information and not technology itself the centre of the story.&lt;/p&gt;
-&lt;p&gt;Started 07/02/2024. Finished 13/02/2024.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://www.robin.is/assets/images/2023/mona-lisa-overdrive.webp&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 </content>
 	</entry>
 </feed>
