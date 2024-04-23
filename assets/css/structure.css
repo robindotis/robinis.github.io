@@ -226,8 +226,8 @@ blockquote {
     margin-left: 0;
 }
 
-blockquote p {
-    margin: 0;
+main article blockquote p:last-child {
+    margin-bottom: 0;
 }
 
 pre {
