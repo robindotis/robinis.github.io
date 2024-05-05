@@ -22,8 +22,8 @@
 		<content type="html">&lt;p&gt;I spent a few hours over the last couple of days upgrading my eleventy setup to &amp;quot;v3.0 canary&amp;quot;, and then to tidy up my eleventy config file, taking &lt;a href=&quot;https://eleventy-excellent.netlify.app/&quot;&gt;eleventy-excellent&lt;/a&gt; for inspiration. The idea being to move all my added filters, collections and shortcodes to module files.&lt;/p&gt;
 &lt;p&gt;This worked very well, but there were a couple of filters that simply didn&#39;t work. After several hours of failing to get them to work, I relented and decided to ask a question in the eleventy GitHub discussions forum. I took me about 20 minutes to write the question so that I thought it would be clear.&lt;/p&gt;
 &lt;p&gt;After the third re-reading and final edits, and literally just as I was hovering over the submit button for the final click, the answer jumped out of my text. It was dead simple, a stupid error.&lt;/p&gt;
-&lt;p&gt;Jim Nielsen&#39;s &lt;a href=&quot;https://blog.jim-nielsen.com/2024/bulletproof-problem-solving/&quot;&gt;Bulletproof Method to Solving Problems&lt;/a&gt; came to mind. I made it right to the very end of Step 1, but not further. 🙂&lt;/p&gt;
-&lt;p&gt;This what I was going to submit. See if you can spot the problem.&lt;/p&gt;
+&lt;p&gt;Jim Nielsen&#39;s &lt;a href=&quot;https://blog.jim-nielsen.com/2024/bulletproof-problem-solving/&quot;&gt;Bulletproof Method to Solving Problems&lt;/a&gt; came to mind. I made it right to the very end of Step 1, but not further!&lt;/p&gt;
+&lt;p&gt;This is what I was going to submit, see if you can spot the problem. 🙂&lt;/p&gt;
 &lt;blockquote&gt;
 I have upgraded Eleventy to v3.0 canary which has generally worked very well. So I don&#39;t think this is related to that (and probably more to my general lack of knowledge...).
 &lt;p&gt;I then moved my custom filters from the eleventy.config.js file to a module file. At this point I got an error for one of the filters.&lt;/p&gt;
