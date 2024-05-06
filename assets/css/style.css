@@ -258,7 +258,7 @@ footer div a, footer div a:visited {
 footer span.emojis {
     display: inline-block;
     font-style: normal;
-    padding-top: 5px;
+    /*padding-top: 5px;*/
 }
 
 footer span.emojis a {

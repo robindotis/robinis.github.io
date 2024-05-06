@@ -1,186 +1,354 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en-GB">
   <head>
-        <meta charset="UTF-8">
+    <meta charset="UTF-8" />
     <!-- See: https://www.w3schools.com/css/css_rwd_viewport.asp-->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-Clacks-Overhead" content="GNU Terry Pratchett; Parrain">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      http-equiv="X-Clacks-Overhead"
+      content="GNU Terry Pratchett; Parrain"
+    />
     <title>Robin is safer internet day - 2023</title>
 
-    <meta name="description" content="writing, travelling, seeing, coding and walking the 🐕‍🦺">
+    <meta
+      name="description"
+      content="writing, travelling, seeing, coding and walking the 🐕‍🦺"
+    />
     <meta name="keywords" content="posts,general,web,work,vr,safety" />
-    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+    <meta
+      name="robots"
+      content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
+    />
 
-    <link rel="canonical" href="https://www.robin.is/posts/2023/safer-internet-day-2023/">
-    <link rel="me" href="https://github.com/robindotis/">
-    <link rel="alternate" type="application/rss+xml" title="Robin is RSS" href="/feed/">
-    <link rel="alternate" href="/feed/index.xml" type="application/atom+xml" title="Robin is">
-    <link rel="alternate" href="." type="application/json" title="Robin is">
-    <link rel="icon" href="/assets/images/cw.jpg" type="image/jpeg" sizes="50x50">
+    <link
+      rel="canonical"
+      href="https://www.robin.is/posts/2023/safer-internet-day-2023/"
+    />
+    <link rel="me" href="https://github.com/robindotis/" />
+    <link
+      rel="alternate"
+      type="application/rss+xml"
+      title="Robin is RSS"
+      href="/feed/"
+    />
+    <link
+      rel="alternate"
+      href="/feed/index.xml"
+      type="application/atom+xml"
+      title="Robin is"
+    />
+    <link rel="alternate" href="." type="application/json" title="Robin is" />
+    <link
+      rel="icon"
+      href="/assets/images/cw.jpg"
+      type="image/jpeg"
+      sizes="50x50"
+    />
     <!--
     <link rel="manifest" href="/manifest.json">
     -->
-    <link rel="webmention" href="https://webmention.io/www.robin.is/webmention" />
-    <link rel="authorization_endpoint" href="https://indieauth.com/auth">
-    <link rel="token_endpoint" href="https://tokens.indieauth.com/token">    
+    <link
+      rel="webmention"
+      href="https://webmention.io/www.robin.is/webmention"
+    />
+    <link rel="authorization_endpoint" href="https://indieauth.com/auth" />
+    <link rel="token_endpoint" href="https://tokens.indieauth.com/token" />
 
-    <meta property="a11y:statement" content="/pages/accessibility/">
-    <meta property="a11y:feedback" content="/pages/accessibility/#feedback">
-    <meta property="a11y:complaints" content="/pages/accessibility/#complaints">
+    <meta property="a11y:statement" content="/pages/accessibility/" />
+    <meta property="a11y:feedback" content="/pages/accessibility/#feedback" />
+    <meta
+      property="a11y:complaints"
+      content="/pages/accessibility/#complaints"
+    />
 
-    <meta property="og:locale" content="en_GB">
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="Robin is... Safer Internet Day - 2023">
-    <meta property="og:description" content="writing, travelling, seeing, coding and walking the 🐕‍🦺">
-    <meta property="og:url" content="https://www.robin.is/posts/2023/safer-internet-day-2023/">
-    <meta property="og:site_name" content="Robin is">
-    <meta property="og:image" content="">
+    <meta property="og:locale" content="en_GB" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Robin is... Safer Internet Day - 2023" />
+    <meta
+      property="og:description"
+      content="writing, travelling, seeing, coding and walking the 🐕‍🦺"
+    />
+    <meta
+      property="og:url"
+      content="https://www.robin.is/posts/2023/safer-internet-day-2023/"
+    />
+    <meta property="og:site_name" content="Robin is" />
+    <meta property="og:image" content="" />
 
-    <meta name="DC.title" content="robin.is">
-    <meta name="DC.creator " content="Robin Massart">
+    <meta name="DC.title" content="robin.is" />
+    <meta name="DC.creator " content="Robin Massart" />
 
-    <link rel="preload" href="/assets/fonts/Mona-Sans.woff2" as="font" type="font/woff2" crossorigin>
-    
+    <link
+      rel="preload"
+      href="/assets/fonts/Mona-Sans.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
 
-    <link rel="stylesheet" href="/assets/css/fonts.css" media="all">
-    <link rel="stylesheet" href="/assets/css/structure.css" media="all">
-    <link rel="stylesheet" href="/assets/css/style.css" media="all">
-    <link rel="stylesheet" href="/assets/css/default.css" media="all">
+    <link rel="stylesheet" href="/assets/css/fonts.css" media="all" />
+    <link rel="stylesheet" href="/assets/css/structure.css" media="all" />
+    <link rel="stylesheet" href="/assets/css/style.css" media="all" />
+    <link rel="stylesheet" href="/assets/css/default.css" media="all" />
 
     <script src="/assets/js/theme.js" defer></script>
-
   </head>
   <body>
-    <p class="skip-link"><a href="#skip-content-target">Skip to the content</a></p>
+    <p class="skip-link">
+      <a href="#skip-content-target">Skip to the content</a>
+    </p>
     <header class="masthead h-card">
-        <div class="header-area">
-            <p id="themeSwitch">                
-            </p>
-            <hr class="nodisplay" aria-hidden="true">
-            <div class="header-title">
-            <span class="sitetitle">
-                <img class="logo u-logo u-photo" src="/assets/images/cw.jpg" alt="" width="50" height="50">
-                <a href="/" class="u-url p-name">Robin is</a>
-            </span>
-            <nav class="subtitle p-note" aria-label="Main">
-                <a href="/now/" >now</a>  
-                <a href="/writing/" >writing</a>, 
-                <a href="/travelling/" >travelling</a>, 
-                <a href="/seeing/" >seeing</a>, 
-                <a href="/creating/" >creating</a>, 
-                <a href="/coding/" >coding</a>, 
-                <a href="/reading/" >reading</a> and 
-                <a href="/walking/" >walking</a> the 
-                <a href="/tagging/angie/"  >dog</a>🐕‍🦺. Browse  
-                    his 451 <a href="/archiving/" >posts</a> or read 
-                <a href="/about/" >about</a> him.
-
-            </nav>
-            </div>
+      <div class="header-area">
+        <p id="themeSwitch"></p>
+        <hr class="nodisplay" aria-hidden="true" />
+        <div class="header-title">
+          <span class="sitetitle">
+            <img
+              class="logo u-logo u-photo"
+              src="/assets/images/cw.jpg"
+              alt=""
+              width="50"
+              height="50"
+            />
+            <a href="/" class="u-url p-name">Robin is</a>
+          </span>
+          <nav class="subtitle p-note" aria-label="Main">
+            <a href="/now/">now</a>
+            <a href="/writing/">writing</a>,
+            <a href="/travelling/">travelling</a>,
+            <a href="/seeing/">seeing</a>, <a href="/creating/">creating</a>,
+            <a href="/coding/">coding</a>, <a href="/reading/">reading</a> and
+            <a href="/walking/">walking</a> the
+            <a href="/tagging/angie/">dog</a>🐕‍🦺. Browse his 451
+            <a href="/archiving/">posts</a> or read
+            <a href="/about/">about</a> him.
+          </nav>
         </div>
+      </div>
     </header>
-    <main id="site-content"  class="tmpl-post">
-        <hr class="nodisplay" aria-hidden="true">
-        <div class="main-content">
-            
-<article class="h-entry">
-    <nav aria-label="Paging">
-      <div class="prev-next">
-        <strong>« Newer:</strong><a class="next" rel="next" href="/posts/2023/frameworks/">Frameworks</a>
+    <main id="site-content" class="tmpl-post">
+      <hr class="nodisplay" aria-hidden="true" />
+      <div class="main-content">
+        <article class="h-entry">
+          <nav aria-label="Paging">
+            <div class="prev-next">
+              <strong>« Newer:</strong
+              ><a class="next" rel="next" href="/posts/2023/frameworks/"
+                >Frameworks</a
+              >
 
-        <br>
-        <strong>» Older:</strong><a class="prev" rel="prev" href="/posts/2023/bac-choices/">European Bac choices toolkkit</a>
+              <br />
+              <strong>» Older:</strong
+              ><a class="prev" rel="prev" href="/posts/2023/bac-choices/"
+                >European Bac choices toolkkit</a
+              >
+            </div>
+            <hr />
+          </nav>
+
+          <header id="skip-content-target">
+            <h1 class="p-name">Safer Internet Day - 2023</h1>
+            <h2 class="published">
+              <time datetime="2023-02-10 01:18:27" class="dt-published">
+                <span class="date-day">10</span>
+                <span class="date-month">February</span>,
+                <span class="date-year">2023</span>
+              </time>
+            </h2>
+          </header>
+          <div class="e-content">
+            <p>
+              Tuesday 7th February was
+              <a href="https://www.saferinternetday.org/">Safer Internet Day</a>
+              in 2023. It also marks the 20th year of the initiative, which is
+              supported by the European Commission through the
+              <a
+                href="https://digital-strategy.ec.europa.eu/en/policies/safer-internet-day"
+                >Safer Internet team of DG CONNECT</a
+              >.
+            </p>
+            <p>
+              As part of that day, we arranged a morning in the
+              <a href="https://www.lmrl.lu/">Lycee Michel-Rodange</a> in
+              Luxembourg City, to let a class of the school try out the latest
+              VR headsets from Meta. The kids, all around 15 years of age, got
+              to try out five different VR worlds as they circulated around
+              different stands in a class room. After that they had a brief
+              discussion, giving their thoughts on VR in their futures.
+            </p>
+            <p>
+              It's been a long time since I was in a class room full of 15 year
+              olds and it was incredibly energising. They were all well behaved,
+              whilst having their fun with the headsets. Maybe that is the
+              Luxembourg effect!
+            </p>
+            <p>
+              Best of all, in my opinion, was the lack of enthusiasm for this
+              technology with these kids. Our polling showed they did not
+              believe this technology would become an alternate world for them
+              in the future. Whilst they saw the use of it in certain
+              educational situations, few would be interested VR being their
+              main medium of education. Despite growing up with always connected
+              smartphones, they still apparently wanted face to face contact
+              with their friends. They certainly didn't want to live in the VR
+              world.
+            </p>
+            <p>
+              My own take on this, having tried out the headsets, is that they
+              are simply not ready for the mainstream. The technology is too
+              fiddly and, despite being relatively easy to use, is too
+              cumbersome to do what appear to be basic things. I certainly can't
+              see the advantage over a physical meeting with colleagues, or even
+              a video-conference. There's still a long way to go before this
+              tech can become mainstream. Maybe it never will, at least not in
+              this form. And certainly not for entertainment or socialising
+              purposes.
+            </p>
+            <p>
+              The calm before the storm:<br />
+              <img
+                src="/assets/images/2023/PXL_20230210_074201645.webp"
+                alt="Empty class room ready to receive kids to try out headsets"
+                loading="lazy"
+                decoding="async"
+                width="600"
+                height="800"
+              />
+            </p>
+            <p>
+              Let the VR begin:<br />
+              <img
+                src="/assets/images/2023/PXL_20230210_093540947.webp"
+                alt="Class room full of teenagers trying out the VR headsets"
+                loading="lazy"
+                decoding="async"
+                width="800"
+                height="600"
+              />
+            </p>
+          </div>
+          <hr aria-hidden="true" />
+          <div class="tagged">
+            <strong>Tagged: </strong
+            ><a href="/tagging/general/" class="post-tag" rel="tag">general</a>
+            &nbsp;<a href="/tagging/web/" class="post-tag" rel="tag">web</a>
+            &nbsp;<a href="/tagging/work/" class="post-tag" rel="tag">work</a>
+            &nbsp;<a href="/tagging/vr/" class="post-tag" rel="tag">vr</a>
+            &nbsp;<a href="/tagging/safety/" class="post-tag" rel="tag"
+              >safety</a
+            >
+            &nbsp;
+          </div>
+
+          <hr aria-hidden="true" />
+          <nav aria-label="Paging">
+            <div class="prev-next">
+              <strong>« Newer:</strong
+              ><a class="next" rel="next" href="/posts/2023/frameworks/"
+                >Frameworks</a
+              >
+
+              <br />
+              <strong>» Older:</strong
+              ><a class="prev" rel="prev" href="/posts/2023/bac-choices/"
+                >European Bac choices toolkkit</a
+              >
+            </div>
+            <hr />
+          </nav>
+        </article>
       </div>
-      <hr>
-  </nav>
-
-  <header id="skip-content-target">
-      <h1 class="p-name">Safer Internet Day - 2023</h1> 
-      <h2 class="published">
-          <time datetime="Invalid DateTime" class="dt-published">
-            <span class="date-day">10</span> 
-            <span class="date-month">February</span>, 
-            <span class="date-year">2023</span>
-          </time>
-      </h2>
-  </header>
-  <div class="e-content">    
-    <p>Tuesday 7th February was <a href="https://www.saferinternetday.org/">Safer Internet Day</a> in 2023. It also marks the 20th year of the initiative, which is supported by the European Commission through the <a href="https://digital-strategy.ec.europa.eu/en/policies/safer-internet-day">Safer Internet team of DG CONNECT</a>.</p>
-<p>As part of that day, we arranged a morning in the <a href="https://www.lmrl.lu/">Lycee Michel-Rodange</a> in Luxembourg City, to let a class of the school try out the latest VR headsets from Meta. The kids, all around 15 years of age, got to try out five different VR worlds as they circulated around different stands in a class room. After that they had a brief discussion, giving their thoughts on VR in their futures.</p>
-<p>It's been a long time since I was in a class room full of 15 year olds and it was incredibly energising. They were all well behaved, whilst having their fun with the headsets. Maybe that is the Luxembourg effect!</p>
-<p>Best of all, in my opinion, was the lack of enthusiasm for this technology with these kids. Our polling showed they did not believe this technology would become an alternate world for them in the future. Whilst they saw the use of it in certain educational situations, few would be interested VR being their main medium of education. Despite growing up with always connected smartphones, they still apparently wanted face to face contact with their friends. They certainly didn't want to live in the VR world.</p>
-<p>My own take on this, having tried out the headsets, is that they are simply not ready for the mainstream. The technology is too fiddly and, despite being relatively easy to use, is too cumbersome to do what appear to be basic things. I certainly can't see the advantage over a physical meeting with colleagues, or even a video-conference. There's still a long way to go before this tech can become mainstream. Maybe it never will, at least not in this form. And certainly not for entertainment or socialising purposes.</p>
-<p>The calm before the storm:<br>
-<img src="/assets/images/2023/PXL_20230210_074201645.webp" alt="Empty class room ready to receive kids to try out headsets" loading="lazy" decoding="async" width="600" height="800"></p>
-<p>Let the VR begin:<br>
-<img src="/assets/images/2023/PXL_20230210_093540947.webp" alt="Class room full of teenagers trying out the VR headsets" loading="lazy" decoding="async" width="800" height="600"></p>
- 
-  </div>
-  <hr aria-hidden="true">
-    <div class="tagged"><strong>Tagged: </strong><a href="/tagging/general/" class="post-tag" rel="tag">general</a> &nbsp;<a href="/tagging/web/" class="post-tag" rel="tag">web</a> &nbsp;<a href="/tagging/work/" class="post-tag" rel="tag">work</a> &nbsp;<a href="/tagging/vr/" class="post-tag" rel="tag">vr</a> &nbsp;<a href="/tagging/safety/" class="post-tag" rel="tag">safety</a> &nbsp;
-  </div>
-
-  <hr aria-hidden="true">
-    <nav aria-label="Paging">
-      <div class="prev-next">
-        <strong>« Newer:</strong><a class="next" rel="next" href="/posts/2023/frameworks/">Frameworks</a>
-
-        <br>
-        <strong>» Older:</strong><a class="prev" rel="prev" href="/posts/2023/bac-choices/">European Bac choices toolkkit</a>
-      </div>
-      <hr>
-  </nav>
-
-</article>
-
-
-        </div> 
     </main>
-        <footer>
-        <div class="footer-area">
-            <div class="rss">
-                <p>
-                <img src="/assets/images/rss-logo.png" alt=""  width="15" height="15">&nbsp;<a class="a11y-statement" href="/feed/">RSS</a>
-                
-                        | <a href="/pages/accessibility/">Accessibility</a>
-                </p>
-            </div>
-            <div class="copy">
-                <p>
-                &copy; 1998 - 2024 
-                robin.is AI free and 100% Human.
-                <div>
-                    Hand crafted using <a href="https://www.11ty.dev/">eleventy</a>
-                    <span class="emojis"><a href="https://github.com/robindotis/robin.is/blob/master/posts/2023/safer-internet-day-2023.md" title="Edit">👍</a></span>
-                </div>
-                </p>
-            </div>
-            <div class="copy">
-                <p>
-                <a href="https://xn--sr8hvo.ws/previous">←</a>
-                An <a href="https://xn--sr8hvo.ws">IndieWeb Webring</a> 🕸💍
-                <a href="https://xn--sr8hvo.ws/next">→</a>
-                </p>
-            </div>
-            <div class="badges">
-                <p>
-                <a href="https://www.anybrowser.org/campaign/"><img src="/assets/images/any-browser-button.png" alt="Viewable With Any Browser" width="80" height="15" /></a>
-                <a href="https://indieweb.org/"><img src="/assets/images/indieweb-button.png" alt="IndieWeb" width="80" height="15" /></a>
-                <a href="https://indiewebify.me/"><img src="/assets/images/indiewebified-button.png" alt="IndieWebified" width="80" height="15" /></a>
-                <a href="http://microformats.org/"><img src="/assets/images/microformats-button.png" alt="microformats" width="80" height="15" /></a>
-                <a href="https://html.spec.whatwg.org/"><img src="/assets/images/valid_html5_blue-button.png" alt="Valid HTML5" width="80" height="15" /></a>
-                <a href="https://www.w3.org/Style/CSS/current-work"><img src="/assets/images/valid_css3_blue-button.png" alt="Valid CSS3" width="80" height="15" /></a>
-                </p>
-            </div>
-            <div class="lastrun">
-                <p>
-                Built on the 06/05/2024 at 00:33:06 in the flashiest of flashes⚡.
-                </p>
-            </div>
+    <footer>
+      <div class="footer-area">
+        <div class="rss">
+          <p>
+            <img
+              src="/assets/images/rss-logo.png"
+              alt=""
+              width="15"
+              height="15"
+            />&nbsp;<a class="a11y-statement" href="/feed/">RSS</a>
+
+            | <a href="/pages/accessibility/">Accessibility</a>
+          </p>
         </div>
+        <div class="copy">
+          <p>&copy; 1998 - 2024 robin.is AI free and 100% Human.</p>
+        </div>
+        <div class="copy">
+          <p>
+            Hand crafted using <a href="https://www.11ty.dev/">eleventy</a>
+            <span class="emojis"
+              ><a
+                href="https://github.com/robindotis/robin.is/blob/master/posts/2023/safer-internet-day-2023.md"
+                title="Edit"
+                >👍</a
+              ></span
+            >
+          </p>
+        </div>
+        <div class="copy">
+          <p>
+            <a href="https://xn--sr8hvo.ws/previous">←</a>
+            An <a href="https://xn--sr8hvo.ws">IndieWeb Webring</a> 🕸💍
+            <a href="https://xn--sr8hvo.ws/next">→</a>
+          </p>
+        </div>
+        <div class="badges">
+          <p>
+            <a href="https://www.anybrowser.org/campaign/"
+              ><img
+                src="/assets/images/any-browser-button.png"
+                alt="Viewable With Any Browser"
+                width="80"
+                height="15"
+            /></a>
+            <a href="https://indieweb.org/"
+              ><img
+                src="/assets/images/indieweb-button.png"
+                alt="IndieWeb"
+                width="80"
+                height="15"
+            /></a>
+            <a href="https://indiewebify.me/"
+              ><img
+                src="/assets/images/indiewebified-button.png"
+                alt="IndieWebified"
+                width="80"
+                height="15"
+            /></a>
+            <a href="http://microformats.org/"
+              ><img
+                src="/assets/images/microformats-button.png"
+                alt="microformats"
+                width="80"
+                height="15"
+            /></a>
+            <a href="https://html.spec.whatwg.org/"
+              ><img
+                src="/assets/images/valid_html5_blue-button.png"
+                alt="Valid HTML5"
+                width="80"
+                height="15"
+            /></a>
+            <a href="https://www.w3.org/Style/CSS/current-work"
+              ><img
+                src="/assets/images/valid_css3_blue-button.png"
+                alt="Valid CSS3"
+                width="80"
+                height="15"
+            /></a>
+          </p>
+        </div>
+        <div class="lastrun">
+          <p>
+            Built on the 06/05/2024 at 06:23:34 in the flashiest of flashes⚡.
+          </p>
+        </div>
+      </div>
     </footer>
 
     <!-- Current page: /posts/2023/safer-internet-day-2023/ -->
-
   </body>
 </html>

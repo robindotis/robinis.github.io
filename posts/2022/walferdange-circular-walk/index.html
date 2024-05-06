@@ -1,194 +1,383 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en-GB">
   <head>
-        <meta charset="UTF-8">
+    <meta charset="UTF-8" />
     <!-- See: https://www.w3schools.com/css/css_rwd_viewport.asp-->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-Clacks-Overhead" content="GNU Terry Pratchett; Parrain">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      http-equiv="X-Clacks-Overhead"
+      content="GNU Terry Pratchett; Parrain"
+    />
     <title>Robin is walferdange circular walk</title>
 
-    <meta name="description" content="writing, travelling, seeing, coding and walking the 🐕‍🦺">
+    <meta
+      name="description"
+      content="writing, travelling, seeing, coding and walking the 🐕‍🦺"
+    />
     <meta name="keywords" content="posts,general,walk,circular" />
-    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+    <meta
+      name="robots"
+      content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
+    />
 
-    <link rel="canonical" href="https://www.robin.is/posts/2022/walferdange-circular-walk/">
-    <link rel="me" href="https://github.com/robindotis/">
-    <link rel="alternate" type="application/rss+xml" title="Robin is RSS" href="/feed/">
-    <link rel="alternate" href="/feed/index.xml" type="application/atom+xml" title="Robin is">
-    <link rel="alternate" href="." type="application/json" title="Robin is">
-    <link rel="icon" href="/assets/images/cw.jpg" type="image/jpeg" sizes="50x50">
+    <link
+      rel="canonical"
+      href="https://www.robin.is/posts/2022/walferdange-circular-walk/"
+    />
+    <link rel="me" href="https://github.com/robindotis/" />
+    <link
+      rel="alternate"
+      type="application/rss+xml"
+      title="Robin is RSS"
+      href="/feed/"
+    />
+    <link
+      rel="alternate"
+      href="/feed/index.xml"
+      type="application/atom+xml"
+      title="Robin is"
+    />
+    <link rel="alternate" href="." type="application/json" title="Robin is" />
+    <link
+      rel="icon"
+      href="/assets/images/cw.jpg"
+      type="image/jpeg"
+      sizes="50x50"
+    />
     <!--
     <link rel="manifest" href="/manifest.json">
     -->
-    <link rel="webmention" href="https://webmention.io/www.robin.is/webmention" />
-    <link rel="authorization_endpoint" href="https://indieauth.com/auth">
-    <link rel="token_endpoint" href="https://tokens.indieauth.com/token">    
+    <link
+      rel="webmention"
+      href="https://webmention.io/www.robin.is/webmention"
+    />
+    <link rel="authorization_endpoint" href="https://indieauth.com/auth" />
+    <link rel="token_endpoint" href="https://tokens.indieauth.com/token" />
 
-    <meta property="a11y:statement" content="/pages/accessibility/">
-    <meta property="a11y:feedback" content="/pages/accessibility/#feedback">
-    <meta property="a11y:complaints" content="/pages/accessibility/#complaints">
+    <meta property="a11y:statement" content="/pages/accessibility/" />
+    <meta property="a11y:feedback" content="/pages/accessibility/#feedback" />
+    <meta
+      property="a11y:complaints"
+      content="/pages/accessibility/#complaints"
+    />
 
-    <meta property="og:locale" content="en_GB">
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="Robin is... Walferdange Circular Walk">
-    <meta property="og:description" content="writing, travelling, seeing, coding and walking the 🐕‍🦺">
-    <meta property="og:url" content="https://www.robin.is/posts/2022/walferdange-circular-walk/">
-    <meta property="og:site_name" content="Robin is">
-    <meta property="og:image" content="">
+    <meta property="og:locale" content="en_GB" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Robin is... Walferdange Circular Walk" />
+    <meta
+      property="og:description"
+      content="writing, travelling, seeing, coding and walking the 🐕‍🦺"
+    />
+    <meta
+      property="og:url"
+      content="https://www.robin.is/posts/2022/walferdange-circular-walk/"
+    />
+    <meta property="og:site_name" content="Robin is" />
+    <meta property="og:image" content="" />
 
-    <meta name="DC.title" content="robin.is">
-    <meta name="DC.creator " content="Robin Massart">
+    <meta name="DC.title" content="robin.is" />
+    <meta name="DC.creator " content="Robin Massart" />
 
-    <link rel="preload" href="/assets/fonts/Mona-Sans.woff2" as="font" type="font/woff2" crossorigin>
-    
+    <link
+      rel="preload"
+      href="/assets/fonts/Mona-Sans.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
 
-    <link rel="stylesheet" href="/assets/css/fonts.css" media="all">
-    <link rel="stylesheet" href="/assets/css/structure.css" media="all">
-    <link rel="stylesheet" href="/assets/css/style.css" media="all">
-    <link rel="stylesheet" href="/assets/css/default.css" media="all">
+    <link rel="stylesheet" href="/assets/css/fonts.css" media="all" />
+    <link rel="stylesheet" href="/assets/css/structure.css" media="all" />
+    <link rel="stylesheet" href="/assets/css/style.css" media="all" />
+    <link rel="stylesheet" href="/assets/css/default.css" media="all" />
 
     <script src="/assets/js/theme.js" defer></script>
-
   </head>
   <body>
-    <p class="skip-link"><a href="#skip-content-target">Skip to the content</a></p>
+    <p class="skip-link">
+      <a href="#skip-content-target">Skip to the content</a>
+    </p>
     <header class="masthead h-card">
-        <div class="header-area">
-            <p id="themeSwitch">                
-            </p>
-            <hr class="nodisplay" aria-hidden="true">
-            <div class="header-title">
-            <span class="sitetitle">
-                <img class="logo u-logo u-photo" src="/assets/images/cw.jpg" alt="" width="50" height="50">
-                <a href="/" class="u-url p-name">Robin is</a>
-            </span>
-            <nav class="subtitle p-note" aria-label="Main">
-                <a href="/now/" >now</a>  
-                <a href="/writing/" >writing</a>, 
-                <a href="/travelling/" >travelling</a>, 
-                <a href="/seeing/" >seeing</a>, 
-                <a href="/creating/" >creating</a>, 
-                <a href="/coding/" >coding</a>, 
-                <a href="/reading/" >reading</a> and 
-                <a href="/walking/" >walking</a> the 
-                <a href="/tagging/angie/"  >dog</a>🐕‍🦺. Browse  
-                    his 451 <a href="/archiving/" >posts</a> or read 
-                <a href="/about/" >about</a> him.
-
-            </nav>
-            </div>
+      <div class="header-area">
+        <p id="themeSwitch"></p>
+        <hr class="nodisplay" aria-hidden="true" />
+        <div class="header-title">
+          <span class="sitetitle">
+            <img
+              class="logo u-logo u-photo"
+              src="/assets/images/cw.jpg"
+              alt=""
+              width="50"
+              height="50"
+            />
+            <a href="/" class="u-url p-name">Robin is</a>
+          </span>
+          <nav class="subtitle p-note" aria-label="Main">
+            <a href="/now/">now</a>
+            <a href="/writing/">writing</a>,
+            <a href="/travelling/">travelling</a>,
+            <a href="/seeing/">seeing</a>, <a href="/creating/">creating</a>,
+            <a href="/coding/">coding</a>, <a href="/reading/">reading</a> and
+            <a href="/walking/">walking</a> the
+            <a href="/tagging/angie/">dog</a>🐕‍🦺. Browse his 451
+            <a href="/archiving/">posts</a> or read
+            <a href="/about/">about</a> him.
+          </nav>
         </div>
+      </div>
     </header>
-    <main id="site-content"  class="tmpl-post">
-        <hr class="nodisplay" aria-hidden="true">
-        <div class="main-content">
-            
-<article class="h-entry">
-    <nav aria-label="Paging">
-      <div class="prev-next">
-        <strong>« Newer:</strong><a class="next" rel="next" href="/posts/2022/fixing-blinds/">Fixing blinds</a>
+    <main id="site-content" class="tmpl-post">
+      <hr class="nodisplay" aria-hidden="true" />
+      <div class="main-content">
+        <article class="h-entry">
+          <nav aria-label="Paging">
+            <div class="prev-next">
+              <strong>« Newer:</strong
+              ><a class="next" rel="next" href="/posts/2022/fixing-blinds/"
+                >Fixing blinds</a
+              >
 
-        <br>
-        <strong>» Older:</strong><a class="prev" rel="prev" href="/posts/2022/chance/">Chance</a>
+              <br />
+              <strong>» Older:</strong
+              ><a class="prev" rel="prev" href="/posts/2022/chance/">Chance</a>
+            </div>
+            <hr />
+          </nav>
+
+          <header id="skip-content-target">
+            <h1 class="p-name">Walferdange Circular Walk</h1>
+            <h2 class="published">
+              <time datetime="2022-12-26 02:00:00" class="dt-published">
+                <span class="date-day">26</span>
+                <span class="date-month">December</span>,
+                <span class="date-year">2022</span>
+              </time>
+            </h2>
+          </header>
+          <div class="e-content">
+            <p>
+              An interesting 10km walk which starts off walking along a roman
+              well system bringing water to the old roman villa below, who's
+              remains you see after about 2km. This first part of the walk is
+              flat and then it's downhill. Which means that the following two to
+              three kilometres are uphill, and quite steep at times!
+            </p>
+            <p>
+              It's a good boxing day activity to walk off the turkey and
+              trimmings from the day before! And the dog enjoyed it. Even she
+              was tired by the end.
+            </p>
+            <p>
+              Angie, all eager at the start.<br />
+              <img
+                src="/assets/images/circular-walfer-angie.jpg"
+                alt="White golden retriever waiting on an winter path"
+                loading="lazy"
+                decoding="async"
+                width="480"
+                height="640"
+              />
+            </p>
+            <p>
+              Trees near the start of the walk.<br />
+              <img
+                src="/assets/images/circular-walfer-trees.jpg"
+                alt="Trees in the background, with moss covering the ground in the middle of the photo"
+                loading="lazy"
+                decoding="async"
+                width="480"
+                height="640"
+              />
+            </p>
+            <p>
+              Roman well system, following the underground stream that brough
+              water to the roman villa at the bottom.<br />
+              <img
+                src="/assets/images/circular-walfer-wells.jpg"
+                alt="Round green metal structures covering an old well system allong path"
+                loading="lazy"
+                decoding="async"
+                width="480"
+                height="640"
+              />
+            </p>
+            <p>
+              The ruins of the roman villa.<br />
+              <img
+                src="/assets/images/circular-walfer-villa.jpg"
+                alt="Looking over the outline of a Roman villa clearly showing the layout of the rooms and paths."
+                loading="lazy"
+                decoding="async"
+                width="640"
+                height="480"
+              />
+            </p>
+            <p>
+              Looking down on the Alzette valley.<br />
+              <img
+                src="/assets/images/circular-walfer-bench.jpg"
+                alt="Looking out over the back of a bench, through some trees to the valley beyond"
+                loading="lazy"
+                decoding="async"
+                width="480"
+                height="640"
+              />
+            </p>
+            <p>
+              The route.<br />
+              <img
+                src="/assets/images/circular-walfer-map.jpg"
+                alt="Map of the route"
+                loading="lazy"
+                decoding="async"
+                width="480"
+                height="640"
+              />
+            </p>
+            <p>
+              This photo, from 26th November 1910 seems to be a trail that you
+              can follow, which forms a part of the circular walk. I don't know
+              the reason or the history behind the girls. Are they sisters? It
+              reminded me of the two girls in
+              <a href="https://www.imdb.com/title/tt0081505/">The Shining</a>,
+              so I am glad it was still light when I did the walk!<br />
+              <img
+                src="/assets/images/circular-walfer-girls.jpg"
+                alt="Black and white photo of six girls dressed in white dresses, in descending order of height from left to right"
+                loading="lazy"
+                decoding="async"
+                width="640"
+                height="480"
+              />
+            </p>
+            <p>
+              After doing some further research these are in fact
+              <a
+                href="https://www.steinsel.lu/sports-loisirs/sentiers-de-randonnees/circuit-historique-du-grunewald/"
+                >six princesses (in french)</a
+              >
+              and if you follow the route you can learn all about them... That's
+              for another time.
+            </p>
+          </div>
+          <hr aria-hidden="true" />
+          <div class="tagged">
+            <strong>Tagged: </strong
+            ><a href="/tagging/general/" class="post-tag" rel="tag">general</a>
+            &nbsp;<a href="/tagging/walk/" class="post-tag" rel="tag">walk</a>
+            &nbsp;<a href="/tagging/circular/" class="post-tag" rel="tag"
+              >circular</a
+            >
+            &nbsp;
+          </div>
+
+          <hr aria-hidden="true" />
+          <nav aria-label="Paging">
+            <div class="prev-next">
+              <strong>« Newer:</strong
+              ><a class="next" rel="next" href="/posts/2022/fixing-blinds/"
+                >Fixing blinds</a
+              >
+
+              <br />
+              <strong>» Older:</strong
+              ><a class="prev" rel="prev" href="/posts/2022/chance/">Chance</a>
+            </div>
+            <hr />
+          </nav>
+        </article>
       </div>
-      <hr>
-  </nav>
-
-  <header id="skip-content-target">
-      <h1 class="p-name">Walferdange Circular Walk</h1> 
-      <h2 class="published">
-          <time datetime="Invalid DateTime" class="dt-published">
-            <span class="date-day">26</span> 
-            <span class="date-month">December</span>, 
-            <span class="date-year">2022</span>
-          </time>
-      </h2>
-  </header>
-  <div class="e-content">    
-    <p>An interesting 10km walk which starts off walking along a roman well system bringing water to the old roman villa below, who's remains you see after about 2km. This first part of the walk is flat and then it's downhill. Which means that the following two to three kilometres are uphill, and quite steep at times!</p>
-<p>It's a good boxing day activity to walk off the turkey and trimmings from the day before! And the dog enjoyed it. Even she was tired by the end.</p>
-<p>Angie, all eager at the start.<br>
-<img src="/assets/images/circular-walfer-angie.jpg" alt="White golden retriever waiting on an winter path" loading="lazy" decoding="async" width="480" height="640"></p>
-<p>Trees near the start of the walk.<br>
-<img src="/assets/images/circular-walfer-trees.jpg" alt="Trees in the background, with moss covering the ground in the middle of the photo" loading="lazy" decoding="async" width="480" height="640"></p>
-<p>Roman well system, following the underground stream that brough water to the roman villa at the bottom.<br>
-<img src="/assets/images/circular-walfer-wells.jpg" alt="Round green metal structures covering an old well system allong path" loading="lazy" decoding="async" width="480" height="640"></p>
-<p>The ruins of the roman villa.<br>
-<img src="/assets/images/circular-walfer-villa.jpg" alt="Looking over the outline of a Roman villa clearly showing the layout of the rooms and paths." loading="lazy" decoding="async" width="640" height="480"></p>
-<p>Looking down on the Alzette valley.<br>
-<img src="/assets/images/circular-walfer-bench.jpg" alt="Looking out over the back of a bench, through some trees to the valley beyond" loading="lazy" decoding="async" width="480" height="640"></p>
-<p>The route.<br>
-<img src="/assets/images/circular-walfer-map.jpg" alt="Map of the route" loading="lazy" decoding="async" width="480" height="640"></p>
-<p>This photo, from 26th November 1910 seems to be a trail that you can follow, which forms a part of the circular walk. I don't know the reason or the history behind the girls. Are they sisters? It reminded me of the two girls in <a href="https://www.imdb.com/title/tt0081505/">The Shining</a>, so I am glad it was still light when I did the walk!<br>
-<img src="/assets/images/circular-walfer-girls.jpg" alt="Black and white photo of six girls dressed in white dresses, in descending order of height from left to right" loading="lazy" decoding="async" width="640" height="480"></p>
-<p>After doing some further research these are in fact <a href="https://www.steinsel.lu/sports-loisirs/sentiers-de-randonnees/circuit-historique-du-grunewald/">six princesses (in french)</a> and if you follow the route you can learn all about them... That's for another time.</p>
- 
-  </div>
-  <hr aria-hidden="true">
-    <div class="tagged"><strong>Tagged: </strong><a href="/tagging/general/" class="post-tag" rel="tag">general</a> &nbsp;<a href="/tagging/walk/" class="post-tag" rel="tag">walk</a> &nbsp;<a href="/tagging/circular/" class="post-tag" rel="tag">circular</a> &nbsp;
-  </div>
-
-  <hr aria-hidden="true">
-    <nav aria-label="Paging">
-      <div class="prev-next">
-        <strong>« Newer:</strong><a class="next" rel="next" href="/posts/2022/fixing-blinds/">Fixing blinds</a>
-
-        <br>
-        <strong>» Older:</strong><a class="prev" rel="prev" href="/posts/2022/chance/">Chance</a>
-      </div>
-      <hr>
-  </nav>
-
-</article>
-
-
-        </div> 
     </main>
-        <footer>
-        <div class="footer-area">
-            <div class="rss">
-                <p>
-                <img src="/assets/images/rss-logo.png" alt=""  width="15" height="15">&nbsp;<a class="a11y-statement" href="/feed/">RSS</a>
-                
-                        | <a href="/pages/accessibility/">Accessibility</a>
-                </p>
-            </div>
-            <div class="copy">
-                <p>
-                &copy; 1998 - 2024 
-                robin.is AI free and 100% Human.
-                <div>
-                    Hand crafted using <a href="https://www.11ty.dev/">eleventy</a>
-                    <span class="emojis"><a href="https://github.com/robindotis/robin.is/blob/master/posts/2022/walferdange-circular-walk.md" title="Edit">👍</a></span>
-                </div>
-                </p>
-            </div>
-            <div class="copy">
-                <p>
-                <a href="https://xn--sr8hvo.ws/previous">←</a>
-                An <a href="https://xn--sr8hvo.ws">IndieWeb Webring</a> 🕸💍
-                <a href="https://xn--sr8hvo.ws/next">→</a>
-                </p>
-            </div>
-            <div class="badges">
-                <p>
-                <a href="https://www.anybrowser.org/campaign/"><img src="/assets/images/any-browser-button.png" alt="Viewable With Any Browser" width="80" height="15" /></a>
-                <a href="https://indieweb.org/"><img src="/assets/images/indieweb-button.png" alt="IndieWeb" width="80" height="15" /></a>
-                <a href="https://indiewebify.me/"><img src="/assets/images/indiewebified-button.png" alt="IndieWebified" width="80" height="15" /></a>
-                <a href="http://microformats.org/"><img src="/assets/images/microformats-button.png" alt="microformats" width="80" height="15" /></a>
-                <a href="https://html.spec.whatwg.org/"><img src="/assets/images/valid_html5_blue-button.png" alt="Valid HTML5" width="80" height="15" /></a>
-                <a href="https://www.w3.org/Style/CSS/current-work"><img src="/assets/images/valid_css3_blue-button.png" alt="Valid CSS3" width="80" height="15" /></a>
-                </p>
-            </div>
-            <div class="lastrun">
-                <p>
-                Built on the 06/05/2024 at 00:33:06 in the flashiest of flashes⚡.
-                </p>
-            </div>
+    <footer>
+      <div class="footer-area">
+        <div class="rss">
+          <p>
+            <img
+              src="/assets/images/rss-logo.png"
+              alt=""
+              width="15"
+              height="15"
+            />&nbsp;<a class="a11y-statement" href="/feed/">RSS</a>
+
+            | <a href="/pages/accessibility/">Accessibility</a>
+          </p>
         </div>
+        <div class="copy">
+          <p>&copy; 1998 - 2024 robin.is AI free and 100% Human.</p>
+        </div>
+        <div class="copy">
+          <p>
+            Hand crafted using <a href="https://www.11ty.dev/">eleventy</a>
+            <span class="emojis"
+              ><a
+                href="https://github.com/robindotis/robin.is/blob/master/posts/2022/walferdange-circular-walk.md"
+                title="Edit"
+                >👍</a
+              ></span
+            >
+          </p>
+        </div>
+        <div class="copy">
+          <p>
+            <a href="https://xn--sr8hvo.ws/previous">←</a>
+            An <a href="https://xn--sr8hvo.ws">IndieWeb Webring</a> 🕸💍
+            <a href="https://xn--sr8hvo.ws/next">→</a>
+          </p>
+        </div>
+        <div class="badges">
+          <p>
+            <a href="https://www.anybrowser.org/campaign/"
+              ><img
+                src="/assets/images/any-browser-button.png"
+                alt="Viewable With Any Browser"
+                width="80"
+                height="15"
+            /></a>
+            <a href="https://indieweb.org/"
+              ><img
+                src="/assets/images/indieweb-button.png"
+                alt="IndieWeb"
+                width="80"
+                height="15"
+            /></a>
+            <a href="https://indiewebify.me/"
+              ><img
+                src="/assets/images/indiewebified-button.png"
+                alt="IndieWebified"
+                width="80"
+                height="15"
+            /></a>
+            <a href="http://microformats.org/"
+              ><img
+                src="/assets/images/microformats-button.png"
+                alt="microformats"
+                width="80"
+                height="15"
+            /></a>
+            <a href="https://html.spec.whatwg.org/"
+              ><img
+                src="/assets/images/valid_html5_blue-button.png"
+                alt="Valid HTML5"
+                width="80"
+                height="15"
+            /></a>
+            <a href="https://www.w3.org/Style/CSS/current-work"
+              ><img
+                src="/assets/images/valid_css3_blue-button.png"
+                alt="Valid CSS3"
+                width="80"
+                height="15"
+            /></a>
+          </p>
+        </div>
+        <div class="lastrun">
+          <p>
+            Built on the 06/05/2024 at 06:23:34 in the flashiest of flashes⚡.
+          </p>
+        </div>
+      </div>
     </footer>
 
     <!-- Current page: /posts/2022/walferdange-circular-walk/ -->
-
   </body>
 </html>
