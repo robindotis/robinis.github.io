@@ -1,0 +1,12 @@
+/* TEAM */
+Owner: Robin Massart
+Contact: https://github.com/robindotis/                            
+Location: Luxembourg, Plovdiv
+From: UK, Belgium, Germany, 
+
+/* SITE */
+Last update: 2024-05-09 
+Created: 1998
+Standards: HTML, CSS, WCAG, EN 301 549
+Software: 11ty.dev Static Site Generator 
+Privacy: No tracking, no ads, no cookies and almost no javascript
