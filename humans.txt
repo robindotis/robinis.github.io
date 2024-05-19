@@ -5,7 +5,7 @@ Location: Luxembourg, Plovdiv
 From: UK, Belgium, Germany, 
 
 /* SITE */
-Last update: 2024-05-18 
+Last update: 2024-05-19 
 Created: 1998
 Standards: HTML, CSS, WCAG, EN 301 549
 Software: 11ty.dev Static Site Generator 
