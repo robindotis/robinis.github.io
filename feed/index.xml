@@ -20,7 +20,7 @@
 		<updated>2024-05-05T08:18:27Z</updated>
 		<id>https://www.robin.is/posts/2024/formulating-questions/</id>
 		<content type="html">&lt;p&gt;I spent a few hours over the last couple of days upgrading my eleventy setup to &amp;quot;v3.0 canary&amp;quot;, and then to tidy up my eleventy config file, taking inspiration from &lt;a href=&quot;https://eleventy-excellent.netlify.app/&quot;&gt;eleventy-excellent&lt;/a&gt;. The idea being to move all my custom filters, collections, plugins and shortcodes to module files.&lt;/p&gt;
-&lt;p&gt;This went very well, but there were a couple of filters that simply didn&#39;t work. After several hours of failing to fix them, I relented and decided to ask a question in the eleventy GitHub discussions forum. I took me about 20 minutes to draft the question so that I thought it would be clear.&lt;/p&gt;
+&lt;p&gt;This went very well, but there were a couple of filters that simply didn&#39;t work. After several hours of failing to fix them, I relented and decided to ask a question in the eleventy GitHub discussions forum. It took me about 20 minutes to draft the question so that I thought it would be clear.&lt;/p&gt;
 &lt;p&gt;After the third re-reading and final edits, and literally just as I was hovering over the submit button for the final click, the answer jumped out of my text. It was a dead simple, a stupid error.&lt;/p&gt;
 &lt;p&gt;Jim Nielsen&#39;s &lt;a href=&quot;https://blog.jim-nielsen.com/2024/bulletproof-problem-solving/&quot;&gt;Bulletproof Method to Solving Problems&lt;/a&gt; came to mind. I made it right to the very end of Step 1, but not further!&lt;/p&gt;
 &lt;p&gt;This is what I was going to submit, see if you can spot the problem. 🙂&lt;/p&gt;
@@ -40,7 +40,8 @@ I have upgraded Eleventy to v3.0 canary which has generally worked very well. So
 &lt;pre class=&quot;language-html&quot;&gt;&lt;code class=&quot;language-html&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;a&lt;/span&gt; &lt;span class=&quot;token attr-name&quot;&gt;href&lt;/span&gt;&lt;span class=&quot;token attr-value&quot;&gt;&lt;span class=&quot;token punctuation attr-equals&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;./posts/2024/formulating-questions.md&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;&lt;/span&gt; &lt;span class=&quot;token attr-name&quot;&gt;title&lt;/span&gt;&lt;span class=&quot;token attr-value&quot;&gt;&lt;span class=&quot;token punctuation attr-equals&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;Edit&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;Edit&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;/&lt;/span&gt;a&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;So the error occurs between the output of &lt;code&gt;page.inputPath&lt;/code&gt; and before its input into &lt;code&gt;pathToGitHub&lt;/code&gt;, but only when that function is in a module.  So there is something in the &amp;quot;module&amp;quot; functionality that I am not understanding.&lt;/p&gt;
 &lt;p&gt;Any suggestions welcome!&lt;/p&gt;
-&lt;/blockquote&gt;</content>
+&lt;/blockquote&gt;
+</content>
 	</entry>
 	
 	<entry>
