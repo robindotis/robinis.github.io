@@ -2322,12 +2322,12 @@
   </url>
   
   <url>
-    <loc>https://www.robin.is/tagging/photos/</loc>
+    <loc>https://www.robin.is/tagging/reading/</loc>
     <lastmod>2024-05-27</lastmod>
   </url>
   
   <url>
-    <loc>https://www.robin.is/tagging/reading/</loc>
+    <loc>https://www.robin.is/tagging/photos/</loc>
     <lastmod>2024-05-27</lastmod>
   </url>
   
@@ -2712,12 +2712,12 @@
   </url>
   
   <url>
-    <loc>https://www.robin.is/tagging/alicante/</loc>
+    <loc>https://www.robin.is/tagging/smugmug/</loc>
     <lastmod>2024-05-27</lastmod>
   </url>
   
   <url>
-    <loc>https://www.robin.is/tagging/smugmug/</loc>
+    <loc>https://www.robin.is/tagging/alicante/</loc>
     <lastmod>2024-05-27</lastmod>
   </url>
   
@@ -3242,12 +3242,12 @@
   </url>
   
   <url>
-    <loc>https://www.robin.is/tagging/gene/</loc>
+    <loc>https://www.robin.is/tagging/colmar-berg/</loc>
     <lastmod>2024-05-27</lastmod>
   </url>
   
   <url>
-    <loc>https://www.robin.is/tagging/colmar-berg/</loc>
+    <loc>https://www.robin.is/tagging/gene/</loc>
     <lastmod>2024-05-27</lastmod>
   </url>
   
@@ -3307,17 +3307,17 @@
   </url>
   
   <url>
+    <loc>https://www.robin.is/tagging/safer-internet/</loc>
+    <lastmod>2024-05-27</lastmod>
+  </url>
+  
+  <url>
     <loc>https://www.robin.is/tagging/luck/</loc>
     <lastmod>2024-05-27</lastmod>
   </url>
   
   <url>
     <loc>https://www.robin.is/tagging/queues/</loc>
-    <lastmod>2024-05-27</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.robin.is/tagging/safer-internet/</loc>
     <lastmod>2024-05-27</lastmod>
   </url>
   
@@ -3647,6 +3647,16 @@
   </url>
   
   <url>
+    <loc>https://www.robin.is/tagging/madeira/</loc>
+    <lastmod>2024-05-27</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.robin.is/tagging/holidays/</loc>
+    <lastmod>2024-05-27</lastmod>
+  </url>
+  
+  <url>
     <loc>https://www.robin.is/tagging/neuromancer/</loc>
     <lastmod>2024-05-27</lastmod>
   </url>
@@ -3858,16 +3868,6 @@
   
   <url>
     <loc>https://www.robin.is/tagging/waiting/</loc>
-    <lastmod>2024-05-27</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.robin.is/tagging/madeira/</loc>
-    <lastmod>2024-05-27</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.robin.is/tagging/holidays/</loc>
     <lastmod>2024-05-27</lastmod>
   </url>
   
