@@ -653,30 +653,37 @@
                   The filter is creating a URL link to the file on github and
                   looks like this in the eleventy.config.js file:
                 </p>
-                <pre
-                  class="language-js"
-                ><code class="language-js">eleventyConfig<span class="token punctuation">.</span><span class="token function">addFilter</span><span class="token punctuation">(</span><span class="token string">'pathToGitHub'</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token parameter">localPath</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">{</span><br>    <span class="token keyword">let</span> baseURL <span class="token operator">=</span> <span class="token string">'https://github.com/..../blob/master/'</span><span class="token punctuation">;</span><br>    <span class="token keyword">let</span> outURL <span class="token operator">=</span>  <span class="token keyword">new</span> <span class="token class-name">URL</span><span class="token punctuation">(</span>localPath<span class="token punctuation">,</span>baseURL<span class="token punctuation">)</span><span class="token punctuation">;</span><br>    <span class="token keyword">return</span> outURL<span class="token punctuation">;</span><br><span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
+                <pre><code class="language-js">eleventyConfig.addFilter('pathToGitHub', (localPath) =&gt; {
+    let baseURL = 'https://github.com/..../blob/master/';
+    let outURL =  new URL(localPath,baseURL);
+    return outURL;
+});
+</code></pre>
                 <p>
                   This works fine when using the filter like this in my njk
                   file:
                 </p>
-                <pre
-                  class="language-html"
-                ><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>https://github.com/robindotis/robin.is/blob/master/posts/2024/formulating-questions.md<span class="token punctuation">"</span></span> <span class="token attr-name">title</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>Edit<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>Edit<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">></span></span></code></pre>
+                <pre><code class="language-html">&lt;a href=&quot;https://github.com/robindotis/robin.is/blob/master/posts/2024/formulating-questions.md&quot; title=&quot;Edit&quot;&gt;Edit&lt;/a&gt;
+</code></pre>
                 <p>
                   But when I then move this filter into a module and import and
                   add the filter like this:
                 </p>
-                <pre
-                  class="language-js"
-                ><code class="language-js"><span class="token keyword">import</span> filters <span class="token keyword">from</span> <span class="token string">"./_config/filters.js"</span><span class="token punctuation">;</span><br><span class="token punctuation">.</span><br><span class="token punctuation">.</span><br><span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token keyword">async</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">eleventyConfig</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><br>    eleventyConfig<span class="token punctuation">.</span><span class="token function">addFilter</span><span class="token punctuation">(</span><span class="token string">"pathToGitHub"</span><span class="token punctuation">,</span> filters<span class="token punctuation">.</span>folderList<span class="token punctuation">)</span><span class="token punctuation">;</span><br></code></pre>
+                <pre><code class="language-js">import filters from &quot;./_config/filters.js&quot;;
+.
+.
+export default async function(eleventyConfig) {
+    eleventyConfig.addFilter(&quot;pathToGitHub&quot;, filters.folderList);
+
+</code></pre>
                 <p>
                   I get this error when using the filter to create the edit link
                   above:
                 </p>
-                <pre
-                  class="language-js"
-                ><code class="language-js"><span class="token punctuation">[</span>11ty<span class="token punctuation">]</span> <span class="token number">2.</span> <span class="token punctuation">(</span><span class="token punctuation">.</span><span class="token operator">/</span>_layouts<span class="token operator">/</span>base<span class="token punctuation">.</span>njk<span class="token punctuation">)</span><br><span class="token punctuation">[</span>11ty<span class="token punctuation">]</span>   Template render error<span class="token operator">:</span> <span class="token punctuation">(</span><span class="token constant">C</span><span class="token operator">:</span>\<span class="token operator">...</span>\eleventy\robin<span class="token punctuation">.</span>is\_includes\footer<span class="token punctuation">.</span>njk<span class="token punctuation">)</span><br><span class="token punctuation">[</span>11ty<span class="token punctuation">]</span>   Error<span class="token operator">:</span> <span class="token constant">ENOTDIR</span><span class="token operator">:</span> not a directory<span class="token punctuation">,</span> scandir <span class="token string">'C:\...\eleventy\robin.is\pages\home.njk'</span> <span class="token punctuation">(</span>via Template render error<span class="token punctuation">)</span></code></pre>
+                <pre><code class="language-js">[11ty] 2. (./_layouts/base.njk)
+[11ty]   Template render error: (C:\...\eleventy\robin.is\_includes\footer.njk)
+[11ty]   Error: ENOTDIR: not a directory, scandir 'C:\...\eleventy\robin.is\pages\home.njk' (via Template render error)
+</code></pre>
                 <p>
                   As such this error makes sense, since
                   <code>page.inputPath</code> is not a path to a directory but a
@@ -691,9 +698,8 @@
                   the error. I also don't get the error without using the
                   filter, ie simply using this (which is obviously pointless):
                 </p>
-                <pre
-                  class="language-html"
-                ><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>./posts/2024/formulating-questions.md<span class="token punctuation">"</span></span> <span class="token attr-name">title</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>Edit<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>Edit<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">></span></span></code></pre>
+                <pre><code class="language-html">&lt;a href=&quot;./posts/2024/formulating-questions.md&quot; title=&quot;Edit&quot;&gt;Edit&lt;/a&gt;
+</code></pre>
                 <p>
                   So the error occurs between the output of
                   <code>page.inputPath</code> and before its input into
@@ -879,7 +885,7 @@
         </div>
         <div class="lastrun">
           <p>
-            Built on the 02/06/2024 at 05:58:21 in the flashiest of flashes⚡.
+            Built on the 02/06/2024 at 07:38:05 in the flashiest of flashes⚡.
           </p>
         </div>
       </div>
