@@ -9,7 +9,7 @@
 backend:
   name: github
   repo: robindotis/sveltia-cms-auth
-  branch: master
+  branch: main
   base_url: https://sveltia-cms-auth.robinmassart.workers.dev/
 
 # The folder used to store uploaded images
