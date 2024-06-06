@@ -112,7 +112,7 @@
             <a href="/seeing/">seeing</a>, <a href="/creating/">creating</a>,
             <a href="/coding/">coding</a>, <a href="/reading/">reading</a> and
             <a href="/walking/">walking</a> the
-            <a href="/tagging/angie/">dog</a>🐕‍🦺. Browse his 452
+            <a href="/tagging/angie/">dog</a>🐕‍🦺. Browse his 453
             <a href="/archiving/">posts</a> or read
             <a href="/about/">about</a> him.
           </nav>
@@ -128,6 +128,79 @@
         </article>
 
         <div class="posts-list">
+          <hr aria-hidden="true" />
+          <article class="custom- h-entry">
+            <header>
+              <h2 class="p-name">
+                <a href="/posts/2024/testing-git-based-cmss/" class="u-url"
+                  >Testing Git based CMSs</a
+                >
+              </h2>
+
+              <time datetime="2024-06-06 03:28:11" class="dt-published">
+                <span class="date-day">06</span>
+                <span class="date-month">June</span>,
+                <span class="date-year">2024</span>
+              </time>
+            </header>
+            <div class="e-content">
+              <p>
+                Every now and then I am looking for a better editing experience
+                for my website content. Currently I am simply editing the
+                content either directly in GitHub or else in Visual Studio Code.
+                This is fine, about the only inconvenience is dealing with image
+                uploads: resizing, optimising and adding to the content. The
+                last time I looked into CMS was about
+                <a href="/posts/2022/alternatives-to-forestry/">18 months ago</a
+                >. My requirements from back then haven't really changed,
+                although I am now willing to pay for the CMS if it is really
+                going to simplify my life.
+              </p>
+              <p>
+                Recently I have come across two open source projects which look
+                promising:
+              </p>
+              <ul>
+                <li><a href="https://pagescms.org/">Pages CMS</a></li>
+                <li>
+                  <a href="https://github.com/sveltia/sveltia-cms">Sveltia</a>
+                </li>
+              </ul>
+              <p>
+                They are in fact quite similar and can be added to a website
+                without needing a real host, they use netlify or cloudflare for
+                the GitHub authentication parts, the rest is client side code.
+                In Sveltia is a fork of
+                <a href="https://decapcms.org/">Decap CMS</a>, which itself is a
+                rebrand of the no longer supported Netlify CMS. Both do a nice
+                job of putting a front end on the GitHub experience, but neither
+                seem to fit in too well with my specificities out of the box (eg
+                collections and assets that contain sub folders. Getting them to
+                work through Cloudflare also takes some fiddling, but it does
+                work in the end.
+              </p>
+              <p>
+                I still miss <a href="https://tina.io/forestry/">Forestry</a>,
+                which was replaced by <a href="http://Tina.io">Tina.io</a>, but
+                that is too focussed on Next.js sites for my liking. I will give
+                <a href="https://cloudcannon.com/">CloudCannon</a>,
+                <a href="https://strapi.io/">Strapi</a> and
+                <a href="https://www.sanity.io/">Sanity</a> another look.
+              </p>
+            </div>
+
+            <div class="tagged">
+              <strong>Tagged: </strong
+              ><a href="/tagging/web/" class="post-tag" rel="tag">web</a>
+              &nbsp;<a href="/tagging/development/" class="post-tag" rel="tag"
+                >development</a
+              >
+              &nbsp;<a href="/tagging/cms/" class="post-tag" rel="tag">cms</a>
+              &nbsp;<a href="/tagging/git/" class="post-tag" rel="tag">git</a>
+              &nbsp;
+            </div>
+          </article>
+
           <hr aria-hidden="true" />
           <article class="custom- h-entry">
             <header>
@@ -725,71 +798,6 @@ export default async function(eleventyConfig) {
               &nbsp;
             </div>
           </article>
-
-          <hr aria-hidden="true" />
-          <article class="custom- h-entry">
-            <header>
-              <h2 class="p-name">
-                <a href="/posts/2024/waiting/" class="u-url">Waiting</a>
-              </h2>
-
-              <time datetime="2024-04-26 09:20:30" class="dt-published">
-                <span class="date-day">26</span>
-                <span class="date-month">April</span>,
-                <span class="date-year">2024</span>
-              </time>
-            </header>
-            <div class="e-content">
-              <p>
-                My daughter was on a trip in Bosnia and had not been feeling
-                well the final two days. So, I had to pick her up at Frankfurt
-                Airport after the return flight.
-              </p>
-              <p>
-                I was sat outside the arrivals gate, waiting. After the plane
-                had landed it took forever for the display to change to baggage
-                collection. Bored and doom scrolling on my phone, I was waiting
-                for a group of about 40 kids to appear. But my daughter
-                collected her baggage and left as she knew I was already there.
-              </p>
-              <p>
-                She sent me a text about whether I had a new phone. I wondered
-                how she knew that, maybe somehow from my messages. A few seconds
-                later she sent me this photo:
-              </p>
-              <p>
-                <img
-                  src="/assets/images/2024/waiting.webp"
-                  alt=""
-                  loading="lazy"
-                  decoding="async"
-                  width="450"
-                  height="800"
-                />
-              </p>
-              <p>
-                She'd been sitting next to me for about a minute and I hadn't
-                noticed! 🤣🤣🤣
-              </p>
-              <p>
-                My excuse is that I got up at 5am to get to the airport for 8am.
-              </p>
-            </div>
-
-            <div class="tagged">
-              <strong>Tagged: </strong
-              ><a href="/tagging/general/" class="post-tag" rel="tag"
-                >general</a
-              >
-              &nbsp;<a href="/tagging/photos/" class="post-tag" rel="tag"
-                >photos</a
-              >
-              &nbsp;<a href="/tagging/waiting/" class="post-tag" rel="tag"
-                >waiting</a
-              >
-              &nbsp;
-            </div>
-          </article>
         </div>
         <hr aria-hidden="true" />
         <div class="see-all-posts">
@@ -888,7 +896,7 @@ export default async function(eleventyConfig) {
         </div>
         <div class="lastrun">
           <p>
-            Built on the 06/06/2024 at 13:09:16 in the flashiest of flashes⚡.
+            Built on the 06/06/2024 at 19:44:36 in the flashiest of flashes⚡.
           </p>
         </div>
       </div>

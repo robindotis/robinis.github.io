@@ -6,13 +6,29 @@
 	
 	<link href="https://www.robin.is/feed/index.xml" rel="self"/>
 	<link href="https://www.robin.is/" rel="alternate" type="text/html"/>
-	<updated>2024-05-26T11:11:11Z</updated>
+	<updated>2024-06-06T15:28:11Z</updated>
 	<id>https://www.robin.is/</id>
 	<author>
 		<name>robindotis</name>
 		<email>admin@robin.is</email>
 	</author>
 	
+	
+	<entry>
+		<title>Testing Git based CMSs</title>
+		<link href="https://www.robin.is/posts/2024/testing-git-based-cmss/"/>
+		<updated>2024-06-06T15:28:11Z</updated>
+		<id>https://www.robin.is/posts/2024/testing-git-based-cmss/</id>
+		<content type="html">&lt;p&gt;Every now and then I am looking for a better editing experience for my website content. Currently I am simply editing the content either directly in GitHub or else in Visual Studio Code. This is fine, about the only inconvenience is dealing with image uploads: resizing, optimising and adding to the content. The last time I looked into CMS was about &lt;a href=&quot;https://www.robin.is/posts/2022/alternatives-to-forestry/&quot;&gt;18 months  ago&lt;/a&gt;. My requirements from back then haven&#39;t really changed, although I am now willing to pay for the CMS if it is really going to simplify my life.&lt;/p&gt;
+&lt;p&gt;Recently I have come across two open source projects which look promising:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://pagescms.org/&quot;&gt;Pages CMS&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/sveltia/sveltia-cms&quot;&gt;Sveltia&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;They are in fact quite similar and can be added to a website without needing a real host, they use netlify or cloudflare for the GitHub authentication parts, the rest is client side code. In Sveltia is a fork of &lt;a href=&quot;https://decapcms.org/&quot;&gt;Decap CMS&lt;/a&gt;, which itself is a rebrand of the no longer supported Netlify CMS. Both do a nice job of putting a front end on the GitHub experience, but neither seem to fit in too well with my specificities out of the box (eg collections and assets that contain sub folders. Getting them to work through Cloudflare also takes some fiddling, but it does work in the end.&lt;/p&gt;
+&lt;p&gt;I still miss &lt;a href=&quot;https://tina.io/forestry/&quot;&gt;Forestry&lt;/a&gt;, which was replaced by &lt;a href=&quot;http://tina.io/&quot;&gt;Tina.io&lt;/a&gt;, but that is too focussed on Next.js sites for my liking.  I will give &lt;a href=&quot;https://cloudcannon.com/&quot;&gt;CloudCannon&lt;/a&gt;, &lt;a href=&quot;https://strapi.io/&quot;&gt;Strapi&lt;/a&gt; and &lt;a href=&quot;https://www.sanity.io/&quot;&gt;Sanity&lt;/a&gt; another look.&lt;/p&gt;
+</content>
+	</entry>
 	
 	<entry>
 		<title>Visiting Tuscany</title>
@@ -246,20 +262,6 @@ export default async function(eleventyConfig) {
 &lt;p&gt;I particularly liked their interpretation of California Dreaming.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;https://www.robin.is/assets/images/2024/spectrum-1.webp&quot; alt=&quot;&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; width=&quot;800&quot; height=&quot;600&quot; /&gt;&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;https://www.robin.is/assets/images/2024/spectrum-2.webp&quot; alt=&quot;&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; width=&quot;800&quot; height=&quot;600&quot; /&gt;&lt;/p&gt;
-</content>
-	</entry>
-	
-	<entry>
-		<title>Apple and the Digital Markets Act</title>
-		<link href="https://www.robin.is/posts/2024/apple-dma/"/>
-		<updated>2024-02-28T11:18:27Z</updated>
-		<id>https://www.robin.is/posts/2024/apple-dma/</id>
-		<content type="html">&lt;p&gt;On the 6th March those companies that have been designated as &amp;quot;gatekeepers&amp;quot; under the European Commission&#39;s &lt;a href=&quot;https://digital-markets-act.ec.europa.eu/index_en&quot;&gt;Digital Market Act&lt;/a&gt; (DMA), need to finally comply with it.&lt;/p&gt;
-&lt;p&gt;The DMA has two intersting effects for web, both affecting Apple. Firstly, it forces Apple to allow alternate application stores to the one owned by Apple. Secondly, it also forces Apple to allow browser engines other than its own WebKit to be installed on iOS devices. Apple, as any cooperation worth its salt does, has taken these rules and interpreted them in the most mean spirited manner possible beyond simply not implementing the new rules at all.&lt;/p&gt;
-&lt;p&gt;A lot has already noted about Apples implementation of the first effect allowing alternate application stores. This has been largely covered in more business orientated publications due the Core Technology Fee it will charge to all installations not done through Apple&#39;s AppStore.&lt;/p&gt;
-&lt;p&gt;For those of us interested in an open web, one where mobile apps are not needed in order to offer relatively basic functionality, of far more significance is Apple&#39;s approach to the second requirement: allow third party browser engines to run on iOS. Apple&#39;s implementation in dealing with this is to basically break Progressive Web Apps (PWAs) for those who are in the EU. As much as Apple fears alternative application stores, it fears an open web even more. One in which they have no control over which applications can be run on an iOS device and by control I mean profit from.&lt;/p&gt;
-&lt;p&gt;Advocating for an open web, means I have signed this &lt;a href=&quot;https://letter.open-web-advocacy.org/&quot;&gt;open letter to Apple&lt;/a&gt;. I encourage you to do the same. For more information on this issue, read &lt;a href=&quot;https://open-web-advocacy.org/apple-attempts-killing-webapps/&quot;&gt;this article from Open Web Advocacy&lt;/a&gt; as well as &lt;a href=&quot;https://infrequently.org/2024/02/home-screen-advantage/&quot;&gt;this one from Alex Russell&lt;/a&gt;. Note that Alex works for Microsoft, so whilst his points are still valid, they might not be fully impartial.&lt;/p&gt;
-&lt;p&gt;The Commmission&#39;s decision is eagerly awaited in March.&lt;/p&gt;
 </content>
 	</entry>
 </feed>

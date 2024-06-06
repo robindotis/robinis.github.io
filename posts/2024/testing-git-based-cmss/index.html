@@ -1,0 +1,329 @@
+<!doctype html>
+<html lang="en-GB">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- See: https://www.w3schools.com/css/css_rwd_viewport.asp-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      http-equiv="X-Clacks-Overhead"
+      content="GNU Terry Pratchett; Parrain"
+    />
+    <title>Robin is testing git based cmss</title>
+
+    <meta
+      name="description"
+      content="writing, travelling, seeing, coding and walking the 🐕‍🦺"
+    />
+    <meta name="keywords" content="posts,web,development,cms,git" />
+    <meta
+      name="robots"
+      content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
+    />
+
+    <link
+      rel="canonical"
+      href="https://www.robin.is/posts/2024/testing-git-based-cmss/"
+    />
+    <link rel="me" href="https://github.com/robindotis/" />
+    <link
+      rel="alternate"
+      type="application/rss+xml"
+      title="Robin is RSS"
+      href="/feed/"
+    />
+    <link
+      rel="alternate"
+      href="/feed/index.xml"
+      type="application/atom+xml"
+      title="Robin is"
+    />
+    <link rel="alternate" href="." type="application/json" title="Robin is" />
+    <link
+      rel="icon"
+      href="/assets/images/cw.jpg"
+      type="image/jpeg"
+      sizes="50x50"
+    />
+    <!--
+    <link rel="manifest" href="/manifest.json">
+    -->
+    <link
+      rel="webmention"
+      href="https://webmention.io/www.robin.is/webmention"
+    />
+    <link rel="authorization_endpoint" href="https://indieauth.com/auth" />
+    <link rel="token_endpoint" href="https://tokens.indieauth.com/token" />
+
+    <meta property="a11y:statement" content="/pages/accessibility/" />
+    <meta property="a11y:feedback" content="/pages/accessibility/#feedback" />
+    <meta
+      property="a11y:complaints"
+      content="/pages/accessibility/#complaints"
+    />
+
+    <meta property="og:locale" content="en_GB" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Robin is... Testing Git based CMSs" />
+    <meta
+      property="og:description"
+      content="writing, travelling, seeing, coding and walking the 🐕‍🦺"
+    />
+    <meta
+      property="og:url"
+      content="https://www.robin.is/posts/2024/testing-git-based-cmss/"
+    />
+    <meta property="og:site_name" content="Robin is" />
+    <meta property="og:image" content="" />
+
+    <meta name="DC.title" content="robin.is" />
+    <meta name="DC.creator " content="Robin Massart" />
+
+    <link
+      rel="preload"
+      href="/assets/fonts/Mona-Sans.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+
+    <link rel="stylesheet" href="/assets/css/fonts.css" media="all" />
+    <link rel="stylesheet" href="/assets/css/structure.css" media="all" />
+    <link rel="stylesheet" href="/assets/css/style.css" media="all" />
+    <link rel="stylesheet" href="/assets/css/default.css" media="all" />
+    <script src="/assets/js/theme.js" defer></script>
+  </head>
+  <body>
+    <p class="skip-link">
+      <a href="#skip-content-target">Skip to the content</a>
+    </p>
+    <header class="masthead h-card">
+      <div class="header-area">
+        <p id="themeSwitch"></p>
+        <hr class="nodisplay" aria-hidden="true" />
+        <div class="header-title">
+          <span class="sitetitle">
+            <img
+              class="logo u-logo u-photo"
+              src="/assets/images/cw.jpg"
+              alt=""
+              width="50"
+              height="50"
+            />
+            <a href="/" class="u-url p-name">Robin is</a>
+          </span>
+          <nav class="subtitle p-note" aria-label="Main">
+            <a href="/now/">now</a>
+            <a href="/writing/">writing</a>,
+            <a href="/travelling/">travelling</a>,
+            <a href="/seeing/">seeing</a>, <a href="/creating/">creating</a>,
+            <a href="/coding/">coding</a>, <a href="/reading/">reading</a> and
+            <a href="/walking/">walking</a> the
+            <a href="/tagging/angie/">dog</a>🐕‍🦺. Browse his 453
+            <a href="/archiving/">posts</a> or read
+            <a href="/about/">about</a> him.
+          </nav>
+        </div>
+      </div>
+    </header>
+    <main id="site-content" class="tmpl-post">
+      <hr class="nodisplay" aria-hidden="true" />
+      <div class="main-content">
+        <article class="h-entry">
+          <nav aria-label="Paging">
+            <div class="prev-next">
+              <strong>« Newer:</strong> This is the latest post!
+
+              <br />
+              <strong>» Older:</strong
+              ><a class="prev" rel="prev" href="/posts/2024/visiting-tuscany/"
+                >Visiting Tuscany</a
+              >
+            </div>
+            <hr />
+          </nav>
+
+          <header id="skip-content-target">
+            <h1 class="p-name">Testing Git based CMSs</h1>
+            <h2 class="published">
+              <time datetime="2024-06-06 03:28:11" class="dt-published">
+                <span class="date-day">06</span>
+                <span class="date-month">June</span>,
+                <span class="date-year">2024</span>
+              </time>
+            </h2>
+          </header>
+          <div class="e-content">
+            <p>
+              Every now and then I am looking for a better editing experience
+              for my website content. Currently I am simply editing the content
+              either directly in GitHub or else in Visual Studio Code. This is
+              fine, about the only inconvenience is dealing with image uploads:
+              resizing, optimising and adding to the content. The last time I
+              looked into CMS was about
+              <a href="/posts/2022/alternatives-to-forestry/">18 months ago</a>.
+              My requirements from back then haven't really changed, although I
+              am now willing to pay for the CMS if it is really going to
+              simplify my life.
+            </p>
+            <p>
+              Recently I have come across two open source projects which look
+              promising:
+            </p>
+            <ul>
+              <li><a href="https://pagescms.org/">Pages CMS</a></li>
+              <li>
+                <a href="https://github.com/sveltia/sveltia-cms">Sveltia</a>
+              </li>
+            </ul>
+            <p>
+              They are in fact quite similar and can be added to a website
+              without needing a real host, they use netlify or cloudflare for
+              the GitHub authentication parts, the rest is client side code. In
+              Sveltia is a fork of
+              <a href="https://decapcms.org/">Decap CMS</a>, which itself is a
+              rebrand of the no longer supported Netlify CMS. Both do a nice job
+              of putting a front end on the GitHub experience, but neither seem
+              to fit in too well with my specificities out of the box (eg
+              collections and assets that contain sub folders. Getting them to
+              work through Cloudflare also takes some fiddling, but it does work
+              in the end.
+            </p>
+            <p>
+              I still miss <a href="https://tina.io/forestry/">Forestry</a>,
+              which was replaced by <a href="http://Tina.io">Tina.io</a>, but
+              that is too focussed on Next.js sites for my liking. I will give
+              <a href="https://cloudcannon.com/">CloudCannon</a>,
+              <a href="https://strapi.io/">Strapi</a> and
+              <a href="https://www.sanity.io/">Sanity</a> another look.
+            </p>
+          </div>
+          <hr aria-hidden="true" />
+          <div class="tagged">
+            <strong>Tagged: </strong
+            ><a href="/tagging/web/" class="post-tag" rel="tag">web</a> &nbsp;<a
+              href="/tagging/development/"
+              class="post-tag"
+              rel="tag"
+              >development</a
+            >
+            &nbsp;<a href="/tagging/cms/" class="post-tag" rel="tag">cms</a>
+            &nbsp;<a href="/tagging/git/" class="post-tag" rel="tag">git</a>
+            &nbsp;
+          </div>
+
+          <hr aria-hidden="true" />
+          <nav aria-label="Paging">
+            <div class="prev-next">
+              <strong>« Newer:</strong> This is the latest post!
+
+              <br />
+              <strong>» Older:</strong
+              ><a class="prev" rel="prev" href="/posts/2024/visiting-tuscany/"
+                >Visiting Tuscany</a
+              >
+            </div>
+            <hr />
+          </nav>
+        </article>
+      </div>
+    </main>
+    <footer>
+      <div class="footer-area">
+        <div class="rss">
+          <p>
+            <img
+              src="/assets/images/rss-logo.png"
+              alt=""
+              width="15"
+              height="15"
+              loading="lazy"
+            />&nbsp;<a class="a11y-statement" href="/feed/">RSS</a>
+
+            | <a href="/pages/accessibility/">Accessibility</a>
+          </p>
+        </div>
+        <div class="copy">
+          <p>&copy; 1998 - 2024 robin.is AI free and 100% Human.</p>
+        </div>
+        <div class="copy">
+          <p>
+            Hand crafted using <a href="https://www.11ty.dev/">eleventy</a>
+            <span class="emojis"
+              ><a
+                href="https://github.com/robindotis/robin.is/blob/master/posts/2024/testing-git-based-cmss.md"
+                title="Edit"
+                >👍</a
+              ></span
+            >
+          </p>
+        </div>
+        <div class="copy">
+          <p>
+            <a href="https://xn--sr8hvo.ws/previous">←</a>
+            An <a href="https://xn--sr8hvo.ws">IndieWeb Webring</a> 🕸💍
+            <a href="https://xn--sr8hvo.ws/next">→</a>
+          </p>
+        </div>
+        <div class="badges">
+          <p>
+            <a href="https://www.anybrowser.org/campaign/"
+              ><img
+                src="/assets/images/any-browser-button.png"
+                alt="Viewable With Any Browser"
+                width="80"
+                height="15"
+                loading="lazy"
+            /></a>
+            <a href="https://indieweb.org/"
+              ><img
+                src="/assets/images/indieweb-button.png"
+                alt="IndieWeb"
+                width="80"
+                height="15"
+                loading="lazy"
+            /></a>
+            <a href="https://indiewebify.me/"
+              ><img
+                src="/assets/images/indiewebified-button.png"
+                alt="IndieWebified"
+                width="80"
+                height="15"
+                loading="lazy"
+            /></a>
+            <a href="http://microformats.org/"
+              ><img
+                src="/assets/images/microformats-button.png"
+                alt="microformats"
+                width="80"
+                height="15"
+                loading="lazy"
+            /></a>
+            <a href="https://html.spec.whatwg.org/"
+              ><img
+                src="/assets/images/valid_html5_blue-button.png"
+                alt="Valid HTML5"
+                width="80"
+                height="15"
+                loading="lazy"
+            /></a>
+            <a href="https://www.w3.org/Style/CSS/current-work"
+              ><img
+                src="/assets/images/valid_css3_blue-button.png"
+                alt="Valid CSS3"
+                width="80"
+                height="15"
+                loading="lazy"
+            /></a>
+          </p>
+        </div>
+        <div class="lastrun">
+          <p>
+            Built on the 06/06/2024 at 19:44:36 in the flashiest of flashes⚡.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Current page: /posts/2024/testing-git-based-cmss/ -->
+  </body>
+</html>
