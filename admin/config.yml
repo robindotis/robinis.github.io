@@ -8,8 +8,8 @@
 # Enter your GitHub repo path and branch (defaults to master)
 backend:
   name: github
-  repo: robindotis/sveltia-cms-auth
-  branch: main
+  repo: robindotis/robin.is
+  branch: master
   base_url: https://sveltia-cms-auth.robinmassart.workers.dev/
 
 # The folder used to store uploaded images
