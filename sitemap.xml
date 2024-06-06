@@ -2502,16 +2502,6 @@
   </url>
   
   <url>
-    <loc>https://www.robin.is/tagging/privacy/</loc>
-    <lastmod>2024-06-06</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.robin.is/tagging/conspiracy/</loc>
-    <lastmod>2024-06-06</lastmod>
-  </url>
-  
-  <url>
     <loc>https://www.robin.is/tagging/html/</loc>
     <lastmod>2024-06-06</lastmod>
   </url>
@@ -2523,6 +2513,16 @@
   
   <url>
     <loc>https://www.robin.is/tagging/book/</loc>
+    <lastmod>2024-06-06</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.robin.is/tagging/privacy/</loc>
+    <lastmod>2024-06-06</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.robin.is/tagging/conspiracy/</loc>
     <lastmod>2024-06-06</lastmod>
   </url>
   
@@ -2607,17 +2607,17 @@
   </url>
   
   <url>
+    <loc>https://www.robin.is/tagging/italy/</loc>
+    <lastmod>2024-06-06</lastmod>
+  </url>
+  
+  <url>
     <loc>https://www.robin.is/tagging/patents/</loc>
     <lastmod>2024-06-06</lastmod>
   </url>
   
   <url>
     <loc>https://www.robin.is/tagging/software/</loc>
-    <lastmod>2024-06-06</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.robin.is/tagging/italy/</loc>
     <lastmod>2024-06-06</lastmod>
   </url>
   
@@ -2632,17 +2632,17 @@
   </url>
   
   <url>
-    <loc>https://www.robin.is/tagging/smolyan/</loc>
-    <lastmod>2024-06-06</lastmod>
-  </url>
-  
-  <url>
     <loc>https://www.robin.is/tagging/france/</loc>
     <lastmod>2024-06-06</lastmod>
   </url>
   
   <url>
     <loc>https://www.robin.is/tagging/paris/</loc>
+    <lastmod>2024-06-06</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.robin.is/tagging/smolyan/</loc>
     <lastmod>2024-06-06</lastmod>
   </url>
   
@@ -2752,17 +2752,17 @@
   </url>
   
   <url>
+    <loc>https://www.robin.is/tagging/tenerife/</loc>
+    <lastmod>2024-06-06</lastmod>
+  </url>
+  
+  <url>
     <loc>https://www.robin.is/tagging/lisbon/</loc>
     <lastmod>2024-06-06</lastmod>
   </url>
   
   <url>
     <loc>https://www.robin.is/tagging/portugal/</loc>
-    <lastmod>2024-06-06</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.robin.is/tagging/tenerife/</loc>
     <lastmod>2024-06-06</lastmod>
   </url>
   
@@ -2997,22 +2997,22 @@
   </url>
   
   <url>
-    <loc>https://www.robin.is/tagging/pratchett/</loc>
-    <lastmod>2024-06-06</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.robin.is/tagging/code/</loc>
-    <lastmod>2024-06-06</lastmod>
-  </url>
-  
-  <url>
     <loc>https://www.robin.is/tagging/chance/</loc>
     <lastmod>2024-06-06</lastmod>
   </url>
   
   <url>
     <loc>https://www.robin.is/tagging/quiz/</loc>
+    <lastmod>2024-06-06</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.robin.is/tagging/pratchett/</loc>
+    <lastmod>2024-06-06</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.robin.is/tagging/code/</loc>
     <lastmod>2024-06-06</lastmod>
   </url>
   
@@ -3157,11 +3157,6 @@
   </url>
   
   <url>
-    <loc>https://www.robin.is/tagging/mersch/</loc>
-    <lastmod>2024-06-06</lastmod>
-  </url>
-  
-  <url>
     <loc>https://www.robin.is/tagging/netlifx/</loc>
     <lastmod>2024-06-06</lastmod>
   </url>
@@ -3177,12 +3172,27 @@
   </url>
   
   <url>
-    <loc>https://www.robin.is/tagging/hackathon/</loc>
+    <loc>https://www.robin.is/tagging/mersch/</loc>
     <lastmod>2024-06-06</lastmod>
   </url>
   
   <url>
-    <loc>https://www.robin.is/tagging/meta/</loc>
+    <loc>https://www.robin.is/tagging/zoo/</loc>
+    <lastmod>2024-06-06</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.robin.is/tagging/animals/</loc>
+    <lastmod>2024-06-06</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.robin.is/tagging/pairi-daiza/</loc>
+    <lastmod>2024-06-06</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.robin.is/tagging/apocalyptic/</loc>
     <lastmod>2024-06-06</lastmod>
   </url>
   
@@ -3292,17 +3302,17 @@
   </url>
   
   <url>
-    <loc>https://www.robin.is/tagging/css/</loc>
-    <lastmod>2024-06-06</lastmod>
-  </url>
-  
-  <url>
     <loc>https://www.robin.is/tagging/luck/</loc>
     <lastmod>2024-06-06</lastmod>
   </url>
   
   <url>
     <loc>https://www.robin.is/tagging/queues/</loc>
+    <lastmod>2024-06-06</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.robin.is/tagging/css/</loc>
     <lastmod>2024-06-06</lastmod>
   </url>
   
@@ -3373,16 +3383,6 @@
   
   <url>
     <loc>https://www.robin.is/tagging/transport/</loc>
-    <lastmod>2024-06-06</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.robin.is/tagging/arctic-monkeys/</loc>
-    <lastmod>2024-06-06</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.robin.is/tagging/luxexpo/</loc>
     <lastmod>2024-06-06</lastmod>
   </url>
   
@@ -3517,12 +3517,12 @@
   </url>
   
   <url>
-    <loc>https://www.robin.is/tagging/fishcbach/</loc>
+    <loc>https://www.robin.is/tagging/upgrade/</loc>
     <lastmod>2024-06-06</lastmod>
   </url>
   
   <url>
-    <loc>https://www.robin.is/tagging/upgrade/</loc>
+    <loc>https://www.robin.is/tagging/fishcbach/</loc>
     <lastmod>2024-06-06</lastmod>
   </url>
   
@@ -3667,21 +3667,6 @@
   </url>
   
   <url>
-    <loc>https://www.robin.is/tagging/apocalyptic/</loc>
-    <lastmod>2024-06-06</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.robin.is/tagging/tech/</loc>
-    <lastmod>2024-06-06</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.robin.is/tagging/ui/</loc>
-    <lastmod>2024-06-06</lastmod>
-  </url>
-  
-  <url>
     <loc>https://www.robin.is/tagging/publication/</loc>
     <lastmod>2024-06-06</lastmod>
   </url>
@@ -3693,6 +3678,16 @@
   
   <url>
     <loc>https://www.robin.is/tagging/workflows/</loc>
+    <lastmod>2024-06-06</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.robin.is/tagging/tech/</loc>
+    <lastmod>2024-06-06</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.robin.is/tagging/ui/</loc>
     <lastmod>2024-06-06</lastmod>
   </url>
   
@@ -3787,6 +3782,16 @@
   </url>
   
   <url>
+    <loc>https://www.robin.is/tagging/arctic-monkeys/</loc>
+    <lastmod>2024-06-06</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.robin.is/tagging/luxexpo/</loc>
+    <lastmod>2024-06-06</lastmod>
+  </url>
+  
+  <url>
     <loc>https://www.robin.is/tagging/archives/</loc>
     <lastmod>2024-06-06</lastmod>
   </url>
@@ -3867,17 +3872,12 @@
   </url>
   
   <url>
-    <loc>https://www.robin.is/tagging/zoo/</loc>
+    <loc>https://www.robin.is/tagging/hackathon/</loc>
     <lastmod>2024-06-06</lastmod>
   </url>
   
   <url>
-    <loc>https://www.robin.is/tagging/animals/</loc>
-    <lastmod>2024-06-06</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.robin.is/tagging/pairi-daiza/</loc>
+    <loc>https://www.robin.is/tagging/meta/</loc>
     <lastmod>2024-06-06</lastmod>
   </url>
   
