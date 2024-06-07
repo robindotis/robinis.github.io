@@ -472,7 +472,7 @@ main .barchart a:hover .bar {
 }
 
 main .main-content h2 a {
-    text-decoration: none;
+    /*text-decoration: none;*/
 }
 
 blockquote footer {
