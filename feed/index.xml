@@ -19,7 +19,7 @@
 		<link href="https://www.robin.is/posts/2024/testing-git-based-cmss/"/>
 		<updated>2024-06-06T15:28:11Z</updated>
 		<id>https://www.robin.is/posts/2024/testing-git-based-cmss/</id>
-		<content type="html">&lt;p&gt;Every now and then I am looking for a better editing experience for my website content. Currently I am simply editing the content either directly in GitHub or else in Visual Studio Code. This is fine, about the only inconvenience is dealing with image uploads: resizing, optimising and adding to the content. The last time I looked into a CMS was about &lt;a href=&quot;https://www.robin.is/posts/2022/alternatives-to-forestry/&quot;&gt;18 months  ago&lt;/a&gt;. My requirements from back then haven&#39;t really changed, although I am now willing to pay for the CMS if it is really going to simplify my life.&lt;/p&gt;
+		<content type="html">&lt;p&gt;Every now and then I am looking for a better editing experience for my website content. Currently I am simply editing the content either directly in GitHub or else in Visual Studio Code. This is fine, about the only inconvenience is dealing with image uploads: resizing, optimising and adding to the content. The last time I looked into a CMS was about &lt;a href=&quot;https://www.robin.is/posts/2022/alternatives-to-forestry/&quot;&gt;18 months  ago&lt;/a&gt;. My requirements from back then haven&#39;t really changed, although I am now willing to pay for the CMS if it is really going to simplify my life...&lt;/p&gt;
 &lt;p&gt;Recently I have come across two open source projects which look promising:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;https://pagescms.org/&quot;&gt;Pages CMS&lt;/a&gt;&lt;/li&gt;
