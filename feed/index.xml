@@ -6,7 +6,7 @@
 	
 	<link href="https://www.robin.is/feed/index.xml" rel="self"/>
 	<link href="https://www.robin.is/" rel="alternate" type="text/html"/>
-	<updated>2024-06-06T15:28:11Z</updated>
+	<updated>2024-06-10T06:28:11Z</updated>
 	<id>https://www.robin.is/</id>
 	<author>
 		<name>robindotis</name>
@@ -15,11 +15,21 @@
 	
 	
 	<entry>
+		<title>The Left Hand of Darkness</title>
+		<link href="https://www.robin.is/posts/2024/the-left-hand-of-darkness/"/>
+		<updated>2024-06-10T06:28:11Z</updated>
+		<id>https://www.robin.is/posts/2024/the-left-hand-of-darkness/</id>
+		<content type="html">&lt;p&gt;This book took me much longer than it should have to read. It&#39;s interesting, but perhaps that is why I was not so captivated by it. If I had read it in a couple of days it might have been more meaningful. Still, the story of spacefaring humans making first contact with this planet of ice and snow is well worth reading.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://www.robin.is/assets/images/2024/the-left-hand-of-darkness.webp&quot; alt=&quot;&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; width=&quot;287&quot; height=&quot;445&quot; /&gt;&lt;/p&gt;
+</content>
+	</entry>
+	
+	<entry>
 		<title>Testing Git based CMSs</title>
 		<link href="https://www.robin.is/posts/2024/testing-git-based-cmss/"/>
 		<updated>2024-06-06T15:28:11Z</updated>
 		<id>https://www.robin.is/posts/2024/testing-git-based-cmss/</id>
-		<content type="html">&lt;p&gt;Every now and then I am looking for a better editing experience for my website content. Currently I am simply editing the content either directly in GitHub or else in Visual Studio Code. This is fine, about the only inconvenience is dealing with image uploads: resizing, optimising and adding to the content. The last time I looked into a CMS was about &lt;a href=&quot;https://www.robin.is/posts/2022/alternatives-to-forestry/&quot;&gt;18 months  ago&lt;/a&gt;. My requirements from back then haven&#39;t really changed, although I am now willing to pay for the CMS if it is really going to simplify my life...&lt;/p&gt;
+		<content type="html">&lt;p&gt;Every now and then I am looking for a better editing experience for my website content. Currently I am simply editing the content either directly in GitHub or else in Visual Studio Code. This is fine, about the only inconvenience is dealing with image uploads: resizing, optimising and adding to the content. The last time I looked into a CMS was about &lt;a href=&quot;https://www.robin.is/posts/2022/alternatives-to-forestry/&quot;&gt;18 months  ago&lt;/a&gt;. My requirements from back then haven&#39;t really changed, although I am now willing to pay for the CMS if it is really going to simplify my life.&lt;/p&gt;
 &lt;p&gt;Recently I have come across two open source projects which look promising:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;https://pagescms.org/&quot;&gt;Pages CMS&lt;/a&gt;&lt;/li&gt;
@@ -250,18 +260,6 @@ export default async function(eleventyConfig) {
 &lt;p&gt;&lt;img src=&quot;https://www.robin.is/assets/images/2024/kopstal2-3.webp&quot; alt=&quot;&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; width=&quot;800&quot; height=&quot;600&quot; /&gt;&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;https://www.robin.is/assets/images/2024/kopstal2-4.webp&quot; alt=&quot;&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; width=&quot;600&quot; height=&quot;800&quot; /&gt;&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;https://www.robin.is/assets/images/2024/kopstal2-5.webp&quot; alt=&quot;&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; width=&quot;600&quot; height=&quot;800&quot; /&gt;&lt;/p&gt;
-</content>
-	</entry>
-	
-	<entry>
-		<title>Spectrum Vocal Band</title>
-		<link href="https://www.robin.is/posts/2024/spectrum/"/>
-		<updated>2024-03-02T21:18:27Z</updated>
-		<id>https://www.robin.is/posts/2024/spectrum/</id>
-		<content type="html">&lt;p&gt;A fun evening watching the Bulgarian a cappella group &lt;a href=&quot;https://www.youtube.com/spectrumvocalband&quot;&gt;Spectrum&lt;/a&gt; in Luxembourg, gratefully organised by &lt;a href=&quot;https://www.facebook.com/clubgaida/&quot;&gt;Club Gaida&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;I particularly liked their interpretation of California Dreaming.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://www.robin.is/assets/images/2024/spectrum-1.webp&quot; alt=&quot;&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; width=&quot;800&quot; height=&quot;600&quot; /&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://www.robin.is/assets/images/2024/spectrum-2.webp&quot; alt=&quot;&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; width=&quot;800&quot; height=&quot;600&quot; /&gt;&lt;/p&gt;
 </content>
 	</entry>
 </feed>
