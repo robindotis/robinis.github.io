@@ -2352,12 +2352,12 @@
   </url>
   
   <url>
-    <loc>https://www.robin.is/tagging/general/</loc>
+    <loc>https://www.robin.is/tagging/work/</loc>
     <lastmod>2024-06-11</lastmod>
   </url>
   
   <url>
-    <loc>https://www.robin.is/tagging/work/</loc>
+    <loc>https://www.robin.is/tagging/general/</loc>
     <lastmod>2024-06-11</lastmod>
   </url>
   
@@ -3882,22 +3882,22 @@
   </url>
   
   <url>
-    <loc>https://www.robin.is/tagging/madeira/</loc>
-    <lastmod>2024-06-11</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.robin.is/tagging/holidays/</loc>
-    <lastmod>2024-06-11</lastmod>
-  </url>
-  
-  <url>
     <loc>https://www.robin.is/tagging/mushroom/</loc>
     <lastmod>2024-06-11</lastmod>
   </url>
   
   <url>
     <loc>https://www.robin.is/tagging/colourful/</loc>
+    <lastmod>2024-06-11</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.robin.is/tagging/madeira/</loc>
+    <lastmod>2024-06-11</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.robin.is/tagging/holidays/</loc>
     <lastmod>2024-06-11</lastmod>
   </url>
   
