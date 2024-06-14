@@ -239,6 +239,14 @@ footer {
     font-size: 1.5em;
 }
 
+article footer {
+    border-top: var(--header-bg-color) solid 3px;
+    background-color: var(--body-bg-color);
+    padding: 10px 0;
+    font-style: normal;
+    font-size: 0.9em;
+}
+
 footer div {
     color: var(--footer-text-color);
 }
