@@ -59,3 +59,72 @@ I have four style sheets for the site
         --date-text-color: var(--header-title-color);        
     }
 }
+
+
+@media (min-width: 700px) { 
+  body {
+    display: grid;
+  }
+
+  body>header {
+    grid-column: 1/1;
+  }
+
+  body>main {
+    grid-column: 2/2;
+  }
+
+  body>footer {
+    grid-column: 1/3;
+  }
+
+  body>main {
+    max-width: 100ch;
+  }
+
+  body>header {
+    width: 50ch;
+    margin-left: auto;
+  }
+
+  body header nav ul li {
+    display: block;
+  }
+
+  body header nav ul {
+    margin: 0;
+    padding-inline-start: 0;
+  }
+
+  body header.masthead {
+    margin-left: auto;
+    /*background-color: var(--body-bg-color);*/
+  }
+
+  header .header-title {
+    width: 100%;
+  }
+
+  header nav.subtitle {
+    vertical-align:top;
+  }
+
+  header.masthead div.header-area {
+    padding-top: 10px;
+    /*background-color: var(--header-bg-color);*/
+  }
+
+  header.masthead nav a {  
+    text-decoration: none;
+  }
+
+  header .sitetitle {
+    display: block;
+    text-align: right;
+  }
+
+
+  main > div.main-content {
+    margin:0;
+  }
+}

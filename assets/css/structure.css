@@ -108,7 +108,7 @@ header div.header-area {
     justify-content: space-between;
     flex-wrap: wrap;
     margin: 0;
-    padding: 5px 20px 20px 20px;
+    padding: 20px 20px 20px 20px;
 }
 
 header div.nav-area {
@@ -141,6 +141,7 @@ main article section {
     margin-top: 20px;
 }
 
+/*
 nav ul {
     font-size: 1.7em;
     display: inline-flex;
@@ -169,9 +170,15 @@ nav ul li {
 nav ul li:last-child {
     padding: 0;
 }
+*/
 
 header .header-nav {
     text-align: right;
+}
+
+header ul, header li {
+    display: inline;
+    padding-inline-start: 0;
 }
 
 
@@ -505,3 +512,4 @@ blockquote footer {
         margin-right:5%;
     }
 }
+
