@@ -56,10 +56,8 @@ I have four style sheets for the site
         --link-focus-color: var(--link-color);
         --link-focus-bg-color: #ffff00;
         --date-bg-color: var(--header-bg-color);
-        --date-text-color: var(--header-title-color);        
     }
 }
-
 
 @media (min-width: 700px) { 
   body {
@@ -79,14 +77,15 @@ I have four style sheets for the site
   }
 
   body>main {
-    max-width: 100ch;
+    width: 40ch;
   }
 
+  /*
   body>header {
     width: 50ch;
     margin-left: auto;
   }
-
+  */
   body header nav ul li {
     display: block;
   }
@@ -110,10 +109,11 @@ I have four style sheets for the site
   }
 
   header.masthead div.header-area {
+    display: block;
     padding-top: 10px;
     /*background-color: var(--header-bg-color);*/
   }
-
+  
   header.masthead nav a {  
     text-decoration: none;
   }
@@ -126,5 +126,17 @@ I have four style sheets for the site
 
   main > div.main-content {
     margin:0;
+  }
+}
+
+@media (min-width: 800px) { 
+  body>main {
+    width: 60ch;
+  }
+}
+
+@media (min-width: 900px) { 
+  body>main {
+    width: 80ch;
   }
 }
