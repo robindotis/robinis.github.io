@@ -139,7 +139,7 @@ I have four style sheets for the site
     text-align: right;
   }
 }
-
+/*
 @media (min-width: 800px) { 
   body>main {
     width: 60ch;
@@ -149,5 +149,5 @@ I have four style sheets for the site
 @media (min-width: 900px) { 
   body>main {
     width: 80ch;
-  }
+  }*/
 }
