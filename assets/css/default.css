@@ -63,7 +63,7 @@ I have four style sheets for the site
 @media (min-width: 700px) { 
   body {
     display: grid;
-    grid-auto-columns: 48ch auto;
+    grid-template-columns: 48ch, 80ch;
     justify-content: center;
   }
 
