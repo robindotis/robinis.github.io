@@ -2377,6 +2377,11 @@
   </url>
   
   <url>
+    <loc>https://www.robin.is/tagging/reading/</loc>
+    <lastmod>2024-06-20</lastmod>
+  </url>
+  
+  <url>
     <loc>https://www.robin.is/tagging/photos/</loc>
     <lastmod>2024-06-20</lastmod>
   </url>
@@ -2398,11 +2403,6 @@
   
   <url>
     <loc>https://www.robin.is/tagging/general/</loc>
-    <lastmod>2024-06-20</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.robin.is/tagging/reading/</loc>
     <lastmod>2024-06-20</lastmod>
   </url>
   
@@ -2807,17 +2807,17 @@
   </url>
   
   <url>
+    <loc>https://www.robin.is/tagging/tenerife/</loc>
+    <lastmod>2024-06-20</lastmod>
+  </url>
+  
+  <url>
     <loc>https://www.robin.is/tagging/lisbon/</loc>
     <lastmod>2024-06-20</lastmod>
   </url>
   
   <url>
     <loc>https://www.robin.is/tagging/portugal/</loc>
-    <lastmod>2024-06-20</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.robin.is/tagging/tenerife/</loc>
     <lastmod>2024-06-20</lastmod>
   </url>
   
@@ -2867,12 +2867,12 @@
   </url>
   
   <url>
-    <loc>https://www.robin.is/tagging/javascript/</loc>
+    <loc>https://www.robin.is/tagging/batak/</loc>
     <lastmod>2024-06-20</lastmod>
   </url>
   
   <url>
-    <loc>https://www.robin.is/tagging/batak/</loc>
+    <loc>https://www.robin.is/tagging/javascript/</loc>
     <lastmod>2024-06-20</lastmod>
   </url>
   
@@ -3832,22 +3832,22 @@
   </url>
   
   <url>
-    <loc>https://www.robin.is/tagging/sveta-petka/</loc>
-    <lastmod>2024-06-20</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.robin.is/tagging/hike/</loc>
-    <lastmod>2024-06-20</lastmod>
-  </url>
-  
-  <url>
     <loc>https://www.robin.is/tagging/bio/</loc>
     <lastmod>2024-06-20</lastmod>
   </url>
   
   <url>
     <loc>https://www.robin.is/tagging/sailing/</loc>
+    <lastmod>2024-06-20</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.robin.is/tagging/sveta-petka/</loc>
+    <lastmod>2024-06-20</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.robin.is/tagging/hike/</loc>
     <lastmod>2024-06-20</lastmod>
   </url>
   
@@ -3897,6 +3897,11 @@
   </url>
   
   <url>
+    <loc>https://www.robin.is/tagging/neuromancer/</loc>
+    <lastmod>2024-06-20</lastmod>
+  </url>
+  
+  <url>
     <loc>https://www.robin.is/tagging/rememberance/</loc>
     <lastmod>2024-06-20</lastmod>
   </url>
@@ -3938,11 +3943,6 @@
   
   <url>
     <loc>https://www.robin.is/tagging/waiting/</loc>
-    <lastmod>2024-06-20</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.robin.is/tagging/neuromancer/</loc>
     <lastmod>2024-06-20</lastmod>
   </url>
   

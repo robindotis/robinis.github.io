@@ -63,8 +63,10 @@ I have four style sheets for the site
 @media (min-width: 700px) { 
   body {
     display: grid;
-    grid-template-columns: 48ch 160ch;
+    grid-template-columns: 50ch minmax(auto, 120ch);
     justify-content: center;
+    /*max-width: 208ch;*/
+    margin: auto;
   }
 
   body>header {
@@ -149,5 +151,6 @@ I have four style sheets for the site
 @media (min-width: 900px) { 
   body>main {
     width: 80ch;
-  }*/
+  }
 }
+*/
