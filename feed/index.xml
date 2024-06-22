@@ -6,13 +6,23 @@
 	
 	<link href="https://www.robin.is/feed/index.xml" rel="self"/>
 	<link href="https://www.robin.is/" rel="alternate" type="text/html"/>
-	<updated>2024-06-10T06:28:11Z</updated>
+	<updated>2024-06-20T11:18:27Z</updated>
 	<id>https://www.robin.is/</id>
 	<author>
 		<name>robindotis</name>
 		<email>admin@robin.is</email>
 	</author>
 	
+	
+	<entry>
+		<title>Adding sidebar</title>
+		<link href="https://www.robin.is/posts/2024/sidebar/"/>
+		<updated>2024-06-20T11:18:27Z</updated>
+		<id>https://www.robin.is/posts/2024/sidebar/</id>
+		<content type="html">&lt;p&gt;I&#39;ve slightly redesigned the layout of the site by moving the header menu to the left hand side of the screen. You won&#39;t see this on mobile, but will on larger screens. I also added slash infront of the menu items so that it shows they are actual folders of the site, such as &lt;a href=&quot;https://www.robin.is/writing/&quot;&gt;robin.is/writing&lt;/a&gt;. Not a huge change, but I like the altered layout. And I managed this in under 30 CSS statements and pretty much no HTML changes.&lt;/p&gt;
+&lt;p&gt;I continue to be amazed at what can be achieved nowadays in CSS without having to alter the HTML, assuming a well structured HTML web page.&lt;/p&gt;
+</content>
+	</entry>
 	
 	<entry>
 		<title>The Left Hand of Darkness</title>
@@ -245,21 +255,6 @@ export default async function(eleventyConfig) {
 &lt;/blockquote&gt;
 &lt;p&gt;Started 19/02/2024. Finished 19/03/2024.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;https://www.robin.is/assets/images/2024/shattered-nation.webp&quot; alt=&quot;&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; width=&quot;296&quot; height=&quot;445&quot; /&gt;&lt;/p&gt;
-</content>
-	</entry>
-	
-	<entry>
-		<title>Kopstal Circular Walk - Again</title>
-		<link href="https://www.robin.is/posts/2024/kopstal-circular-walk/"/>
-		<updated>2024-03-17T14:52:47Z</updated>
-		<id>https://www.robin.is/posts/2024/kopstal-circular-walk/</id>
-		<content type="html">&lt;p&gt;By chance I repeated this &lt;a href=&quot;https://www.robin.is/posts/2022/kopstal-circular-walk&quot;&gt;walk I had completed a couple years ago&lt;/a&gt;. Back then I noted it it down as a 6km walk, but it seems they have added a kilometre as it is now a &lt;a href=&quot;https://www.visitluxembourg.com/tour/circular-walk-kopstal&quot;&gt;7km around the wooded hills of kopstal&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;For sure I came across two ponds for Angie to jump in and make a mess of herself, which weren&#39;t there last time. Otherwise my thoughts on the walk are the same as back then, although it was a little quieter since it was a Sunday.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://www.robin.is/assets/images/2024/kopstal2-1.webp&quot; alt=&quot;&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; width=&quot;600&quot; height=&quot;800&quot; /&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://www.robin.is/assets/images/2024/kopstal2-2.webp&quot; alt=&quot;&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; width=&quot;600&quot; height=&quot;800&quot; /&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://www.robin.is/assets/images/2024/kopstal2-3.webp&quot; alt=&quot;&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; width=&quot;800&quot; height=&quot;600&quot; /&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://www.robin.is/assets/images/2024/kopstal2-4.webp&quot; alt=&quot;&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; width=&quot;600&quot; height=&quot;800&quot; /&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://www.robin.is/assets/images/2024/kopstal2-5.webp&quot; alt=&quot;&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; width=&quot;600&quot; height=&quot;800&quot; /&gt;&lt;/p&gt;
 </content>
 	</entry>
 </feed>
