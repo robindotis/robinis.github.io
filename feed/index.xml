@@ -19,7 +19,9 @@
 		<link href="https://www.robin.is/posts/2024/sidebar/"/>
 		<updated>2024-06-20T11:18:27Z</updated>
 		<id>https://www.robin.is/posts/2024/sidebar/</id>
-		<content type="html">&lt;p&gt;I&#39;ve slightly redesigned the layout of the site by moving the header menu to the left hand side of the screen. You won&#39;t see this on mobile, but will on larger screens. I also added slash infront of the menu items so that it shows they are actual folders of the site, such as &lt;a href=&quot;https://www.robin.is/writing/&quot;&gt;robin.is/writing&lt;/a&gt;. Not a huge change, but I like the altered layout. And I managed this in under 30 CSS statements and pretty much no HTML changes.&lt;/p&gt;
+		<content type="html">&lt;p&gt;I&#39;ve slightly redesigned the layout of the site by moving the header menu to the left hand side of the screen. You won&#39;t see this on mobile, but you will on larger screens.&lt;/p&gt;
+&lt;p&gt;I also added slash in front of the menu items so that it shows that they are actual folders of the site, such as &lt;a href=&quot;https://www.robin.is/writing/&quot;&gt;robin.is/writing&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Overall, this is not a huge change, but I like the altered layout, which I achieved with under 30 CSS statements and almost no HTML changes.&lt;/p&gt;
 &lt;p&gt;I continue to be amazed at what can be achieved nowadays in CSS without having to alter the HTML, assuming a well structured HTML web page.&lt;/p&gt;
 </content>
 	</entry>
