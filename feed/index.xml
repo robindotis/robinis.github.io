@@ -6,13 +6,24 @@
 	
 	<link href="https://www.robin.is/feed/index.xml" rel="self"/>
 	<link href="https://www.robin.is/" rel="alternate" type="text/html"/>
-	<updated>2024-06-20T11:18:27Z</updated>
+	<updated>2024-06-29T19:18:27Z</updated>
 	<id>https://www.robin.is/</id>
 	<author>
 		<name>robindotis</name>
 		<email>admin@robin.is</email>
 	</author>
 	
+	
+	<entry>
+		<title>Visting Oostduinkerke</title>
+		<link href="https://www.robin.is/posts/2024/oostduinkerke/"/>
+		<updated>2024-06-29T19:18:27Z</updated>
+		<id>https://www.robin.is/posts/2024/oostduinkerke/</id>
+		<content type="html">&lt;p&gt;A short but sweet day trip visiting old haunts in Oostduinkere on the Belgian coast. We had a lovely restaurant meal, mussels in my case, and wander along the beach which Angie very much enjoyed. .&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://www.robin.is/assets/images/2024/oostduinkerke-1.webp&quot; alt=&quot;&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; width=&quot;602&quot; height=&quot;800&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://www.robin.is/assets/images/2024/oostduinkerke-2.webp&quot; alt=&quot;&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; width=&quot;602&quot; height=&quot;800&quot; /&gt;&lt;/p&gt;
+</content>
+	</entry>
 	
 	<entry>
 		<title>Adding sidebar</title>
@@ -213,50 +224,6 @@ export default async function(eleventyConfig) {
   &lt;p&gt;&quot;A man is not dead while his name is still spoken.&quot;&lt;/p&gt;
   &lt;footer&gt;&lt;cite&gt;Going Postal, Chapter 4 prologue&lt;/cite&gt;&lt;/footer&gt;
 &lt;/blockquote&gt;
-</content>
-	</entry>
-	
-	<entry>
-		<title>Shattered Nation</title>
-		<link href="https://www.robin.is/posts/2024/shattered-nation/"/>
-		<updated>2024-03-19T18:00:33Z</updated>
-		<id>https://www.robin.is/posts/2024/shattered-nation/</id>
-		<content type="html">&lt;h2&gt;by Danny Dorling&lt;/h2&gt;
-&lt;p&gt;A very interesting book about high inequality within the UK, apparently the highest in Europe except for Bulgaria. It&#39;s quite a depressing read.&lt;/p&gt;
-&lt;p&gt;One caveat: the book does compare the UK badly to the rest of Europe, especially the similarly wealthy western / northern countries. I am not convinced that these countries are doing much better. The author does point this out, but is also clear: in his view, whilst things are bad in other places, in almost none of them are they as bad as the UK - not even close. I can&#39;t help feeling though that they are going full steam ahead in that direction.&lt;/p&gt;
-&lt;p&gt;The book is centred on the five identified in The Beveridge report (from 1942) which lead to the creation of the NHS:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;want – an adequate income for all&lt;/li&gt;
-&lt;li&gt;disease – access to health care&lt;/li&gt;
-&lt;li&gt;ignorance – a good education&lt;/li&gt;
-&lt;li&gt;squalor – adequate housing&lt;/li&gt;
-&lt;li&gt;idleness – gainful employment&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;The UK, having brilliantly managed to almost erradicate these evils by the 1970s, becoming the most equal country in Europe, with the best healthcare and social policies, is now back sliding. Policies since then, from all political parties, have brought the five evils back in a different form. Their modern equivalents are:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;hunger&lt;/li&gt;
-&lt;li&gt;precarity&lt;/li&gt;
-&lt;li&gt;waste&lt;/li&gt;
-&lt;li&gt;exploitation&lt;/li&gt;
-&lt;li&gt;fear&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;The book makes some very good points on the ruling classes being completely out of touch with rest of the population and therefore unable to understand the reality of these five modern evils. For example around 80% of economics students are from a privileged background. These are the ones creating policies to alleviate things like hunger. Only veterinary science has a higher percentage.&lt;/p&gt;
-&lt;p&gt;The book contains many obvious observations that are either poorly understood by economists or ignored because it would reduce their own wealth. Such as:&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;The price mechanism works quite well for goods such as clothes because there are few monopoly supplies and people become quite expert at buying clothes as they do it often. People rarely become expert at buying a university education or a heart operation.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;Another interesting point is made in chapter 5 on waste. More and more people are working in services that are essentially supporting the wealthy to manage and increase their wealth. Outside of remuneration, this sort of work creates no real value to the person doing it. Nor to society as a whole. These people&#39;s significant skills are not put to work on anything truly meaningful, like helping others, creating joy and happines or even simply making things.&lt;/p&gt;
-&lt;p&gt;As the book states:&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;By judging a job&#39;s worth only through its financial value we devalue what is truly meaningful and what actually adds to the greater good&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;This is something I have often thought about myself. The financialisation of almost every aspect of public life, means that the decisions on whether to provide tax payer support are made purely on whether it is directly profitable. No thought is given whether it is simply useful in helping people go about their lives in a meaningful way. Where&#39;s the direct profit in saving someone&#39;s life, or cleaning the streets. Where&#39;s the profit in healthy people not needing medications?&lt;/p&gt;
-&lt;p&gt;For once, this is also a book that does not end with a positive call for arms (well, it pushes that to the acknowledgements...). Instead it points to what could happen if something doesn&#39;t change:&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;It is even possible that inequalities could fall within the large majority of the population, while rising overall because just a tiny few at the top are allowed to keep taking more.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;Started 19/02/2024. Finished 19/03/2024.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://www.robin.is/assets/images/2024/shattered-nation.webp&quot; alt=&quot;&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; width=&quot;296&quot; height=&quot;445&quot; /&gt;&lt;/p&gt;
 </content>
 	</entry>
 </feed>
