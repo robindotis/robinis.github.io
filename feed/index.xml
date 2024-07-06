@@ -6,13 +6,24 @@
 	
 	<link href="https://www.robin.is/feed/index.xml" rel="self"/>
 	<link href="https://www.robin.is/" rel="alternate" type="text/html"/>
-	<updated>2024-06-29T19:18:27Z</updated>
+	<updated>2024-07-06T09:00:33Z</updated>
 	<id>https://www.robin.is/</id>
 	<author>
 		<name>robindotis</name>
 		<email>admin@robin.is</email>
 	</author>
 	
+	
+	<entry>
+		<title>Voting</title>
+		<link href="https://www.robin.is/posts/2024/voting/"/>
+		<updated>2024-07-06T09:00:33Z</updated>
+		<id>https://www.robin.is/posts/2024/voting/</id>
+		<content type="html">&lt;p&gt;These are the ballot papers for both the UK and Belgium 2024 general elections. No wonder voting is compulsory in Belgium! 🤣🤣🤣&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://www.robin.is/assets/images/2024/voting-1.webp&quot; alt=&quot;&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; width=&quot;398&quot; height=&quot;800&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://www.robin.is/assets/images/2024/voting-2.webp&quot; alt=&quot;&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; width=&quot;800&quot; height=&quot;400&quot; /&gt;&lt;/p&gt;
+</content>
+	</entry>
 	
 	<entry>
 		<title>Visting Oostduinkerke</title>
@@ -209,21 +220,6 @@ export default async function(eleventyConfig) {
 		<id>https://www.robin.is/posts/2024/age-assurance-summit-manchester/</id>
 		<content type="html">&lt;p&gt;Last week I was in Manchester for three days to give a presentation on the &amp;quot;EU approach to age assurance and age verification&amp;quot;, at the &lt;a href=&quot;https://events.ringcentral.com/events/global-age-assurance-standards-summit/registration&quot;&gt;Global Age Assurance Summit&lt;/a&gt;. My 15 minute presentation went well and there were plenty of questions afterwards to fill the remaining 10 minutes.&lt;/p&gt;
 &lt;p&gt;The event was interesting, showing the amount of effort that is going into keeping children safe online. This is something that should have been happening 20 years ago.&lt;/p&gt;
-</content>
-	</entry>
-	
-	<entry>
-		<title>Parrain</title>
-		<link href="https://www.robin.is/posts/2024/parrain/"/>
-		<updated>2024-04-07T22:18:27Z</updated>
-		<id>https://www.robin.is/posts/2024/parrain/</id>
-		<content type="html">&lt;p&gt;My uncle died on the 29th March. He was cremated on the 5th April. That was the day we returned from our holidays. So upon landing in Brussels Charleroi, we got off the plane and headed for the crematorium to attend the service in the afternoon. We missed the church service in the morning.&lt;/p&gt;
-&lt;p&gt;In his memory, I have added the name we called him by, Parrain, to the &lt;a href=&quot;http://www.gnuterrypratchett.com/&quot;&gt;GNU Terry Pratchett&lt;/a&gt; &amp;quot;X-Clacks-Overhead&amp;quot; header on my website. This ensures his name is passed around the internet for as long this site is running.&lt;/p&gt;
-&lt;p&gt;Since:&lt;/p&gt;
-&lt;blockquote&gt;
-  &lt;p&gt;&quot;A man is not dead while his name is still spoken.&quot;&lt;/p&gt;
-  &lt;footer&gt;&lt;cite&gt;Going Postal, Chapter 4 prologue&lt;/cite&gt;&lt;/footer&gt;
-&lt;/blockquote&gt;
 </content>
 	</entry>
 </feed>
