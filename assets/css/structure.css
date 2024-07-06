@@ -318,17 +318,6 @@ main ul, main ol {
 }
 
 div.tagged, div.prev-next {
-    display: flex;
-    justify-content: space-between;
-}
-
-/*
-div.tagged, div.prev-next span {
-    display: inline-block;
-}
-*/
-
-div.tagged, div.prev-next span.older {
     text-align: right;
 }
 
@@ -524,4 +513,3 @@ blockquote footer {
         margin-right:5%;
     }
 }
-
