@@ -2337,8 +2337,18 @@
   </url>
   
   <url>
+    <loc>https://www.robin.is/posts/2024/ronan-keating/</loc>
+    <lastmod>2024-07-05</lastmod>
+  </url>
+  
+  <url>
     <loc>https://www.robin.is/posts/2024/voting/</loc>
     <lastmod>2024-07-06</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.robin.is/posts/2024/summer-in-plovdiv/</loc>
+    <lastmod>2024-07-19</lastmod>
   </url>
   
   <url>
@@ -2497,11 +2507,6 @@
   </url>
   
   <url>
-    <loc>https://www.robin.is/tagging/diary/</loc>
-    <lastmod>2024-07-20</lastmod>
-  </url>
-  
-  <url>
     <loc>https://www.robin.is/tagging/sumatra/</loc>
     <lastmod>2024-07-20</lastmod>
   </url>
@@ -2617,6 +2622,11 @@
   </url>
   
   <url>
+    <loc>https://www.robin.is/tagging/diary/</loc>
+    <lastmod>2024-07-20</lastmod>
+  </url>
+  
+  <url>
     <loc>https://www.robin.is/tagging/a11y/</loc>
     <lastmod>2024-07-20</lastmod>
   </url>
@@ -2692,22 +2702,22 @@
   </url>
   
   <url>
-    <loc>https://www.robin.is/tagging/prague/</loc>
-    <lastmod>2024-07-20</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.robin.is/tagging/czechia/</loc>
-    <lastmod>2024-07-20</lastmod>
-  </url>
-  
-  <url>
     <loc>https://www.robin.is/tagging/france/</loc>
     <lastmod>2024-07-20</lastmod>
   </url>
   
   <url>
     <loc>https://www.robin.is/tagging/paris/</loc>
+    <lastmod>2024-07-20</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.robin.is/tagging/prague/</loc>
+    <lastmod>2024-07-20</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.robin.is/tagging/czechia/</loc>
     <lastmod>2024-07-20</lastmod>
   </url>
   
@@ -3737,6 +3747,11 @@
   </url>
   
   <url>
+    <loc>https://www.robin.is/tagging/neuromancer/</loc>
+    <lastmod>2024-07-20</lastmod>
+  </url>
+  
+  <url>
     <loc>https://www.robin.is/tagging/oft-robin/</loc>
     <lastmod>2024-07-20</lastmod>
   </url>
@@ -3827,17 +3842,17 @@
   </url>
   
   <url>
-    <loc>https://www.robin.is/tagging/sign-language/</loc>
-    <lastmod>2024-07-20</lastmod>
-  </url>
-  
-  <url>
     <loc>https://www.robin.is/tagging/ski/</loc>
     <lastmod>2024-07-20</lastmod>
   </url>
   
   <url>
     <loc>https://www.robin.is/tagging/snow/</loc>
+    <lastmod>2024-07-20</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.robin.is/tagging/sign-language/</loc>
     <lastmod>2024-07-20</lastmod>
   </url>
   
@@ -3942,6 +3957,16 @@
   </url>
   
   <url>
+    <loc>https://www.robin.is/tagging/ronan-keating/</loc>
+    <lastmod>2024-07-20</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.robin.is/tagging/kinekswiss/</loc>
+    <lastmod>2024-07-20</lastmod>
+  </url>
+  
+  <url>
     <loc>https://www.robin.is/tagging/acappella/</loc>
     <lastmod>2024-07-20</lastmod>
   </url>
@@ -3978,11 +4003,6 @@
   
   <url>
     <loc>https://www.robin.is/tagging/waiting/</loc>
-    <lastmod>2024-07-20</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.robin.is/tagging/neuromancer/</loc>
     <lastmod>2024-07-20</lastmod>
   </url>
   

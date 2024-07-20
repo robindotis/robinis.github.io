@@ -6,13 +6,26 @@
 	
 	<link href="https://www.robin.is/feed/index.xml" rel="self"/>
 	<link href="https://www.robin.is/" rel="alternate" type="text/html"/>
-	<updated>2024-07-06T09:00:33Z</updated>
+	<updated>2024-07-19T23:20:30Z</updated>
 	<id>https://www.robin.is/</id>
 	<author>
 		<name>robindotis</name>
 		<email>admin@robin.is</email>
 	</author>
 	
+	
+	<entry>
+		<title>Summer in Plovdiv</title>
+		<link href="https://www.robin.is/posts/2024/summer-in-plovdiv/"/>
+		<updated>2024-07-19T23:20:30Z</updated>
+		<id>https://www.robin.is/posts/2024/summer-in-plovdiv/</id>
+		<content type="html">&lt;p&gt;The forecast looked like this for our usual summer visit to Plovdiv:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://www.robin.is/assets/images/2024/summer-in-plovdiv-1.webp&quot; alt=&quot;&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; width=&quot;496&quot; height=&quot;800&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;Unfortunately for us it was slightly wrong as it was hotter than forecast! This meant staying inside after midday. It also meant our vague plans to go anywhere never really materialised as it was too hot to think of anything and by the time we had planned to cool down in the mountains their weather forecast was thunderstorms for the next week.&lt;/p&gt;
+&lt;p&gt;So we hung around in Plovdiv which was also relaxing. The city had organised a few events in the evening. Which was nice, even in the evening heat. One was this stand up comedy just next to the Dzhumaya mosque.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://www.robin.is/assets/images/2024/summer-in-plovdiv-2.webp&quot; alt=&quot;&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; width=&quot;602&quot; height=&quot;800&quot; /&gt;&lt;/p&gt;
+</content>
+	</entry>
 	
 	<entry>
 		<title>Voting</title>
@@ -22,6 +35,17 @@
 		<content type="html">&lt;p&gt;These are the ballot papers for both the UK and Belgium 2024 general elections. No wonder voting is compulsory in Belgium! 🤣🤣🤣&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;https://www.robin.is/assets/images/2024/voting-1.webp&quot; alt=&quot;&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; width=&quot;398&quot; height=&quot;800&quot; /&gt;&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;https://www.robin.is/assets/images/2024/voting-2.webp&quot; alt=&quot;&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; width=&quot;800&quot; height=&quot;400&quot; /&gt;&lt;/p&gt;
+</content>
+	</entry>
+	
+	<entry>
+		<title>Ronan Keating</title>
+		<link href="https://www.robin.is/posts/2024/ronan-keating/"/>
+		<updated>2024-07-05T23:20:30Z</updated>
+		<id>https://www.robin.is/posts/2024/ronan-keating/</id>
+		<content type="html">&lt;p&gt;A wonderful concert put on by the city of Luxembourg on the Kinekswiss featuring Ronan Keating performing with the Aachen Philharmonic Orchestra.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://www.robin.is/assets/images/2024/ronan-keating-1.webp&quot; alt=&quot;&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; width=&quot;602&quot; height=&quot;800&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://www.robin.is/assets/images/2024/ronan-keating-2.webp&quot; alt=&quot;&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; width=&quot;800&quot; height=&quot;602&quot; /&gt;&lt;/p&gt;
 </content>
 	</entry>
 	
@@ -200,26 +224,6 @@ export default async function(eleventyConfig) {
 &lt;p&gt;&lt;img src=&quot;https://www.robin.is/assets/images/2024/waiting.webp&quot; alt=&quot;&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; width=&quot;450&quot; height=&quot;800&quot; /&gt;&lt;/p&gt;
 &lt;p&gt;She&#39;d been sitting next to me for about a minute and I hadn&#39;t noticed! 🤣🤣🤣&lt;/p&gt;
 &lt;p&gt;My excuse is that I got up at 5am to get to the airport for 8am.&lt;/p&gt;
-</content>
-	</entry>
-	
-	<entry>
-		<title>Pink Martini</title>
-		<link href="https://www.robin.is/posts/2024/pink-martini/"/>
-		<updated>2024-04-25T17:20:30Z</updated>
-		<id>https://www.robin.is/posts/2024/pink-martini/</id>
-		<content type="html">&lt;p&gt;A wonderful concert from Pink Martini at the Rockhal.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://www.robin.is/assets/images/2024/pink-martini.webp&quot; alt=&quot;&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; width=&quot;800&quot; height=&quot;602&quot; /&gt;&lt;/p&gt;
-</content>
-	</entry>
-	
-	<entry>
-		<title>Global Age Assurance Summit Manchester</title>
-		<link href="https://www.robin.is/posts/2024/age-assurance-summit-manchester/"/>
-		<updated>2024-04-11T17:47:29Z</updated>
-		<id>https://www.robin.is/posts/2024/age-assurance-summit-manchester/</id>
-		<content type="html">&lt;p&gt;Last week I was in Manchester for three days to give a presentation on the &amp;quot;EU approach to age assurance and age verification&amp;quot;, at the &lt;a href=&quot;https://events.ringcentral.com/events/global-age-assurance-standards-summit/registration&quot;&gt;Global Age Assurance Summit&lt;/a&gt; and see &lt;a href=&quot;https://accscheme.com/gaass/&quot;&gt;the compendium here&lt;/a&gt;. My 15 minute presentation went well and there were plenty of questions afterwards to fill the remaining 10 minutes.&lt;/p&gt;
-&lt;p&gt;The event was interesting, showing the amount of effort that is going into keeping children safe online. This is something that should have been happening 20 years ago.&lt;/p&gt;
 </content>
 	</entry>
 </feed>
