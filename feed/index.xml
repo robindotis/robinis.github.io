@@ -6,13 +6,26 @@
 	
 	<link href="https://www.robin.is/feed/index.xml" rel="self"/>
 	<link href="https://www.robin.is/" rel="alternate" type="text/html"/>
-	<updated>2024-07-19T23:20:30Z</updated>
+	<updated>2024-07-24T17:28:11Z</updated>
 	<id>https://www.robin.is/</id>
 	<author>
 		<name>robindotis</name>
 		<email>admin@robin.is</email>
 	</author>
 	
+	
+	<entry>
+		<title>The Dispossessed</title>
+		<link href="https://www.robin.is/posts/2024/the-dispossessed/"/>
+		<updated>2024-07-24T17:28:11Z</updated>
+		<id>https://www.robin.is/posts/2024/the-dispossessed/</id>
+		<content type="html">&lt;h2&gt;by Ursula K. Le Guin&lt;/h2&gt;
+&lt;p&gt;I read this book straight after reading &lt;a href=&quot;https://www.robin.is/posts/2024/the-left-hand-of-darkness/&quot;&gt;The Left Hand of Darkness&lt;/a&gt; by the same author.&lt;/p&gt;
+&lt;p&gt;The book tells the story of the invention of the ansible, which allows for instantaneous communication (but not travel) across solar systems. It covers three different civilisations spread across several plantes. These are the anarchists on Anarres, the propertarians on Urras, the Terrans (surviving on Earth earth afte climate collapse reduced their population from 9 billion to 500 million) and the Hainish, which at several thousands of millenia is the oldest civilisation.&lt;/p&gt;
+&lt;p&gt;It is a very insightful critique of different political systems such as capitalism, communism and anarchism without actually taking sides. They all have their faults and all have their benefits. The book also encourages you to think about how these systems could interact going foward as purposefully it does not come to a clear conclusion.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://www.robin.is/assets/images/2024/the-dispossessed.webp&quot; alt=&quot;&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; width=&quot;517&quot; height=&quot;800&quot; /&gt;&lt;/p&gt;
+</content>
+	</entry>
 	
 	<entry>
 		<title>Summer in Plovdiv</title>
@@ -77,7 +90,8 @@
 		<link href="https://www.robin.is/posts/2024/the-left-hand-of-darkness/"/>
 		<updated>2024-06-10T06:28:11Z</updated>
 		<id>https://www.robin.is/posts/2024/the-left-hand-of-darkness/</id>
-		<content type="html">&lt;p&gt;This book took me much longer than it should have to read. It&#39;s interesting, but perhaps that is why I was not so captivated by it. If I had read it in a couple of days it might have been more meaningful. Still, the story of spacefaring humans making first contact with this planet of ice and snow is well worth reading.&lt;/p&gt;
+		<content type="html">&lt;h2&gt;by Ursula K. Le Guin&lt;/h2&gt;
+&lt;p&gt;This book took me much longer than it should have to read. It&#39;s interesting, but perhaps that is why I was not so captivated by it. If I had read it in a couple of days it might have been more meaningful. Still, the story of spacefaring humans making first contact with this planet of ice and snow is well worth reading.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;https://www.robin.is/assets/images/2024/the-left-hand-of-darkness.webp&quot; alt=&quot;&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; width=&quot;287&quot; height=&quot;445&quot; /&gt;&lt;/p&gt;
 </content>
 	</entry>
@@ -210,20 +224,6 @@ export default async function(eleventyConfig) {
 &lt;p&gt;So the error occurs between the output of &lt;code&gt;page.inputPath&lt;/code&gt; and before its input into &lt;code&gt;pathToGitHub&lt;/code&gt;, but only when that function is in a module.  So there is something in the &amp;quot;module&amp;quot; functionality that I am not understanding.&lt;/p&gt;
 &lt;p&gt;Any suggestions welcome!&lt;/p&gt;
 &lt;/blockquote&gt;
-</content>
-	</entry>
-	
-	<entry>
-		<title>Waiting</title>
-		<link href="https://www.robin.is/posts/2024/waiting/"/>
-		<updated>2024-04-26T09:20:30Z</updated>
-		<id>https://www.robin.is/posts/2024/waiting/</id>
-		<content type="html">&lt;p&gt;My daughter was on a trip in Bosnia and had not been feeling well the final two days. So, I had to pick her up at Frankfurt Airport after the return flight.&lt;/p&gt;
-&lt;p&gt;I was sat outside the arrivals gate, waiting. After the plane had landed it took forever for the display to change to baggage collection. Bored and doom scrolling on my phone, I was waiting for a group of about 40 kids to appear. But my daughter collected her baggage and left as she knew I was already there.&lt;/p&gt;
-&lt;p&gt;She sent me a text about whether I had a new phone. I wondered how she knew that, maybe somehow from my messages. A few seconds later she sent me this photo:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://www.robin.is/assets/images/2024/waiting.webp&quot; alt=&quot;&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; width=&quot;450&quot; height=&quot;800&quot; /&gt;&lt;/p&gt;
-&lt;p&gt;She&#39;d been sitting next to me for about a minute and I hadn&#39;t noticed! 🤣🤣🤣&lt;/p&gt;
-&lt;p&gt;My excuse is that I got up at 5am to get to the airport for 8am.&lt;/p&gt;
 </content>
 	</entry>
 </feed>
