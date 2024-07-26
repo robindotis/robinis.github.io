@@ -33,6 +33,22 @@
 	</entry>
 	
 	<entry>
+		<title>Summer Theatre</title>
+		<link href="https://www.robin.is/posts/2024/summer-theatre/"/>
+		<updated>2024-07-23T23:20:30Z</updated>
+		<id>https://www.robin.is/posts/2024/summer-theatre/</id>
+		<content type="html">&lt;p&gt;We watched a wonderful concert at &lt;a href=&quot;https://plovdivtime.bg/nasledstvo/letniiat-teatar-bunardzhika-edna-pozabravena-muzikalna-arena-7436/&quot;&gt;Plovdiv&#39;s summer theatre&lt;/a&gt; called &amp;quot;Amongst the world of music&amp;quot;, featuring Vesko Eshkenasi on the violin and Veronika Todorova on the accordion, supported by the Pleven philharmonic orchestra under the direction of Georgi Miltiardov.&lt;/p&gt;
+&lt;p&gt;In Bulgarian:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Концерт „В света на музиката” с участието на виртуозите - цигуларя Веско Ешкенази и акордеонистката  Вероника Тодорова, Плевенска филхармония под диригентството на Георги Милтиядов&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;img src=&quot;https://www.robin.is/assets/images/2024/summer-theatre-1.webp&quot; alt=&quot;&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; width=&quot;800&quot; height=&quot;602&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://www.robin.is/assets/images/2024/summer-theatre-2.webp&quot; alt=&quot;&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; width=&quot;602&quot; height=&quot;800&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://www.robin.is/assets/images/2024/summer-theatre-3.webp&quot; alt=&quot;&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; width=&quot;800&quot; height=&quot;602&quot; /&gt;&lt;/p&gt;
+</content>
+	</entry>
+	
+	<entry>
 		<title>Summer in Plovdiv</title>
 		<link href="https://www.robin.is/posts/2024/summer-in-plovdiv/"/>
 		<updated>2024-07-19T23:20:30Z</updated>
@@ -183,52 +199,6 @@
 &lt;h2&gt;Day 8 - Return to Pisa and flight home&lt;/h2&gt;
 &lt;p&gt;In the morning of our last day we drove off to Pisa airport. I had set Google to take me to a petrol station not too far from the airport, so that I could fuel up the car before dropping it off at the car rental. Google having a mind of it&#39;s own, sent me up a dirt track to get to the petrol station. Expecting me to walk the last 100 metres. Great.&lt;/p&gt;
 &lt;p&gt;Anyway, all is well that ends well. We got to the airport, dropped off the car, got on the plane and returned home no problem. Two days later I had Covid!&lt;/p&gt;
-</content>
-	</entry>
-	
-	<entry>
-		<title>Formulating Questions</title>
-		<link href="https://www.robin.is/posts/2024/formulating-questions/"/>
-		<updated>2024-05-05T08:18:27Z</updated>
-		<id>https://www.robin.is/posts/2024/formulating-questions/</id>
-		<content type="html">&lt;p&gt;I spent a few hours over the last couple of days upgrading my eleventy setup to &amp;quot;v3.0 canary&amp;quot;, and then to tidy up my eleventy config file, taking inspiration from &lt;a href=&quot;https://eleventy-excellent.netlify.app/&quot;&gt;eleventy-excellent&lt;/a&gt;. The idea being to move all my custom filters, collections, plugins and shortcodes to module files.&lt;/p&gt;
-&lt;p&gt;This went very well, but there were a couple of filters that simply didn&#39;t work. After several hours of failing to fix them, I relented and decided to ask a question in the eleventy GitHub discussions forum. It took me about 20 minutes to draft the question so that I thought it would be clear.&lt;/p&gt;
-&lt;p&gt;After the third re-reading and final edits, and literally just as I was hovering over the submit button for the final click, the answer jumped out of my text. It was a dead simple, a stupid error.&lt;/p&gt;
-&lt;p&gt;Jim Nielsen&#39;s &lt;a href=&quot;https://blog.jim-nielsen.com/2024/bulletproof-problem-solving/&quot;&gt;Bulletproof Method to Solving Problems&lt;/a&gt; came to mind. I made it right to the very end of Step 1, but not further!&lt;/p&gt;
-&lt;p&gt;This is what I was going to submit, see if you can spot the problem. 🙂&lt;/p&gt;
-&lt;blockquote&gt;
-I have upgraded Eleventy to v3.0 canary which has generally worked very well. So I don&#39;t think this is related to that (and probably more to my general lack of knowledge...).
-&lt;p&gt;I then moved my custom filters from the eleventy.config.js file to a module file. At this point I got an error for one of the filters.&lt;/p&gt;
-&lt;p&gt;The filter is creating a URL link to the file on github and looks like this in the eleventy.config.js file:&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&quot;language-js&quot;&gt;eleventyConfig.addFilter(&#39;pathToGitHub&#39;, (localPath) =&amp;gt; {
-    let baseURL = &#39;https://github.com/..../blob/master/&#39;;
-    let outURL =  new URL(localPath,baseURL);
-    return outURL;
-});
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;This works fine when using the filter like this in my njk file:&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&quot;language-html&quot;&gt;&amp;lt;a href=&amp;quot;https://github.com/robindotis/robin.is/blob/master/posts/2024/formulating-questions.md&amp;quot; title=&amp;quot;Edit&amp;quot;&amp;gt;Edit&amp;lt;/a&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;But when I then move this filter into a module and import and add the filter like this:&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&quot;language-js&quot;&gt;import filters from &amp;quot;./_config/filters.js&amp;quot;;
-.
-.
-export default async function(eleventyConfig) {
-    eleventyConfig.addFilter(&amp;quot;pathToGitHub&amp;quot;, filters.folderList);
-
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;I get this error when using the filter to create the edit link above:&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&quot;language-js&quot;&gt;[11ty] 2. (./_layouts/base.njk)
-[11ty]   Template render error: (C:&#92;...&#92;eleventy&#92;robin.is&#92;_includes&#92;footer.njk)
-[11ty]   Error: ENOTDIR: not a directory, scandir &#39;C:&#92;...&#92;eleventy&#92;robin.is&#92;pages&#92;home.njk&#39; (via Template render error)
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;As such this error makes sense, since &lt;code&gt;page.inputPath&lt;/code&gt; is not a path to a directory but a file. What I don&#39;t understand is why I get this error when putting the filter in a module, but not when leaving it directly in the eleventy config file.&lt;/p&gt;
-&lt;p&gt;Some further trial and error indicates that it is not related to the filter code itself, because even if that filter does nothing (eg simply &lt;code&gt;return &amp;quot;/&amp;quot;&lt;/code&gt;) I get the error. I also don&#39;t get the error without using the filter, ie simply using this (which is obviously pointless):&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&quot;language-html&quot;&gt;&amp;lt;a href=&amp;quot;./posts/2024/formulating-questions.md&amp;quot; title=&amp;quot;Edit&amp;quot;&amp;gt;Edit&amp;lt;/a&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;So the error occurs between the output of &lt;code&gt;page.inputPath&lt;/code&gt; and before its input into &lt;code&gt;pathToGitHub&lt;/code&gt;, but only when that function is in a module.  So there is something in the &amp;quot;module&amp;quot; functionality that I am not understanding.&lt;/p&gt;
-&lt;p&gt;Any suggestions welcome!&lt;/p&gt;
-&lt;/blockquote&gt;
 </content>
 	</entry>
 </feed>
