@@ -279,7 +279,7 @@ themeSwitch.addTheme(new theme("Grey","olden.css"));
 themeSwitch.addTheme(new theme("High Contrast","high.css"));
 themeSwitch.addTheme(new theme("Miami","miami.css"));
 themeSwitch.addTheme(new theme("Plain","plain.css"));
-themeSwitch.addTheme(new theme("Skyblue","skyblue.css"));
+themeSwitch.addTheme(new theme("Sidebar","sidebar.css"));
 themeSwitch.addNakedTheme();
 
 themeSwitch.createPicker();
