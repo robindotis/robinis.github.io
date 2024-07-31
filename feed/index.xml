@@ -6,13 +6,26 @@
 	
 	<link href="https://www.robin.is/feed/index.xml" rel="self"/>
 	<link href="https://www.robin.is/" rel="alternate" type="text/html"/>
-	<updated>2024-07-24T17:28:11Z</updated>
+	<updated>2024-07-31T22:38:11Z</updated>
 	<id>https://www.robin.is/</id>
 	<author>
 		<name>robindotis</name>
 		<email>admin@robin.is</email>
 	</author>
 	
+	
+	<entry>
+		<title>The Ones Who Walk Away From Omelas</title>
+		<link href="https://www.robin.is/posts/2024/omelas/"/>
+		<updated>2024-07-31T22:38:11Z</updated>
+		<id>https://www.robin.is/posts/2024/omelas/</id>
+		<content type="html">&lt;h2&gt;by Ursula K. Le Guin&lt;/h2&gt;
+&lt;p&gt;This is a very interesting and thought provoking short story about citizens living in a Utopia enabled through the continuous misery of one child. It doesn&#39;t go into the technicalities of how this works, but makes the reader think about what they would do.&lt;/p&gt;
+&lt;p&gt;Some citizens rationalise keeping the status quo in various ways: The miserable child probably would not get much better if let free, Freeing the child would prevent other works of brilliance and beauty from existing.&lt;/p&gt;
+&lt;p&gt;Others, upon seing the misery of the child, simply walk down the street, keep walking and walking and eventually leave Omelas. They are The Ones Who Walk Away From Omelas. The author states that the place they head to is even less imagineable than Omelas. I take this as a hint that it might be better. Meaning that if you have the courage to walk away from something apparently wonderful, yet disagreeable , you might actually reach somewhere even better.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://www.robin.is/assets/images/2024/omelas.webp&quot; alt=&quot;&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; width=&quot;247&quot; height=&quot;350&quot; /&gt;&lt;/p&gt;
+</content>
+	</entry>
 	
 	<entry>
 		<title>The Dispossessed</title>
@@ -130,75 +143,6 @@
 &lt;/ul&gt;
 &lt;p&gt;They are in fact quite similar and can be added to a website without needing a real host, they use netlify or cloudflare for the GitHub authentication parts, the rest is client side code. In fact Sveltia is a fork of &lt;a href=&quot;https://decapcms.org/&quot;&gt;Decap CMS&lt;/a&gt;, which itself is a rebrand of the no longer supported Netlify CMS. Both do a nice job of putting a front end on the GitHub experience, but neither seems to fit in too well with my specificities out of the box (eg collections and assets that contain sub folders). Getting them to work through Cloudflare also takes some fiddling, but it does work in the end.&lt;/p&gt;
 &lt;p&gt;I still miss &lt;a href=&quot;https://tina.io/forestry/&quot;&gt;Forestry&lt;/a&gt;, which was replaced by &lt;a href=&quot;http://tina.io/&quot;&gt;Tina.io&lt;/a&gt;, but that is too focussed on Next.js sites for my liking.  I decided to give &lt;a href=&quot;https://cloudcannon.com/&quot;&gt;CloudCannon&lt;/a&gt;, &lt;a href=&quot;https://strapi.io/&quot;&gt;Strapi&lt;/a&gt; and &lt;a href=&quot;https://www.sanity.io/&quot;&gt;Sanity&lt;/a&gt; another look. But they either had too many proprietary aspects (Sanity), needed to be self hosted (Strapi) or just not quite what I wanted (CloudCannon). I guess I will just have to stick with GitHub and VSC. No harm done.&lt;/p&gt;
-</content>
-	</entry>
-	
-	<entry>
-		<title>Visiting Tuscany</title>
-		<link href="https://www.robin.is/posts/2024/visiting-tuscany/"/>
-		<updated>2024-05-26T11:11:11Z</updated>
-		<id>https://www.robin.is/posts/2024/visiting-tuscany/</id>
-		<content type="html">&lt;h2&gt;Day 1 - Arrival in Pisa&lt;/h2&gt;
-&lt;p&gt;We arrived in Pisa on time, picked up the rental car and checked into the hotel around 3pm. The hotel, which belonged to the &lt;a href=&quot;https://www.hotel-bb.com/en&quot;&gt;B&amp;amp;B Hotels&lt;/a&gt; chain, did not feel like one. Our room &amp;quot;with terrace&amp;quot; was on the 5th floor, which had to be reached by stairs from the 4th floor. The terrace was rusty and uninviting. The whole thing seemed like an afterthought. This is not the usual basic but solid standard we expected from that chain.&lt;/p&gt;
-&lt;p&gt;After a rest we headed to Pisa by taxi, which at around 18 Euros was not too pricey and saved the headache and cost of parking. Just in front of the Univerity of Pisa, where none other than Galieo Galilei studied, there was Renault 5 tuning exibition.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://www.robin.is/assets/images/2024/tuscany-1.webp&quot; alt=&quot;&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; width=&quot;602&quot; height=&quot;800&quot; /&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://www.robin.is/assets/images/2024/tuscany-2.webp&quot; alt=&quot;&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; width=&quot;602&quot; height=&quot;800&quot; /&gt;&lt;/p&gt;
-&lt;p&gt;We headed onto the leaning tower of Pisa and admired the hordes of people taking photos of themselves propping up the tower.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://www.robin.is/assets/images/2024/tuscany-3.webp&quot; alt=&quot;&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; width=&quot;602&quot; height=&quot;800&quot; /&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://www.robin.is/assets/images/2024/tuscany-4.webp&quot; alt=&quot;&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; width=&quot;602&quot; height=&quot;800&quot; /&gt;&lt;/p&gt;
-&lt;p&gt;We finished the evening with a lovely meal at the &lt;a href=&quot;https://maps.app.goo.gl/vzXSvtuSmE1qFmn58&quot;&gt;Osteria San Sisto&lt;/a&gt; just round the corner of the Renault 5 meet and late evening stroll along the river.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://www.robin.is/assets/images/2024/tuscany-5.webp&quot; alt=&quot;&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; width=&quot;800&quot; height=&quot;602&quot; /&gt;&lt;/p&gt;
-&lt;h2&gt;Day 2 - Pisa&lt;/h2&gt;
-&lt;p&gt;The next day we drove to the centre, parking in &lt;a href=&quot;https://maps.app.goo.gl/Xh4NQ4wWfzPj7PyQA&quot;&gt;tower parking&lt;/a&gt;, which is central and reasonably priced.&lt;/p&gt;
-&lt;p&gt;A late breakfast sitting the quiet yard of the &lt;a href=&quot;https://maps.app.goo.gl/tZvzVSKhVxzwpFuP9&quot;&gt;Caffè dei Cavalieri&lt;/a&gt; was lovely.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://www.robin.is/assets/images/2024/tuscany-6.webp&quot; alt=&quot;&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; width=&quot;602&quot; height=&quot;800&quot; /&gt;&lt;/p&gt;
-&lt;p&gt;A wander around town took us passed the place where Galileo lived as well as the house were he was born and onto the river.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://www.robin.is/assets/images/2024/tuscany-7.webp&quot; alt=&quot;&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; width=&quot;602&quot; height=&quot;800&quot; /&gt;&lt;br /&gt;
-&lt;img src=&quot;https://www.robin.is/assets/images/2024/tuscany-8.webp&quot; alt=&quot;&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; width=&quot;602&quot; height=&quot;800&quot; /&gt;&lt;/p&gt;
-&lt;p&gt;We visited the &lt;a href=&quot;https://maps.app.goo.gl/b1R4AaKMYKbM8vTa8&quot;&gt;National Museum of San Matteo&lt;/a&gt; which was intersting and made a nice quiet respite from the heat and the tourists! I particularly liked this painting by Quentin Metsys.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://www.robin.is/assets/images/2024/tuscany-9.webp&quot; alt=&quot;&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; width=&quot;602&quot; height=&quot;800&quot; /&gt;&lt;/p&gt;
-&lt;p&gt;We followed that with a walk around the &lt;a href=&quot;https://museodellagrafica.sma.unipi.it/&quot;&gt;Museo della Grafica Palazzo Lanfranchi&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;Finally at the end of a tiring day, we sat down for dinner in one of the tourist traps along the pedestrian zone. As expected, it was not great. If you want nice food, keep away from the Via Santa Maria.&lt;/p&gt;
-&lt;h2&gt;Day 3 - Volterra and Siena&lt;/h2&gt;
-&lt;p&gt;On day three we drove to Siena, via a stopover in Volterra.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://www.robin.is/assets/images/2024/tuscany-10.webp&quot; alt=&quot;&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; width=&quot;800&quot; height=&quot;602&quot; /&gt;&lt;/p&gt;
-&lt;p&gt;We had a lovely amble around town, visiting the Etruscan museum. This was interesting, but got rather repetitive as it ended up being just etruscan urn after etruscan urn. A bit like doom scrolling on TikTok...&lt;/p&gt;
-&lt;p&gt;The Roman Amphitheatre was nice, although not as nice as the one we are used to in Plovdiv. We had a nice lunch in an &lt;a href=&quot;https://maps.app.goo.gl/6vNr5NqT1rfmKi6X8&quot;&gt;Irish pub&lt;/a&gt; doubling up as a pizzeria during the day for the tourists.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://www.robin.is/assets/images/2024/tuscany-11.webp&quot; alt=&quot;&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; width=&quot;602&quot; height=&quot;800&quot; /&gt;&lt;/p&gt;
-&lt;p&gt;We finished off by having a look at the Medici Fortress, which is not really a tourist attraction, but a medium security prison. Wandering into an open door, we almost got locked in as it started to automatially close behind us!&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://www.robin.is/assets/images/2024/tuscany-12.webp&quot; alt=&quot;&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; width=&quot;602&quot; height=&quot;800&quot; /&gt;&lt;br /&gt;
-&lt;img src=&quot;https://www.robin.is/assets/images/2024/tuscany-13.webp&quot; alt=&quot;&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; width=&quot;602&quot; height=&quot;800&quot; /&gt;&lt;/p&gt;
-&lt;p&gt;We then headed to our apartment in Siena, the wonderful &lt;a href=&quot;https://hotelsienaborgogrondaie.com/&quot;&gt;Borgo Grondaie&lt;/a&gt; and had a reasonable pizza in the &lt;a href=&quot;https://maps.app.goo.gl/6wKrq2tgxyQepxgF9&quot;&gt;I Gabellieri&lt;/a&gt;. It was pouring down with rain when left the pizzeria. Thankfully that was the last of the really wet weather.&lt;/p&gt;
-&lt;h2&gt;Day 4 - Siena&lt;/h2&gt;
-&lt;p&gt;After a slow start to the day and a lunch in the apartment we headed to Siena, leaving the car in the Fortress parking. Siena is very impressive, much more so than Florence. The Campo Plaza, the medieval central square at the centre of town is a view to behold.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://www.robin.is/assets/images/2024/tuscany-14.webp&quot; alt=&quot;&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; width=&quot;602&quot; height=&quot;800&quot; /&gt;&lt;/p&gt;
-&lt;p&gt;Nearby is also the magnificent Duomo de Siena, who&#39;s interior is as wonderful as the exterior. You can also pay to climb some nearby walls in order to look at the Dome and Siena from above. It&#39;s a wonderful sight.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://www.robin.is/assets/images/2024/tuscany-15.webp&quot; alt=&quot;&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; width=&quot;602&quot; height=&quot;800&quot; /&gt;&lt;/p&gt;
-&lt;p&gt;Ambling around a bit more, when ended up having a rather dissapointing dinner at the Shangai restaurant in town. It did make a change from Italian pizza and pasta though.&lt;/p&gt;
-&lt;p&gt;We headed back to the apartment in the evening, for a nice glass of local wine in the gardens of the hotel.&lt;/p&gt;
-&lt;h2&gt;Day 5 - Val D&#39;Orcia, Pienza and Terme Rapolano&lt;/h2&gt;
-&lt;p&gt;We drove to Pienza, through the beautiful countryside of the Val D&#39;Orcia and some stormy weather. The town has stunning views over the rolling hills of the valley.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://www.robin.is/assets/images/2024/tuscany-16.webp&quot; alt=&quot;&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; width=&quot;602&quot; height=&quot;800&quot; /&gt;&lt;br /&gt;
-&lt;img src=&quot;https://www.robin.is/assets/images/2024/tuscany-17.webp&quot; alt=&quot;&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; width=&quot;602&quot; height=&quot;800&quot; /&gt;&lt;br /&gt;
-&lt;img src=&quot;https://www.robin.is/assets/images/2024/tuscany-18.webp&quot; alt=&quot;&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; width=&quot;800&quot; height=&quot;602&quot; /&gt;&lt;br /&gt;
-&lt;img src=&quot;https://www.robin.is/assets/images/2024/tuscany-19.webp&quot; alt=&quot;&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; width=&quot;602&quot; height=&quot;800&quot; /&gt;&lt;/p&gt;
-&lt;p&gt;Walked around the town a little, looking for lunch, but instead stumbled through the crew setting up a film shoot. Apparently George Clooney and Adam Sandler are starring in the film. But we didn&#39;t want to hang around too much as the clouds were looking ominous, so we headed off quite soon and rove to Terme Rapolano, again through a few rain showers.&lt;/p&gt;
-&lt;p&gt;In Terme Rapolano we stayed for a couple of hours in the San Giovanni Spa which was lovely, including an infinity pool looking out over the beautiful countryside.&lt;/p&gt;
-&lt;h2&gt;Day 6 - Florence&lt;/h2&gt;
-&lt;p&gt;After a late start to the day, we drove to Florence, parking at &lt;a href=&quot;https://parcheggiovillacostanza.it/en/&quot;&gt;Villa Costanza&lt;/a&gt;. This is a really well thought out parking allowing tourists to drive to the outskirts of town and then get the tram into the centre. The tram ride took about 25 minutes.&lt;/p&gt;
-&lt;p&gt;Once in Florence, we saw usual wonderful things, the Cathedral, Palazzio Vecchio, Ufizi gallery (including paintings by Botticelo, Michelangleo, Leonardo) and the Ponte Vecchio. Lunch was a terrible affair and I almost had my bag nabbed.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://www.robin.is/assets/images/2024/tuscany-20.webp&quot; alt=&quot;&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; width=&quot;602&quot; height=&quot;800&quot; /&gt;&lt;br /&gt;
-&lt;img src=&quot;https://www.robin.is/assets/images/2024/tuscany-21.webp&quot; alt=&quot;&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; width=&quot;602&quot; height=&quot;800&quot; /&gt;&lt;br /&gt;
-&lt;img src=&quot;https://www.robin.is/assets/images/2024/tuscany-22.webp&quot; alt=&quot;&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; width=&quot;602&quot; height=&quot;800&quot; /&gt;&lt;br /&gt;
-&lt;img src=&quot;https://www.robin.is/assets/images/2024/tuscany-23.webp&quot; alt=&quot;&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; width=&quot;602&quot; height=&quot;800&quot; /&gt;&lt;br /&gt;
-&lt;img src=&quot;https://www.robin.is/assets/images/2024/tuscany-24.webp&quot; alt=&quot;&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; width=&quot;602&quot; height=&quot;800&quot; /&gt;&lt;br /&gt;
-&lt;img src=&quot;https://www.robin.is/assets/images/2024/tuscany-25.webp&quot; alt=&quot;&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; width=&quot;602&quot; height=&quot;800&quot; /&gt;&lt;/p&gt;
-&lt;p&gt;As lovely as Florence is, there&#39;s just too many tourists there to make it enjoyable. Of course we were tourists ourselves, so we can&#39;t complain. Having had enough of the crowds we headed back to parking on the tram and drove home in the evening.&lt;/p&gt;
-&lt;h2&gt;Day 7 - Spa San Giovanni again&lt;/h2&gt;
-&lt;p&gt;This was our last full day, so we had a lazy morning doing very little. We did go to the shop to get products for lunch and we did some preparatory packing. In the afternoon we headed off to the Spa Giovanni again for another relaxing afternoon. This time we put on sunscreen so we could catch a tan. Of course it was cloudy with the odd drips of rain. But that did not distract from the relaxing time at the spa.&lt;/p&gt;
-&lt;h2&gt;Day 8 - Return to Pisa and flight home&lt;/h2&gt;
-&lt;p&gt;In the morning of our last day we drove off to Pisa airport. I had set Google to take me to a petrol station not too far from the airport, so that I could fuel up the car before dropping it off at the car rental. Google having a mind of it&#39;s own, sent me up a dirt track to get to the petrol station. Expecting me to walk the last 100 metres. Great.&lt;/p&gt;
-&lt;p&gt;Anyway, all is well that ends well. We got to the airport, dropped off the car, got on the plane and returned home no problem. Two days later I had Covid!&lt;/p&gt;
 </content>
 	</entry>
 </feed>
