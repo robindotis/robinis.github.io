@@ -2412,6 +2412,11 @@
   </url>
   
   <url>
+    <loc>https://www.robin.is/tagging/web/</loc>
+    <lastmod>2024-08-03</lastmod>
+  </url>
+  
+  <url>
     <loc>https://www.robin.is/tagging/reading/</loc>
     <lastmod>2024-08-03</lastmod>
   </url>
@@ -2438,11 +2443,6 @@
   
   <url>
     <loc>https://www.robin.is/tagging/general/</loc>
-    <lastmod>2024-08-03</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.robin.is/tagging/web/</loc>
     <lastmod>2024-08-03</lastmod>
   </url>
   
@@ -2597,11 +2597,6 @@
   </url>
   
   <url>
-    <loc>https://www.robin.is/tagging/privacy/</loc>
-    <lastmod>2024-08-03</lastmod>
-  </url>
-  
-  <url>
     <loc>https://www.robin.is/tagging/html/</loc>
     <lastmod>2024-08-03</lastmod>
   </url>
@@ -2613,6 +2608,11 @@
   
   <url>
     <loc>https://www.robin.is/tagging/book/</loc>
+    <lastmod>2024-08-03</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.robin.is/tagging/privacy/</loc>
     <lastmod>2024-08-03</lastmod>
   </url>
   
@@ -3337,12 +3337,12 @@
   </url>
   
   <url>
-    <loc>https://www.robin.is/tagging/gene/</loc>
+    <loc>https://www.robin.is/tagging/colmar-berg/</loc>
     <lastmod>2024-08-03</lastmod>
   </url>
   
   <url>
-    <loc>https://www.robin.is/tagging/colmar-berg/</loc>
+    <loc>https://www.robin.is/tagging/gene/</loc>
     <lastmod>2024-08-03</lastmod>
   </url>
   
@@ -3457,17 +3457,17 @@
   </url>
   
   <url>
+    <loc>https://www.robin.is/tagging/wolf-alice/</loc>
+    <lastmod>2024-08-03</lastmod>
+  </url>
+  
+  <url>
     <loc>https://www.robin.is/tagging/games/</loc>
     <lastmod>2024-08-03</lastmod>
   </url>
   
   <url>
     <loc>https://www.robin.is/tagging/wordle/</loc>
-    <lastmod>2024-08-03</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.robin.is/tagging/wolf-alice/</loc>
     <lastmod>2024-08-03</lastmod>
   </url>
   
@@ -3582,11 +3582,6 @@
   </url>
   
   <url>
-    <loc>https://www.robin.is/tagging/naked/</loc>
-    <lastmod>2024-08-03</lastmod>
-  </url>
-  
-  <url>
     <loc>https://www.robin.is/tagging/art/</loc>
     <lastmod>2024-08-03</lastmod>
   </url>
@@ -3603,6 +3598,11 @@
   
   <url>
     <loc>https://www.robin.is/tagging/sites/</loc>
+    <lastmod>2024-08-03</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.robin.is/tagging/naked/</loc>
     <lastmod>2024-08-03</lastmod>
   </url>
   
@@ -3637,12 +3637,12 @@
   </url>
   
   <url>
-    <loc>https://www.robin.is/tagging/folkdance/</loc>
+    <loc>https://www.robin.is/tagging/fishcbach/</loc>
     <lastmod>2024-08-03</lastmod>
   </url>
   
   <url>
-    <loc>https://www.robin.is/tagging/fishcbach/</loc>
+    <loc>https://www.robin.is/tagging/folkdance/</loc>
     <lastmod>2024-08-03</lastmod>
   </url>
   
@@ -3797,17 +3797,17 @@
   </url>
   
   <url>
-    <loc>https://www.robin.is/tagging/riverside/</loc>
-    <lastmod>2024-08-03</lastmod>
-  </url>
-  
-  <url>
     <loc>https://www.robin.is/tagging/tech/</loc>
     <lastmod>2024-08-03</lastmod>
   </url>
   
   <url>
     <loc>https://www.robin.is/tagging/ui/</loc>
+    <lastmod>2024-08-03</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.robin.is/tagging/riverside/</loc>
     <lastmod>2024-08-03</lastmod>
   </url>
   
@@ -3837,17 +3837,17 @@
   </url>
   
   <url>
+    <loc>https://www.robin.is/tagging/steinsel/</loc>
+    <lastmod>2024-08-03</lastmod>
+  </url>
+  
+  <url>
     <loc>https://www.robin.is/tagging/vr/</loc>
     <lastmod>2024-08-03</lastmod>
   </url>
   
   <url>
     <loc>https://www.robin.is/tagging/safety/</loc>
-    <lastmod>2024-08-03</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.robin.is/tagging/steinsel/</loc>
     <lastmod>2024-08-03</lastmod>
   </url>
   
